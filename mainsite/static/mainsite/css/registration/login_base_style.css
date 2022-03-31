@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #000212;
+}
+:root{
+    --hand-cursor-w: pointer;
+    --hand-cursor-b:url(../img_main/cursor_b.svg) 2 2 ,auto;
+    --font-inter: 'Inter';
+    --font-inter-Bold: 'Inter Bold';
+    --font-averta-cy:'Averta CY';
+    --font-averta-cy-EB:'Averta CY EB';
+    --main-logo:url("../img_main/mainICON_1.svg");
+    --pointerHand-cursor:pointer;
+    --colorText:#ffffff;
+}
+@font-face {
+    font-family: 'Averta CY'; /*a name to be used later*/
+    src: url('../style_main/Averta\ Cyrillic\ Regular.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Averta CY EB'; /*a name to be used later*/
+    src: url('../style_main/Averta Cyrillic Bold.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Averta CY SB'; /*a name to be used later*/
+    src: url('../style_main/Averta Cyrillic SemiBold.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Inter Bold'; /*a name to be used later*/
+    src: url('../style_main/Inter-Bold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Inter'; /*a name to be used later*/
+    src: url('../style_main/Inter-Medium.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Inter SemiBold'; /*a name to be used later*/
+    src: url('../style_main/Inter-SemiBold.ttf'); /*URL to font*/
+}
+li{
+    list-style: none;
+    cursor: var(--hand-cursor-w);
+}
