@@ -16,7 +16,7 @@
     position: absolute;
     width: 56px;
     height: 56px;
-    background-image: url('../img_main/mainICON_1.svg');
+    background-image: url('../home_page/cssimg/mainICON_1.svg');
     background-repeat: no-repeat;
     background-size: contain;
     left: 2%;
@@ -48,7 +48,7 @@
 .menu_links_box_iconWhereDisplay700pxImgsvg{
     width: 11px;
     height: 9px;
-    background-image: url('../img_main/menuBut700px.svg');
+    background-image: url('../home_page/cssimg/menuBut700px.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -99,19 +99,19 @@
     height: 27px;
 }
 .books{
-    background-image: url('../img_main/book.svg');
+    background-image: url('../home_page/cssimg/book.svg');
 }
 .palette{
-    background-image: url('../img_main/palitra.svg');
+    background-image: url('../home_page/cssimg/palitra.svg');
 }
 .riveting{
-    background-image: url('../img_main/klepka.svg');
+    background-image: url('../home_page/cssimg/klepka.svg');
 }
 .key{
-    background-image: url('../img_main/key.svg');
+    background-image: url('../home_page/cssimg/key.svg');
 }
 .gun{
-    background-image: url('../img_main/gun.svg');
+    background-image: url('../home_page/cssimg/gun.svg');
 }
 .menu_links_boxs_links_link:hover{
     background-color: #4A4A4A;
@@ -127,7 +127,7 @@
 .buttonsInHeader_box_search{
     width: 21px;
     height: 21px;
-    background-image: url('../img_main/search.svg');
+    background-image: url('../home_page/cssimg/search.svg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -141,7 +141,7 @@
 .buttonsInHeader_box_usButton{
     width: 26px;
     height: 26px;
-    background-image: url('../img_main/kubsMenu.svg');
+    background-image: url('../home_page/cssimg/kubsMenu.svg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -190,7 +190,7 @@
     cursor: pointer;
 }
 .text_List_In_buttom_imgSvg{
-    background-image: url('../img_main/circlePlasArrow.svg');
+    background-image: url('../home_page/cssimg/circlePlasArrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 45px;
@@ -227,7 +227,7 @@
 .header2_boxImgSvg{
     width: 410px;
     height: 420px;
-    background-image: url('../img_main/faces.svg');
+    background-image: url('../home_page/cssimg/faces.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -307,28 +307,28 @@
     margin-bottom: 20px;
 }
 .AircraftIndustry1{
-    background-image: url('../img_main/aircraft1.svg');
+    background-image: url('../home_page/cssimg/aircraft1.svg');
 }
 .AircraftIndustry2{
-    background-image: url('../img_main/aircraft2.svg');
+    background-image: url('../home_page/cssimg/aircraft2.svg');
 }
 .AircraftIndustry3{
-    background-image: url('../img_main/aircraft3.svg');
+    background-image: url('../home_page/cssimg/aircraft3.svg');
 }
 .AircraftEngines{
-    background-image: url('../img_main/dvigLetAp.svg');
+    background-image: url('../home_page/cssimg/dvigLetAp.svg');
 }
 .infocommunicationTechnologies{
-    background-image: url('../img_main/infoCAMUN.svg');
+    background-image: url('../home_page/cssimg/infoCAMUN.svg');
 }
 .AircraftOperation1{
-    background-image: url('../img_main/ecspluatacia1.svg');
+    background-image: url('../home_page/cssimg/ecspluatacia1.svg');
 }
 .AircraftOperation2{
-    background-image: url('../img_main/ecspluatacia2.svg');
+    background-image: url('../home_page/cssimg/ecspluatacia2.svg');
 }
 .SeeAllPrograms{
-    background-image: url('../img_main/seeallspecialist.svg');
+    background-image: url('../home_page/cssimg/seeallspecialist.svg');
     text-align: center;
 }
 .standartStyleForimgSp:hover{
@@ -374,7 +374,7 @@
     flex-direction: column;
 }
 .Memo_ImgSvg{
-    background-image: url(../img_main/blueLemon.svg);
+    background-image: url(../home_page/cssimg/blueLemon.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -480,7 +480,7 @@
 .box_aboutIMO_text_Inf_INGSVG{
     width: 200px;
     height: 200px;
-    background-image: url('../img_main/Subtract.svg');
+    background-image: url('../home_page/cssimg/Subtract.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -495,7 +495,7 @@
 .box_aboutIMO_ImgSVG_background{
     width: 95%;
     height: 300px;
-    background-image: url('../img_main/wathercirc.svg');
+    background-image: url('../home_page/cssimg/wathercirc.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -668,13 +668,13 @@
     
 }
 .doYOUHAVEQUES_boxes1{
-    background-image: url(../img_main/doYOUHAVEQUES1.svg);
+    background-image: url(../home_page/cssimg/doYOUHAVEQUES1.svg);
 }
 .doYOUHAVEQUES_boxes2{
-    background-image: url(../img_main/doYOUHAVEQUES2.svg);
+    background-image: url(../home_page/cssimg/doYOUHAVEQUES2.svg);
 }
 .doYOUHAVEQUES_boxes3{
-    background-image: url(../img_main/doYOUHAVEQUES3.svg);
+    background-image: url(../home_page/cssimg/doYOUHAVEQUES3.svg);
 }
 .GetAdvice{
     width: 90%;
@@ -819,7 +819,7 @@
 .weHAve_new_boxStart_img1{
     width: 100%;
     height: 544px;
-    background-image: url(../img_main/Roket.svg);
+    background-image: url(../home_page/cssimg/Roket.svg);
 }
 .weHAve_new_boxStart_Inf{
     display: flex;
@@ -882,7 +882,7 @@
     min-width: 320px;
     width: 360px;
     height: 569px;
-    background-image: url(../img_main/r2.svg);
+    background-image: url(../home_page/cssimg/r2.svg);
     margin-bottom: 30px;
     
 }
@@ -890,21 +890,21 @@
     min-width: 320px;
     width: 360px;
     height: 569px;
-    background-image: url(../img_main/r3.svg);
+    background-image: url(../home_page/cssimg/r3.svg);
     margin-bottom: 30px;
 }
 .weHAve_new_CardLink_boxStart_img4{
     min-width: 320px;
     width: 360px;
     height: 569px;
-    background-image: url(../img_main/r4.svg);
+    background-image: url(../home_page/cssimg/r4.svg);
     margin-bottom: 30px;
 }
 .weHAve_new_CardLink_boxStart_img5{
     min-width: 320px;
     width: 360px;
     height: 569px;
-    background-image: url(../img_main/r5.svg);
+    background-image: url(../home_page/cssimg/r5.svg);
     margin-bottom: 30px;
 }
 .weHAve_new_CardLink_Inf_h3{
@@ -977,19 +977,19 @@
     background-position: center;
 }
 .footer_boxs_links_box_l1{
-    background-image: url(../img_main/tvit.svg);
+    background-image: url(../home_page/cssimg/tvit.svg);
 }
 .footer_boxs_links_box_l2{
-    background-image: url(../img_main/fecb.svg);
+    background-image: url(../home_page/cssimg/fecb.svg);
 }
 .footer_boxs_links_box_l3{
-    background-image: url(../img_main/YouTube.svg);
+    background-image: url(../home_page/cssimg/YouTube.svg);
 }
 .footer_boxs_links_box_l4{
-    background-image: url(../img_main/Artboard.svg);
+    background-image: url(../home_page/cssimg/Artboard.svg);
 }
 .footer_boxs_links_box_l5{
-    background-image: url(../img_main/Instagram.svg);
+    background-image: url(../home_page/cssimg/Instagram.svg);
 }
 .footer_FM{
     width: 100%;
@@ -1011,7 +1011,7 @@
     background-repeat:no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url(../img_main/footerLOGO.svg);
+    background-image: url(../home_page/cssimg/footerLOGO.svg);
     margin-right: 20px;
 }
 .footer_FM1_p{

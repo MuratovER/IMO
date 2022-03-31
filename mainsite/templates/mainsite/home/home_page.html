@@ -1,11 +1,6 @@
 {% extends 'mainsite/base.html' %}{% block content %}
 {% load static %}
-<html lang="ru">
-    <head>
 
-
-        <title>Главная страница</title>
-    </head>
     <body class="body">
         <div class="header">
             <div class="main_icon_logo">
@@ -57,7 +52,8 @@
                 <div class="hideMenu_in_Proffil">
                     <div class="hideMenu_in_Proffil_litleBlock">
                         <div class="hideMenu_in_Proffil_box hideMenu_in_Proffil_boxMURGBOTT">
-                            <img src="../img_main/birdKurlik.svg" alt="img" id="" class="hideMenu_in_Proffil_boxIMG ">
+
+                            <img src='{% static "mainsite/img/birdKurlik.svg" %}' alt="img" id="" class="hideMenu_in_Proffil_boxIMG ">
                             <div class="hideMenu_in_Proffil_box_INF">
                                 <div class="hideMenu_in_Proffil_box_INF_p marginbottom10px">
                                     <p class="hideMenu_in_Proffil_boxNAME textstule" id="Name">Сидоров Евгений</p>
@@ -69,7 +65,8 @@
                         </div>
                         <div class="hideMenu_in_Proffil_box">
                             <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
-                                <img src="../img_main/home-alt.svg" alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+                                <img src='{% static "mainsite/img/home-alt.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+
                             </div>
                             <div class="hideMenu_in_Proffil_LCProf_boxp">
                                 <p class="hideMenu_in_Proffil_LCProf_p textstule">Личный кабинет</p>
@@ -77,7 +74,8 @@
                         </div>
                         <div class="hideMenu_in_Proffil_box">
                             <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
-                                <img src="../img_main/Union.svg" alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+
+                                <img src='{% static "mainsite/img/Union.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
                             </div>
                             <div class="hideMenu_in_Proffil_LCProf_boxp">
                                 <p class="hideMenu_in_Proffil_LCProf_p textstule">Подать заявку </p>
@@ -85,7 +83,8 @@
                         </div>
                         <div class="hideMenu_in_Proffil_box">
                             <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
-                                <img src="../img_main/bell.svg" alt="noIMG" class="hideMenu_in_Proffil_LCProf_img" width="18px">
+
+                                <img src='{% static "mainsite/img/bell.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img" width="18px">
                             </div>
                             <div class="hideMenu_in_Proffil_LCProf_boxp">
                                 <p class="hideMenu_in_Proffil_LCProf_p textstule">Уведомления</p>
@@ -96,7 +95,8 @@
                         </div>
                         <div class="hideMenu_in_Proffil_box">
                             <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
-                                <img src="../img_main/log-in.svg" alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+
+                                <img src='{% static "mainsite/img/log-in.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
                             </div>
                             <div class="hideMenu_in_Proffil_LCProf_boxp">
                                 <p class="hideMenu_in_Proffil_LCProf_p textstule">Выйти</p>
@@ -123,13 +123,15 @@
                 <div class="header2_boxText_twoBTN">
                     <div class="header2_boxText_twoBTNBox margin_bottom20px">
                         <button class="header2_boxText_twoBTNBox_button">
-                            <img src="../img_main/circl!e.svg" class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
+
+                            <img src='{% static "mainsite/img/circl!e.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
                             Узнать больше
                         </button>
                     </div>
                     <div class="header2_boxText_twoBTNBox">
                         <button class="header2_boxText_twoBTNBox_button">
-                            <img src="../img_main/heart.svg" class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
+
+                            <img src='{% static "mainsite/img/heart.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
                             Хочу учиться здесь
                         </button>
                     </div>
@@ -147,7 +149,7 @@
                 <!-- <div class="header2_boxImgSvg">
 
                 </div> -->
-                <img src="../img_main/faces.svg" class="header2_boxImgSvg_Width50_IMG_fases">
+                <img src='{% static "mainsite/img/faces.svg" %}' class="header2_boxImgSvg_Width50_IMG_fases">
             </div>
         </div>
         <div class="trainingProgram">
@@ -231,15 +233,15 @@
                             <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                             </div>
                         </div>
@@ -257,12 +259,12 @@
                             <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
 
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <!-- <div class="Memo_box_textInf_contentTextsALinks_cont">
                                     <p class="Memo_box_textInf_p">Документы для оформления</p>
@@ -284,20 +286,21 @@
                             <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
 
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                             </div>
                         </div>
@@ -316,11 +319,12 @@
                             </div>
                             <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
                                 <div class="Memo_box_textInf_contentTextsALinks_cont conteinfor cursorP">
-                                    <img src="../img_main/FlagTat.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+
+                                    <img src='{% static "mainsite/img/FlagTat.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                     <p class="Memo_box_textInf_p colorfff marginLeft5px">О Казани</p>
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont conteinfor cursorP">
-                                    <img src="../img_main/logoKai.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/logoKai.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                     <p class="Memo_box_textInf_p colorfff marginLeft5px">Об Университете</p>
                                 </div>
                             </div>
@@ -339,15 +343,15 @@
                             <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Вопрос-ответ</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Связь с университетом</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Связь с университетом</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                             </div>
                         </div>
@@ -365,19 +369,19 @@
                             <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                                     <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                                 </div>
                             </div>
                         </div>
@@ -419,7 +423,7 @@
                 <div class="testABOUT">
                     <div class="box_aboutIMO_C_B C_B1">
                         <div class="box_aboutIMO_C_B_ConteIMg">
-                            <img src="../img_main/aboutIMO1.svg" class="box_aboutIMO_C_B_imgBIG">
+                            <img src='{% static "mainsite/img/aboutIMO1.svg" %}' class="box_aboutIMO_C_B_imgBIG">
                         </div>
                         <div class="box_aboutIMO_C_B_Conteh3">
                             <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
@@ -434,7 +438,8 @@
                     </div>
                     <div class="box_aboutIMO_C_B C_B3">
                         <div class="box_aboutIMO_C_B_ConteIMg">
-                            <img src="../img_main/aboutIMO3.svg" class="box_aboutIMO_C_B_img">
+
+                            <img src='{% static "mainsite/img/aboutIMO3.svg" %}' class="box_aboutIMO_C_B_img">
                         </div>
                         <div class="box_aboutIMO_C_B_Conteh3">
                             <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
@@ -453,7 +458,8 @@
                 <div class="testABOUT">
                     <div class="box_aboutIMO_C_B C_B2">
                         <div class="box_aboutIMO_C_B_ConteIMg">
-                            <img src="../img_main/aboutIMO2.svg" class="box_aboutIMO_C_B_img">
+
+                            <img src='{% static "mainsite/img/aboutIMO2.svg" %}' class="box_aboutIMO_C_B_img">
                         </div>
                         <div class="box_aboutIMO_C_B_Conteh3">
                             <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
@@ -468,7 +474,8 @@
                     </div>
                     <div class="box_aboutIMO_C_B C_B4">
                         <div class="box_aboutIMO_C_B_ConteIMg">
-                            <img src="../img_main/aboutIMO4.svg" class="box_aboutIMO_C_B_img">
+
+                            <img src='{% static "mainsite/img/aboutIMO4.svg" %}' class="box_aboutIMO_C_B_img">
                         </div>
                         <div class="box_aboutIMO_C_B_Conteh3">
                             <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
@@ -494,7 +501,7 @@
             <div class="imo_advantage_Boxinf_gridBox">
                 <div class="imo_advantage_Boxinf box3">
                     <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src="../img_main/box1.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
+                        <img src='{% static "mainsite/img/box1.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
                     </div>
                     <div class="imo_advantage_Boxinf_boxh3">
                         <h3 class="imo_advantage_Boxinf_3">Общежитие</h3>
@@ -505,7 +512,7 @@
                 </div>
                 <div class="imo_advantage_Boxinf box4">
                     <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src="../img_main/box2.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
+                        <img src='{% static "mainsite/img/box2.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
                     </div>
                     <div class="imo_advantage_Boxinf_boxh3">
                         <h3 class="imo_advantage_Boxinf_3">Комбинат питания</h3>
@@ -516,7 +523,7 @@
                 </div>
                 <div class="imo_advantage_Boxinf box5">
                     <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src="../img_main/box3.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
+                        <img src='{% static "mainsite/img/box3.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
                     </div>
                     <div class="imo_advantage_Boxinf_boxh3">
                         <h3 class="imo_advantage_Boxinf_3">КАИ “Олимп”</h3>
@@ -527,7 +534,7 @@
                 </div>
                 <div class="imo_advantage_Boxinf box6">
                     <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src="../img_main/box4.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
+                        <img src='{% static "mainsite/img/box4.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
                     </div>
                     <div class="imo_advantage_Boxinf_boxh3">
                         <h3 class="imo_advantage_Boxinf_3">Творчество</h3>
@@ -538,7 +545,7 @@
                 </div>
                 <div class="imo_advantage_Boxinf box7">
                     <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src="../img_main/box5.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
+                        <img src='{% static "mainsite/img/box5.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
                     </div>
                     <div class="imo_advantage_Boxinf_boxh3">
                         <h3 class="imo_advantage_Boxinf_3">Библиотека</h3>
@@ -549,7 +556,7 @@
                 </div>
                 <div class="imo_advantage_Boxinf box8">
                     <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src="../img_main/box6.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
+                        <img src='{% static "mainsite/img/box6.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
                     </div>
                     <div class="imo_advantage_Boxinf_boxh3">
                         <h3 class="imo_advantage_Boxinf_3">Центр переводов</h3>
@@ -656,8 +663,8 @@
                         <h3 class="weHAve_new_boxStart_Inf_h3">Консультация с профессионалами из IT</h3>
                     </div>
                     <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/calendar.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/show.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
                     </div>
                 </div>
             </div>
@@ -670,8 +677,8 @@
                         <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
                     </div>
                     <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/calendar.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/show.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
                     </div>
                 </div>
                 <div class="weHAve_new_CardLinkBox">
@@ -682,8 +689,8 @@
                         <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
                     </div>
                     <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/calendar.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/show.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
                     </div>
                 </div>
                 <div class="weHAve_new_CardLinkBox">
@@ -694,8 +701,8 @@
                         <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
                     </div>
                     <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/calendar.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/show.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
                     </div>
                 </div>
                 <div class="weHAve_new_CardLinkBox">
@@ -706,8 +713,8 @@
                         <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
                     </div>
                     <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/calendar.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src="../img_main/show.svg" alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
+                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
                     </div>
                 </div>
             </div>
@@ -722,39 +729,40 @@
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Высшее образование</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Среднее профессиональное образование</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}'width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Дополнительное образование</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Высшее образование</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Электронная информационно-образовательная среда</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Научно-техническая библиотека</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Военный учебный центр</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Грант «Новые кадры ОПК»</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Инклюзивное образование</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
             </div>
             <div class="footer_boxs_2 footer_boxs">
@@ -763,39 +771,39 @@
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">История</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">О КНИТУ-КАИ</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">КНИТУ-КАИ в рейтингах</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Структура</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Документы</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Безопасность</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Брендбук КНИТУ-КАИ</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Сведения об образовательной организации</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">Контакты</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
             </div>
             <div class="footer_boxs_3 footer_boxs">
@@ -810,11 +818,12 @@
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">minobrnauki.gov.ru</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+
+                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
                 <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
                     <p class="Memo_box_textInf_p nowVW">edu.gov.ru</p>
-                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
             </div>
             <div class="footer_boxs_4 footer_boxs">
@@ -863,12 +872,13 @@
 
             </div>
             <div class="serchON_box">
-                <img src="../img_main/search.svg" class="serchON_box_img" id="serchOnBoxImg">
+
+                <img src='{% static "mainsite/img/search.svg" %}' class="serchON_box_img" id="serchOnBoxImg">
                 <input type="text" class="serchON_box_input" id="serchONBoxInput" placeholder="|Напишите что-нибудь...">
             </div>
         </div>
-        <script src="../scripts_main/hidden_block_mainPage.js"></script>
-        <script src="../scripts_main/locationFile.js"></script>
-    </body>
+        <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'></script>
+
+        <script src='{% static "mainsite/js/home_page/locationFile.js" %}'></script>
 </html>
 {% endblock  %}
