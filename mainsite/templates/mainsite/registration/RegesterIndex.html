@@ -2,7 +2,9 @@
 {% block content %} 
 {%  load static %}
 
-
+<script>
+    
+</script>
 <div id="hend" class="indexEnterWindow">  
     <div class="main_block" id="main_block">
         <div class="main_block_blok_TopMenu_flexBox">
@@ -43,7 +45,8 @@
         </div>
         
 
-    <form method="" action="" class="main_block_form" id="">
+    <form method="post" action="" class="main_block_form" id="">
+        {% csrf_token %}
         <div class="main_block_form_flex_" >
             <div id="RegistrationChoice" class="RegistrationChoice" style="display: block;">
                 <!-- <div class="main_block_Buttom_ __">
@@ -85,7 +88,7 @@
                     </div>
                 </div>
                 <div class="regesterText_box">
-                    <p id="regesterText" class="regesterText LengText-ThereIsProfel">Уже есть профиль? <div><a id="" href="../вход/index.html" class="regesterTextLink LengText-login">Авторизуйтесь</a></div></p>
+                    <p id="regesterText" class="regesterText LengText-ThereIsProfel">Уже есть профиль? <div><a id="" href="{% url 'login' %}" class="regesterTextLink LengText-login">Авторизуйтесь</a></div></p>
                 </div>
             </div>
             
@@ -102,11 +105,12 @@
                             <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                             <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
                             <div class="main_block_form_textName_flexBox">
-                                <input type="text" class="main_block_form_textName main_block_form_input_1 InputFieldName" id="InputFieldName" placeholder="Придумайте имя пользователя" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
+                                {{ form.username}} 
+                                            
                             </div>
                             <div class="main_block_form_textPassword_box_flexBox">
                                 <div class="main_block_form_textPassword_box">
-                                    <input type="password" class="main_block_form_textPassword main_block_form_input_1 InputFieldPassword" id="InputFieldPassword" placeholder="Придумайте пароль" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
+                                    {{ form.password }}
                                     <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword'))"></a>
                                 </div>
                             </div>
@@ -129,11 +133,11 @@
                         <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                         <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
                         <div class="main_block_form_flex">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallYou" id="InputFieldMiddleValidation" placeholder="Как к Вам обращаться?" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectYourCountry" id="InputFieldCountryNameValidation" placeholder="Выберите Вашу страну" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-yourLifeSity" id="InputFieldYourNativeSity" placeholder="Ваш родной город" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
-                            <input type="tel" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-yourNumberPhone" id="InputFieldYourNumberPhone" placeholder="Ваш номер телефона" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
-                            <input type="email" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-email" id="InputFieldEmailAddress" placeholder="Адрес электронной почты" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
+                            {{ form.name }}
+                            {{ form.country }}
+                            {{ form.homecity }}
+                            {{ form.phone }}
+                            {{ form.email }}
                             <div class="child_element_flex">
                                 <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction(2,this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
                             </div>
@@ -141,6 +145,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" style="display: none;">
                 <div class="main_box_but_form_Iamastud3" id="but_form_Iamastud2">
                     <div class="main_box_but_form_Iamastud_FORM2">
@@ -230,11 +235,11 @@
                             <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                             <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
                             <div class="main_block_form_textName_flexBox">
-                                <input type="text" class="main_block_form_textName main_block_form_input_1 InputFieldName" id="InputFieldName1" placeholder="Придумайте имя пользователя" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
+                               {{ form.username }}
                             </div>
                             <div class="main_block_form_textPassword_box_flexBox">
                                 <div class="main_block_form_textPassword_box">
-                                    <input type="password" class="main_block_form_textPassword main_block_form_input_1 InputFieldPassword" id="InputFieldPassword1" placeholder="Придумайте пароль" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
+                                    {{ form.password}}
                                     <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword1'))"></a>
                                 </div>
                             </div>
@@ -258,11 +263,11 @@
                         <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                         <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
                         <div class="main_block_form_flex">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallStud" id="InputFieldMiddleValidationStud1" placeholder="Как зовут студента?" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectCountryStud" id="InputFieldCountryNameValidationStud1" placeholder="Страна студента" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-LifeSityStud" id="InputFieldYourNativeSityStud1" placeholder="Родной город студента" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-NumberPhoneStud" id="InputFieldYourNumberPhoneStud1" placeholder="Номер телефона студента (при наличии)" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-emailStud" id="InputFieldEmailAddressStud1" placeholder="Адрес электронной почты студента (при наличии)" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
+                            {{ form.name }}
+                            {{ form.coutry }}
+                            {{ form.homecity }}
+                            {{ form.phone}}
+                            {{ form.email}}
                             <div class="child_element_flex">
                                 <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction1(3,this,boxes = document.querySelectorAll('.FormBlockHideFunction1'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
                             </div>
@@ -282,10 +287,10 @@
                         <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                         <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Поговорим о Вас</p>
                         <div class="main_block_form_flex">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallYou" id="InputFieldMiddleValidationPer1" placeholder="Как к Вам обращаться?" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 lengText-whoAreYouForApplicants" id="InputFieldCountryNameValidationPer1" placeholder="Кем Вы являетесь для абитуриента?" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-email" id="InputFieldYourNumberPhonePer1" placeholder="Ваша электронная почта" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-yourNumberPhone" id="InputFieldEmailAddressPer1" placeholder="Ваш номер телефона" onmousedown="mouseUp1(this)" onmouseup="mouseUp1(this)" onchange="mouseUp1(this)" onmouseover="mouseUp1(this)">
+                            {{ form.name_applicant }}
+                            {{ form.name_delegate }}
+                            {{ form.delegate_email }}
+                            {{ form.delegate_phone }}
                             <div class="child_element_flex">
                                 <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction1(4,this,boxes = document.querySelectorAll('.FormBlockHideFunction1'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
                             </div>
@@ -409,11 +414,11 @@
                             <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                             <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
                             <div class="main_block_form_textName_flexBox">
-                                <input type="text" class="main_block_form_textName main_block_form_input_1 InputFieldName" id="InputFieldName3" placeholder="Придумайте имя пользователя" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
+                               {{ form.username }}
                             </div>
                             <div class="main_block_form_textPassword_box_flexBox">
                                 <div class="main_block_form_textPassword_box">
-                                    <input type="password" class="main_block_form_textPassword main_block_form_input_1 InputFieldPassword" id="InputFieldPassword4" placeholder="Придумайте пароль" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
+                                    {{ form.password}}
                                     <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword4'))"></a>
                                 </div>
                             </div>
@@ -436,11 +441,16 @@
                         <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                         <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
                         <div class="main_block_form_flex">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallStud" id="InputFieldMiddleValidationStud3" placeholder="Как зовут студента?" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
+                            <!--input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallStud" id="InputFieldMiddleValidationStud3" placeholder="Как зовут студента?" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
                             <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectCountryStud" id="InputFieldCountryNameValidationStud3" placeholder="Страна студента" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
                             <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-LifeSityStud" id="InputFieldYourNativeSityStud3" placeholder="Родной город студента" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
                             <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-NumberPhoneStud" id="InputFieldYourNumberPhoneStud3" placeholder="Номер телефона студента (при наличии)" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-emailStud" id="InputFieldEmailAddressStud3" placeholder="Адрес электронной почты студента (при наличии)" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
+                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-emailStud" id="InputFieldEmailAddressStud3" placeholder="Адрес электронной почты студента (при наличии)" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)"-->
+                            {{ form.name }}
+                            {{ form.coutry }}
+                            {{ form.homecity }}
+                            {{ form.phone}}
+                            {{ form.email}}
                             <div class="child_element_flex">
                                 <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction3(3,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
                             </div>
@@ -460,11 +470,16 @@
                         <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                         <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Поговорим о Вас</p>
                         <div class="main_block_form_flex">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-NameOfTheorganizationOrg" id="InputFieldMiddleValidationPer3" placeholder="Название организации" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
+                            <!--input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-NameOfTheorganizationOrg" id="InputFieldMiddleValidationPer3" placeholder="Название организации" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
                             <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-typeOfOrganizationOrg" id="InputFieldCountryNameValidationPer3" placeholder="Вид деятельность организации" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
                             <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCallyouOrg" id="InputFieldYourCanYouCollPer3" placeholder="Как к Вам обращаться?" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
                             <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-yourNumberPhoneOrg" id="InputFieldYourNumberPhonePer3" placeholder="Ваш номер телефона" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-YourEmailadressOrg" id="InputFieldEmailAddressPer3" placeholder="Ваш адрес электронной почты" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
+                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-YourEmailadressOrg" id="InputFieldEmailAddressPer3" placeholder="Ваш адрес электронной почты" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)"-->
+                            {{ form.name_company }}
+                            {{ form.company_business}}
+                            {{ form.name_applicant }}
+                            {{ form.company_email}}
+                            {{ form.company_phone}}
                             <div class="child_element_flex">
                                 <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction3(4,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
                             </div>
@@ -558,7 +573,7 @@
                                 <p id="loginText" class="loginText_box LengText-textRegesterSoglash1">Нажимая на кнопку “Зарегистрироваться” вы соглашаетесь с правилами<a id="" href="#" class="loginText_box_a LengText-textRegesterSoglash2">Политики конфидициальности</a></p>
                             </div>
                             <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1" id="InputEnterButtom" value="Зарегистрироваться" onclick="FormBlockHideFunction3(5,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))">
+                                <input type="submit" class="main_block_form_button main_block_form_input_1" id="InputEnterButtom" value="Зарегистрироваться" onclick="FormBlockHideFunction3(5,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))">
                             </div>
                         </div>
                     </div>
@@ -592,14 +607,6 @@
         </div>
     </div>
     
-
-    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"> </script>
-    <script src="{% static 'mainsite/js/registration/Them.js' %}"> </script>
-    <script src="{% static 'mainsite/js/registration/ChangeEay.js' %}"> </script>
-    <script src="{% static 'mainsite/js/registration/mouseChange.js' %}"> </script>
-    <script src="{% static 'mainsite/js/registration/translate.js' %}"> </script>
-    <script src="{% static 'mainsite/js/registration/changePass.js' %}"> </script>
-    <script src="{% static 'mainsite/js/registration/regesterBUT.js' %}"> </script>
 
 </div>
 

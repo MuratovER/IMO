@@ -1,0 +1,103 @@
+{% extends 'mainsite/base.html' %} 
+{% block content %} 
+{%  load static %}
+
+<div id="hend" class="indexEnterWindow">
+    <div class="main_block" id="main_block">
+        <div class="main_block_blok_TopMenu_flexBox">
+            <div class="main_block_blok_TopMenu">
+                <a href="#" class="main_block_blok_TopMenu_Logo"> <img id="imgLogo" src="{% static 'mainsite/img/mainICON_1.svg' %}"  style="background-repeat: no-repeat;
+                                                                                                        background-size: contain;
+                                                                                                        width: 56px;
+                                                                                                        height: 56px;
+                                                                                                        " alt="лого нет"></a> <!--cursor:url(img/cursor_w.svg) 2 2 ,auto;-->
+                <div class="main_block_blok_TopMenu_Addition">
+                    <div class="main_block_blok_TopMenu_Addition_theme_box"  style="display: none;">
+                        <input type="button" class="main_block_blok_TopMenu_Addition_theme_" id="theme" onclick="clickThemeFunction()">
+                    </div>
+                    <div class="Addition_block_langs">
+                        <input type="button" class="main_block_blok_TopMenu_Addition_langs_1 Lang-name" id="Langs" value="RU" onclick="clickHeddenFuncton()">
+                        <div class="hidden_block_1" id="hidden_block">
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img RU" id="hidden_block_id1" onmouseover="onmouseover_1(this)" onmouseout="onmouseout_1_1(this)" ><div id="Ru" class="_block_RU"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div><!--hidden_block_leng_1_img-->
+                                <div class="hidden_block_leng_1_RU" id="HiddenBlockLengRU" >Русский</div>
+                            </div>
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img ENG" id="hidden_block_id2" onmouseover="onmouseover_2(this)" onmouseout="onmouseout_2_2(this)" ><div id="Eng" class="_block_ENG"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_ENG  _eng" id="HiddenBlockLengENG" >English</div>
+                            </div>
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img Chinese" id="hidden_block_id3" onmouseover="onmouseover_3(this)" onmouseout="onmouseout_3_3(this)" ><div id="中國人" class="_block_Chinese"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_Chinese _Chinese" id="HiddenBlockLengChinese" >中國人</div>
+                            </div>
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img Spanish" id="hidden_block_id4" onmouseover="onmouseover_4(this)" onmouseout="onmouseout_4_4(this)" ><div id="Spanish" class="_block_Spanish"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_Spanish" id="HiddenBlockLengSpanish" >español</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_block_Buttom_FlexBox">
+            <div class="main_block_Buttom_ main_block_Buttom_THEtest">
+                <div class="main_block_Buttom_Arrow" id="arrow"></div>
+                <a href="forgotPAss.html" class="main_block_Buttom_buttomExit LengText-back" id="buttomExit">назад</a>
+            </div>
+        </div>
+        <form method="post" action="" class="main_block_form" id="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="main_block_form_flex_">
+                <h1 id="TextLogin" class="main_block_form_h1 LengText-authorization">Авторизация</h1>
+                <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-DataEntryPrompt">Введите данные своей учетной записи</p>
+            <div class="main_block_form_flex">
+                <div class="main_block_form_textPassword_boxFlexebox">
+                    <div class="main_block_form_textUsername_box main_block_form_textUsername_boxTHEtest">
+                        <input type="text" class="main_block_form_textName main_block_form_input_1 main_block_form_input_1THEtest2 LengText-InputFieldNameLogin" id="InputFieldName" placeholder="Имя пользователя" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" onchange="mouseUpInLogin(this)">
+                    </div>
+                </div>
+                <div class="main_block_form_textPassword_boxFlexebox">
+                    <div class="main_block_form_textPassword_box main_block_form_textPassword_boxTHetest">
+                        <input type="password" class="main_block_form_textPassword main_block_form_input_1 main_block_form_input_1THEtest LengText-InputFieldPasswordLogin" id="InputFieldPassword" placeholder="Пароль" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)">
+                        <a class="informationEayTHEtest" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword'))"></a>
+                    </div>
+                </div>
+                <div class="child_element_flexTHEtest">
+                    <div class="child_element_flex child_element_flexTHEtest2">
+                        <input type="button" class="main_block_form_button main_block_form_input_1 main_block_form_input_1THEtest3" id="InputEnterButtom" value="Авторизоваться">
+                    </div>
+                </div>
+                <div class="child_element_flex">
+                    <a class="main_block_form_ForgotPassword_1" id="ForgotPassword" href="forgotPAss.html" target="">Я не помню пароль</a>
+                </div>
+            </div>
+            <div class="main_block_form_TextSelection">
+                <div class="main_block_form_TextSelection_block">
+                    <hr class="main_block_form_TextSelection_HR" id="clorHR_B81">
+                    <p class="main_block_form_TextSelection_text LengText-TwoDashes" id="clorHR_B80">Или</p>
+                    <hr class="main_block_form_TextSelection_HR" id="clorHR_B82">   
+                </div>
+            </div>
+            <div class="regesterText_box">
+                <p id="regesterText" class="regesterText LengText-Question-vperTut">Впервые тут? <div><a id="" href="{% url 'signup' %}" class="regesterTextLink LengText-RegisterSentence-Auto">Зарегистрируйтесь</a></div></p>
+            </div>
+        </div>
+        </form>
+        <div class="main_block_footer">
+            <div class="main_block_footer_boxs">
+                <div class="main_block_footer_box">
+                    <a class="main_block_footer_box_text1 LengText-PrivacyPolicy" id="footer_box_text1" href="#">Политика конфидециальности</a>
+                </div>
+                <div class="main_block_footer_box">
+                    <a class="main_block_footer_box_text1 LengText-TermsOfUse" id="footer_box_text2" href="#">Условия пользования</a>
+                </div>
+            </div>
+            <div class="main_block_footer_box_text12 lawTextKai LengText-WhiRigh">
+                ©2021 КНИТУ КАИ. Все права защищены
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %} 

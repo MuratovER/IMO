@@ -1,15 +1,22 @@
-from mainsite.forms import SignUpForm
+from urllib import request
+from django.views import View
+from mainsite.forms import SignUpFormDelegate, SignUpFormStudent, SignUpForAgency 
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import logout
 from django.shortcuts import render
 
 
 def home_page(request):
     return render(request, 'mainsite/home/home_page.html')
 
-
+#login view
+def login_view(request):
+    return render(request, 'mainsite/registration/LoginIndex.html')
+    
 #signup view
 def signup_view(request):
     '''вьюха с логикой регистрации'''
-    form = SignUpForm(request.POST)
+    form = SignUpFormDelegate(request.POST)
     if form.is_valid():
         user = form.save()
         user.refresh_from_db()
@@ -23,5 +30,12 @@ def signup_view(request):
         login(request, user)
         return redirect('user_page')
     else:
-        form = SignUpForm()
-    return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})     
+        form = SignUpFormDelegate()
+    return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})
+
+#logout view
+def logout_view(request):
+    return render(request, 'mainsite/home/home_page.html')
+
+
+
