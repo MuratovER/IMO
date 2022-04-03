@@ -134,9 +134,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 WSGI_APPLICATION = 'imo.wsgi.application'
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-# DATABASES['default'].update(db_from_env)
-DATABASES.update(default=db_from_env)
-# DATABASES['default']=db_from_env
+
+DATABASES['default'] = dj_database_url.config(conn_max_age=500)
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# # DATABASES['default'].update(db_from_env)
+# DATABASES.update(default=db_from_env)
+# # DATABASES['default']=db_from_env
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
