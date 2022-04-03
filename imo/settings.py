@@ -78,12 +78,35 @@ TEMPLATES = [
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'imodb',
+        'USER': 'imo',
+        'PASSWORD': 'imoproject',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'mydb',
+#         'USER': 'myuser',
+#         'PASSWORD': 'mypass',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
 WHITENOISE_USE_FINDERS = True
 
 
@@ -140,8 +163,10 @@ WSGI_APPLICATION = 'imo.wsgi.application'
 
 # DATABASES['default'] = dj_database_url.config(conn_max_age=500)
 # db_from_env = dj_database_url.config(conn_max_age=500)
-# # DATABASES['default'].update(db_from_env)
+# DATABASES['default'].update(db_from_env)
 # DATABASES.update(default=db_from_env)
-# # DATABASES['default']=db_from_env
+# DATABASES['default']=db_from_env
 
 
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
