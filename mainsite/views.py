@@ -1,21 +1,38 @@
 from urllib import request
-from django.views import View
 from mainsite.forms import SignUpFormDelegate, SignUpFormStudent, SignUpForAgency
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import render, redirect
+
+from mainsite.models import Profile, Post
 
 
 def home_page(request):
     return render(request, 'mainsite/home/home_page.html')
 
 
-# login view
 def login_view(request):
     return render(request, 'mainsite/registration/LoginIndex.html')
 
 
-# signup view
+def profile_view(request):
+    profile = Profile.objects.get(user=request.user)
+
+    ctx = {
+        'profile': profile
+    }
+    return render(request, 'mainsite/profile/profile.html', ctx)
+
+
+def news_view(request):
+    posts = Post.objects.all()
+
+    ctx = {
+        'posts': posts
+    }
+    return render(request, 'mainsite/home/news.html', ctx)
+
+
 def signup_view(request):
     '''вьюха с логикой регистрации'''
     form = SignUpFormDelegate(request.POST)
@@ -34,6 +51,5 @@ def signup_view(request):
     return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})
 
 
-# logout view
 def logout_view(request):
     return render(request, 'mainsite/home/home_page.html')
