@@ -12,7 +12,13 @@ def home_page(request):
 #login view
 def login_view(request):
     return render(request, 'mainsite/registration/LoginIndex.html')
+
+def PrivacyPolicy_view(request):
+    return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
     
+def EnteringIMO_view(request):
+    return render(request, 'mainsite/enteringIMO/EnteringIMO.html')
+
 #signup view
 def signup_view(request):
     '''вьюха с логикой регистрации'''

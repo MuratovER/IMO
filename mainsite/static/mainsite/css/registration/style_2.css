@@ -518,7 +518,7 @@
 }
 .box_aboutIMO_C_B_img{
     width: 100%;
-    height: 90%;
+    /* height: 90%; */
     max-width: 755px;
     max-height: 620px;
     object-fit: cover;

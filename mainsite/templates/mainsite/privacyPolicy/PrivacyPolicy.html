@@ -1,0 +1,432 @@
+{% extends 'mainsite/base.html' %}{% block content %}
+{% load static %}
+
+    <body class="body">
+        <div class="header">
+            <div class="main_icon_logo">
+            </div>
+            <div class="menu_links_boxs">
+                <div class="menu_links_box_displayWhere700px">
+                    <div class="menu_links_box_iconWhereDisplay700px"><div class="menu_links_box_iconWhereDisplay700pxImgsvg"></div></div>
+                    <div class="menu_links_box_text700px_box"><p class="menu_links_box_text700px">Меню</p></div>
+                </div>
+                <div class="menu_links_boxs_links">
+                    <div class="menu_links_boxs_links_link">
+                        <div class="menu_links_boxs_links_link_icon"> <div class="standartStyleForimg books"></div></div>
+                        <div class="menu_links_boxs_links_link_iconText_box"><p class="menu_links_boxs_links_link_iconText">#поступающим</p></div>
+                    </div>
+                    <div class="menu_links_boxs_links_link">
+                        <div class="menu_links_boxs_links_link_icon"><div class="standartStyleForimg palette"></div></div>
+                        <div class="menu_links_boxs_links_link_iconText_box"><p class="menu_links_boxs_links_link_iconText">#обучение</p></div>
+                    </div>
+                    <div class="menu_links_boxs_links_link">
+                        <div class="menu_links_boxs_links_link_icon"><div class="standartStyleForimg riveting"></div></div>
+                        <div class="menu_links_boxs_links_link_iconText_box"><p class="menu_links_boxs_links_link_iconText">#студентам</p></div>
+                    </div>
+                    <div class="menu_links_boxs_links_link">
+                        <div class="menu_links_boxs_links_link_icon"><div class="standartStyleForimg key"></div></div>
+                        <div class="menu_links_boxs_links_link_iconText_box"><p class="menu_links_boxs_links_link_iconText">вопрос-ответ</p></div>
+                    </div>
+                    <div class="menu_links_boxs_links_link">
+                        <div class="menu_links_boxs_links_link_icon"><div class="standartStyleForimg gun"></div></div>
+                        <div class="menu_links_boxs_links_link_iconText_box"><p class="menu_links_boxs_links_link_iconText">#новости</p></div>
+                    </div>
+                    <div class="buttonsInHeader_box displayNoneWhere displayon clickOnserch">
+                        <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search" >
+                        <div class="buttonsInHeader_box_search_TextBox">
+                            <p class="buttonsInHeader_box_search_Text">Поиск</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsInHeader">
+                <div class="buttonsInHeader_box displayNoneWhere displayof clickOnserch">
+                    <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search" >
+                </div>
+                <div class="buttonsInHeader_box">
+                    <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP" id="lang" value="RU">
+                </div>
+                <div class="buttonsInHeader_box">
+                    <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton">
+                </div>
+                <div class="hideMenu_in_Proffil">
+                    <div class="hideMenu_in_Proffil_litleBlock">
+                        <div class="hideMenu_in_Proffil_box hideMenu_in_Proffil_boxMURGBOTT">
+
+                            <img src='{% static "mainsite/img/birdKurlik.svg" %}' alt="img" id="" class="hideMenu_in_Proffil_boxIMG ">
+                            <div class="hideMenu_in_Proffil_box_INF">
+                                <div class="hideMenu_in_Proffil_box_INF_p marginbottom10px">
+                                    <p class="hideMenu_in_Proffil_boxNAME textstule" id="Name">Сидоров Евгений</p>
+                                </div>
+                                <div class="hideMenu_in_Proffil_box_INF_p">
+                                    <p class="hideMenu_in_Proffil_boxEmail textstule" id="Email">sidorovevgenii@stud.kai.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+                                <img src='{% static "mainsite/img/home-alt.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <p class="hideMenu_in_Proffil_LCProf_p textstule">Личный кабинет</p>
+                            </div>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+
+                                <img src='{% static "mainsite/img/Union.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <p class="hideMenu_in_Proffil_LCProf_p textstule">Подать заявку </p>
+                            </div>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+
+                                <img src='{% static "mainsite/img/bell.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img" width="18px">
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <p class="hideMenu_in_Proffil_LCProf_p textstule">Уведомления</p>
+                            </div>
+                        </div>
+                        <div class="footer_boxHR noMargin">
+                            <hr class="footer_hr"/>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+
+                                <img src='{% static "mainsite/img/log-in.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <p class="hideMenu_in_Proffil_LCProf_p textstule">Выйти</p>
+                            </div>
+                        </div>
+
+                    <!-- кнопка смены темы -->
+                        <div class="hideMenu_in_Proffil_box_buttHThem">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="buttonsInHeader_box">
+                    <div class="buttonsInHeader_box_notifications" id="notifications"></div>
+                </div> -->
+
+            </div>
+        </div>
+        <div class="main_PrivacyPolicy">
+            <div class="main_PrivacyPolicy_title">
+                <h1 class="main_PrivacyPolicy_h1">
+                    Политика конфидециальности
+                </h1>
+            </div>
+            <div class="main_PrivacyPolicy_box_h2">
+                <h2 class="main_PrivacyPolicy_h2">
+                    Мы с вами договорились о следующем
+                </h2>
+            </div>
+            <div class="main_PrivacyPolicy_box_p">
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Не следует, однако, забывать о том, что постоянное информационно-техническое обеспечение нашей деятельности обеспечивает актуальность новых предложений! Не следует, однако, забывать о том, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание форм воздействия? 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Повседневная практика показывает, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для экономической целесообразности принимаемых решений. Соображения высшего порядка, а также сложившаяся структура организации напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач. 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    С другой стороны повышение уровня гражданского сознания способствует повышению актуальности позиций, занимаемых участниками в отношении поставленных задач! Разнообразный и богатый опыт реализация намеченного плана развития требует определения и уточнения ключевых компонентов планируемого обновления. Соображения высшего порядка, а также сложившаяся структура организации играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям. Повседневная практика показывает, что новая модель организационной деятельности требует от нас анализа соответствующих условий активизации.
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Практический опыт показывает, что дальнейшее развитие различных форм деятельности требует от нас анализа соответствующих условий активизации. Дорогие друзья, постоянный количественный рост и сфера нашей активности позволяет выполнить важнейшие задания по разработке ключевых компонентов планируемого обновления. 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Таким образом, новая модель организационной деятельности в значительной степени обуславливает создание системы масштабного изменения ряда параметров! Задача организации, в особенности же выбранный нами инновационный путь требует от нас анализа новых предложений. Не следует, однако, забывать о том, что курс на социально-ориентированный национальный проект влечет за собой процесс внедрения и модернизации форм воздействия. Задача организации, в особенности же постоянное информационно-техническое обеспечение нашей деятельности обеспечивает актуальность дальнейших направлений развитая системы массового участия? Повседневная практика показывает, что реализация намеченного плана развития создаёт предпосылки качественно новых шагов для новых предложений. Практический опыт показывает, что сложившаяся структура организации создаёт предпосылки качественно новых шагов для существующих финансовых и административных условий. 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Дорогие друзья, реализация намеченного плана развития обеспечивает широкому кругу специалистов участие в формировании всесторонне сбалансированных нововведений. Значимость этих проблем настолько очевидна, что постоянное информационно-техническое обеспечение нашей деятельности обеспечивает широкому кругу специалистов участие в формировании системы масштабного изменения ряда параметров? 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Не следует, однако, забывать о том, что реализация намеченного плана развития обеспечивает актуальность направлений прогрессивного развития.
+                </p>
+                <!-- <p class="main_PrivacyPolicy_p">
+
+                </p> -->
+            </div>
+            <div class="main_PrivacyPolicy_box_h2">
+                <h2 class="main_PrivacyPolicy_h2 margin_top70px">
+                    1. Общие положения
+                </h2>
+            </div>
+            <div class="main_PrivacyPolicy_box_p">
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развитая системы массового участия. Равным образом курс на социально-ориентированный национальный проект позволяет оценить значение системы обучения кадров, соответствующей насущным потребностям. 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Дорогие друзья, социально-экономическое развитие требует от нас системного анализа позиций, занимаемых участниками в отношении поставленных задач!
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Значимость этих проблем настолько очевидна, что курс на социально-ориентированный национальный проект играет важную роль в формировании системы обучения кадров, соответствующей насущным потребностям. 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Не следует, однако, забывать о том, что постоянное информационно-техническое обеспечение нашей деятельности обеспечивает актуальность новых предложений! Не следует, однако, забывать о том, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание форм воздействия? 
+                </p>
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Повседневная практика показывает, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для экономической целесообразности принимаемых решений. Соображения высшего порядка, а также сложившаяся структура организации напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач. 
+                </p>
+            </div>
+            <div class="main_PrivacyPolicy_box_h2">
+                <h2 class="main_PrivacyPolicy_h2 margin_top70px">
+                    2. Обучающие программы.
+                </h2>
+            </div>
+            <div class="main_PrivacyPolicy_box_p">
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Не следует, однако, забывать о том, что постоянное информационно-техническое обеспечение нашей деятельности обеспечивает актуальность новых предложений! Не следует, однако, забывать о том, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание форм воздействия? 
+                </p>
+                <div class="main_PrivacyPolicy_box_h3">
+                    <h3 class="main_PrivacyPolicy_h3 margin_top70px">
+                        2.1. Экзамен.
+                    </h2>
+                </div>
+                <p class="main_PrivacyPolicy_p">
+                    Повседневная практика показывает, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для экономической целесообразности принимаемых решений. Соображения высшего порядка, а также сложившаяся структура организации напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач. 
+                </p>
+                <div class="main_PrivacyPolicy_box_h3">
+                    <h3 class="main_PrivacyPolicy_h3 margin_top70px">
+                        2.2. Экзамен.
+                    </h2>
+                </div>
+                <p class="main_PrivacyPolicy_p">
+                    Повседневная практика показывает, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для экономической целесообразности принимаемых решений. Соображения высшего порядка, а также сложившаяся структура организации напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач. 
+                </p>
+            </div>
+            <div class="main_PrivacyPolicy_box_h2">
+                <h2 class="main_PrivacyPolicy_h2 margin_top70px">
+                    Какие документы требуются для поступления?
+                </h2>
+            </div>
+            <div class="main_PrivacyPolicy_box_p">
+                <p class="main_PrivacyPolicy_p margin_top50px">
+                    Не следует, однако, забывать о том, что постоянное информационно-техническое обеспечение нашей деятельности обеспечивает актуальность новых предложений! Не следует, однако, забывать о том, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание форм воздействия? 
+                </p>
+            </div>
+            <div class="main_PrivacyPolicy_list_box">
+                <div class="main_PrivacyPolicy_list_box_item margin_top50px">
+                    <img src="../../../static/mainsite/img/notes.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Заявление абитуриента (подается онлайн).</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/notes.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Скан-копия паспорта и его нотариально заверенный перевод на русский язык (прикрепляется при подаче заявления).</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/notes.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Скан-копия документа о предыдущем образовании с приложением и его нотариально заверенный перевод на русский язык (прикрепляется при подаче заявления).</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/notes.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Скан-копии документов об образовании с указанием изученных предметов и полученных по ним оценок (баллов); учащиеся школ представляют справку об обучении в выпускном классе с оценками за последнее полугодие.</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/notes.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Скан-копии свидетельств о рождении абитуриента и одного из родителя (соотечественники).</p>
+                </div>
+            </div>
+            <div class="main_PrivacyPolicy_bootoms">
+                <div class="main_PrivacyPolicy_bootom_item">
+                    <img src="../../../static/mainsite/img/print.svg" alt="" class="main_PrivacyPolicy_bootom_item_img">
+                    <p class="main_PrivacyPolicy_bootom_item_p main_PrivacyPolicy_p">Печатать</p>
+                </div>
+                <div class="main_PrivacyPolicy_bootom_item margin_left20px">
+                    <img src="../../../static/mainsite/img/download.svg" alt="" class="main_PrivacyPolicy_bootom_item_img">
+                    <p class="main_PrivacyPolicy_bootom_item_p main_PrivacyPolicy_p">Скачать</p>
+                </div>
+            </div>
+            <div class="main_PrivacyPolicy_list_box">
+                <div class="main_PrivacyPolicy_list_box_item margin_top50px">
+                    <img src="../../../static/mainsite/img/worning.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Нарушение требований охраны труда, содержащихся в федеральных законах
+                        и иных нормативных правовых актах, предусматривает штраф от 50 000 руб. до 80 000 руб.</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/worning.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">При допуске сотрудника к исполнению трудовых обязанностей без прохождения обучения и проверки знаний по охране труда на компанию налагается штраф от 110 000 руб. до 130 000 руб. за каждого необученного сотрудника.</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/worning.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Нарушение порядка проведения оценки условий труда на рабочих местах или её непроведение грозит штрафом от 
+                        60 000 руб. до 80 000 руб. за каждое рабочее место.</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/worning.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">Необеспечение работников средствами индивидуальной защиты предусматривает штраф от 130 000 руб. до 150 000 руб.</p>
+                </div>
+                <div class="main_PrivacyPolicy_list_box_item">
+                    <img src="../../../static/mainsite/img/worning.svg" alt="noImg" class="main_PrivacyPolicy_list_box_item_img">
+                    <p class="main_PrivacyPolicy_list_box_item_p main_PrivacyPolicy_p">При отсутствии оценки профессиональных рисков на рабочих местах в организации, выписывается штраф от 50 000 руб. до 80 000 руб.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_boxHR">
+            <hr class="footer_hr"/>
+        </div>
+        <div class="footer">
+            <div class="footer_boxs_1 footer_boxs">
+                <div class="footer_boxs_boxH3">
+                    <h3 class="footer_boxs_H3">Образование</h3>
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Высшее образование</p>
+
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Среднее профессиональное образование</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}'width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Дополнительное образование</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Высшее образование</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Электронная информационно-образовательная среда</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Научно-техническая библиотека</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Военный учебный центр</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Грант «Новые кадры ОПК»</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Инклюзивное образование</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+            </div>
+            <div class="footer_boxs_2 footer_boxs">
+                <div class="footer_boxs_boxH3">
+                    <h3 class="footer_boxs_H3">Университет</h3>
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">История</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">О КНИТУ-КАИ</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">КНИТУ-КАИ в рейтингах</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Структура</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Документы</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Безопасность</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Брендбук КНИТУ-КАИ</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Сведения об образовательной организации</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">Контакты</p>
+                    <img src='{% static "mainsite/img/iconLing.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+            </div>
+            <div class="footer_boxs_3 footer_boxs">
+                <div class="footer_boxs_boxH3">
+                    <h3 class="footer_boxs_H3">Контактная информация</h3>
+                </div>
+                <div class="footer_boxs_textadr">
+                    <p class="footer_boxs_textadrp">Юридический адрес: 420111 г. Казань, ул. К. Маркса, 10</p>
+                </div>
+                <div class="footer_boxs_textadr">
+                    <p class="footer_boxs_textadrp">Адрес приёмной комиссии и приёма документов: 420015, г. Казань, ул. Б. Красная, 55</p>
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">minobrnauki.gov.ru</p>
+
+                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                    <p class="Memo_box_textInf_p nowVW">edu.gov.ru</p>
+                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+                </div>
+            </div>
+            <div class="footer_boxs_4 footer_boxs">
+                <div class="footer_boxs_boxH3">
+                    <h3 class="footer_boxs_H3">+7 (843) 231-01-09</h3>
+                </div>
+                <div class="footer_boxs_boxP">
+                    <p class="footer_boxs_P">Телефон приемной комиссии</p>
+                </div>
+                <div class="footer_boxs_boxH3">
+                    <h3 class="footer_boxs_H3">pk@kai.ru</h3>
+                </div>
+                <div class="footer_boxs_boxP">
+                    <p class="footer_boxs_P">Электронная почта</p>
+                </div>
+                <div class="footer_boxs_links_box">
+                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l1 cursorP"></div>
+                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l2 cursorP"></div>
+                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l3 cursorP"></div>
+                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l4 cursorP"></div>
+                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l5 cursorP"></div>
+                </div>
+            </div>
+            <div class="footer_boxHR marginTOP_70px">
+                <hr class="footer_hr"/>
+            </div>
+            <div class="footer_FM">
+                <div class="footer_FM1">
+                    <div class="footer_FM1_Logo">
+
+                    </div>
+                    <div class="footer_FM1_boxp">
+                        <p class="footer_FM1_p">Институт международного образования
+                            КНИТУ-КАИ</p>
+                    </div>
+                </div>
+                <div class="footer_FM2">
+                    <div class="footer_FM2 link_FM2 cursorP"><p class="link_FM2Text">Политика конфидециальности</p></div>
+                    <div class="footer_FM2 link_FM2 cursorP"><p class="link_FM2Text">Правила использования</p></div>
+                    <div class="footer_FM2 link_FM2 cursorP"><p class="link_FM2Text">Помощь</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="mainSerchON">
+            <div class="serchON">
+
+            </div>
+            <div class="serchON_box">
+
+                <img src='{% static "mainsite/img/search.svg" %}' class="serchON_box_img" id="serchOnBoxImg">
+                <input type="text" class="serchON_box_input" id="serchONBoxInput" placeholder="|Напишите что-нибудь...">
+            </div>
+        </div>
+        <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'></script>
+
+        <script src='{% static "mainsite/js/home_page/locationFile.js" %}'></script>
+
+{% endblock  %}

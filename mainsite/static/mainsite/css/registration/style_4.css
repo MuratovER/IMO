@@ -1,0 +1,98 @@
+.headerTwoEnteringImo{
+    width: 100%;
+    background-color: #14161D;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerTwoEnteringImo_place{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.headerTwoEnteringImo_links{
+    display: flex;
+}
+.headerTwoEnteringImo_link_butExit{
+    display: flex;
+    align-items: center;
+    margin-right: 19px;
+}
+.headerTwoEnteringImo_link_butExit_imgarrow{
+    margin: 0px 10px;
+}
+.headerTwoEnteringImo_link_butExit_text{
+    color: #CCCCCC;
+    font-family: "inter";
+    font-size: 15px;
+}
+.headerTwoEnteringImo_notbox_h1{
+    color: #fff;
+    font-family: "inter";
+    font-size: 60px;
+}
+.header_placeColor{
+    width: 100%;
+    background-color: #0E1016;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+.headerTwoEnteringImo_Information{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+}
+.headerTwoEnteringImo_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.headerTwoEnteringImo_column_box{
+    width: 200px;
+    height: 225px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borderBottomAndTop{
+    border-top:2px solid #21232E ;
+    border-bottom:2px solid #21232E ;
+}
+.borderTop{
+    border-top:2px solid #21232E ;
+}
+.headerTwoEnteringImo_column_box_p{
+    color: #fff;
+    font-family: "inter";
+    font-size: 30px;
+}
+.headerTwoEnteringImo_column_item{
+    height: 200px;
+    border: 0px;
+    width: 2px;
+    background-color: #21232E;
+    border-top: 1px solid #21232E;
+    margin: 10px;
+}
+.headerTwoEnteringImo_columnCI{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.marginbottom40px{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.headerTwoEnteringImo_column_box_p_box_flex{
+    width: 80%;
+    height: 40%;
+}
