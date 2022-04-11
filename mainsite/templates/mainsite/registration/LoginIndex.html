@@ -2,6 +2,7 @@
 {% block content %} 
 {%  load static %}
 
+
 <div id="hend" class="indexEnterWindow">
     <div class="main_block" id="main_block">
         <div class="main_block_blok_TopMenu_flexBox">
@@ -12,7 +13,7 @@
                                                                                                         height: 56px;
                                                                                                         " alt="лого нет"></a> <!--cursor:url(img/cursor_w.svg) 2 2 ,auto;-->
                 <div class="main_block_blok_TopMenu_Addition">
-                    <div class="main_block_blok_TopMenu_Addition_theme_box"  style="display: none;">
+                    <div class="main_block_blok_TopMenu_Addition_theme_box"  style="display: block;">
                         <input type="button" class="main_block_blok_TopMenu_Addition_theme_" id="theme" onclick="clickThemeFunction()">
                     </div>
                     <div class="Addition_block_langs">
@@ -45,27 +46,29 @@
                 <a href="forgotPAss.html" class="main_block_Buttom_buttomExit LengText-back" id="buttomExit">назад</a>
             </div>
         </div>
-        <form method="post" action="" class="main_block_form" id="">
+        <form method="POST" action="" class="main_block_form" id="">
         {% csrf_token %}
-        {{ form.as_p }}
+        
         <div class="main_block_form_flex_">
                 <h1 id="TextLogin" class="main_block_form_h1 LengText-authorization">Авторизация</h1>
                 <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-DataEntryPrompt">Введите данные своей учетной записи</p>
             <div class="main_block_form_flex">
                 <div class="main_block_form_textPassword_boxFlexebox">
                     <div class="main_block_form_textUsername_box main_block_form_textUsername_boxTHEtest">
-                        <input type="text" class="main_block_form_textName main_block_form_input_1 main_block_form_input_1THEtest2 LengText-InputFieldNameLogin" id="InputFieldName" placeholder="Имя пользователя" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" onchange="mouseUpInLogin(this)">
+                        <!-- <input type="text" class="main_block_form_textName main_block_form_input_1 main_block_form_input_1THEtest2 LengText-InputFieldNameLogin" id="InputFieldName" placeholder="Имя пользователя" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" onchange="mouseUpInLogin(this)"> -->
+                        {{ form.username }}
                     </div>
                 </div>
                 <div class="main_block_form_textPassword_boxFlexebox">
                     <div class="main_block_form_textPassword_box main_block_form_textPassword_boxTHetest">
-                        <input type="password" class="main_block_form_textPassword main_block_form_input_1 main_block_form_input_1THEtest LengText-InputFieldPasswordLogin" id="InputFieldPassword" placeholder="Пароль" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)">
+                        <!-- <input type="password" class="main_block_form_textPassword main_block_form_input_1 main_block_form_input_1THEtest LengText-InputFieldPasswordLogin" id="InputFieldPassword" placeholder="Пароль" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)"> -->
+                        {{ form.password }}
                         <a class="informationEayTHEtest" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword'))"></a>
                     </div>
                 </div>
                 <div class="child_element_flexTHEtest">
                     <div class="child_element_flex child_element_flexTHEtest2">
-                        <input type="button" class="main_block_form_button main_block_form_input_1 main_block_form_input_1THEtest3" id="InputEnterButtom" value="Авторизоваться">
+                        <input type="submit" class="main_block_form_button main_block_form_input_1 main_block_form_input_1THEtest3" id="InputEnterButtom" value="Авторизоваться">
                     </div>
                 </div>
                 <div class="child_element_flex">
@@ -80,7 +83,7 @@
                 </div>
             </div>
             <div class="regesterText_box">
-                <p id="regesterText" class="regesterText LengText-Question-vperTut">Впервые тут? <div><a id="" href="{% url 'signup' %}" class="regesterTextLink LengText-RegisterSentence-Auto">Зарегистрируйтесь</a></div></p>
+                <p id="regesterText" class="regesterText LengText-Question-vperTut">Впервые тут? <div><a id="" href="{% url 'signup_page' %}" class="regesterTextLink LengText-RegisterSentence-Auto">Зарегистрируйтесь</a></div></p>
             </div>
         </div>
         </form>
