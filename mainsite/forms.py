@@ -1,5 +1,3 @@
-# from cProfile import label
-# from tkinter import Widget
 from django.forms import ModelForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User

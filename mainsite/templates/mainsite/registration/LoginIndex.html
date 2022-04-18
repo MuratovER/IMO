@@ -48,21 +48,18 @@
         </div>
         <form method="POST" action="" class="main_block_form" id="">
         {% csrf_token %}
-        
         <div class="main_block_form_flex_">
                 <h1 id="TextLogin" class="main_block_form_h1 LengText-authorization">Авторизация</h1>
                 <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-DataEntryPrompt">Введите данные своей учетной записи</p>
             <div class="main_block_form_flex">
                 <div class="main_block_form_textPassword_boxFlexebox">
                     <div class="main_block_form_textUsername_box main_block_form_textUsername_boxTHEtest">
-                        <!-- <input type="text" class="main_block_form_textName main_block_form_input_1 main_block_form_input_1THEtest2 LengText-InputFieldNameLogin" id="InputFieldName" placeholder="Имя пользователя" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" onchange="mouseUpInLogin(this)"> -->
-                        {{ form.username }}
+                        <input type="text" name="username" placeholder="Username..." class="main_block_form_textName main_block_form_input_1 main_block_form_input_1THEtest2 LengText-InputFieldNameLogin" id="username" placeholder="Имя пользователя" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" onchange="mouseUpInLogin(this)">
                     </div>
                 </div>
                 <div class="main_block_form_textPassword_boxFlexebox">
                     <div class="main_block_form_textPassword_box main_block_form_textPassword_boxTHetest">
-                        <!-- <input type="password" class="main_block_form_textPassword main_block_form_input_1 main_block_form_input_1THEtest LengText-InputFieldPasswordLogin" id="InputFieldPassword" placeholder="Пароль" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)"> -->
-                        {{ form.password }}
+                        <input type="password" name="password" placeholder="Password..." class="main_block_form_textPassword main_block_form_input_1 main_block_form_input_1THEtest LengText-InputFieldPasswordLogin" id="password" placeholder="Пароль" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" >
                         <a class="informationEayTHEtest" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword'))"></a>
                     </div>
                 </div>

@@ -1,9 +1,10 @@
-from urllib import request
-from django.views import View
-from django.contrib.auth.forms import AuthenticationForm
+
+from django.shortcuts import render, redirect 
+from django.http import HttpResponse
+from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import logout, login, authenticate
-from django.shortcuts import render, redirect
+from django.contrib.auth.forms import AuthenticationForm
+
 from django.contrib.auth import authenticate, login, logout
 
 from django.contrib import messages
@@ -16,6 +17,7 @@ from .forms import  CreateUserForm
 
 def home_page(request):
     return render(request, 'mainsite/home/home_page.html')
+
 
 # signup view
 def signup_page(request):
@@ -34,6 +36,7 @@ def signup_page(request):
 			
 		context = {'form':form}
 		return render(request, 'mainsite/registration/RegesterIndex.html', context)
+
 
 # login view
 def login_page(request):
@@ -58,8 +61,7 @@ def login_page(request):
 # logout view
 def logout_user(request):
 	logout(request)
-	return redirect('mainsite/home/home_page.html')    
+	return redirect('home_page')    
 
-# extra-signup view
 def extra_page(request):
-	return redirect(request, 'mainsite/registration/ExtraInfo.html')
+	return render(request, 'mainsite/registration/ExtraInfo.html')
