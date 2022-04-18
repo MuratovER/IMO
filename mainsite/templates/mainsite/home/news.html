@@ -1,0 +1,10 @@
+{% extends 'mainsite/base.html' %}{% block content %}
+{% load static %}
+{% for post in posts %}
+
+    {{ post.title }}
+    {{ post.text }}
+    {{ post.published_date }}
+
+{% endfor %}
+{% endblock %}
