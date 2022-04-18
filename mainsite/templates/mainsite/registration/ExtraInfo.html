@@ -1,0 +1,94 @@
+{% extends 'mainsite/base.html' %} 
+{% block content %} 
+{%  load static %}
+
+<div id="hend" class="indexEnterWindow">  
+    <div class="main_block" id="main_block">
+        <div class="main_block_blok_TopMenu_flexBox">
+            <div class="main_block_blok_TopMenu">
+                <a href="#" class="main_block_blok_TopMenu_Logo"> 
+                    <img id="imgLogo" src="{% static 'mainsite/img/mainICON_1.svg' %}" 
+                                      style="background-repeat: no-repeat;
+                                             background-size: contain;
+                                             width: 56px;
+                                             height: 56px;" 
+                                       alt="лого нет"></a> <!--cursor:url(img/cursor_w.svg) 2 2 ,auto;-->
+                <div class="main_block_blok_TopMenu_Addition">
+                    <div class="main_block_blok_TopMenu_Addition_theme_box" style="display: none;">
+                        <input type="button" class="main_block_blok_TopMenu_Addition_theme_" id="theme" onclick="clickThemeFunction()">
+                    </div>
+                    <div class="Addition_block_langs">
+                        <input type="button" class="main_block_blok_TopMenu_Addition_langs_1 Lang-name" id="Langs" value="Ru" onclick="clickHeddenFuncton()">
+                        <div class="hidden_block_1" id="hidden_block" style="display: none;">
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img RU" id="hidden_block_id1" onmouseover="onmouseover_1(this)" onmouseout="onmouseout_1_1(this)"><div id="Ru" class="_block_RU" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div><!--hidden_block_leng_1_img-->
+                                <div class="hidden_block_leng_1_RU" id="HiddenBlockLengRU">Русский</div>
+                            </div>
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img ENG" id="hidden_block_id2" onmouseover="onmouseover_2(this)" onmouseout="onmouseout_2_2(this)"><div id="Eng" class="_block_ENG" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_ENG  _eng" id="HiddenBlockLengENG">English</div>
+                            </div>
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img Chinese" id="hidden_block_id3" onmouseover="onmouseover_3(this)" onmouseout="onmouseout_3_3(this)"><div id="中國人" class="_block_Chinese" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_Chinese _Chinese" id="HiddenBlockLengChinese">中國人</div>
+                            </div>
+                            <div class="hidden_block_flex">
+                                <div class="hidden_block_leng_1_img Spanish" id="hidden_block_id4" onmouseover="onmouseover_4(this)" onmouseout="onmouseout_4_4(this)"><div id="Spanish" class="_block_Spanish" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_Spanish" id="HiddenBlockLengSpanish">español</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <form method="POST" action="" class="main_block_form">   
+        <div class="main_block_form_flex_" >   
+            <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" style="display: block;">
+                <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
+                    <div class="main_box_but_form_Iamastud_FORM1">
+                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
+                            <div class="main_block_Buttom_ __">
+                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
+                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">Назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
+                            </div>
+                        </div>
+                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
+                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Выберите вид регистрации</p>
+                        <div class="main_block_form_flex">
+                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallYou" id="InputFieldMiddleValidation" placeholder="Как к Вам обращаться?" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)" style="border-color: green;">
+                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectYourCountry" id="InputFieldCountryNameValidation" placeholder="Выберите Вашу страну" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
+                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-yourLifeSity" id="InputFieldYourNativeSity" placeholder="Ваш родной город" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)" style="border-color: green;">
+                            <input type="tel" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-yourNumberPhone" id="InputFieldYourNumberPhone" placeholder="Ваш номер телефона" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
+                            <input type="email" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-email" id="InputFieldEmailAddress" placeholder="Ваша электронная почта" onmousedown="mouseUp(this)" onmouseup="mouseUp(this)" onchange="mouseUp(this)" onmouseover="mouseUp(this)">
+                            <div class="child_element_flex">
+                                <input type="submit" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Авторизоваться" href="{% url 'home_page' %}"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </form>
+
+        <div class="main_block_footer_blockFlex">
+            <div class="main_block_footer">
+                <div class="main_block_footer_boxs">
+                    <div class="main_block_footer_box">
+                        <a class="main_block_footer_box_text1 LengText-PrivacyPolicy" id="footer_box_text1" href="#">Политика конфидециальности</a>
+                    </div>
+                    <div class="main_block_footer_box">
+                        <a class="main_block_footer_box_text1 LengText-TermsOfUse" id="footer_box_text2" href="#">Условия пользования</a>
+                    </div>
+                </div>
+                <p class="main_block_footer_box_text12 lawTextKai LengText-WhiRigh">
+                    ©2021 КНИТУ КАИ. Все права защищены
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+</div>        
+
+{% endblock %} 

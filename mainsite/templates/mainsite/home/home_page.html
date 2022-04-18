@@ -49,14 +49,74 @@
                 <div class="buttonsInHeader_box">
                     <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton">
                 </div>
+                {% if user.is_authenticated %}
                 <div class="hideMenu_in_Proffil">
                     <div class="hideMenu_in_Proffil_litleBlock">
                         <div class="hideMenu_in_Proffil_box hideMenu_in_Proffil_boxMURGBOTT">
-
                             <img src='{% static "mainsite/img/birdKurlik.svg" %}' alt="img" id="" class="hideMenu_in_Proffil_boxIMG ">
                             <div class="hideMenu_in_Proffil_box_INF">
                                 <div class="hideMenu_in_Proffil_box_INF_p marginbottom10px">
-                                    <p class="hideMenu_in_Proffil_boxNAME textstule" id="Name">Сидоров Евгений</p>
+                                    <div class="hideMenu_in_Proffil_boxNAME textstule" id="Name"> {{user.username }} </div>
+                                </div>
+                                <div class="hideMenu_in_Proffil_box_INF_p">
+                                    <p class="hideMenu_in_Proffil_boxEmail textstule" id="Email">sidorovevgenii@stud.kai.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+                                <img src='{% static "mainsite/img/home-alt.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <p class="hideMenu_in_Proffil_LCProf_p textstule">Личный кабинет</p>
+                            </div>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+
+                                <img src='{% static "mainsite/img/Union.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <p class="hideMenu_in_Proffil_LCProf_p textstule">Подать заявку </p>
+                            </div>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+
+                                <img src='{% static "mainsite/img/bell.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img" width="18px">
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <p class="hideMenu_in_Proffil_LCProf_p textstule">Уведомления</p>
+                            </div>
+                        </div>
+                        <div class="footer_boxHR noMargin">
+                            <hr class="footer_hr"/>
+                        </div>
+                        <div class="hideMenu_in_Proffil_box">
+                            <div class="hideMenu_in_Proffil_LCProf_boximg hideMenu_in_Proffil_boxIMG">
+
+                                <img src='{% static "mainsite/img/log-in.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img">
+                            </div>
+                            <div class="hideMenu_in_Proffil_LCProf_boxp">
+                                <a class="hideMenu_in_Proffil_LCProf_p textstule" onclick="location.href='{% url 'logout_user' %}'">Выйти</a>
+                            </div>
+                        </div>
+
+                    <!-- кнопка смены темы -->
+                        <div class="hideMenu_in_Proffil_box_buttHThem">
+
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="hideMenu_in_Proffil">
+                    <div class="hideMenu_in_Proffil_litleBlock">
+                        <div class="hideMenu_in_Proffil_box hideMenu_in_Proffil_boxMURGBOTT">
+                            <img src='{% static "mainsite/img/birdKurlik.svg" %}' alt="img" id="" class="hideMenu_in_Proffil_boxIMG ">
+                            <div class="hideMenu_in_Proffil_box_INF">
+                                <div class="hideMenu_in_Proffil_box_INF_p marginbottom10px">
+                                    <p class="hideMenu_in_Proffil_boxNAME textstule" id="Name"> Эобарт Тоун </p>
                                 </div>
                                 <div class="hideMenu_in_Proffil_box_INF_p">
                                     <p class="hideMenu_in_Proffil_boxEmail textstule" id="Email">sidorovevgenii@stud.kai.ru</p>
@@ -109,6 +169,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
                 <!-- <div class="buttonsInHeader_box">
                     <div class="buttonsInHeader_box_notifications" id="notifications"></div>
                 </div> -->
@@ -880,5 +941,4 @@
         <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'></script>
 
         <script src='{% static "mainsite/js/home_page/locationFile.js" %}'></script>
-</html>
 {% endblock  %}
