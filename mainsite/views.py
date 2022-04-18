@@ -1,3 +1,4 @@
+
 from django.shortcuts import render, redirect 
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
@@ -17,6 +18,8 @@ from .forms import  CreateUserForm
 def home_page(request):
     return render(request, 'mainsite/home/home_page.html')
 
+
+# signup view
 def signup_page(request):
 	if request.user.is_authenticated:
 		return redirect('home_page')
@@ -35,6 +38,7 @@ def signup_page(request):
 		return render(request, 'mainsite/registration/RegesterIndex.html', context)
 
 
+# login view
 def login_page(request):
 	if request.user.is_authenticated:
 		return redirect('home_page')
@@ -48,18 +52,16 @@ def login_page(request):
 			if user is not None:
 				login(request, user)
 				return redirect('home_page')
-			else:	
+			else:
 				messages.info(request, 'Username OR password is incorrect')
 
 		context = {}
 		return render(request, 'mainsite/registration/LoginIndex.html', context)
 
+# logout view
 def logout_user(request):
 	logout(request)
 	return redirect('home_page')    
 
 def extra_page(request):
 	return render(request, 'mainsite/registration/ExtraInfo.html')
-
-
-		

@@ -7,8 +7,6 @@ function definitionBut(obj) {
         case "img2":
                 let elem2 = document.querySelector(".main_box_but_form_Iamastud_main");
                 if(elem2.style.display == "none"){
-                    
-                    // RegistrationChoice.style.display = "none";
                     elem2.style.display = "block";
                 }
                 else{
@@ -27,7 +25,6 @@ function FormBlockHideFunction(b=0,obj,boxesHide){
     let end = boxesHide.length;
     
     for(let i = 0; i < end; i++){
-        if(boxesHide[i].style.display != 'block' && boxesHide[i+1] != undefined){
             // for(let l = 0; l < arr.length; l++){
                 
             // }
@@ -74,7 +71,6 @@ function FormBlockHideFunction(b=0,obj,boxesHide){
         }
     }
 }
-
 function funcTime5sec3(){
     let numberTime = document.querySelector("#numberTime3");
     let time1 = setTimeout(() => {

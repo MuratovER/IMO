@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <form method="POST" action="" class="main_block_form" id="">
+        <form method="POST" action="" class="main_block_form">
             {% csrf_token %}
             <div class="main_block_form_flex_" >
                 <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" id="FormBlockHideFunction" style="display: block;">
@@ -68,17 +68,12 @@
                                 <div class="child_element_flex">
                                     <input type="submit" class="main_block_form_button main_block_form_input_1 trueChangePass1"  value="Дальше" onclick="FormBlockHideFunction(1,this,boxes = document.querySelectorAll('.FormBlockHideFunction') )">
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
-        <div class="regesterText_box" style="display: block;">
-            <p id="regesterText" class="regesterText LengText-ThereIsProfel">Уже есть профиль? 
-                <div><a id="" href="{% url 'login' %}" class="regesterTextLink LengText-login">Авторизуйтесь</a></div>
-            </p>
-        </div>    
+          </div>
+        </div>
+    </form>
         <div class="main_block_footer_blockFlex">
             <div class="main_block_footer">
                 <div class="main_block_footer_boxs">
@@ -96,4 +91,5 @@
         </div>
     </div>
 </div>
+
 {% endblock %} 
