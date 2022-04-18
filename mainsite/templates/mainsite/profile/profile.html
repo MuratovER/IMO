@@ -1,0 +1,12 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{% load static %}
+<body>
+<h1 style="color: White;">Test</h1>
+    {{ profile.name }}
+    {{ profile.email    }}
+    {{ profile.city }}
+    {{ profile.country }}
+    {{ profile.phone }}
+</body>
+{% endblock %}

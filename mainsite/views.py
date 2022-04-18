@@ -1,23 +1,19 @@
-
 from django.shortcuts import render, redirect 
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.forms import AuthenticationForm
-
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
-
 from django.contrib import messages
-
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 from .models import *
 from .forms import  CreateUserForm
+from mainsite.models import Profile, Post
+
 
 def home_page(request):
     return render(request, 'mainsite/home/home_page.html')
-
 
 # signup view
 def signup_page(request):
@@ -48,15 +44,32 @@ def login_page(request):
 			password =request.POST.get('password')
 
 			user = authenticate(request, username=username, password=password)
-
 			if user is not None:
 				login(request, user)
 				return redirect('home_page')
 			else:
 				messages.info(request, 'Username OR password is incorrect')
 
+def profile_view(request):
+    profile = Profile.objects.get(user=request.user)
+
+    ctx = {
+        'profile': profile
+    }
+    return render(request, 'mainsite/profile/profile.html', ctx)
+
+
+def news_view(request):
+    posts = Post.objects.all()
+    ctx = {
+        'posts': posts
+    }
+    return render(request, 'mainsite/home/news.html', ctx)
+
+
 		context = {}
 		return render(request, 'mainsite/registration/LoginIndex.html', context)
+
 
 # logout view
 def logout_user(request):

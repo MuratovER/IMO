@@ -150,9 +150,9 @@ psql
 ```
 CREATE USER imo;
 
-ALTER USER eldar WITH PASSWORD 'imoproject';
+ALTER USER imo WITH PASSWORD 'imoproject';
 
-CREATE DATABASE ts OWNER eldar;
+CREATE DATABASE imodb OWNER imo;
 ```
 
 
