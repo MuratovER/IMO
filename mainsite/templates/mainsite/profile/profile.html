@@ -2,11 +2,69 @@
 {% block content %}
 {% load static %}
 <body>
-<h1 style="color: White;">Test</h1>
-    {{ profile.name }}
-    {{ profile.email    }}
-    {{ profile.city }}
-    {{ profile.country }}
-    {{ profile.phone }}
+    <div class="up-down-list">
+        <a href="">Информация обо мне</a>
+        <a href="">Изменения профиля</a>
+        <a href="">Памятка для иностранцев</a>
+    </div>
+    <div class="info">
+        <div class="base-info">
+            <div class="basic-info">
+                <div class="about-head">
+                   <h4>Основная информация</h4>
+                    <a href="">Редактировать</a>
+                </div>
+
+                <div class="about-info">
+                    <p>Полное имя: Сидоров Евгений Иванович</p>
+                    <p>Пол: Мужской</p>
+                    <p>Дата рождения: 01.01.2001</p>
+                    <p>Место рождения: Белоруссия</p>
+                    <p>Родной город: Минск</p>
+                    <p>Гражданство: Белоруссия</p>
+                    <p>Номер телефона: +971 56 231 2415</p>
+                    <p>Электронная почта: sidorovevgenii@stud.kai.ru</p>
+                    <p>Ваш пароль: <a href="">Изменить</a></p>
+                </div>
+
+            </div>
+            <div class="student-info">
+                <h2>Информация о студенте</h2>
+                <h3>Пока здесь ничего нет</h3>
+                <p>Похоже вы пока не являетесь студентов КНИТУ-КАИ или ваши данные еще не загрузили в профиль :(</p>
+            </div>
+        </div>
+        <div class="verification-info">
+            <div class="verification-bubbles">
+                <h2>Верификация учтёной записи</h2>
+                <div class="bubbles">
+                    <p>Стандарт</p>
+                    <p>Абитуриент</p>
+                    <p>Студент</p>
+                </div>
+            </div>
+            <div class="verification-introduction">
+                <p>Для того, чтобы подтвердить личность в ИМО КАИ необходимо отправить письмо на электронную почту для подтверждения вашей личности и получении ваших документов для составления заявки на поступление!</p>
+            </div>
+            <div class="verification-mail">
+                <div class="verification-mail-field">
+                    <p>imokai@bb.kai.ru</p>
+                </div>
+                <button>Скопировать адрес</button>
+            </div>
+            <div class="verification-list">
+                <h3>Список необходимых документов</h3>
+                <ul>
+                    <li>Копия паспорта (1-ая страница с фотографией)</li>
+                    <li>Заверенный нотариусом перевод паспорта на русский язык</li>
+                    <li>Скан всех виз, полученных из российской федерации (если имеются)</li>
+                    <li>Бланк уведомления для гос. услуг</li>
+                    <li>Билеты всего маршрута (авиасообщение и ж/д)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 {% endblock %}

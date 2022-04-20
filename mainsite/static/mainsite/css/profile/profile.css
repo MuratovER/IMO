@@ -1,0 +1,83 @@
+
+
+body {
+    color: yellow;
+    background-color: red;
+    display: flex;
+
+}
+
+.up-down-list {
+    background-color: #4B5DFF;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 20px 0px;
+    font-size: 15px;
+}
+
+.up-down-list a{
+    width: 211px;
+    background-color: green;
+    margin-top: 15px;
+    padding: 15px 25px 15px 25px;
+}
+
+.info {
+    background-color: #2B2C31;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+}
+
+.base-info {
+    background-color: brown;
+    margin-right: 55px;
+
+
+}
+
+.verification-info {
+    background-color: violet;
+}
+
+.basic-info {
+    background-color: deeppink;
+    padding: 60px 35px 60px 35px;
+
+}
+
+.about-head {
+}
+
+.student-info {
+    margin-top: 30px;
+    background-color: darkcyan;
+    padding: 35px;
+
+}
+
+.verification-info {
+    padding: 35px;
+    margin-top: 15px;
+}
+
+.bubbles {
+    display: flex;
+    height: 45px;
+    width: 400px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.verification-introduction {
+    background-color: #2E2E2E;
+    padding: 35px;
+}
+
+.verification-mail {
+    display: flex;
+    justify-content: space-around;
+}
+
+
