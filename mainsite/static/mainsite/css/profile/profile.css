@@ -1,65 +1,116 @@
 
 
-body {
-    color: yellow;
-    background-color: red;
+.profile {
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
+    font-family: 'Inter';
 
 }
 
 .up-down-list {
-    background-color: #4B5DFF;
+    /*background-color: #4B5DFF;*/
     display: flex;
     flex-direction: column;
-    padding: 30px 0px 20px 0px;
+    margin-top: 15px;
+    padding: 30px 20px ;
     font-size: 15px;
 }
 
 .up-down-list a{
-    width: 211px;
-    background-color: green;
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background: #F2F2F2;
+    border-radius: 15px;
     margin-top: 15px;
     padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .info {
-    background-color: #2B2C31;
     display: grid;
-    grid-template-columns: 50% 50%;
-
+    grid-template-columns: 40% 60%;
 
 }
 
 .base-info {
-    background-color: brown;
+    /*background-color: brown;*/
     margin-right: 55px;
 
 
 }
 
 .verification-info {
-    background-color: violet;
+    /*background-color: violet;*/
+    margin-right: 100px;
 }
 
 .basic-info {
-    background-color: deeppink;
-    padding: 60px 35px 60px 35px;
+    /*background-color: deeppink;*/
+    padding: 40px 35px 60px 35px;
+        margin-left: 15px;
+    /*background-color: darkcyan;*/
+    border-style: solid;
+    border-color: #E8E8E8;
+    margin-top: 30px;
+
 
 }
+
+.basic-info p{
+    margin: 15px 30px 15px 1px;
+
+}
+
 
 .about-head {
+    display: flex;
+    justify-content: space-between;
 }
+
+.about-info-name, .about-info-gender, .about-info-birthday,
+.about-info-country, .about-info-citizenship, .about-info-phone, .about-info-email,
+.about-info-password {
+    margin: 15px 30px 15px 1px;
+}
+
+.about-info {
+
+    display: flex;
+}
+
+.about-info-p {
+    /*background-color: brown;*/
+}
+
+.about-info-generated {
+    flex-direction: column;
+    /*background-color: black;*/
+}
+
+
+
 
 .student-info {
     margin-top: 30px;
-    background-color: darkcyan;
+    margin-left: 15px;
+    /*background-color: darkcyan;*/
     padding: 35px;
+    border-style: solid;
+    border-color: #E8E8E8;
+    /*stroke: black;*/
 
 }
 
 .verification-info {
     padding: 35px;
-    margin-top: 15px;
+    margin-top: 30px;
+        margin-left: 15px;
+    /*background-color: darkcyan;*/
+    border-style: solid;
+    border-color: #E8E8E8;
 }
 
 .bubbles {
@@ -71,13 +122,62 @@ body {
 }
 
 .verification-introduction {
-    background-color: #2E2E2E;
+    background-color: rgba(248, 248, 248, 1);
     padding: 35px;
+    border-color: rgba(232, 232, 232, 1);
+    border-style: solid;
 }
 
 .verification-mail {
     display: flex;
     justify-content: space-around;
+    margin: 30px 30px;
+}
+
+.verification-list p{
+    margin-top: 10px;
+}
+
+.verification-mail-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    /*background: #3751FF;*/
+
+    /* Inside auto layout */
+
+    order: 1;
+    flex-grow: 0;
+    border-style: none;
+}
+
+.verification-mail-field {
+    border-radius: 15px;
+    text-align: center;
+    width: 370px;
+    height: 50px;
+    border-color: rgba(224, 224, 224, 1);
+    border-style: solid;
+    margin-right: 15px;
+    font-size: 18px;
+
 }
 
 
+.verification-mail-field p{
+    padding: 18px;
+}
+
+.about-head h4 {
+    font-size: 18px;
+}
+
+.student-info h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
