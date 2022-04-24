@@ -36,6 +36,8 @@
 
 }
 
+
+
 .base-info {
     /*background-color: brown;*/
     margin-right: 55px;
@@ -133,13 +135,13 @@
 }
 
 .verification-bubbles-head {
-
     display: flex;
 }
 
-.verification-bubbles-head img{
-
-    display: flex;
+.verification-bubbles-head h2{
+    margin-top: 15px;
+    margin-right: 30px;
+    color: #383838;
 }
 
 
