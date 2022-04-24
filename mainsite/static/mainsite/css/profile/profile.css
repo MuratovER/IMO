@@ -27,6 +27,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;
+    color: black;
 }
 
 .info {
@@ -50,11 +51,13 @@
 .basic-info {
     /*background-color: deeppink;*/
     padding: 40px 35px 60px 35px;
-        margin-left: 15px;
+    margin-left: 15px;
     /*background-color: darkcyan;*/
     border-style: solid;
     border-color: #E8E8E8;
+    border-width: 1px;
     margin-top: 30px;
+
 
 
 }
@@ -100,6 +103,7 @@
     padding: 35px;
     border-style: solid;
     border-color: #E8E8E8;
+    border-width: 1px;
     /*stroke: black;*/
 
 }
@@ -111,6 +115,7 @@
     /*background-color: darkcyan;*/
     border-style: solid;
     border-color: #E8E8E8;
+    border-width: 1px;
 }
 
 .bubbles {
@@ -121,17 +126,41 @@
     padding: 20px;
 }
 
+.verification-bubbles img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.verification-bubbles-head {
+
+    display: flex;
+}
+
+.verification-bubbles-head img{
+
+    display: flex;
+}
+
+
 .verification-introduction {
     background-color: rgba(248, 248, 248, 1);
     padding: 35px;
     border-color: rgba(232, 232, 232, 1);
+    color: #383838;
     border-style: solid;
+    border-width: 1px;
 }
 
 .verification-mail {
     display: flex;
-    justify-content: space-around;
-    margin: 30px 30px;
+    margin-top: 25px ;
+    margin-bottom: 30px;
+
+}
+
+.verification-mail-field {
+
 }
 
 .verification-list p{
@@ -146,6 +175,13 @@
 
     justify-content: center;
     align-items: center;
+    background: #3751FF;
+    color: #FFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
 
     /*background: #3751FF;*/
 
@@ -180,4 +216,10 @@
 .student-info h3{
     margin-top: 25px;
     margin-bottom: 10px;
+}
+
+.verification-list-first {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
