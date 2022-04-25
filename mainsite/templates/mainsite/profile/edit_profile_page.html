@@ -1,0 +1,20 @@
+{% extends 'mainsite/base.html' %} 
+{% block content %} 
+{%  load static %}
+    <div class="header-bar">
+        <h1>Edit Profile</h1>
+        
+        <a href="{% url 'tasks' %}">&#8592; Back</a>
+        
+    </div>
+  
+    <div class="card-body">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input class="button" type="submit" value="Update">
+        </form>
+        
+    </div>
+
+    {% endblock %} 

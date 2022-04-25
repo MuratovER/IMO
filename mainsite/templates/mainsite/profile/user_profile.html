@@ -1,0 +1,76 @@
+{% extends 'mainsite/base.html' %} 
+{% block content %} 
+{%  load static %}
+<body>
+        <div class="header-bar">
+        <div>
+            <h1>Profile</h1>
+            
+        </div>
+        <a href="{% url 'tasks' %}">&#8592; Back</a>
+    </div>
+
+    <div class="card-body">
+        <!-- Show Profile Avatar -->
+        {% if profile.profile_pic %}
+          <img src="{{ profile.profile_pic.url }}" height=100 width=100><br><br>
+        {% else %}
+            <img src="{% static 'base\images\profile\user.png' %}" height=100 width=100><br><br>
+        {% endif %}
+
+        <!-- Show User Username -->
+        <p><strong>Username:</strong> {{ profile.user.username }}</p><br><br>
+
+        <!-- Show Profile Biography -->
+        <p><strong>Bio:</strong> {{ profile.bio }}</p><br><br>
+
+        <!-- Show Profile Twitter URL -->
+        {% if profile.twitter %}
+        <p><strong>Twitter:</strong> {{ profile.twitter }}</p><br><br>
+        {% endif %}
+
+        <!-- Show Profile Instagram URL -->
+        {% if profile.instagram %}
+            <p><strong>Instagram:</strong> {{ profile.instagram }}</p><br><br>
+        {% endif %}
+
+        <!-- Show Profile Facebook URL -->
+        {% if profile.facebook %}
+            <p><strong>Facebook:</strong> {{ profile.facebook }}</p><br><br>
+        {% endif %}
+        <p><strong>Achievements:</strong></p><br><br>
+
+        {% if number_tasks >= 1 %}
+        <img src="https://img.icons8.com/doodle/48/000000/laurel-wreath.png" title="Create your first task">
+        {% else %} 
+        <img style="opacity:0.5;" src="https://img.icons8.com/doodle/48/000000/laurel-wreath.png" title="Create your first task">
+        {% endif %}
+        {% if number_completed_tasks >= 1 %}
+        <img src="https://img.icons8.com/emoji/48/000000/bullseye.png" title="Complete your first task">
+        {% else %}
+        <img style="opacity:0.5;" src="https://img.icons8.com/emoji/48/000000/bullseye.png" title="Complete your first task">
+        {% endif %}
+        {% if number_completed_tasks >= 10 %}
+        <img src="https://img.icons8.com/clouds/48/000000/trophy--v2.png" title="Complete 10 tasks">
+        {% else %} 
+        <img style="opacity:0.5;" src="https://img.icons8.com/clouds/48/000000/trophy--v2.png" title="Complete 10 tasks">
+        {% endif %}
+        {% if number_completed_tasks >= 50 %} 
+        <img src="https://img.icons8.com/color/48/000000/bouldering.png" title="Complete 50 tasks">
+        {% else %} 
+        <img style="opacity:0.5;" src="https://img.icons8.com/color/48/000000/bouldering.png" title="Complete 50 tasks">
+        {% endif %}
+        {% if number_notes >= 3 %} 
+        <img src="https://img.icons8.com/emoji/48/000000/graduation-cap-emoji.png" title="Keep 3 notes">
+        {% else %} 
+        <img style="opacity:0.5;" src="https://img.icons8.com/emoji/48/000000/graduation-cap-emoji.png" title="Keep 3 notes">
+        {% endif %}
+        <br><br>
+        
+        <!-- Edit Profile -->
+        {% if user.id == profile.user.id %}
+        <a href="{% url 'edit_user_profile' profile.id %}"><button class="button">Edit</button></a>
+        {% endif %}
+    </div>
+</body>
+    {% endblock %} 

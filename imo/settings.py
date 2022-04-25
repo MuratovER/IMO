@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import os
+import dj_database_url
+from pathlib import Path
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -80,15 +82,10 @@ WSGI_APPLICATION = 'imo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'imodb',
-        'USER': 'imo',
-        'PASSWORD': 'imoproject',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -108,6 +105,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# maximum image upload size setting
+MAX_IMAGE_SIZE = 2097152
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
@@ -118,7 +117,11 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
+
+LOGIN_URL = 'login'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -127,6 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 # required for login
 LOGIN_REDIRECT_URL = '/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -137,3 +141,9 @@ import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 print(db_from_env)
 DATABASES['default'].update(db_from_env)
+
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'

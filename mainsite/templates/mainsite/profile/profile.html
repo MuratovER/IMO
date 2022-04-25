@@ -1,12 +1,47 @@
 {% extends 'mainsite/base.html' %}
 {% block content %}
 {% load static %}
-<body>
-<h1 style="color: White;">Test</h1>
-    {{ profile.name }}
-    {{ profile.email    }}
-    {{ profile.city }}
-    {{ profile.country }}
-    {{ profile.phone }}
-</body>
+<div>
+    <h1 style="color: White;">Test</h1>
+    <!-- Show Profile Avatar -->
+    {% if profile.profile_pic %}
+    <img src="{{ profile.profile_pic.url }}" height=100 width=100><br><br>
+    {% else %}
+    <img src="{% static 'img\png\user.png' %}" height=100 width=100><br><br>
+    {% endif %}
+
+    <!-- Show User Username -->
+    <p><strong>Username:</strong> {{ profile.user.username }}</p><br><br>
+
+    <!-- Show Profile Biography -->
+    <p><strong>name:</strong> {{ profile.name }}</p><br><br>
+
+    <!-- Show Profile Email URL -->
+
+    <p><strong>Email:</strong> {{ profile.email }}</p><br><br>
+
+
+    <!-- Show Profile Phone URL -->
+
+    <p><strong>Phone:</strong> {{ profile.phone }}</p><br><br>
+
+
+    <!-- Show Profile City URL -->
+
+    <p><strong>City:</strong> {{ profile.city }}</p><br><br>
+
+
+    <!-- Show Profile Country URL -->
+
+    <p><strong>Country:</strong> {{ profile.country }}</p><br><br>
+
+
+
+    <br><br>
+
+    <!-- Edit Profile -->
+    {% if user.id == profile.user.id %}
+    <a href="{% url 'edit_user_profile' profile.id %}"><button class="button">Edit</button></a>
+    {% endif %}
+</div>
 {% endblock %}

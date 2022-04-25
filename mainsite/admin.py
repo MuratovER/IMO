@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from mainsite.models import Profile, Post
+from .models import Post, Profile
 
 admin.site.register(Profile)
 admin.site.register(Post)
