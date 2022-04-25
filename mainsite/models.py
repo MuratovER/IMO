@@ -25,11 +25,23 @@ class Post(models.Model):
 #model for Profile
 class Profile(models.Model):
     '''Таблица профиля в которой отображается базовая информация о пользователе'''
+
+    gender_choice = (
+
+        ('Male', 'M'),
+        ('Female', 'F'),
+        ('None of this', 'N'),
+    )
+
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    email = models.EmailField(max_length=150)
-    city = models.CharField(max_length=100)
+    gender = models.CharField(max_length=12, choices=gender_choice, blank=True, null=True)
+    birthdate = models.DateTimeField(blank=True, null=True)
     country = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    citizenship = models.CharField(max_length=100,blank=True, null=True)
+
+    email = models.EmailField(max_length=150)
     phone = models.CharField(max_length=100)
 
     def __str__(self):

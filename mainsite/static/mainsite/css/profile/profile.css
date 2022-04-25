@@ -1,0 +1,227 @@
+
+
+.profile {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    font-family: 'Inter';
+
+}
+
+.up-down-list {
+    /*background-color: #4B5DFF;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 30px 20px ;
+    font-size: 15px;
+}
+
+.up-down-list a{
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background: #F2F2F2;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+
+
+
+.base-info {
+    /*background-color: brown;*/
+    margin-right: 55px;
+
+
+}
+
+.verification-info {
+    /*background-color: violet;*/
+    margin-right: 100px;
+}
+
+.basic-info {
+    /*background-color: deeppink;*/
+    padding: 40px 35px 60px 35px;
+    margin-left: 15px;
+    /*background-color: darkcyan;*/
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 1px;
+    margin-top: 30px;
+
+
+
+}
+
+.basic-info p{
+    margin: 15px 30px 15px 1px;
+
+}
+
+
+.about-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info-name, .about-info-gender, .about-info-birthday,
+.about-info-country, .about-info-citizenship, .about-info-phone, .about-info-email,
+.about-info-password {
+    margin: 15px 30px 15px 1px;
+}
+
+.about-info {
+
+    display: flex;
+}
+
+.about-info-p {
+    /*background-color: brown;*/
+}
+
+.about-info-generated {
+    flex-direction: column;
+    /*background-color: black;*/
+}
+
+
+
+
+.student-info {
+    margin-top: 30px;
+    margin-left: 15px;
+    /*background-color: darkcyan;*/
+    padding: 35px;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 1px;
+    /*stroke: black;*/
+
+}
+
+.verification-info {
+    padding: 35px;
+    margin-top: 30px;
+        margin-left: 15px;
+    /*background-color: darkcyan;*/
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 1px;
+}
+
+.bubbles {
+    display: flex;
+    height: 45px;
+    width: 400px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.verification-bubbles img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.verification-bubbles-head {
+    display: flex;
+}
+
+.verification-bubbles-head h2{
+    margin-top: 15px;
+    margin-right: 30px;
+    color: #383838;
+}
+
+
+.verification-introduction {
+    background-color: rgba(248, 248, 248, 1);
+    padding: 35px;
+    border-color: rgba(232, 232, 232, 1);
+    color: #383838;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.verification-mail {
+    display: flex;
+    margin-top: 25px ;
+    margin-bottom: 30px;
+
+}
+
+.verification-mail-field {
+
+}
+
+.verification-list p{
+    margin-top: 10px;
+}
+
+.verification-mail-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background: #3751FF;
+    color: #FFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    /*background: #3751FF;*/
+
+    /* Inside auto layout */
+
+    order: 1;
+    flex-grow: 0;
+    border-style: none;
+}
+
+.verification-mail-field {
+    border-radius: 15px;
+    text-align: center;
+    width: 370px;
+    height: 50px;
+    border-color: rgba(224, 224, 224, 1);
+    border-style: solid;
+    margin-right: 15px;
+    font-size: 18px;
+
+}
+
+
+.verification-mail-field p{
+    padding: 18px;
+}
+
+.about-head h4 {
+    font-size: 18px;
+}
+
+.student-info h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.verification-list-first {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
