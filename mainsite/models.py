@@ -11,7 +11,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
-    short_description = models.CharField(max_length=200)
+    short_description = models.CharField(max_length=200, blank=True, null=True)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
@@ -37,3 +37,15 @@ class Profile(models.Model):
 
     def __str__(self):
         return str(self.user)
+
+
+class Speciality(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    key = models.CharField(max_length=10)
+    price = models.IntegerField(null=True, blank=True)
+    score = models.IntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return 'Код специальности: {}| Название: {}'.format(self.key, self.title)
+
