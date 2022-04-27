@@ -1,4 +1,4 @@
-.headerTwoEnteringImo{
+.headerTwoEnteringImo {
     width: 100%;
     background-color: #14161D;
     height: 300px;
@@ -6,34 +6,41 @@
     align-items: center;
     justify-content: center;
 }
-.headerTwoEnteringImo_place{
+
+.headerTwoEnteringImo_place {
     width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.headerTwoEnteringImo_links{
+
+.headerTwoEnteringImo_links {
     display: flex;
 }
-.headerTwoEnteringImo_link_butExit{
+
+.headerTwoEnteringImo_link_butExit {
     display: flex;
     align-items: center;
     margin-right: 19px;
 }
-.headerTwoEnteringImo_link_butExit_imgarrow{
+
+.headerTwoEnteringImo_link_butExit_imgarrow {
     margin: 0px 10px;
 }
-.headerTwoEnteringImo_link_butExit_text{
+
+.headerTwoEnteringImo_link_butExit_text {
     color: #CCCCCC;
     font-family: "inter";
     font-size: 15px;
 }
-.headerTwoEnteringImo_notbox_h1{
+
+.headerTwoEnteringImo_notbox_h1 {
     color: #fff;
     font-family: "inter";
     font-size: 60px;
 }
-.header_placeColor{
+
+.header_placeColor {
     width: 100%;
     background-color: #0E1016;
     display: flex;
@@ -42,20 +49,29 @@
     padding-bottom: 10px;
     flex-direction: column;
 }
-.headerTwoEnteringImo_Information{
+
+.headerTwoEnteringImo_Information {
     display: flex;
     justify-content: space-around;
     width: 70%;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
-.headerTwoEnteringImo_column{
+
+.headerTwoEnteringImo_column {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 240px;
 }
-.headerTwoEnteringImo_column_box{
+
+.borderLR {
+    border-left: 2px solid #21232E;
+    border-right: 2px solid #21232E;
+}
+
+.headerTwoEnteringImo_column_box {
     width: 200px;
     height: 225px;
     margin: 10px;
@@ -63,19 +79,23 @@
     justify-content: center;
     align-items: center;
 }
-.borderBottomAndTop{
-    border-top:2px solid #21232E ;
-    border-bottom:2px solid #21232E ;
+
+.borderBottomAndTop {
+    border-top: 2px solid #21232E;
+    border-bottom: 2px solid #21232E;
 }
-.borderTop{
-    border-top:2px solid #21232E ;
+
+.borderTop {
+    border-top: 2px solid #21232E;
 }
-.headerTwoEnteringImo_column_box_p{
+
+.headerTwoEnteringImo_column_box_p {
     color: #fff;
     font-family: "inter";
     font-size: 30px;
 }
-.headerTwoEnteringImo_column_item{
+
+.headerTwoEnteringImo_column_item {
     height: 200px;
     border: 0px;
     width: 2px;
@@ -83,16 +103,130 @@
     border-top: 1px solid #21232E;
     margin: 10px;
 }
-.headerTwoEnteringImo_columnCI{
+
+.headerTwoEnteringImo_columnCI {
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
-.marginbottom40px{
+
+.marginbottom40px {
     margin-bottom: 20px;
     margin-top: 30px;
 }
-.headerTwoEnteringImo_column_box_p_box_flex{
+
+.headerTwoEnteringImo_column_box_p_box_flex {
     width: 80%;
     height: 40%;
+}
+
+.fontSize28px {
+    font-size: 28px;
+}
+
+.img_link_box {
+    position: relative;
+    bottom: -110px;
+    left: -150px;
+}
+
+.img_link_boxEnd {
+    bottom: -100px;
+}
+
+.live_in_sharaga {
+    margin-top: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.live_in_sharaga_h1_text {
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.live_in_sharaga_h1_text_h1 {
+    font-size: 40px;
+    font-family: var(--font-averta-cy);
+    color: #fff;
+}
+
+.live_in_sharaga_boxIMG {
+    width: 90%;
+    height: 261px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    margin-bottom: 42px;
+    box-shadow: inset 0px -120px 49px rgba(0, 0, 0, 0.5);
+}
+
+.live_in_sharaga_boxIMG_bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    row-gap: 40px;
+}
+
+.live_in_sharaga_boxIMG_bottomItem {
+    width: 460px;
+    height: 460px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    box-shadow: inset 0px -120px 49px rgba(0, 0, 0, 0.5);
+}
+
+.live_in_sharaga_boxIMG_img1 {
+    background-image: url(../../img/imgAboutKAzan.svg);
+}
+
+.live_in_sharaga_boxIMG_img2 {
+    background-image: url(../../img/imgAboutSharaga.svg);
+}
+
+.live_in_sharaga_boxIMG_img3 {
+    background-image: url(../../img/Whatyoucanvisitinthecity.svg);
+}
+
+.live_in_sharaga_boxIMG_img4 {
+    background-image: url(../../img/sportStyleimg.svg);
+}
+
+.live_in_sharaga_boxIMG_img5 {
+    background-image: url(../../img/studLifeStyle.svg);
+}
+
+.live_in_sharaga_boxIMG_img6 {
+    background-image: url(../../img/nationalFod.svg);
+}
+
+.live_in_sharaga_boxIMG_a {
+    margin: 0 0 50px 50px;
+    font-size: 40px;
+    font-family: var(--font-averta-cy-EB);
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:555px) {
+    .headerTwoEnteringImo_notbox_h1 {
+        font-size: 40px;
+    }
+    .headerTwoEnteringImo_links {
+        flex-wrap: wrap;
+    }
 }
