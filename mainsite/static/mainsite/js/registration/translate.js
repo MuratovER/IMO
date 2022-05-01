@@ -35,6 +35,7 @@ function defineLang(obj, Lang) {
             HASAttribute('ru', htmlLang);
             console.log(htmlLang.getAttribute('lang'));
             TranslateLang("Ru", body);
+            ChangeActivIconLanguage("Ru");
             clickHeddenFuncton()
             break;
         case "Eng":
@@ -46,6 +47,7 @@ function defineLang(obj, Lang) {
             HASAttribute('en', htmlLang);
             console.log(htmlLang.getAttribute('lang'));
             TranslateLang("Eng", body);
+            ChangeActivIconLanguage("Eng");
             clickHeddenFuncton()
             break;
         case "中國人":
@@ -62,6 +64,30 @@ function defineLang(obj, Lang) {
             Lang.value = 'language not defined';
     }
 
+}
+
+function ChangeActivIconLanguage(lang) {
+    console.log(lang + "hello");
+    let elem = document.querySelectorAll(".change");
+    elem.forEach(element => {
+        element.removeAttribute("class");
+        element.setAttribute("class", "img_no_active change");
+        console.log("ok");
+        console.log(elem.className);
+    });
+    switch (lang) {
+        case "Ru":
+            elem[0].removeAttribute("class");
+            elem[0].setAttribute("class", "img_active change");
+            break;
+        case "Eng":
+            elem[1].removeAttribute("class");
+            elem[1].setAttribute("class", "img_active change");
+            break;
+        default:
+            console.log("noLAng");
+            break;
+    }
 }
 
 function HASAttribute(lang, htmlLang) {
