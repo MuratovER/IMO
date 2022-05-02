@@ -5,12 +5,13 @@
     align-items: center;
 }
 .header{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 56px;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 .main_icon_logo{
     position: absolute;
@@ -20,8 +21,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     left: 2%;
+
 }
 .menu_links_boxs{
+    margin-left: 100px;
     display: flex;
     width: 75%;
     justify-content: space-around;
