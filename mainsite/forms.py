@@ -37,7 +37,7 @@ class ProfileForm(forms.ModelForm):
         model = Profile
         fields = [ 'user', 'name', 'email', 'city', 'country', 'gender', 'birthdate', 'phone', 'citizenship']
         widgets = {
-            'user': forms.TextInput(attrs={ 'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallYou",
+            'user': forms.Select(attrs={ 'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallYou",
                                             'id': "id_user",
                                             'placeholder': "Как к Вам обращаться?",
                                             'onmousedown': "mouseUp(this)" ,
