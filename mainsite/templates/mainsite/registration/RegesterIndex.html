@@ -2,594 +2,78 @@
 {% block content %} 
 {%  load static %}
 
-<script>
-    
-</script>
 <div id="hend" class="indexEnterWindow">  
     <div class="main_block" id="main_block">
         <div class="main_block_blok_TopMenu_flexBox">
             <div class="main_block_blok_TopMenu">
                 <a href="#" class="main_block_blok_TopMenu_Logo"> 
-                    <img id="imgLogo" src="{% static 'mainsite/img/mainICON_1.svg' %}" style="background-repeat: no-repeat;
-                                                                                                        background-size: contain;
-                                                                                                        width: 56px;
-                                                                                                        height: 56px;
-                                                                                                        " alt="лого нет"></a> <!--cursor:url(img/cursor_w.svg) 2 2 ,auto;-->
+                    <img id="imgLogo" src="{% static 'mainsite/img/mainICON_1.svg' %}" 
+                                      style="background-repeat: no-repeat;
+                                             background-size: contain;
+                                             width: 56px;
+                                             height: 56px;" 
+                                       alt="лого нет"></a> <!--cursor:url(img/cursor_w.svg) 2 2 ,auto;-->
                 <div class="main_block_blok_TopMenu_Addition">
-                    <div class="main_block_blok_TopMenu_Addition_theme_box"  style="display: none;">
+                    <div class="main_block_blok_TopMenu_Addition_theme_box" style="display: none;">
                         <input type="button" class="main_block_blok_TopMenu_Addition_theme_" id="theme" onclick="clickThemeFunction()">
                     </div>
                     <div class="Addition_block_langs">
-                        <input type="button" class="main_block_blok_TopMenu_Addition_langs_1 Lang-name" id="Langs" value="RU" onclick="clickHeddenFuncton()">
-                        <div class="hidden_block_1" id="hidden_block">
+                        <input type="button" class="main_block_blok_TopMenu_Addition_langs_1 Lang-name" id="Langs" value="Ru" onclick="clickHeddenFuncton()">
+                        <div class="hidden_block_1" id="hidden_block" style="display: none;">
                             <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img RU" id="hidden_block_id1" onmouseover="onmouseover_1(this)" onmouseout="onmouseout_1_1(this)" ><div id="Ru" class="_block_RU"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div><!--hidden_block_leng_1_img-->
-                                <div class="hidden_block_leng_1_RU" id="HiddenBlockLengRU" >Русский</div>
+                                <div class="hidden_block_leng_1_img RU" id="hidden_block_id1" onmouseover="onmouseover_1(this)" onmouseout="onmouseout_1_1(this)"><div id="Ru" class="_block_RU" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div><!--hidden_block_leng_1_img-->
+                                <div class="hidden_block_leng_1_RU" id="HiddenBlockLengRU">Русский</div>
                             </div>
                             <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img ENG" id="hidden_block_id2" onmouseover="onmouseover_2(this)" onmouseout="onmouseout_2_2(this)" ><div id="Eng" class="_block_ENG"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
-                                <div class="hidden_block_leng_1_ENG  _eng" id="HiddenBlockLengENG" >English</div>
+                                <div class="hidden_block_leng_1_img ENG" id="hidden_block_id2" onmouseover="onmouseover_2(this)" onmouseout="onmouseout_2_2(this)"><div id="Eng" class="_block_ENG" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_ENG  _eng" id="HiddenBlockLengENG">English</div>
                             </div>
                             <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img Chinese" id="hidden_block_id3" onmouseover="onmouseover_3(this)" onmouseout="onmouseout_3_3(this)" ><div id="中國人" class="_block_Chinese"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
-                                <div class="hidden_block_leng_1_Chinese _Chinese" id="HiddenBlockLengChinese" >中國人</div>
+                                <div class="hidden_block_leng_1_img Chinese" id="hidden_block_id3" onmouseover="onmouseover_3(this)" onmouseout="onmouseout_3_3(this)"><div id="中國人" class="_block_Chinese" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_Chinese _Chinese" id="HiddenBlockLengChinese">中國人</div>
                             </div>
                             <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img Spanish" id="hidden_block_id4" onmouseover="onmouseover_4(this)" onmouseout="onmouseout_4_4(this)" ><div id="Spanish" class="_block_Spanish"onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
-                                <div class="hidden_block_leng_1_Spanish" id="HiddenBlockLengSpanish" >español</div>
+                                <div class="hidden_block_leng_1_img Spanish" id="hidden_block_id4" onmouseover="onmouseover_4(this)" onmouseout="onmouseout_4_4(this)"><div id="Spanish" class="_block_Spanish" onclick="defineLang(this,document.querySelector('.Lang-name'))"></div></div>
+                                <div class="hidden_block_leng_1_Spanish" id="HiddenBlockLengSpanish">español</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-
-    <form method="post" action="" class="main_block_form" id="">
-        {% csrf_token %}
-        <div class="main_block_form_flex_" >
-            <div id="RegistrationChoice" class="RegistrationChoice" style="display: block;">
-                <!-- <div class="main_block_Buttom_ __">
-                    <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                    <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" href="#">назад</a>главная страница
-                </div> -->
-                <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Выберите вид регистрации</p>
-                <div class="main_block_form_flex_Regester">
-                    <div class="main_block_form_flex_Regester_boxMainBoxes">
-                        <div class="flex_boxFormRegesterMedia">
-                            <div class="main_block_form_flex_Regester_boxMainBoxes_ButtomRegister Them_ButtomRegister1" id="#"  name="img1"onclick="definitionBut(this)">
-                                <div class="main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img1 Them_ButtomRegister_img1">
-    
-                                </div>
-                            </div>
-                        </div>
-                        <p class="main_block_form_flex_Regester_boxMainBoxes_text LengText-registration-text-iampredst">Я – представитель </p>
-                    </div>
-                    <div class="main_block_form_flex_Regester_boxMainBoxes margin_in_ButtomRegister">
-                        <div class="flex_boxFormRegesterMedia">
-                            <div class="main_block_form_flex_Regester_boxMainBoxes_ButtomRegister Them_ButtomRegister1" id="#"  name="img2"onclick="definitionBut(this)">
-                                <div class="main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img2 Them_ButtomRegister_img2" >
-    
-                                </div>
-                            </div>
-                        </div>
-                        <p class="main_block_form_flex_Regester_boxMainBoxes_text LengText-registration-text-iamastudent">Я Студент</p>
-                    </div>
-                    <div class="main_block_form_flex_Regester_boxMainBoxes">
-                        <div class="flex_boxFormRegesterMedia">
-                            <div class="main_block_form_flex_Regester_boxMainBoxes_ButtomRegister Them_ButtomRegister1" id="#" name="img3"onclick="definitionBut(this)">
-                                <div class="main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img3 Them_ButtomRegister_img3" >
-    
-                                </div>
-                            </div>
-                        </div>
-                        <p class="main_block_form_flex_Regester_boxMainBoxes_text LengText-registration-text-iamagensi">Я рекрутинговое <br/>агентство</p>
-                    </div>
-                </div>
-                <div class="regesterText_box">
-                    <p id="regesterText" class="regesterText LengText-ThereIsProfel">Уже есть профиль? <div><a id="" href="{% url 'login' %}" class="regesterTextLink LengText-login">Авторизуйтесь</a></div></p>
-                </div>
-            </div>
-            
-            <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" id="FormBlockHideFunction" style="display: none;">
-                <div class="main_box_but_form_Iamastud" id="but_form_Iamastud1">
-                    <div class="main_box_but_form_Iamastud_FORM">
-                        <div class="main_block_form_flex">
-                            <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                                <div class="main_block_Buttom_ __">
-                                    <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                    <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                                </div>
-                            </div>
-                            <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                            <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
-                            <div class="main_block_form_textName_flexBox">
-                                {{ form.username}} 
-                                            
-                            </div>
-                            <div class="main_block_form_textPassword_box_flexBox">
-                                <div class="main_block_form_textPassword_box">
-                                    {{ form.password }}
-                                    <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword'))"></a>
-                                </div>
-                            </div>
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass1" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction(1,this,boxes = document.querySelectorAll('.FormBlockHideFunction') )">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM1">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
-                        <div class="main_block_form_flex">
-                            {{ form.name }}
-                            {{ form.country }}
-                            {{ form.homecity }}
-                            {{ form.phone }}
-                            {{ form.email }}
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction(2,this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud3" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM2">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration-nextstep">Последние шаги</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-checkdata">Проверим данные</p>
-                        <div class="main_block_form_flex_regesterDate">
-                            <div class="main_block_form_flex_table">
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1NameP">Имя пользователя:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText"> AzimovFG</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1yourPass">Ваш пароль:</div>
-                                    <div class="main_block_form_flex_td2">
-                                        <div class="main_block_form_textPassword_box2">
-                                            <input type="password" class="main_block_form_textPassword main_block_form_input_2" id="InputFieldPassword2" value="pass">
-                                            <a class="informationEay2" id="informationEay" onclick="ChangeEay(this,document.querySelector('#InputFieldPassword2'))"></a>
-                                        </div>
+        <form method="POST" action="" class="main_block_form">
+            {% csrf_token %}
+            <div class="main_block_form_flex_" >
+                <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" id="FormBlockHideFunction" style="display: block;">
+                    <div class="main_box_but_form_Iamastud" id="but_form_Iamastud1">
+                        <div class="main_box_but_form_Iamastud_FORM">
+                            <div class="main_block_form_flex">
+                                <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
+                                    <div class="main_block_Buttom_ __">
+                                        <div class="main_block_Buttom_Arrow" id="arrow"></div>
+                                        <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
                                     </div>
                                 </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1Youlifefrom">Вы родом из:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText">Таджикистан</div>
+                                <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
+                                <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
+                                <div class="main_block_form_textName_flexBox">
+                                    {{ form.username}}       
                                 </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1YourLifeSity">Ваш родной город:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText">Душамбе</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1Howicallyou">Как к Вам обращаться:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText">Абдулла Ибн Хатаб</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1NumPhone">Номер телефона:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText">+971 56 231 2415</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1Email">Адрес электронной почты:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText">asdsd41ddfwterwt@gmail.com</div>
-                                </div>
-                            </div>
-                            <div class="flex_div">
-                                <hr class="regester_hr main_block_form_TextSelection_HR" id="clorHR_B81">
-                            </div>
-                            <div class="loginText_box_main">
-                                <p id="loginText" class="loginText_box LengText-textRegesterSoglash1">Нажимая на кнопку “Зарегистрироваться” вы соглашаетесь с правилами<a href="#" class="loginText_box_a LengText-textRegesterSoglash2">Политики конфидициальности</a></p>
-                            </div>
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1" id="InputEnterButtom" value="Зарегистрироваться" onclick="FormBlockHideFunction(3,this,boxes = document.querySelectorAll('.FormBlockHideFunction'))">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud4" id="but_form_Iamastud4">
-                    <h1 class="main_box_but_form_Iamastud4_h1 LengText-EndTextTHANKS">Поздравляем</h1>
-                    <p class="main_box_but_form_Iamastud4_p1 LengText-EndTextWeHappiYou">Вы успешно зарегистрировались и мы рады Вам</p>
-                    <a href="#" class="main_box_but_form_Iamastud_a LengText-EndTextNextWork">Продолжить работу</a>
-                    <p class="main_box_but_form_Iamastud_p2 LengText-EndTextWindowEnd">Это окно закроется через <span id="numberTime">5</span> секунд</p>
-                </div>
-            </div>
-
-            <!--так это был раздел регистрации для студентов и сейчас будет для представителей-->
-            <!--так это был раздел регистрации для студентов и сейчас будет для представителей-->
-            <!--так это был раздел регистрации для студентов и сейчас будет для представителей-->
-            <!--так это был раздел регистрации для студентов и сейчас будет для представителей-->
-            <!--так это был раздел регистрации для студентов и сейчас будет для представителей-->
-            <!--так это был раздел регистрации для студентов и сейчас будет для представителей-->
-
-            <div class="main_box_but_form_Iamastud_main1 FormBlockHideFunction1 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud" id="but_form_Iamastud1">
-                    <div class="main_box_but_form_Iamastud_FORM1">
-                        <div class="main_block_form_flex">
-                            <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                                <div class="main_block_Buttom_ __">
-                                    <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                    <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                                </div>
-                            </div>
-                            <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                            <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
-                            <div class="main_block_form_textName_flexBox">
-                               {{ form.username }}
-                            </div>
-                            <div class="main_block_form_textPassword_box_flexBox">
-                                <div class="main_block_form_textPassword_box">
-                                    {{ form.password}}
-                                    <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword1'))"></a>
-                                </div>
-                            </div>
-                            
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass1" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction1(2,this,boxes = document.querySelectorAll('.FormBlockHideFunction1'))">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main1 FormBlockHideFunction1 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM1">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
-                        <div class="main_block_form_flex">
-                            {{ form.name }}
-                            {{ form.coutry }}
-                            {{ form.homecity }}
-                            {{ form.phone}}
-                            {{ form.email}}
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction1(3,this,boxes = document.querySelectorAll('.FormBlockHideFunction1'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main1 FormBlockHideFunction1 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM1">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Поговорим о Вас</p>
-                        <div class="main_block_form_flex">
-                            {{ form.name_applicant }}
-                            {{ form.name_delegate }}
-                            {{ form.delegate_email }}
-                            {{ form.delegate_phone }}
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction1(4,this,boxes = document.querySelectorAll('.FormBlockHideFunction1'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main1 FormBlockHideFunction1 FormBlockHideFunctionMainBtExit" style="display: none;"><!--none-->
-                <div class="main_box_but_form_Iamastud3" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM2">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration-nextstep">Последние шаги</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-checkdata">Проверим данные</p>
-                        <div class="main_block_form_flex_regesterDate">
-                            <div class="main_block_form_flex_table">
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1NameP">Имя пользователя:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1"> AzimovFG</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1yourPass">Ваш пароль:</div>
-                                    <div class="main_block_form_flex_td2">
-                                        <div class="main_block_form_textPassword_box2">
-                                            <input type="password" class="main_block_form_textPassword main_block_form_input_2" id="InputFieldPassword3" value="">
-                                            <a class="informationEay2" id="informationEay" onclick="ChangeEay(this,document.querySelector('#InputFieldPassword3'))"></a>
-                                        </div>
+                                <div class="main_block_form_textPassword_box_flexBox">
+                                    <div class="main_block_form_textPassword_box">
+                                        {{ form.password1}}
+                                        <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#id_password1'))"></a>
                                     </div>
                                 </div>
-                                <div class="main_block_form_flex_h1test_FLEX">
-                                    <p class="main_block_form_flex_h1test main_block_form_flex_td1 LengText-td1h1DataStud">Данные студента</p>
+                                <div class="child_element_flex">
+                                    <input type="submit" class="main_block_form_button main_block_form_input_1 trueChangePass1"  value="Дальше" onclick="FormBlockHideFunction(1,this,boxes = document.querySelectorAll('.FormBlockHideFunction') )">
                                 </div>
-                                <div class="flex_div notflex_div">
-                                    <hr class="regester_hr main_block_form_TextSelection_HR notmain_block_form_TextSelection_HR" id="clorHR_B81">
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1StudLifefrom">Студент родом из:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1">Таджикистан</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1YourLifeSitu">Ваш родной город:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1">Душамбе</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1HowNameStud">Как зовут студента:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1">Абдулла Ибн Хатаб</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1NumberPhoneStud">Номер телефона студента:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1">+971 56 231 2415</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1EmailAdress">Адрес электронной почты:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1">asdsd41ddfwterwt@gmail.com</div>
-                                </div>
-                                <!-- <div class="main_block_form_flex_tr"> -->
-                                    <p class="main_block_form_flex_h1test main_block_form_flex_td1 main_block_form_flex_td1Margin LengText-td1DataPredsText">Данные представителя</p>
-                                <!-- </div> -->
-                                <div class="flex_div notflex_div">
-                                    <hr class="regester_hr main_block_form_TextSelection_HR notmain_block_form_TextSelection_HR" id="clorHR_B81">
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1HowYourCallmy">Как к Вам обращаться:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1"></div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1WhatAreYouStud">Вы являетесь для абитуриента:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1"></div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1YourEmailAdress">Ваша электронная почта:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1"></div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1YourNumberPhone">Ваш номер телефона:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText1"></div>
-                                </div>
-                            </div>
-                            <div class="flex_div">
-                                <hr class="regester_hr main_block_form_TextSelection_HR" id="clorHR_B81">
-                            </div>
-                            <div class="loginText_box_main">
-                                <p id="loginText" class="loginText_box LengText-textRegesterSoglash1">Нажимая на кнопку “Зарегистрироваться” вы соглашаетесь с правилами<a id="" href="#" class="loginText_box_a LengText-textRegesterSoglash2">Политики конфидициальности</a></p>
-                            </div>
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1" id="InputEnterButtom" value="Зарегистрироваться" onclick="FormBlockHideFunction1(5,this,boxes = document.querySelectorAll('.FormBlockHideFunction1'))">
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main1 FormBlockHideFunction1 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud4" id="but_form_Iamastud4">
-                    <h1 class="main_box_but_form_Iamastud4_h1 LengText-EndTextTHANKS">Поздравляем</h1>
-                    <p class="main_box_but_form_Iamastud4_p1 LengText-EndTextWeHappiYou">Вы успешно зарегистрировались и мы рады Вам</p>
-                    <a href="#" class="main_box_but_form_Iamastud_a LengText-EndTextNextWork">Продолжить работу</a>
-                    <p class="main_box_but_form_Iamastud_p2 LengText-EndTextWindowEnd">Это окно закроется через <span id="numberTime1">5</span> секунд</p>
-                </div>
-            </div>
-            <!---->
-            <!--так это был раздел регистрации для представителей и сейчас будет для рекрутинговое агенство-->
-            <!--так это был раздел регистрации для представителей и сейчас будет для рекрутинговое агенство-->
-            <!--так это был раздел регистрации для представителей и сейчас будет для рекрутинговое агенство-->
-            <!--так это был раздел регистрации для представителей и сейчас будет для рекрутинговое агенство-->
-            <!--так это был раздел регистрации для представителей и сейчас будет для рекрутинговое агенство-->
-            <!--так это был раздел регистрации для представителей и сейчас будет для рекрутинговое агенство-->
-            <div class="main_box_but_form_Iamastud_main3 FormBlockHideFunction3 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud" id="but_form_Iamastud1">
-                    <div class="main_box_but_form_Iamastud_FORM">
-                        <div class="main_block_form_flex">
-                            <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                                <div class="main_block_Buttom_ __">
-                                    <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                    <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                                </div>
-                            </div>
-                            <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                            <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
-                            <div class="main_block_form_textName_flexBox">
-                               {{ form.username }}
-                            </div>
-                            <div class="main_block_form_textPassword_box_flexBox">
-                                <div class="main_block_form_textPassword_box">
-                                    {{ form.password}}
-                                    <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword4'))"></a>
-                                </div>
-                            </div>
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass1" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction3(2,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main3 FormBlockHideFunction3 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM1">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
-                        <div class="main_block_form_flex">
-                            <!--input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallStud" id="InputFieldMiddleValidationStud3" placeholder="Как зовут студента?" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectCountryStud" id="InputFieldCountryNameValidationStud3" placeholder="Страна студента" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-LifeSityStud" id="InputFieldYourNativeSityStud3" placeholder="Родной город студента" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-NumberPhoneStud" id="InputFieldYourNumberPhoneStud3" placeholder="Номер телефона студента (при наличии)" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-emailStud" id="InputFieldEmailAddressStud3" placeholder="Адрес электронной почты студента (при наличии)" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)"-->
-                            {{ form.name }}
-                            {{ form.coutry }}
-                            {{ form.homecity }}
-                            {{ form.phone}}
-                            {{ form.email}}
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction3(3,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main3 FormBlockHideFunction3 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM1">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Поговорим о Вас</p>
-                        <div class="main_block_form_flex">
-                            <!--input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-NameOfTheorganizationOrg" id="InputFieldMiddleValidationPer3" placeholder="Название организации" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-typeOfOrganizationOrg" id="InputFieldCountryNameValidationPer3" placeholder="Вид деятельность организации" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCallyouOrg" id="InputFieldYourCanYouCollPer3" placeholder="Как к Вам обращаться?" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-yourNumberPhoneOrg" id="InputFieldYourNumberPhonePer3" placeholder="Ваш номер телефона" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)">
-                            <input type="text" class="main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-YourEmailadressOrg" id="InputFieldEmailAddressPer3" placeholder="Ваш адрес электронной почты" onmousedown="mouseUp3(this)" onmouseup="mouseUp3(this)" onchange="mouseUp3(this)" onmouseover="mouseUp3(this)"-->
-                            {{ form.name_company }}
-                            {{ form.company_business}}
-                            {{ form.name_applicant }}
-                            {{ form.company_email}}
-                            {{ form.company_phone}}
-                            <div class="child_element_flex">
-                                <input type="button" class="main_block_form_button main_block_form_input_1 trueChangePass2" id="InputEnterButtom" value="Дальше" onclick="FormBlockHideFunction3(4,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))"> <!--onclick="FormBlockHideFunction(this,boxes = document.querySelectorAll('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main3 FormBlockHideFunction3 FormBlockHideFunctionMainBtExit" style="display: none;"><!--none-->
-                <div class="main_box_but_form_Iamastud3" id="but_form_Iamastud2">
-                    <div class="main_box_but_form_Iamastud_FORM2">
-                        <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                            <div class="main_block_Buttom_ __">
-                                <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                            </div>
-                        </div>
-                        <h1 id="TextLogin" class="main_block_form_h1 LengText-registration-nextstep">Последние шаги</h1>
-                        <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-checkdata">Проверим данные</p>
-                        <div class="main_block_form_flex_regesterDate">
-                            <div class="main_block_form_flex_table">
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1NameP">Имя пользователя:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3"> AzimovFG</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1yourPass">Ваш пароль:</div>
-                                    <div class="main_block_form_flex_td2">
-                                        <div class="main_block_form_textPassword_box2">
-                                            <input type="password" class="main_block_form_textPassword main_block_form_input_2" id="InputFieldPassword5" value="">
-                                            <a class="informationEay2" id="informationEay" onclick="ChangeEay(this,document.querySelector('#InputFieldPassword5'))"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="main_block_form_flex_tr"> -->
-                                    <p class="main_block_form_flex_h1test main_block_form_flex_td1 LengText-td1h1DataStud">Данные студента</p>
-                                <!-- </div> -->
-                                <div class="flex_div notflex_div">
-                                    <hr class="regester_hr main_block_form_TextSelection_HR notmain_block_form_TextSelection_HR" id="clorHR_B81">
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1StudLifefrom">Студент родом из:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3">Таджикистан</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1YourLifeSitu">Ваш родной город:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3">Душамбе</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1HowNameStud">Как зовут студента:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3">Абдулла Ибн Хатаб</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1NumberPhoneStud">Номер телефона студента:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3">+971 56 231 2415</div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1EmailAdress">Адрес электронной почты:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3">asdsd41ddfwterwt@gmail.com</div>
-                                </div>
-                                <!-- <div class="main_block_form_flex_tr"> -->
-                                    <p class="main_block_form_flex_h1test main_block_form_flex_td1 main_block_form_flex_td1Margin LengText-td1DataPredsText">Данные представителя</p>
-                                <!-- </div> -->
-                                <div class="flex_div notflex_div">
-                                    <hr class="regester_hr main_block_form_TextSelection_HR notmain_block_form_TextSelection_HR" id="clorHR_B81">
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1NameOfOrganizationOrg">Название организации:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3"></div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1TypeOfOrganizationOrg">Вид деятельности организации:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3"></div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1HowICallYouOrg">Как к Вам обращаться:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3"></div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1YourNumberPhoneOrg">Ваш номер телефона:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3"></div>
-                                </div>
-                                <div class="main_block_form_flex_tr">
-                                    <div class="main_block_form_flex_td1 LengText-td1AdressEmailOrg">Адрес электронной почты:</div>
-                                    <div class="main_block_form_flex_td2 DataPersText3"></div>
-                                </div>
-                            </div>
-                            <div class="flex_div">
-                                <hr class="regester_hr main_block_form_TextSelection_HR" id="clorHR_B81">
-                            </div>
-                            <div class="loginText_box_main">
-                                <p id="loginText" class="loginText_box LengText-textRegesterSoglash1">Нажимая на кнопку “Зарегистрироваться” вы соглашаетесь с правилами<a id="" href="#" class="loginText_box_a LengText-textRegesterSoglash2">Политики конфидициальности</a></p>
-                            </div>
-                            <div class="child_element_flex">
-                                <input type="submit" class="main_block_form_button main_block_form_input_1" id="InputEnterButtom" value="Зарегистрироваться" onclick="FormBlockHideFunction3(5,this,boxes = document.querySelectorAll('.FormBlockHideFunction3'))">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_box_but_form_Iamastud_main3 FormBlockHideFunction3 FormBlockHideFunctionMainBtExit" style="display: none;">
-                <div class="main_box_but_form_Iamastud4" id="but_form_Iamastud4">
-                    <h1 class="main_box_but_form_Iamastud4_h1 LengText-EndTextTHANKS">Поздравляем</h1>
-                    <p class="main_box_but_form_Iamastud4_p1 LengText-EndTextWeHappiYou">Вы успешно зарегистрировались и мы рады Вам</p>
-                    <a href="#" class="main_box_but_form_Iamastud_a LengText-EndTextNextWork">Продолжить работу</a>
-                    <p class="main_box_but_form_Iamastud_p2 LengText-EndTextWindowEnd">Это окно закроется через <span id="numberTime3">5</span> секунд</p>
-                </div>
-            </div>
+          </div>
         </div>
     </form>
-
         <div class="main_block_footer_blockFlex">
             <div class="main_block_footer">
                 <div class="main_block_footer_boxs">
@@ -606,9 +90,6 @@
             </div>
         </div>
     </div>
-    
-
 </div>
-
 
 {% endblock %} 

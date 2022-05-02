@@ -1,10 +1,12 @@
 from urllib import request
-from mainsite.forms import SignUpFormDelegate, SignUpFormStudent, SignUpForAgency
+
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import render, redirect
-
+from .forms import CreateUserForm, ProfileForm
 from mainsite.models import Profile, Post
+from django.contrib import messages
+
 
 
 def home_page(request):
@@ -12,7 +14,23 @@ def home_page(request):
 
 
 def login_view(request):
-    return render(request, 'mainsite/registration/LoginIndex.html')
+    if request.user.is_authenticated:
+        return redirect('home_page')
+    else:
+        if request.method == 'POST':
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('home_page')
+            else:
+                messages.info(request, 'Username OR password is incorrect')
+
+        ctx = {}
+    return render(request, 'mainsite/registration/LoginIndex.html', ctx)
+
 
 
 def profile_view(request):
@@ -35,21 +53,38 @@ def news_view(request):
 
 def signup_view(request):
     '''вьюха с логикой регистрации'''
-    form = SignUpFormDelegate(request.POST)
+    form = CreateUserForm(request.POST)
     if form.is_valid():
         user = form.save()
         user.refresh_from_db()
-        user.profile.email = form.cleaned_data.get('email')
+        # user.profile.email = form.cleaned_data.get('email')
         user.save()
         username = form.cleaned_data.get('username')
         password = form.cleaned_data.get('password1')
         user = authenticate(username=username, password=password)
+        messages.success(request, 'Account was created for ' + username)
         login(request, user)
-        return redirect('user_page')
+        return redirect('extra')
     else:
-        form = SignUpFormDelegate()
+        form = CreateUserForm()
     return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})
 
 
 def logout_view(request):
     return render(request, 'mainsite/home/home_page.html')
+
+def extra_view(request):
+    if request.method=='POST':
+        form = ProfileForm(request.POST)
+        # print(form)
+        if form.is_valid():
+            # form.instance.user = self.request.user
+            # return super().form_valid(form)
+            extra = form.save()
+            return redirect('profile')
+        # else:
+        #     form = ProfileForm()
+    else:
+        form = ProfileForm()        
+    ctx = {'form': form}
+    return render(request, 'mainsite/registration/ExtraInfo.html', ctx)         
