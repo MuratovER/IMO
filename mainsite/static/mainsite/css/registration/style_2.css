@@ -255,6 +255,8 @@
     font-family: var(--font-averta-cy-EB);
     padding: 10px 25px 10px 35px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .text_List_In_buttom_imgSvg {
@@ -1460,7 +1462,7 @@
         width: 180px;
         border: 1px solid #F3F3F3;
         border-radius: 5px;
-        background-color: #17181E;
+        background-color: var(--backgroundColor);
         padding: 5px;
         align-items: baseline;
         transition: 1s;
