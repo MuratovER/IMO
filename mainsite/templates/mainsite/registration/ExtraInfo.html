@@ -4,62 +4,6 @@
 
 <div id="hend" class="indexEnterWindow">
     <div class="main_block" id="main_block">
-        <div class="main_block_blok_TopMenu_flexBox">
-            <div class="main_block_blok_TopMenu">
-                <a href="#" class="main_block_blok_TopMenu_Logo">
-                    <img id="imgLogo" src="{% static 'mainsite/img/mainICON_1.svg' %}" style="background-repeat: no-repeat;
-                                             background-size: contain;
-                                             width: 56px;
-                                             height: 56px;" alt="лого нет"></a>
-                <!--cursor:url(img/cursor_w.svg) 2 2 ,auto;-->
-                <div class="main_block_blok_TopMenu_Addition">
-                    <div class="main_block_blok_TopMenu_Addition_theme_box" style="display: none;">
-                        <input type="button" class="main_block_blok_TopMenu_Addition_theme_" id="theme"
-                            onclick="clickThemeFunction()">
-                    </div>
-                    <div class="Addition_block_langs">
-                        <input type="button" class="main_block_blok_TopMenu_Addition_langs_1 Lang-name" id="Langs"
-                            value="Ru" onclick="clickHeddenFuncton()">
-                        <div class="hidden_block_1" id="hidden_block" style="display: none;">
-                            <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img RU" id="hidden_block_id1"
-                                    onmouseover="onmouseover_1(this)" onmouseout="onmouseout_1_1(this)">
-                                    <div id="Ru" class="_block_RU"
-                                        onclick="defineLang(this,document.querySelector('.Lang-name'))"></div>
-                                </div>
-                                <!--hidden_block_leng_1_img-->
-                                <div class="hidden_block_leng_1_RU" id="HiddenBlockLengRU">Русский</div>
-                            </div>
-                            <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img ENG" id="hidden_block_id2"
-                                    onmouseover="onmouseover_2(this)" onmouseout="onmouseout_2_2(this)">
-                                    <div id="Eng" class="_block_ENG"
-                                        onclick="defineLang(this,document.querySelector('.Lang-name'))"></div>
-                                </div>
-                                <div class="hidden_block_leng_1_ENG  _eng" id="HiddenBlockLengENG">English</div>
-                            </div>
-                            <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img Chinese" id="hidden_block_id3"
-                                    onmouseover="onmouseover_3(this)" onmouseout="onmouseout_3_3(this)">
-                                    <div id="中國人" class="_block_Chinese"
-                                        onclick="defineLang(this,document.querySelector('.Lang-name'))"></div>
-                                </div>
-                                <div class="hidden_block_leng_1_Chinese _Chinese" id="HiddenBlockLengChinese">中國人</div>
-                            </div>
-                            <div class="hidden_block_flex">
-                                <div class="hidden_block_leng_1_img Spanish" id="hidden_block_id4"
-                                    onmouseover="onmouseover_4(this)" onmouseout="onmouseout_4_4(this)">
-                                    <div id="Spanish" class="_block_Spanish"
-                                        onclick="defineLang(this,document.querySelector('.Lang-name'))"></div>
-                                </div>
-                                <div class="hidden_block_leng_1_Spanish" id="HiddenBlockLengSpanish">español</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
      {% if request.user.is_authenticated %}
         <form method="POST" action="" class="main_block_form" enctype="multipart/form-data">
             {% csrf_token %}
