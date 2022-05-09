@@ -80,15 +80,10 @@ def extra_view(request):
         profile = Profile(user=request.user)
     if request.method=='POST':
         form = ProfileForm(request.POST, instance=profile)
-        # print(form)
         
         if form.is_valid():
-            # form.instance.user = self.request.user
-            # return super().form_valid(form)
             extra = form.save()
             return redirect('profile')
-        # else:
-        #     form = ProfileForm()
     else:
         form = ProfileForm(instance=profile)        
     ctx = {'form': form}
