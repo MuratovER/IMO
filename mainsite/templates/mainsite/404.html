@@ -1,0 +1,13 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{%  load static %}
+    <div class="error404">
+        <div class="mainerrorimage">
+        </div>
+        <h1>
+            Данная страница не была найдена
+        </h1>
+        <p>Пожалуйста вернитесь на <a href="{% url 'home_page' %}">Главную</a></p>
+    </div>
+
+{% endblock %}
