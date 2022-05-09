@@ -1,0 +1,78 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{% load static %}
+
+<div id="hend" class="indexEnterWindow">
+    <div class="main_block" id="main_block">
+     {% if request.user.is_authenticated %}
+        <form method="POST" action="" class="main_block_form" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="main_block_form_flex_">
+                <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit"
+                    style="display: block;">
+                    <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
+                        <div class="main_box_but_form_Iamastud_FORM1">
+                            <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
+                                <div class="main_block_Buttom_ __">
+                                    <div class="main_block_Buttom_Arrow" id="arrow"></div>
+                                    <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit"
+                                        onclick="exitBT()">Назад</a>
+                                    <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
+                                </div>
+                            </div>
+                            <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
+                            <p id="TextButtomLogin"
+                                class="main_block_form_InformationalText LengText-TypeOfRegistration">Выберите вид
+                                регистрации</p>
+                            <div class="main_block_form_flex">
+                                <!-- {{ form.as_p }} -->
+                                <!-- <div  style="flex-direction: column;"> -->
+                                {{ form.user}}
+                                {{ form.name }}
+                                {{ form.email }}
+                                {{ form.city }}
+                                {{ form.country }}
+                                {{ form.gender }}
+                                {{ form.birthdate }}
+                                {{ form.phone }}
+                                {{ form.citizenship }}
+                                <!-- </div> -->
+                                <div class="child_element_flex">
+                                    <input type="submit"
+                                        class="main_block_form_button main_block_form_input_1 trueChangePass2"
+                                        id="InputEnterButtom" name="_save" value="Авторизоваться">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        {% else %}
+        
+         <a href="{% url 'login' %}">Login</a>
+
+    {% endif %}
+        <div class="main_block_footer_blockFlex">
+            <div class="main_block_footer">
+                <div class="main_block_footer_boxs">
+                    <div class="main_block_footer_box">
+                        <a class="main_block_footer_box_text1 LengText-PrivacyPolicy" id="footer_box_text1"
+                            href="#">Политика конфидециальности</a>
+                    </div>
+                    <div class="main_block_footer_box">
+                        <a class="main_block_footer_box_text1 LengText-TermsOfUse" id="footer_box_text2"
+                            href="#">Условия пользования</a>
+                    </div>
+                </div>
+                <p class="main_block_footer_box_text12 lawTextKai LengText-WhiRigh">
+                    ©2021 КНИТУ КАИ. Все права защищены
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}
