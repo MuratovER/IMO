@@ -73,6 +73,7 @@ def signup_view(request):
 def logout_view(request):
     return render(request, 'mainsite/home/home_page.html')
 
+
 def extra_view(request):
     try:
         profile = request.user.profile
@@ -89,3 +90,8 @@ def extra_view(request):
     ctx = {'form': form}
     return render(request, 'mainsite/registration/ExtraInfo.html', ctx)
              
+
+
+def error_404_view(request, exception):
+    return render(request, 'mainsite/404.html')
+

@@ -13,3 +13,6 @@ urlpatterns = [
     path('news/', views.news_view, name='news'),
     path('extra/', views.extra_view, name='extra'),
 ]
+
+handler404 = 'mainsite.views.error_404_view'
+
