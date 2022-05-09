@@ -3,7 +3,7 @@
 {% for post in posts %}
 
     {{ post.title }}
-    {{ post.text }}
+    {{ post.text|safe }}
     {{ post.published_date }}
 
 {% endfor %}
