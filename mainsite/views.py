@@ -53,3 +53,7 @@ def signup_view(request):
 
 def logout_view(request):
     return render(request, 'mainsite/home/home_page.html')
+
+
+def error_404_view(request, exception):
+    return render(request, 'mainsite/404.html')

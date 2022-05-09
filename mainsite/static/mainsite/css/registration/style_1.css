@@ -922,3 +922,31 @@ height: 34px;
     }
 }
 
+
+
+.mainerrorimage {
+    background-image: url(../../img/404.svg) ;
+    height: 380px;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.error404 h1 {
+    color: #4526FF;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Inter;
+}
+
+.error404 p {
+    color: #7B7B7B ;
+    text-align: center;
+    font-family: Inter;
+}
+
+.error404 a {
+    font-family: Inter;
+    color: #48474F;
+
+}
