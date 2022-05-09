@@ -35,7 +35,7 @@ class CreateUserForm(UserCreationForm):
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = [ 'user', 'name', 'email', 'city', 'country', 'gender', 'birthdate', 'phone', 'citizenship']
+        fields = [ 'name', 'email', 'city', 'country', 'gender', 'birthdate', 'phone', 'citizenship']
         widgets = {
             'name': forms.TextInput(attrs={ 'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-howCanICallYou",
                                             'id': "id_name",
@@ -95,7 +95,7 @@ class ProfileForm(forms.ModelForm):
                                             'style': "border-color: green;",}),
             'citizenship': forms.TextInput(attrs={'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectYourCountr",
                                             'id': "id_citizenship",
-                                            'placeholder': "ВашЕ гражданство",
+                                            'placeholder': "Вашe гражданство",
                                             'onmousedown': "mouseUp(this)" ,
                                             'onmouseup': "mouseUp(this)" ,
                                             'onchange': "mouseUp(this)" ,

@@ -74,9 +74,14 @@ def logout_view(request):
     return render(request, 'mainsite/home/home_page.html')
 
 def extra_view(request):
+    try:
+        profile = request.user.profile
+    except Profile.DoesNotExist:
+        profile = Profile(user=request.user)
     if request.method=='POST':
-        form = ProfileForm(request.POST)
+        form = ProfileForm(request.POST, instance=profile)
         # print(form)
+        
         if form.is_valid():
             # form.instance.user = self.request.user
             # return super().form_valid(form)
@@ -85,6 +90,7 @@ def extra_view(request):
         # else:
         #     form = ProfileForm()
     else:
-        form = ProfileForm()        
+        form = ProfileForm(instance=profile)        
     ctx = {'form': form}
-    return render(request, 'mainsite/registration/ExtraInfo.html', ctx)         
+    return render(request, 'mainsite/registration/ExtraInfo.html', ctx)
+             

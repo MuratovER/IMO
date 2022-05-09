@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <!-- {% if request.user.is_authenticated %} -->
+     {% if request.user.is_authenticated %}
         <form method="POST" action="" class="main_block_form" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="main_block_form_flex_">
@@ -104,11 +104,11 @@
                 </div>
             </div>
         </form>
-        <!-- {% else %} -->
+        {% else %}
         
-        <!-- <a href="{% url 'login' %}">Login</a>
+         <a href="{% url 'login' %}">Login</a>
 
-        {% endif %} -->
+    {% endif %}
         <div class="main_block_footer_blockFlex">
             <div class="main_block_footer">
                 <div class="main_block_footer_boxs">
