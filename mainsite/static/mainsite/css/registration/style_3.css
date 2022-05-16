@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 .main_PrivacyPolicy_title{
     margin: 100px 0px;

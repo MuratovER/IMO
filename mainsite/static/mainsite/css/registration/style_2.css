@@ -5,7 +5,9 @@
     align-items: center;
 }
 
+
 .header {
+    z-index: 99;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,7 @@
     background-image: url('../home_page/cssimg/mainICON_1.svg');
     background-repeat: no-repeat;
     background-size: contain;
+<<<<<<< HEAD
     /* left: 2%; */
 }
 
@@ -41,6 +44,13 @@
 }
 
 .menu_links_boxs {
+=======
+    left: 2%;
+
+}
+.menu_links_boxs{
+    margin-left: 100px;
+>>>>>>> 23b63e7895bb615185c3668cd8c53cb9b62d70de
     display: flex;
     width: 75%;
     justify-content: space-around;
