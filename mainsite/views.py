@@ -90,8 +90,13 @@ def extra_view(request):
     ctx = {'form': form}
     return render(request, 'mainsite/registration/ExtraInfo.html', ctx)
              
-
+def privacypolicy_view(request):
+    return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
+    
+def enteringimo_view(request):
+    return render(request, 'mainsite/enteringIMO/EnteringIMO.html')
 
 def error_404_view(request, exception):
     return render(request, 'mainsite/404.html')
+
 

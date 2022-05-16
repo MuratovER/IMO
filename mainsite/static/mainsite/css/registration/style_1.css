@@ -1,4 +1,4 @@
-.main_block{
+.main_block {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,8 @@
     box-sizing: border-box;
     background-color: #000212;
 }
-.main_block_blok_TopMenu_Addition_theme_{
+
+.main_block_blok_TopMenu_Addition_theme_ {
     border: none;
     background-image: url("../../img/theme.svg");
     background-color: inherit;
@@ -19,87 +20,89 @@
     border-radius: 100%;
     cursor: var(--hand-cursor-w);
 }
-.main_block_blok_TopMenu_Addition_theme_box{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 34px;
-height: 34px;
+
+.main_block_blok_TopMenu_Addition_theme_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
 }
-.main_block_blok_TopMenu_Addition_theme_box:hover{
+
+.main_block_blok_TopMenu_Addition_theme_box:hover {
     background-color: #27262B;
     border-radius: 7px;
 }
-.main_block_blok_TopMenu_Addition_theme_:hover{
+
+.main_block_blok_TopMenu_Addition_theme_:hover {
     background-color: #27262B;
 }
-.main_block_blok_TopMenu_Addition_langs_1{
+
+.main_block_blok_TopMenu_Addition_langs_1 {
     font-size: 21px;
     color: #fff;
-    border:none;
+    border: none;
     background-color: #000212;
-    cursor:var(--hand-cursor-w);
+    cursor: var(--hand-cursor-w);
     font-family: var(--font-averta-cy);
     border-radius: 7px;
 }
-.main_block_blok_TopMenu_Addition_langs_2{
+
+.main_block_blok_TopMenu_Addition_langs_2 {
     font-size: 21px;
     color: #000;
-    border:none;
+    border: none;
     background-color: #fff;
-    cursor:var(--hand-cursor-w);
+    cursor: var(--hand-cursor-w);
     font-family: var(--font-averta-cy);
     border-radius: 7px;
 }
-.hidden_block_1{
+
+.hidden_block_1 {
     color: #969B9F;
     font-size: 16px;
     background-color: #202127;
     border: 1px solid #27262B;
     border-radius: 9px;
     padding: 23px;
-    
     width: 127px;
     height: 200px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     position: absolute;
-    top:50px;
+    top: 50px;
     right: 20px;
     margin: 5.69% 8.88% 50px 8.88%;
 }
-.hidden_block_2{
+
+.hidden_block_2 {
     color: #969B9F;
     font-size: 16px;
     background-color: #fff;
     border: 1px solid #27262B;
     border-radius: 9px;
     padding: 23px;
-    
     width: 127px;
     height: 200px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     position: absolute;
-    top:50px;
+    top: 50px;
     right: 20px;
     margin: 5.69% 8.88% 50px 8.88%;
 }
-.hidden_block_flex{
+
+.hidden_block_flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hidden_block_leng_1_img{
-    
+
+.hidden_block_leng_1_img {
     width: 26px;
     height: 26px;
     background-color: #27262C;
@@ -111,41 +114,43 @@ height: 34px;
     align-items: center;
 }
 
-._block_RU{
-    
+._block_RU {
     background-image: url("../../img/🇷🇺.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 18px;
     height: 18px;
 }
-._block_ENG{
+
+._block_ENG {
     background-image: url("../../img/🇬🇧.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 18px;
     height: 18px;
-    
 }
-.ENG{
+
+.ENG {
     margin: 32px 19px 32px 0px;
-    
 }
-._block_Chinese{
+
+._block_Chinese {
     background-image: url("../../img/🇨🇳.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 18px;
     height: 18px;
 }
-.Chinese{
+
+.Chinese {
     margin: 0px 19px 32px 0px;
-    
 }
-._Chinese{
+
+._Chinese {
     margin: 0px 0px 32px 0px;
 }
-._block_Spanish{
+
+._block_Spanish {
     background-image: url("../../img/🇪🇸.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -153,42 +158,47 @@ height: 34px;
     height: 18px;
 }
 
-.hidden_block_1{
+.hidden_block_1 {
     font-family: var(--font-inter);
     font-size: 16px;
-    list-style-position:inside ;
+    list-style-position: inside;
 }
-.hidden_block_2{
+
+.hidden_block_2 {
     font-family: var(--font-inter);
     font-size: 16px;
-    list-style-position:inside ;
+    list-style-position: inside;
 }
-.main_block_Buttom_Arrow{
+
+.main_block_Buttom_Arrow {
     background-image: url("../../img/arrow_1.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 31px;
     height: 12px;
 }
-.main_block_Buttom_buttomExit{
+
+.main_block_Buttom_buttomExit {
     color: #CECECE;
     cursor: pointer;
     font-size: 15px;
-    font-family:var(--font-inter);
+    font-family: var(--font-inter);
 }
-.main_block_form_h1{
+
+.main_block_form_h1 {
     color: #fff;
     font-size: 68px;
     font-weight: bold;
     font-family: var(--font-averta-cy);
 }
 
-.main_block_form_InformationalText{
+.main_block_form_InformationalText {
     color: #7E7E84;
     font-size: 18px;
     font-family: var(--font-inter);
 }
-.main_block_form_input_1{
+
+.main_block_form_input_1 {
     width: 538px;
     background-color: #191C23;
     border: 1px solid #26282F;
@@ -199,7 +209,8 @@ height: 34px;
     font-family: var(--font-inter);
     cursor: var(--hand-cursor-w);
 }
-.main_block_form_input_2{
+
+.main_block_form_input_2 {
     width: 538px;
     background-color: #fff;
     border: 1px solid #26282F;
@@ -210,17 +221,19 @@ height: 34px;
     font-family: var(--font-inter);
     cursor: var(--hand-cursor-w);
 }
-.main_block_form_input:hover{
+
+.main_block_form_input:hover {
     border-color: #4C4F5B;
 }
-.main_block_form_textPassword_box{
+
+.main_block_form_textPassword_box {
     position: relative;
     width: 100%;
     height: 67px;
-    margin:38px 0;
-    
+    margin: 38px 0;
 }
-.informationEay{
+
+.informationEay {
     position: absolute;
     top: 25px;
     right: 10px;
@@ -231,7 +244,8 @@ height: 34px;
     background-repeat: no-repeat;
     cursor: var(--pointerHand-cursor);
 }
-.informationEayTHEtest{
+
+.informationEayTHEtest {
     position: absolute;
     top: 25px;
     right: 0px;
@@ -242,215 +256,244 @@ height: 34px;
     background-repeat: no-repeat;
     cursor: var(--pointerHand-cursor);
 }
-.main_block_form_input:focus{
+
+.main_block_form_input:focus {
     outline: none;
 }
-.main_block_form_button{
+
+.main_block_form_button {
     background-color: #6248FF;
     text-align: center;
     cursor: var(--hand-cursor-w);
-    width:590px;
+    width: 590px;
 }
-.main_block_form_ForgotPassword_1{
+
+.main_block_form_ForgotPassword_1 {
     font-size: 14px;
     font-family: var(--font-inter);
     color: #fff;
     background-color: #14161D;
     border-radius: 6px;
-    border:1px solid;
+    border: 1px solid;
     border-color: #44495B;
     padding: 10px 23px;
     text-decoration: none;
     cursor: var(--hand-cursor-w);
-    width:138px;
+    width: 138px;
     /* height:39px; */
-    
 }
-.main_block_form_ForgotPassword_2{
+
+.main_block_form_ForgotPassword_2 {
     font-size: 14px;
     font-family: var(--font-inter);
     color: #14161D;
     background-color: #fff;
     border-radius: 6px;
-    border:1px solid;
+    border: 1px solid;
     border-color: #44495B;
     padding: 10px 23px;
     text-decoration: none;
     cursor: var(--hand-cursor-w);
-    width:138px;
-    height:39px;
-    
+    width: 138px;
+    height: 39px;
 }
-.main_block_form_TextSelection_HR{
+
+.main_block_form_TextSelection_HR {
     width: 239px;
     height: 1px;
     padding: 0px;
-    border:none;
+    border: none;
     background-color: #44495B;
 }
-.main_block_form_TextSelection_text{
-    color:#44495B;
+
+.main_block_form_TextSelection_text {
+    color: #44495B;
     margin: 0px 36px;
     font-size: 20px;
     font-family: var(--font-inter);
 }
-.regesterText{
-    color:#fff;
-    font-size: 15px;
-    font-family: var(--font-inter);
-    cursor:var(--hand-cursor-w);
 
-}
-.regesterTextLink{
-    color:#4B5DFF;
+.regesterText {
+    color: #fff;
     font-size: 15px;
     font-family: var(--font-inter);
-    border:none;
+    cursor: var(--hand-cursor-w);
+}
+
+.regesterTextLink {
+    color: #4B5DFF;
+    font-size: 15px;
+    font-family: var(--font-inter);
+    border: none;
     text-decoration: none;
     border-bottom: 2px dashed #4B5DFF;
     padding-bottom: 2px;
-    cursor:var(--hand-cursor-w);
-}
-.main_block_footer_box_text1{
-    color:#727177;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: var(--font-inter);
-    cursor:var(--hand-cursor-w);
-}
-.main_block_footer_box_text1:hover{
-    color:#fff;
-}
-.main_block_footer_box_text2{
-    color:#383838;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: var(--font-inter);
-    cursor:var(--hand-cursor-w);
-}
-.main_block_footer_box_text12{
-    color:#727177;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: var(--font-inter);
-    cursor:var(--hand-cursor-w);
-}
-.main_block_footer_box_text2:hover{
-    color:#727177;
+    cursor: var(--hand-cursor-w);
 }
 
+.main_block_footer_box_text1 {
+    color: #727177;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
 
-.main_block_blok_TopMenu{
+.main_block_footer_box_text1:hover {
+    color: #fff;
+}
+
+.main_block_footer_box_text2 {
+    color: #383838;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
+
+.main_block_footer_box_text12 {
+    color: #727177;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
+
+.main_block_footer_box_text2:hover {
+    color: #727177;
+}
+
+.main_block_blok_TopMenu {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* margin: 5.69% 8.88% 0 8.88%; */
 }
-.main_block_blok_TopMenu_Addition{
+
+.main_block_blok_TopMenu_Addition {
     display: flex;
     justify-content: center;
 }
-.main_block_form_flex{
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    justify-content:center;
+
+.main_block_form_flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
-.hidden_block{
+
+.hidden_block {
     position: absolute;
     display: none;
     right: 150px;
 }
-.main_block_Buttom_{
+
+.main_block_Buttom_ {
     display: flex;
     justify-content: start;
     align-items: center;
     /* margin-left: 29.44%; */
     margin-top: 6.94%;
 }
-.main_block_form{
+
+.main_block_form {
     display: flex;
     justify-content: center;
 }
-.main_block_form_h1{
+
+.main_block_form_h1 {
     text-align: center;
 }
-.main_block_form_InformationalText{
+
+.main_block_form_InformationalText {
     text-align: center;
     margin-top: 18px;
     margin-bottom: 63px;
 }
-.child_element_flex{
-    margin-bottom:25px;
-}
-.main_block_form_TextSelection{
-    display:flex;
-    align-items:center;
-    margin:33px 0;
+
+.child_element_flex {
+    margin-bottom: 25px;
 }
 
-.regesterText_box{
-    text-align:center;
+.main_block_form_TextSelection {
+    display: flex;
+    align-items: center;
+    margin: 33px 0;
+}
+
+.regesterText_box {
+    text-align: center;
     display: flex;
     justify-content: center;
 }
-.main_block_footer{
-    display:flex;
-    justify-content:space-between;
+
+.main_block_footer {
+    display: flex;
+    justify-content: space-between;
     margin: 5.69% 8.88% 50px 8.88%;
     width: 90%;
 }
-.main_block_footer_boxs{
-    display:flex;
-    justify-content:center;
+
+.main_block_footer_boxs {
+    display: flex;
+    justify-content: center;
 }
-.main_block_footer_box{
-    margin:0px 5px;
+
+.main_block_footer_box {
+    margin: 0px 5px;
 }
+
 
 /* регистрация */
 
-.main_block_form_flex_Regester{
+.main_block_form_flex_Regester {
     display: flex;
     justify-content: center;
     width: auto;
     margin-bottom: 73px;
 }
-.main_block_form_flex_Regester_boxMainBoxes{
+
+.main_block_form_flex_Regester_boxMainBoxes {
     display: flex;
     justify-content: center;
     width: auto;
     flex-direction: column;
 }
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister:hover{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister:hover {
     box-shadow: 0px 30px 40px -17px #1E202E;
 }
-.margin_in_ButtomRegister{
-    margin:0px 85px;
+
+.margin_in_ButtomRegister {
+    margin: 0px 85px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img1{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img1 {
     background-image: url('../../img/IAmpreds1.svg');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     height: 86px;
     width: 86px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img2{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img2 {
     background-image: url('../../img/IAmAStudent1.svg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     height: 100px;
     width: 86px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img3{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img3 {
     background-image: url('../../img/RecrutAgens1.svg');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     height: 86px;
     width: 86px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_text{
+
+.main_block_form_flex_Regester_boxMainBoxes_text {
     margin-top: 55px;
     color: #fff;
     font-family: var(--font-inter);
@@ -458,10 +501,13 @@ height: 34px;
     text-align: center;
 }
 
+
 /* смена темы регистрации */
 
+
 /*  */
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister {
     width: 172px;
     height: 172px;
     background-color: #191C23;
@@ -471,37 +517,44 @@ height: 34px;
     justify-content: center;
     align-items: center;
 }
-.Them_ButtomRegister1:hover{
+
+.Them_ButtomRegister1:hover {
     box-shadow: 0px 30px 40px -17px #1E202E;
 }
-.Them_ButtomRegister2:hover{
+
+.Them_ButtomRegister2:hover {
     box-shadow: 0px 30px 40px -17px #E6E6E6;
 }
-.margin_in_ButtomRegister{
-    margin:0px 85px;
+
+.margin_in_ButtomRegister {
+    margin: 0px 85px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img1{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img1 {
     background-image: url('../../img/IAmpreds1.svg');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     height: 86px;
     width: 86px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img2{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img2 {
     background-image: url('../../img/IAmAStudent1.svg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     height: 100px;
     width: 86px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img3{
+
+.main_block_form_flex_Regester_boxMainBoxes_ButtomRegister_img3 {
     background-image: url('../../img/RecrutAgens1.svg');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     height: 86px;
     width: 86px;
 }
-.main_block_form_flex_Regester_boxMainBoxes_text{
+
+.main_block_form_flex_Regester_boxMainBoxes_text {
     margin-top: 55px;
     color: #fff;
     font-family: var(--font-inter);
@@ -509,37 +562,43 @@ height: 34px;
     text-align: center;
 }
 
-.main_box_but_form_Iamastud{
+.main_box_but_form_Iamastud {
     width: auto;
     height: 578px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Iamastud_FORM1{
+
+.Iamastud_FORM1 {
     margin-bottom: 35px;
 }
-.main_block_form_flex_flexes_dis{
+
+.main_block_form_flex_flexes_dis {
     display: flex;
     justify-content: center;
 }
-.form_textPassword_notborder{
-    background-color: rgba(0,0,0,0);
-    border:none;
+
+.form_textPassword_notborder {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
-.main_sett_text{
-    color:#fff;
+
+.main_sett_text {
+    color: #fff;
     font-family: var(--font-inter);
     font-size: 20px;
 }
-.main_box_but_form_Iamastud2{
+
+.main_box_but_form_Iamastud2 {
     width: auto;
     /* height: 880px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main_block_form_flex_td1{
+
+.main_block_form_flex_td1 {
     color: #fff;
     font-family: var(--font-inter);
     font-size: 20px;
@@ -547,14 +606,16 @@ height: 34px;
     width: 270px;
     margin-right: 20px;
 }
-.main_block_form_flex_td2{
+
+.main_block_form_flex_td2 {
     color: #fff;
     font-family: var(--font-inter);
     font-size: 20px;
     margin-bottom: 24px;
     width: 270px;
 }
-.main_block_form_input_2{
+
+.main_block_form_input_2 {
     width: 243px;
     background-color: rgb(0, 2, 18);
     border: none;
@@ -568,7 +629,8 @@ height: 34px;
     height: 40px;
     padding: 0px;
 }
-.informationEay2{
+
+.informationEay2 {
     position: absolute;
     top: 15px;
     right: 0px;
@@ -579,13 +641,15 @@ height: 34px;
     background-repeat: no-repeat;
     cursor: var(--pointerHand-cursor);
 }
-.main_block_form_flex_regesterDate{
+
+.main_block_form_flex_regesterDate {
     /* display: flex;
     justify-content: center; */
     width: 590px;
     /* height: 668px; */
 }
-.main_block_form_flex_table{
+
+.main_block_form_flex_table {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -593,51 +657,60 @@ height: 34px;
     /* height: 668px; */
     flex-direction: column;
 }
-.main_block_form_flex_tr{
+
+.main_block_form_flex_tr {
     display: flex;
 }
-.main_box_but_form_Iamastud3{
+
+.main_box_but_form_Iamastud3 {
     width: auto;
     /* height: 850px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main_block_form_textPassword_box2{
+
+.main_block_form_textPassword_box2 {
     position: relative;
     width: 243px;
-    
 }
-.regester_hr{
+
+.regester_hr {
     height: 2px;
     width: 100%;
 }
-.flex_div{
+
+.flex_div {
     display: flex;
     justify-content: center;
     margin-top: 39px;
 }
-.loginText_box{
+
+.loginText_box {
     color: #fff;
     font-family: var(--font-inter);
     font-size: 17px;
 }
-.loginText_box_a{
+
+.loginText_box_a {
     color: #4B5DFF;
     font-family: var(--font-inter);
     font-size: 17px;
     text-decoration: none;
-
 }
-.loginText_box_main{
+
+.loginText_box_main {
     display: flex;
     margin: 42px 0px;
 }
+
+
 /* .main_box_but_form_Iamastud_FORM2{
      width: 588px;
      
 } */
-.main_box_but_form_Iamastud4{
+
+.main_box_but_form_Iamastud4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -645,13 +718,15 @@ height: 34px;
     height: 100%;
     flex-direction: column;
 }
-.main_box_but_form_Iamastud4_h1{
+
+.main_box_but_form_Iamastud4_h1 {
     color: #fff;
     font-family: var(--font-averta-cy);
     font-size: 65px;
     text-align: center;
 }
-.main_box_but_form_Iamastud4_p1{
+
+.main_box_but_form_Iamastud4_p1 {
     color: #7E7E84;
     font-family: var(--font-inter);
     font-size: 18px;
@@ -659,7 +734,8 @@ height: 34px;
     margin-top: 12px;
     margin-bottom: 50px;
 }
-.main_box_but_form_Iamastud_a{
+
+.main_box_but_form_Iamastud_a {
     border: 1px solid #4526FF;
     color: #fff;
     font-family: var(--font-inter);
@@ -669,11 +745,12 @@ height: 34px;
     height: 46px;
     border-radius: 12px;
     padding-top: 22px;
-    background-color:#4526FF ;
+    background-color: #4526FF;
     text-decoration: none;
     margin-bottom: 66px;
 }
-.main_box_but_form_Iamastud_p2{
+
+.main_box_but_form_Iamastud_p2 {
     color: #fff;
     font-family: var(--font-inter);
     font-size: 18px;
@@ -681,243 +758,267 @@ height: 34px;
     margin-top: 12px;
     margin-bottom: 50px;
 }
-.main_block_form_flex_td1_flex_text{
+
+.main_block_form_flex_td1_flex_text {
     display: flex;
     /* justify-content: start; */
 }
-.main_block_form_flex_h1test{
+
+.main_block_form_flex_h1test {
     width: 540px;
     text-align: start;
     margin-top: 20;
     margin-bottom: 17px;
-} 
-.notflex_div{
+}
+
+.notflex_div {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
     width: 100%;
     margin-top: 0px;
 }
-.main_block_form_flex_td1Margin{
+
+.main_block_form_flex_td1Margin {
     margin-top: 20px;
 }
-.main_block_footer_blockFlex{
+
+.main_block_footer_blockFlex {
     display: flex;
     justify-content: center;
     width: auto;
 }
-.main_block_blok_TopMenu_flexBox{
+
+.main_block_blok_TopMenu_flexBox {
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 75px;
 }
-.child_element_flex{
+
+.child_element_flex {
     display: flex;
     width: auto;
     justify-content: center;
 }
-.main_block_form_textUsername_box{
+
+.main_block_form_textUsername_box {
     display: flex;
     width: auto;
     justify-content: center;
 }
-.main_block_form_flex_{
+
+.main_block_form_flex_ {
     width: 100%;
 }
-.main_block_form_textPassword_boxFlexebox{
+
+.main_block_form_textPassword_boxFlexebox {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.main_block_form_textPassword_boxTHetest{
+
+.main_block_form_textPassword_boxTHetest {
     width: 585px;
 }
-.child_element_flexTHEtest{
+
+.child_element_flexTHEtest {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.main_block_form_TextSelection_block{
+
+.main_block_form_TextSelection_block {
     display: flex;
     align-items: center;
 }
-.main_block_form_TextSelection{
+
+.main_block_form_TextSelection {
     justify-content: center;
 }
-.regesterText_box{
+
+.regesterText_box {
     text-align: center;
 }
-.main_block_Buttom_FlexBox{
+
+.main_block_Buttom_FlexBox {
     display: flex;
     justify-content: center;
 }
-.main_block_Buttom_THEtest{
+
+.main_block_Buttom_THEtest {
     width: 90%;
 }
-.main_block_Buttom_FlexBoxTHEtest{
+
+.main_block_Buttom_FlexBoxTHEtest {
     justify-content: start;
 }
-.ForgotPassButContinue{
+
+.ForgotPassButContinue {
     margin-top: 20px;
 }
-.Input_Your_Password{
-    width: 516px;
-    padding:15px 0px 15px 42px;
-    text-align: start;
 
+.Input_Your_Password {
+    width: 516px;
+    padding: 15px 0px 15px 42px;
+    text-align: start;
 }
-.Input_Your_PassButContinue{
+
+.Input_Your_PassButContinue {
     width: 560px;
 }
-.regesterText_DOP{
+
+.regesterText_DOP {
     margin-bottom: 20px;
 }
-.style_no-margin{
+
+.style_no-margin {
     margin: 0px;
 }
-.style_margin10px{
+
+.style_margin10px {
     margin: 10px 0px;
 }
-.style_margin_top50px{
+
+.style_margin_top50px {
     margin-top: 50px;
 }
+
 @media screen and (max-width:700px) {
-    .main_block_form_flex_Regester{
+    .main_block_form_flex_Regester {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    .child_element_flexTHEtest2{
+    .child_element_flexTHEtest2 {
         width: 77%;
     }
-    .margin_in_ButtomRegister{
+    .margin_in_ButtomRegister {
         margin: 0px;
     }
-    .main_block_form_flex_Regester_boxMainBoxes_text{
+    .main_block_form_flex_Regester_boxMainBoxes_text {
         width: 360px;
         margin-top: 20px;
         margin-bottom: 30px;
     }
-    .main_block_form_InformationalText{
+    .main_block_form_InformationalText {
         width: auto;
         align-items: center;
     }
-    .main_block_Buttom_FlexBox{
+    .main_block_Buttom_FlexBox {
         width: auto;
         display: flex;
         justify-content: center;
         /* margin-left: 21%; */
     }
-    .main_block_form_textName_flexBox{
+    .main_block_form_textName_flexBox {
         width: auto;
         display: flex;
         justify-content: center;
     }
-    .main_block_form_textName{
+    .main_block_form_textName {
         width: 100%;
     }
-    .main_block_form_textPassword_box{
+    .main_block_form_textPassword_box {
         width: 100%;
     }
-    .main_block_form_textPassword_box_flexBox{
+    .main_block_form_textPassword_box_flexBox {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    
-    .main_block_form_input_1{
+    .main_block_form_input_1 {
         width: 80%;
         font-size: 15px;
     }
-    .main_block_form_input_1THEtest{
+    .main_block_form_input_1THEtest {
         width: 82%;
         font-size: 15px;
     }
-    .main_block_form_textPassword_boxTHetest{
+    .main_block_form_textPassword_boxTHetest {
         width: 77%;
     }
-    .informationEayTHEtest{
+    .informationEayTHEtest {
         right: 20px;
     }
-    .main_block_form_textUsername_boxTHEtest{
+    .main_block_form_textUsername_boxTHEtest {
         width: 77%;
     }
-    .informationEay{
+    .informationEay {
         right: 15px;
     }
-    .main_block_form_h1{
-        font-size: 2.5em; /*55px*/
+    .main_block_form_h1 {
+        font-size: 2.5em;
+        /*55px*/
         margin-top: 55px;
     }
-    .main_block_footer{
+    .main_block_footer {
         margin: 0px;
         flex-direction: column;
         width: 90%;
         height: 100px;
     }
-    .main_block_footer_box_text12{
+    .main_block_footer_box_text12 {
         width: auto;
         height: 50px;
         margin-top: 20px;
         text-align: center;
     }
-    .main_block_form_flex_Regester{
+    .main_block_form_flex_Regester {
         margin-bottom: 30px;
     }
-    .regesterText_box{
+    .regesterText_box {
         margin-bottom: 20px;
     }
-    .flex_boxFormRegesterMedia{
+    .flex_boxFormRegesterMedia {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         width: 360px;
     }
-    .main_block_form_flex{
+    .main_block_form_flex {
         width: 100%;
     }
-    .main_block_form_flex_regesterDate{
+    .main_block_form_flex_regesterDate {
         width: 360px;
     }
-    .main_block_form_flex_tr{
+    .main_block_form_flex_tr {
         width: 90%;
     }
     .informationEay2 {
         right: 15px;
     }
-    .loginText_box{
-        margin:0px 2%;
+    .loginText_box {
+        margin: 0px 2%;
         text-align: center;
     }
-    .main_block_footer_box{
+    .main_block_footer_box {
         text-align: center;
     }
-    .main_box_but_form_Iamastud4_h1{
+    .main_box_but_form_Iamastud4_h1 {
         font-size: 2.5em;
         margin-top: 40px;
     }
-    .main_box_but_form_Iamastud_a{
+    .main_box_but_form_Iamastud_a {
         width: 90%;
     }
-    .main_block_form_flex_h1test{
+    .main_block_form_flex_h1test {
         text-align: center;
         width: auto;
-
     }
-    .regester_hr{
+    .regester_hr {
         width: 100%;
     }
-    .main_block_form_input_1THEtest3{
+    .main_block_form_input_1THEtest3 {
         width: 90%;
     }
-    .main_block_form_TextSelection_block{
+    .main_block_form_TextSelection_block {
         width: 77%;
         display: flex;
         justify-content: center;
     }
-    .main_block_Buttom_FlexBoxTHEtest{
+    .main_block_Buttom_FlexBoxTHEtest {
         justify-content: start;
     }
 }

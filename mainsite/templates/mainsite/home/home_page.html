@@ -1,771 +1,460 @@
-{% extends 'mainsite/base.html' %}{% block content %}
-{% load static %}
+{% extends 'mainsite/base.html' %}{% block content %} {% load static %}
 
-    <body class="body">
+<body class="body indexEnterWindow">
+    
+    <div class="header2">
+        <div class="header2_boxText">
+            <div class="header2_boxText_box">
+                <h1 class="header2_boxText_boxH1 Lang-standart84">Институт международного образования КНИТУ-КАИ</h1>
+            </div>
+            <div class="header2_boxText_twoBTN">
+                <div class="header2_boxText_twoBTNBox margin_bottom20px">
+                    <button class="header2_boxText_twoBTNBox_button">
 
-        <div class="header2">
-            <div class="header2_boxText">
-                <div class="header2_boxText_box">
-                    <h1 class="header2_boxText_boxH1">Институт международного образования КНИТУ-КАИ</h1>
-                </div>
-                <div class="header2_boxText_twoBTN">
-                    <div class="header2_boxText_twoBTNBox margin_bottom20px">
-                        <button class="header2_boxText_twoBTNBox_button">
-
-                            <img src='{% static "mainsite/img/circl!e.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
-                            Узнать больше
+                            <img src='{% static "mainsite/img/Playnaw.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
+                            <div class="Lang-standart13">Начать сейчас</div>
                         </button>
-                    </div>
-                    <div class="header2_boxText_twoBTNBox">
-                        <button class="header2_boxText_twoBTNBox_button">
-
-                            <img src='{% static "mainsite/img/heart.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
-                            Хочу учиться здесь
-                        </button>
-                    </div>
                 </div>
-                <div class="text_List_In_buttom">
-                    <div class="text_List_In_buttom_imgSvg">
+                <div class="header2_boxText_twoBTNBox">
+                    <button class="header2_boxText_twoBTNBox_button">
 
-                    </div>
-                    <div class="text_List_In_buttom_box">
-                        <p class="text_List_In_buttom_text">Листайте вниз</p>
-                    </div>
+                            <img src='{% static "mainsite/img/podfaq.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
+                            <div class="Lang-standart14">Подфак</div>
+                        </button>
                 </div>
             </div>
-            <div class="header2_boxImgSvg_Width50">
-                <!-- <div class="header2_boxImgSvg">
+            <div class="text_List_In_buttom">
+                <div class="text_List_In_buttom_imgSvg">
+
+                </div>
+                <div class="text_List_In_buttom_box">
+                    <p class="text_List_In_buttom_text Lang-standart15">Листайте вниз</p>
+                </div>
+            </div>
+        </div>
+        <div class="header2_boxImgSvg_Width50">
+            <!-- <div class="header2_boxImgSvg">
 
                 </div> -->
-                <img src='{% static "mainsite/img/faces.svg" %}' class="header2_boxImgSvg_Width50_IMG_fases">
+            <img src='{% static "mainsite/img/faces.svg" %}' class="header2_boxImgSvg_Width50_IMG_fases">
+        </div>
+    </div>
+    <div class="trainingProgram">
+        <div class="trainingProgram_TextBox_displayFlex">
+            <div class="trainingProgram_TextBox textAlignCenter">
+                <h1 class="trainingProgram_TextBox_h1 Lang-standart16">Программы обучения</h1>
+            </div>
+            <div class="trainingProgram_TextBox textAlignCenter">
+                <p class="trainingProgram_TextBox_p Lang-standart17">Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на часто задаваемые вопросы.</p>
             </div>
         </div>
-        <div class="trainingProgram">
-            <div class="trainingProgram_TextBox_displayFlex">
-                <div class="trainingProgram_TextBox textAlignCenter">
-                    <h1 class="trainingProgram_TextBox_h1">Программы обучения</h1>
-                </div>
-                <div class="trainingProgram_TextBox textAlignCenter">
-                    <p class="trainingProgram_TextBox_p">Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на часто задаваемые вопросы.</p>
-                </div>
-            </div>
-            <div class="specialty_box">
-                <div class="specialty_box_displayFlex">
-                    <div class="specialty_box_displayFlex_litleBox">
-                        <div class="specialty_box_pictureSMAL AircraftIndustry1 standartStyleForimgSp">
-                            <div class="specialty_box_picture_text">Авиастроение</div>
-                        </div>
-                        <div class="specialty_box_picture AircraftEngines standartStyleForimgSp marginLeft20px">
-                            <div class="specialty_box_picture_text">Двигатели летательных аппаратов</div>
-                        </div>
+        <div class="specialty_box">
+            <div class="specialty_box_displayFlex">
+                <div class="specialty_box_displayFlex_litleBox">
+                    <div class="specialty_box_pictureSMAL AircraftIndustry1 standartStyleForimgSp">
+                        <div class="specialty_box_picture_text Lang-standart18">Авиастроение</div>
                     </div>
-                    <div class="specialty_box_displayFlex_litleBox">
-                        <div class="specialty_box_picture infocommunicationTechnologies standartStyleForimgSp">
-                            <p class="specialty_box_picture_text">Инфокоммуникационные технологии</p>
-                        </div>
-                        <div class="specialty_box_pictureSMAL AircraftIndustry2 standartStyleForimgSp marginLeft20px">
-                            <p class="specialty_box_picture_text">Авиастроение</p>
-                        </div>
-                    </div>
-
-                    <div class="specialty_box_displayFlex_litleBox">
-                        <div class="specialty_box_pictureSMAL AircraftIndustry3 standartStyleForimgSp">
-                            <p class="specialty_box_picture_text">Авиастроение</p>
-                        </div>
-                        <div class="specialty_box_picture AircraftOperation1 standartStyleForimgSp marginLeft20px">
-                            <p class="specialty_box_picture_text">Эксплуатация летательных аппаратов</p>
-                        </div>
-                    </div>
-                    <div class="specialty_box_displayFlex_litleBox ">
-                        <div class="specialty_box_picture AircraftOperation2 standartStyleForimgSp">
-                            <p class="specialty_box_picture_text">Эксплуатация летательных аппаратов</p>
-                        </div>
-                        <div class="specialty_box_pictureSMAL SeeAllPrograms standartStyleForimgSp marginLeft20px">
-                            <p class="specialty_box_picture_text color000000">Смотреть все программы</p>
-                        </div>
+                    <div class="specialty_box_picture AircraftEngines standartStyleForimgSp marginLeft20px">
+                        <div class="specialty_box_picture_text Lang-standart19">IT (программная инженерия)</div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="Memo">
-            <div class="Memo_Display_flexblock">
-                <div class="Memo_textTitleAndImgSvg">
-                    <div class="Memo_textTitle">
-                        <div class="Memo_box_h1">
-                            <h1 class="trainingProgram_TextBox_h1MEmo">Памятка иностранному студенту</h1>
-                        </div>
-                        <div class="Memo_boxText">
-                            <p class="trainingProgram_TextBox_pMEmo">
-                                Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на <span class="cursorP" style="color:#2298FF; text-decoration: underline dotted;padding-bottom: 2px; ">часто задаваемые вопросы</span>.
-                            </p>
-                        </div>
+                <div class="specialty_box_displayFlex_litleBox">
+                    <div class="specialty_box_picture infocommunicationTechnologies standartStyleForimgSp">
+                        <p class="specialty_box_picture_text Lang-standarts20">Телекоммуникации, интернет, IoT</p>
                     </div>
-                    <div class="Memo_ImgSvg">
-    <!-- тут будет картинка фоном -->
+                    <div class="specialty_box_pictureSMAL AircraftIndustry2 standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text Lang-standarty21">Экономика</p>
                     </div>
                 </div>
-                <div class="MEmo_boxes_of_informations_MAin">
-                    <div class="Memo_boxes_of_informations1">
-                        <div class="Memo_box_textInf">
-                            <div class="Memo_box_textInf_contentH1">
-                                <h1 class="Memo_boxContentH1">
-                                    Об учереждении
-                                </h1>
-                            </div>
-                            <div class="Memo_box_textInf_contentPh">
-                                <p class="Memo_box_Ph">
-                                    Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой
-                                </p>
-                            </div>
-                            <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Memo_box_textInf Memo_box_textInf_marginLEftandRight">
-                            <div class="Memo_box_textInf_contentH1">
-                                <h1 class="Memo_boxContentH1">
-                                    Об учереждении
-                                </h1>
-                            </div>
-                            <div class="Memo_box_textInf_contentPh">
-                                <p class="Memo_box_Ph">
-                                    Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой
-                                </p>
-                            </div>
-                            <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
 
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <!-- <div class="Memo_box_textInf_contentTextsALinks_cont">
-                                    <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src="../img_main/iconLink.svg" width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div> -->
-                            </div>
-                        </div>
-                        <div class="Memo_box_textInf">
-                            <div class="Memo_box_textInf_contentH1">
-                                <h1 class="Memo_boxContentH1">
-                                    Об учереждении
-                                </h1>
-                            </div>
-                            <div class="Memo_box_textInf_contentPh">
-                                <p class="Memo_box_Ph">
-                                    Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой
-                                </p>
-                            </div>
-                            <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Документы для оформления</p>
-
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                            </div>
-                        </div>
+                <div class="specialty_box_displayFlex_litleBox">
+                    <div class="specialty_box_pictureSMAL AircraftIndustry3 standartStyleForimgSp">
+                        <p class="specialty_box_picture_text Lang-standart22">Машиностроение</p>
                     </div>
-                    <div class="Memo_boxes_of_informations1 MarginBottom">
-                        <div class="Memo_box_textInf">
-                            <div class="Memo_box_textInf_contentH1">
-                                <h1 class="Memo_boxContentH1">
-                                    Интересно почитать
-                                </h1>
-                            </div>
-                            <div class="Memo_box_textInf_contentPh">
-                                <p class="Memo_box_Ph">
-                                    Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой
-                                </p>
-                            </div>
-                            <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
-                                <div class="Memo_box_textInf_contentTextsALinks_cont conteinfor cursorP">
-
-                                    <img src='{% static "mainsite/img/FlagTat.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                    <p class="Memo_box_textInf_p colorfff marginLeft5px">О Казани</p>
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont conteinfor cursorP">
-                                    <img src='{% static "mainsite/img/logoKai.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                    <p class="Memo_box_textInf_p colorfff marginLeft5px">Об Университете</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Memo_box_textInf Memo_box_textInf_marginLEftandRight">
-                            <div class="Memo_box_textInf_contentH1">
-                                <h1 class="Memo_boxContentH1">
-                                    Все самое необходимое
-                                </h1>
-                            </div>
-                            <div class="Memo_box_textInf_contentPh">
-                                <p class="Memo_box_Ph">
-                                    Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой
-                                </p>
-                            </div>
-                            <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Вопрос-ответ</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Связь с университетом</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Связь с университетом</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Memo_box_textInf">
-                            <div class="Memo_box_textInf_contentH1">
-                                <h1 class="Memo_boxContentH1">
-                                    Об учереждении
-                                </h1>
-                            </div>
-                            <div class="Memo_box_textInf_contentPh">
-                                <p class="Memo_box_Ph">
-                                    Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой
-                                </p>
-                            </div>
-                            <div class="Memo_box_textInf_contentTextsALinks_displayFlexflexdirectionColumn">
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Подробнее про учрежедения</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Стоимость обучения в  учрежедениях</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                                    <p class="Memo_box_textInf_p">Документы для оформления</p>
-                                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="specialty_box_picture AircraftOperation1 standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text Lang-standart23">Электроника и наноэлектроника</p>
+                    </div>
+                </div>
+                <div class="specialty_box_displayFlex_litleBox ">
+                    <div class="specialty_box_pictureSMAL shipbuilding standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text colorfff Lang-standart24">Кораблестроение</p>
+                    </div>
+                    <div class="specialty_box_pictureSMAL compositTechnologi standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text colorfff Lang-standart25">Композитные технологии</p>
+                    </div>
+                    <div class="specialty_box_pictureSMAL SeeAllPrograms standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text color000000 Lang-standart26">Смотреть все программы</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about_IMO">
-            <div class="box_aboutIMO_text_Inf">
-                <div class="box_aboutIMO_text_Infmain">
-                    <div class="box_aboutIMO_text_boxH1">
-                        <h1 class="box_aboutIMO_text_H1 Memo_boxContentH1">Об Университете ИМО</h1>
-                    </div>
-                    <div class="box_aboutIMO_text_boxp">
-                        <p class="box_aboutIMO_text_p Memo_box_Ph">На платформе можнополучить знания по актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой.</p>
-                    </div>
-                </div>
-                <div class="box_aboutIMO_text_Inf_INGSVG">
+    </div>
+    <div class="weHAve_new">
+        <div class="weHAve_new_BOXh1">
+            <h1 class="weHAve_new_h1 Lang-standart27">Наши новости</h1>
+        </div>
+        <div class="weHAve_new_CardLink">
+            <div class="weHAve_new_CardLinkBox">
+                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img2 sizeBox">
 
                 </div>
-            </div>
-            <div class="box_aboutIMO_ImgSVG">
-                <div class="box_aboutIMO_ImgSVG_background">
-                    <div class="box_aboutIMO_ImgSVG_h1CLONE">
-                        <h1 class="box_aboutIMO_ImgSVG_h1">
-                            Узнайте как мы живем
-                        </h1>
+                <div class="weHAve_new_CardLink_Inf_boxh3">
+                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart28">Консультация с профессионалами из IT</h3>
+                </div>
+                <div class="weHAve_new_boxStart_Inf_boxINFimg">
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
+                    </div>
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
                     </div>
                 </div>
             </div>
-            <div class="box_aboutIMO_width100p">
-                <div class="box_aboutIMO_dlexBox">
-                    <h1 class="box_aboutIMO_h1 Memo_boxContentH1">
-                        Мы создаем благоприятные условия для обучения иностранных граждан
+            <div class="weHAve_new_CardLinkBox">
+                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img3 sizeBox">
+
+                </div>
+                <div class="weHAve_new_CardLink_Inf_boxh3">
+                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart29">Консультация с профессионалами из IT</h3>
+                </div>
+                <div class="weHAve_new_boxStart_Inf_boxINFimg">
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
+                    </div>
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weHAve_new_CardLinkBox">
+                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img4 sizeBox">
+
+                </div>
+                <div class="weHAve_new_CardLink_Inf_boxh3">
+                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart30">Консультация с профессионалами из IT</h3>
+                </div>
+                <div class="weHAve_new_boxStart_Inf_boxINFimg">
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
+                    </div>
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weHAve_new_CardLinkBox">
+                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img5 sizeBox">
+
+                </div>
+                <div class="weHAve_new_CardLink_Inf_boxh3">
+                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart31">Консультация с профессионалами из IT</h3>
+                </div>
+                <div class="weHAve_new_boxStart_Inf_boxINFimg">
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
+                    </div>
+                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
+                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about_IMO">
+        <div class="box_aboutIMO_text_Inf">
+            <div class="box_aboutIMO_text_Infmain">
+                <div class="box_aboutIMO_text_boxH1">
+                    <h1 class="box_aboutIMO_text_H1 Memo_boxContentH1 Lang-standart32">Об Университете ИМО</h1>
+                </div>
+                <div class="box_aboutIMO_text_boxp">
+                    <p class="box_aboutIMO_text_p Memo_box_Ph Lang-standart33">На платформе можнополучить знания по актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой.</p>
+                </div>
+            </div>
+            <div class="box_aboutIMO_text_Inf_INGSVG">
+
+            </div>
+        </div>
+        <div class="box_aboutIMO_ImgSVG">
+            <div class="box_aboutIMO_ImgSVG_background">
+                <div class="box_aboutIMO_ImgSVG_h1CLONE">
+                    <h1 class="box_aboutIMO_ImgSVG_h1 Lang-standart34">
+                        Узнайте как мы живем
                     </h1>
                 </div>
             </div>
-            <div class="box_aboutIMO_content">
-                <div class="testABOUT">
-                    <div class="box_aboutIMO_C_B C_B1">
-                        <div class="box_aboutIMO_C_B_ConteIMg">
-                            <img src='{% static "mainsite/img/aboutIMO1.svg" %}' class="box_aboutIMO_C_B_imgBIG">
-                        </div>
-                        <div class="box_aboutIMO_C_B_Conteh3">
-                            <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
-                                Об учереждении
-                            </h3>
-                        </div>
-                        <div class="box_aboutIMO_C_B_Contehp">
-                            <p class="box_aboutIMO_C_B_p Memo_box_Ph">
-                                На платформе можнополучить знания по актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box_aboutIMO_C_B C_B3">
-                        <div class="box_aboutIMO_C_B_ConteIMg">
+        </div>
 
-                            <img src='{% static "mainsite/img/aboutIMO3.svg" %}' class="box_aboutIMO_C_B_img">
-                        </div>
-                        <div class="box_aboutIMO_C_B_Conteh3">
-                            <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
-                                Об учереждении
-                            </h3>
-                        </div>
-                        <div class="box_aboutIMO_C_B_Contehp">
-                            <p class="box_aboutIMO_C_B_p Memo_box_Ph">
-                                На платформе можнополучить знания по актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой.
-                            </p>
-                        </div>
-                    </div>
-
+    </div>
+    <div class="imo_advantage">
+        <div class="imo_advantage_h1BOX box1">
+            <h1 class="imo_advantage_h1 Lang-standart35">Преимущества ИМО КАИ</h1>
+        </div>
+        <div class="imo_advantage_pBOX box2">
+            <p class="imo_advantage_p Lang-standart36">Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на часто задаваемые вопросы.</p>
+        </div>
+        <div class="imo_advantage_Boxinf_gridBox">
+            <div class="imo_advantage_Boxinf box3">
+                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
+                    <img src='{% static "mainsite/img/box1.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
                 </div>
-
-                <div class="testABOUT">
-                    <div class="box_aboutIMO_C_B C_B2">
-                        <div class="box_aboutIMO_C_B_ConteIMg">
-
-                            <img src='{% static "mainsite/img/aboutIMO2.svg" %}' class="box_aboutIMO_C_B_img">
-                        </div>
-                        <div class="box_aboutIMO_C_B_Conteh3">
-                            <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
-                                Об учереждении
-                            </h3>
-                        </div>
-                        <div class="box_aboutIMO_C_B_Contehp">
-                            <p class="box_aboutIMO_C_B_p Memo_box_Ph">
-                                На платформе можнополучить знания по актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box_aboutIMO_C_B C_B4">
-                        <div class="box_aboutIMO_C_B_ConteIMg">
-
-                            <img src='{% static "mainsite/img/aboutIMO4.svg" %}' class="box_aboutIMO_C_B_img">
-                        </div>
-                        <div class="box_aboutIMO_C_B_Conteh3">
-                            <h3 class="box_aboutIMO_C_B_h3 box_aboutIMO_ImgSVG_h1">
-                                Об учереждении
-                            </h3>
-                        </div>
-                        <div class="box_aboutIMO_C_B_Contehp">
-                            <p class="box_aboutIMO_C_B_p Memo_box_Ph">
-                                На платформе можнополучить знания по актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой.
-                            </p>
-                        </div>
-                    </div>
+                <div class="imo_advantage_Boxinf_boxh3">
+                    <h3 class="imo_advantage_Boxinf_3 Lang-standart37">Общежитие</h3>
+                </div>
+                <div class="imo_advantage_Boxinf_pbox">
+                    <p class="imo_advantage_Boxinf_p Lang-standart38">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
+                </div>
+            </div>
+            <div class="imo_advantage_Boxinf box4">
+                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
+                    <img src='{% static "mainsite/img/box2.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                </div>
+                <div class="imo_advantage_Boxinf_boxh3">
+                    <h3 class="imo_advantage_Boxinf_3 Lang-standart39">Комбинат питания</h3>
+                </div>
+                <div class="imo_advantage_Boxinf_pbox">
+                    <p class="imo_advantage_Boxinf_p Lang-standart40">Не следует, однако, забывать о том, что выбранный нами инновационный путь </p>
+                </div>
+            </div>
+            <div class="imo_advantage_Boxinf box5">
+                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
+                    <img src='{% static "mainsite/img/box3.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                </div>
+                <div class="imo_advantage_Boxinf_boxh3">
+                    <h3 class="imo_advantage_Boxinf_3 Lang-standart41">КАИ “Олимп”</h3>
+                </div>
+                <div class="imo_advantage_Boxinf_pbox">
+                    <p class="imo_advantage_Boxinf_p Lang-standart42">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
+                </div>
+            </div>
+            <div class="imo_advantage_Boxinf box6">
+                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
+                    <img src='{% static "mainsite/img/box4.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                </div>
+                <div class="imo_advantage_Boxinf_boxh3">
+                    <h3 class="imo_advantage_Boxinf_3 Lang-standart43">Творчество</h3>
+                </div>
+                <div class="imo_advantage_Boxinf_pbox">
+                    <p class="imo_advantage_Boxinf_p Lang-standart44">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
+                </div>
+            </div>
+            <div class="imo_advantage_Boxinf box7">
+                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
+                    <img src='{% static "mainsite/img/box5.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                </div>
+                <div class="imo_advantage_Boxinf_boxh3">
+                    <h3 class="imo_advantage_Boxinf_3 Lang-standart45">Библиотека</h3>
+                </div>
+                <div class="imo_advantage_Boxinf_pbox">
+                    <p class="imo_advantage_Boxinf_p Lang-standart46">Не следует, однако, забывать о том, что выбранный нами инновационный</p>
+                </div>
+            </div>
+            <div class="imo_advantage_Boxinf box8">
+                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
+                    <img src='{% static "mainsite/img/box6.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                </div>
+                <div class="imo_advantage_Boxinf_boxh3">
+                    <h3 class="imo_advantage_Boxinf_3 Lang-standart47">Центр переводов</h3>
+                </div>
+                <div class="imo_advantage_Boxinf_pbox">
+                    <p class="imo_advantage_Boxinf_p Lang-standart48">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
                 </div>
             </div>
         </div>
-        <div class="imo_advantage">
-            <div class="imo_advantage_h1BOX box1">
-                <h1 class="imo_advantage_h1">Преимущества ИМО КАИ</h1>
-            </div>
-            <div class="imo_advantage_pBOX box2">
-                <p class="imo_advantage_p">Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на часто задаваемые вопросы.</p>
-            </div>
-            <div class="imo_advantage_Boxinf_gridBox">
-                <div class="imo_advantage_Boxinf box3">
-                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src='{% static "mainsite/img/box1.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">Общежитие</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                    </div>
-                </div>
-                <div class="imo_advantage_Boxinf box4">
-                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src='{% static "mainsite/img/box2.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">Комбинат питания</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный путь </p>
-                    </div>
-                </div>
-                <div class="imo_advantage_Boxinf box5">
-                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src='{% static "mainsite/img/box3.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">КАИ “Олимп”</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                    </div>
-                </div>
-                <div class="imo_advantage_Boxinf box6">
-                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src='{% static "mainsite/img/box4.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">Творчество</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                    </div>
-                </div>
-                <div class="imo_advantage_Boxinf box7">
-                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src='{% static "mainsite/img/box5.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">Библиотека</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный</p>
-                    </div>
-                </div>
-                <div class="imo_advantage_Boxinf box8">
-                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER">
-                        <img src='{% static "mainsite/img/box6.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">Центр переводов</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="imo_advantage_Boxinf_gridBoxcopi"> -->
-                <!-- <div class="imo_advantage_Boxinf box7">
-                    <div class="imo_advantage_Boxinf_imgbox">
-                        <img src="../img_main/box5.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">Библиотека</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный</p>
-                    </div>
-                </div>
-                <div class="imo_advantage_Boxinf box8">
-                    <div class="imo_advantage_Boxinf_imgbox">
-                        <img src="../img_main/box6.svg" alt="noo_img" class="imo_advantage_Boxinf_img">
-                    </div>
-                    <div class="imo_advantage_Boxinf_boxh3">
-                        <h3 class="imo_advantage_Boxinf_3">Центр переводов</h3>
-                    </div>
-                    <div class="imo_advantage_Boxinf_pbox">
-                        <p class="imo_advantage_Boxinf_p">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                    </div>
-                </div> -->
-            <!-- </div> -->
+    </div>
+    <div class="doYOUHAVEQUES">
+        <div class="doYOUHAVEQUES_boxh1">
+            <h1 class="doYOUHAVEQUES_h1 Lang-standart49">Остались вопросы?</h1>
         </div>
-        <div class="doYOUHAVEQUES">
-            <div class="doYOUHAVEQUES_boxh1">
-                <h1 class="doYOUHAVEQUES_h1">Остались вопросы?</h1>
+        <div class="doYOUHAVEQUES_boxes">
+            <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes1 ">
+                <div class="doYOUHAVEQUES_boxe_h1Box">
+                    <h3 class="doYOUHAVEQUES_boxe_h1 Lang-standart50">План приема студентов</h3>
+                </div>
             </div>
-            <div class="doYOUHAVEQUES_boxes">
-                <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes1 ">
-                    <div class="doYOUHAVEQUES_boxe_h1Box">
-                        <h3 class="doYOUHAVEQUES_boxe_h1">План приема студентов</h3>
-                    </div>
+            <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes2 ">
+                <div class="doYOUHAVEQUES_boxe_h1Box">
+                    <h3 class="doYOUHAVEQUES_boxe_h1 Lang-standart51">Необходимые документы</h3>
                 </div>
-                <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes2 ">
-                    <div class="doYOUHAVEQUES_boxe_h1Box">
-                        <h3 class="doYOUHAVEQUES_boxe_h1">Необходимые документы</h3>
-                    </div>
-                </div>
-                <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes3 ">
-                    <div class="doYOUHAVEQUES_boxe_h1Box">
-                        <h3 class="doYOUHAVEQUES_boxe_h1">Как подать заявление</h3>
-                    </div>
+            </div>
+            <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes3 ">
+                <div class="doYOUHAVEQUES_boxe_h1Box">
+                    <h3 class="doYOUHAVEQUES_boxe_h1 Lang-standart52">Как подать заявление</h3>
                 </div>
             </div>
         </div>
-        <div class="GetAdvice">
-            <div class="GetAdvice_Box1">
-                <div class="GetAdvice_Box1_boxh1">
-                    <h1 class="GetAdvice_Box1_h1">Получите консультацию</h1>
-                </div>
-                <div class="GetAdvice_Box1_boxp">
-                    <p class="GetAdvice_Box1_p">Мы свяжемся с Вами в ближайшее время</p>
-                </div>
+    </div>
+
+    <div class="footer_boxHR">
+        <hr class="footer_hr" />
+    </div>
+    <div class="footer">
+        <div class="footer_boxs_1 footer_boxs">
+            <div class="footer_boxs_boxH3">
+                <h3 class="footer_boxs_H3 Lang-standart53">Образование</h3>
             </div>
-            <form class="GetAdvice_Box2" action="" method="">
-                <div class="GetAdvice_Box2_box_INPUT">
-                    <input type="text" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT1" id="" placeholder="Как к Вам обращаться?">
-                </div>
-                <div class="GetAdvice_Box2_FLEX_wrap">
-                    <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUTdasdad">
-                        <input type="tel" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT2" id="" placeholder="Ваш номер телефона">
-                    </div>
-                    <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUT_BOXsize">
-                        <input type="email" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT3" id="" placeholder="Адрес вашей электронной почты">
-                    </div>
-                </div>
-                <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUT_displayTest">
-                    <div class="GetAdvice_Box2_box_INPUT_displayTest2">
-                        <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUT_MARGIN">
-                            <input type="checkbox" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT4" id="">
-                        </div>
-                        <div class="GetAdvice_Box2_box_INPUTboxP">
-                            <p class="GetAdvice_Box2_box_P">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и с Правилами пользования Платформой</p>
-                        </div>
-                    </div>
-                    <div class="GetAdvice_Box2_box_INPUT">
-                        <input type="submit" class="GetAdvice_Box2_box_INPUT_Submit" id="" value="Отправить">
-                    </div>
-                </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart54">Высшее образование</p>
 
-            </form>
-        </div>
-        <div class="weHAve_new">
-            <div class="weHAve_new_BOXh1">
-                <h1 class="weHAve_new_h1">А вот что у нас нового</h1>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
             </div>
-            <div class="weHAve_new_boxStart">
-                <div class="weHAve_new_boxStart_img  weHAve_new_boxStart_img1">
-
-                </div>
-                <div class="weHAve_new_boxStart_Inf">
-                    <div class="weHAve_new_boxStart_Inf_boxh3">
-                        <h3 class="weHAve_new_boxStart_Inf_h3">Консультация с профессионалами из IT</h3>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
-                    </div>
-                </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart55">Среднее профессиональное образование</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
             </div>
-            <div class="weHAve_new_CardLink">
-                <div class="weHAve_new_CardLinkBox">
-                    <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img2 sizeBox">
-
-                    </div>
-                    <div class="weHAve_new_CardLink_Inf_boxh3">
-                        <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
-                    </div>
-                </div>
-                <div class="weHAve_new_CardLinkBox">
-                    <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img3 sizeBox">
-
-                    </div>
-                    <div class="weHAve_new_CardLink_Inf_boxh3">
-                        <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
-                    </div>
-                </div>
-                <div class="weHAve_new_CardLinkBox">
-                    <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img4 sizeBox">
-
-                    </div>
-                    <div class="weHAve_new_CardLink_Inf_boxh3">
-                        <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
-                    </div>
-                </div>
-                <div class="weHAve_new_CardLinkBox">
-                    <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img5 sizeBox">
-
-                    </div>
-                    <div class="weHAve_new_CardLink_Inf_boxh3">
-                        <h3 class="weHAve_new_CardLink_Inf_h3">Консультация с профессионалами из IT</h3>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p></div>
-                        <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img"><p class="weHAve_new_boxStart_Inf_boxINFp">1455</p></div>
-                    </div>
-                </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart56">Дополнительное образование</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart57">Высшее образование</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart58">Электронная информационно-образовательная среда</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart59">Научно-техническая библиотека</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart60">Военный учебный центр</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart61">Грант «Новые кадры ОПК»</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart62">Инклюзивное образование</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
             </div>
         </div>
-        <div class="footer_boxHR">
-            <hr class="footer_hr"/>
+        <div class="footer_boxs_2 footer_boxs">
+            <div class="footer_boxs_boxH3">
+                <h3 class="footer_boxs_H3 Lang-standart63">Университет</h3>
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart64">История</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart65">О КНИТУ-КАИ</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart66">КНИТУ-КАИ в рейтингах</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart67">Структура</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart68">Документы</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart69">Безопасность</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart70">Брендбук КНИТУ-КАИ</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart71">Сведения об образовательной организации</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW Lang-standart72">Контакты</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
+            </div>
         </div>
-        <div class="footer">
-            <div class="footer_boxs_1 footer_boxs">
-                <div class="footer_boxs_boxH3">
-                    <h3 class="footer_boxs_H3">Образование</h3>
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Высшее образование</p>
+        <div class="footer_boxs_3 footer_boxs">
+            <div class="footer_boxs_boxH3">
+                <h3 class="footer_boxs_H3 Lang-standart73">Контактная информация</h3>
+            </div>
+            <div class="footer_boxs_textadr">
+                <p class="footer_boxs_textadrp Lang-standart74">Юридический адрес: 420111 г. Казань, ул. К. Маркса, 10</p>
+            </div>
+            <div class="footer_boxs_textadr">
+                <p class="footer_boxs_textadrp Lang-standart75">Адрес приёмной комиссии и приёма документов: 420015, г. Казань, ул. Б. Красная, 55</p>
+            </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW">minobrnauki.gov.ru</p>
 
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Среднее профессиональное образование</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}'width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Дополнительное образование</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Высшее образование</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Электронная информационно-образовательная среда</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Научно-техническая библиотека</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Военный учебный центр</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Грант «Новые кадры ОПК»</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Инклюзивное образование</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
             </div>
-            <div class="footer_boxs_2 footer_boxs">
-                <div class="footer_boxs_boxH3">
-                    <h3 class="footer_boxs_H3">Университет</h3>
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">История</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">О КНИТУ-КАИ</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">КНИТУ-КАИ в рейтингах</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Структура</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Документы</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Безопасность</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Брендбук КНИТУ-КАИ</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Сведения об образовательной организации</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">Контакты</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
+            <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
+                <p class="Memo_box_textInf_p nowVW">edu.gov.ru</p>
+                <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
             </div>
-            <div class="footer_boxs_3 footer_boxs">
-                <div class="footer_boxs_boxH3">
-                    <h3 class="footer_boxs_H3">Контактная информация</h3>
-                </div>
-                <div class="footer_boxs_textadr">
-                    <p class="footer_boxs_textadrp">Юридический адрес: 420111 г. Казань, ул. К. Маркса, 10</p>
-                </div>
-                <div class="footer_boxs_textadr">
-                    <p class="footer_boxs_textadrp">Адрес приёмной комиссии и приёма документов: 420015, г. Казань, ул. Б. Красная, 55</p>
-                </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">minobrnauki.gov.ru</p>
+        </div>
+        <div class="footer_boxs_4 footer_boxs">
+            <div class="footer_boxs_boxH3">
+                <h3 class="footer_boxs_H3">+7 (843) 231-01-09</h3>
+            </div>
+            <div class="footer_boxs_boxP">
+                <p class="footer_boxs_P Lang-standart76">Телефон приемной комиссии</p>
+            </div>
+            <div class="footer_boxs_boxH3">
+                <h3 class="footer_boxs_H3 ">pk@kai.ru</h3>
+            </div>
+            <div class="footer_boxs_boxP">
+                <p class="footer_boxs_P Lang-standart78">Электронная почта</p>
+            </div>
+            <div class="footer_boxs_links_box">
+                <div class="footer_boxs_links_box_l footer_boxs_links_box_l1 cursorP"></div>
+                <div class="footer_boxs_links_box_l footer_boxs_links_box_l2 cursorP"></div>
+                <div class="footer_boxs_links_box_l footer_boxs_links_box_l3 cursorP"></div>
+                <div class="footer_boxs_links_box_l footer_boxs_links_box_l4 cursorP"></div>
+            </div>
+        </div>
+        <div class="footer_boxHR marginTOP_70px">
+            <hr class="footer_hr" />
+        </div>
+        <div class="footer_FM">
+            <div class="footer_FM1">
+                <div class="footer_FM1_Logo">
 
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
                 </div>
-                <div class="Memo_box_textInf_contentTextsALinks_cont cursorP">
-                    <p class="Memo_box_textInf_p nowVW">edu.gov.ru</p>
-                    <img src='{% static "mainsite/img/iconLink.svg" %}' width="21px" height="21px" class="Memo_box_iconLinkSvg" alt="not_imglink">
-                </div>
-            </div>
-            <div class="footer_boxs_4 footer_boxs">
-                <div class="footer_boxs_boxH3">
-                    <h3 class="footer_boxs_H3">+7 (843) 231-01-09</h3>
-                </div>
-                <div class="footer_boxs_boxP">
-                    <p class="footer_boxs_P">Телефон приемной комиссии</p>
-                </div>
-                <div class="footer_boxs_boxH3">
-                    <h3 class="footer_boxs_H3">pk@kai.ru</h3>
-                </div>
-                <div class="footer_boxs_boxP">
-                    <p class="footer_boxs_P">Электронная почта</p>
-                </div>
-                <div class="footer_boxs_links_box">
-                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l1 cursorP"></div>
-                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l2 cursorP"></div>
-                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l3 cursorP"></div>
-                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l4 cursorP"></div>
-                    <div class="footer_boxs_links_box_l footer_boxs_links_box_l5 cursorP"></div>
+                <div class="footer_FM1_boxp">
+                    <p class="footer_FM1_p Lang-standart79">Институт международного образования КНИТУ-КАИ
+                    </p>
                 </div>
             </div>
-            <div class="footer_boxHR marginTOP_70px">
-                <hr class="footer_hr"/>
-            </div>
-            <div class="footer_FM">
-                <div class="footer_FM1">
-                    <div class="footer_FM1_Logo">
-
-                    </div>
-                    <div class="footer_FM1_boxp">
-                        <p class="footer_FM1_p">Институт международного образования
-                            КНИТУ-КАИ</p>
-                    </div>
+            <div class="footer_FM2">
+                <div class="footer_FM2 link_FM2 cursorP">
+                    <p class="link_FM2Text Lang-standart80">Политика конфидециальности</p>
                 </div>
-                <div class="footer_FM2">
-                    <div class="footer_FM2 link_FM2 cursorP"><p class="link_FM2Text">Политика конфидециальности</p></div>
-                    <div class="footer_FM2 link_FM2 cursorP"><p class="link_FM2Text">Правила использования</p></div>
-                    <div class="footer_FM2 link_FM2 cursorP"><p class="link_FM2Text">Помощь</p></div>
+                <div class="footer_FM2 link_FM2 cursorP">
+                    <p class="link_FM2Text Lang-standart81">Правила использования</p>
+                </div>
+                <div class="footer_FM2 link_FM2 cursorP">
+                    <p class="link_FM2Text Lang-standart82">Помощь</p>
                 </div>
             </div>
         </div>
-        <div class="mainSerchON">
-            <div class="serchON">
+    </div>
+    <div class="mainSerchON">
+        <div class="serchON">
 
-            </div>
-            <div class="serchON_box">
-
-                <img src='{% static "mainsite/img/search.svg" %}' class="serchON_box_img" id="serchOnBoxImg">
-                <input type="text" class="serchON_box_input" id="serchONBoxInput" placeholder="|Напишите что-нибудь...">
-            </div>
         </div>
-        <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'></script>
+        <div class="serchON_box">
 
-        <script src='{% static "mainsite/js/home_page/locationFile.js" %}'></script>
-{% endblock  %}
+            <img src='{% static "mainsite/img/search_white.svg" %}' class="serchON_box_img" id="serchOnBoxImg">
+            <input type="text" class="serchON_box_input Lang-standartPlaceholder83" id="serchONBoxInput" placeholder="|Напишите что-нибудь...">
+        </div>
+    </div>
+    <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'>
+    </script>
+
+    <script src='{% static "mainsite/js/home_page/locationFile.js" %}'>
+    </script>
+
+    <script src="{% static 'mainsite/js/registration/translate.js' %}">
+    </script>
+    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
+    </script>
+{% endblock %}
