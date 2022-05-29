@@ -1,0 +1,581 @@
+.menu_links_boxs {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.menu_links_boxs {
+    display: none;
+    flex: 1 1 auto;
+}
+
+.buttonsInHeader {
+    margin-left: 85%;
+}
+
+.answers {
+    width: 538px;
+    background-color: #191C23;
+    border: 1px solid #fff;
+    border-radius: 13px;
+    color: #fff;
+    font-size: 20px;
+    padding: 14px 25px;
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
+
+.main_icon_logo {
+    position: absolute;
+    width: 66px;
+    height: 54px;
+    background-image: url('../../img/svg/aboutkazan/90year.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 2%;
+    color: #fff;
+}
+
+.__container {
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+html {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+}
+
+.fixed {
+    position: fixed;
+    width: 50%;
+    /* height: 3%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.extra,
+.wrapper {
+    width: 75%;
+    margin: auto;
+}
+
+
+.extra {
+    height: 100px;
+}
+
+body {
+    font-family: georgia;
+    height: 1000px;
+}
+
+h4 {
+    text-align: center;
+}
+
+@media (min-height: 768px) {
+    #wrapper {
+        height: 2000px;
+    }
+}
+
+#search {
+    display: none;
+}
+
+#usButton {
+    display: none;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: Rubik;
+    font-size: 12px;
+    color: #616161;
+    background-color: #32BD70;
+}
+
+.aboutkazan-fitst-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header--aboutkazan {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+
+
+/* ================================================================================================================================
+================================================================================================================================ */
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: Rubik;
+    font-size: 12px;
+    color: #616161;
+    background-color: #32bd70;
+}
+
+#search {
+    display: none;
+}
+
+#usButton {
+    display: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    /* width: 28%;
+        height: 50%; */
+}
+
+.main {
+    flex: 1, 1, auto
+}
+
+[class*="__container"] {
+    max-width: 1087px;
+    /* margin: 0px auto; */
+}
+
+/* PC */
+@media (max-width: 2560) {
+    [class*="__container"] {
+        max-width: 1087px;
+        /* margin: 0px auto; */
+    }
+}
+
+@media (max-width: 1087) {
+    [class*="__container"] {
+        max-width: 970px;
+        /* margin: 0px auto; */
+    }
+}
+
+/* table */
+@media (max-width: 992) {
+    [class*="__container"] {
+        max-width: 750px;
+        /* margin: 0px auto; */
+    }
+}
+
+/* Mobile */
+@media (max-width: 760) {
+    [class*="__container"] {
+        max-width: none;
+        /* margin: 0px auto; */
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.menu_links_boxs {
+    display: none;
+    flex: 1 1 auto;
+}
+
+.buttonsInHeader {
+    margin-left: 85%;
+}
+
+.answers {
+    width: 538px;
+    background-color: #191C23;
+    border: 1px solid #fff;
+    border-radius: 13px;
+    color: #fff;
+    font-size: 20px;
+    padding: 14px 25px;
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
+
+
+/* .hideMenu_in_Proffil .buttonsInHeader_box_usButton .noStyelButt .cursorP {
+        
+    } */
+/* .menu_links_boxs_links {
+        display: none;
+        
+    }
+    .body {
+        width: 50% ;
+        justify-content: center;
+    } */
+
+
+/* ================================================================================= */
+
+
+.started-page-kazan {
+    width: 2650px;
+    height: 1403px;
+}
+
+.get-started {
+    display: grid;
+    width: 712px;
+    height: 413px;
+    justify-content: center;
+    align-items: center;
+    margin: 5.02% 36.3% 0 36.367%;
+
+}
+
+.get-started__text {
+    width: 699px;
+    height: 70px;
+    color: #FFFFFF;
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 70px;
+    border-top: 25px #FFFFFF;
+}
+
+.get-started__image_text {
+    margin: 46 0 0 23;
+}
+
+.get-started-line {
+    margin-top: 8%;
+    background-position: left, 50%;
+    background-size: auto auto, cover;
+    display: flex;
+}
+
+.get-second-text {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 5%;
+    justify-items: center;
+    align-items: center;
+    width: 2650px;
+    height: 1403px;
+    background-color: #FFFFFF;
+}
+
+.get-second-text-B {
+    width: 638px;
+    height: 328px;
+    left: 1079px;
+    top: 2302px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 167.02%;
+    color: #383838;
+}
+
+.get-second-text-history {
+    display: grid;
+    grid-template-rows: 1 1;
+}
+
+.get-second-text-history-first,
+.get-second-text-history-second {
+    width: 792px;
+    height: 200px;
+    left: 884px;
+    top: 3147px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 188.02%;
+    color: #383838;
+}
+
+.get-third-map {
+    grid-template-rows: auto auto;
+
+    width: 2650px;
+    height: 1771px;
+    background-color: #FFFFFF;
+}
+
+.get-third-map-img-text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.get-map-text-title {
+    width: 788px;
+    height: 63px;
+    left: 640px;
+    top: 4828px;
+
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 63px;
+
+
+    color: #000000;
+}
+
+.get-map-text-title-text {
+    width: 707px;
+    height: 429px;
+    left: 640px;
+    top: 4943px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 188.02%;
+    /* or 39px */
+
+
+    color: #383838;
+}
+
+.get-fourth-picture {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row: 25px;
+    justify-content: center;
+    margin-top: 4%;
+    background-color: #FFFFFF;
+}
+
+.get-fifth {
+    /* margin-top: 4%; */
+    background-color: #FFFFFF;
+
+}
+
+/* =================================================================== */
+
+.get-sixth-question {
+    background-color: #FFFFFF;
+    background-image: url("{% static 'mainsite/img/svg/newpicture/picture-kazan.svg' %}") 100% 100%;
+}
+
+.get-sixth-question-text {
+    display: grid;
+    justify-content: center;
+    width: 1107px;
+    height: 381px;
+    left: 727px;
+    top: 445px;
+
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 139px;
+    line-height: 127px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 7px 21px rgba(0, 0, 0, 0.16);
+}
+
+
+
+article {
+    background-image: linear-gradient(to bottom,
+            transparent 50px,
+            #fdef67 50px,
+            #fdef67 calc(100% - 50px),
+            transparent 0);
+    margin: auto auto 50px auto;
+}
+
+.category,
+.title,
+.footer {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 50px;
+}
+
+.category {
+    top: 0;
+    font: 41px/57px "Titan One";
+    color: #f83d23;
+    text-shadow: 5px 5px 0 dodgerblue;
+}
+
+.title {
+    top: 0;
+    font: 50px/60px "Crimson Text";
+    color: #fdef67;
+    text-shadow: 2px 2px 0 #f83d23;
+    background-color: dodgerblue;
+    margin: 0;
+}
+
+.footer {
+    bottom: 100px;
+    z-index: -1;
+    color: white;
+    text-shadow: 1px 1px black;
+    background-color: #f83d23;
+    width: 80%;
+    margin: 50px auto auto auto;
+}
+
+body {
+    font-family: "Crimson Text";
+}
+
+p {
+    margin: 10px;
+}
+
+.emptyBlocks {
+    background-color: #ccc;
+    height: 200px;
+    margin: 40px auto;
+}
+
+article,
+.emptyBlocks {
+    width: 80vw;
+    max-width: 420px;
+}
+
+@media (max-width: 420px) {
+    .category {
+        font: 24px/72px "Titan One";
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 9pt;
+    }
+}
+
+@media (max-height: 946px) {
+    .tallScreenText {
+        display: none;
+    }
+}
+
+p.a {
+    font-size: 86;
+    font-weight: 1000;
+    font-family: 'Century Schoolbook';
+}
+
+p.b {
+    margin-top: 3%;
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 167.02%;
+}
+
+.second-page-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-end;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #32BD70;
+}

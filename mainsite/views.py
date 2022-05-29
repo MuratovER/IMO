@@ -95,3 +95,6 @@ def extra_view(request):
 def error_404_view(request, exception):
     return render(request, 'mainsite/404.html')
 
+
+def aboutkazan_view(request):
+    return render(request, 'mainsite/home/aboutKazan.html')

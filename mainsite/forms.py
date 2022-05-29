@@ -61,7 +61,7 @@ class ProfileForm(forms.ModelForm):
                                             'onchange': "mouseUp(this)" ,
                                             'onmouseover': "mouseUp(this)",
                                             'style': "border-color: green;",}),
-            'country': forms.TextInput(attrs={ 'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectYourCountr",
+            'country': forms.Select(attrs={ 'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectYourCountr",
                                             'id': "id_country",
                                             'placeholder': "Выберите Вашу страну",
                                             'onmousedown': "mouseUp(this)" ,

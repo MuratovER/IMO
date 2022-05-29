@@ -28,16 +28,22 @@ class Profile(models.Model):
 
     gender_choice = (
 
-        ('Male', 'M'),
-        ('Female', 'F'),
-        ('None of this', 'N'),
+        ('M', 'Male'),
+        ('F', 'Female'),
+        ('N', 'None of this'),
     )
-
+    country_choice = {
+        ('US', 'United States'),
+        ('FR', 'France'),
+        ('CN', 'China'),
+        ('RU', 'Russia'),
+        ('IT', 'Italy'),
+    }
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     gender = models.CharField(max_length=12, choices=gender_choice, blank=True, null=True)
-    birthdate = models.DateTimeField(blank=True, null=True)
-    country = models.CharField(max_length=100)
+    birthdate = models.DateField(blank=True, null=True)
+    country = models.CharField(max_length=100, choices=country_choice, blank=True, null=True)
     city = models.CharField(max_length=100)
     citizenship = models.CharField(max_length=100,blank=True, null=True)
 
