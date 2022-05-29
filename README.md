@@ -119,7 +119,20 @@ DATABASES = {
     }
 }
 ```
+после завершения обратно встяавте 
 
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'imodb',
+        'USER': 'imo',
+        'PASSWORD': 'imoproject',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+```
 ### Установка PostgresSQL и pgadmin
 - [How to install PostreSQL](https://www.postgresqltutorial.com/install-postgresql/)
 

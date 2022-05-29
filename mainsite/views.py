@@ -99,4 +99,6 @@ def enteringimo_view(request):
 def error_404_view(request, exception):
     return render(request, 'mainsite/404.html')
 
+def incoming_view(request):
+    return render(request, 'mainsite/incoming.html')
 

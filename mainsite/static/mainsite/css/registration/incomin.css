@@ -1,0 +1,154 @@
+.incoming-page {
+    display: grid;
+    /* width: 80%; */
+    height: 100%;
+    max-height: 3907px;
+    align-content: center;
+    align-items: start;
+    justify-content: center;
+    justify-items: center
+}
+.incoming-toImo{
+    padding: 10%;
+    padding-top: 20%;
+}
+.incoming-toImo-adress {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 50px;
+    grid-gap: 20px;
+}
+
+.adress-Open {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #EBEBEB;
+    padding: 45px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;    
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.incoming-live-Univer-AboutKazan{
+    max-width: 1622px;
+    width: 1500px;
+    border-radius: 20px;
+    background-image: url("../../img/incoming/incomin1.svg");
+    background-repeat: no-repeat;
+    padding: 5%;
+    /* padding-left: 20%; */
+    margin-left: 25%;
+}
+.incoming-live-KAI {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0 5% 0 5%;
+}
+
+.incoming-live-Univer-AboutUniversity{
+    max-width: 1622px;
+    width: 1500px;
+    border-radius: 20px;
+    background-image: url("../../img/incoming/incomin2.svg");
+    background-repeat: no-repeat;
+    padding: 5%;
+    /* padding-left: 20%; */
+    margin-left: 25%;
+}
+.incoming-live-Univer-WheretoGo{
+    max-width: 1622px;
+    width: 1500px;
+    border-radius: 20px;
+    background-image: url("../../img/incoming/incomin3.svg");
+    background-repeat: no-repeat;
+    padding: 5%;
+    /* padding-left: 20%; */
+    margin-left: 25%;
+}
+
+.incoming-live-kai-text{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+}
+
+.incoming-live-Univer-Three{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.univer-one{
+    max-width: 360px;
+    width: 320px;
+    border-radius: 20px;
+    background-image: url("../../img/incoming/incomin4.svg");
+    background-repeat: no-repeat;
+    padding: 15%;
+    /* padding-left: 20%; */
+    margin-left: 25%;
+}
+
+.univer-two{
+    max-width: 360px;
+    width: 320px;
+    border-radius: 20px;
+    background-image: url("../../img/incoming/incomin5.svg");
+    background-repeat: no-repeat;
+    padding: 15%;
+    /* padding-left: 20%; */
+    margin-left: 25%;
+}
+.univer-three{
+    max-width: 360px;
+    width: 320px;
+    border-radius: 20px;
+    background-image: url("../../img/incoming/incomin6.svg");
+    background-repeat: no-repeat;
+    padding: 15%;
+    /* padding-left: 20%; */
+    margin-left: 25%;
+}
+
+.weHAve_new_CardLink_boxStart_img2 {
+    min-width: 320px;
+    width: 360px;
+    height: 300px;
+    background-image: url("../../img/incoming/news1.svg");
+    margin-bottom: 30px;
+}
+.weHAve_new_CardLink_boxStart_img3 {
+    min-width: 320px;
+    width: 360px;
+    height: 300px;
+    background-image: url("../../img/incoming/news1.svg");
+    margin-bottom: 30px;
+}
+
+.weHAve_new_CardLink_boxStart_img4 {
+    min-width: 320px;
+    width: 360px;
+    height: 300px;
+    background-image: url("../../img/incoming/news1.svg");
+    margin-bottom: 30px;
+}
+.weHAve_new_CardLink_boxStart_img5 {
+    min-width: 320px;
+    width: 360px;
+    height: 300px;
+    background-image: url("../../img/incoming/news1.svg");
+    margin-bottom: 30px;
+}
+
+.weHAve_new_BOXh1{
+    margin-right: 60%;
+}
