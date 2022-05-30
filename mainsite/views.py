@@ -1,12 +1,12 @@
 from urllib import request
-
+from loguru import logger
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import render, redirect
-from .forms import CreateUserForm, ProfileForm
-from mainsite.models import Profile, Post
+from .forms import CreateUserForm, ProfileForm, FaqForm
+from mainsite.models import Profile, Post, Faq
 from django.contrib import messages
-
+from django.core.mail import send_mail, BadHeaderError
 
 
 def home_page(request):
@@ -99,4 +99,35 @@ def enteringimo_view(request):
 def error_404_view(request, exception):
     return render(request, 'mainsite/404.html')
 
+def faq_view(request):
+
+
+    if request.method == "POST" :
+        logger.info('Completed post verification')
+        form = FaqForm(request.POST)
+        if form.is_valid():
+            logger.info('Form is valid')
+            logger.info('{}'.format(form.cleaned_data['name']))
+
+            subject = "Вопросы от студентов"
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['admin@example.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+
+            send_mail(subject,
+                      message,
+                      'eldar.muratov.3@gmail.com',
+                      ['eldar.muratov.3@gmail.com'],
+                      fail_silently=False)
+
+        logger.info('Quited form validation')
+        context = {'form': form}
+        return render(request, 'mainsite/faq/faq.html', context)
+    else:
+        form = FaqForm()
+    context = {'form': form}
+    return render(request, 'mainsite/faq/faq.html', context)
 
