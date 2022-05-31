@@ -100,9 +100,8 @@ class Speciality(models.Model):
 
 
 class Faq(models.Model):
-    name = models.CharField(max_length=15)
-    mail = models.EmailField(max_length=254)
+    title = models.CharField(max_length=100)
     question = models.TextField()
 
     def __str__(self):
-        return 'Имя:{}| Почта:{}'.format(name, mail)
+        return self.title

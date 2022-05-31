@@ -100,34 +100,7 @@ def error_404_view(request, exception):
     return render(request, 'mainsite/404.html')
 
 def faq_view(request):
-
-
-    if request.method == "POST" :
-        logger.info('Completed post verification')
-        form = FaqForm(request.POST)
-        if form.is_valid():
-            logger.info('Form is valid')
-            logger.info('{}'.format(form.cleaned_data['name']))
-
-            subject = "Вопросы от студентов"
-            from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message']
-            try:
-                send_mail(subject, message, from_email, ['admin@example.com'])
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
-
-            send_mail(subject,
-                      message,
-                      'eldar.muratov.3@gmail.com',
-                      ['eldar.muratov.3@gmail.com'],
-                      fail_silently=False)
-
-        logger.info('Quited form validation')
-        context = {'form': form}
-        return render(request, 'mainsite/faq/faq.html', context)
-    else:
-        form = FaqForm()
-    context = {'form': form}
+    questions = Faq.objects.all()
+    context = {'questions': questions}
     return render(request, 'mainsite/faq/faq.html', context)
 
