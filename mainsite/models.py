@@ -26,12 +26,11 @@ class Post(models.Model):
 #model for Profile
 class Profile(models.Model):
     '''Таблица профиля в которой отображается базовая информация о пользователе'''
-
     gender_choice = (
 
-        ('Male', 'M'),
-        ('Female', 'F'),
-        ('None of this', 'N'),
+        ('M', 'Мужчина'),
+        ('F', 'Женщина'),
+        ('N', 'Не хочу говорить'),
     )
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
