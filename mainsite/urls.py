@@ -12,6 +12,7 @@ urlpatterns = [
     path('privacypolicy/', views.privacypolicy_view, name='privacypolicy'),
     path('enteringimo/', views.enteringimo_view, name='enteringimo'),    
     path('profile/', views.profile_view, name='profile'),
+    path('profile_edit/', views.profile_edit, name='profile_edit'),
     path('news/', views.news_view, name='news'),
     path('extra/', views.extra_view, name='extra'),
     path('faq/', views.faq_view, name='faq'),
