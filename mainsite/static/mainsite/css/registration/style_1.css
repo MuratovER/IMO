@@ -6,7 +6,6 @@
     background-color: #fff;
     width: 100%;
     box-sizing: border-box;
-    background-color: #000212;
 }
 
 .main_block_blok_TopMenu_Addition_theme_ {
@@ -42,7 +41,6 @@
     font-size: 21px;
     color: #fff;
     border: none;
-    background-color: #000212;
     cursor: var(--hand-cursor-w);
     font-family: var(--font-averta-cy);
     border-radius: 7px;
@@ -186,7 +184,7 @@
 }
 
 .main_block_form_h1 {
-    color: #fff;
+    color: #000;
     font-size: 68px;
     font-weight: bold;
     font-family: var(--font-averta-cy);
@@ -200,10 +198,8 @@
 
 .main_block_form_input_1 {
     width: 538px;
-    background-color: #191C23;
-    border: 1px solid #26282F;
+    border: 2px solid #D7D7D7;
     border-radius: 13px;
-    color: #fff;
     font-size: 20px;
     padding: 14px 25px;
     font-family: var(--font-inter);
@@ -510,7 +506,6 @@
 .main_block_form_flex_Regester_boxMainBoxes_ButtomRegister {
     width: 172px;
     height: 172px;
-    background-color: #191C23;
     border-radius: 24px;
     border: 2px solid #26282F;
     display: flex;
@@ -617,7 +612,6 @@
 
 .main_block_form_input_2 {
     width: 243px;
-    background-color: rgb(0, 2, 18);
     border: none;
     /*border: 1px solid #26282F; */
     /* border-radius: 13px; */

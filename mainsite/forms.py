@@ -1,10 +1,8 @@
-# from cProfile import label
-# from tkinter import Widget
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.forms import ModelForm
-from .models import Profile
+from .models import Profile, Faq
 from datetime import date
 
 class CreateUserForm(UserCreationForm):
@@ -101,4 +99,10 @@ class ProfileForm(forms.ModelForm):
                                             'onchange': "mouseUp(this)" ,
                                             'onmouseover': "mouseUp(this)",
                                             'style': "border-color: green;",})                                                                                                                             
-        }    
+        }
+
+
+class FaqForm(forms.Form):
+    from_email = forms.EmailField(required=True)
+    name = forms.CharField(required=True)
+    message = forms.CharField(widget=forms.Textarea, required=True)
