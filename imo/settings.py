@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'mainsite',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
@@ -92,6 +93,7 @@ DATABASES = {
 }
 
 
+
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
@@ -139,6 +141,12 @@ import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 print(db_from_env)
 DATABASES['default'].update(db_from_env)
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/media/'
+
+
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
@@ -206,3 +214,13 @@ CKEDITOR_CONFIGS = {
         ]),
     }
 }
+
+
+# config/settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
+DEFAULT_FROM_EMAIL = 'will@learndjango.com'
+EMAIL_HOST = 'smtp.mailgun.org' # new
+EMAIL_HOST_USER = 'eldar.muratov.3@gmail.com'# new
+EMAIL_HOST_PASSWORD = 'tkmlfhvehfnjd' # new
+EMAIL_PORT = 587 # new
+EMAIL_USE_TLS = True # new

@@ -1,0 +1,40 @@
+.faq_content {
+    font-family: Inter;
+    display: block;
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+}
+
+.faq_question {
+    border: 1px solid #D6D6D6;
+    border-radius: 40px;
+    margin-top: 7%;
+    padding: 5%;
+}
+
+.faq_question h3{
+    margin-bottom: 5%;
+}
+
+.faq_text {
+    color: #383838;
+}
+
+.faq_form {
+    text-align: center;
+}
+
+.faq_form h1{
+    margin: 5% 0 3% 0;
+}
+
+.verification-mail-field input{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}

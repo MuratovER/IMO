@@ -1,12 +1,12 @@
 from urllib import request
-
+from loguru import logger
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import render, redirect
-from .forms import CreateUserForm, ProfileForm
-from mainsite.models import Profile, Post
+from .forms import CreateUserForm, ProfileForm, FaqForm
+from mainsite.models import Profile, Post, Faq
 from django.contrib import messages
-
+from django.core.mail import send_mail, BadHeaderError
 
 
 def home_page(request):
@@ -90,11 +90,22 @@ def extra_view(request):
     ctx = {'form': form}
     return render(request, 'mainsite/registration/ExtraInfo.html', ctx)
              
-
+def privacypolicy_view(request):
+    return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
+    
+def enteringimo_view(request):
+    return render(request, 'mainsite/enteringIMO/EnteringIMO.html')
 
 def error_404_view(request, exception):
     return render(request, 'mainsite/404.html')
-
+  
 
 def aboutkazan_view(request):
     return render(request, 'mainsite/home/aboutKazan.html')
+  
+  
+def faq_view(request):
+    questions = Faq.objects.all()
+    context = {'questions': questions}
+    return render(request, 'mainsite/faq/faq.html', context)
+

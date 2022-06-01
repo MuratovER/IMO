@@ -1,7 +1,9 @@
-{% extends 'mainsite/base.html' %} 
-{% block content %} 
-{%  load static %}
-
+{% extends 'mainsite/base.html' %} {% block content %} {% load static %}
+<style>
+    .header{
+        display: none;
+    }
+</style>
 <div id="hend" class="indexEnterWindow">  
     <div class="main_block" id="main_block">
         <form method="POST" action="" class="main_block_form">
@@ -15,6 +17,26 @@
                                     <div class="main_block_Buttom_ __">
                                         <div class="main_block_Buttom_Arrow" id="arrow"></div>
                                         <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
+                                    </div>
+                                    <div class="main_block_form_flex_tr">
+                                        <div class="main_block_form_flex_td1 LengText-td1Youlifefrom">Вы родом из:</div>
+                                        <div class="main_block_form_flex_td2 DataPersText">Таджикистан</div>
+                                    </div>
+                                    <div class="main_block_form_flex_tr">
+                                        <div class="main_block_form_flex_td1 LengText-td1YourLifeSity">Ваш родной город:</div>
+                                        <div class="main_block_form_flex_td2 DataPersText">Душамбе</div>
+                                    </div>
+                                    <div class="main_block_form_flex_tr">
+                                        <div class="main_block_form_flex_td1 LengText-td1Howicallyou">Как к Вам обращаться:</div>
+                                        <div class="main_block_form_flex_td2 DataPersText">Абдулла Ибн Хатаб</div>
+                                    </div>
+                                    <div class="main_block_form_flex_tr">
+                                        <div class="main_block_form_flex_td1 LengText-td1NumPhone">Номер телефона:</div>
+                                        <div class="main_block_form_flex_td2 DataPersText">+971 56 231 2415</div>
+                                    </div>
+                                    <div class="main_block_form_flex_tr">
+                                        <div class="main_block_form_flex_td1 LengText-td1Email">Адрес электронной почты:</div>
+                                        <div class="main_block_form_flex_td2 DataPersText">asdsd41ddfwterwt@gmail.com</div>
                                     </div>
                                 </div>
                                 <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
