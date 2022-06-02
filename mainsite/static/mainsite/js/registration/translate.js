@@ -309,8 +309,9 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart72"), "Контакты", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart73"), "Контактная информация", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart74"), "Юридический адрес: 420111 г. Казань, ул. К. Маркса, 10", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart75"), "Адрес приёмной комиссии и приёма документов: 420015, г. Казань, ул. Б. Красная, 55", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart75"), "г. Казань, ул. Большая Красная, д. 55", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart76"), "Телефон приемной комиссии", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart7_6"), "Телефон ИМО", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart78"), "Электронная почта", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart79"), "Институт международного образования КНИТУ-КАИ", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart80"), "Политика конфидециальности", "innerText");
@@ -489,7 +490,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart72"), "Contacts", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart73"), "Contact Information", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart74"), "Legal address: 420111 Kazan, K. Marx str., 10", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart75"), "Address of the admissions office and acceptance of documents: 420015, Kazan, B. Krasnaya st., 55", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart75"), "Kazan, Bolshaya Krasnaya str., 55", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart7_6"), "IMO phone number", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart76"), "Admission Committee Phone", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart78"), "Email", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart79"), "Institute of International Education KNRTU-KAI", "innerText");
