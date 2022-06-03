@@ -119,3 +119,37 @@ def profile_edit(request):
         form = ProfileForm(instance=profile)
 
     return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
+
+
+@login_required
+def password_edit(request):
+    profile = Profile.objects.get(user=request.user)
+    if request.method == "POST":
+        form = ProfileForm(request.POST, instance=profile)
+        if form.is_valid():
+            profile = form.save(commit=False)
+            profile.save()
+            return redirect('profile')
+    else:
+        form = ProfileForm(instance=profile)
+
+    return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
+
+# @login_required
+# def password_edit(request):
+#     profile = Profile.objects.get(user = request.user)
+#     if request.method == "POST":
+#         form = CreateUserForm(request.POST, instance=profile)
+#         if form.is_valid():
+#             profile = form.save(commit=False)
+#             profile.save()
+#             return redirect('profile')
+#     else:
+#         form = ProfileForm(instance=profile)
+
+    # return render(request, 'mainsite/profile/password_change.html', {'form': form})
+
+@login_required
+def password_change_done(request):
+    logout(request)
+    return redirect('login_view')
