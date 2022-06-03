@@ -1134,7 +1134,7 @@
 
 .footer_boxHR {
     width: 100%;
-    margin: 200px 0 50px 0;
+    /* margin: 200px 0 50px 0; */
 }
 
 .footer_hr {
@@ -1168,7 +1168,7 @@
 }
 
 .marginTOP_70px {
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 
 .footer_boxs_textadrp {
@@ -1234,7 +1234,7 @@
 .footer_FM {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 20px;
     align-items: center;
@@ -1258,7 +1258,7 @@
 }
 
 .footer_FM1_p {
-    color: var(--colorText);
+    color: #B7B7B7;
     font-size: 16px;
     font-family: var(--font-inter);
 }
@@ -1272,7 +1272,7 @@
 }
 
 .link_FM2Text {
-    color: var(--colorText);
+    color: #B7B7B7;
     font-size: 16px;
     font-family: var(--font-inter);
 }
