@@ -1,0 +1,9 @@
+{% extends 'mainsite/base.html' %}{% block content %} {% load static %}
+<title>Изменение информации о пользователе</title>
+    <h1>Статья</h1>
+    <form method="POST" class="profile-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Сохранить</button>
+    </form>
+{% endblock %}

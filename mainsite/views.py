@@ -7,6 +7,7 @@ from .forms import CreateUserForm, ProfileForm, FaqForm
 from mainsite.models import Profile, Post, Faq
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
+from django.contrib.auth.decorators import login_required
 
 
 def home_page(request):
@@ -104,3 +105,51 @@ def faq_view(request):
     context = {'questions': questions}
     return render(request, 'mainsite/faq/faq.html', context)
 
+
+@login_required
+def profile_edit(request):
+    profile = Profile.objects.get(user=request.user)
+    if request.method == "POST":
+        form = ProfileForm(request.POST, instance=profile)
+        if form.is_valid():
+            profile = form.save(commit=False)
+            profile.save()
+            return redirect('profile')
+    else:
+        form = ProfileForm(instance=profile)
+
+    return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
+
+
+@login_required
+def password_edit(request):
+    profile = Profile.objects.get(user=request.user)
+    if request.method == "POST":
+        form = ProfileForm(request.POST, instance=profile)
+        if form.is_valid():
+            profile = form.save(commit=False)
+            profile.save()
+            return redirect('profile')
+    else:
+        form = ProfileForm(instance=profile)
+
+    return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
+
+# @login_required
+# def password_edit(request):
+#     profile = Profile.objects.get(user = request.user)
+#     if request.method == "POST":
+#         form = CreateUserForm(request.POST, instance=profile)
+#         if form.is_valid():
+#             profile = form.save(commit=False)
+#             profile.save()
+#             return redirect('profile')
+#     else:
+#         form = ProfileForm(instance=profile)
+
+    # return render(request, 'mainsite/profile/password_change.html', {'form': form})
+
+@login_required
+def password_change_done(request):
+    logout(request)
+    return redirect('login_view')

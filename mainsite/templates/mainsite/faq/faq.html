@@ -1,0 +1,41 @@
+{% extends 'mainsite/base.html' %}{% block content %} {% load static %}
+<div class="faq_content" >
+    <div class="faq_block1" style="padding-top: 150px; text-align: center;">
+        <h1>Часто задаваемые вопросы</h1>
+    </div>
+    {% for question in questions %}
+    <div class="faq_question">
+        <h3 class="faq_header">
+           {{ question.title }}
+        </h3>
+
+        <div class="faq_text">
+            {{ question.question }}
+        </div>
+
+    </div>
+
+    {% endfor %}
+    <div class="faq_form">
+        <h1>
+            Не нашли ответ на свой вопрос?
+        </h1>
+        <p>Отправьте свои данные, чтобы мы смогли с вами связаться</p>
+        <div class="verification-mail" style="margin-left: 25%">
+            <div >
+                <input class="verification-mail-field" type="text" value="imokai@bb.kai.ru" id="myInput" readonly>
+            </div>
+            <button class="verification-mail-btn" onclick="myFunction()" >Скопировать адрес</button>
+        </div>
+    </div>
+
+</div>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
+{% endblock %}
