@@ -1045,3 +1045,28 @@
     color: #48474F;
 
 }
+.footer_boxs_1{
+    width: 255px;
+}
+.footer_boxs_2{
+    width: 230px;
+}
+.footer_boxs_3{
+    width: 230px;
+}
+.footer_boxs_4{
+    width: 230px;
+}
+.footer_boxs_5{
+    width: 230px;
+}
+.helpText{
+    font-size: 14px;
+    font-family: var(--font-inter);
+    color: #000212;
+}
+.footer_mainText{
+    font-size: 16px;
+    font-family: var(--font-inter);
+    color: #000212;
+}
