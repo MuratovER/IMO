@@ -313,8 +313,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart76"), "Телефон приемной комиссии", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart7_6"), "Телефон ИМО", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart78"), "Электронная почта", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart79"), "Институт международного образования КНИТУ-КАИ", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart80"), "Политика конфидециальности", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart79"), "© Институт международного образования КНИТУ-КАИ Все права защищены 2022", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart80"), "© КНИТУ-КАИ Все права защищены 2022", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart81"), "Правила использования", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart82"), "Помощь", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standartPlaceholder83"), "|Напишите что-нибудь...", "placeholder");
@@ -494,8 +494,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart7_6"), "IMO phone number", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart76"), "Admission Committee Phone", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart78"), "Email", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart79"), "Institute of International Education KNRTU-KAI", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart80"), "Privacy Policy", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart79"), "© Institute of International Education KNITU-KAI All rights reserved 2022", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart80"), "© KNITU-KAI All rights reserved 2022", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart81"), "Usage Rules", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart82"), "Help", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standartPlaceholder83"), "|Write something...", "placeholder");
