@@ -35,12 +35,23 @@ def login_view(request):
 
 
 def profile_view(request):
-    profile = Profile.objects.get(user=request.user)
 
-    ctx = {
-        'profile': profile
+
+    profile = Profile.objects.get(user=request.user)
+    if request.method == "POST":
+        form = ProfileForm(request.POST, instance=profile)
+        if form.is_valid():
+            profile = form.save(commit=False)
+            profile.save()
+            return redirect('profile')
+    else:
+        form = ProfileForm(instance=profile)
+
+    context = {
+        'profile': profile,
+        'form': form,
     }
-    return render(request, 'mainsite/profile/profile.html', ctx)
+    return render(request, 'mainsite/profile/profile.html', context)
 
 
 def news_view(request):

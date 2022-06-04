@@ -17,7 +17,7 @@
     width: 246px;
 }
 
-.up-down-list a {
+.up-down-list p {
     text-align: center;
     height: 20px;
     width: 200px;
@@ -29,6 +29,7 @@
     font-weight: 500;
     font-size: 15px;
     color: black;
+    cursor: pointer;
 }
 
 .info {
