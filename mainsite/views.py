@@ -93,7 +93,7 @@ def extra_view(request):
              
 def privacypolicy_view(request):
     return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
-    
+
 def enteringimo_view(request):
     return render(request, 'mainsite/enteringIMO/EnteringIMO.html')
 
@@ -153,3 +153,7 @@ def password_edit(request):
 def password_change_done(request):
     logout(request)
     return redirect('login_view')
+
+    
+def specialty_page_view(request):
+    return render(request, 'mainsite/incomingIMO/incomingIMO.html')
