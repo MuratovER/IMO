@@ -113,9 +113,17 @@
                     </div>
                 </div>
             </div>
+        {% if request.user.is_authenticated %}
             <div class="buttonsInHeader_box">
                 <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton" onclick="location.href='/profile'">
             </div>
+        {% else %}
+        
+            <div class="buttonsInHeader_box">
+                <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton" onclick="location.href='/signup'">
+            </div>
+
+        {% endif %}
             <!-- <div class="hideMenu_in_Proffil">
                 <div class="hideMenu_in_Proffil_litleBlock">
                     <div class="hideMenu_in_Proffil_box hideMenu_in_Proffil_boxMURGBOTT">
