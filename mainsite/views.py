@@ -2,7 +2,7 @@ from urllib import request
 from loguru import logger
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,get_object_or_404
 from .forms import CreateUserForm, ProfileForm, FaqForm
 from mainsite.models import Profile, Post, Faq
 from django.contrib import messages
@@ -41,15 +41,6 @@ def profile_view(request):
         'profile': profile
     }
     return render(request, 'mainsite/profile/profile.html', ctx)
-
-
-def news_view(request):
-    posts = Post.objects.all()
-
-    ctx = {
-        'posts': posts
-    }
-    return render(request, 'mainsite/home/news.html', ctx)
 
 
 def signup_view(request):
@@ -153,3 +144,22 @@ def password_edit(request):
 def password_change_done(request):
     logout(request)
     return redirect('login_view')
+
+
+def news_list_view(request):
+    news = Post.objects.all()
+
+    context = {
+        'news': news
+    }
+    return render(request, 'mainsite/news/news_list.html', context)
+
+
+def news_view(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    last_4 = Post.objects.order_by()[:4]
+    context = {
+        'post': post,
+        'last_4': last_4,
+    }
+    return render(request, 'mainsite/news/news.html', context)

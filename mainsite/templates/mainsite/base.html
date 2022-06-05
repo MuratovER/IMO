@@ -13,7 +13,9 @@
     <link href='{% static "mainsite/css/profile/profile.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_3.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_4.css" %}' rel="stylesheet">
-     <link href='{% static "mainsite/css/faq/faq.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/faq/faq.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
     <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet"/>
 
     <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
@@ -72,14 +74,17 @@
                         <p class="menu_links_boxs_links_link_iconText Lang-standart4">#вопрос-ответ</p>
                     </div>
                 </div>
-                <div class="menu_links_boxs_links_link">
-                    <div class="menu_links_boxs_links_link_icon">
-                        <div class="standartStyleForimg gun"></div>
+                <a href="{% url 'news_list' %}">
+                    <div class="menu_links_boxs_links_link">
+                        <div class="menu_links_boxs_links_link_icon">
+                            <div class="standartStyleForimg gun"></div>
+                        </div>
+                        <div class="menu_links_boxs_links_link_iconText_box">
+                            <p class="menu_links_boxs_links_link_iconText Lang-standart5">#новости</p>
+                        </div>
                     </div>
-                    <div class="menu_links_boxs_links_link_iconText_box">
-                        <p class="menu_links_boxs_links_link_iconText Lang-standart5">#новости</p>
-                    </div>
-                </div>
+                </a>
+
                 <div class="buttonsInHeader_box displayNoneWhere displayon clickOnserch">
                     <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search">
                     <div class="buttonsInHeader_box_search_TextBox">

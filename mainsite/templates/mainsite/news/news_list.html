@@ -1,0 +1,36 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{% load static %}
+<div class="news_list">
+{% for news in news %}
+    <a class="news_list_a" href="{% url 'post' pk=news.pk %}" >
+    <div class="news_block">
+        {% if news.cover_image %}
+            <img src="{{ news.cover_image.url }}" class="news_block_img"/>
+        {% endif %}
+        <div class="news_image">
+
+        </div>
+        <div class="news_info">
+            <div class="news_title">
+                <h3 class="news_title_h3">{{ news.title }}</h3>
+            </div>
+            <div class="news_addititonal_info">
+                <div class="news_KAI">
+                    <div class="news-KAI-block">
+                        <img src="{% static 'mainsite/img/Subtract.svg' %}" alt="" class="news-KAI-block-IMG">
+                        <p>ИМО КНИТУ-КАИ</p>
+                    </div>
+                    <div class="news-date">
+                        {{ news.published_date }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </a>
+
+{% endfor %}
+
+</div>
+{% endblock %}
