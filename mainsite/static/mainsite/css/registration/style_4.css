@@ -139,7 +139,9 @@
 .img_link_boxEnd {
     /* bottom: -100px; */
 }
-
+.ClassOfClickLinkinMAin{
+    cursor: pointer;
+}
 .live_in_sharaga {
     margin-top: 100px;
     width: 90%;
