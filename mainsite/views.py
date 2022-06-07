@@ -108,6 +108,9 @@ def privacypolicy_view(request):
 def enteringimo_view(request):
     return render(request, 'mainsite/enteringIMO/EnteringIMO.html')
 
+def regulatorydocuments_view(request):
+    return render(request, 'mainsite/enteringIMO/RegulatoryDocuments.html')
+
 def error_404_view(request, exception):
     return render(request, 'mainsite/404.html')
 
