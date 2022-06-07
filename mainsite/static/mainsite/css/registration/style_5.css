@@ -1,0 +1,56 @@
+.This_DocInfMain{
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.This_DocInfMain_boxOf_H3{
+    font-size: 30px;
+    font-family: var(--font-averta-cy);
+    
+}
+.This_DocInfMain_boxOfH3{
+    margin-bottom: 50px;
+}
+.This_DocInfMain_boxOf_P{
+    white-space: pre-wrap;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 202.6%;
+}
+.This_DocInfMain_boxOfBox{
+    display: flex;
+    align-items: center;
+}
+.This_DocInfMain_boxOfBox_boxOfBox{
+    margin-left: 16px;
+}
+.This_DocInfMain_boxOfBox_boxOfBox_p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 202.6%;
+}
+.This_DocInfMain_boxOfBox_start{
+    margin-top: 80px;
+}
+.This_DocInfMain_boxOfBox{
+    margin-bottom: 15px;
+}
+.Thee_cercle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.cercle{
+    background-color: #000;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+}
