@@ -41,6 +41,7 @@
     <script src="{% static 'mainsite/js/registration/regesterBUT.js' %}"> </script>
 </head>
     <div class="header">
+        <a href="{% url 'home_page' %}">
         <div class="main_icon_logo_flexbox">
             <div class="main_icon_logo">
             </div>
@@ -48,6 +49,8 @@
                 Институт Международного образования КАИ
             </p>
         </div>
+        </a>
+
         <div class="menu_links_boxs">
             <div class="menu_links_box_displayWhere700px">
                 <div class="menu_links_box_iconWhereDisplay700px">
@@ -66,6 +69,7 @@
                         <p class="menu_links_boxs_links_link_iconText Lang-standart3">#поступающим</p>
                     </div>
                 </div>
+                <a href="{% url 'faq' %}">
                 <div class="menu_links_boxs_links_link">
                     <div class="menu_links_boxs_links_link_icon">
                         <div class="standartStyleForimg key"></div>
@@ -74,6 +78,8 @@
                         <p class="menu_links_boxs_links_link_iconText Lang-standart4">#вопрос-ответ</p>
                     </div>
                 </div>
+                </a>
+
                 <a href="{% url 'news_list' %}">
                     <div class="menu_links_boxs_links_link">
                         <div class="menu_links_boxs_links_link_icon">

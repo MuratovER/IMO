@@ -20,6 +20,11 @@
     position: fixed;
 }
 
+.header a{
+    text-decoration: none;
+}
+
+
 #search {
     display: none;
 }
