@@ -5,165 +5,190 @@
 <body class="body">
     <div class="profile">
         <div class="up-down-list">
-            <a href="">Информация обо мне</a>
-            <a href="">Изменения профиля</a>
-            <a href="">Памятка для иностранцев</a>
+            <p class="ProfileBut_twoblock" data-NumBlock="0" onclick="OnBlock(0)">Информация обо мне</p>
+            <p class="ProfileBut_onblock" data-NumBlock="1" onclick="OnBlock(1)">Изменения профиля</p>
+            <p class="ProfileBut_threeblock" data-NumBlock="2" onclick="OnBlock(2)">Памятка для иностранцев</p>
         </div>
-        <div class="info">
-            <div class="base-info">
-                <div class="basic-info">
-                    <div class="about-head">
-                        <h4>Основная информация</h4>
-                        <a href="{% url 'password_change' %}">Редактировать</a>
+        <div class="Nblock onBlock">
+            <div class="info">
+                <div class="base-info">
+                    <div class="basic-info">
+                        <div class="about-head">
+                            <h4>Основная информация</h4>
+                            <a href="{% url 'password_change' %}">Редактировать</a>
+                        </div>
+                        <div class="about-info">
+                            <div class="about-info-p">
+                                <p>Полное имя:</p>
+                                <p>Пол:</p>
+                                <p>Дата рождения:</p>
+                                <p>Место рождения:</p>
+                                <p>Родной город:</p>
+                                <p>Гражданство:</p>
+                                <p>Номер телефона:</p>
+                                <p>Электронная почта:</p>
+                                <p>Ваш пароль:</p>
+                            </div>
+                            <div class="about-info-generated">
+                                <div class="about-info-name">
+                                    {{ profile.name }}
+                                </div>
+    
+                                <div class="about-info-gender">
+                                    {{ profile.gender }}
+                                </div>
+                                <div class="about-info-birthday">
+                                    {{ profile.birthdate }}
+                                </div>
+                                <div class="about-info-country">
+                                    {{ profile.country }}
+                                </div>
+                                <div class="about-info-city">
+                                    {{ profile.city }}
+                                </div>
+                                <div class="about-info-citizenship">
+                                    {{ profile.citizenship }}
+                                </div>
+                                <div class="about-info-phone">
+                                    {{ profile.phone }}
+                                </div>
+                                <div class="about-info-email">
+                                    {{ profile.email }}
+                                </div>
+                                <div class="about-info-password">
+                                    <a href="">Изменить</a>
+                                </div>
+    
+    
+                            </div>
+    
+    {#                    <div class="about-info-name">#}
+    {#                        <p>Полное имя:</p>#}
+    {#                        {{ profile.name }}#}
+    {#                    </div>#}
+    {##}
+    {#                    <div class="about-info-gender">#}
+    {#                        <p>Пол:</p>#}
+    {#                        {{ profile.gender }}#}
+    {#                    </div>#}
+    {#                    <div class="about-info-birthday">#}
+    {#                        <p>Дата рождения:</p>#}
+    {#                        {{ profile.birthdate }}#}
+    {#                    </div>#}
+    {#                    <div class="about-info-country">#}
+    {#                        <p>Место рождения:</p>#}
+    {#                        {{ profile.country }}#}
+    {#                    </div>#}
+    {#                    <div class="about-info-city">#}
+    {#                        <p>Родной город:</p>#}
+    {#                        {{ profile.city }}#}
+    {#                    </div>#}
+    {#                    <div class="about-info-citizenship">#}
+    {#                        <p>Гражданство:</p>#}
+    {#                        {{ profile.citizenship }}#}
+    {#                    </div>#}
+    {#                    <div class="about-info-phone">#}
+    {#                        <p>Номер телефона:</p>#}
+    {#                        {{ profile.phone }}#}
+    {#                    </div>#}
+    {#                    <div class="about-info-email">#}
+    {#                        <p>Электронная почта:</p>#}
+    {#                        {{ profile.email }}#}
+    {#                    </div>#}
+    {#                    <div class="about-info-password">#}
+    {#                        <p>Ваш пароль:</p>#}
+    {#                        <a href="">Изменить</a>#}
+    {#                    </div>#}
+    
+                        </div>
                     </div>
-                    <div class="about-info">
-                        <div class="about-info-p">
-                            <p>Полное имя:</p>
-                            <p>Пол:</p>
-                            <p>Дата рождения:</p>
-                            <p>Место рождения:</p>
-                            <p>Родной город:</p>
-                            <p>Гражданство:</p>
-                            <p>Номер телефона:</p>
-                            <p>Электронная почта:</p>
-                            <p>Ваш пароль:</p>
-                        </div>
-                        <div class="about-info-generated">
-                            <div class="about-info-name">
-                                {{ profile.name }}
-                            </div>
-
-                            <div class="about-info-gender">
-                                {{ profile.gender }}
-                            </div>
-                            <div class="about-info-birthday">
-                                {{ profile.birthdate }}
-                            </div>
-                            <div class="about-info-country">
-                                {{ profile.country }}
-                            </div>
-                            <div class="about-info-city">
-                                {{ profile.city }}
-                            </div>
-                            <div class="about-info-citizenship">
-                                {{ profile.citizenship }}
-                            </div>
-                            <div class="about-info-phone">
-                                {{ profile.phone }}
-                            </div>
-                            <div class="about-info-email">
-                                {{ profile.email }}
-                            </div>
-                            <div class="about-info-password">
-                                <a href="">Изменить</a>
-                            </div>
-
-
-                        </div>
-
-{#                    <div class="about-info-name">#}
-{#                        <p>Полное имя:</p>#}
-{#                        {{ profile.name }}#}
-{#                    </div>#}
-{##}
-{#                    <div class="about-info-gender">#}
-{#                        <p>Пол:</p>#}
-{#                        {{ profile.gender }}#}
-{#                    </div>#}
-{#                    <div class="about-info-birthday">#}
-{#                        <p>Дата рождения:</p>#}
-{#                        {{ profile.birthdate }}#}
-{#                    </div>#}
-{#                    <div class="about-info-country">#}
-{#                        <p>Место рождения:</p>#}
-{#                        {{ profile.country }}#}
-{#                    </div>#}
-{#                    <div class="about-info-city">#}
-{#                        <p>Родной город:</p>#}
-{#                        {{ profile.city }}#}
-{#                    </div>#}
-{#                    <div class="about-info-citizenship">#}
-{#                        <p>Гражданство:</p>#}
-{#                        {{ profile.citizenship }}#}
-{#                    </div>#}
-{#                    <div class="about-info-phone">#}
-{#                        <p>Номер телефона:</p>#}
-{#                        {{ profile.phone }}#}
-{#                    </div>#}
-{#                    <div class="about-info-email">#}
-{#                        <p>Электронная почта:</p>#}
-{#                        {{ profile.email }}#}
-{#                    </div>#}
-{#                    <div class="about-info-password">#}
-{#                        <p>Ваш пароль:</p>#}
-{#                        <a href="">Изменить</a>#}
-{#                    </div>#}
-
+                    <div class="student-info">
+                        <h2>Информация о студенте</h2>
+                        <h3>Пока здесь ничего нет</h3>
+                        <p>Похоже вы пока не являетесь студентов КНИТУ-КАИ или ваши данные еще не загрузили в профиль :(</p>
                     </div>
                 </div>
-                <div class="student-info">
-                    <h2>Информация о студенте</h2>
-                    <h3>Пока здесь ничего нет</h3>
-                    <p>Похоже вы пока не являетесь студентов КНИТУ-КАИ или ваши данные еще не загрузили в профиль :(</p>
+                <div class="verification-info">
+                    <div class="verification-bubbles">
+                        <div class="verification-bubbles-head">
+                            <h2>Верификация учтёной записи</h2>
+                            <img src='{% static "mainsite/img/Vectorquestion.svg" %}' alt="">
+                        </div>
+    
+                        <img src='{% static "mainsite/img/Phases.svg" %}' alt="">
+    {#                    <div class="bubbles">#}
+    {#                        <p>Стандарт</p>#}
+    {#                        <p>Абитуриент</p>#}
+    {#                        <p>Студент</p>#}
+    {#                    </div>#}
+                    </div>
+                    <div class="verification-introduction">
+                        <p>Для того, чтобы подтвердить личность в ИМО КАИ необходимо отправить письмо на электронную почту для подтверждения вашей личности и получении ваших документов для составления заявки на поступление!</p>
+                    </div>
+                    <div class="verification-mail">
+                        <div class="verification-mail-field">
+                            <p>imokai@bb.kai.ru</p>
+                        </div>
+                        <button class="verification-mail-btn">Скопировать адрес</button>
+                    </div>
+                    <div class="verification-list">
+                        <h3>Список необходимых документов</h3>
+    
+                            <div class="verification-list-first">
+                                <p>Копия паспорта (1-ая страница с фотографией)</p>
+                                <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Копия паспорта (1-ая страница с фотографией)">
+    
+                            </div>
+                            <div class="verification-list-first">
+                                <p>Заверенный нотариусом перевод паспорта на русский язык</p>
+                                <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Заверенный нотариусом перевод паспорта на русский язык">
+    
+                            </div>
+                            <div class="verification-list-first">
+                                <p>Скан всех виз, полученных из российской федерации (если имеются)</p>
+                                <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Скан всех виз, полученных из российской федерации (если имеются)">
+    
+                            </div>
+                            <div class="verification-list-first">
+                                <p>Бланк уведомления для гос. услуг</p>
+                                <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Бланк уведомления для гос. услуг">
+    
+                            </div>
+                            <div class="verification-list-first">
+                                <p>Билеты всего маршрута (авиасообщение и ж/д)</p>
+                                <img src='{% static "mainsite/img/Reverse.svg" %}' alt="илеты всего маршрута (авиасообщение и ж/д)">
+    
+                            </div>
+    
+    
+                    </div>
                 </div>
             </div>
-            <div class="verification-info">
-                <div class="verification-bubbles">
-                    <div class="verification-bubbles-head">
-                        <h2>Верификация учтёной записи</h2>
-                        <img src='{% static "mainsite/img/Vectorquestion.svg" %}' alt="">
-                    </div>
-
-                    <img src='{% static "mainsite/img/Phases.svg" %}' alt="">
-{#                    <div class="bubbles">#}
-{#                        <p>Стандарт</p>#}
-{#                        <p>Абитуриент</p>#}
-{#                        <p>Студент</p>#}
-{#                    </div>#}
-                </div>
-                <div class="verification-introduction">
-                    <p>Для того, чтобы подтвердить личность в ИМО КАИ необходимо отправить письмо на электронную почту для подтверждения вашей личности и получении ваших документов для составления заявки на поступление!</p>
-                </div>
-                <div class="verification-mail">
-                    <div class="verification-mail-field">
-                        <p>imokai@bb.kai.ru</p>
-                    </div>
-                    <button class="verification-mail-btn">Скопировать адрес</button>
-                </div>
-                <div class="verification-list">
-                    <h3>Список необходимых документов</h3>
-
-                        <div class="verification-list-first">
-                            <p>Копия паспорта (1-ая страница с фотографией)</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Копия паспорта (1-ая страница с фотографией)">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p>Заверенный нотариусом перевод паспорта на русский язык</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Заверенный нотариусом перевод паспорта на русский язык">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p>Скан всех виз, полученных из российской федерации (если имеются)</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Скан всех виз, полученных из российской федерации (если имеются)">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p>Бланк уведомления для гос. услуг</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Бланк уведомления для гос. услуг">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p>Билеты всего маршрута (авиасообщение и ж/д)</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}' alt="илеты всего маршрута (авиасообщение и ж/д)">
-
-                        </div>
-
-
-                </div>
-            </div>
         </div>
+        <div class="Nblock twoBlock">
+            <form method="POST" class="profile-form ">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="save btn btn-default">Сохранить</button>
+            </form>
         </div>
+        <div class="Nblock threeBlock">
+            <h1 style="color:red;">Вставьте сюда свой код для отображения на сайте</h1>
 
+        </div>
+        
+    </div>
+        <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'>
+        </script>
+    
+        <script src='{% static "mainsite/js/home_page/locationFile.js" %}'>
+        </script>
+    
+        <script src="{% static 'mainsite/js/registration/translate.js' %}">
+        </script>
+        <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
+        </script>
+        <script src="{% static 'mainsite/js/Profile/Profile_Click_Blocks.js' %}">
+        </script>
 </body>
 {% endblock %}

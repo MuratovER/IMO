@@ -1070,3 +1070,12 @@
     font-family: var(--font-inter);
     color: #000212;
 }
+.onBlock{
+    display: block;
+}
+.twoBlock{
+    display: none;
+}
+.threeBlock{
+    display: none;
+}
