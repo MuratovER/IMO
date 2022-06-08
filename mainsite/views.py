@@ -11,7 +11,11 @@ from django.contrib.auth.decorators import login_required
 
 
 def home_page(request):
-    return render(request, 'mainsite/home/home_page.html')
+    last_4 = Post.objects.order_by()[:4]
+    context = {
+        'last_4': last_4
+    }
+    return render(request, 'mainsite/home/home_page.html', context)
 
 
 def login_view(request):
