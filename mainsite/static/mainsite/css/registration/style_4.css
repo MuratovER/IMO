@@ -1,10 +1,11 @@
 .headerTwoEnteringImo {
     width: 100%;
-    background-color: #14161D;
+    background-color: #fff;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 114px;
 }
 
 .headerTwoEnteringImo_place {
@@ -29,13 +30,13 @@
 }
 
 .headerTwoEnteringImo_link_butExit_text {
-    color: #CCCCCC;
+    color: #6D6F72;
     font-family: "inter";
     font-size: 15px;
 }
 
 .headerTwoEnteringImo_notbox_h1 {
-    color: #fff;
+    color: #000000;
     font-family: "inter";
     font-size: 60px;
 }
@@ -53,7 +54,7 @@
 .headerTwoEnteringImo_Information {
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 80%;
     flex-wrap: wrap;
     margin-top: 50px;
 }
@@ -63,7 +64,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 240px;
+    width: 510px;
 }
 
 .borderLR {
@@ -72,27 +73,32 @@
 }
 
 .headerTwoEnteringImo_column_box {
-    width: 200px;
+    width: 510px;
     height: 225px;
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.borderBottomAndTop {
+/* .borderBottomAndTop {
     border-top: 2px solid #21232E;
     border-bottom: 2px solid #21232E;
-}
+} */
 
-.borderTop {
+/* .borderTop {
     border-top: 2px solid #21232E;
-}
+} */
 
 .headerTwoEnteringImo_column_box_p {
-    color: #fff;
-    font-family: "inter";
-    font-size: 30px;
+    color: #000212;
+    font-family: var(--font-averta-cy);
+    font-size: 26px;
+    text-decoration: none;
 }
 
 .headerTwoEnteringImo_column_item {
@@ -126,12 +132,12 @@
 
 .img_link_box {
     position: relative;
-    bottom: -110px;
-    left: -150px;
+    bottom: -16px;
+    left: -192px;
 }
 
 .img_link_boxEnd {
-    bottom: -100px;
+    /* bottom: -100px; */
 }
 
 .live_in_sharaga {
