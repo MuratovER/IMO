@@ -20,6 +20,14 @@
     position: fixed;
 }
 
+.header a{
+    text-decoration: none;
+}
+
+
+#search {
+    display: none;
+}
 .main_icon_logo {
     width: 56px;
     height: 40px;

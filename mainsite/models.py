@@ -13,6 +13,7 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    cover_image = models.ImageField(upload_to='img', null=True, blank=True)
 
 
     def publish(self):

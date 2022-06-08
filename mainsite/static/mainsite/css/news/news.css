@@ -1,0 +1,56 @@
+.post {
+    padding: 200px 250px 5px 250px;
+    font-family: Inter;
+    justify-content: center;
+}
+
+.post-additional-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.post-additional-info-KAI {
+    display: flex;
+
+}
+
+.post-additional-info-KAI p{
+    padding-top: 11px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.post-additional-info-date {
+    padding-top: 11px;
+
+}
+
+.post-media {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 50px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.post-media-tg, .post-media-vk {
+    margin-top: 12px;
+
+}
+
+.post-last4-title {
+    font-size: 35px;
+    font-family: Inter;
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+
+.post-last4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
