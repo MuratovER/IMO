@@ -1,0 +1,13 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{% load static %}
+<div class="news_list">
+    {% for speciality in speciality %}
+    <a class="news_list_a" href="{% url 'speciality' key=speciality.key %}">
+        <h1>HHHHHHHHHHHHHHHH</h1>
+    </a>
+
+    {% endfor %}
+
+</div>
+{% endblock %}

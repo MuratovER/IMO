@@ -4,7 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import render, redirect,get_object_or_404
 from .forms import CreateUserForm, ProfileForm, FaqForm
-from mainsite.models import Profile, Post, Faq
+from mainsite.models import Profile, Post, Faq, Speciality
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from django.contrib.auth.decorators import login_required
@@ -178,3 +178,12 @@ def news_view(request, pk):
         'last_4': last_4,
     }
     return render(request, 'mainsite/news/news.html', context)
+
+
+def speciality_view(request, key):
+    speciality = get_object_or_404(Speciality, key=key)
+    context = {
+        'speciality':  speciality
+
+    }
+    return render(request, 'mainsite/incomingIMO/incomingIMO.html', context)

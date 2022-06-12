@@ -1,0 +1,403 @@
+.specialty-body {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 184px;
+}
+
+.specialty-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.specialty-header-box-background {
+    width: 100%;
+    height: 454px;
+    background-image: url('../../img/incoming/incoming-header.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-background-ImgSVG-h2 {
+    /* font-size: 35px; */
+    font-family: var(--font-averta-cy-EB);
+    color: var(--ColorTextForProgrammStadyPlashca);
+}
+
+.box-background-ImgSVG-h1 {
+    font-size: 50px;
+    font-family: var(--font-averta-cy-EB);
+    color: var(--ColorTextForProgrammStadyPlashca);
+}
+
+.specialty-all {
+    width: 90%;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 150px;
+    flex-wrap: nowrap;
+    align-content: center;
+    */
+    /* =======================================================     */
+    display: grid;
+    align-items: start;
+    margin-top: 150px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.specialty-all-BOXh1 {
+    margin-bottom: 70px;
+}
+
+.specialty-all-h1 {
+    color: var(--colorText);
+    font-size: 45px;
+    font-family: var(--font-averta-cy-EB);
+    text-align: start;
+}
+
+.specialty-all-CardLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    column-gap: 15px;
+    row-gap: 15px;
+    flex-direction: row;
+}
+
+.specialty-all-CardLink-boxStart1 {
+    min-width: 200px;
+    width: 205px;
+    height: 240px;
+    background-color: #F1F1F1;
+}
+
+.specialty-all-CardLink-boxStart2 {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #4526FF;
+    background-image: url('../../img/incoming/incoming-math.svg');
+}
+
+.specialty-all-CardLink-boxStart3 {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #EFA02A;
+    background-image: url('../../img/incoming/incoming-russian.svg');
+}
+
+.specialty-all-CardLink-boxStart4 {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #27E17A;
+    background-image: url('../../img/incoming/incoming-chemistry.svg');
+}
+
+.specialty-all-CardLink-grey-text {
+
+    font-family: var(--font-averta-cy-EB);
+    color: #858585;
+}
+
+.specialty-all-CardLink-grey-answer {
+
+    font-family: var(--font-averta-cy-EB);
+    color: #001A34;
+}
+
+.specialty-all-CardLink-grey-answerUp {
+
+    font-family: var(--font-averta-cy-EB);
+    color: #FFFFFF;
+}
+
+
+.box-center {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10%;
+}
+
+.specialty-all-text {
+    margin-top: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 202.6%;
+}
+
+.top130 {
+    margin-top: 130px;
+}
+
+.specialty-buildingKAI-pic1 {
+    min-width: 210px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../img/incoming/first-building.svg');
+}
+
+.specialty-buildingKAI-pic2 {
+    min-width: 210px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../img/incoming/second-building.svg');
+}
+
+.specialty-buildingKAI-pic3 {
+    min-width: 210px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../img/incoming/third-building.svg');
+}
+
+.specialty-buildingKAI-pic4 {
+    min-width: 210px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../img/incoming/fourth-building.svg');
+}
+
+.specialty-buildingKAI-pic5 {
+    min-width: 210px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../img/incoming/fifth-building.svg');
+}
+
+.specialty-buildingKAI-pic6 {
+    min-width: 210px;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../img/incoming/sixth-building.svg');
+}
+
+.specialty-building {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-gap: 75px;
+    width: 90%;
+    margin-top: 130px;
+}
+
+.specialty-buildingKAI {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+}
+
+
+.buildingKAI-text-profesion {
+    border-radius: 14px;
+    border: 1px solid #dfe0e9;
+    font-family: var(--font-averta-cy-EB);
+    padding: 12px 12px 12px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #F6F6F6;
+    color: var(--colorText);
+}
+
+.specialty-buildingKAI-text {
+    display: grid;
+    column-span: all;
+    align-content: center;
+    justify-items: start;
+    grid-gap: 15px;
+}
+
+.specialty-buildingKAI-picture {
+    display: grid;
+    justify-items: start;
+    align-content: center;
+    grid-gap: 30px;
+}
+
+.specialty-buildingKAI-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152.02%;
+    /* or 30px */
+
+
+    color: #383838;
+}
+
+.buildingKAI-text-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 31px;
+    /* identical to box height, or 171% */
+
+
+    color: #000000;
+}
+
+.buildingKAI-text-profesion div {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 123.19%;
+    /* identical to box height, or 20px */
+
+
+    color: #5A5A5A;
+}
+
+
+.haveyouQuestion {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.haveyouQuestion_h1 {
+    font-family: var(--font-averta-cy-EB);
+    font-size: 50px;
+    color: var(--colorText);
+    margin-bottom: 70px;
+}
+
+.haveyouQuestion_boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.haveyouQuestion_boxe {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 518px;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.haveyouQuestion_boxe_center {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 518px;
+    height: 925px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.haveyouQuestion_boxe_h1 {
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 116.1%;
+    /* or 46px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.haveyouQuestion_boxes1 {
+    background-image: url('../../img/incoming/violet-question.svg');
+}
+
+.haveyouQuestion_boxes2 {
+    background-image: url('../../img/incoming/red-question.svg');
+}
+
+.haveyouQuestion_boxes3 {
+    background-image: url('../../img/incoming/blue-question.svg');
+}
+
+.haveyouQuestion_boxes4 {
+    background-image: url('../../img/incoming/yellow-question.svg');
+}
+
+.haveyouQuestion_boxes5 {
+    background-image: url('../../img/incoming/green-question.svg');
+}
+
+
+.haveyouQuestion_article {
+    border-radius: 14px;
+    border: 1px solid #dfe0e9;
+    font-family: var(--font-averta-cy-EB);
+    padding: 12px 12px 12px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #F6F6F6;
+    color: var(--colorText);
+}
+
+.haveyouQuestion_boxes3_question {
+    background-image: url('../../img/incoming/question.svg');
+}
+
+
+.boxe_h1Box_center {
+    display: grid;
+    justify-content: start;
+    align-items: end;
+    justify-items: start;
+    grid-gap: 21px;
+}
+
+.specialty-buildingKAI-mapAdress a {
+    color: #2C86D9;
+    text-decoration: none;
+}
+
+
+.box_boxText_twoBTNBox_button {
+    border-radius: 14px;
+    border: 1px solid #dfe0e9;
+    font-family: var(--font-averta-cy-EB);
+    padding: 10px 25px 10px 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    margin-top: 30px;
+}
