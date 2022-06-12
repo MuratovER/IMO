@@ -63,14 +63,14 @@ class Faculty(models.Model):
 class Speciality(models.Model):
 
     type_of_edu = (
-        ('B', 'Бакалавриат'),
-        ('M', 'Магистратура'),
-        ('A', 'Асперантура'),
+        ('Бакалавриат', 'Бакалавриат'),
+        ('Магистратура', 'Магистратура'),
+        ('Асперантура', 'Асперантура'),
     )
 
     type_of_day_time = (
-        ('D', 'Очная'),
-        ('N', 'Очно-вечерняя')
+        ('Очная', 'Очная'),
+        ('Очно-вечерняя', 'Очно-вечерняя')
     )
 
     types_of_exams = (
@@ -86,7 +86,7 @@ class Speciality(models.Model):
     faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE, related_name="faculty", default=0)
     time_edu = models.IntegerField(default='0')
     type_edu = models.CharField(max_length=12, choices=type_of_edu, null=True, blank=True)
-    day_tipe = models.CharField(max_length=3, choices=type_of_day_time,null=True, blank=True )
+    day_tipe = models.CharField(max_length=13, choices=type_of_day_time,null=True, blank=True )
     price = models.IntegerField(null=True, blank=True)
 
     title = models.CharField(max_length=100)
