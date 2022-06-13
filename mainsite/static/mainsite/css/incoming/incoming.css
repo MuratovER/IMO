@@ -114,6 +114,67 @@
     background-image: url('../../img/incoming/incoming-chemistry.svg');
 }
 
+/* ============================================================================================== */
+.specialty-all-CardLink-boxStart-MATH {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #4526FF;
+    background-image: url('../../img/incoming/incoming-math.svg');
+}
+
+.specialty-all-CardLink-boxStart-RUSS{
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #EFA02A;
+    background-image: url('../../img/incoming/incoming-russian.svg');
+}
+
+
+.specialty-all-CardLink-boxStart-CHEM {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #27E17A;
+    background-image: url('../../img/incoming/incoming-chemistry.svg');
+}
+
+.specialty-all-CardLink-boxStart-PHYS {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #3751FF;
+    background-image: url('../../img/incoming/incoming-PHYS.svg');
+}
+
+.specialty-all-CardLink-boxStart-SOCL {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #94215C;
+    background-image: url('../../img/incoming/incoming-SOCL.svg');
+}
+
+.specialty-all-CardLink-boxStart-INFO {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #2298FF;
+    background-image: url('../../img/incoming/incoming-INFO.svg');
+}
+
+
+.specialty-all-CardLink-boxStart-FRLN {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+    background-color: #FF785A;
+    background-image: url('../../img/incoming/incoming-FRLN.svg');
+}
+
+
+
 .specialty-all-CardLink-grey-text {
 
     font-family: var(--font-averta-cy-EB);

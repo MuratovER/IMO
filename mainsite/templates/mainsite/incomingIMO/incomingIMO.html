@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" ">
+            <div class="one">
                 <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
                     <div class="specialty-all-CardLink-grey-text">
                         Цена обучения
@@ -78,27 +78,140 @@
             </p>
         </div>
         <div class="specialty-all-CardLink"  style="column-gap: 25px;">
-            <div class=" ">
-                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart2 sizeBox box-center">
-                    <div class="specialty-all-CardLink-grey-answerUp">
-                        <h1>Математика</h1>
+            <div class="one">
+                {% if speciality.exam_one == "MATH" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-MATH sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Математика </h1>
+                        </div>
                     </div>
-                </div>
+                {% elif speciality.exam_one == "RUSS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-RUSS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Русский Язык </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "CHEM" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-CHEM sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Химия </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "PHYS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-PHYS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Физика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "SOCL" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-SOCL sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Обществознание </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "INFO" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-INFO  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Информатика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "FRLN" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-FRLN  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Иностранный язык </h1>
+                        </div>
+                    </div>
+                {% endif %}
+            </div> 
+            <div class="two">
+                {% if speciality.exam_two == "MATH" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-MATH sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Математика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "RUSS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-RUSS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Русский Язык </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "CHEM" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-CHEM sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Химия </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "PHYS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-PHYS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Физика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "SOCL" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-SOCL sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Обществознание </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "INFO" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-INFO  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Информатика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "FRLN" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-FRLN  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Иностранный язык </h1>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
-            <div class=" ">
-                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart3 sizeBox box-center">
-                    <div class="specialty-all-CardLink-grey-answerUp">
-                        <h1>Русский язык</h1>
+            <div class="three">
+                {% if speciality.exam_three == "MATH" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-MATH sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Математика </h1>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class=" ">
-                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart4 sizeBox box-center">
-
-                    <div class="specialty-all-CardLink-grey-answerUp">
-                        <h1> Химия </h1>
+                {% elif speciality.exam_three == "RUSS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-RUSS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Русский Язык </h1>
+                        </div>
                     </div>
-                </div>
+                {% elif speciality.exam_three == "CHEM" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-CHEM sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Химия </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "PHYS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-PHYS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Физика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "SOCL" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-SOCL sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Обществознание </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "INFO" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-INFO  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Информатика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "FRLN" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-FRLN  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Иностранный язык </h1>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -394,5 +507,15 @@
         </div>
     </div>
 </body>
-
+<style>
+.id_exam_two{
+    display: none;
+}
+option Математика{
+    color: blue;
+}
+.Математика{
+    color: brown;
+}
+</style>
 {% endblock %}

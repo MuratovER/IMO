@@ -90,7 +90,9 @@ class Speciality(models.Model):
     price = models.IntegerField(null=True, blank=True)
 
     title = models.CharField(max_length=100)
-    exam = MultiSelectField(max_length=14, choices=types_of_exams, null=True, blank=True)
+    exam_one = models.CharField(max_length=14, choices=types_of_exams, null=True, blank=True)
+    exam_two = models.CharField(max_length=14, choices=types_of_exams, null=True, blank=True)
+    exam_three = models.CharField(max_length=14, choices=types_of_exams, null=True, blank=True)
     description = models.TextField()
     key = models.CharField(max_length=10)
     score = models.IntegerField(null=True, blank=True)
