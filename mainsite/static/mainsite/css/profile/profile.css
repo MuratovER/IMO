@@ -214,3 +214,112 @@
     justify-content: space-between;
     margin-top: 10px;
 }
+.threeBlock{
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.threeBlock_h1{
+    font-family: var(--font-averta-cy);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 116.1%;
+    margin-bottom: 25px;
+}
+.threeBlock_p{
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 202.6%;
+    margin-bottom: 44px;
+}
+.threeBlock_p_a{
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 202.6%;
+    color:#2298FF ;
+}
+.threeBlock_h3{
+    margin-bottom: 40px;
+    font-family: var(--font-averta-cy);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 116.1%;
+}
+.threeBlock_main_block{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.threeBlock_hidden{
+    display: none;
+    width: 90%;
+}
+.threeBlock_hidden_p{
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 173.6%;
+    color: #545454;
+    margin-top: 25px;
+}
+.threeBlock_pandimg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.threeBlock_blockhr{
+    width: 100%;
+    margin-top: 20px;
+}
+.threeBlock_hr{
+    width: 100%;
+    border: 1px solid #E4E4E4;
+    margin-bottom: 35px;
+}
+.threeBlock_block_disp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.threeBlock_block_disp_two{
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    background-image: url(../../img/MemoImg_PlasBut.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 1s;
+}
+.threeBlock_block_disp_two:hover{
+    background-image: url(../../img/MemoImg_NotPlasBut.svg);
+    transition: 1s;
+}
+.threeBlock_block_disp_two_img{
+    border-radius: 100px;
+}
+.threeBlock_block_disp_one{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.threeBlock_block_disp_one_block_p{
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #383838;
+}
