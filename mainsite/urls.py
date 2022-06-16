@@ -21,6 +21,7 @@ urlpatterns = [
     path('news/', views.news_view, name='news'),
     path('extra/', views.extra_view, name='extra'),
     path('faq/', views.faq_view, name='faq'),
+    path('aboutkazan/', views.aboutkazan_view, name='aboutkazan'),
 ]
 
 handler404 = 'mainsite.views.error_404_view'

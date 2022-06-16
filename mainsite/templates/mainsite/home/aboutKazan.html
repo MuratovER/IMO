@@ -1,0 +1,297 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{% load static %}
+<script>
+  $(document).on('scroll', function (e) {
+    var value = $(this).scrollTop();
+    if (value < 100)
+      $("header").removeClass("changedHeader");
+    else
+      // $("header").css("height", "45px");
+      $("header").addClass("changedHeader");
+  });
+</script>
+
+
+<body class="body indexEnterWindow">
+
+  <div class="aboutkazan-header">
+    <div class="header--aboutkazan">
+      <div class="wrapper">
+        <div class="aboutkazan-wrapper-picture"></div>
+        <hr>
+        <div class="aboutkazan-wrapper-text">
+          Путеводитель по сталице
+        </div>
+        <div class="aboutkazan-wrapper-picCountry"></div>
+      </div>
+      <div class="header--aboutkazan-vector" style="width:100%;height:100%;">
+        <img src="{% static 'mainsite/img/svg/aboutkazan/vector1.svg' %}" alt="" width="100%" height="100%">
+      </div>
+    </div>
+  </div>
+  <div class="aboutkazan-poem px240">
+    <div class="second-page-text">
+      <p class="a">К</p>
+      <p class="b">азань - столица Республики<br>
+        Татарстан, древний город с <br>
+        многовековой историей,<br>
+        расположенный на левом берегу<br>
+        реки Волга.
+      </p>
+    </div>
+    <div style="padding: 5% 0 5% 0;">
+      <img src="{% static 'mainsite/img/svg/aboutkazan/red-line.svg' %}" alt="Красная линия" width="100%" height="20%">
+    </div>
+    <div style="font-size: 15px;font-weight: 500;justify-content: center;">
+      <div style="align-items:left;" class="aboutkazan-poemer-texts">
+        <p style="padding: 0 30% 0 30%;">Существует несколько легенд, связанных с названием города. По самой<br>
+          распространенной из них Казань происходит от татарского слова «казан» -<br>
+          котел. Легенда гласит, что город был заложен на том месте, где без огня<br>
+          закипела вода в котле, врытом в землю.
+        </p>
+        <br>
+        <br>
+        <p style="padding: 0 30% 0 30%;">
+          Казань была основана как форпост на северных границах Волжской<br>
+          Булгарии более 1000 лет назад. Возраст города был определен во время<br>
+          раскопок на территории Казанского Кремля, когда была найдена чешская<br>
+          монета, датированная 929-930 годами, а также остатки каменной кладки,<br>
+          деревянной городской ограды и предметы утвари.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="aboutkazan-map px240">
+    <div class="russian-map"></div>
+    <div class="russian-cities px240" style="align-items: left;">
+      <div class="russian-cities-text-title">Казань - третья столица России
+      </div>
+      <div>
+        <p class="russian-cities-text" style="padding-top: 2%;">
+          КНИТУ-КАИ находится в городе Казань (третьей столице России), который, как и Республика Татарстан в целом,
+          считается передовым центром во многих областях науки, культуры, образования, спорта и туризма.
+        </p>
+        <br>
+        <br>
+        <p class="russian-cities-text">
+          Казань признана спортивной столицей России. В городе проводились: XXVII Всемирная летняя универсиада 2013
+          года,
+          XVI чемпионат мира FINA по водным видам спорта 2015 года, матчи Кубка конфедераций FIFA в 2017 году,
+          матчи чемпионата мира по футболу в 2018 году.
+        </p>
+        <br>
+        <br>
+        <p class="russian-cities-text">
+          Спортивная инфраструктура города включает 15 стадионов, 15 крытых ледовых арен, 67 плавательных бассейнов,
+          385 спортивных залов и 596 плоскостных спортивных площадок.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="aboutkazan-three-picture px240">
+    <div class="three-pictureOne">
+      <div class="three-pictureOne-partone">
+        <div class="three-pictureOne-title">Между Востоком и<br> Западом</div>
+        <div class="three-pictureOne-text px50">Основными конфессиями в Татарстане являются ислам и
+          <br> православие.
+          Проводимая в республике долговременная
+          <br> политика соблюдения баланса интересов двух ведущих
+          <br> конфессий играет важную роль в сохранении и укреплении
+          <br>межнационального и
+          <br> межконфессионального мира и согласия.
+          <br>
+          <br>
+          <br>
+          Казань — неповторимый в своём роде, уникальный
+          <br> город, в котором проживают представители 101
+          <br> национальности. Примечательно, что здесь почти
+          <br>одинаковое количество и
+          <br>мусульманских, и православных храмов.
+          <br>
+          <br>
+          <br>
+          48 храмов православных христиан мирно чередуются с
+          <br> 52 мечетями мусульман. Есть также величественные
+          <br>костёлы для католиков и другие культовые сооружения
+          <br> для приверженцев других вероисповеданий.
+          <br>Религиозный состав Казани очень и очень разнообразен.
+        </div>
+      </div>
+      <div class="three-pictureOne-pic">
+      </div>
+    </div>
+    <div class="three-picturetwo" px120>
+      <div class="three-pictureOne-partone">
+        <div class="three-pictureOne-title">Казань - место дружбы<br> религий</div>
+        <div class="three-pictureOne-text px50">Основными конфессиями в Татарстане являются ислам и
+          <br> православие.
+          Проводимая в республике долговременная
+          <br> политика соблюдения баланса интересов двух ведущих
+          <br> конфессий играет важную роль в сохранении и укреплении
+          <br>межнационального и
+          <br> межконфессионального мира и согласия.
+          <br>
+          <br>
+          <br>
+          Казань — неповторимый в своём роде, уникальный
+          <br> город, в котором проживают представители 101
+          <br> национальности. Примечательно, что здесь почти
+          <br>одинаковое количество и
+          <br>мусульманских, и православных храмов.
+          <br>
+        </div>
+      </div>
+      <div class="three-pictureOtwo-pic"></div>
+    </div>
+    <div class="three-pictureOne px120" style="align-items: center;">
+      <div class="three-pictureOne-partone">
+        <div class="three-pictureOne-title">Национальный язык -<br>Татарский</div>
+        <div class="three-pictureOne-text px50">
+          <br>Государственными языками в Республике Татарстан
+          <br>являются равноправные татарский и русский языки.
+        </div>
+      </div>
+      <div class="three-pictureThree-pic"></div>
+    </div>
+  </div>
+
+  <div class="aboutkazan-itiketka px240">
+    <div class="itiket-redline">
+      <div class="itiket-redline-repeatline">
+        <div class="itiket-red-block">
+          <div class="itiket-red-block-text">
+            <div class="itiket-red-block-title">Национальные<br>символы</div>
+            <div class="itiket-red-text">
+              <br>Символом города, изображенным на гербе,
+              <br>является мифическое драконоподобное
+              <br>существо Зилант.
+            </div>
+          </div>
+          <div class="itiket-red-block-pic"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="aboutkazan-WhatInteresting px240">
+    <div class="WhatInteresting-four-cards-One">
+      <div class="WhatInteresting-four-cards-title"> Дворец Земледельцев </div>
+      <div class="WhatInteresting-four-cards-text">
+        Казань имеет уникальный культурный код. На карте города – более 1000 объектов,
+        <br>формирующих культурное многообразие столицы.
+        <br>
+        <br>
+        В городе открыты двери 34 музеев, 9 театров, 8 крупных концертных залов, 16
+        <br>дворцов культуры, 51 библиотеки и 50 детских школ искусств. В Казани постоянно
+        <br>формируются новые культурные площадки, например, креативное пространство
+        <br>«Штаб», Центр современного искусства «Смена», творческая лаборатория «Угол».
+      </div>
+    </div>
+    <div class="WhatInteresting-four-cards-Two">
+      <div class="WhatInteresting-four-cards-Two-line">
+        <div class="WhatInteresting-four-cards-Two-line-text">
+          <div class="WhatInteresting-four-cards-title"> Дворец бракосачетания </div>
+          <div class="WhatInteresting-four-cards-text">
+            Казань имеет уникальный культурный код. На карте города – более 1000 объектов,
+            <br>формирующих культурное многообразие столицы.
+            <br>
+            <br>
+            В городе открыты двери 34 музеев, 9 театров, 8 крупных концертных залов, 16
+            <br>дворцов культуры, 51 библиотеки и 50 детских школ искусств. В Казани постоянно
+            <br>формируются новые культурные площадки, например, креативное пространство
+            <br>«Штаб», Центр современного искусства «Смена», творческая лаборатория «Угол».
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="WhatInteresting-four-cards-Three px120">
+    <div class="WhatInteresting-four-cards-Three-pic"></div>
+    <div class="WhatInteresting-four-cards-Three-text">
+      <div class="WhatInteresting-four-cards-title"> Узнайте обо всех <br>достопремичательностях</div>
+      <div class="WhatInteresting-four-cards-text">Куда пойти в столице? </div>
+    </div>
+  </div>
+  <div class="WhatInteresting-four-cards-Four px120">
+    <div class="WhatInteresting-four-cards-Four-title">Галерея</div>
+    <div class="WhatInteresting-four-cards-Four-part1">
+      <div class="WhatInteresting-four-cards-Four-1"></div>
+      <div class="WhatInteresting-four-cards-Four-2"></div>
+      <div class="WhatInteresting-four-cards-Four-3"></div>
+    </div>
+    <div class="WhatInteresting-four-cards-Four-part2">
+      <div class="WhatInteresting-four-cards-Four-4"></div>
+      <div class="WhatInteresting-four-cards-Four-5"></div>
+    </div>
+  </div>
+
+  <div class="aboutkazan-answer px240">
+    <div class="aboutkazan-answer-greenline" style="margin-left: 2%; height: 100%;"><img
+        src="{% static 'mainsite/img/svg/aboutkazan/Green-Vector.svg' %}" alt=" линия" style="height: 100%;"></div>
+    <div class="aboutkazan-answer-90">
+      <div class="aboutkazan-answer-title">Часто задаваемые <br>
+        вопросы</div>
+      <div class="aboutkazan-answer-answer" style="margin-top:151px; margin-bottom: 50px;">
+        <div class="aboutkazan-answer-answer_background">
+          <div class="aboutkazan-answer-answer_h1CLONE">
+            <h1 class="aboutkazan-answer-answer_standart34">
+              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
+            </h1>
+          </div>
+        </div>
+
+        <div class="aboutkazan-answer-answer_background px50">
+          <div class="aboutkazan-answer-answer_h1CLONE">
+            <h1 class="aboutkazan-answer-answer_standart34">
+              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
+            </h1>
+          </div>
+        </div>
+
+        <div class="aboutkazan-answer-answer_background px50">
+          <div class="aboutkazan-answer-answer_h1CLONE">
+            <h1 class="aboutkazan-answer-answer_standart34">
+              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
+            </h1>
+          </div>
+        </div>
+
+        <div class="aboutkazan-answer-answer_background px50">
+          <div class="aboutkazan-answer-answer_h1CLONE">
+            <h1 class="aboutkazan-answer-answer_standart34">
+              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
+            </h1>
+          </div>
+        </div>
+        <div class="aboutkazan-answer-answer_background px50">
+          <div class="aboutkazan-answer-answer_h1CLONE">
+            <h1 class="aboutkazan-answer-answer_standart34">
+              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
+            </h1>
+          </div>
+        </div>
+
+        <div class="aboutkazan-answer-answer_background px50">
+          <div class="aboutkazan-answer-answer_h1CLONE">
+            <h1 class="aboutkazan-answer-answer_standart34">
+              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
+            </h1>
+          </div>
+        </div>
+
+        <div class="aboutkazan-answer-answer_background px50">
+          <div class="aboutkazan-answer-answer_h1CLONE">
+            <h1 class="aboutkazan-answer-answer_standart34">
+              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutkazan-answer-greenline" style="margin-right: 2%; height: 100%;"><img
+        src="{% static 'mainsite/img/svg/aboutkazan/Green-Vector.svg' %}" alt=" линия" style="height: 100%;"></div>
+  </div>
+</body>
+<link href='{% static "mainsite/css/registration/aboutkazan.css" %}' rel="stylesheet">
+{% endblock %}

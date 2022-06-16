@@ -153,3 +153,7 @@ def password_edit(request):
 def password_change_done(request):
     logout(request)
     return redirect('login_view')
+
+
+def aboutkazan_view(request):
+    return render(request, 'mainsite/home/aboutKazan.html')    
