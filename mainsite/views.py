@@ -1,8 +1,7 @@
 from urllib import request
 from loguru import logger
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import logout, login, authenticate
-from django.shortcuts import render, redirect,get_object_or_404
+from django.shortcuts import get_object_or_404, render, redirect
 from .forms import CreateUserForm, ProfileForm, FaqForm
 from mainsite.models import Profile, Post, Faq, Speciality
 from django.contrib import messages
@@ -161,6 +160,15 @@ def password_change_done(request):
     return redirect('login_view')
 
 
+def aboutkazan_view(request):
+    # question = get_object_or_404(Faq, pk=pk)
+    question = Faq.objects.order_by()[:5]
+    context = {
+        # 'question': question,
+        'question': question,
+    }
+    return render(request, 'mainsite/home/aboutKazan.html', context)    
+
 def news_list_view(request):
     news = Post.objects.all()
 
@@ -187,3 +195,4 @@ def speciality_view(request, key):
 
     }
     return render(request, 'mainsite/incomingIMO/incomingIMO.html', context)
+

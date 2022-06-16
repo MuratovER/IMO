@@ -1,0 +1,677 @@
+.main_icon_logo_text {
+    display: none;
+}
+
+.main_icon_logo {
+    position: absolute;
+    width: 66px;
+    height: 54px;
+    background-image: url('../../img/svg/aboutkazan/90year.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 2%;
+    color: #fff;
+}
+
+.menu_links_boxs_links {
+    display: none;
+}
+
+#usButton {
+    display: none;
+}
+
+#search {
+    display: none;
+}
+
+.menu_links_boxs {
+    display: none;
+}
+
+.main_icon_logo_flexbox {
+    margin-bottom: 0px;
+}
+
+#lang {
+    color: #FFFFFF;
+}
+
+.header {
+    z-index: 99;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    /* box-shadow: 0px 20px 42px -1px rgb(0 0 0 / 8%); */
+    border-radius: 25px;
+    padding: 17px 30px;
+    position: fixed;
+    background-color: #32BD70;
+    background-image: url('../../img/svg/aboutkazan/kazan-grey-green.svg');
+}
+
+.px240 {
+    margin-top: 240px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+.aboutkazan-wrapper-picture {
+    background-image: url('../../img/svg/aboutkazan/kazan-pic.svg');
+    background-repeat: no-repeat;
+    width: 392px;
+    height: 132px;
+}
+
+
+.aboutkazan-wrapper-text {
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 70px;
+    text-decoration-line: overline;
+    text-decoration-style: solid;
+    color: #FFFFFF;
+}
+
+.aboutkazan-header {
+    background-color: #32BD70;
+    background-image: url('../../img/svg/aboutkazan/kazan-grey-green.svg');
+}
+
+.aboutkazan-wrapper-picCountry {
+    background-image: url('../../img/svg/aboutkazan/kazan.svg');
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 132px;
+}
+
+.second-page-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-end;
+    font-size: 18px;
+    justify-content: center;
+}
+
+p.a {
+    font-size: 150;
+    font-weight: 1000;
+    font-family: 'Century Schoolbook';
+}
+
+p.b {
+    margin-top: 3%;
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 167.02%;
+    /* or 57px */
+
+
+    color: #383838;
+}
+
+.aboutkazan-poemer-texts {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 188.02%;
+    /* or 39px */
+
+
+    color: #383838;
+}
+
+.russian-cities-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 188.02%;
+    /* or 39px */
+    padding: 0 30% 0 30%;
+
+    color: #383838;
+}
+
+.russian-cities-text-title {
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 63px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
+
+.russian-map {
+    background-image: url('../../img/svg/aboutkazan/russian-map.svg');
+    background-repeat: no-repeat;
+    width: 2560px;
+    height: 1090px;
+    /* height: 71%;  */
+    background-color: #EDF7FF;
+    border-radius: 25px;
+}
+
+.russian-cities {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.aboutkazan-three-picture {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.three-pictureOne {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.three-picturetwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.three-pictureOne-partone {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 188.02%;
+    /* or 39px */
+
+
+    color: #383838;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.three-pictureOne-pic {
+    /* position: absolute; */
+    /* width: 90%;
+    height:90%; */
+
+    max-width: 617px;
+    width: 602px;
+    /* height: 1095.66px; */
+    height: 100%;
+    background-image: url(../../img/svg/aboutkazan/kazan-kulsharif.svg);
+    background-repeat: no-repeat;
+    background-color: #00A096;
+    border-radius: 10%;
+}
+
+.three-pictureOtwo-pic {
+    max-width: 624px;
+    width: 617px;
+    height: 920px;
+    background-image: url('../../img/svg/aboutKazan/kazan-super.svg');
+    background-repeat: no-repeat;
+    background-color: #2089C3;
+    border-radius: 10%;
+
+}
+
+.three-pictureOne-pic-backcolor {
+    padding: 10%;
+    background-color: #00A096;
+}
+
+.three-pictureThree-pic {
+    background-image: url('../../img/svg/aboutkazan/nations-language.svg');
+    background-repeat: no-repeat;
+    width: 635px;
+    height: 1018px;
+}
+
+.px120 {
+    margin-top: 50px;
+}
+
+.three-pictureOne-title {
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 63px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aboutkazan-answer {
+    /* width: 100%;
+    height: 2474px;
+    min-height: 2000px; */
+    max-height: 2474px;
+    /* height: 100%; */
+    width: 100%;
+    background-color: #10B666;
+    border-radius: 9% 9% 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    /* justify-content: space-between; */
+}
+
+.aboutkazan-answer-90 {
+    width: 90%;
+}
+
+.aboutkazan-answer-title {
+    margin-top: 190px;
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 116.1%;
+    /* or 107px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aboutkazan-answer-greenline {
+    /* width: 2000px;
+    height: 60px;
+    color: #036b32; */
+    /* transform: rotate(90deg); */
+    height: 100%;
+}
+
+.aboutkazan-answer-answer_background {
+    width: 50%;
+    height: 150px;
+    background-color: #32BD70;
+    background-position: center;
+    background-size: cover;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #FFFFFF;
+    border-style: solid;
+    padding: 20px;
+}
+
+.px50 {
+    margin-top: 50px;
+}
+
+.aboutkazan-answer-answer_h1CLONE {}
+
+.aboutkazan-answer-answer_standart34 {
+    font-size: 20px;
+    font-family: var(--font-averta-cy-EB);
+    color: var(--ColorTextForProgrammStadyPlashca);
+
+}
+
+.aboutkazan-answer-answer {
+    margin-top: 151px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutkazan-itiketka {
+    width: 2560px;
+    height: 1548px;
+    background-color: #FF4F1E;
+    border-radius: 50% 0 0 0;
+
+}
+
+.itiket-redline {
+    width: 2560px;
+    height: 1000px;
+    background-color: #FF4F1E;
+    transform: rotate(-2deg);
+}
+
+.itiket-redline-repeatline {
+    background-image: url('../../img/svg/aboutkazan/kazan-itiket-line.svg');
+    background-repeat: repeat;
+}
+
+.itiket-red-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.itiket-red-block-pic {
+
+    background-image: url('../../img/svg/aboutkazan/kazan-itiket.svg');
+    max-width: 726px;
+    width: 100%;
+    height: 856px;
+    background-repeat: no-repeat;
+}
+
+.itiket-red-block-text {
+    transform: rotate(2deg);
+}
+
+.itiket-red-block-title {
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 63px;
+
+    color: #FFFFFF;
+}
+
+.itiket-red-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 188.02%;
+    /* or 39px */
+
+
+    color: #FFFFFF;
+
+}
+
+.changedHeader {
+    border-radius: 0 0 25px 25px;
+    background-image: none;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.changedHeader .main_icon_logo {
+    position: absolute;
+    width: 66px;
+    height: 54px;
+    background-image: url('../../img/svg/aboutkazan/90color.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 5%;
+    color: #fff;
+}
+
+.changedHeader #lang {
+    color: var(--colorText);
+}
+
+.three-pictureOne-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 188.02%;
+    color: #383838;
+}
+
+
+.aboutkazan-WhatInteresting {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.WhatInteresting-four-cards-One {
+    max-width: 1280px;
+    height: 731px;
+    color: #000000;
+    background-color: #FFE351;
+    padding: 181px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('../../img/svg/aboutkazan/Yellow-vector2.svg');
+    background-repeat: repeat;
+    border-radius: 10%;
+}
+
+.WhatInteresting-four-cards-Two {
+    max-width: 1280px;
+    height: 731px;
+    color: #FFFFFF;
+    background-color: #10B666;
+    padding: 181px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('../../img/svg/aboutkazan/green-vector2.svg');
+    background-repeat: repeat;
+    border-radius: 10%;
+}
+
+/* .WhatInteresting-four-cards-Two-line{
+    max-width: 1280px;
+    height: 731px;
+    background-image: url('../../img/svg/aboutkazan/Green-Vector.svg');
+    background-repeat: repeat;
+    -webkit-transform: rotate(45deg);
+    gap: 20px;
+    padding: 10%;
+}
+
+.WhatInteresting-four-cards-Two-line-text{
+    transform: rotate(-45deg);
+
+} */
+
+.WhatInteresting-four-cards-title {
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 63px;
+}
+
+.WhatInteresting-four-cards-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 188.02%;
+    margin-top: 50px;
+}
+
+.WhatInteresting-four-cards-Three {
+    max-width: 1280px;
+    width: 80%;
+    height: 436px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.WhatInteresting-four-cards-Three-pic {
+    max-width: 601px;
+    width: 100%;
+    height: 436px;
+    border-radius: 25px;
+    background-image: url('../../img/svg/aboutkazan/blue-kazan.svg');
+}
+
+.WhatInteresting-four-cards-Three {
+    background-color: #F8F8F8;
+}
+
+.WhatInteresting-four-cards-Four-title {
+    font-family: 'Averta CY';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 63px;
+    /* identical to box height */
+    
+
+    color: #000000;
+}
+
+.WhatInteresting-four-cards-Four-part1 {
+    max-width: 1280px;
+    width: 100%;
+    height: 352.3px;
+}
+
+.WhatInteresting-four-cards-Four-part2 {
+    max-width: 1280px;
+    width: 100%;
+    height: 352.3px;
+    margin-top: 33px;
+}
+
+
+.WhatInteresting-four-cards-Four-1 {
+    max-width: 392px;
+    height: 352.3px;
+    width: 100%;
+    background-image: url('../../img/svg/aboutkazan/kazan-cards-picture(1).svg');
+    position: relative;
+}
+
+.WhatInteresting-four-cards-Four-2 {
+    max-width: 392px;
+    height: 352.3px;
+    width: 100%;
+    background-image: url('../../img/svg/aboutkazan/kazan-cards-picture(5).svg');
+    position: relative;
+}
+
+.WhatInteresting-four-cards-Four-3 {
+    max-width: 412.31px;
+    height: 352.3px;
+    width: 100%;
+    background-image: url('../../img/svg/aboutkazan/kazan-cards-picture(4).svg');
+    position: relative;
+}
+
+.WhatInteresting-four-cards-Four-4 {
+    max-width: 823.21px;
+    height: 352.3px;
+    width: 100%;
+    background-image: url('../../img/svg/aboutkazan/kazan-cards-picture(3).svg');
+    position: relative;
+}
+
+.WhatInteresting-four-cards-Four-5 {
+    max-width: 412.31px;
+    height: 352.3px;
+    width: 100%;
+    background-image: url('../../img/svg/aboutkazan/kazan-cards-picture(2).svg');
+   
+}
+
+
+.WhatInteresting-four-cards-Three-text {
+    padding: 2%;
+}
+
+.WhatInteresting-four-cards-Four{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1280px;
+    width: 100%;
+    height: 845.6px;
+}
+
+.WhatInteresting-four-cards-Four-part1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.WhatInteresting-four-cards-Four-part2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}

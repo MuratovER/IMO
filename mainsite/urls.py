@@ -22,6 +22,7 @@ urlpatterns = [
     path('news/post/<int:pk>', views.news_view, name='post'),
     path('extra/', views.extra_view, name='extra'),
     path('faq/', views.faq_view, name='faq'),
+    path('aboutkazan/', views.aboutkazan_view, name='aboutkazan'),
     path('speciality/<int:key>', views.speciality_view, name='speciality'),
 ]
 

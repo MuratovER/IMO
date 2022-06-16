@@ -39,7 +39,7 @@
 .main_icon_logo_flexbox {
     display: flex;
     align-items: center;
-    margin-bottom: 31px;
+    /* margin-bottom: 31px; */
 }
 
 .main_icon_logo_text {
