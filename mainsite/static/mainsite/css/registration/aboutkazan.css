@@ -367,6 +367,7 @@ p.b {
     font-size: 20px;
     font-family: var(--font-averta-cy-EB);
     color: var(--ColorTextForProgrammStadyPlashca);
+
 }
 
 .aboutkazan-answer-answer {
@@ -552,7 +553,7 @@ p.b {
 
 .WhatInteresting-four-cards-Three {
     max-width: 1280px;
-    /* width: 50%; */
+    width: 80%;
     height: 436px;
     display: flex;
     flex-direction: row;

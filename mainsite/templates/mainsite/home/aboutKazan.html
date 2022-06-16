@@ -189,19 +189,17 @@
       </div>
     </div>
     <div class="WhatInteresting-four-cards-Two">
-      <div class="WhatInteresting-four-cards-Two-line">
-        <div class="WhatInteresting-four-cards-Two-line-text">
-          <div class="WhatInteresting-four-cards-title"> Дворец бракосачетания </div>
-          <div class="WhatInteresting-four-cards-text">
-            Казань имеет уникальный культурный код. На карте города – более 1000 объектов,
-            <br>формирующих культурное многообразие столицы.
-            <br>
-            <br>
-            В городе открыты двери 34 музеев, 9 театров, 8 крупных концертных залов, 16
-            <br>дворцов культуры, 51 библиотеки и 50 детских школ искусств. В Казани постоянно
-            <br>формируются новые культурные площадки, например, креативное пространство
-            <br>«Штаб», Центр современного искусства «Смена», творческая лаборатория «Угол».
-          </div>
+      <div class="WhatInteresting-four-cards-Two-line-text">
+        <div class="WhatInteresting-four-cards-title"> Дворец бракосачетания </div>
+        <div class="WhatInteresting-four-cards-text">
+          Казань имеет уникальный культурный код. На карте города – более 1000 объектов,
+          <br>формирующих культурное многообразие столицы.
+          <br>
+          <br>
+          В городе открыты двери 34 музеев, 9 театров, 8 крупных концертных залов, 16
+          <br>дворцов культуры, 51 библиотеки и 50 детских школ искусств. В Казани постоянно
+          <br>формируются новые культурные площадки, например, креативное пространство
+          <br>«Штаб», Центр современного искусства «Смена», творческая лаборатория «Угол».
         </div>
       </div>
     </div>
@@ -213,7 +211,7 @@
       <div class="WhatInteresting-four-cards-text">Куда пойти в столице? </div>
     </div>
   </div>
-  <div class="WhatInteresting-four-cards-Four px120">
+  <div class="WhatInteresting-four-cards-Four px240">
     <div class="WhatInteresting-four-cards-Four-title">Галерея</div>
     <div class="WhatInteresting-four-cards-Four-part1">
       <div class="WhatInteresting-four-cards-Four-1"></div>
@@ -230,10 +228,21 @@
     <div class="aboutkazan-answer-greenline" style="margin-left: 2%; height: 100%;"><img
         src="{% static 'mainsite/img/svg/aboutkazan/Green-Vector.svg' %}" alt=" линия" style="height: 100%;"></div>
     <div class="aboutkazan-answer-90">
-      <div class="aboutkazan-answer-title">Часто задаваемые <br>
-        вопросы</div>
-      <div class="aboutkazan-answer-answer" style="margin-top:151px; margin-bottom: 50px;">
-        <div class="aboutkazan-answer-answer_background">
+      <div class="aboutkazan-answer-title">Часто задаваемые <br>вопросы</div>
+      {% for question in question%}
+      <a href="{% url 'faq' %}" style="text-decoration: none;">
+        <div class="aboutkazan-answer-answer" style="margin-top:151px; margin-bottom: 50px;">
+          <div class="aboutkazan-answer-answer_background">
+            <div class="aboutkazan-answer-answer_h1CLONE">
+              <h1 class="aboutkazan-answer-answer_standart34">
+                {{ question.title }}
+              </h1>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+      <!-- <div class="aboutkazan-answer-answer_background px50">
           <div class="aboutkazan-answer-answer_h1CLONE">
             <h1 class="aboutkazan-answer-answer_standart34">
               Направления подготовки (специальности), на которые приём иностранных граждан не ведется
@@ -256,14 +265,6 @@
             </h1>
           </div>
         </div>
-
-        <div class="aboutkazan-answer-answer_background px50">
-          <div class="aboutkazan-answer-answer_h1CLONE">
-            <h1 class="aboutkazan-answer-answer_standart34">
-              Направления подготовки (специальности), на которые приём иностранных граждан не ведется
-            </h1>
-          </div>
-        </div>
         <div class="aboutkazan-answer-answer_background px50">
           <div class="aboutkazan-answer-answer_h1CLONE">
             <h1 class="aboutkazan-answer-answer_standart34">
@@ -286,11 +287,11 @@
               Направления подготовки (специальности), на которые приём иностранных граждан не ведется
             </h1>
           </div>
-        </div>
-      </div>
+        </div> -->
     </div>
-    <div class="aboutkazan-answer-greenline" style="margin-right: 2%; height: 100%;"><img
-        src="{% static 'mainsite/img/svg/aboutkazan/Green-Vector.svg' %}" alt=" линия" style="height: 100%;"></div>
+    <div class="aboutkazan-answer-greenline" style="margin-right: 2%; height: 100%;">
+      <img src="{% static 'mainsite/img/svg/aboutkazan/Green-Vector.svg' %}" alt=" линия" style="height: 100%;">
+    </div>
   </div>
 </body>
 <link href='{% static "mainsite/css/registration/aboutkazan.css" %}' rel="stylesheet">

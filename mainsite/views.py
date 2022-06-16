@@ -2,7 +2,7 @@ from urllib import request
 from loguru import logger
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
 from .forms import CreateUserForm, ProfileForm, FaqForm
 from mainsite.models import Profile, Post, Faq
 from django.contrib import messages
@@ -156,4 +156,10 @@ def password_change_done(request):
 
 
 def aboutkazan_view(request):
-    return render(request, 'mainsite/home/aboutKazan.html')    
+    # question = get_object_or_404(Faq, pk=pk)
+    question = Faq.objects.order_by()[:5]
+    context = {
+        # 'question': question,
+        'question': question,
+    }
+    return render(request, 'mainsite/home/aboutKazan.html', context)    
