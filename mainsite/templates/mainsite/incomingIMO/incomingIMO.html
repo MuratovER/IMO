@@ -1,0 +1,510 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<body class="body indexEnterWindow">
+    <div class="specialty-body">
+        <div class="specialty-header">
+            <div class="specialty-header-box-background">
+                <div class="box-background-ImgSVG-h2CLONE">
+                    <h2 class="box-background-ImgSVG-h2" id="id_title">{{ speciality.faculty }}</h2>
+                </div>
+                <div class="box-background-ImgSVG-h1CLONE">
+                    <h1 class="box-background-ImgSVG-h1">{{ speciality.title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    <div class="specialty-all">
+        <div class="specialty-all-BOXh1">
+            <h1 class="specialty-all-h1">Общие сведения о <br>направлении</h1>
+            <p class="specialty-all-text">{{ speciality.description }}</p>
+        </div>
+        <div class="specialty-all-CardLink">
+            <div class=" ">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Срок обучения
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>{{ speciality.time_edu}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class=" ">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Уровень образования
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>{{ speciality.type_edu }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class=" ">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Форма обучения
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>{{ speciality.day_tipe }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="one">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Цена обучения
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>{{ speciality.price }} руб</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="specialty-all top130">
+        <div class="specialty-all-BOXh1">
+            <h1 class="specialty-all-h1">Внутренние испытания</h1>
+            <p class="specialty-all-text">Задача организации, в особенности же рамки и место обучения
+                кадров<br> играет важную роль в формировании дальнейших направлений
+                развитая<br> системы массового участия.
+            </p>
+        </div>
+        <div class="specialty-all-CardLink"  style="column-gap: 25px;">
+            <div class="one">
+                {% if speciality.exam_one == "MATH" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-MATH sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Математика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "RUSS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-RUSS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp text-cart-center">
+                            <h1> Русский Язык </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "CHEM" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-CHEM sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Химия </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "PHYS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-PHYS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Физика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "SOCL" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-SOCL sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Обществознание </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "INFO" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-INFO  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Информатика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_one == "FRLN" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-FRLN  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp text-cart-center">
+                            <h1> Иностранный язык </h1>
+                        </div>
+                    </div>
+                {% endif %}
+            </div> 
+            <div class="two">
+                {% if speciality.exam_two == "MATH" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-MATH sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Математика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "RUSS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-RUSS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp text-cart-center">
+                            <h1> Русский Язык </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "CHEM" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-CHEM sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Химия </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "PHYS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-PHYS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Физика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "SOCL" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-SOCL sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Обществознание </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "INFO" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-INFO  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Информатика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_two == "FRLN" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-FRLN  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp text-cart-center">
+                            <h1> Иностранный язык </h1>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="three">
+                {% if speciality.exam_three == "MATH" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-MATH sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Математика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "RUSS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-RUSS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp text-cart-center">
+                            <h1> Русский Язык </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "CHEM" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-CHEM sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Химия </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "PHYS" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-PHYS sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Физика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "SOCL" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-SOCL sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Обществознание </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "INFO" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-INFO  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp">
+                            <h1> Информатика </h1>
+                        </div>
+                    </div>
+                {% elif speciality.exam_three == "FRLN" %}
+                    <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart-FRLN  sizeBox box-center">
+                        <div class="specialty-all-CardLink-grey-answerUp text-cart-center">
+                            <h1> Иностранный язык </h1>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="specialty-all top130">
+        <div class="specialty-all-BOXh1">
+            <h1 class="specialty-all-h1">Дирекция направления</h1>
+            <p class="specialty-all-text">Задача организации, в особенности же рамки и место обучения
+                кадров<br> играет важную роль в формировании дальнейших направлений
+                развитая<br> системы массового участия.
+            </p>
+        </div>
+        <!-- <div class="specialty-all-CardLink">
+            <div class=" ">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Срок обучения
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>4 года</h1>
+                    </div>
+                </div>
+            </div>
+            <div class=" ">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Срок обучения
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>4 года</h1>
+                    </div>
+                </div>
+            </div>
+            <div class=" ">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Срок обучения
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>4 года</h1>
+                    </div>
+                </div>
+            </div>
+            <div class=" ">
+                <div class="weHAve_new_boxStart_img shadowH specialty-all-CardLink-boxStart1 sizeBox box-center">
+                    <div class="specialty-all-CardLink-grey-text">
+                        Срок обучения
+                    </div>
+                    <div class="specialty-all-CardLink-grey-answer">
+                        <h1>4 года</h1>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="specialty-building">
+        <div class="specialty-buildingKAI">
+            <div class="specialty-buildingKAI-picture">
+                <div class="specialty-buildingKAI-pic1"></div>
+                <div class="specialty-buildingKAI-title">
+                    1-ое здание КНИТУ-КАИ<br>
+                    Карла Маркса 10
+                </div>
+                <div class="specialty-buildingKAI-mapAdress">
+                    <a href="">Посмотреть на карте
+                        <img src='{% static "mainsite/img/incoming/incoming-left.svg" %}' alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="specialty-buildingKAI-text">
+                <div class="buildingKAI-text-title">Для факультетов:</div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Физико-математический факультет</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="specialty-buildingKAI">
+            <div class="specialty-buildingKAI-picture">
+                <div class="specialty-buildingKAI-pic2"></div>
+                <div class="specialty-buildingKAI-title">
+                    2-ое здание КНИТУ-КАИ<br>
+                    Четаева 18
+                </div>
+                <div class="specialty-buildingKAI-mapAdress">
+                    <a href="">Посмотреть на карте
+                        <img src='{% static "mainsite/img/incoming/incoming-left.svg" %}' alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="specialty-buildingKAI-text">
+                <div class="buildingKAI-text-title">Для факультетов:</div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Физико-математический факультет</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="specialty-buildingKAI">
+            <div class="specialty-buildingKAI-picture">
+                <div class="specialty-buildingKAI-pic3"></div>
+                <div class="specialty-buildingKAI-title">
+                    8-ое здание КНИТУ-КАИ<br>
+                    Четаева 18а
+                </div>
+                <div class="specialty-buildingKAI-mapAdress">
+                    <a href="">Посмотреть на карте
+                        <img src='{% static "mainsite/img/incoming/incoming-left.svg" %}' alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="specialty-buildingKAI-text">
+                <div class="buildingKAI-text-title">Для факультетов:</div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Физико-математический факультет</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="specialty-buildingKAI">
+            <div class="specialty-buildingKAI-picture">
+                <div class="specialty-buildingKAI-pic4"></div>
+                <div class="specialty-buildingKAI-title">
+                    5-ое здание КНИТУ-КАИ<br>
+                    Карла Маркса 31/7
+                </div>
+                <div class="specialty-buildingKAI-mapAdress">
+                    <a href="">Посмотреть на карте
+                        <img src='{% static "mainsite/img/incoming/incoming-left.svg" %}' alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="specialty-buildingKAI-text">
+                <div class="buildingKAI-text-title">Для факультетов:</div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Физико-математический факультет</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="specialty-buildingKAI">
+            <div class="specialty-buildingKAI-picture">
+                <div class="specialty-buildingKAI-pic5"></div>
+                <div class="specialty-buildingKAI-title">
+                    7-ое здание КНИТУ-КАИ<br>
+                    Большая Красная 55
+                </div>
+                <div class="specialty-buildingKAI-mapAdress">
+                    <a href="">Посмотреть на карте</a>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <!-- <div class="specialty-buildingKAI-text">
+                <div class="buildingKAI-text-title">Для факультетов:</div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Физико-математический факультет</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="specialty-buildingKAI">
+            <div class="specialty-buildingKAI-picture">
+                <div class="specialty-buildingKAI-pic6"></div>
+                <div class="specialty-buildingKAI-title">
+                    3-ое здание КНИТУ-КАИ<br>
+                    Льва Толстого 15
+                </div>
+                <div class="specialty-buildingKAI-mapAdress">
+                    <a href="">Посмотреть на карте
+                        <img src='{% static "mainsite/img/incoming/incoming-left.svg" %}' alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="specialty-buildingKAI-text">
+                <div class="buildingKAI-text-title">Для факультетов:</div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Физико-математический факультет</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+                <div class="buildingKAI-text-profesion">
+                    <div>Институт авиации, наземного транспорта и энергетики</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="haveyouQuestion">
+        <div class="haveyouQuestion_boxh1">
+            <h1 class="haveyouQuestion_h1 Lang-standart49">Остались вопросы?</h1>
+        </div>
+        <div class="haveyouQuestion_boxes">
+            <div>
+                <div class="haveyouQuestion_boxe haveyouQuestion_boxes1 ">
+                    <div class="haveyouQuestion_boxe_h1Box">
+                        <h3 class="haveyouQuestion_boxe_h1 Lang-standart50">Как поступить в <br>КАИ?</h3>
+                    </div>
+                </div>
+                <div class="haveyouQuestion_boxe haveyouQuestion_boxes2 ">
+                    <div class="haveyouQuestion_boxe_h1Box">
+                        <h3 class="haveyouQuestion_boxe_h1 Lang-standart50">Как поступить в <br>КАИ?</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="haveyouQuestion_boxe_center haveyouQuestion_boxes3 ">
+                    <div class="haveyouQuestion_boxe_h1Box boxe_h1Box_center">
+
+                        <img src='{% static "mainsite/img/incoming/question.svg" %}' alt="" style="margin-bottom:50px;">
+                        <button class="haveyouQuestion_article">
+                            <div>Полезная статья</div>
+                        </button>
+                        <h3 class="haveyouQuestion_boxe_h1 Lang-standart51">Куда мне <br>поступить?</h3>
+                        <p class="haveyouQuestion_boxe_h1" style="font-size: 30px;">Объясняем все направления и<br> как
+                            на них поступить</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="haveyouQuestion_boxe haveyouQuestion_boxes4 ">
+                    <div class="haveyouQuestion_boxe_h1Box">
+                        <h3 class="haveyouQuestion_boxe_h1 Lang-standart52">Направления<br> поступления</h3>
+                    </div>
+                </div>
+                <div class="haveyouQuestion_boxe haveyouQuestion_boxes5 ">
+                    <div class="haveyouQuestion_boxe_h1Box">
+                        <h3 class="haveyouQuestion_boxe_h1 Lang-standart52">Направления<br> поступления</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

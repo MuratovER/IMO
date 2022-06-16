@@ -9,14 +9,14 @@
             </div>
             <div class="header2_boxText_twoBTN">
                 <div class="header2_boxText_twoBTNBox margin_bottom20px">
-                    <button class="header2_boxText_twoBTNBox_button">
+                    <button class="header2_boxText_twoBTNBox_button" onclick="location.href='/signup'">
 
                             <img src='{% static "mainsite/img/Playnaw.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
                             <div class="Lang-standart13">Начать сейчас</div>
                         </button>
                 </div>
                 <div class="header2_boxText_twoBTNBox">
-                    <button class="header2_boxText_twoBTNBox_button">
+                    <button class="header2_boxText_twoBTNBox_button" onclick="location.href='https://www.5657.ru/s/h/hozBci'">
 
                             <img src='{% static "mainsite/img/podfaq.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
                             <div class="Lang-standart14">Подфак</div>
@@ -51,35 +51,35 @@
         <div class="specialty_box">
             <div class="specialty_box_displayFlex">
                 <div class="specialty_box_displayFlex_litleBox">
-                    <div class="specialty_box_pictureSMAL AircraftIndustry1 standartStyleForimgSp">
+                    <div onclick="location.href='/speciality/1001'"  class="specialty_box_pictureSMAL AircraftIndustry1 standartStyleForimgSp">
                         <div class="specialty_box_picture_text Lang-standart18">Авиастроение</div>
                     </div>
-                    <div class="specialty_box_picture AircraftEngines standartStyleForimgSp marginLeft20px">
+                    <div onclick="location.href='/speciality/1002'" class="specialty_box_picture AircraftEngines standartStyleForimgSp marginLeft20px">
                         <div class="specialty_box_picture_text Lang-standart19">IT (программная инженерия)</div>
                     </div>
                 </div>
                 <div class="specialty_box_displayFlex_litleBox">
-                    <div class="specialty_box_picture infocommunicationTechnologies standartStyleForimgSp">
+                    <div onclick="location.href='/speciality/1003'" class="specialty_box_picture infocommunicationTechnologies standartStyleForimgSp">
                         <p class="specialty_box_picture_text Lang-standarts20">Телекоммуникации, интернет, IoT</p>
                     </div>
-                    <div class="specialty_box_pictureSMAL AircraftIndustry2 standartStyleForimgSp marginLeft20px">
+                    <div onclick="location.href='/speciality/1004'" class="specialty_box_pictureSMAL AircraftIndustry2 standartStyleForimgSp marginLeft20px">
                         <p class="specialty_box_picture_text Lang-standarty21">Экономика</p>
                     </div>
                 </div>
 
                 <div class="specialty_box_displayFlex_litleBox">
-                    <div class="specialty_box_pictureSMAL AircraftIndustry3 standartStyleForimgSp">
+                    <div onclick="location.href='/speciality/1005'" class="specialty_box_pictureSMAL AircraftIndustry3 standartStyleForimgSp">
                         <p class="specialty_box_picture_text Lang-standart22">Машиностроение</p>
                     </div>
-                    <div class="specialty_box_picture AircraftOperation1 standartStyleForimgSp marginLeft20px">
+                    <div onclick="location.href='/speciality/1006'" class="specialty_box_picture AircraftOperation1 standartStyleForimgSp marginLeft20px">
                         <p class="specialty_box_picture_text Lang-standart23">Электроника и наноэлектроника</p>
                     </div>
                 </div>
-                <div class="specialty_box_displayFlex_litleBox ">
+                <div  onclick="location.href='/speciality/1007'" class="specialty_box_displayFlex_litleBox ">
                     <div class="specialty_box_pictureSMAL shipbuilding standartStyleForimgSp marginLeft20px">
                         <p class="specialty_box_picture_text colorfff Lang-standart24">Кораблестроение</p>
                     </div>
-                    <div class="specialty_box_pictureSMAL compositTechnologi standartStyleForimgSp marginLeft20px">
+                    <div onclick="location.href='/speciality/1008'" class="specialty_box_pictureSMAL compositTechnologi standartStyleForimgSp marginLeft20px">
                         <p class="specialty_box_picture_text colorfff Lang-standart25">Композитные технологии</p>
                     </div>
                     <div class="specialty_box_pictureSMAL SeeAllPrograms standartStyleForimgSp marginLeft20px">
@@ -93,72 +93,104 @@
         <div class="weHAve_new_BOXh1">
             <h1 class="weHAve_new_h1 Lang-standart27">Наши новости</h1>
         </div>
-        <div class="weHAve_new_CardLink">
-            <div class="weHAve_new_CardLinkBox">
-                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img2 sizeBox">
 
-                </div>
-                <div class="weHAve_new_CardLink_Inf_boxh3">
-                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart28">Консультация с профессионалами из IT</h3>
-                </div>
-                <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
-                    </div>
-                </div>
+    <div class="post-last4">
+    {% for news in last_4 %}
+    <a class="news_list_a" href="{% url 'post' pk=news.pk %}" >
+    <div class="news_block" >
+        {% if news.cover_image %}
+            <img src="{{ news.cover_image.url }}" class="news_block_img"/>
+        {% endif %}
+        <div class="news_image">
+
+        </div>
+        <div class="news_info">
+            <div class="news_title">
+                <h3 class="news_title_h3">{{ news.title }}</h3>
             </div>
-            <div class="weHAve_new_CardLinkBox">
-                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img3 sizeBox">
-
-                </div>
-                <div class="weHAve_new_CardLink_Inf_boxh3">
-                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart29">Консультация с профессионалами из IT</h3>
-                </div>
-                <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
+            <div class="news_addititonal_info">
+                <div class="news_KAI">
+                    <div class="news-KAI-block">
+                        <img src="{% static 'mainsite/img/Subtract.svg' %}" alt="" class="news-KAI-block-IMG">
+                        <p>ИМО КНИТУ-КАИ</p>
                     </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
-                    </div>
-                </div>
-            </div>
-            <div class="weHAve_new_CardLinkBox">
-                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img4 sizeBox">
-
-                </div>
-                <div class="weHAve_new_CardLink_Inf_boxh3">
-                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart30">Консультация с профессионалами из IT</h3>
-                </div>
-                <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
-                    </div>
-                </div>
-            </div>
-            <div class="weHAve_new_CardLinkBox">
-                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img5 sizeBox">
-
-                </div>
-                <div class="weHAve_new_CardLink_Inf_boxh3">
-                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart31">Консультация с профессионалами из IT</h3>
-                </div>
-                <div class="weHAve_new_boxStart_Inf_boxINFimg">
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>
-                    </div>
-                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">
-                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>
+                    <div class="news-date">
+                        {{ news.published_date }}
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </a>
+    {% endfor %}
+
+
+{#        <div class="weHAve_new_CardLink">#}
+{#            <div class="weHAve_new_CardLinkBox">#}
+{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img2 sizeBox">#}
+{##}
+{#                </div>#}
+{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
+{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart28">Консультация с профессионалами из IT</h3>#}
+{#                </div>#}
+{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
+{#                    </div>#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="weHAve_new_CardLinkBox">#}
+{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img3 sizeBox">#}
+{##}
+{#                </div>#}
+{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
+{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart29">Консультация с профессионалами из IT</h3>#}
+{#                </div>#}
+{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
+{#                    </div>#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="weHAve_new_CardLinkBox">#}
+{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img4 sizeBox">#}
+{##}
+{#                </div>#}
+{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
+{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart30">Консультация с профессионалами из IT</h3>#}
+{#                </div>#}
+{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
+{#                    </div>#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="weHAve_new_CardLinkBox">#}
+{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img5 sizeBox">#}
+{##}
+{#                </div>#}
+{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
+{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart31">Консультация с профессионалами из IT</h3>#}
+{#                </div>#}
+{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
+{#                    </div>#}
+{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
+{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
     </div>
     <div class="about_IMO">
         <div class="box_aboutIMO_text_Inf">

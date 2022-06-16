@@ -18,11 +18,14 @@ urlpatterns = [
          auth_views.PasswordChangeView.as_view(template_name='mainsite/profile/password_change.html'),
          name = 'password_change'),
     path('password_change/done/', views.password_change_done, name='password_change_done'),
-    path('news/', views.news_view, name='news'),
+    path('news_list/', views.news_list_view, name='news_list'),
+    path('news/post/<int:pk>', views.news_view, name='post'),
     path('extra/', views.extra_view, name='extra'),
     path('faq/', views.faq_view, name='faq'),
     path('aboutkazan/', views.aboutkazan_view, name='aboutkazan'),
+    path('speciality/<int:key>', views.speciality_view, name='speciality'),
 ]
+
 
 handler404 = 'mainsite.views.error_404_view'
 

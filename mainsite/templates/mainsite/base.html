@@ -13,7 +13,10 @@
     <link href='{% static "mainsite/css/profile/profile.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_3.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_4.css" %}' rel="stylesheet">
-     <link href='{% static "mainsite/css/faq/faq.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/faq/faq.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
     <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet"/>
 
     <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
@@ -40,6 +43,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
     <header class="header">
+        <a href="{% url 'home_page' %}">
         <div class="main_icon_logo_flexbox">
             <div class="main_icon_logo">
             </div>
@@ -47,6 +51,8 @@
                 Институт Международного образования КАИ
             </p>
         </div>
+        </a>
+
         <div class="menu_links_boxs">
             <div class="menu_links_box_displayWhere700px">
                 <div class="menu_links_box_iconWhereDisplay700px">
@@ -65,6 +71,7 @@
                         <p class="menu_links_boxs_links_link_iconText Lang-standart3">#поступающим</p>
                     </div>
                 </div>
+                <a href="{% url 'faq' %}">
                 <div class="menu_links_boxs_links_link">
                     <div class="menu_links_boxs_links_link_icon">
                         <div class="standartStyleForimg key"></div>
@@ -73,14 +80,19 @@
                         <p class="menu_links_boxs_links_link_iconText Lang-standart4">#вопрос-ответ</p>
                     </div>
                 </div>
-                <div class="menu_links_boxs_links_link">
-                    <div class="menu_links_boxs_links_link_icon">
-                        <div class="standartStyleForimg gun"></div>
+                </a>
+
+                <a href="{% url 'news_list' %}">
+                    <div class="menu_links_boxs_links_link">
+                        <div class="menu_links_boxs_links_link_icon">
+                            <div class="standartStyleForimg gun"></div>
+                        </div>
+                        <div class="menu_links_boxs_links_link_iconText_box">
+                            <p class="menu_links_boxs_links_link_iconText Lang-standart5">#новости</p>
+                        </div>
                     </div>
-                    <div class="menu_links_boxs_links_link_iconText_box">
-                        <p class="menu_links_boxs_links_link_iconText Lang-standart5">#новости</p>
-                    </div>
-                </div>
+                </a>
+
                 <div class="buttonsInHeader_box displayNoneWhere displayon clickOnserch">
                     <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search">
                     <div class="buttonsInHeader_box_search_TextBox">
@@ -114,10 +126,18 @@
                     </div>
                 </div>
             </div>
+        {% if request.user.is_authenticated %}
             <div class="buttonsInHeader_box">
-                <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton">
+                <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton" onclick="location.href='/profile'">
             </div>
-            <div class="hideMenu_in_Proffil">
+        {% else %}
+        
+            <div class="buttonsInHeader_box">
+                <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton" onclick="location.href='/signup'">
+            </div>
+
+        {% endif %}
+            <!-- <div class="hideMenu_in_Proffil">
                 <div class="hideMenu_in_Proffil_litleBlock">
                     <div class="hideMenu_in_Proffil_box hideMenu_in_Proffil_boxMURGBOTT">
 
@@ -149,7 +169,7 @@
 
                             <!-- <img src='{% static "mainsite/img/Union.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img"> -->
                         </div>
-                        <div class="hideMenu_in_Proffil_LCProf_boxp">
+                        <!-- <div class="hideMenu_in_Proffil_LCProf_boxp">
                             <p class="hideMenu_in_Proffil_LCProf_p textstule Lang-standart10">Подать заявку </p>
                         </div>
                     </div>
@@ -176,12 +196,12 @@
                         </div>
                     </div>
 
-                    <!-- кнопка смены темы -->
+-------------------- кнопка смены темы -------------------------------------
                     <div class="hideMenu_in_Proffil_box_buttHThem" style="display: none;">
 
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="buttonsInHeader_box">
                     <div class="buttonsInHeader_box_notifications" id="notifications"></div>
                 </div> -->
