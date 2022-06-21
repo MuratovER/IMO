@@ -323,3 +323,16 @@
     line-height: 24px;
     color: #383838;
 }
+
+.profile-form{
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.save{
+    margin: auto;
+}

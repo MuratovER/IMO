@@ -1,6 +1,7 @@
 from urllib import request
 from loguru import logger
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import get_object_or_404, render, redirect
 from .forms import CreateUserForm, ProfileForm, FaqForm
 from mainsite.models import Profile, Post, Faq, Speciality
@@ -38,7 +39,6 @@ def login_view(request):
 
 
 def profile_view(request):
-
 
     profile = Profile.objects.get(user=request.user)
     if request.method == "POST":
