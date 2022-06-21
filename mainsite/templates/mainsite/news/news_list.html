@@ -1,6 +1,8 @@
 {% extends 'mainsite/base.html' %}
 {% block content %}
 {% load static %}
+
+<body class="body">
 <div class="news_list">
 {% for news in news %}
     <a class="news_list_a" href="{% url 'post' pk=news.pk %}" >
@@ -33,4 +35,5 @@
 {% endfor %}
 
 </div>
+</body>
 {% endblock %}
