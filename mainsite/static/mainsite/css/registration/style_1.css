@@ -197,6 +197,16 @@
 }
 
 .main_block_form_input_1 {
+    width: 100%;
+    border: 2px solid #D7D7D7;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 14px 25px;
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
+
+.main_block_form_input_12 {
     width: 538px;
     border: 2px solid #D7D7D7;
     border-radius: 13px;
@@ -261,7 +271,14 @@
     background-color: #6248FF;
     text-align: center;
     cursor: var(--hand-cursor-w);
-    width: 590px;
+    width: 100%;
+}
+
+.main_block_form_button1 {
+    background-color: #6248FF;
+    text-align: center;
+    cursor: var(--hand-cursor-w);
+    width: 538px;
 }
 
 .main_block_form_ForgotPassword_1 {

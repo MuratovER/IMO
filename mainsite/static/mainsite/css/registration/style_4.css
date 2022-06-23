@@ -236,3 +236,17 @@
         flex-wrap: wrap;
     }
 }
+
+
+#id_phone_0{
+    width: auto;
+}
+
+#id_phone_1{
+    width: 70%;
+}
+
+.phone-number-field{
+    gap: 5%;
+    display: flex;
+}
