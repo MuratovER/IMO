@@ -69,6 +69,8 @@ class ProfileForm(forms.ModelForm):
                                             'style': "border-color: green;",}),
             'phone': forms.NumberInput(attrs={'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectYourCountr",
                                             'id': "id_phone",
+                                            'data-tel-input': "",
+                                            'type': 'tel',
                                             'placeholder': "Ваш номер телефона",
                                             'onmousedown': "mouseUp(this)" ,
                                             'onmouseup': "mouseUp(this)" ,
