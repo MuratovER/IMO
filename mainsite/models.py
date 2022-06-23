@@ -37,7 +37,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     gender = models.CharField(max_length=12, choices=gender_choice, blank=True, null=True)
-    birthdate = models.DateField(blank=False, null=True)
+    birthdate = models.DateTimeField(blank=True, null=True)
     country = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
     citizenship = models.CharField(max_length=100,blank=True, null=True)
