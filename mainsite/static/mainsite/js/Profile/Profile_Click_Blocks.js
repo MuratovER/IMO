@@ -17,3 +17,9 @@ function ClickPlasBlock(NameBlock){
     if(elemStatus == block)
         elem.style.display = none;
 }
+function CopyToBuf()
+{
+    let elem = document.querySelector(".verification-mail-field_copyto");
+    navigator.clipboard.writeText(elem.innerText);
+    console.log(navigator.clipboard.readText() + " Скопировано");
+}
