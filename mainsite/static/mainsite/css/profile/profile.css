@@ -273,6 +273,7 @@
     line-height: 173.6%;
     color: #545454;
     margin-top: 25px;
+    white-space: pre-line;
 }
 .threeBlock_pandimg{
     width: 100%;
@@ -316,6 +317,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    width: 95%;
 }
 .threeBlock_block_disp_one_block_p{
     font-family: var(--font-inter);
@@ -337,4 +339,8 @@
 
 .save{
     margin: auto;
+}
+.threeBlock_hidden_p_h{
+    font-size: 20px;
+    color: #1f1f1f;
 }
