@@ -5,29 +5,29 @@
 <body class="body">
     <div class="profile">
         <div class="up-down-list">
-            <p class="ProfileBut_twoblock" data-NumBlock="0" onclick="OnBlock(0)">Информация обо мне</p>
-            <p class="ProfileBut_onblock" data-NumBlock="1" onclick="OnBlock(1)">Изменения профиля</p>
-            <p class="ProfileBut_threeblock" data-NumBlock="2" onclick="OnBlock(2)">Памятка для иностранцев</p>
+            <p class="ProfileBut_twoblock Lang-standart83" data-NumBlock="0" onclick="OnBlock(0)">Информация обо мне</p>
+            <p class="ProfileBut_onblock Lang-standart84" data-NumBlock="1" onclick="OnBlock(1)">Изменения профиля</p>
+            <p class="ProfileBut_threeblock Lang-standart85" data-NumBlock="2" onclick="OnBlock(2)">Памятка для иностранцев</p>
         </div>
         <div class="Nblock onBlock">
             <div class="info">
                 <div class="base-info">
                     <div class="basic-info">
                         <div class="about-head">
-                            <h4>Основная информация</h4>
-                            <a href="{% url 'password_change' %}">Редактировать</a>
+                            <h4 class="Lang-standart86">Основная информация</h4>
+                            <a href="{% url 'password_change' %}" class="Lang-standart87">Редактировать</a>
                         </div>
                         <div class="about-info">
                             <div class="about-info-p">
-                                <p>Полное имя:</p>
-                                <p>Пол:</p>
-                                <p>Дата рождения:</p>
-                                <p>Место рождения:</p>
-                                <p>Родной город:</p>
-                                <p>Гражданство:</p>
-                                <p>Номер телефона:</p>
-                                <p>Электронная почта:</p>
-                                <p>Ваш пароль:</p>
+                                <p class="Lang-standart88">Полное имя:</p>
+                                <p class="Lang-standart89">Пол:</p>
+                                <p class="Lang-standart90">Дата рождения:</p>
+                                <p class="Lang-standart91">Место рождения:</p>
+                                <p class="Lang-standart92">Родной город:</p>
+                                <p class="Lang-standart93">Гражданство:</p>
+                                <p class="Lang-standart94">Номер телефона:</p>
+                                <p class="Lang-standart95">Электронная почта:</p>
+                                <p class="Lang-standart96">Ваш пароль:</p>
                             </div>
                             <div class="about-info-generated">
                                 <div class="about-info-name">
@@ -56,75 +56,75 @@
                                     {{ profile.email }}
                                 </div>
                                 <div class="about-info-password">
-                                    <a href="">Изменить</a>
+                                    <a href="" class="Lang-standart97">Изменить</a>
                                 </div>
 
 
                             </div>
 
                             {# <div class="about-info-name">#}
-                                {# <p>Полное имя:</p>#}
+                                {# <p class="Lang-standart98">Полное имя:</p>#}
                                 {# {{ profile.name }}#}
                                 {# </div>#}
                             {##}
                             {# <div class="about-info-gender">#}
-                                {# <p>Пол:</p>#}
+                                {# <p class="Lang-standart99">Пол:</p>#}
                                 {# {{ profile.gender }}#}
                                 {# </div>#}
                             {# <div class="about-info-birthday">#}
-                                {# <p>Дата рождения:</p>#}
+                                {# <p class="Lang-standart100">Дата рождения:</p>#}
                                 {# {{ profile.birthdate }}#}
                                 {# </div>#}
                             {# <div class="about-info-country">#}
-                                {# <p>Место рождения:</p>#}
+                                {# <p class="Lang-standart101">Место рождения:</p>#}
                                 {# {{ profile.country }}#}
                                 {# </div>#}
                             {# <div class="about-info-city">#}
-                                {# <p>Родной город:</p>#}
+                                {# <p class="Lang-standart102">Родной город:</p>#}
                                 {# {{ profile.city }}#}
                                 {# </div>#}
                             {# <div class="about-info-citizenship">#}
-                                {# <p>Гражданство:</p>#}
+                                {# <p class="Lang-standart103">Гражданство:</p>#}
                                 {# {{ profile.citizenship }}#}
                                 {# </div>#}
                             {# <div class="about-info-phone">#}
-                                {# <p>Номер телефона:</p>#}
+                                {# <p class="Lang-standart104">Номер телефона:</p>#}
                                 {# {{ profile.phone }}#}
                                 {# </div>#}
                             {# <div class="about-info-email">#}
-                                {# <p>Электронная почта:</p>#}
+                                {# <p class="Lang-standart105">Электронная почта:</p>#}
                                 {# {{ profile.email }}#}
                                 {# </div>#}
                             {# <div class="about-info-password">#}
-                                {# <p>Ваш пароль:</p>#}
-                                {# <a href="">Изменить</a>#}
+                                {# <p class="Lang-standart106">Ваш пароль:</p>#}
+                                {# <a href="" class="Lang-standart10_7">Изменить</a>#}
                                 {# </div>#}
 
                         </div>
                     </div>
                     <div class="student-info">
-                        <h2>Информация о студенте</h2>
-                        <h3>Пока здесь ничего нет</h3>
-                        <p>Похоже вы пока не являетесь студентов КНИТУ-КАИ или ваши данные еще не загрузили в профиль :(
+                        <h2 class="Lang-standart107">Информация о студенте</h2>
+                        <h3 class="Lang-standart108">Пока здесь ничего нет</h3>
+                        <p class="Lang-standart109">Похоже вы пока не являетесь студентов КНИТУ-КАИ или ваши данные еще не загрузили в профиль :(
                         </p>
                     </div>
                 </div>
                 <div class="verification-info">
                     <div class="verification-bubbles">
                         <div class="verification-bubbles-head">
-                            <h2>Верификация учтёной записи</h2>
+                            <h2 class="Lang-standart110">Верификация учтёной записи</h2>
                             <img src='{% static "mainsite/img/Vectorquestion.svg" %}' alt="">
                         </div>
 
                         <img src='{% static "mainsite/img/Phases.svg" %}' alt="">
                         {# <div class="bubbles">#}
-                            {# <p>Стандарт</p>#}
-                            {# <p>Абитуриент</p>#}
-                            {# <p>Студент</p>#}
+                            {# <p class="Lang-standart111">Стандарт</p>#}
+                            {# <p class="Lang-standart112">Абитуриент</p>#}
+                            {# <p class="Lang-standart113">Студент</p>#}
                             {# </div>#}
                     </div>
                     <div class="verification-introduction">
-                        <p>Для того, чтобы подтвердить личность в ИМО КАИ необходимо отправить письмо на электронную
+                        <p class="Lang-standart114">Для того, чтобы подтвердить личность в ИМО КАИ необходимо отправить письмо на электронную
                             почту для подтверждения вашей личности и получении ваших документов для составления заявки
                             на поступление!</p>
                     </div>
@@ -132,36 +132,36 @@
                         <div class="verification-mail-field">
                             <p>imokai@bb.kai.ru</p>
                         </div>
-                        <button class="verification-mail-btn">Скопировать адрес</button>
+                        <button class="verification-mail-btn Lang-standart115">Скопировать адрес</button>
                     </div>
                     <div class="verification-list">
-                        <h3>Список необходимых документов</h3>
+                        <h3 class="Lang-standart116">Список необходимых документов</h3>
 
                         <div class="verification-list-first">
-                            <p>Копия паспорта (1-ая страница с фотографией)</p>
+                            <p class="Lang-standart117">Копия паспорта (1-ая страница с фотографией)</p>
                             <img src='{% static "mainsite/img/Reverse.svg" %}'
                                 alt="Копия паспорта (1-ая страница с фотографией)">
 
                         </div>
                         <div class="verification-list-first">
-                            <p>Заверенный нотариусом перевод паспорта на русский язык</p>
+                            <p class="Lang-standart118">Заверенный нотариусом перевод паспорта на русский язык</p>
                             <img src='{% static "mainsite/img/Reverse.svg" %}'
                                 alt="Заверенный нотариусом перевод паспорта на русский язык">
 
                         </div>
                         <div class="verification-list-first">
-                            <p>Скан всех виз, полученных из российской федерации (если имеются)</p>
+                            <p class="Lang-standart119">Скан всех виз, полученных из российской федерации (если имеются)</p>
                             <img src='{% static "mainsite/img/Reverse.svg" %}'
                                 alt="Скан всех виз, полученных из российской федерации (если имеются)">
 
                         </div>
                         <div class="verification-list-first">
-                            <p>Бланк уведомления для гос. услуг</p>
+                            <p class="Lang-standart120">Бланк уведомления для гос. услуг</p>
                             <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Бланк уведомления для гос. услуг">
 
                         </div>
                         <div class="verification-list-first">
-                            <p>Билеты всего маршрута (авиасообщение и ж/д)</p>
+                            <p class="Lang-standart121">Билеты всего маршрута (авиасообщение и ж/д)</p>
                             <img src='{% static "mainsite/img/Reverse.svg" %}'
                                 alt="илеты всего маршрута (авиасообщение и ж/д)">
 
@@ -186,17 +186,17 @@
                     {{ form.phone }}
                 </div>
                 {{ form.citizenship }}
-                <button type="submit" class="save btn btn-default main_block_form_button main_block_form_input_1 trueChangePass2">Сохранить</button>
+                <button type="submit" class="Lang-standart122 save btn btn-default main_block_form_button main_block_form_input_1 trueChangePass2">Сохранить</button>
             </form>
         </div>
         <div class="Nblock threeBlock">
             <!-- <h1 style="color:red;">Вставьте сюда свой код для отображения на сайте</h1> -->
-            <h1 class="threeBlock_h1">Памятка иностранному студенту</h1>
-            <p class="threeBlock_p">
+            <h1 class="threeBlock_h1 Lang-standart123">Памятка иностранному студенту</h1>
+            <p class="threeBlock_p Lang-standart124">
                 Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и
-                ответит на <span><a href="#" class="threeBlock_p_a">часто задаваемые вопросы</a></span>.
+                ответит на <span><a href="#" class="threeBlock_p_a Lang-standart125">часто задаваемые вопросы</a></span>.
             </p>
-            <h3 class="threeBlock_h3">По прибытии</h3>
+            <h3 class="threeBlock_h3 Lang-standart126">По прибытии</h3>
             <div class="threeBlock_main_block">
                 <div class="threeBlock_pandimg">
                     <div class="threeBlock_block_disp">
@@ -206,7 +206,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Пошаговая инструкция для въезжающих</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart127">Пошаговая инструкция для въезжающих</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -216,7 +216,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart128">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -245,7 +245,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Медицинское освидетельствование,
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart129">Медицинское освидетельствование,
                                     дактилоскопия</p>
                             </div>
                         </div>
@@ -256,7 +256,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart130">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -285,7 +285,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Миграционный учет</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart131">Миграционный учет</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -295,7 +295,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart132">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -324,7 +324,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Медицинское страхование</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart133">Медицинское страхование</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -334,7 +334,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart134">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -363,7 +363,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Проживание (адреса общежитий)</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart135">Проживание (адреса общежитий)</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -373,7 +373,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart136">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -393,7 +393,7 @@
                     <hr class="threeBlock_hr">
                 </div>
             </div>
-            <h3 class="threeBlock_h3">В период обучения</h3>
+            <h3 class="threeBlock_h3 Lang-standart137">В период обучения</h3>
             <div class="threeBlock_main_block">
                 <div class="threeBlock_pandimg">
                     <div class="threeBlock_block_disp">
@@ -403,7 +403,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Пошаговая инструкция для въезжающих</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart138">Пошаговая инструкция для въезжающих</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -413,7 +413,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart139">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -442,7 +442,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Медицинское освидетельствование,
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart140">Медицинское освидетельствование,
                                     дактилоскопия</p>
                             </div>
                         </div>
@@ -453,7 +453,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart141">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -482,7 +482,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Миграционный учет</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart142">Миграционный учет</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -492,7 +492,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart143">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -521,7 +521,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Медицинское страхование</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart144">Медицинское страхование</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -531,7 +531,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart145">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -560,7 +560,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Проживание (адреса общежитий)</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart146">Проживание (адреса общежитий)</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -570,7 +570,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart147">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -590,7 +590,7 @@
                     <hr class="threeBlock_hr">
                 </div>
             </div>
-            <h3 class="threeBlock_h3">По завершении обучения</h3>
+            <h3 class="threeBlock_h3 Lang-standart148">По завершении обучения</h3>
             <div class="threeBlock_main_block">
                 <div class="threeBlock_pandimg">
                     <div class="threeBlock_block_disp">
@@ -600,7 +600,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Пошаговая инструкция для въезжающих</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart149">Пошаговая инструкция для въезжающих</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -610,7 +610,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart150">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -639,7 +639,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Медицинское освидетельствование,
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart151">Медицинское освидетельствование,
                                     дактилоскопия</p>
                             </div>
                         </div>
@@ -650,7 +650,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart152">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
@@ -679,7 +679,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p">Миграционный учет</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart153">Миграционный учет</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -689,7 +689,7 @@
 
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
-                    <p class="threeBlock_hidden_p">
+                    <p class="threeBlock_hidden_p Lang-standart154">
                         Равным образом реализация намеченного плана развития напрямую зависит от новых предложений.
                         Соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет
                         за собой процесс внедрения и модернизации форм воздействия! Практический опыт показывает, что
