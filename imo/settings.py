@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s^^#%xw(ui)n7lv9$b67f7*h#y-jwe4$c)foij$-yg-etb#o3k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['https://imo.kai.ru/','localhost', '127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
@@ -223,3 +223,5 @@ EMAIL_HOST_USER = 'eldar.muratov.3@gmail.com'# new
 EMAIL_HOST_PASSWORD = 'tkmlfhvehfnjd' # new
 EMAIL_PORT = 587 # new
 EMAIL_USE_TLS = True # new
+
+CSRF_TRUSTED_ORIGINS=['https://imo.kai.ru/']
