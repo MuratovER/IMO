@@ -5,9 +5,9 @@
 <body class="body indexEnterWindow">
     <div class="profile">
         <div class="up-down-list">
-            <p class="ProfileBut_twoblock Lang-standart83" data-NumBlock="0" onclick="OnBlock(0)">Информация обо мне</p>
-            <p class="ProfileBut_onblock Lang-standart84" data-NumBlock="1" onclick="OnBlock(1)">Изменения профиля</p>
-            <p class="ProfileBut_threeblock Lang-standart85" data-NumBlock="2" onclick="OnBlock(2)">Памятка для иностранцев</p>
+            <p class="ProfileBut_twoblock Lang-standart83 bottomClick startBackColor" data-NumBlock="0" onclick="OnBlock(0)">Информация обо мне</p>
+            <p class="ProfileBut_onblock Lang-standart84 bottomClick" data-NumBlock="1" onclick="OnBlock(1)">Изменения профиля</p>
+            <p class="ProfileBut_threeblock Lang-standart85 bottomClick" data-NumBlock="2" onclick="OnBlock(2)">Памятка для иностранцев</p>
         </div>
         <div class="Nblock onBlock">
             <div class="info">
@@ -63,70 +63,52 @@
                             </div>
 
                             {# <div class="about-info-name">#}
-                                {# <p class="Lang-standart98">Полное имя:</p>#}
+                                {# <p class="Lang-standart98 about-info-text">Полное имя:</p>#}
                                 {# {{ profile.name }}#}
                                 {# </div>#}
                             {##}
                             {# <div class="about-info-gender">#}
-                                {# <p class="Lang-standart99">Пол:</p>#}
+                                {# <p class="Lang-standart99 about-info-text">Пол:</p>#}
                                 {# {{ profile.gender }}#}
                                 {# </div>#}
                             {# <div class="about-info-birthday">#}
-                                {# <p class="Lang-standart100">Дата рождения:</p>#}
+                                {# <p class="Lang-standart100 about-info-text">Дата рождения:</p>#}
                                 {# {{ profile.birthdate }}#}
                                 {# </div>#}
                             {# <div class="about-info-country">#}
-                                {# <p class="Lang-standart101">Место рождения:</p>#}
+                                {# <p class="Lang-standart101 about-info-text">Место рождения:</p>#}
                                 {# {{ profile.country }}#}
                                 {# </div>#}
                             {# <div class="about-info-city">#}
-                                {# <p class="Lang-standart102">Родной город:</p>#}
+                                {# <p class="Lang-standart102 about-info-text">Родной город:</p>#}
                                 {# {{ profile.city }}#}
                                 {# </div>#}
                             {# <div class="about-info-citizenship">#}
-                                {# <p class="Lang-standart103">Гражданство:</p>#}
+                                {# <p class="Lang-standart103 about-info-text">Гражданство:</p>#}
                                 {# {{ profile.citizenship }}#}
                                 {# </div>#}
                             {# <div class="about-info-phone">#}
-                                {# <p class="Lang-standart104">Номер телефона:</p>#}
+                                {# <p class="Lang-standart104 about-info-text">Номер телефона:</p>#}
                                 {# {{ profile.phone }}#}
                                 {# </div>#}
                             {# <div class="about-info-email">#}
-                                {# <p class="Lang-standart105">Электронная почта:</p>#}
+                                {# <p class="Lang-standart105 about-info-text">Электронная почта:</p>#}
                                 {# {{ profile.email }}#}
                                 {# </div>#}
                             {# <div class="about-info-password">#}
-                                {# <p class="Lang-standart106">Ваш пароль:</p>#}
+                                {# <p class="Lang-standart106 about-info-text">Ваш пароль:</p>#}
                                 {# <a href="" class="Lang-standart10_7">Изменить</a>#}
                                 {# </div>#}
 
                         </div>
                     </div>
-                    <div class="student-info">
-                        <h2 class="Lang-standart107">Информация о студенте</h2>
-                        <h3 class="Lang-standart108">Пока здесь ничего нет</h3>
-                        <p class="Lang-standart109">Похоже вы пока не являетесь студентов КНИТУ-КАИ или ваши данные еще не загрузили в профиль :(
-                        </p>
-                    </div>
                 </div>
                 <div class="verification-info">
-                    <div class="verification-bubbles">
-                        <div class="verification-bubbles-head">
-                            <h2 class="Lang-standart110">Верификация учтёной записи</h2>
-                            <img src='{% static "mainsite/img/Vectorquestion.svg" %}' alt="">
+                    <div class="verification-info_textOfemail">
+                        <div class="verification-info_textOfemail_box">
+                            <p class="verification-info_textOfemail_box_p">Электронная почта</p>
                         </div>
-
-                        <img src='{% static "mainsite/img/Phases.svg" %}' alt="">
-                        {# <div class="bubbles">#}
-                            {# <p class="Lang-standart111">Стандарт</p>#}
-                            {# <p class="Lang-standart112">Абитуриент</p>#}
-                            {# <p class="Lang-standart113">Студент</p>#}
-                            {# </div>#}
-                    </div>
-                    <div class="verification-introduction">
-                        <p class="Lang-standart114">Для того, чтобы подтвердить личность в ИМО КАИ необходимо отправить письмо на электронную
-                            почту для подтверждения вашей личности и получении ваших документов для составления заявки
-                            на поступление!</p>
+                        <img src='{% static "mainsite/img/VoprZnack.png" %}' alt="" class="">
                     </div>
                     <div class="verification-mail">
                         <div class="verification-mail-field">
@@ -137,37 +119,63 @@
                     <div class="verification-list">
                         <h3 class="Lang-standart116">Список необходимых документов</h3>
 
-                        <div class="verification-list-first">
-                            <p class="Lang-standart117">Копия паспорта (1-ая страница с фотографией)</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}'
-                                alt="Копия паспорта (1-ая страница с фотографией)">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p class="Lang-standart118">Заверенный нотариусом перевод паспорта на русский язык</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}'
-                                alt="Заверенный нотариусом перевод паспорта на русский язык">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p class="Lang-standart119">Скан всех виз, полученных из российской федерации (если имеются)</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}'
-                                alt="Скан всех виз, полученных из российской федерации (если имеются)">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p class="Lang-standart120">Бланк уведомления для гос. услуг</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Бланк уведомления для гос. услуг">
-
-                        </div>
-                        <div class="verification-list-first">
-                            <p class="Lang-standart121">Билеты всего маршрута (авиасообщение и ж/д)</p>
-                            <img src='{% static "mainsite/img/Reverse.svg" %}'
-                                alt="илеты всего маршрута (авиасообщение и ж/д)">
-
-                        </div>
-
-
+                        <ul class="verification-list_ul">
+                            <li class="verification-list_ul_li">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart117 verification-list-text">Копия паспорта (1-ая страница с фотографией)</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Копия паспорта (1-ая страница с фотографией)">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart118 verification-list-text">Заверенный нотариусом перевод паспорта на русский язык</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Заверенный нотариусом перевод паспорта на русский язык">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart119 verification-list-text">Скан всех виз, полученных из российской федерации (если имеются)</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Скан всех виз, полученных из российской федерации (если имеются)">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart120 verification-list-text">Бланк уведомления для гос. услуг</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Бланк уведомления для гос. услуг">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart121 verification-list-text">Билеты всего маршрута (авиасообщение и ж/д)</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="илеты всего маршрута (авиасообщение и ж/д)">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart121_1 verification-list-text">Документ об образовании</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Документ об образовании">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart121_2 verification-list-text">Заверенный нотариусом перевод документа об образовании</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Заверенный нотариусом перевод документа об образовании">
+        
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

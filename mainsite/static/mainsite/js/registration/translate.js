@@ -358,6 +358,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart119"), "Скан всех виз, полученных из российской федерации (если имеются)", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart120"), "Бланк уведомления для гос. услуг", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121"), "Билеты всего маршрута (авиасообщение и ж/д)", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_1"), "Документ об образовании", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_2"), "Заверенный нотариусом перевод документа об образовании", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart122"), "Сохранить", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart123"), "Памятка иностранному студенту", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart124"), "Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на", "innerText");
@@ -618,6 +620,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart119"), "Scan of all visas received from the Russian Federation (if any)", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart120"), "Notification form for state services", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121"), "Tickets of the whole route (air and rail)", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_1"), "Education document", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_2"), "Notarized translation of the document on education", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart122"), "Save", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart123"), "Memo to a foreign student", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart124"), "We offer you to read the information that will help you prepare for your arrival to Kazan and answer to", "innerText");
