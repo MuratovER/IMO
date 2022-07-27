@@ -1,4 +1,4 @@
-let elem = document.getElementById("hidden_block");
+let elem = document.querySelector(".hidden_block");
 elem.style.display = 'flex';
 function clickHeddenFuncton(){
     let elem = document.getElementById("hidden_block");

@@ -1154,7 +1154,7 @@
 }
 
 .footer {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1204,6 +1204,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 12px;
 }
 
 .footer_boxs_links_box_l {
