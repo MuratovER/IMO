@@ -405,6 +405,9 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart157"), "Уведомление о приезде", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart158"), "Скачать файл можно по", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart159"), "клику", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart160"), "Зайдите пожалуйста свашего персонального компольютера.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart161"), "Мобильная версия находится в процессе разработки", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart162"), "Скоро будет....", "innerText");
                     //TranslateLangObj.translater(document.querySelectorAll(".LengText-"),"","");
                     break;
 
@@ -667,6 +670,9 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart157"), "arrival notification", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart158"), "You can download the file by", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart159"), "click", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart160"), "Please log in to your personal computer.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart161"), "The mobile version is under development", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart162"), "Coming soon....", "innerText");
                     //TranslateLangObj.translater(document.querySelectorAll(""),"","");
                     break;
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Error</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="../../../static//mainsite/css/registration/login_base_style.css" rel="stylesheet">
+        <link href="../../../static/mainsite/css/registration/style_1.css" rel="stylesheet">
+        <link href="../../../static/mainsite/css/registration/style_2.css" rel="stylesheet">
+        <link href="../../../static/mainsite/css/phonepage_/Phonepage.css" rel="stylesheet">
+    </head>
+    <body class="body indexEnterWindow">
+        <div class="Phone_Head">
+            <!-- <a href="{% url 'home_page' %}"> -->
+            <div class="main_icon_logo_flexbox">
+                <div class="main_icon_logo">
+                </div>
+                <p class="main_icon_logo_text Lang-standart1">
+                    Институт Международного образования КАИ
+                </p>
+            </div>
+            <!-- </a> -->
+            <div class="buttonsInHeader_box">
+                <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name" id="lang" value="Ru">
+            </div>
+            <div class="headerLanguage" id="hidden_block">
+                <div class="russ headerLanguage_flexbox" id="Ru" onclick="defineLang(this,document.querySelector('.Lang-name'))">
+                    <div class="img_active change">
+                        <!-- <img src='{% static "mainsite/img/ru.png" %}' alt=""> -->
+                    </div>
+                    <div class="russ_txt">
+                        <p class="defineText">Русский</p>
+                    </div>
+                </div>
+                <div class="eng headerLanguage_flexbox" id="Eng" onclick="defineLang(this,document.querySelector('.Lang-name'))">
+                    <div class="img_no_active change">
+                        <!-- <img src='{% static "mainsite/img/eng.png" %}' alt=""> -->
+                    </div>
+                    <div class="eng_txt">
+                        <p class="defineText">English</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="Phone_Body">
+            <p class="Phone_Body_p Phone_Body_p1 Lang-standart160">
+                Зайдите пожалуйста свашего персонального компольютера.
+            </p>
+            <p class="Phone_Body_p Phone_Body_p2 Lang-standart161">
+                Мобильная версия находится в процессе разработки
+            </p>
+        </div>
+
+        <div class="Phone_bottom_box">
+            <bottom class="Phone_bottom Lang-standart162">
+                Скоро будет....
+            </bottom>
+        </div>
+
+
+
+
+        <script src="../../../static/mainsite/js/registration/translate.js">
+        </script>
+        <script src="../../../static/mainsite/js/registration/hidden_block_leng.js">
+        </script>
+        <script src="../../../static/mainsite/js/home_page/hidden_block_mainPage.js">
+        </script>
+    </body>
+</html>
