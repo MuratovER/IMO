@@ -246,7 +246,7 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart10"), "Подать заявку", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart11"), "Уведомления", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart12"), "Выйти", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84"), "Институт международного образования КНИТУ-КАИ", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84_1"), "Институт международного образования КНИТУ-КАИ", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart13"), "Начать сейчас", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart14"), "Подфак", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart15"), "Листайте вниз", "innerText");
@@ -508,7 +508,7 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart10"), "Apply", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart11"), "Notifications", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart12"), "Exit", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84"), "Institute of International Education KNRTU-KAI", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84_1"), "Institute of International Education KNRTU-KAI", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart13"), "Start Now", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart14"), "Subfaq", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart15"), "Scroll down", "innerText");
