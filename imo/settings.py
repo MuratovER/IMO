@@ -44,9 +44,11 @@ INSTALLED_APPS = [
     'mainsite',
     'multiselectfield',
     'phonenumber_field',
+    'django_user_agents',
 ]
 
 MIDDLEWARE = [
+
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -56,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_user_agents.middleware.UserAgentMiddleware',
 ]
 
 ROOT_URLCONF = 'imo.urls'
@@ -226,3 +229,7 @@ EMAIL_PORT = 587 # new
 EMAIL_USE_TLS = True # new
 
 CSRF_TRUSTED_ORIGINS=['https://imo.kai.ru/']
+
+
+
+USER_AGENTS_CACHE = 'default'

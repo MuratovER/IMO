@@ -1,14 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Error</title>
+        <title>Change page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="../../../static//mainsite/css/registration/login_base_style.css" rel="stylesheet">
-        <link href="../../../static/mainsite/css/registration/style_1.css" rel="stylesheet">
-        <link href="../../../static/mainsite/css/registration/style_2.css" rel="stylesheet">
-        <link href="../../../static/mainsite/css/phonepage_/Phonepage.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href='{% static "mainsite/img/Icon.svg" %}'/>
+        <link href='{% static "mainsite/css/registration/login_base_style.css" %}' rel="stylesheet">
+        <link href='{% static "mainsite/css/registration/style_1.css" %}' rel="stylesheet">
+        <link href='{% static "mainsite/css/registration/style_2.css" %}' rel="stylesheet">
+        <link href='{% static "mainsite/css/phonepage_/Phonepage.css" %}' rel="stylesheet">
+
+        <script src="{% static 'mainsite/js/registration/translate.js' %}"></script>
+        <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"></script>
+        <script src="{% static 'mainsite/js/home_page/hidden_block_mainPage.js' %}"></script>
     </head>
     <body class="body indexEnterWindow">
         <div class="Phone_Head">
@@ -59,14 +66,5 @@
             </bottom>
         </div>
 
-
-
-
-        <script src="../../../static/mainsite/js/registration/translate.js">
-        </script>
-        <script src="../../../static/mainsite/js/registration/hidden_block_leng.js">
-        </script>
-        <script src="../../../static/mainsite/js/home_page/hidden_block_mainPage.js">
-        </script>
     </body>
 </html>
