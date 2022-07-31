@@ -6,7 +6,7 @@
     <title>IMO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/png" href='{% static "mainsite/img/Icon.svg" %}'/>
+    <link rel="shortcut icon" type="image/png" href='{% static "mainsite/img/Icon.svg" %}' />
     <link href='{% static "mainsite/css/registration/login_base_style.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_1.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_2.css" %}' rel="stylesheet">
@@ -17,7 +17,7 @@
     <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
-    <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet"/>
+    <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
 
     <!-- <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"> -->
     </script>
@@ -35,21 +35,18 @@
     </script>
     <script src="{% static 'mainsite/js/registration/phoneinput.js' %}">
     </script>
-    <script src="{% static 'mainsite/js/registration/birthdayinput.js' %}">
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
-
     <!-- Date -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-   
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr">
+    </script>
+    <script>
+        flatpickr("#myID", {});
+    </script>
 </head>
-    <header class="header">
-        <a href="{% url 'home_page' %}">
+<header class="header">
+    <a href="{% url 'home_page' %}">
         <div class="main_icon_logo_flexbox">
             <div class="main_icon_logo">
             </div>
@@ -57,19 +54,19 @@
                 Институт Международного образования КАИ
             </p>
         </div>
-        </a>
+    </a>
 
-        <div class="menu_links_boxs">
-            <div class="menu_links_box_displayWhere700px">
-                <div class="menu_links_box_iconWhereDisplay700px">
-                    <div class="menu_links_box_iconWhereDisplay700pxImgsvg"></div>
-                </div>
-                <div class="menu_links_box_text700px_box">
-                    <p class="menu_links_box_text700px Lang-standart2">Меню</p>
-                </div>
+    <div class="menu_links_boxs">
+        <div class="menu_links_box_displayWhere700px">
+            <div class="menu_links_box_iconWhereDisplay700px">
+                <div class="menu_links_box_iconWhereDisplay700pxImgsvg"></div>
             </div>
-            <div class="menu_links_boxs_links">
-                <a href="{% url 'enteringimo' %}">
+            <div class="menu_links_box_text700px_box">
+                <p class="menu_links_box_text700px Lang-standart2">Меню</p>
+            </div>
+        </div>
+        <div class="menu_links_boxs_links">
+            <a href="{% url 'enteringimo' %}">
                 <div class="menu_links_boxs_links_link">
                     <div class="menu_links_boxs_links_link_icon">
                         <div class="standartStyleForimg books"></div>
@@ -78,9 +75,9 @@
                         <p class="menu_links_boxs_links_link_iconText Lang-standart3">#поступающим</p>
                     </div>
                 </div>
-                </a>
+            </a>
 
-                <a href="{% url 'faq' %}">
+            <a href="{% url 'faq' %}">
                 <div class="menu_links_boxs_links_link">
                     <div class="menu_links_boxs_links_link_icon">
                         <div class="standartStyleForimg key"></div>
@@ -89,64 +86,68 @@
                         <p class="menu_links_boxs_links_link_iconText Lang-standart4">#вопрос-ответ</p>
                     </div>
                 </div>
-                </a>
+            </a>
 
-                <a href="{% url 'news_list' %}">
-                    <div class="menu_links_boxs_links_link">
-                        <div class="menu_links_boxs_links_link_icon">
-                            <div class="standartStyleForimg gun"></div>
-                        </div>
-                        <div class="menu_links_boxs_links_link_iconText_box">
-                            <p class="menu_links_boxs_links_link_iconText Lang-standart5">#новости</p>
-                        </div>
+            <a href="{% url 'news_list' %}">
+                <div class="menu_links_boxs_links_link">
+                    <div class="menu_links_boxs_links_link_icon">
+                        <div class="standartStyleForimg gun"></div>
                     </div>
-                </a>
+                    <div class="menu_links_boxs_links_link_iconText_box">
+                        <p class="menu_links_boxs_links_link_iconText Lang-standart5">#новости</p>
+                    </div>
+                </div>
+            </a>
 
-                <div class="buttonsInHeader_box displayNoneWhere displayon clickOnserch">
-                    <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search">
-                    <div class="buttonsInHeader_box_search_TextBox">
-                        <p class="buttonsInHeader_box_search_Text Lang-standart6">Поиск</p>
-                    </div>
+            <div class="buttonsInHeader_box displayNoneWhere displayon clickOnserch">
+                <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search">
+                <div class="buttonsInHeader_box_search_TextBox">
+                    <p class="buttonsInHeader_box_search_Text Lang-standart6">Поиск</p>
                 </div>
             </div>
         </div>
-        <div class="buttonsInHeader">
-            <div class="buttonsInHeader_box displayNoneWhere displayof clickOnserch">
-                <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search">
-            </div>
-            <div class="buttonsInHeader_box">
-                <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name" id="lang" value="Ru">
-            </div>
-            <div class="headerLanguage" id="hidden_block">
-                <div class="russ headerLanguage_flexbox" id="Ru" onclick="defineLang(this,document.querySelector('.Lang-name'))">
-                    <div class="img_active change">
-                        <img src='{% static "mainsite/img/ru.png" %}' alt="">
-                    </div>
-                    <div class="russ_txt">
-                        <p class="defineText">Русский</p>
-                    </div>
+    </div>
+    <div class="buttonsInHeader">
+        <div class="buttonsInHeader_box displayNoneWhere displayof clickOnserch">
+            <input type="button" class="buttonsInHeader_box_search noStyelButt cursorP" id="search">
+        </div>
+        <div class="buttonsInHeader_box">
+            <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name" id="lang" value="Ru">
+        </div>
+        <div class="headerLanguage" id="hidden_block">
+            <div class="russ headerLanguage_flexbox" id="Ru"
+                onclick="defineLang(this,document.querySelector('.Lang-name'))">
+                <div class="img_active change">
+                    <img src='{% static "mainsite/img/ru.png" %}' alt="">
                 </div>
-                <div class="eng headerLanguage_flexbox" id="Eng" onclick="defineLang(this,document.querySelector('.Lang-name'))">
-                    <div class="img_no_active change">
-                        <img src='{% static "mainsite/img/eng.png" %}' alt="">
-                    </div>
-                    <div class="eng_txt">
-                        <p class="defineText">English</p>
-                    </div>
+                <div class="russ_txt">
+                    <p class="defineText">Русский</p>
                 </div>
             </div>
+            <div class="eng headerLanguage_flexbox" id="Eng"
+                onclick="defineLang(this,document.querySelector('.Lang-name'))">
+                <div class="img_no_active change">
+                    <img src='{% static "mainsite/img/eng.png" %}' alt="">
+                </div>
+                <div class="eng_txt">
+                    <p class="defineText">English</p>
+                </div>
+            </div>
+        </div>
         {% if request.user.is_authenticated %}
-            <div class="buttonsInHeader_box">
-                <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton" onclick="location.href='/profile'">
-            </div>
+        <div class="buttonsInHeader_box">
+            <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
+                onclick="location.href='/profile'">
+        </div>
         {% else %}
-        
-            <div class="buttonsInHeader_box">
-                <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton" onclick="location.href='/signup'">
-            </div>
+
+        <div class="buttonsInHeader_box">
+            <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
+                onclick="location.href='/signup'">
+        </div>
 
         {% endif %}
-            <!-- <div class="hideMenu_in_Proffil">
+        <!-- <div class="hideMenu_in_Proffil">
                 <div class="hideMenu_in_Proffil_litleBlock">
                     <div class="hideMenu_in_Proffil_box hideMenu_in_Proffil_boxMURGBOTT">
 
@@ -176,9 +177,7 @@
                                 <path class="testhange2" fill-rule="evenodd" clip-rule="evenodd" d="M0 3.81738C0 2.16053 1.34315 0.817383 3 0.817383H11C14.866 0.817383 18 3.95139 18 7.81738V17.8174C18 19.4742 16.6569 20.8174 15 20.8174H3C1.34315 20.8174 0 19.4742 0 17.8174V3.81738ZM10 2.81738H3C2.44772 2.81738 2 3.2651 2 3.81738V17.8174C2 18.3697 2.44772 18.8174 3 18.8174H15C15.5523 18.8174 16 18.3697 16 17.8174V7.81738H10V2.81738ZM15.584 5.81738C14.9413 4.34644 13.6113 3.24448 12 2.9174V5.81738H15.584Z" fill="#686868"/>
                             </svg>
 
-                            <!-- <img src='{% static "mainsite/img/Union.svg" %}' alt="noIMG" class="hideMenu_in_Proffil_LCProf_img"> -->
-                        </div>
-                        <!-- <div class="hideMenu_in_Proffil_LCProf_boxp">
+                              iv class="hideMenu_in_Proffil_LCProf_boxp">
                             <p class="hideMenu_in_Proffil_LCProf_p textstule Lang-standart10">Подать заявку </p>
                         </div>
                     </div>
@@ -211,12 +210,13 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <div class="buttonsInHeader_box">
+        <!-- <div class="buttonsInHeader_box">
                     <div class="buttonsInHeader_box_notifications" id="notifications"></div>
                 </div> -->
 
-        </div>
-    </header>
+    </div>
+</header>
+
 <body>
     {% block content %} {% endblock %}
 
@@ -245,7 +245,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="footer_boxs_2 footer_boxs">
         <div class="footer_boxs_boxH3">
             <p class="helpText Lang-standart73">Контактная информация</p>
@@ -278,39 +278,41 @@
             <p class="Memo_box_textInf_p nowVW">international@kai.ru</p>
         </div>
     </div>
-        <div class="footer_boxHR marginTOP_70px">
-            <hr class="footer_hr" />
-        </div>
+    <div class="footer_boxHR marginTOP_70px">
+        <hr class="footer_hr" />
+    </div>
 
-        <div class="footer_FM">
-            <div class="footer_FM1">
-                <!-- <div class="footer_FM1_Logo">
+    <div class="footer_FM">
+        <div class="footer_FM1">
+            <!-- <div class="footer_FM1_Logo">
 
                 </div> -->
-                <div class="footer_FM1_boxp">
-                    <p class="footer_FM1_p Lang-standart79">© Институт международного образования КНИТУ-КАИ Все права защищены 2022
-                    </p>
-                </div>
+            <div class="footer_FM1_boxp">
+                <p class="footer_FM1_p Lang-standart79">© Институт международного образования КНИТУ-КАИ Все права
+                    защищены 2022
+                </p>
             </div>
-            <div class="footer_FM2">
-                <div class="footer_FM2 link_FM2 cursorP">
-                    <p class="link_FM2Text Lang-standart80">© КНИТУ-КАИ Все права защищены 2022</p>
-                </div>
-                <!-- <div class="footer_FM2 link_FM2 cursorP">
+        </div>
+        <div class="footer_FM2">
+            <div class="footer_FM2 link_FM2 cursorP">
+                <p class="link_FM2Text Lang-standart80">© КНИТУ-КАИ Все права защищены 2022</p>
+            </div>
+            <!-- <div class="footer_FM2 link_FM2 cursorP">
                     <p class="link_FM2Text Lang-standart81">Правила использования</p>
                 </div>
                 <div class="footer_FM2 link_FM2 cursorP">
                     <p class="link_FM2Text Lang-standart82">Помощь</p>
                 </div> -->
-            </div>
         </div>
     </div>
-    <script src="{% static 'mainsite/js/registration/translate.js' %}">
-    </script>
-    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
-    </script>
-    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
-    </script>
-    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
-    </script>
+</div>
+<script src="{% static 'mainsite/js/registration/translate.js' %}">
+</script>
+<script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
+</script>
+<script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
+</script>
+<script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
+</script>
+
 </html>
