@@ -8,16 +8,28 @@ let buttonsInHeader_box_lang = document.querySelector('.buttonsInHeader_box_lang
 var none = 'none';
 var flex = 'flex';
 
-menuHiddenButtom.addEventListener('click', () => FuncClickDisplayStyleCheck(Elem));
+if(menuHiddenButtom != undefined)
+{
+    menuHiddenButtom.addEventListener('click', () => FuncClickDisplayStyleCheck(Elem));
+}
+if(hideMenuInProffil != undefined)
+{
+    hideMenuInProffil.addEventListener('click', () => { OpenMenu(document.querySelector(".hideMenu_in_Proffil")); });
+    console.log(Serch);
+}
 window.addEventListener('resize', () => CheckWindowSize(Elem))
-hideMenuInProffil.addEventListener('click', () => { OpenMenu(document.querySelector(".hideMenu_in_Proffil")) });
-console.log(Serch);
-clickOnserch[0].addEventListener('click', () => OpenSerchMenu(Serch, serchON_box));
-clickOnserch[1].addEventListener('click', () => OpenSerchMenu(Serch, serchON_box));
-buttonsInHeader_box_lang.addEventListener('click', () => { OpenMenu(document.querySelector('.headerLanguage')) })
 
-serchON_box.addEventListener('click', () => OpenSerchMenu(Serch, serchON_box));
-Serch.addEventListener('click', () => CloseSerchMenu(Serch, serchON_box));
+if(clickOnserch[0] != undefined && clickOnserch[1] != undefined)
+{
+    clickOnserch[0].addEventListener('click', () => OpenSerchMenu(Serch, serchON_box));
+    clickOnserch[1].addEventListener('click', () => OpenSerchMenu(Serch, serchON_box));
+}
+buttonsInHeader_box_lang.addEventListener('click', () => { OpenMenu(document.querySelector('.headerLanguage')); });
+if(serchON_box != undefined && Serch != undefined)
+{
+    serchON_box.addEventListener('click', () => OpenSerchMenu(Serch, serchON_box));
+    Serch.addEventListener('click', () => CloseSerchMenu(Serch, serchON_box));
+}
 
 function CloseSerchMenu(Ssserch, emlement1) {
     Ssserch.style.height = 0 + '%';

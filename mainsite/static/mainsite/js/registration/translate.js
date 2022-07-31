@@ -246,7 +246,7 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart10"), "Подать заявку", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart11"), "Уведомления", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart12"), "Выйти", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84"), "Институт международного образования КНИТУ-КАИ", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84_1"), "Институт международного образования КНИТУ-КАИ", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart13"), "Начать сейчас", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart14"), "Подфак", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart15"), "Листайте вниз", "innerText");
@@ -358,6 +358,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart119"), "Скан всех виз, полученных из российской федерации (если имеются)", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart120"), "Бланк уведомления для гос. услуг", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121"), "Билеты всего маршрута (авиасообщение и ж/д)", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_1"), "Документ об образовании", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_2"), "Заверенный нотариусом перевод документа об образовании", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart122"), "Сохранить", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart123"), "Памятка иностранному студенту", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart124"), "Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на", "innerText");
@@ -403,6 +405,9 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart157"), "Уведомление о приезде", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart158"), "Скачать файл можно по", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart159"), "клику", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart160"), "Зайдите пожалуйста свашего персонального компольютера.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart161"), "Мобильная версия находится в процессе разработки", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart162"), "Скоро будет....", "innerText");
                     //TranslateLangObj.translater(document.querySelectorAll(".LengText-"),"","");
                     break;
 
@@ -506,7 +511,7 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart10"), "Apply", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart11"), "Notifications", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart12"), "Exit", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84"), "Institute of International Education KNRTU-KAI", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart84_1"), "Institute of International Education KNRTU-KAI", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart13"), "Start Now", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart14"), "Subfaq", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart15"), "Scroll down", "innerText");
@@ -618,6 +623,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart119"), "Scan of all visas received from the Russian Federation (if any)", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart120"), "Notification form for state services", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121"), "Tickets of the whole route (air and rail)", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_1"), "Education document", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart121_2"), "Notarized translation of the document on education", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart122"), "Save", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart123"), "Memo to a foreign student", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart124"), "We offer you to read the information that will help you prepare for your arrival to Kazan and answer to", "innerText");
@@ -663,6 +670,9 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart157"), "arrival notification", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart158"), "You can download the file by", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart159"), "click", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart160"), "Please log in to your personal computer.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart161"), "The mobile version is under development", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Lang-standart162"), "Coming soon....", "innerText");
                     //TranslateLangObj.translater(document.querySelectorAll(""),"","");
                     break;
 
