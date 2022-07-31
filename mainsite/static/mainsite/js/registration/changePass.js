@@ -1,33 +1,33 @@
-function mouseUp3(obj){
+function mouseUp3(obj) {
     changeInputText3(obj);
 }
-function mouseUp1(obj){
+function mouseUp1(obj) {
     changeInputText1(obj);
 }
-function mouseUp(obj){
+function mouseUp(obj) {
     changeInputText(obj);
 }
-function ConstructValidationInput(obj){
+function ConstructValidationInput(obj) {
     this.obj = obj;
     this.Validation = () => {
-        if(this.obj.value != '') {this.obj.style.borderColor = "green"; console.log(this.obj.style.borderColor); return true;} else{ this.obj.style.borderColor = "red"; console.log(this.obj.style.borderColor); return false;}
+        if (this.obj.value != '') { this.obj.style.borderColor = "green"; console.log(this.obj.style.borderColor); return true; } else { this.obj.style.borderColor = "red"; console.log(this.obj.style.borderColor); return false; }
     }
 }
 var arr3 = [12];
 var arr1 = [11];
 var arr = [7];
-for(let i = 0; i < arr.length; i++){
+for (let i = 0; i < arr.length; i++) {
     arr[i] == false;
 }
-for(let i = 0; i < arr1.length; i++){
+for (let i = 0; i < arr1.length; i++) {
     arr1[i] == false;
 }
-for(let i = 0; i < arr3.length; i++){
+for (let i = 0; i < arr3.length; i++) {
     arr3[i] == false;
 }
-function changeInputText3(obj){
+function changeInputText3(obj) {
     let validObj = new ConstructValidationInput(obj);
-    switch(obj.id){
+    switch (obj.id) {
         case "InputFieldName3":
             arr3[0] = validObj.Validation();
             console.log(arr3[0]);
@@ -70,9 +70,9 @@ function changeInputText3(obj){
             console.log("error_changePass.js-4");
     }
 }
-function changeInputText1(obj){
+function changeInputText1(obj) {
     let validObj = new ConstructValidationInput(obj);
-    switch(obj.id){
+    switch (obj.id) {
         case "InputFieldName1":
             arr1[0] = validObj.Validation();
             console.log(arr1[0]);
@@ -108,36 +108,46 @@ function changeInputText1(obj){
         case "InputFieldEmailAddressPer1":
             arr1[10] = validObj.Validation();
             break;
+
         default:
             console.log("error_changePass.js-4");
     }
 }
-function changeInputText(obj){
+
+// Это часть рабочая 
+function changeInputText(obj) {
     let validObj = new ConstructValidationInput(obj);
-    switch(obj.id){
+    switch (obj.id) {
         case "InputFieldName":
             arr[0] = validObj.Validation();
             console.log(arr[0]);
             break;
-        case "InputFieldPassword":
+        case "id_password1":
             arr[1] = validObj.Validation();
             console.log(arr[1]);
             break;
-        case "InputFieldMiddleValidation":
+        case "id_name":
             arr[2] = validObj.Validation();
             break;
-        case "InputFieldCountryNameValidation":
+        case "id_email":
             arr[3] = validObj.Validation();
             break;
-        case "InputFieldYourNativeSity":
+        case "id_city":
             arr[4] = validObj.Validation();
             break;
-        case "InputFieldYourNumberPhone":
+        case "id_country":
             arr[5] = validObj.Validation();
             break;
-        case "InputFieldEmailAddress":
+        case "id_gender":
             arr[6] = validObj.Validation();
             break;
+        case "id_birthdate":
+            arr3[8] = validObj.Validation();
+            break;
+        case "id_citizenship":
+            arr3[9] = validObj.Validation();
+            break;
+
         default:
             console.log("error_changePass.js-4");
     }

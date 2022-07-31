@@ -72,6 +72,7 @@ def signup_view(request):
         login(request, user)
         return redirect('extra')
     else:
+        messages.info(request, 'invalid registration details')
         form = CreateUserForm()
     return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})
 

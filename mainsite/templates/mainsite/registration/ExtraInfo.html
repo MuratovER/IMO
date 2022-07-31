@@ -2,13 +2,14 @@
 {% block content %}
 {% load static %}
 <style>
-    .header{
+    .header {
         display: none;
     }
 </style>
+
 <div id="hend" class="indexEnterWindow">
     <div class="main_block" id="main_block">
-     {% if request.user.is_authenticated %}
+        {% if request.user.is_authenticated %}
         <form method="POST" action="" class="main_block_form" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="main_block_form_flex_">
@@ -31,6 +32,22 @@
                             <div class="main_block_form_flex">
                                 <!-- {{ form.as_p }} -->
                                 <!-- <div  style="flex-direction: column;"> -->
+                                {% if form.errors %}
+                                <!-- Error messaging -->
+                                <div id="errors">
+                                    <div class="inner">
+                                        <p>There were some errors in the information you entered. Please correct the
+                                            following:</p>
+                                        <ul>
+                                            {% for field in form %}
+                                            {% if field.errors %}<li>{{ field.label }}: {{ field.errors|striptags }}
+                                            </li>{% endif %}
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /Error messaging -->
+                                {% endif %}
                                 {{ form.user}}
                                 {{ form.name }}
                                 {{ form.email }}
@@ -39,7 +56,7 @@
                                 {{ form.gender }}
                                 {{ form.birthdate }}
                                 <div class="phone-number-field">
-                                {{ form.phone }}
+                                    {{ form.phone }}
                                 </div>
                                 {{ form.citizenship }}
 
@@ -56,10 +73,10 @@
             </div>
         </form>
         {% else %}
-        
-         <a href="{% url 'login' %}">Login</a>
 
-    {% endif %}
+        <a href="{% url 'login' %}">Login</a>
+
+        {% endif %}
         <div class="main_block_footer_blockFlex">
             <div class="main_block_footer">
                 <div class="main_block_footer_boxs">
@@ -79,6 +96,9 @@
         </div>
     </div>
 
-
+    <script>
+        flatpickr("input[type=date]", {});
+        // $(".selector").flatpickr(optional_config);
+    </script>
 </div>
 {% endblock %}
