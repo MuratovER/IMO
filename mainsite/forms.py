@@ -101,6 +101,7 @@ class ProfileForm(forms.ModelForm):
                                             'style': "border-color: green;",}),
             'birthdate': forms.DateInput(attrs={'class': "main_block_form_textName main_block_form_input_1 Iamastud_FORM1 LengText-selectYourCountr",
                                             'id': "id_birthdate",
+                                            'type': "date",
                                             'placeholder': "Ваш день рождения 2000-05-15",
                                             'onmousedown': "mouseUp(this)" ,
                                             'onmouseup': "mouseUp(this)" ,
