@@ -1,72 +1,58 @@
 {% extends 'mainsite/base.html' %} {% block content %} {% load static %}
 <style>
-    .header{
+    .header {
         display: none;
     }
 </style>
-<div id="hend" class="indexEnterWindow">  
+<div id="hend" class="indexEnterWindow">
     <div class="main_block" id="main_block">
         <form method="POST" action="" class="main_block_form">
             {% csrf_token %}
-            <div class="main_block_form_flex_" >
-                <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit" id="FormBlockHideFunction" style="display: block;">
+            <div class="main_block_form_flex_">
+                <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit"
+                    id="FormBlockHideFunction" style="display: block;">
                     <div class="main_box_but_form_Iamastud" id="but_form_Iamastud1">
                         <div class="main_box_but_form_Iamastud_FORM">
                             <div class="main_block_form_flex">
-                                <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
-                                    <div class="main_block_Buttom_ __">
-                                        <div class="main_block_Buttom_Arrow" id="arrow"></div>
-                                        <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit" onclick="exitBT()">назад</a> <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
-                                    </div>
-                                    <div class="main_block_form_flex_tr">
-                                        <div class="main_block_form_flex_td1 LengText-td1Youlifefrom">Вы родом из:</div>
-                                        <div class="main_block_form_flex_td2 DataPersText">Таджикистан</div>
-                                    </div>
-                                    <div class="main_block_form_flex_tr">
-                                        <div class="main_block_form_flex_td1 LengText-td1YourLifeSity">Ваш родной город:</div>
-                                        <div class="main_block_form_flex_td2 DataPersText">Душамбе</div>
-                                    </div>
-                                    <div class="main_block_form_flex_tr">
-                                        <div class="main_block_form_flex_td1 LengText-td1Howicallyou">Как к Вам обращаться:</div>
-                                        <div class="main_block_form_flex_td2 DataPersText">Абдулла Ибн Хатаб</div>
-                                    </div>
-                                    <div class="main_block_form_flex_tr">
-                                        <div class="main_block_form_flex_td1 LengText-td1NumPhone">Номер телефона:</div>
-                                        <div class="main_block_form_flex_td2 DataPersText">+971 56 231 2415</div>
-                                    </div>
-                                    <div class="main_block_form_flex_tr">
-                                        <div class="main_block_form_flex_td1 LengText-td1Email">Адрес электронной почты:</div>
-                                        <div class="main_block_form_flex_td2 DataPersText">asdsd41ddfwterwt@gmail.com</div>
-                                    </div>
-                                </div>
                                 <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
-                                <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите учетные данные</p>
+                                <p id="TextButtomLogin"
+                                    class="main_block_form_InformationalText LengText-TypeOfRegistration">Введите
+                                    учетные данные</p>
+                                {% for field in form %}
+                                {{ field.errors.as_ul }}
+                                {% endfor %}
                                 <div class="main_block_form_textName_flexBox">
-                                    {{ form.username}}       
+                                    {{ form.username}}
                                 </div>
                                 <div class="main_block_form_textPassword_box_flexBox">
                                     <div class="main_block_form_textPassword_box">
                                         {{ form.password1}}
-                                        <a class="informationEay" id="informationEay" onclick="ChangeEay(this, document.querySelector('#id_password1'))"></a>
+                                        <a class="informationEay" id="informationEay"
+                                            onclick="ChangeEay(this, document.querySelector('#id_password1'))"></a>
                                     </div>
                                 </div>
                                 <div class="child_element_flex">
-                                    <input type="submit" class="main_block_form_button1 main_block_form_input_1 trueChangePass1"  value="Дальше" onclick="FormBlockHideFunction(1,this,boxes = document.querySelectorAll('.FormBlockHideFunction') )">
+                                    <input type="submit"
+                                        class="main_block_form_button1 main_block_form_input_1 trueChangePass1"
+                                        value="Дальше"
+                                        onclick="FormBlockHideFunction(1,this,boxes = document.querySelectorAll('.FormBlockHideFunction') )">
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-          </div>
-        </div>
-    </form>
+            </div>
+        </form>
         <div class="main_block_footer_blockFlex">
             <div class="main_block_footer">
                 <div class="main_block_footer_boxs">
                     <div class="main_block_footer_box">
-                        <a class="main_block_footer_box_text1 LengText-PrivacyPolicy" id="footer_box_text1" href="#">Политика конфидециальности</a>
+                        <a class="main_block_footer_box_text1 LengText-PrivacyPolicy" id="footer_box_text1"
+                            href="#">Политика конфидециальности</a>
                     </div>
                     <div class="main_block_footer_box">
-                        <a class="main_block_footer_box_text1 LengText-TermsOfUse" id="footer_box_text2" href="#">Условия пользования</a>
+                        <a class="main_block_footer_box_text1 LengText-TermsOfUse" id="footer_box_text2"
+                            href="#">Условия пользования</a>
                     </div>
                 </div>
                 <p class="main_block_footer_box_text12 lawTextKai LengText-WhiRigh">
@@ -77,4 +63,4 @@
     </div>
 </div>
 
-{% endblock %} 
+{% endblock %}
