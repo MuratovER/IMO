@@ -17,6 +17,7 @@
     <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/preloader/preloader.css" %}' rel="stylesheet">
     <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
 
     <!-- <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"> -->
@@ -37,6 +38,8 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
+    <script src="{% static 'mainsite/js/preloader/preloader.js' %}">
+    </script>
     <!-- Date -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr">
@@ -45,6 +48,9 @@
         flatpickr("#myID", {});
     </script>
 </head>
+<div id="preloader_malc">
+    <div class="spinner"></div>
+</div>
 <header class="header">
     <a href="{% url 'home_page' %}">
         <div class="main_icon_logo_flexbox">
@@ -55,7 +61,6 @@
             </p>
         </div>
     </a>
-
     <div class="menu_links_boxs">
         <div class="menu_links_box_displayWhere700px">
             <div class="menu_links_box_iconWhereDisplay700px">

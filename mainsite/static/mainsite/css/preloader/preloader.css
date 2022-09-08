@@ -1,0 +1,35 @@
+.spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: var(--pre-loader-img); */
+    background-image: url('../../img/preloader/preloader.svg');
+    background-repeat: no-repeat;
+    animation: loading 2s linear infinite;
+    background-position: center;
+}
+@keyframes loading {
+    50% {
+        transform: rotate(200deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#preloader_malc {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9;
+    /* background-color: var( --pre-loader-color); */
+    background-color: #FFF;
+
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
