@@ -25,6 +25,8 @@ def home_page(request):
 
 def login_view(request):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         if request.user.is_authenticated:
             return redirect('home_page')
         else:
@@ -41,8 +43,6 @@ def login_view(request):
 
             ctx = {}
         return render(request, 'mainsite/registration/LoginIndex.html', ctx)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
 
 
 
@@ -51,6 +51,8 @@ def profile_view(request):
 
 
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         profile = Profile.objects.get(user=request.user)
         if request.method == "POST":
             form = ProfileForm(request.POST, instance=profile)
@@ -66,8 +68,6 @@ def profile_view(request):
             'form': form,
         }
         return render(request, 'mainsite/profile/profile.html', context)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
 
 
 
@@ -77,6 +77,8 @@ def signup_view(request):
     '''вьюха с логикой регистрации'''
 
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         form = CreateUserForm(request.POST)
         if form.is_valid():
             user = form.save()
@@ -93,21 +95,22 @@ def signup_view(request):
             messages.info(request, 'invalid registration details')
             form = CreateUserForm()
         return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
+
 
 
 
 def logout_view(request):
     if request.user_agent.is_mobile:
-        return render(request, 'mainsite/home/home_page.html')
-    else:
         return render(request, 'mainsite/PhonePage/index.html', )
+    else:
+        return render(request, 'mainsite/home/home_page.html')
 
 
 
 def extra_view(request):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         try:
             profile = request.user.profile
         except Profile.DoesNotExist:
@@ -122,28 +125,27 @@ def extra_view(request):
             form = ProfileForm(instance=profile)
         ctx = {'form': form}
         return render(request, 'mainsite/registration/ExtraInfo.html', ctx)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
+
 
 
              
 def privacypolicy_view(request):
     if request.user_agent.is_mobile:
-        return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
-    else:
         return render(request, 'mainsite/PhonePage/index.html', )
+    else:
+        return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
+
 
     
 def enteringimo_view(request):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         last_4 = Post.objects.order_by()[:4]
         context = {
             'last_4': last_4
         }
         return render(request, 'mainsite/enteringIMO/EnteringIMO.html', context)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
-
 
 def error_404_view(request, exception):
 
@@ -151,17 +153,20 @@ def error_404_view(request, exception):
 
 def faq_view(request):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         questions = Faq.objects.all()
         context = {'questions': questions}
         return render(request, 'mainsite/faq/faq.html', context)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
+
 
 
 
 @login_required
 def profile_edit(request):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         profile = Profile.objects.get(user=request.user)
         if request.method == "POST":
             form = ProfileForm(request.POST, instance=profile)
@@ -173,8 +178,7 @@ def profile_edit(request):
             form = ProfileForm(instance=profile)
 
         return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
+
 
 
 

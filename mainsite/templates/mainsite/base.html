@@ -19,6 +19,8 @@
     <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
     <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet">
+
 
     <!-- <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"> -->
     </script>
@@ -37,6 +39,8 @@
     </script>
     <script src="{% static 'mainsite/js/registration/phoneinput.js' %}">
     </script>
+    <script src="{% static 'mainsite/js/registration/preloader.js' %}">
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
     <script src="{% static 'mainsite/js/them/them.js' %}"></script>
@@ -48,6 +52,11 @@
         flatpickr("#myID", {});
     </script>
 </head>
+<div class="preloader">
+    <div class="preloader__row">
+        <div class="spinner preloader__item"></div>
+    </div>
+</div>
 <header class="header">
     <a href="{% url 'home_page' %}">
         <div class="main_icon_logo_flexbox">

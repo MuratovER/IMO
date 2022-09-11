@@ -57,6 +57,8 @@ $(document).ready(
             $("p").css("color","#fff");
             $("a").css("color","#fff");
             $(".specialty_box_picture_text").css("color","#fff");
+            $(".preloader").css("background-color","#000212");
+            $(".spinner").css("background-image","url('static/mainsite/img/preloader/preloaderDark.svg')");
         }
         function themFalse(){
             localStorage.setItem("them","false");
@@ -80,6 +82,9 @@ $(document).ready(
             $("p").css("color","#000");
             $("a").css("color","#000");
             $(".specialty_box_picture_text").css("color","#fff");
+            $(".preloader").css("background-color","#FFF");
+            $(".spinner").css("background-image","url('static/mainsite/img/preloader/preloader.svg')");
+
         }
     }
 );

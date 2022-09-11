@@ -7,7 +7,7 @@
 
 
 .header {
-    z-index: 99;
+    z-index: 8;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -1367,7 +1367,7 @@
 
 .serchON {
     cursor: pointer;
-    z-index: 99;
+    z-index: 8;
     position: fixed;
     top: -102px;
     left: 0px;
@@ -1385,7 +1385,7 @@
 }
 
 .serchON_box {
-    z-index: 99;
+    z-index: 8;
     width: 100%;
     display: none;
     justify-content: center;
