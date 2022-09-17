@@ -4,7 +4,9 @@
     flex-direction: column;
     align-items: center;
 }
-
+p{
+    margin-bottom: 0;
+}
 
 .header {
     z-index: 8;
@@ -275,6 +277,13 @@
 
 .text_List_In_buttom_imgSvg {
     background-image: url('../home_page/cssimg/circlePlasArrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+}
+.text_List_In_buttom_imgSvgDark {
+    background-image: url('../home_page/cssimg/circlePlasArrowDark.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 45px;
