@@ -9,6 +9,7 @@ body {
 
 :root {
     --hand-cursor-w: pointer;
+    --hand-cursor-d: default;
     --hand-cursor-b: url(../home_page/cssimg/cursor_b.svg) 2 2, auto;
     --font-inter: 'Inter';
     --font-inter-Bold: 'Inter Bold';

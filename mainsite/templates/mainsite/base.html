@@ -119,7 +119,7 @@
             </div>
             <div class=""><!--buttonsInHeader_box displayNoneWhere clickOnserch-->
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input cursor" type="checkbox" id="flexSwitchCheckDefault">
                 </div>
             </div>
         </div>
@@ -155,6 +155,11 @@
         <div class="buttonsInHeader_box">
             <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
                 onclick="location.href='/profile'">
+        </div>
+        {% elif  request.user.is_profiled %}
+        <div class="buttonsInHeader_box">
+            <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
+                onclick="location.href='/extra'">
         </div>
         {% else %}
 
@@ -311,7 +316,7 @@
             </div>
         </div>
         <div class="footer_FM2">
-            <div class="footer_FM2 link_FM2 cursorP">
+            <div class="footer_FM2 link_FM2 cursorN">
                 <p class="link_FM2Text Lang-standart80">© КНИТУ-КАИ Все права защищены 2022</p>
             </div>
             <!-- <div class="footer_FM2 link_FM2 cursorP">
