@@ -49,7 +49,6 @@ def login_view(request):
 
 def profile_view(request):
 
-
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
     else:
@@ -108,6 +107,7 @@ def logout_view(request):
 
 
 def extra_view(request):
+
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
     else:
@@ -185,6 +185,8 @@ def profile_edit(request):
 @login_required
 def password_edit(request):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else: 
         profile = Profile.objects.get(user=request.user)
         if request.method == "POST":
             form = ProfileForm(request.POST, instance=profile)
@@ -196,8 +198,6 @@ def password_edit(request):
             form = ProfileForm(instance=profile)
 
         return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
 
 
 @login_required
@@ -208,6 +208,8 @@ def password_change_done(request):
 
 def aboutkazan_view(request):
     if not request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else: 
         # question = get_object_or_404(Faq, pk=pk)
         question = Faq.objects.order_by()[:5]
         context = {
@@ -215,25 +217,26 @@ def aboutkazan_view(request):
             'question': question,
         }
         return render(request, 'mainsite/home/aboutKazan.html', context)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
+
 
 
 def news_list_view(request):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else: 
         news = Post.objects.all()
 
         context = {
             'news': news
         }
         return render(request, 'mainsite/news/news_list.html', context)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
 
 
 
 def news_view(request, pk):
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
         post = get_object_or_404(Post, pk=pk)
         last_4 = Post.objects.order_by()[:4]
         context = {
@@ -241,8 +244,6 @@ def news_view(request, pk):
             'last_4': last_4,
         }
         return render(request, 'mainsite/news/news.html', context)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
 
 
 
@@ -252,15 +253,15 @@ def news_view(request, pk):
     #     return render(request, 'mainsite/PhonePage/index.html', )
 
 def speciality_view(request, key):
-
     if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:    
         speciality = get_object_or_404(Speciality, key=key)
         context = {
             'speciality': speciality
 
         }
         return render(request, 'mainsite/incomingIMO/incomingIMO.html', context)
-    else:
-        return render(request, 'mainsite/PhonePage/index.html', )
+
 
 
