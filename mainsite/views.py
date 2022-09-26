@@ -74,7 +74,6 @@ def profile_view(request):
 
 def signup_view(request):
     '''вьюха с логикой регистрации'''
-
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
     else:
