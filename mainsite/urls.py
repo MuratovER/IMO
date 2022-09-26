@@ -1,12 +1,13 @@
 from unicodedata import name
 from django.urls import path
 from django.contrib.auth import views as auth_views
-
+from django.views.decorators.cache import cache_page
 from . import views
 
 
 urlpatterns = [
     path('', views.home_page, name='home_page'),
+    # path('signup/', (cache_page(60)(views.signup_view)), name='signup'),
     path('signup/', views.signup_view, name='signup'),
     path('login/', views.login_view, name='login'),
     path('logout/', views.logout_view, name='logout'),

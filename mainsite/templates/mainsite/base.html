@@ -152,16 +152,18 @@
             </div>
         </div>
         {% if request.user.is_authenticated %}
-        <div class="buttonsInHeader_box">
-            <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
-                onclick="location.href='/profile'">
-        </div>
-        {% elif  request.user.is_profiled %}
-        <div class="buttonsInHeader_box">
-            <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
-                onclick="location.href='/extra'">
-        </div>
-        {% else %}
+            {% if request.user.profile %}
+                <div class="buttonsInHeader_box">
+                    <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
+                        onclick="location.href='/profile'">
+                </div>
+            {% else %}
+                <div class="buttonsInHeader_box">
+                    <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
+                        onclick="location.href='/extra'">
+                </div>
+            {% endif %}    
+        {% else %} 
 
         <div class="buttonsInHeader_box">
             <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
