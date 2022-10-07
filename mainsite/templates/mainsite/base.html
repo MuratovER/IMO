@@ -17,11 +17,14 @@
     <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
-    <link href='{% static "mainsite/css/preloader/preloader.css" %}' rel="stylesheet">
     <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet">
+
 
     <!-- <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"> -->
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="{% static 'mainsite/js/registration/Them.js' %}">
     </script>
     <script src="{% static 'mainsite/js/registration/ChangeEay.js' %}">
@@ -36,10 +39,11 @@
     </script>
     <script src="{% static 'mainsite/js/registration/phoneinput.js' %}">
     </script>
+    <script src="{% static 'mainsite/js/registration/preloader.js' %}">
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
-    <script src="{% static 'mainsite/js/preloader/preloader.js' %}">
-    </script>
+    <script src="{% static 'mainsite/js/them/them.js' %}"></script>
     <!-- Date -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr">
@@ -48,8 +52,10 @@
         flatpickr("#myID", {});
     </script>
 </head>
-<div id="preloader_malc">
-    <div class="spinner"></div>
+<div class="preloader">
+    <div class="preloader__row">
+        <div class="spinner preloader__item"></div>
+    </div>
 </div>
 <header class="header">
     <a href="{% url 'home_page' %}">
@@ -61,6 +67,7 @@
             </p>
         </div>
     </a>
+
     <div class="menu_links_boxs">
         <div class="menu_links_box_displayWhere700px">
             <div class="menu_links_box_iconWhereDisplay700px">
@@ -110,6 +117,11 @@
                     <p class="buttonsInHeader_box_search_Text Lang-standart6">Поиск</p>
                 </div>
             </div>
+            <div class=""><!--buttonsInHeader_box displayNoneWhere clickOnserch-->
+                <div class="form-check form-switch">
+                    <input class="form-check-input cursor" type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+            </div>
         </div>
     </div>
     <div class="buttonsInHeader">
@@ -140,11 +152,18 @@
             </div>
         </div>
         {% if request.user.is_authenticated %}
-        <div class="buttonsInHeader_box">
-            <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
-                onclick="location.href='/profile'">
-        </div>
-        {% else %}
+            {% if request.user.profile %}
+                <div class="buttonsInHeader_box">
+                    <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
+                        onclick="location.href='/profile'">
+                </div>
+            {% else %}
+                <div class="buttonsInHeader_box">
+                    <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
+                        onclick="location.href='/extra'">
+                </div>
+            {% endif %}    
+        {% else %} 
 
         <div class="buttonsInHeader_box">
             <input type="button" class="buttonsInHeader_box_usButton noStyelButt cursorP" id="usButton"
@@ -299,7 +318,7 @@
             </div>
         </div>
         <div class="footer_FM2">
-            <div class="footer_FM2 link_FM2 cursorP">
+            <div class="footer_FM2 link_FM2 cursorN">
                 <p class="link_FM2Text Lang-standart80">© КНИТУ-КАИ Все права защищены 2022</p>
             </div>
             <!-- <div class="footer_FM2 link_FM2 cursorP">

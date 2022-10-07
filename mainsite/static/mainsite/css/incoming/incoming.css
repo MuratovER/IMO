@@ -6,6 +6,14 @@
     margin-top: 184px;
 }
 
+.Second-building{
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+}
+
 .specialty-header {
     width: 100%;
     display: flex;
@@ -217,42 +225,43 @@
     margin-top: 130px;
 }
 
-.specialty-buildingKAI-pic1 {
+
+.First-building .specialty-buildingKAI-pic {
     min-width: 210px;
     width: 250px;
     height: 250px;
     background-image: url('../../img/incoming/first-building.svg');
 }
 
-.specialty-buildingKAI-pic2 {
+.Second-building .specialty-buildingKAI-pic {
     min-width: 210px;
     width: 250px;
     height: 250px;
     background-image: url('../../img/incoming/second-building.svg');
 }
 
-.specialty-buildingKAI-pic3 {
+.Third-building .specialty-buildingKAI-pic {
     min-width: 210px;
     width: 250px;
     height: 250px;
     background-image: url('../../img/incoming/third-building.svg');
 }
 
-.specialty-buildingKAI-pic4 {
+.Fifth-building .specialty-buildingKAI-pic {
     min-width: 210px;
     width: 250px;
     height: 250px;
     background-image: url('../../img/incoming/fourth-building.svg');
 }
 
-.specialty-buildingKAI-pic5 {
+.Seventh-building .specialty-buildingKAI-pic {
     min-width: 210px;
     width: 250px;
     height: 250px;
     background-image: url('../../img/incoming/fifth-building.svg');
 }
 
-.specialty-buildingKAI-pic6 {
+.Eighth-building .specialty-buildingKAI-pic {
     min-width: 210px;
     width: 250px;
     height: 250px;
@@ -261,21 +270,17 @@
 
 .specialty-building {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto;
     justify-content: start;
     grid-gap: 75px;
     width: 90%;
-    margin-top: 130px;
+    /* margin-top: 130px; */
     align-items: start;
 }
 
-.specialty-buildingKAI {
-    display: grid;
-    justify-content: center;
-    align-items: start;
-    grid-template-columns: auto auto;
-    grid-gap: 30px;
-}
+/* .specialty-buildingKAI {
+    display: none;
+} */
 
 
 .buildingKAI-text-profesion {
@@ -371,7 +376,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 518px;
+    width: 1198px;
     height: 445px;
     display: flex;
     justify-content: center;
@@ -383,12 +388,15 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 518px;
-    height: 925px;
+    width: 1198px;
+    height: 622px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 100px;
 }
 
 .haveyouQuestion_boxe_h1 {
@@ -413,7 +421,7 @@
 }
 
 .haveyouQuestion_boxes3 {
-    background-image: url('../../img/incoming/blue-question.svg');
+    background-image: url('../../img/incoming/Blue-question2.svg');
 }
 
 .haveyouQuestion_boxes4 {
@@ -470,4 +478,80 @@
 
 .text-cart-center{
     text-align: center;
+}
+
+.specialty-all-exam{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.specialty-all-exam-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    gap: 20px;
+}
+
+.specialty-all-Key-disiplin{
+    display: flex;
+    align-items: start; 
+    flex-direction: column;
+}
+.specialty-all-Key-naprav{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 20px; 
+
+    gap: 45px;
+}
+
+.specialty-naprav-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+}
+
+.specialty-nb1{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 14px;
+    gap: 10px;
+    background: #F6F6F6;
+    border-radius: 14px;
+}
+
+.specialty-naprav-block div{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 14px;
+    gap: 10px;
+    background: #F6F6F6;
+    border-radius: 14px;
+}
+
+.specialty-question-text-color{
+    color: #FFFFFF;
+}
+
+.specialty-all-text2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.specialty-all-exam a{
+    text-decoration: auto;
 }
