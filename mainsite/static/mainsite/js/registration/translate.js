@@ -718,6 +718,7 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart161"), "The mobile version is under development", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart162"), "Coming soon....", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart163"), "Enter your credentials", "innerText");
+
                     //TranslateLangObj.translater(document.querySelectorAll(""),"","")  
                    //Incomig textTranslate
                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty1"), "General information about the direction", "innerText");

@@ -229,11 +229,6 @@ def news_view(request, pk):
         }
         return render(request, 'mainsite/news/news.html', context)
 
-    # if request.user_agent.is_mobile:
-    #     return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
-    # else:
-    #     return render(request, 'mainsite/PhonePage/index.html', )
-
 
 def speciality_view(request, key):
     if request.user_agent.is_mobile:
@@ -255,15 +250,3 @@ def triadkey_view(request):
         triadkey = Triadkey.objects.all()
 
         return render(request, 'mainsite/incomingIMO/triadkey.html', {'triadkey': triadkey})
-
-# def triaKey_view(request, pk):
-#     if request.user_agent.is_mobile:
-#         return render(request, 'mainsite/PhonePage/index.html', )
-#     else:
-#         triadkey = get_object_or_404(Triadkey, pk=pk)
-#         last_N = Triadkey.objects.order_by()[:18]
-#         context = {
-#             'triadkey': triadkey,
-#             'last_N': last_N,
-#         }
-#         return render(request, 'mainsite/incomingIMO/incomingIMO.html', context)
