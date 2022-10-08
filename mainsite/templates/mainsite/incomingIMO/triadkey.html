@@ -1,0 +1,14 @@
+{% extends 'mainsite/base.html' %}
+{% block content %}
+{% load static %}
+
+<body>
+    <div style="margin-top: 500px;">
+        {% for triadkey in triadkey %}
+        <h1>{{ triadkey.title }}</h1>
+        {% endfor %}
+    </div>
+</body>
+
+
+{% endblock %}

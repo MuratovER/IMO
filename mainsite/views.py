@@ -4,11 +4,10 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import get_object_or_404, render, redirect
 from .forms import CreateUserForm, ProfileForm, FaqForm
-from mainsite.models import Profile, Post, Faq, Speciality
+from mainsite.models import Profile, Post, Faq, Speciality, Triadkey
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from django.contrib.auth.decorators import login_required
-
 
 
 def home_page(request):
@@ -34,7 +33,8 @@ def login_view(request):
                 username = request.POST.get('username')
                 password = request.POST.get('password')
 
-                user = authenticate(request, username=username, password=password)
+                user = authenticate(
+                    request, username=username, password=password)
                 if user is not None:
                     login(request, user)
                     return redirect('home_page')
@@ -43,8 +43,6 @@ def login_view(request):
 
             ctx = {}
         return render(request, 'mainsite/registration/LoginIndex.html', ctx)
-
-
 
 
 def profile_view(request):
@@ -67,9 +65,6 @@ def profile_view(request):
             'form': form,
         }
         return render(request, 'mainsite/profile/profile.html', context)
-
-
-
 
 
 def signup_view(request):
@@ -95,14 +90,11 @@ def signup_view(request):
         return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})
 
 
-
-
 def logout_view(request):
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
     else:
         return render(request, 'mainsite/home/home_page.html')
-
 
 
 def extra_view(request):
@@ -126,8 +118,6 @@ def extra_view(request):
         return render(request, 'mainsite/registration/ExtraInfo.html', ctx)
 
 
-
-             
 def privacypolicy_view(request):
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
@@ -135,7 +125,6 @@ def privacypolicy_view(request):
         return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
 
 
-    
 def enteringimo_view(request):
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
@@ -146,9 +135,11 @@ def enteringimo_view(request):
         }
         return render(request, 'mainsite/enteringIMO/EnteringIMO.html', context)
 
+
 def error_404_view(request, exception):
 
     return render(request, 'mainsite/404.html')
+
 
 def faq_view(request):
     if request.user_agent.is_mobile:
@@ -157,8 +148,6 @@ def faq_view(request):
         questions = Faq.objects.all()
         context = {'questions': questions}
         return render(request, 'mainsite/faq/faq.html', context)
-
-
 
 
 @login_required
@@ -179,13 +168,11 @@ def profile_edit(request):
         return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
 
 
-
-
 @login_required
 def password_edit(request):
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
-    else: 
+    else:
         profile = Profile.objects.get(user=request.user)
         if request.method == "POST":
             form = ProfileForm(request.POST, instance=profile)
@@ -208,7 +195,7 @@ def password_change_done(request):
 def aboutkazan_view(request):
     if not request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
-    else: 
+    else:
         # question = get_object_or_404(Faq, pk=pk)
         question = Faq.objects.order_by()[:5]
         context = {
@@ -218,18 +205,16 @@ def aboutkazan_view(request):
         return render(request, 'mainsite/home/aboutKazan.html', context)
 
 
-
 def news_list_view(request):
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
-    else: 
+    else:
         news = Post.objects.all()
 
         context = {
             'news': news
         }
         return render(request, 'mainsite/news/news_list.html', context)
-
 
 
 def news_view(request, pk):
@@ -245,22 +230,23 @@ def news_view(request, pk):
         return render(request, 'mainsite/news/news.html', context)
 
 
-
-    # if request.user_agent.is_mobile:
-    #     return render(request, 'mainsite/privacyPolicy/PrivacyPolicy.html')
-    # else:
-    #     return render(request, 'mainsite/PhonePage/index.html', )
-
 def speciality_view(request, key):
     if request.user_agent.is_mobile:
         return render(request, 'mainsite/PhonePage/index.html', )
-    else:    
+    else:
         speciality = get_object_or_404(Speciality, key=key)
+        last_n = Triadkey.objects.order_by()[:4]
         context = {
-            'speciality': speciality
-
+            'speciality': speciality,
+            'last_n': last_n,
         }
         return render(request, 'mainsite/incomingIMO/incomingIMO.html', context)
 
 
+def triadkey_view(request):
+    if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/index.html', )
+    else:
+        triadkey = Triadkey.objects.all()
 
+        return render(request, 'mainsite/incomingIMO/triadkey.html', {'triadkey': triadkey})

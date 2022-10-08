@@ -25,6 +25,7 @@ urlpatterns = [
     path('faq/', views.faq_view, name='faq'),
     path('aboutkazan/', views.aboutkazan_view, name='aboutkazan'),
     path('speciality/<int:key>', views.speciality_view, name='speciality'),
+    path('triadkey/',  views.triadkey_view, name='triadkey')
 ]
 
 

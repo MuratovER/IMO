@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django import forms
-from mainsite.models import Profile, Post, Faculty, Speciality, Faq
+from mainsite.models import Profile, Post, Faculty, Speciality, Faq, Triadkey
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 
 
@@ -24,3 +24,4 @@ admin.site.register(Profile)
 admin.site.register(Faculty)
 admin.site.register(Speciality)
 admin.site.register(Faq)
+admin.site.register(Triadkey)

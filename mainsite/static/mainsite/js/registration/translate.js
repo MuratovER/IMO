@@ -410,6 +410,49 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart162"), "Скоро будет....", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart163"), "Введите учетные данные", "innerText");
                     //TranslateLangObj.translater(document.querySelectorAll(".LengText-"),"","");
+                    //Incomig textTranslate
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty1"), "Общие сведения о  направлении", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty2"), "Срок обучения", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty3"), "Уровень образования", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty4"), "Форма обучения", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty5"), "Цена обучения", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty6"), "Внутренние испытания", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty7"), "Задача организации, в особенности же рамки и место обучения кадров<br> играет важную роль в формировании дальнейших направлений развитая<br> системы массового участия.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty8"), "Математика", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty9"), "Русский Язык ", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty10"), "Химия", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty11"), "Физика", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty12"), "Обществознание", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty13"), "Информатика", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty14"), "Иностранный язык", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty15"), "Дирекция направления", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty16"), "Задача организации, в особенности же рамки и место обучения кадров<br> играет важную роль в формировании дальнейших направлений развитая<br> системы массового участия.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty17"), "Ключевые дисциплины учебного плана", "innerText");
+
+                    TranslateLangObj.translater(document.querySelectorAll(".First-building-specialty"), "№1; ул. Толстого, 15, ауд. 508", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Second-building-specialty"), "№2; ул. Толстого, 15, ауд. 508 ", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Third-building-specialty"), "№3; ул. Толстого, 15, ауд. 508", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Fifth-building-specialty"), "№5; ул. Толстого, 15, ауд. 508", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Seventh-building-specialty"), "№7; ул. Толстого, 15, ауд. 508", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Eighth-building-specialty"), "№8; ул. Толстого, 15, ауд. 508", "innerText");
+                    
+                    TranslateLangObj.translater(document.querySelectorAll(".First-building-specialty-kafed"), "Теплотехники и энергетического машиностроения", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Second-building-specialty-kafed"), "Компьютерная графика 3D", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Third-building-specialty-kafed"), "Основы САПР в энергомашиностроении", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Fifth-building-specialty-kafed"), "Компрессорное и вакуумное оборудование", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Seventh-building-specialty-kafed"), "Источники энергии теплотехнологий", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Eighth-building-specialty-kafed"), "Источники энергии и энергоустановки", "innerText");
+
+                    TranslateLangObj.translater(document.querySelectorAll(".First-building-specialty-place"), "1-ое здание КНИТУ-КАИ Карла Маркса 10", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Second-building-specialty-place"), "2-ое здание КНИТУ-КАИ ", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Third-building-specialty-place"), "3-ое здание КНИТУ-КАИ Льва Толстого 15", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Fifth-building-specialty-place"), "5-ое здание КНИТУ-КАИ Карла Маркса 31/7", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Seventh-building-specialty-place"), "6-ое здание КНИТУ-КАИ ", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".Eighth-building-specialty-place"), "8-ое здание КНИТУ-КАИ ", "innerText");
+
+                    
+
+                    
                     break;
 
                 case "Eng":
@@ -675,7 +718,27 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart161"), "The mobile version is under development", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart162"), "Coming soon....", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Lang-standart163"), "Enter your credentials", "innerText");
-                    //TranslateLangObj.translater(document.querySelectorAll(""),"","");
+
+                    //TranslateLangObj.translater(document.querySelectorAll(""),"","")  
+                   //Incomig textTranslate
+                   TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty1"), "General information about the direction", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty2"), "Study period", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty3"), "Level of education", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty4"), "Form of education", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty5"), "Price of education", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty6"), "Internal tests", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty7"), "The task of the organization, especially the scope and place of training, plays an important role in shaping the future directions of the mass participation system.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty8"), "Mathematics", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty9"), "Russian Language", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty10"), "Chemistry", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty11"), "Physics", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty12"), "Social Science", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty13"), "Informatics", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty14"), "Foreign language", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty15"), "Direction Directorate", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty16"), "The task of the organization, especially the scope and place of training, plays an important role in shaping the future directions of the mass participation system.", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty17"), "Key disciplines of the curriculum", "innerText");
+
                     break;
 
                 case "中國人":
