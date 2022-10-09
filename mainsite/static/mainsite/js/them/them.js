@@ -201,6 +201,7 @@ $(document).ready(
             $("#username").css("background-color", "#FFF").css("color", "#000000");
             $("#password").css("background-color", "#FFF").css("color", "#000000");
 
+
         }
     }
     

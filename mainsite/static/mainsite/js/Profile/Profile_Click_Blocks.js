@@ -5,11 +5,11 @@ function OnBlock(number){
     let i = 0;
     while( i < 3 ){
         arrayBlock[i].style.display = "none";
-        bottoms[i].style.background = "#fff";
+        bottoms[i].style.background = "var(--Profile-list-BackBackground)";
         i++;
     }
     arrayBlock[number].style.display = "block";
-    bottoms[number].style.background = "#F2F2F2";
+    bottoms[number].style.background = "var(--Profile-list-changeBackground)";
 }
 function ClickPlasBlock(NameBlock){
     elem = document.querySelector(NameBlock);
@@ -27,3 +27,28 @@ function CopyToBuf()
     navigator.clipboard.writeText(elem.innerText);
     console.log(navigator.clipboard.readText() + " Скопировано");
 }
+
+// chage Profile list ///////////////////////////////////////////////////////////////////////
+
+const toggleSwitch = document.querySelector('.form-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
