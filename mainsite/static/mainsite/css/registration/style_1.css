@@ -271,14 +271,14 @@
 }
 
 .main_block_form_button {
-    background-color: #6248FF;
+    background-color: #4526FF;
     text-align: center;
     cursor: var(--hand-cursor-w);
     width: 100%;
 }
 
 .main_block_form_button1 {
-    background-color: #6248FF;
+    background-color: #4526FF;
     text-align: center;
     cursor: var(--hand-cursor-w);
     width: 538px;
@@ -295,7 +295,7 @@
     padding: 10px 23px;
     text-decoration: none;
     cursor: var(--hand-cursor-w);
-    width: 138px;
+    width: 198px;
     /* height:39px; */
 }
 
@@ -1079,6 +1079,11 @@
 }
 .footer_boxs_5{
     width: 230px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 .helpText{
     font-size: 14px;
@@ -1098,4 +1103,8 @@
 }
 .threeBlock{
     display: none;
+}
+
+.Width12{
+    width: 585px;
 }

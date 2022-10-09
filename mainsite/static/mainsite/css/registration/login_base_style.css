@@ -27,6 +27,9 @@ body {
     --buttonsInHeader_box_usButtonHover: #4526FF;
     --ColorTextforProgrammStady: #383838;
     --ColorTextForProgrammStadyPlashca: #fff;
+    --bs-white:#FFF;
+    --bs-grey:#F2F2F2;
+
 }
 
 @font-face {

@@ -124,10 +124,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2px;
 }
 
 .menu_links_boxs_links_link_iconText_box {
     margin-left: 6px;
+    margin-right: 6px;
 }
 
 .menu_links_boxs_links_link_iconText {
@@ -140,7 +142,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 18px;
-    height: 27px;
+    height: 19px;
 }
 
 .books {
@@ -263,7 +265,7 @@
 
 .header2_boxText_twoBTNBox_button {
     border-radius: 64px;
-    border: 2px solid #000212;
+    /* border: 2px solid #000212; */
     background-color: rgba(0, 0, 0, 0);
     color: var(--colorText);
     font-family: var(--font-averta-cy-EB);
@@ -337,14 +339,14 @@
 }
 
 .trainingProgram_TextBox_displayFlex {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .trainingProgram_TextBox {
-    width: 66%;
+    width: 25%;
 }
 
 .trainingProgram_TextBox_h1 {
@@ -356,9 +358,14 @@
 .trainingProgram_TextBox_p {
     text-align: left;
     font-family: var(--font-inter);
-    font-size: 28px;
+    /* font-size: 28px; */
     color: var(--ColorTextforProgrammStady);
     margin-top: 40px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 182.1%;
 }
 
 .specialty_box {
@@ -412,7 +419,7 @@
 
 .standartStyleForimgSp {
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center;
     height: 300px;
     display: flex;
@@ -607,7 +614,7 @@
 }
 
 .about_IMO {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,7 +624,7 @@
 .box_aboutIMO_text_Inf {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -649,7 +656,7 @@
 }
 
 .box_aboutIMO_ImgSVG_background {
-    width: 95%;
+    width: 100%;
     height: 300px;
     background-image: url('../home_page/cssimg/wathercirc.svg');
     background-repeat: no-repeat;
@@ -719,10 +726,10 @@
 .imo_advantage {
     margin-top: 150px;
     width: 90%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 .imo_advantage_Boxinf_gridBox {
@@ -993,7 +1000,7 @@
 }
 
 .weHAve_new {
-    width: 90%;
+    width: 80%;
     /* display: flex;
     flex-direction: column;
     align-items: center; */
@@ -1162,7 +1169,7 @@
 }
 
 .footer_boxs_boxH3 {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .footer_boxs_H3 {
@@ -1203,7 +1210,9 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 12px;
+    margin-top: 30px;
+    margin-left: -20px;
+
 }
 
 .footer_boxs_links_box_l {
@@ -1644,6 +1653,7 @@
 
 .nowVW {
     font-size: 15px;
+    text-decoration-line: underline;
 }
 
 
@@ -1658,4 +1668,10 @@
 
 div p {
     margin-bottom: 0;
+}
+
+.imo_advantage_BOXtext{
+    display: grid;
+    justify-content: start;
+    align-content: center;
 }

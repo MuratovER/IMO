@@ -161,7 +161,7 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-TermsOfUse'), "Условия пользования", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-WhiRigh'), "©2021 КНИТУ КАИ. Все права защищены", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-registration'), "Регистрация", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll('.LengText-TypeOfRegistration'), "Выберите вид регистрации", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll('.LengText-TypeOfRegistration'), "Введите данные своей учетной записи", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-ThereIsProfel'), "Уже есть профиль?", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-login'), "Авторизуйтесь", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-registration-text-iampredst'), "Я – представитель", "innerText");
@@ -450,6 +450,8 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".Seventh-building-specialty-place"), "6-ое здание КНИТУ-КАИ ", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".Eighth-building-specialty-place"), "8-ое здание КНИТУ-КАИ ", "innerText");
 
+                    TranslateLangObj.translater(document.querySelectorAll(".LengText-Question-uEctProf"), "Уже есть профиль?", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LengText-LoginSentence-Auto"), "Авторизуйтесь", "innerText");
                     
 
                     
@@ -470,7 +472,7 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-TermsOfUse'), "Terms of use", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-WhiRigh'), "©2021 KNITU KAI. All rights reserved", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-registration'), "Registration", "innerText");
-                    TranslateLangObj.translater(document.querySelectorAll('.LengText-TypeOfRegistration'), "Select the type of registration", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll('.LengText-TypeOfRegistration'), "Enter your account information", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-ThereIsProfel'), "Already have a profile?", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-login'), "Login", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll('.LengText-registration-text-iampredst'), "I am a representative", "innerText");
@@ -738,6 +740,11 @@ function TranslateLang(defineLang, BodyClass) {
                     TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty15"), "Direction Directorate", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty16"), "The task of the organization, especially the scope and place of training, plays an important role in shaping the future directions of the mass participation system.", "innerText");
                     TranslateLangObj.translater(document.querySelectorAll(".LangText-incomig-specialty17"), "Key disciplines of the curriculum", "innerText");
+
+
+                    TranslateLangObj.translater(document.querySelectorAll(".LengText-Question-uEctProf"), "Already have a profile?", "innerText");
+                    TranslateLangObj.translater(document.querySelectorAll(".LengText-LoginSentence-Auto"), "Authenticate", "innerText");
+
 
                     break;
 
