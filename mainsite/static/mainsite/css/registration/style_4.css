@@ -250,3 +250,21 @@
     gap: 5%;
     display: flex;
 }
+
+.ProgramVstuplenie{
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 41px;
+}
+
+.DemoTest{
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 37px;
+}
+
+.RaspisanieIspit{
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+}
