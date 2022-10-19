@@ -48,7 +48,9 @@ $(document).ready(
             $(".menu_links_boxs_links").css("border-color", "#3A3A3A");
             $(".menu_links_box_displayWhere700px").css("background", "#17181E");
             // $(".menu_links_boxs_links_link").css("background","#424242");
+            // тут может быть ошибка
             $(".buttonsInHeader_box_usButton").css("background-image", "url('../static/mainsite/img/kubsMenuDark.svg')");
+
             $("#lang").css("color", "#fff");
             $("h1").css("color", "#fff");
             $("h2").css("color", "#fff");
@@ -143,7 +145,9 @@ $(document).ready(
             $(".header").css("background", "#fff").css("box-shadow", "0px 20px 42px -1px rgb(0 0 0 / 8%)");
             $("#hidden_block").css("background", "#fff");
             $(".menu_links_boxs_links_link").css("background", "#F9F9F9");
+
             $(".buttonsInHeader_box_usButton").css("background-image", "url('../static/mainsite/img/kubsMenu.svg')");
+
             $(".menu_links_box_displayWhere700px").css("background", "#fff");
             $("#lang").css("color", "#000");
             $("h1").css("color", "#000");
