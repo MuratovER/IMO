@@ -1,0 +1,368 @@
+{% extends 'mainsite/PhonePage/home_page.html' %}{% block content %}
+{% load static %}
+
+
+<body>
+
+    <body class="body">
+        <div class="headerTwoEnteringImo_phone">
+            <div class="headerTwoEnteringImo_place_phone">
+                <div class="headerTwoEnteringImo_box_h1">
+                    <h1 class="headerTwoEnteringImo_notbox_h1_phone MargStart">
+                        Поступающим в ИМО
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerTwoEnteringImo_Information_phone">
+            <div class="headerTwoEnteringImo_column_box_phone borderTop">
+                <div class="headerTwoEnteringImo_column_box_p_box_flex_phone">
+                    <a href="https://abiturientu.kai.ru/normativnye-dokumenty"
+                        class="headerTwoEnteringImo_column_box_p_phone">Нормативные документы</a>
+                </div>
+            </div>
+
+            <div class="headerTwoEnteringImo_column_box_phone">
+                <div class="headerTwoEnteringImo_column_box_p_box_flex_phone">
+                    <a href="https://abiturientu.kai.ru/prohodnye-bally"
+                        class="headerTwoEnteringImo_column_box_p_phone">Проходные баллы</a>
+                </div>
+            </div>
+            <div class="headerTwoEnteringImo_column_box_phone">
+                <div class="headerTwoEnteringImo_column_box_p_box_flex_phone">
+                    <a href="{% url 'home_page' %}" class="headerTwoEnteringImo_column_box_p_phone">Специальности для
+                        поступления</a>
+                </div>
+            </div>
+
+
+            <div class="headerTwoEnteringImo_column_box_phone">
+                <div class="headerTwoEnteringImo_column_box_p_box_flex_phone">
+                    <a href="https://abiturientu.kai.ru/bakalavriat"
+                        class="headerTwoEnteringImo_column_box_p_phone">Какие
+                        документы требуются для поступления?</a>
+                </div>
+            </div>
+            <div class="headerTwoEnteringImo_column_box_phone">
+                <div class="headerTwoEnteringImo_column_box_p_box_flex_phone">
+                    <a href="https://www.who.int/ru/emergencies/diseases/novel-coronavirus-2019"
+                        class="headerTwoEnteringImo_column_box_p_phone">Информация о Covid 19</a>
+                </div>
+            </div>
+            <div class="headerTwoEnteringImo_column_box_phone">
+                <div class="headerTwoEnteringImo_column_box_p_box_flex_phone">
+                    <a href="https://abiturientu.kai.ru/kalendar-priema"
+                        class="headerTwoEnteringImo_column_box_p_phone">Календарь приема</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="live_in_sharaga_phone">
+            <div class="live_in_sharaga_phone_text">
+                <div>
+                    <h1 class="live_in_sharaga_phone_text_h MargStart">Жизнь в университете</h1>
+                </div>
+            </div>
+            <div class="live_in_sharaga_boxIMG_phone live_in_sharaga_boxIMG_phone_img1 cursor"
+                onclick="location.href='/aboutkazan'">
+                <a class="live_in_sharaga_boxIMG_a_phone">
+                    О Казани
+                </a>
+            </div>
+            <div class="live_in_sharaga_boxIMG_bottom">
+            </div>
+        </div>
+
+        <div class="base_content_slade3 Mtop31">
+            <div>
+                <h1 class="weHAve_new_h1 Lang-standart27 MargStart">Наши новости</h1>
+            </div>
+            <div class="post-last4phone">
+                {% for news in last_4 %}
+                <a class="news_list_a" href="{% url 'post' pk=news.pk %}">
+                    <div class="news_block_phone">
+                        {% if news.cover_image %}
+                        <img src="{{ news.cover_image.url }}" class="news_block_img_phone" />
+                        {% endif %}
+                        <div class="news_image">
+
+                        </div>
+                        <div class="news_info">
+                            <div class="news_title">
+                                <h3 class="news_title_h3">{{ news.title }}</h3>
+                            </div>
+                            <div class="news_addititonal_info">
+                                <div class="news_KAI_phone">
+                                    <div class="news-KAI-block">
+                                        <img src="{% static 'mainsite/img/Subtract.svg' %}" alt=""
+                                            class="news-KAI-block-IMG">
+                                        <p>ИМО КНИТУ-КАИ</p>
+                                    </div>
+                                    <div class="news-date">
+                                        {{ news.published_date }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+
+    <style>
+        .live_in_sharaga_phone_text {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .live_in_sharaga_phone_text_h {
+            font-style: normal;
+            font-weight: 700;
+
+            line-height: 23px;
+
+            color: #000000;
+        }
+
+        .live_in_sharaga_boxIMG_phone {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: flex-start;
+            align-content: flex-end;
+            flex-direction: row;
+            align-items: flex-end;
+            box-shadow: inset 0px -10px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .live_in_sharaga_boxIMG_phone_img1 {
+            background-image: url("{% static '/mainsite/img/phone_enteringimo.svg' %}");
+
+        }
+
+        .headerTwoEnteringImo_Information_phone {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: max-content;
+        }
+
+        .headerTwoEnteringImo_Information_phone {
+            width: 100%;
+
+        }
+
+        .headerTwoEnteringImo_phone {
+            width: 100%;
+            background-color: #fff;
+            margin-top: 30px;
+        }
+
+        .headerTwoEnteringImo_column_box_phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #EBEBEB;
+            border-radius: 5px;
+            flex-direction: column;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .headerTwoEnteringImo_column_box_p_phone {
+            font-family: 'Averta Demo PE';
+            font-style: normal;
+            font-weight: 400;
+            /* line-height: 15px; */
+            color: #000000;
+            text-decoration-line: none;
+        }
+
+        .headerTwoEnteringImo_notbox_h1_phone {
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            color: #000000;
+        }
+
+        .live_in_sharaga_phone {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .live_in_sharaga_boxIMG_a_phone {
+
+            font-family: var(--font-averta-cy-EB);
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        @media screen and (max-width:768px) {
+            .live_in_sharaga_boxIMG_a_phone {
+                font-size: 15px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .live_in_sharaga_phone_text_h {
+                font-size: 50px;
+            }
+
+            .live_in_sharaga_boxIMG_phone {
+                width: 695px;
+                height: 192px;
+
+                border-radius: 10px;
+                margin-top: 30px;
+            }
+
+            .headerTwoEnteringImo_column_box_phone {
+                width: 335px;
+                height: 158px;
+            }
+
+            .headerTwoEnteringImo_column_box_p_phone {
+                width: 99px;
+                font-size: 25px;
+            }
+
+            .headerTwoEnteringImo_notbox_h1_phone {
+                font-size: 50px;
+            }
+
+            .headerTwoEnteringImo_Information_phone {
+                gap: 20px;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .live_in_sharaga_boxIMG_a_phone {
+                font-size: 15px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .live_in_sharaga_phone_text_h {
+                font-size: 27px;
+            }
+
+            .live_in_sharaga_boxIMG_phone {
+                width: 430px;
+                height: 120px;
+
+                border-radius: 10px;
+            }
+
+            .headerTwoEnteringImo_column_box_phone {
+                width: 180px;
+                height: 85px;
+            }
+
+            .headerTwoEnteringImo_column_box_p_phone {
+                width: 99px;
+                font-size: 12px;
+            }
+
+            .headerTwoEnteringImo_notbox_h1_phone {
+                font-size: 27px;
+            }
+
+            .headerTwoEnteringImo_Information_phone {
+                gap: 20px;
+            }
+        }
+
+        @media screen and (max-width:360px) {
+            .live_in_sharaga_boxIMG_a_phone {
+                font-size: 15px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .live_in_sharaga_phone_text_h {
+                font-size: 18px;
+            }
+
+            .live_in_sharaga_boxIMG_phone {
+                width: 310px;
+                height: 86px;
+                border-radius: 10px;
+            }
+
+            .headerTwoEnteringImo_column_box_phone {
+                width: 145px;
+                height: 78px;
+            }
+
+            .headerTwoEnteringImo_column_box_p_phone {
+                width: 99px;
+                font-size: 12px;
+            }
+
+            .headerTwoEnteringImo_notbox_h1_phone {
+                font-size: 18px;
+            }
+
+            .headerTwoEnteringImo_Information_phone {
+                gap: 35px;
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            .live_in_sharaga_boxIMG_a_phone {
+                font-size: 15px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .live_in_sharaga_phone_text_h {
+                font-size: 18px;
+            }
+
+            .live_in_sharaga_boxIMG_phone {
+                width: 288px;
+                height: 80px;
+                border-radius: 10px;
+            }
+
+            .headerTwoEnteringImo_column_box_phone {
+                width: 130px;
+                height: 78px;
+            }
+
+            .headerTwoEnteringImo_column_box_p_phone {
+                width: 99px;
+                font-size: 12px;
+            }
+
+            .headerTwoEnteringImo_notbox_h1_phone {
+                font-size: 18px;
+            }
+
+            .headerTwoEnteringImo_Information_phone {
+                gap: 20px;
+            }
+        }
+
+        .headerTwoEnteringImo_place_phone {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+    {% endblock %}

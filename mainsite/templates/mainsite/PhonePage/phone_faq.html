@@ -1,0 +1,47 @@
+{% extends 'mainsite/PhonePage/home_page.html' %}{% block content %}
+{% load static %}
+
+
+<body class="body">
+    <div class="faq_content_phone">
+        <div class="faq_block1_phone">
+            <h1>Часто задаваемые вопросы</h1>
+        </div>
+        {% for question in questions %}
+        <div class="faq_question">
+            <h3 class="faq_header">
+                {{ question.title }}
+            </h3>
+
+            <div class="faq_text">
+                {{ question.question }}
+            </div>
+
+        </div>
+
+        {% endfor %}
+        <div class="faq_form">
+            <h1>
+                Не нашли ответ на свой вопрос?
+            </h1>
+            <p>Отправьте свои данные, чтобы мы смогли с вами связаться</p>
+            <div class="verification-mail_phone">
+                <div>
+                    <input class="verification-mail-field_phone" type="text" value="imokai@bb.kai.ru" id="myInput" readonly>
+                </div>
+                <button class="verification-mail-btn" onclick="myFunction()">Скопировать адрес</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+    }
+</script>
+
+{% endblock %}

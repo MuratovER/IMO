@@ -1,0 +1,1013 @@
+.body {
+    margin: 0px auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    max-width: 92%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Phone_Head {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10%;
+    justify-content: center;
+    gap: 20%;
+}
+
+.Phone_Base_content {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10%;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.base_content_slade2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.base_content_slade2 .slade1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.slide1_text {
+    font-family: 'Roboto';
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 200%;
+    color: #000212;
+}
+
+.slide1_button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+
+.slide1_burron_Bxtex {
+    padding: 10px 6px 10px 6px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--colorText);
+    font-family: var(--font-averta-cy-EB);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* border: chocolate; */
+    /* border-block-color: blue; */
+    border: 2px solid #000000;
+}
+
+.slide1_burron_BxtexPodfac {
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--colorText);
+    font-family: var(--font-averta-cy-EB);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000;
+}
+
+.Mtop31 {
+    margin-top: 31px;
+}
+
+.phone_header_presen_ico {
+    background-image: url(../../img/phone_header_presen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.phone_header_question_ico {
+    background-image: url(../../img/phone_header_question.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.phone_header_notice_ico {
+    background-image: url(../../img/phone_header_notice.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.phone_header_home_ico {
+    background-image: url(../../img/phone_header_home.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.phone_header_home_get_ico {
+    background-image: url(../../img/phome_imo_down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+
+}
+
+.main_icon_logo_phone {
+    height: 100%;
+    background-image: url(../home_page/cssimg/mainICON_1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Lang-standart84_1 {
+    font-weight: 700;
+    line-height: 116.1%;
+}
+
+.news_KAI_phone {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.link_FM2Text_p {
+    color: #B7B7B7;
+    font-family: var(--font-inter);
+}
+
+.footer_FM1_text {
+    color: #B7B7B7;
+    font-family: var(--font-inter);
+}
+
+.main_icon_logo_phoneText {
+    font-weight: 400;
+    font-family: var(--font-averta-cy);
+    color: #000;
+    margin-left: 15px;
+}
+
+.Memo_box_textInf_text {
+    font-weight: 500;
+}
+
+.helpText {
+    font-weight: 400;
+    line-height: 134.69%;
+    text-align: right;
+    letter-spacing: 0.03em;
+}
+
+.footer_mainText {
+    font-weight: 500;
+    line-height: 134.69%;
+    text-align: right;
+    letter-spacing: 0.03em;
+}
+
+.box_aboutIMO_ImgSVG_background {
+    width: 100%;
+}
+
+.Lang-standart34 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 149.52%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.64);
+    text-align: center;
+}
+
+.post-last4phone {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.Lang-standart33 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 182.1%;
+    color: #383838;
+}
+
+
+.box_aboutIMO_text_Inf {
+    align-content: flex-start;
+}
+
+.box_aboutIMO_text_boxH1 {
+    margin-bottom: 5px;
+}
+
+.phone_header_center {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10%;
+
+}
+
+.phone_header_home {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.phone_footer_slade2_link a {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134.69%;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2298FF;
+}
+
+.phone_footer_slade1_upon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.phone_footer_slade3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.phone_footer_slade3_ulisa {
+    width: 100%;
+}
+
+.phone_footer_slade2_namber1,
+.phone_footer_slade2_namber2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+
+.Lang-standart27,
+.Lang-standart84_1,
+.Lang-standart32,
+.Lang-phone-standart01 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.1%;
+    color: #000212;
+}
+
+.news_block_img {
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.news_title_h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 149.52%;
+    color: #383838;
+}
+
+.news-KAI-block p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 149.52%;
+    color: #383838;
+}
+
+.news-date {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 149.52%;
+    color: #383838;
+}
+
+.weHAve_new_h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.MargStart {
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.base_content_slade3 {
+    width: 100%;
+}
+
+.base_content_slade5 {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_slade1_icon {
+    background-image: url(../home_page/cssimg/mainICON_1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer_boxs_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.footer_boxs_5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_boxs_3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_salde5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Mtop100 {
+    margin-top: 100px;
+}
+
+.phone_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.Mtop16 {
+    margin-top: 20px;
+}
+
+.phone_footer_upon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.phone_footer_upon p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 151.6%;
+    color: #B7B7B7;
+}
+
+.phone_footer_slade3_ulisa {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134.69%;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #000212;
+
+}
+
+
+
+.phone_footer_slade2_namber1 {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134.69%;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #000212;
+}
+
+.phone_footer_slade2_namber2 {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134.69%;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #000212;
+}
+
+.phone_footer_slade1_down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.phone_footer_slade3_adres h1 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.69%;
+    letter-spacing: 0.03em;
+    color: #40414D;
+}
+
+.phone_footer_slade2_h h1 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.69%;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: rgba(0, 2, 18, 0.75);
+}
+
+.footer_slade1_icon_text {
+    text-align: left;
+}
+
+.footer_slade1_icon_text h1 {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134.6%;
+    color: #000212;
+}
+
+.phone_footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.phone_footer_slade2_h {
+    max-width: 100%;
+}
+
+.footer_slade1_icon {
+    /* width: 100%; */
+}
+
+.phone_footer_slade1_down {
+    max-width: 100%;
+}
+
+.phone_footer_slade2_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.slade1 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.slade1_text {
+    text-align: right;
+}
+
+.base_content_slade4 {
+    width: 100%;
+}
+
+
+/* ################################### */
+
+.specialty_box_phone {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.specialty_box_displayFlex_phone {
+    width: 100%;
+}
+
+.specialty_box_displayFlex_litleBox_phone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.standartStyleForimgSp_phone {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+    transition: 0.4s;
+    margin-bottom: 20px;
+
+}
+
+.AircraftIndustry1_phone {
+    background-image: url(../home_page/cssimg/aircraft1.svg);
+}
+
+.AircraftEngines_phone {
+    background-image: url(../home_page/cssimg/dvigLetAp.svg);
+}
+
+.infocommunicationTechnologies_phone {
+    background-image: url(../home_page/cssimg/infoCAMUN.svg);
+}
+
+.AircraftIndustry2_phone {
+    background-image: url(../home_page/cssimg/acanomick.svg);
+}
+
+.AircraftIndustry3_phone {
+    background-image: url(../home_page/cssimg/ecspluatacia1.svg);
+}
+
+.AircraftOperation1_phone {
+    background-image: url(../home_page/cssimg/AircraftOperation1.svg);
+}
+
+.compositTechnologi_phone {
+    background-image: url(../../img/compositTechnologi.svg);
+}
+
+.shipbuilding_phone {
+    background-image: url(../../img/shipbuilding.svg);
+}
+
+.specialty_box_picture_text_phone {
+    font-family: var(--font-averta-cy-EB);
+    color: var(--ColorTextForProgrammStadyPlashca);
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .AircraftIndustry1_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    .AircraftEngines_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .infocommunicationTechnologies_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .AircraftIndustry2_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    .AircraftIndustry3_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    .AircraftOperation1_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .compositTechnologi_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .shipbuilding_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    /* text-size    */
+
+    .specialty_box_picture_text_phone {
+        font-size: 18px;
+    }
+
+    #collapse {
+        width: 200px;
+        height: 180px;
+        margin-top: 270px;
+        margin-right: 50px;
+    }
+    .faq_content_phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq_block1_phone {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .faq_form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .faq_form p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .verification-mail_phone {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    .verification-mail-field_phone {
+        font-size: 15px;
+        width: 280px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .AircraftIndustry1_phone {
+        width: 240px;
+        height: 100px;
+    }
+
+    .AircraftEngines_phone {
+        width: 144px;
+        height: 100px;
+    }
+
+    .infocommunicationTechnologies_phone {
+        width: 144px;
+        height: 100px;
+    }
+
+    .AircraftIndustry2_phone {
+        width: 240px;
+        height: 100px;
+    }
+
+    .AircraftIndustry3_phone {
+        width: 240px;
+        height: 100px;
+    }
+
+    .AircraftOperation1_phone {
+        width: 144px;
+        height: 100px;
+    }
+
+    .compositTechnologi_phone {
+        width: 144px;
+        height: 100px;
+    }
+
+    .shipbuilding_phone {
+        width: 240px;
+        height: 100px;
+    }
+
+    /* text-size    */
+
+    .specialty_box_picture_text_phone {
+        font-size: 14px;
+    }
+
+    #collapse {
+        width: 180px;
+        height: 130px;
+        margin-top: 190px;
+        margin-right: 80px;
+    }
+
+    .faq_content_phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq_block1_phone {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .faq_form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .faq_form p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .verification-mail_phone {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    .verification-mail-field_phone {
+        font-size: 15px;
+        width: 280px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .AircraftIndustry1_phone {
+        width: 180px;
+        height: 100px;
+    }
+
+    .AircraftEngines_phone {
+        width: 108px;
+        height: 100px;
+    }
+
+    .infocommunicationTechnologies_phone {
+        width: 108px;
+        height: 100px;
+    }
+
+    .AircraftIndustry2_phone {
+        width: 180px;
+        height: 100px;
+    }
+
+    .AircraftIndustry3_phone {
+        width: 180px;
+        height: 100px;
+    }
+
+    .AircraftOperation1_phone {
+        width: 108px;
+        height: 100px;
+    }
+
+    .compositTechnologi_phone {
+        width: 108px;
+        height: 100px;
+    }
+
+    .shipbuilding_phone {
+        width: 180px;
+        height: 100px;
+    }
+
+    /* text-size    */
+
+    .specialty_box_picture_text_phone {
+        font-size: 12px;
+    }
+
+    #collapse {
+        width: 160px;
+        height: 125px;
+        margin-top: 190px;
+        margin-right: 80px;
+    }
+
+    .faq_content_phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq_block1_phone {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .faq_form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .faq_form p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .verification-mail_phone {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    .verification-mail-field_phone {
+        font-size: 15px;
+        width: 280px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .AircraftIndustry1_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    .AircraftEngines_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .infocommunicationTechnologies_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .AircraftIndustry2_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    .AircraftIndustry3_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    .AircraftOperation1_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .compositTechnologi_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .shipbuilding_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    /* text-size    */
+
+    .specialty_box_picture_text_phone {
+        font-size: 8px;
+    }
+
+    #collapse {
+        width: 120px;
+        height: 100px;
+        margin-top: 160px;
+        margin-right: 60px;
+    }
+
+    .faq_content_phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq_block1_phone {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .faq_form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .faq_form p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .verification-mail_phone {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    .verification-mail-field_phone {
+        font-size: 15px;
+        width: 280px;
+        height: 50px;
+    }
+}
+
+.verification-mail-field_phone {
+    border-radius: 15px;
+    text-align: center;
+    border-color: rgba(224, 224, 224, 1);
+    border-style: solid;
+    font-size: 15px;
+}
+
+.verification-mail_phone {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq_content_phone {
+    width: 100%;
+}
+
+
+.showhide_phone {
+    width: 90%;
+    border-radius: 26px;
+}
+
+.chageColor_phone {
+    background-image: url(../../img/phone_sun.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.chageColor_phone_click {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+#collapse {
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px -3px 8px -3px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    transition: all 0.5s;
+    border-radius: 26px;
+}
+
+/* (B) HIDE */
+#collapse.hide {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,157 @@
+{% extends 'mainsite/PhonePage/home_page.html' %}{% block content %}
+{% load static %}
+
+
+<body>
+    <div class="Phone_Base_content">
+        <div class="base_content_slade1">
+            <div class="slide1_text">
+                <h1 class="Lang-standart84_1">Институт международного образования КНИТУ-КАИ</h1>
+            </div>
+            <div class="slide1_button">
+                <button class="slide1_burron_Bxtex" onclick="location.href='https://www.5657.ru/s/h/hozBci'">
+                    Начать сейчас
+                </button>
+                <button class="slide1_burron_BxtexPodfac" onclick="location.href='https://www.5657.ru/s/h/hozBci'">
+                    Подфак
+                </button>
+            </div>
+        </div>
+
+        <div class="base_content_slade2 Mtop31">
+            <div class="slade1">
+                <h1 class="Lang-phone-standart01">Программы обучения</h1>
+                <p class="slade1_text">Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на
+                    часто
+                    задаваемые вопросы.</p>
+            </div>
+            <style>
+                .slade_specialty_box {
+                    margin-top: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            </style>
+            <div class="slade2 Mtop">
+                <div class="specialty_box_phone">
+                    <div class="specialty_box_displayFlex_phone">
+                        <div class="specialty_box_displayFlex_litleBox_phone">
+                            <div onclick="location.href='/speciality/1001'"
+                                class="specialty_box_pictureSMAL AircraftIndustry1_phone standartStyleForimgSp_phone">
+                                <div class="specialty_box_picture_text_phone Lang-standart18">Авиастроение</div>
+                            </div>
+                            <div onclick="location.href='/speciality/1002'"
+                                class="specialty_box_picture AircraftEngines_phone standartStyleForimgSp_phone marginLeft20px">
+                                <div class="specialty_box_picture_text_phone Lang-standart19">IT (программная инженерия)</div>
+                            </div>
+                        </div>
+                        <div class="specialty_box_displayFlex_litleBox_phone">
+                            <div onclick="location.href='/speciality/1003'"
+                                class="specialty_box_picture infocommunicationTechnologies_phone standartStyleForimgSp_phone">
+                                <p class="specialty_box_picture_text_phone Lang-standarts20">Телекоммуникации, интернет, IoT
+                                </p>
+                            </div>
+                            <div onclick="location.href='/speciality/1004'"
+                                class="specialty_box_pictureSMAL AircraftIndustry2_phone standartStyleForimgSp_phone marginLeft20px">
+                                <p class="specialty_box_picture_text_phone Lang-standarty21">Экономика</p>
+                            </div>
+                        </div>
+
+                        <div class="specialty_box_displayFlex_litleBox_phone">
+                            <div onclick="location.href='/speciality/1005'"
+                                class="specialty_box_pictureSMAL AircraftIndustry3_phone  standartStyleForimgSp_phone">
+                                <p class="specialty_box_picture_text_phone Lang-standart22">Машиностроение</p>
+                            </div>
+                            <div onclick="location.href='/speciality/1006'"
+                                class="specialty_box_picture AircraftOperation1_phone  standartStyleForimgSp_phone marginLeft20px">
+                                <p class="specialty_box_picture_text_phone Lang-standart23">Электроника и наноэлектроника</p>
+                            </div>
+                        </div>
+                        <div class="specialty_box_displayFlex_litleBox_phone ">
+                            <div onclick="location.href='/speciality/1008'"
+                                class="specialty_box_picture compositTechnologi_phone  standartStyleForimgSp_phone marginLeft20px">
+                                <p class="specialty_box_picture_text_phone colorfff Lang-standart25">Композитные технологии
+                                </p>
+                            </div>
+                            <div onclick="location.href='/speciality/1007'"
+                                class="specialty_box_pictureSMAL shipbuilding_phone  standartStyleForimgSp_phone marginLeft20px">
+                                <p class="specialty_box_picture_text_phone colorfff Lang-standart24">Кораблестроение</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="base_content_slade3 Mtop31">
+            <div>
+                <h1 class="weHAve_new_h1 Lang-standart27">Наши новости</h1>
+            </div>
+            <div class="post-last4phone">
+                {% for news in last_4 %}
+                <a class="news_list_a" href="{% url 'post' pk=news.pk %}">
+                    <div class="news_block_phone">
+                        {% if news.cover_image %}
+                        <img src="{{ news.cover_image.url }}" class="news_block_img_phone" />
+                        {% endif %}
+                        <div class="news_image">
+
+                        </div>
+                        <div class="news_info">
+                            <div class="news_title-phone">
+                                <h3 class="news_title_h3">{{ news.title }}</h3>
+                            </div>
+                            <div class="news_addititonal_info">
+                                <div class="news_KAI_phone">
+                                    <div class="news-KAI-block">
+                                        <img src="{% static 'mainsite/img/Subtract.svg' %}" alt=""
+                                            class="news-KAI-block-IMG">
+                                        <p>ИМО КНИТУ-КАИ</p>
+                                    </div>
+                                    <div class="news-date">
+                                        {{ news.published_date }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="base_content_slade4 Mtop31">
+            <div class="about_IMO">
+                <div class="box_aboutIMO_text_Inf">
+                    <div class="box_aboutIMO_text_Infmain">
+                        <div class="box_aboutIMO_text_boxH1">
+                            <h1 class="box_aboutIMO_text_H1 Memo_boxContentH1 Lang-standart32">Об Университете ИМО</h1>
+                        </div>
+                        <div class="box_aboutIMO_text_boxp">
+                            <p class="box_aboutIMO_text_p Memo_box_Ph Lang-standart33">На платформе можнополучить знания
+                                по
+                                актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за
+                                актуальностью материала и помогаем с трудоустройством и стажировкой.</p>
+                        </div>
+                    </div>
+                    <div class="box_aboutIMO_text_Inf_INGSVG">
+
+                    </div>
+                </div>
+                <div class="box_aboutIMO_ImgSVG">
+                    <div class="box_aboutIMO_ImgSVG_background">
+                        <div class="box_aboutIMO_ImgSVG_h1CLONE">
+                            <h1 class="box_aboutIMO_ImgSVG_h1 Lang-standart34">
+                                Узнайте как мы живем
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
