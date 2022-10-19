@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href='{% static "mainsite/img/Icon.svg" %}' />
+    <link href='{% static "mainsite/css/registration/login_base_style.css" %}' rel="stylesheet">
+
+    <link href='{% static "mainsite/css/registration/style_1.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/registration/style_2.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/Phonepage.css" %}' rel="stylesheet">
+
+    <link href="{% static 'mainsite/css/phonepage_/phone_page.css' %}" rel="stylesheet">
+    <link href="{% static 'mainsite/css/phonepage_/phone_content.css' %}" rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/ChangeColor.css" %}' rel="stylesheet">
+
+
+    <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
+
+    <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet">
+
+    <link href='{% static "mainsite/css/profile/profile.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/registration/style_3.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/registration/style_4.css" %}' rel="stylesheet">
+
+    <script src="{% static 'mainsite/js/registration/translate.js' %}"></script>
+    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"></script>
+    <script src="{% static 'mainsite/js/home_page/hidden_block_mainPage.js' %}"></script>
+    <script src='{% static "mainsite/js/them/them.js" %}'></script>
+    <script src=' {% static "mainsite/js/registration/Them.js" %}'></script>
+
+</head>
+
+<body class="body indexEnterWindow">
+    <div class="content">
+        <div class="Phone_Head">
+            <div class="main_icon_logo_flexbox">
+                <div class="main_icon_logo_phone"></div>
+            </div>
+            <div class="phone_header_center">
+                <div class="phone_header_presen">
+                    <div class="phone_header_presen_ico" onclick="location.href='/enteringimo'"></div>
+                </div>
+
+                <div class="phone_header_question">
+                    <div class="phone_header_question_ico" onclick="location.href='/faq'"></div>
+                </div>
+
+                <div class="phone_header_notice">
+                    <div class="phone_header_notice_ico"></div>
+                </div>
+            </div>
+            <div class="phone_header_home">
+                <div class="phone_header_home_ico"></div>
+                <input class="phone_header_home_get_ico" value="" onclick="toggle()" />
+                <div id="collapse" class="show hide">
+                    <div class="showhide_phone">
+                        <div class="chageColor_phone_click">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <div class="chageColor_phone"></div>
+                        </div>
+                        <div class="chageLanguage">
+                            <div class="buttonsInHeader_box">
+                                <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name"
+                                    id="lang" value="Ru">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% block content %} {% endblock %}
+
+        <div class="base_content_slade5 Mtop16">
+            <div class="phone_footer">
+                <div class="phone_footer_slade1">
+                    <div class="phone_footer_slade1_upon">
+                        <div class="footer_slade1_icon"></div>
+                        <div class="footer_slade1_icon_text">
+                            <h1>Институт Международного образования КАИ</h1>
+                        </div>
+                    </div>
+                    <div class="phone_footer_slade1_down">
+                        <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
+                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l2 cursorP"></div>
+                        </div>
+                        <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
+                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l3 cursorP"></div>
+                        </div>
+                        <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
+                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l4 cursorP"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone_footer_slade2">
+                    <div class="phone_footer_slade2_h">
+                        <h1>Контактная информация</h1>
+                    </div>
+                    <div class="phone_footer_slade2_namber1">
+                        <p>+7(843)231-01-58</p>
+                        <p>ИМО</p>
+                    </div>
+                    <div class="phone_footer_slade2_namber2">
+                        <p>+7(843)231-01-58</p>
+                        <p>ИМО</p>
+                    </div>
+                    <div class="phone_footer_slade2_link">
+                        <a href="">pk@kai.ru</a>
+                        <a href="">international@kai.ru</a>
+                    </div>
+                </div>
+                <div class="phone_footer_slade3">
+                    <div class="phone_footer_slade3_adres">
+                        <h1>Адресс</h1>
+                    </div>
+                    <div class="phone_footer_slade3_ulisa">
+                        г. Казань, ул. Большая Красная, д. 55
+                    </div>
+                </div>
+            </div>
+            <div class="phone_footer_upon Mtop16" style="margin-top: 16px;">
+                <p>© Институт международного образования КНИТУ-КАИ Все права защищены 2022</p>
+                <p>© КНИТУ-КАИ Все права защищены 2022</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    h1 {
+        margin-bottom: 0;
+    }
+</style>
+<script>
+    function toggle() {
+        document.getElementById("collapse").classList.toggle("hide");
+    }
+</script>
+<script>   
+
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+<script>
+    const sec = document.querySelector('.sec');
+    const toggle = document.querySelector('.toggle');
+    toggle.onclick = function () {
+        sec.classList.toggle('dark')
+
+    };
+</script>
+
+</html>

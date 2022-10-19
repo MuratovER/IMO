@@ -1,0 +1,127 @@
+@media screen and (max-width:320px) {
+
+    .main_icon_logo_flexbox {
+        width: 36px;
+        height: 36px;
+    }
+
+    .main_icon_logo_phone {
+        width: 36px;
+    }
+
+    .phone_header_home_ico, 
+    .phone_header_question_ico, 
+    .phone_header_notice_ico,
+    .phone_header_presen_ico {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer_slade1_icon{
+        max-width: 100%;
+        width: 30px;
+        height: 30px;
+    }
+
+    .phone_footer_slade1{
+        width: 37%;
+    }
+
+    .phone_footer_slade2{
+        width: 24%;
+    }
+
+    .phone_footer_slade3{
+        width: 22%;
+    }
+
+    .footer_slade1_icon_text{
+        margin-left: 15%;
+    }
+    .footer_slade1_icon_text h1, 
+    .phone_footer_slade3_adres h1,
+    .phone_footer_slade2_h h1, 
+    .phone_footer_slade2_namber1, 
+    .phone_footer_slade2_namber2,
+    .phone_footer_slade3_ulisa {
+        font-size: 5px;
+    }
+
+    .phone_footer_upon p,
+    .phone_footer_slade2_link{
+        font-size: 4px;
+    }
+
+    .phone_footer_slade2_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    }
+
+    .footer_boxs_links_box_plot{
+        width: 25px;
+        height: 23px;
+    }
+/**********************320***не отредактирован*/
+
+
+    .slide1_burron_Bxtex{
+        font-size: 10.4px;
+    }
+    .slide1_burron_BxtexPodfac{
+        font-size: 10.4px;
+    }
+    .news_block_phone {
+        width: 137px;
+    }
+
+    .news_block_img_phone {
+        width: 137px;
+        height: 137px;
+        border-radius: 7px;
+    }
+
+
+    .footer_mainText {
+        font-weight: 500;
+        font-size: 6px;
+        line-height: 134.69%;
+        text-align: right;
+        letter-spacing: 0.03em;
+    }
+
+    .helpText {
+        font-weight: 400;
+        font-size: 6px;
+        line-height: 134.69%;
+        text-align: right;
+        letter-spacing: 0.03em;
+    }
+
+    .Memo_box_textInf_text {
+        font-size: 6px;
+        font-weight: 500;
+
+    }
+
+    .main_icon_logo_phoneText {
+        font-weight: 400;
+        font-size: 6px;
+        font-family: var(--font-averta-cy);
+        color: #000;
+        margin-left: 15px;
+    }
+
+    .footer_FM1_text {
+        color: #B7B7B7;
+        font-size: 4px;
+        font-family: var(--font-inter);
+    }
+
+    .link_FM2Text_p {
+        color: #B7B7B7;
+        font-size: 4px;
+        font-family: var(--font-inter);
+    }
+}

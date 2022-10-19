@@ -1,9 +1,11 @@
 .profile {
-    background-color: rgba(255, 255, 255, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
     display: flex;
     font-family: 'Inter';
-    width: 100%;
-    justify-content: center;
+    /* width: 100%; */
+    width: 90%;
+    /* justify-content: center; */
+    justify-content: space-between;
     margin-top: 160px;
 }
 
@@ -19,8 +21,8 @@
 
 .up-down-list p {
     text-align: center;
-    height: 20px;
-    width: 200px;
+    height: 45px;
+    width: 250px;
     border-radius: 15px;
     margin-top: 15px;
     padding: 15px 25px 15px 25px;
@@ -200,7 +202,9 @@
 }
 
 .verification-mail-field p {
-    padding: 18px;
+    padding: 6;
+    display: grid;
+    justify-content: space-between;
 }
 
 .about-head h4 {

@@ -1,0 +1,241 @@
+@media screen and (max-width:360px) {
+    .main_icon_logo_flexbox {
+        width: 42px;
+        height: 42px;
+    }
+
+    .main_icon_logo_phone {
+        width: 42px;
+    }
+
+    .phone_header_home_ico, 
+    .phone_header_question_ico, 
+    .phone_header_notice_ico,
+    .phone_header_presen_ico {
+        width: 33px;
+        height: 33px;
+    }
+
+  
+    .footer_slade1_icon{
+        max-width: 100%;
+        width: 35px;
+        height: 35px;
+    }
+
+    .phone_footer_slade1{
+        width: 37%;
+    }
+
+    .phone_footer_slade2{
+        width: 24%;
+    }
+
+    .phone_footer_slade3{
+        width: 22%;
+    }
+
+    .footer_slade1_icon_text{
+        margin-left: 15%;
+    }
+    .footer_slade1_icon_text h1, 
+    .phone_footer_slade3_adres h1,
+    .phone_footer_slade2_h h1, 
+    .phone_footer_slade2_namber1, 
+    .phone_footer_slade2_namber2,
+    .phone_footer_slade3_ulisa {
+        font-size: 6px;
+    }
+
+    .phone_footer_upon p,
+    .phone_footer_slade2_link a{
+        font-size: 4px;
+    }
+
+    
+    .footer_boxs_links_box_plot {
+        width: 25px;
+        height: 23px;
+    }
+
+/**********************360***не отредактирован*/
+
+
+
+
+
+
+
+
+    .slide1_burron_Bxtex{
+        font-size: 12px;
+    }
+    .slide1_burron_BxtexPodfac{
+        font-size: 12px;
+    }
+    .news_block_phone {
+        width: 137px;
+    }
+
+    .news_block_img_phone {
+        width: 137px;
+        height: 137px;
+        border-radius: 7px;
+    }
+
+
+    /*///////////////////////////////////////////////////////////////////*/
+
+
+    .footer_mainText {
+        font-size: 6px;
+    }
+
+    .helpText {
+        font-size: 6px;
+    }
+
+    .Memo_box_textInf_text {
+        font-size: 6px;
+    }
+
+    .main_icon_logo_phoneText {
+        font-size: 6px;
+    }
+
+    .footer_FM1_text {
+        font-size: 4px;
+    }
+
+    .link_FM2Text_p {
+        font-size: 4px;
+    }
+
+    .phone_footer {
+        max-width: 100%;
+    }
+/* 
+    .footer_slade1_icon_text h1 {
+        font-size: 6px;
+    }
+
+
+    .phone_footer_slade2_h h1 {
+        font-size: 6px;
+    }
+
+    .phone_footer_slade3_adres h1 {
+        font-size: 6px;
+    }
+
+    .phone_footer_slade2_namber1 {
+        font-size: 6px;
+    }
+
+    .phone_footer_slade2_namber2 {
+        font-size: 6px;
+    }
+
+    .phone_footer_slade3_ulisa {
+        font-size: 6px;
+    }
+
+    .phone_footer_slade2_link a {
+        font-size: 4px;
+    } */
+
+    /* .footer_slade1_icon {
+        width: 25.13px;
+        height: 23px;
+    } */
+
+    .footer_boxs_links_box_l {
+        width: 13px;
+        height: 12px;
+    }
+
+    .phone_footer_slade2 {
+        width: 83px;
+    }
+
+    .phone_footer_upon p {
+        font-size: 4px;
+    }
+
+    .base_content_slade1 {
+        width: 100%;
+    }
+
+    .slide1_text .Lang-standart84_1 {
+        font-size: 36px;
+    }
+
+    .slide1_text {
+        width: 290px;
+    }
+
+    .base_content_slade3 {
+        width: 302px;
+    }
+
+    .Lang-standart27 {
+        font-size: 20px;
+    }
+
+    .news_list_a {
+        width: 137px;
+    }
+
+    .news_block_img {
+        width: 137px;
+        height: 139px;
+    }
+
+    .news_title {
+        height: 24px;
+    }
+
+    .news_title_h3 {
+        font-size: 8px;
+    }
+
+    .news-KAI-block p {
+        font-size: 4px;
+    }
+
+    .news-date {
+        font-size: 4px;
+    }
+
+    .about_IMO {
+        width: 302px;
+        margin-top: 25px;
+    }
+
+    .box_aboutIMO_ImgSVG {
+        margin-top: 20px;
+    }
+
+    .Lang-standart32 {
+        font-size: 17px;
+    }
+
+    .Lang-standart33 {
+        font-size: 7px;
+    }
+
+    .box_aboutIMO_text_Inf_INGSVG {
+        width: 71px;
+        height: 71px;
+    }
+
+    .box_aboutIMO_ImgSVG_background {
+        width: 302px;
+        height: 74px;
+        border-radius: 16px;
+    }
+
+    .Lang-standart34 {
+        font-size: 12px;
+    }
+}

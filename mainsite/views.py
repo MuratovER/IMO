@@ -13,13 +13,13 @@ from django.contrib.auth.decorators import login_required
 def home_page(request):
     last_4 = Post.objects.order_by()[:4]
     context = {
-        'last_4': last_4
+        'last_4': last_4 
     }
-
-    if not request.user_agent.is_mobile:
-        return render(request, 'mainsite/home/home_page.html', context)
+    
+    if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/phone_content.html',  context)
     else:
-        return render(request, 'mainsite/PhonePage/index.html', )
+        return render(request, 'mainsite/home/home_page.html', context)
 
 
 def login_view(request):
@@ -126,14 +126,14 @@ def privacypolicy_view(request):
 
 
 def enteringimo_view(request):
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
-    else:
         last_4 = Post.objects.order_by()[:4]
         context = {
             'last_4': last_4
         }
-        return render(request, 'mainsite/enteringIMO/EnteringIMO.html', context)
+        if request.user_agent.is_mobile:
+            return render(request, 'mainsite/PhonePage/phone_enteringimo.html', context)
+        else:
+            return render(request, 'mainsite/enteringIMO/EnteringIMO.html', context)
 
 
 def error_404_view(request, exception):
@@ -143,7 +143,7 @@ def error_404_view(request, exception):
 
 def faq_view(request):
     if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
+        return render(request, 'mainsite/PhonePage/phone_faq.html', )
     else:
         questions = Faq.objects.all()
         context = {'questions': questions}

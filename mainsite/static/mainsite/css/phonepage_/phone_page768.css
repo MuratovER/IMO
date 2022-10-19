@@ -1,0 +1,239 @@
+@media screen and (max-width:768px) {
+    .news_block_phone {
+        width: 320px;
+    }
+
+    .news_block_img_phone {
+        width: 320px;
+        height: 320px;
+    }
+
+    .phone_header_home_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_question_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_notice_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_presen_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main_icon_logo_flexbox {
+        width: 87px;
+        height: 87px;
+    }
+
+    .main_icon_logo {
+        width: 87px;
+    }
+
+    /*  raschet */
+    .Lang-standart84_1 {
+        font-size: 60px;
+    }
+
+    .slide1_text {
+        width: 387px;
+    }
+
+    .specialty_box_displayFlex_litleBox {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .slade_specialty_box_displayFlex_litleBox {
+        width: 650px;
+    }
+
+    .AircraftIndustry1 {
+        width: 385px;
+    }
+
+    .standartStyleForimgSp {
+        width: 230px;
+    }
+
+
+    .phone_footer_slade1_down {
+        width: 184px;
+    }
+
+    /*///////////////////////////////////////////////////////////////////*/
+
+
+    .footer_mainText {
+        font-size: 12.8px;
+    }
+
+    .helpText {
+        font-size: 8px;
+    }
+
+    .Memo_box_textInf_text {
+        font-size: 8px;
+    }
+
+    .main_icon_logo_phoneText {
+        font-size: 8px;
+    }
+
+    .footer_FM1_text {
+        font-size: 5.3px;
+    }
+
+    .link_FM2Text_p {
+        font-size: 5.3px;
+    }
+
+    .phone_footer {
+        max-width: 100%
+    }
+
+    .footer_slade1_icon_text h1 {
+        font-size: 17px;
+    }
+
+    /* .footer_slade1_icon_text {
+        width: 200px;
+    } */
+
+    .phone_footer_slade2_h h1 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade3_adres h1 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade2_namber1 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade2_namber2 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade3_ulisa {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade2_link a {
+        font-size: 12px;
+    }
+
+    .footer_slade1_icon {
+        width: 53px;
+        height: 50px;
+    }
+
+    .footer_boxs_links_box_l {
+        width: 37px;
+        height: 30px;
+    }
+
+    .footer_boxs_links_box_plot {
+        width: 71px;
+        height: 55px;
+    }
+
+    .phone_footer_slade2 {
+        width: 250px
+    }
+
+    .phone_footer_upon p {
+        font-size: 12px;
+    }
+
+    .base_content_slade1 {
+        width: 100%
+    }
+
+    .slide1_text .Lang-standart84_1 {
+        font-size: 60px;
+    }
+
+    .slide1_burron_Bxtex{
+        font-size: 25px;
+    }
+    .slide1_burron_BxtexPodfac{
+        font-size: 25px;
+    }
+    .Lang-standart27{
+        font-size: 50px;
+    }
+
+    .slide1_text {
+        width: 500px;
+    }
+
+    .base_content_slade3 {
+        width: 403px;
+    }
+
+    .news_list_a {
+        width: 320px;
+    }
+
+    .news_block_img {
+        width: 183px;
+        height: 185.4px;
+    }
+
+    .news_title {
+        height: 32px;
+    }
+
+    .news_title_h3 {
+        font-size: 11px;
+    }
+
+    .news-KAI-block p {
+        font-size: 12px;
+    }
+
+    .news-date {
+        font-size: 12px;
+    }
+
+    .about_IMO {
+        width: 100%;
+        margin-top: 33.4px;
+    }
+
+    .box_aboutIMO_ImgSVG {
+        margin-top: 26.7px;
+    }
+
+    .Lang-standart32 {
+        font-size: 50px;
+    }
+
+    .Lang-standart33 {
+        font-size: 15px;
+    }
+
+    .box_aboutIMO_text_Inf_INGSVG {
+        width: 200px;
+        /* height: 95px; */
+    }
+
+    .box_aboutIMO_ImgSVG_background {
+        width: 691px;
+        border-radius: 16px;
+    }
+
+    .Lang-standart34 {
+        font-size: 50px;
+    }
+
+}

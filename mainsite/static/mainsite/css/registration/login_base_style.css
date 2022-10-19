@@ -27,7 +27,20 @@ body {
     --buttonsInHeader_box_usButtonHover: #4526FF;
     --ColorTextforProgrammStady: #383838;
     --ColorTextForProgrammStadyPlashca: #fff;
+    --bs-white:#FFF;
+    --bs-grey:#F2F2F2;
+    /* --script:var(--bs-grey); */
+    --Profile-list-BackBackground:#fff;
+    --Profile-list-changeBackground:#F2F2F2;
+
 }
+
+[data-theme="dark"] {
+    --Profile-list-BackBackground:#242730;
+    --Profile-list-changeBackground:#14161D;
+}
+/* $(".:root").css("var(--Profile-list-BackBackground)", "#14161D");
+$(".:root").css("var(--Profile-list-BackBackground)", "#242730"); */
 
 @font-face {
     font-family: 'Averta CY';
