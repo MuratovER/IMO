@@ -1,8 +1,5 @@
-{% extends 'mainsite/base.html' %}
-{% block content %}
-{% load static %}
+{% extends 'mainsite/base.html' %}{% block content %}{% load static %}{% load i18n %}
 <body class="body">
-
     <div class="post">
         <div class="post-header">
             <div class="post-header-title">
@@ -11,7 +8,7 @@
             <div class="post-additional-info">
                 <div class="post-additional-info-KAI">
                     <img src="{% static 'mainsite/img/Subtract_Nill_Kiggers.svg' %}" alt="">
-                    <p>ИМО КНИТУ-КАИ</p>
+                    <p>{% translate "LangStaticname29" %}</p>
                 </div>
                 <div class="post-additional-info-date">
                     {{ post.published_date }}
@@ -33,14 +30,14 @@
                 </a>
             </div>
             <div class="post-media-back">
-                <a href="{% url 'news_list' %}">
+                <a href="{% url 'imo:news_list' %}">
                     <img src="{% static 'mainsite/img/back.svg' %}" alt="">
                 </a>
             </div>
         </div>
     </div>
 
-    <h1 class="post-last4-title">Посмотрите другие наши новости</h1>
+    <h1 class="post-last4-title">{% translate "LangStaticname61" %}</h1>
 
 </body>
 {% endblock %}

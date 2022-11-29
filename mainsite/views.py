@@ -8,7 +8,8 @@ from mainsite.models import Profile, Post, Faq, Speciality, Triadkey
 from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from django.contrib.auth.decorators import login_required
-
+from django.utils.translation import gettext as _
+from django.utils.translation import get_language, activate, gettext
 
 def home_page(request):
     last_4 = Post.objects.order_by()[:4]

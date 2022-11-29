@@ -4,7 +4,7 @@ from django.contrib.auth import views as auth_views
 from django.views.decorators.cache import cache_page
 from . import views
 
-
+app_name='imo'
 urlpatterns = [
     path('', views.home_page, name='home_page'),
     # path('signup/', (cache_page(60)(views.signup_view)), name='signup'),
