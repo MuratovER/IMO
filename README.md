@@ -278,3 +278,20 @@ python manage.py collectstatic
 
 ## Статические файлы
 Статические файлы храняться в папке ```ts/mainsite/static```
+
+
+## Перевод 
+для того чтобы перевод страный работал нужно добавить {% load i18n %}
+{% load i18n %} - это статические файли Перевода из папки(locale)
+
+{% translate "забронированое название " %} - путь а так же место будет забранированов в locale
+
+после обозначения всех {% translate "name" %} 
+
+введите команду 
+$python manage.py makemessages --all
+$python manage.py runserver
+
+в шапку вводим 127.0.0.1:8000/rosetta
+
+    

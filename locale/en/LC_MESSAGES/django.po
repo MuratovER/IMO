@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-29 03:09+0300\n"
-"PO-Revision-Date: 2022-11-29 03:08+0000\n"
+"POT-Creation-Date: 2022-11-30 19:44+0300\n"
+"PO-Revision-Date: 2022-11-30 19:57+0000\n"
 "Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -22,12 +22,12 @@ msgstr ""
 #: .\imo\settings.py:152
 #, fuzzy
 msgid "English"
-msgstr "en"
+msgstr "English"
 
 #: .\imo\settings.py:153
 #, fuzzy
 msgid "Russian"
-msgstr "ru"
+msgstr "Russian"
 
 #: .\mainsite\templates\mainsite\base.html:6
 #, fuzzy
@@ -38,41 +38,42 @@ msgstr "IMO"
 #: .\mainsite\templates\mainsite\base.html:213
 #, fuzzy
 msgid "LangStaticname2"
-msgstr "testzz"
+msgstr "KAI Institute of International Education"
 
 #: .\mainsite\templates\mainsite\base.html:75
 #, fuzzy
 msgid "LangStaticname3"
-msgstr "testsd"
+msgstr "Menu"
 
 #: .\mainsite\templates\mainsite\base.html:85
 #, fuzzy
 msgid "LangStaticname4"
-msgstr "testwd"
+msgstr "incoming"
 
 #: .\mainsite\templates\mainsite\base.html:96
 #, fuzzy
 msgid "LangStaticname5"
-msgstr "trfrf"
+msgstr "vs"
 
 #: .\mainsite\templates\mainsite\base.html:107
 #, fuzzy
 msgid "LangStaticname6"
-msgstr "fefe"
+msgstr "sdgs"
 
 #: .\mainsite\templates\mainsite\base.html:115
 #, fuzzy
 msgid "LangStaticname7"
-msgstr "fdf"
+msgstr "sdg"
 
 #: .\mainsite\templates\mainsite\base.html:234
 #, fuzzy
 msgid "LangStaticname8"
-msgstr "fwd"
+msgstr "wefwew"
 
 #: .\mainsite\templates\mainsite\base.html:237
+#, fuzzy
 msgid "LangStaticname9"
-msgstr ""
+msgstr "Google"
 
 #: .\mainsite\templates\mainsite\base.html:242
 msgid "LangStaticname10"
@@ -151,12 +152,13 @@ msgid "LangStaticname59"
 msgstr ""
 
 #: .\mainsite\templates\mainsite\faq\faq.html:29
+#: .\mainsite\templates\mainsite\profile\profile.html:79
 msgid "LangStaticname60"
 msgstr ""
 
 #: .\mainsite\templates\mainsite\home\home_page.html:8
 msgid "LangStaticname14"
-msgstr ""
+msgstr "IMO"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:16
 msgid "LangStaticname15"
@@ -412,6 +414,537 @@ msgstr ""
 msgid "LangStaticname61"
 msgstr ""
 
+#: .\mainsite\templates\mainsite\profile\profile.html:7
+msgid "LangStaticname92"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:9
+msgid "LangStaticname93"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:11
+msgid "LangStaticname94"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:18
+#: .\mainsite\templates\mainsite\profile\profile.html:19
+msgid "LangStaticname95"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:23
+msgid "LangStaticname97"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:24
+msgid "LangStaticname98"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:25
+msgid "LangStaticname99"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:26
+msgid "LangStaticname100"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:27
+msgid "LangStaticname101"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:28
+msgid "LangStaticname102"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:29
+msgid "LangStaticname103"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:30
+msgid "LangStaticname104"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:31
+msgid "LangStaticname105"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:60
+msgid "LangStaticname106"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:71
+msgid "LangStaticname107"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:82
+msgid "LangStaticname108"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:87
+msgid "LangStaticname109"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:95
+msgid "LangStaticname110"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:103
+msgid "LangStaticname111"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:111
+msgid "LangStaticname112"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:118
+msgid "LangStaticname113"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:126
+msgid "LangStaticname114"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:134
+msgid "LangStaticname115"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:159
+msgid "LangStaticname116"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:164
+msgid "LangStaticname117"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:166
+msgid "LangStaticname118"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:167
+msgid "LangStaticname119"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:169
+msgid "LangStaticname120"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:179
+msgid "LangStaticname121"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:190
+msgid "LangStaticname122"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:193
+msgid "LangStaticname123"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:194
+msgid "LangStaticname124"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:195
+msgid "LangStaticname125"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:196
+msgid "LangStaticname126"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:196
+msgid "LangStaticname132"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:197
+msgid "LangStaticname127"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:198
+msgid "LangStaticname128"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:199
+msgid "LangStaticname129"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:200
+msgid "LangStaticname130"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:201
+msgid "LangStaticname131"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:204
+msgid "LangStaticname133"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:207
+msgid "LangStaticname134"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:207
+msgid "LangStaticname135"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:208
+msgid "LangStaticname136"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:209
+msgid "LangStaticname137"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:210
+msgid "LangStaticname138"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:211
+msgid "LangStaticname139"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:228
+msgid "LangStaticname140"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:239
+msgid "LangStaticname141"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:243
+msgid "LangStaticname142"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:244
+msgid "LangStaticname143"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:244
+msgid "LangStaticname144"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:247
+msgid "LangStaticname145"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:249
+msgid "LangStaticname146"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:249
+msgid "LangStaticname147"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:250
+msgid "LangStaticname148"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:250
+msgid "LangStaticname149"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:251
+msgid "LangStaticname150"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:251
+msgid "LangStaticname151"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:252
+msgid "LangStaticname152"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:255
+msgid "LangStaticname153"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:257
+msgid "LangStaticname154"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:274
+msgid "LangStaticname155"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:286
+msgid "LangStaticname156"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:287
+msgid "LangStaticname157"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:289
+msgid "LangStaticname158"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:290
+msgid "LangStaticname159"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:291
+msgid "LangStaticname160"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:292
+msgid "LangStaticname161"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:295
+msgid "LangStaticname162"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:295
+msgid "LangStaticname163"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:297
+msgid "LangStaticname164"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:298
+msgid "LangStaticname165"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:299
+msgid "LangStaticname166"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:300
+msgid "LangStaticname167"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:301
+msgid "LangStaticname168"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:302
+msgid "LangStaticname169"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:305
+msgid "LangStaticname170"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:306
+msgid "LangStaticname171"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:306
+msgid "LangStaticname172"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:308
+msgid "LangStaticname173"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:309
+msgid "LangStaticname174"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:310
+msgid "LangStaticname175"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:313
+msgid "LangStaticname176"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:315
+msgid "LangStaticname177"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:316
+msgid "LangStaticname178"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:317
+msgid "LangStaticname179"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:318
+msgid "LangStaticname180"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:336
+#: .\mainsite\templates\mainsite\profile\profile.html:348
+msgid "LangStaticname181"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:350
+msgid "LangStaticname182"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:351
+msgid "LangStaticname183"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:368
+msgid "LangStaticname184"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:369
+msgid "LangStaticname185"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:384
+msgid "LangStaticname186"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:385
+msgid "LangStaticname187"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:386
+msgid "LangStaticname188"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:387
+msgid "LangStaticname189"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:388
+msgid "LangStaticname190"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:389
+msgid "LangStaticname191"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:390
+msgid "LangStaticname192"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:391
+msgid "LangStaticname193"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:392
+msgid "LangStaticname194"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:393
+msgid "LangStaticname195"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:397
+msgid "LangStaticname196"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:398
+msgid "LangStaticname197"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:399
+msgid "LangStaticname198"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:400
+msgid "LangStaticname199"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:401
+msgid "LangStaticname200"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:405
+msgid "LangStaticname201"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:406
+msgid "LangStaticname202"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:407
+msgid "LangStaticname203"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:411
+msgid "LangStaticname204"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:412
+msgid "LangStaticname205"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:413
+msgid "LangStaticname206"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:418
+msgid "LangStaticname207"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:419
+msgid "LangStaticname208"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:420
+msgid "LangStaticname209"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:421
+msgid "LangStaticname210"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:425
+msgid "LangStaticname211"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:426
+msgid "LangStaticname212"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:427
+msgid "LangStaticname213"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:428
+msgid "LangStaticname214"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:432
+msgid "LangStaticname215"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:433
+msgid "LangStaticname216"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:434
+msgid "LangStaticname217"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:438
+msgid "LangStaticname218"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:439
+msgid "LangStaticname219"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:440
+msgid "LangStaticname220"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:441
+msgid "LangStaticname221"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:460
+msgid "LangStaticname222"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:472
+#: .\mainsite\templates\mainsite\profile\profile.html:502
+msgid "LangStaticname223"
+msgstr ""
+
+#: .\mainsite\templates\mainsite\profile\profile.html:490
+msgid "LangStaticname224"
+msgstr ""
+
 #: .\venv\Lib\site-packages\_pytest\config\argparsing.py:458
 #, python-format
 msgid "ambiguous option: %(option)s could match %(matches)s"
@@ -527,8 +1060,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:293
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:305
@@ -712,15 +1245,15 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1428
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1436
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1441
@@ -739,8 +1272,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1724
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1728
@@ -899,7 +1432,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:176
 msgid ":?.!"
 msgstr ""
@@ -949,7 +1483,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:614
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -1057,7 +1592,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1426
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1565
@@ -1517,11 +2053,11 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:127
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" …> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:136
@@ -1572,8 +2108,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:692
@@ -1629,10 +2165,10 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
@@ -1662,45 +2198,3 @@ msgstr ""
 #: .\venv\Lib\site-packages\modeltranslation\widgets.py:26
 msgid "None"
 msgstr ""
-
-#, fuzzy
-#~ msgid "IMO"
-#~ msgstr "IMO"
-
-#, fuzzy
-#~ msgid "hello"
-#~ msgstr "hello"
-
-#, fuzzy
-#~ msgid "Меню"
-#~ msgstr "menu"
-
-#, fuzzy
-#~ msgid "поступающим"
-#~ msgstr "wqw"
-
-#, fuzzy
-#~ msgid "вопрос-ответ"
-#~ msgstr "asasa"
-
-#, fuzzy
-#~ msgid "новости"
-#~ msgstr "xasxa"
-
-#~ msgid "Контактная информация"
-#~ msgstr "scaasca"
-
-#~ msgid "г. Казань, ул. Большая Красная, д. 55"
-#~ msgstr "scasc"
-
-#, fuzzy
-#~ msgid "Телефон приемной комиссии"
-#~ msgstr "efwef"
-
-#, fuzzy
-#~ msgid "Телефон ИМО"
-#~ msgstr "wewe"
-
-#, fuzzy
-#~ msgid "КНИТУ-КАИ Все права защищены"
-#~ msgstr "2wwq2"

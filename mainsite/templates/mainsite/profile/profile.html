@@ -1,33 +1,34 @@
-{% extends 'mainsite/base.html' %}
-{% block content %}
-{% load static %}
+{% extends 'mainsite/base.html' %}{% block content %}{% load static %}{% load i18n %}
 
 <body class="body indexEnterWindow">
     <div class="profile">
         <div class="up-down-list">
-            <p class="ProfileBut_twoblock Lang-standart83 bottomClick startBackColor" data-NumBlock="0" onclick="OnBlock(0)">Информация обо мне</p>
-            <p class="ProfileBut_onblock Lang-standart84 bottomClick" data-NumBlock="1" onclick="OnBlock(1)">Изменения профиля</p>
-            <p class="ProfileBut_threeblock Lang-standart85 bottomClick" data-NumBlock="2" onclick="OnBlock(2)">Памятка для иностранцев</p>
+            <p class="ProfileBut_twoblock Lang-standart83 bottomClick startBackColor" 
+            data-NumBlock="0" onclick="OnBlock(0)">{% translate "LangStaticname92" %}</p>
+            <p class="ProfileBut_onblock Lang-standart84 bottomClick" 
+            data-NumBlock="1" onclick="OnBlock(1)">{% translate "LangStaticname93" %}</p>
+            <p class="ProfileBut_threeblock Lang-standart85 bottomClick" 
+            data-NumBlock="2" onclick="OnBlock(2)">{% translate "LangStaticname94" %}</p>
         </div>
         <div class="Nblock onBlock">
             <div class="info">
                 <div class="base-info">
                     <div class="basic-info">
                         <div class="about-head">
-                            <h4 class="Lang-standart86">Основная информация</h4>
-                            <a href="{% url 'password_change' %}" class="Lang-standart87 nowVW">Редактировать</a>
+                            <h4 class="Lang-standart86">{% translate "LangStaticname95" %}</h4>
+                            <a href="{% url 'password_change' %}" class="Lang-standart87 nowVW">{% translate "LangStaticname95" %}</a>
                         </div>
                         <div class="about-info">
                             <div class="about-info-p">
-                                <p class="Lang-standart88">Полное имя:</p>
-                                <p class="Lang-standart89">Пол:</p>
-                                <p class="Lang-standart90">Дата рождения:</p>
-                                <p class="Lang-standart91">Место рождения:</p>
-                                <p class="Lang-standart92">Родной город:</p>
-                                <p class="Lang-standart93">Гражданство:</p>
-                                <p class="Lang-standart94">Номер телефона:</p>
-                                <p class="Lang-standart95">Электронная почта:</p>
-                                <p class="Lang-standart96">Ваш пароль:</p>
+                                <p class="Lang-standart88">{% translate "LangStaticname97" %}:</p>
+                                <p class="Lang-standart89">{% translate "LangStaticname98" %}:</p>
+                                <p class="Lang-standart90">{% translate "LangStaticname99" %}:</p>
+                                <p class="Lang-standart91">{% translate "LangStaticname100" %}:</p>
+                                <p class="Lang-standart92">{% translate "LangStaticname101" %}:</p>
+                                <p class="Lang-standart93">{% translate "LangStaticname102" %}:</p>
+                                <p class="Lang-standart94">{% translate "LangStaticname103" %}:</p>
+                                <p class="Lang-standart95">{% translate "LangStaticname104" %}:</p>
+                                <p class="Lang-standart96">{% translate "LangStaticname105" %}:</p>
                             </div>
                             <div class="about-info-generated">
                                 <div class="about-info-name">
@@ -56,57 +57,18 @@
                                     {{ profile.email }}
                                 </div>
                                 <div class="about-info-password">
-                                    <a href="" class="Lang-standart97 nowVW">Изменить</a>
+                                    <a href="" class="Lang-standart97 nowVW">{% translate "LangStaticname106" %}</a>
                                 </div>
 
 
                             </div>
-
-                            {# <div class="about-info-name">#}
-                                {# <p class="Lang-standart98 about-info-text">Полное имя:</p>#}
-                                {# {{ profile.name }}#}
-                                {# </div>#}
-                            {##}
-                            {# <div class="about-info-gender">#}
-                                {# <p class="Lang-standart99 about-info-text">Пол:</p>#}
-                                {# {{ profile.gender }}#}
-                                {# </div>#}
-                            {# <div class="about-info-birthday">#}
-                                {# <p class="Lang-standart100 about-info-text">Дата рождения:</p>#}
-                                {# {{ profile.birthdate }}#}
-                                {# </div>#}
-                            {# <div class="about-info-country">#}
-                                {# <p class="Lang-standart101 about-info-text">Место рождения:</p>#}
-                                {# {{ profile.country }}#}
-                                {# </div>#}
-                            {# <div class="about-info-city">#}
-                                {# <p class="Lang-standart102 about-info-text">Родной город:</p>#}
-                                {# {{ profile.city }}#}
-                                {# </div>#}
-                            {# <div class="about-info-citizenship">#}
-                                {# <p class="Lang-standart103 about-info-text">Гражданство:</p>#}
-                                {# {{ profile.citizenship }}#}
-                                {# </div>#}
-                            {# <div class="about-info-phone">#}
-                                {# <p class="Lang-standart104 about-info-text">Номер телефона:</p>#}
-                                {# {{ profile.phone }}#}
-                                {# </div>#}
-                            {# <div class="about-info-email">#}
-                                {# <p class="Lang-standart105 about-info-text">Электронная почта:</p>#}
-                                {# {{ profile.email }}#}
-                                {# </div>#}
-                            {# <div class="about-info-password">#}
-                                {# <p class="Lang-standart106 about-info-text">Ваш пароль:</p>#}
-                                {# <a href="" class="Lang-standart10_7">Изменить</a>#}
-                                {# </div>#}
-
                         </div>
                     </div>
                 </div>
                 <div class="verification-info">
                     <div class="verification-info_textOfemail">
                         <div class="verification-info_textOfemail_box">
-                            <p class="verification-info_textOfemail_box_p">Электронная почта</p>
+                            <p class="verification-info_textOfemail_box_p">{% translate "LangStaticname107" %}</p>
                         </div>
                         <img src='{% static "mainsite/img/VoprZnack.png" %}' alt="" class="">
                     </div>
@@ -114,15 +76,15 @@
                         <div class="verification-mail-field">
                             <p class="verification-mail-field_copyto">imokai@bb.kai.ru</p>
                         </div>
-                        <button class="verification-mail-btn Lang-standart115" onclick="CopyToBuf()">Скопировать адрес</button>
+                        <button class="verification-mail-btn Lang-standart115" onclick="CopyToBuf()">{% translate "LangStaticname60" %}</button>
                     </div>
                     <div class="verification-list">
-                        <h3 class="Lang-standart116">Список необходимых документов</h3>
+                        <h3 class="Lang-standart116">{% translate "LangStaticname108" %}</h3>
 
                         <ul class="verification-list_ul">
                             <li class="verification-list_ul_li cursorN">
                                 <div class="verification-list-first">
-                                    <p class="Lang-standart117 verification-list-text">Копия паспорта (1-ая страница с фотографией)</p>
+                                    <p class="Lang-standart117 verification-list-text">{% translate "LangStaticname109" %}</p>
                                     <img src='{% static "mainsite/img/Reverse.svg" %}'
                                         alt="Копия паспорта (1-ая страница с фотографией)">
         
@@ -130,7 +92,7 @@
                             </li>
                             <li class="verification-list_ul_li cursorN">
                                 <div class="verification-list-first">
-                                    <p class="Lang-standart118 verification-list-text">Заверенный нотариусом перевод паспорта на русский язык</p>
+                                    <p class="Lang-standart118 verification-list-text">{% translate "LangStaticname110" %}</p>
                                     <img src='{% static "mainsite/img/Reverse.svg" %}'
                                         alt="Заверенный нотариусом перевод паспорта на русский язык">
         
@@ -138,7 +100,7 @@
                             </li>
                             <li class="verification-list_ul_li cursorN">
                                 <div class="verification-list-first">
-                                    <p class="Lang-standart119 verification-list-text">Скан всех виз, полученных из российской федерации (если имеются)</p>
+                                    <p class="Lang-standart119 verification-list-text">{% translate "LangStaticname111" %}</p>
                                     <img src='{% static "mainsite/img/Reverse.svg" %}'
                                         alt="Скан всех виз, полученных из российской федерации (если имеются)">
         
@@ -146,14 +108,14 @@
                             </li>
                             <li class="verification-list_ul_li cursorN">
                                 <div class="verification-list-first">
-                                    <p class="Lang-standart120 verification-list-text">Бланк уведомления для гос. услуг</p>
+                                    <p class="Lang-standart120 verification-list-text">{% translate "LangStaticname112" %}</p>
                                     <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Бланк уведомления для гос. услуг">
         
                                 </div>
                             </li>
                             <li class="verification-list_ul_li cursorN">
                                 <div class="verification-list-first">
-                                    <p class="Lang-standart121 verification-list-text">Билеты всего маршрута (авиасообщение и ж/д)</p>
+                                    <p class="Lang-standart121 verification-list-text">{% translate "LangStaticname113" %}</p>
                                     <img src='{% static "mainsite/img/Reverse.svg" %}'
                                         alt="илеты всего маршрута (авиасообщение и ж/д)">
         
@@ -161,7 +123,7 @@
                             </li>
                             <li class="verification-list_ul_li cursorN">
                                 <div class="verification-list-first">
-                                    <p class="Lang-standart121_1 verification-list-text">Документ об образовании</p>
+                                    <p class="Lang-standart121_1 verification-list-text">{% translate "LangStaticname114" %}</p>
                                     <img src='{% static "mainsite/img/Reverse.svg" %}'
                                         alt="Документ об образовании">
         
@@ -169,7 +131,7 @@
                             </li>
                             <li class="verification-list_ul_li cursorN">
                                 <div class="verification-list-first">
-                                    <p class="Lang-standart121_2 verification-list-text">Заверенный нотариусом перевод документа об образовании</p>
+                                    <p class="Lang-standart121_2 verification-list-text">{% translate "LangStaticname115" %}</p>
                                     <img src='{% static "mainsite/img/Reverse.svg" %}'
                                         alt="Заверенный нотариусом перевод документа об образовании">
         
@@ -194,17 +156,17 @@
                     {{ form.phone }}
                 </div>
                 {{ form.citizenship }}
-                <button type="submit" class="Lang-standart122 save btn btn-default main_block_form_button main_block_form_input_1 trueChangePass2">Сохранить</button>
+                <button type="submit" class="Lang-standart122 save btn btn-default main_block_form_button main_block_form_input_1 trueChangePass2">{% translate "LangStaticname116" %}</button>
             </form>
         </div>
         <div class="Nblock threeBlock">
             <!-- <h1 style="color:red;">Вставьте сюда свой код для отображения на сайте</h1> -->
-            <h1 class="threeBlock_h1 Lang-standart123">Памятка иностранному студенту</h1>
+            <h1 class="threeBlock_h1 Lang-standart123">{% translate "LangStaticname117" %}</h1>
             <p class="threeBlock_p Lang-standart124">
-                Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и
-                ответит на <span><a href="#" class="threeBlock_p_a Lang-standart125">часто задаваемые вопросы</a></span>.
+                {% translate "LangStaticname118" %}
+                <span><a href="#" class="threeBlock_p_a Lang-standart125">{% translate "LangStaticname119" %}</a></span>.
             </p>
-            <h3 class="threeBlock_h3 Lang-standart126">По прибытии</h3>
+            <h3 class="threeBlock_h3 Lang-standart126">{% translate "LangStaticname120" %}</h3>
             <div class="threeBlock_main_block">
                 <div class="threeBlock_pandimg">
                     <div class="threeBlock_block_disp">
@@ -214,7 +176,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p Lang-standart127">Пошаговая инструкция для въезжающих</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart127">{% translate "LangStaticname121" %}</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
@@ -225,28 +187,28 @@
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden1">
                     <p class="threeBlock_hidden_p">
-                        <span class="threeBlock_hidden_p_h Lang-standart128">Пошаговая инструкция для въезжающих (для стран с визовым режимом)</span>
+                        <span class="threeBlock_hidden_p_h Lang-standart128">{% translate "LangStaticname122" %}</span>
 
                         <span class="Lang-standart129">
-                        1. Подать документы на оформление приглашения посредством электронной почты: international@kai.ru 
-                        2. Получить готовое приглашение и проставить однократную визу в посольстве РФ.
-                        3. Прислать копию билета в Институт международного образования на почту: international@kai.ru
-                        4. По приезду можно заселиться на 3 дня по адресу: ул. Большая Красная, 18, 2й этаж (Профилакторий), сдать ПЦР-тест на Covid-19 и в течение двух дней подойти в Институт международного образования по адресу: ул. Карла Маркса, 10, здание Технического колледжа (через двор), каб. 106, 107.
-                        5. Оформить медицинский полис (ДМС)
-                        6. Пройти медицинское освидетельствование и дактилоскопию
-                        7. После зачисления заселиться в общежитие (при наличии мест)/хостел/квартиру
-                        8. Продлить регистрацию по месту пребывания
-                        9. Подать документы на продление визы
+                        1. {% translate "LangStaticname123" %}: international@kai.ru 
+                        2. {% translate "LangStaticname124" %}.
+                        3. {% translate "LangStaticname125" %}: international@kai.ru
+                        4. {% translate "LangStaticname126" %}: {% translate "LangStaticname132" %}
+                        5. {% translate "LangStaticname127" %}
+                        6. {% translate "LangStaticname128" %}
+                        7. {% translate "LangStaticname129" %}
+                        8. {% translate "LangStaticname130" %}
+                        9. {% translate "LangStaticname131" %}
                         </span> 
 
-                        <span class="threeBlock_hidden_p_h Lang-standart130">Пошаговая инструкция для въезжающих (для стран с безвизовым режимом)</span>
+                        <span class="threeBlock_hidden_p_h Lang-standart130">{% translate "LangStaticname133" %}</span>
 
                         <span class="Lang-standart131">
-                        1. По приезду можно заселиться на 3 дня по адресу: ул. Большая Красная, 18, 2й этаж (Профилакторий), сдать ПЦР-тест на Covid-19 и в течение двух дней подойти в Институт международного образования по адресу: ул. Карла Маркса, 10, здание Технического колледжа (через двор), каб. 106, 107.
-                        2. Оформить медицинский полис (ДМС)
-                        3. Пройти медицинское освидетельствование и дактилоскопию
-                        4. После зачисления заселиться в общежитие (при наличии мест)/хостел/квартиру
-                        5. Продлить регистрацию по месту пребывания
+                        1. {% translate "LangStaticname134" %}: {% translate "LangStaticname135" %}.
+                        2. {% translate "LangStaticname136" %}
+                        3. {% translate "LangStaticname137" %} 
+                        4. {% translate "LangStaticname138" %}  
+                        5. {% translate "LangStaticname139" %}
                         </span>
                     </p>
                 </div>
@@ -263,8 +225,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p Lang-standart132">Медицинское освидетельствование,
-                                    дактилоскопия</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart132">{% translate "LangStaticname140" %}</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden2')">
@@ -275,26 +236,25 @@
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden2">
                     <p class="threeBlock_hidden_p">
-                        <span class="threeBlock_hidden_p_h Lang-standart133">На основании Федерального закона N 274-ФЗ от 23 июня 2021г. «О правовом положении иностранных граждан в Российской Федерации» и Федеральный закон «О государственной дактилоскопической регистрации в Российской Федерации» каждый иностранный гражданин, прибывший в Российскую Федерацию на срок превышающий 90 календарных дней, обязан пройти медицинское освидетельствование на наличие или отсутствие инфекционных заболеваний, представляющих опасность для окружающих; на наличие или отсутствия факта употребления наркотических средств или психотропных веществ без назначения врача. 
-                            Иностранные граждане подлежат обязательной государственной дактилоскопической регистрации и фотографированию однократно. Иностранным гражданам, прошедшим обязательную дактилоскопическую регистрацию и фотографирование, выдается документ. 
+                        <span class="threeBlock_hidden_p_h Lang-standart133">{% translate "LangStaticname141" %}. 
                         </span>
 
                         <span class="Lang-standart134">
-                        1.	Прохождение медицинского освидетельствования.
-                        Адрес: г. Казань, ул. Короленко, д. 54.
+                        1.	{% translate "LangStaticname142" %}.
+                        {% translate "LangStaticname143" %}: {% translate "LangStaticname144" %}.
                         </span>
                         
-                        <span class="threeBlock_hidden_p_h Lang-standart135">Режим работы:</span>
+                        <span class="threeBlock_hidden_p_h Lang-standart135">{% translate "LangStaticname145" %}:</span>
                         <span class="Lang-standart136">
-                        с 8.00 ч. – 17.00 ч. (кроме субботы и воскресенья). 
-                        При себе иметь: паспорт, миграционную карту и ее копию, визу и ее копию, регистрацию.
-                        2.	Необходимо пройти дактилоскопическую регистрацию (отпечатки) по адресу: г. Казань, ул. Чехова д. 8/2, кабинет № 12. 
-                        Прохождение дактилоскопической регистрации (отпечатки) без предъявления медицинского заключения осуществляться не будет.
+                        {% translate "LangStaticname146" %}. {% translate "LangStaticname147" %}. 
+                        {% translate "LangStaticname148" %}: {% translate "LangStaticname149" %}.
+                        2.	{% translate "LangStaticname150" %}: {% translate "LangStaticname151" %}. 
+                        {% translate "LangStaticname152" %}.
                         </span>  
                         
-                        <span class="threeBlock_hidden_p_h Lang-standart137">ВНИМАНИЕ! </span>
+                        <span class="threeBlock_hidden_p_h Lang-standart137">{% translate "LangStaticname153" %}! </span>
                         <span class="Lang-standart138">
-                            Иностранные студенты, не выполнившие процедуру прохождения медицинского освидетельствования и дактилоскопической регистрации, не могут заселиться в общежитие и встать на миграционный учет. По этой причине миграционная служба Республики Татарстан не продлит срок пребывания иностранным студентам на территории Российской Федерации и депортирует их на родину. 
+                            {% translate "LangStaticname154" %}. 
                         </span>
                     </p>
                 </div>
@@ -311,7 +271,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p Lang-standart139">Миграционный учет</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart139">{% translate "LangStaticname155" %}</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden3')">
@@ -323,39 +283,39 @@
 
                 <div class="threeBlock_hidden threeBlock_hidden3">
                     <p class="threeBlock_hidden_p">
-                        <span class="threeBlock_hidden_p_h Lang-standart140">Каждый иностранный гражданин, прибывший в Российскую Федерацию, обязан встать на миграционный учет и предоставить документы в Институт международного образования КНИТУ-КАИ 
-                            Внимание:</span>
+                        <span class="threeBlock_hidden_p_h Lang-standart140">{% translate "LangStaticname156" %} 
+                            {% translate "LangStaticname157" %}:</span>
                         <span class="Lang-standart141">
-                            Срок постановки на миграционный учет с момента приезда составляет:
-                        Казахстан, Беларусь, Киргизия – 30 календарных дней
-                        Таджикистан – 15 календарных дней
-                        Остальные страны – 7 рабочих дней
+                            {% translate "LangStaticname158" %}:
+                            {% translate "LangStaticname159" %}
+                            {% translate "LangStaticname160" %}
+                            {% translate "LangStaticname161" %}
                         </span>
 
-                        <span class="threeBlock_hidden_p_h Lang-standart142">Для получения регистрации по месту пребывания в общежитии университета необходимо предоставить следующий пакет документов по адресу: ул. Карла Маркса, 10, здание Технического колледжа, каб. 107:</span>
+                        <span class="threeBlock_hidden_p_h Lang-standart142">{% translate "LangStaticname162" %}: {% translate "LangStaticname163" %}:</span>
                         <span class="Lang-standart143">
-                            1. Паспорт (копия)
-                        2. Действующая виза (копия) (для граждан из стран с визовым режимом)
-                        3. Миграционная карта (копия)
-                        4. Предыдущая регистрация копия (при наличии)
-                        5. Договор о найме жилья в общежитии (копия)
-                        6. Копии билетов (если приехали в Казань через другой город)
+                            1. {% translate "LangStaticname164" %}
+                        2. {% translate "LangStaticname165" %}
+                        3. {% translate "LangStaticname166" %}
+                        4. {% translate "LangStaticname167" %}
+                        5. {% translate "LangStaticname168" %}
+                        6. {% translate "LangStaticname169" %}
                         </span>
 
-                        <span class="threeBlock_hidden_p_h Lang-standart144">Для получения регистрации по месту пребывания в квартире необходимо получить ходатайство от университета.
-                            Список документов для оформления ходатайства необходимо предоставить по адресу: ул. Карла Маркса, 10, здание Технического колледжа, каб. 106:</span>
+                        <span class="threeBlock_hidden_p_h Lang-standart144">{% translate "LangStaticname170" %}.
+                            {% translate "LangStaticname171" %}: {% translate "LangStaticname172" %}:</span>
                         <span class="Lang-standart145">
-                            1.	Паспорт (копия)
-                        2.	Действующая виза (копия) (для граждан из стран с визовым режимом)
-                        3.	Справка об обучении из отдела по учету студентов (1 здание КАИ, 126 кабинет)
+                            1.	{% translate "LangStaticname173" %}
+                        2.	{% translate "LangStaticname174" %}
+                        3.	{% translate "LangStaticname175" %}
                         </span>
 
-                        <span class="threeBlock_hidden_p_h Lang-standart146">Необходимо повторно вставать на миграционный учет в случае, если: </span>
+                        <span class="threeBlock_hidden_p_h Lang-standart146">{% translate "LangStaticname176" %}: </span>
                         <span class="Lang-standart147">
-                            1. Иностранный студент  получил новую визу/ новый паспорт/ дубликат миграционной карты. Срок постановки на миграционный учет составляет 3 рабочих дня.
-                        2. Иностранный студент сменил адрес места пребывания. Срок постановки на миграционный учет составляет 7 рабочих дней.
-                        3. Иностранный студент продлевает регистрацию по тому же адресу. Срок постановки на миграционный учет составляет 3 рабочих дня.
-                        4. Иностранный студент находился в больнице на лечении. Срок постановки на миграционный учет после выхода из больницы составляет 3 рабочих дня
+                            1. {% translate "LangStaticname177" %}.
+                        2. {% translate "LangStaticname178" %}.
+                        3. {% translate "LangStaticname179" %}.
+                        4. {% translate "LangStaticname180" %}
 
                         </span>
                     </p>
@@ -373,7 +333,7 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p Lang-standart148">Медицинское страхование</p>
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart148">{% translate "LangStaticname181" %}</p>
                             </div>
                         </div>
                         <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden4')">
@@ -385,12 +345,10 @@
 
                 <div class="threeBlock_hidden threeBlock_hidden4">
                     <p class="threeBlock_hidden_p">
-                        <span class="threeBlock_hidden_p_h Lang-standart149">Медицинское страхование</span>
+                        <span class="threeBlock_hidden_p_h Lang-standart149">{% translate "LangStaticname181" %}</span>
                         <span class="Lang-standart150">
-                            На основании Федерального закона N 326-ФЗ от 29 ноября 2010г. ОБ ОБЯЗАТЕЛЬНОМ МЕДИЦИНСКОМ СТРАХОВАНИИ В РОССИЙСКОЙ ФЕДЕРАЦИИ каждый иностранный гражданин в течение первой недели после зачисления в КНИТУ-КАИ обязан оформить полис медицинского страхования, действующий на весь период регистрации/ визы (как правило, сроком на один год). Полис медицинского страхования можно оформить в страховых компаниях, расположенных рядом с университетом. Полис ДМС должен иметь страховую сумму не менее 300 000 рублей на 1 год. Студенты должны продлевать медицинский полис ежегодно до момента выезда из Российской Федерации.
-
-                        Вы можете оформить полис ДМС ежедневно с 13.00 до 16.00 в  1 зд. КАИ в институте международного образования (ул. К.Маркса д.10), где находятся представители компаний «Ак барс страхование» и «СМП-страхование».
-
+                            {% translate "LangStaticname182" %}
+                            {% translate "LangStaticname183" %}    
                         </span>
                     </p>
                 </div>
@@ -398,34 +356,6 @@
                     <hr class="threeBlock_hr">
                 </div>
             </div>
-            <!-- <div class="threeBlock_main_block">
-                <div class="threeBlock_pandimg">
-                    <div class="threeBlock_block_disp">
-                        <div class="threeBlock_block_disp_one">
-                            <div class="threeBlock_block_disp_one_block">
-                                <img src="../../../static/mainsite/img/MemoImg_5.svg" alt="Noimg"
-                                    class="threeBlock_block_disp_one_block_img">
-                            </div>
-                            <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p Lang-standart151">Проживание (адреса общежитий)</p>
-                            </div>
-                        </div>
-                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden5')">
-                            
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="threeBlock_hidden threeBlock_hidden5">
-                    <p class="threeBlock_hidden_p">
-                       ***********************
-                    </p>
-                </div>
-                <div class="threeBlock_blockhr">
-                    <hr class="threeBlock_hr">
-                </div>
-            </div> -->
             <div class="threeBlock_main_block">
                 <div class="threeBlock_pandimg">
                     <div class="threeBlock_block_disp">
@@ -435,10 +365,8 @@
                                     class="threeBlock_block_disp_one_block_img">
                             </div>
                             <div class="threeBlock_block_disp_one_block">
-                                <p class="threeBlock_block_disp_one_block_p Lang-standart152">  ПРАВИЛА
-                                    пребывания иностранных граждан
-                                    и лиц без гражданства, обучающихся в КНИТУ-КАИ,
-                                    в Российской Федерации
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart152"> {% translate "LangStaticname184" %}
+                                    {% translate "LangStaticname185" %}
                                     </p>
 
                             </div>
@@ -453,64 +381,64 @@
                 <div class="threeBlock_hidden threeBlock_hidden6">
                     <p class="threeBlock_hidden_p ">
                         <span class="Lang-standart153_1">
-                            1.	Все иностранные граждане должны соблюдать законы Российской Федерации и настоящие правила. По всем вопросам соблюдения правил пребывания и паспортно-визового обслуживания иностранные граждане должны обращаться в Институт международного образования (ИМО) КНИТУ-КАИ по адресу: г.Казань, ул. Карла Маркса 10, учебное здание № 1, здание технического колледжа кабинеты 106 и 107, Отдел визового сопровождения (ОВС). Время приема иностранных граждан в ОВС: понедельник-пятница, с 14:00 до 17:00.
-                        2.	Иностранные граждане могут находиться и свободно перемещаться по территории Российской Федерации, обязательно имея при себе следующие документы:
-                        - национальный паспорт;
-                        - действующую визу (при наличии визового режима пребывания в Российской Федерации);
-                        - миграционную карту с отметкой о пересечении границы;
-                        - отрывную часть бланка уведомления о прибытии иностранного гражданина/лица без гражданства в Российскую Федерацию с отметкой территориального органа УВМ МВД России о постановке на миграционный учёт по месту временного пребывания (проживания).
-                        Эти документы должны предъявляться сотрудникам правоохранительных органов (полиции, миграционной службе и др.) при проверке.
-                        3.	При въезде на территорию Российской Федерации иностранные граждане и лица без гражданства заполняют миграционную карту, которую они должны иметь при себе в течение всего срока пребывания в Российской Федерации и предъявлять её при совершении предусмотренных законом миграционных действий.
-                        4.	Иностранные граждане в Российской Федерации подлежат миграционному учету.
-                        Для постановки на миграционный учет иностранные граждане, прибывшие в КНИТУ-КАИ и проживающие в общежитии университета, должны в течение двух дней (за исключением праздничных и выходных дней) представить в Управление международной деятельности КНИТУ-КАИ копии и оригиналы следующих документов: паспорт, миграционная карта, действующая виза (при наличии визового режима пребывания в Российской Федерации), оформленная по приглашению КНИТУ-КАИ либо по приглашению Министерства образования и науки Российской Федерации, ордер на заселение в общежитие. договор об аренде квартиры или согласие владельца квартиры (в случае проживания на квартире в Казани).
+                        1.	 {% translate "LangStaticname186" %}.
+                        2.	 {% translate "LangStaticname187" %}:
+                        - {% translate "LangStaticname188" %};
+                        - {% translate "LangStaticname189" %};
+                        - {% translate "LangStaticname190" %};
+                        - {% translate "LangStaticname191" %}.
+                        {% translate "LangStaticname192" %}.
+                        3.	{% translate "LangStaticname193" %}.
+                        4.	{% translate "LangStaticname194" %}.
+                        {% translate "LangStaticname195" %}.
                         
                         </span>
                         <span class="Lang-standart153_2">
-                        Для постановки на миграционный учет иностранные граждане, прибывшие в КНИТУ-КАИ и проживающие на квартире, должны в течение двух дней (за исключением праздничных и выходных дней) представить владельцу квартиры копии и оригиналы следующих документов: паспорт, миграционная карта, действующая виза (при наличии визового режима пребывания в Российской Федерации).
-                        Постановка на миграционный учет осуществляется только по адресу фактического проживания (пребывания).
-                        5.	Срок временного пребывания в Российской Федерации иностранного гражданина или лица без гражданства определяется сроком действия выданной ему визы и сроком постановки на миграционный учет (при наличии визового режима пребывания в Российской Федерации) или только сроком постановки на миграционный учет по месту пребывания (при наличии безвизового режима пребывания в Российской Федерации). Иностранный гражданин обязан выехать из Российской Федерации до окончания срока действия визы или срока постановки на миграционный учет, за исключением случаев, когда на день истечения указанных сроков иностранному гражданину выдана новая виза на право пребывания в Российской Федерации либо иностранный гражданин поставлен на миграционный учет на очередной срок.
-                        КНИТУ-КАИ не осуществляет продление виз и постановку на миграционный учет родственников и знакомых иностранных граждан, самостоятельно прибывших в Казань, и не несет за это ответственность.
-                        6.	Срок временного пребывания иностранного гражданина или лица без гражданства на территории Российской Федерации на весь период обучения продлевается УВМ МВД России по РТ ежегодно, но не более чем на 1 (один) год.
+                        {% translate "LangStaticname196" %}.
+                        {% translate "LangStaticname197" %}.
+                        5.	{% translate "LangStaticname198" %}.
+                        {% translate "LangStaticname199" %}.
+                        6.	{% translate "LangStaticname200" %}.
                         
                         </span>
                         <span class="Lang-standart153_2_1">
-                            Для продления срока временного пребывания иностранный гражданин обязан не менее чем за 20 РАБОЧИХ дней до истечения действующего срока временного пребывания (истечения срока действия имеющейся визы или срока постановки иностранного гражданина на миграционный учет) представить в Управление международной деятельности следующие документы: паспорт (оригинал и копия), миграционная карта (оригинал и копия), уведомление о постановке на миграционный учет (оригинал и копия), действующий полис медицинского страхования, договор на обучение (для обучающихся на платной основе), квитанция об оплате госпошлины в размере, установленном действующим законодательством, необходимое количество фотографий.
-                        Документы для продления срока временного пребывания иностранного гражданина не будут приняты УВМ МВД России по РТ, если не будет предоставлен хотя бы один из перечисленных документов или хотя бы один из них будет оформлен неправильно.
-                        Оформление/продление многократной визы без предъявления в УВМ МВД России по РТ оригиналов действующего паспорта и миграционной карты невозможно.
+                            {% translate "LangStaticname201" %}.
+                            {% translate "LangStaticname202" %}.
+                            {% translate "LangStaticname203" %}.
                         
                         </span>
                         <span class="Lang-standart153_2_2">
-                            7.	Иностранный гражданин из страны с визовым режимом пребывания, своевременно не предоставивший в ИМО необходимые документы для продления/ оформления новой многократной визы обязан покинуть территорию Российской Федерации в пределах срока действия имеющейся визы и вернуться на обучение в КНИТУ-КАИ по новой визе, полученной на основании приглашения на въезд в Российскую Федерацию, оформленного в УВМ МВД России по РТ по ходатайству КНИТУ-КАИ или оформленного в МИД РФ по ходатайству Минобрнауки России.
-                        8.	Иностранный гражданин с безвизовым режимом пребывания, своевременно не продливший срок пребывания на территории Российской Федерации обязан выехать из Российской Федерации до окончания срока пребывания. В противном случае иностранный гражданин считается незаконно пребывающим на территории Российской Федерации, несет персональную ответственность в соответствии с законодательством Российской Федерации.
-                        9.	Снятие с миграционного учета по месту пребывания в КНИТУ-КАИ происходит в момент пересечения границы Российской Федерации или в момент постановки на миграционный учет в гостинице или в хостеле во время поездки по территории Российской Федерации, или в лечебном учреждении (больнице, госпитале, диспансере), в том числе и в пределах г. Казани. Каждый раз при возвращении на учебу в КНИТУ-КАИ после пребывания: за границей; в других населенных пунктах Российской Федерации (в случае постановки на миграционный учет); в гостинице; в лечебном учреждении на стационарном лечении иностранный гражданин должен вновь встать на миграционный учет по месту пребывания (проживания) в г.Казани, представив в ИМО (для проживающих в общежитии КНИТУ-КАИ) или владельцу квартиры (для арендующих квартиру) в течение двух дней с момента возвращения на учебу в КНИТУ-КАИ необходимые документы: паспорт (копию), миграционную карту (копию), последнее (во времени) уведомление о постановке на миграционный учет (оригинал).
+                            7.	{% translate "LangStaticname204" %}.
+                        8.	{% translate "LangStaticname205" %}.
+                        9.	{% translate "LangStaticname206" %}.
                         
                         </span>
                         
                         <span class="Lang-standart153_3">
-                            10.	В случае смены места проживания на срок превышающий 7 дней (в том числе в пределах студгородка КНИТУ-КАИ) иностранный гражданин обязан в двухдневный срок проинформировать об этом ИМО, дирекцию Студгородка и дирекцию принимающего института/ факультета, и встать на миграционный учет по новому месту проживания.
-                        11.	При получении разрешения на временное проживание, вида на жительство или гражданства Российской Федерации иностранный гражданин обязан в течение 24 часов уведомить об этом Отдел по учету студентов, принимающее учебное подразделение и ИМО.
-                        12.	КНИТУ-КАИ не занимается вопросами изменения миграционного статуса иностранного гражданина: получением гражданства РФ, оформлением разрешений на временное проживание или вида на жительство.
-                        13.	Иностранный гражданин за 6 месяцев до истечения срока действия национального паспорта обязан продлить или заменить его в соответствии с действующим в зарубежной стране порядком и представить в ИМО продленный/ новый паспорт. В случае истечения срока действия национального паспорта иностранный гражданин обязан покинуть территорию РФ.
+                            10.	{% translate "LangStaticname207" %}.
+                        11.	{% translate "LangStaticname208" %}.
+                        12.	{% translate "LangStaticname209" %}.
+                        13.	{% translate "LangStaticname210" %}.
                     
                     </span>
                         <span class="Lang-standart153_3_1">
-                            14.	В случае утраты документов (национального паспорта, визы, миграционной карты) иностранный гражданин обязан незамедлительно обратиться в ближайшее отделение полиции по месту утраты или обнаружения пропажи документов для получения справки о происшествии, и незамедлительно проинформировать об этом принимающее учебное подразделение и ИМО.
-                        15.	После окончания учебы или отчисления из КНИТУ-КАИ иностранный гражданин обязан покинуть территорию России в течение трех дней с момента отчисления, заблаговременно приобретя проездные билеты. Продление сроков пребывания в Российской Федерации иностранных граждан-выпускников КНИТУ-КАИ по причинам, не связанным с обучением или иным причинам, не предусмотренным законодательством, не допускается. Прекращение обучения в связи с отчислением, как по уважительным, так и неуважительным причинам, а также перерыв в обучении, связанный с академическим отпуском, являются основанием для сокращения срока временного пребывания, в частности, аннулирования имеющейся многократной визы и оформления транзитной визы для выезда из Российской Федерации. В таких случаях иностранный гражданин (из страны с визовым режимом пребывания) обязан заблаговременно приобрести билеты для выезда с территории России, представить в ИМО билеты и документы, необходимые для аннулирования действующей многократной и оформления транзитной визы. После этого, иностранный гражданин, в соответствии с приобретенными заблаговременно билетами, обязан покинуть территорию Российской Федерации до истечения срока действия транзитной визы.
-                        16.	Решение о продлении или сокращении срока пребывания иностранного гражданина на территории Российской Федерации принимается УВМ МВД России по РТ.
-                        17.	Медицинское обслуживание иностранных граждан осуществляется на основании полиса добровольного медицинского страхования, приобретенного за счет личных средств иностранного гражданина. Отсутствие полиса медицинского страхования, действительного на территории Российской Федерации, расценивается как нарушение правил пребывания иностранных граждан на территории Российской Федерации.
+                            14.	{% translate "LangStaticname211" %}.
+                        15.	{% translate "LangStaticname212" %}.
+                        16.	{% translate "LangStaticname213" %}.
+                        17.	{% translate "LangStaticname214" %}.
                         
                         </span>
                         <span class="Lang-standart153_4">
-                        18.	Иностранный гражданин обязан выполнять действующие правила внутреннего распорядка обучающихся КНИТУ-КАИ, в частности, добросовестно осваивать образовательную программу, выполнять индивидуальный учебный план, в том числе посещать предусмотренные учебным планом учебные занятия, осуществлять самостоятельную подготовку к занятиям, выполнять задания, данные педагогическими работниками в рамках образовательной программы, своевременно в письменной форме ставить в известность учебное подразделение Университета (институт, факультет, отделение СПО, подготовительное отделение для иностранных граждан и т.д.) о необходимости отсутствия на учебных занятиях, в том числе на экзаменах и зачетах, по уважительной причине. При отсутствии на занятиях, в том числе экзаменах и зачетах по непредвиденной уважительной причине, в первый день явки в Университет представить учебному подразделению документы, подтверждающие уважительность причины пропуска занятий. В случае болезни обучающийся представляет справку лечебного учреждения установленного образца.
-                        19.	Иностранный гражданин обязан письменно согласовывать с принимающим учебным подразделением, Студгородком и ИМО любые свои поездки в другой населенный пункт (вне Казани).
-                        20.	Для поддержания оперативной связи иностранный гражданин обязан иметь при себе мобильный телефон и сообщить актуальный номер в принимающее учебное подразделение, ИМО и Студгородок. При смене номера – также незамедлительно проинформировать указанные в настоящем абзаце подразделения. Также необходимо иметь при себе контакты старосты учебной группы, сотрудников принимающего учебного подразделения, ИМО и Студгородка, ответственных за работу с иностранными гражданами, и кураторов по общежитиям и регионам, выбранных из числа самих иностранных граждан.
+                        18.	{% translate "LangStaticname215" %}.
+                        19.	{% translate "LangStaticname216" %}.
+                        20.	{% translate "LangStaticname217" %}.
                     
                     </span>
                         <span class="Lang-standart153_4_1">
-                            21.	Иностранный гражданин имеет право осуществлять трудовую деятельность в случае, если он достиг возраста восемнадцати лет при наличии разрешения на работу или патента, если иной порядок не предусмотрен действующим законодательством Российской Федерации.
-                        22.	Иностранные граждане, совершившие преступления, административные или иные правонарушения на территории Российской Федерации, подлежат привлечению к ответственности на общих основаниях с гражданами Российской Федерации и могут быть привлечены к административной и/или дисциплинарной ответственности соответственно.
-                        23.	К иностранным гражданам или лицам без гражданства, допустившим административные или иные правонарушения на территории Российской Федерации, в том числе допустившим нарушение сроков постановки на миграционный учет, нарушение сроков пребывания, находящиеся на территории Российской Федерации с просроченной визой, нарушение порядка осуществления ими трудовой деятельности на территории Российской Федерации, нарушение правил медицинского обслуживания, и др., могут применяться следующие меры воздействия: штраф, административное выдворение, депортация в соответствии с действующим законодательством Российской Федерации.
-                        24.	В отношении иностранных граждан, допустивших неоднократные административные или иные правонарушения, может быть принято решение: об отказе в выдаче разрешения на временное проживание; аннулирование ранее выданного разрешения; аннулирование вида на жительство; отказ в выдаче разрешения на работу; аннулирование ранее выданного разрешения на работу; о неразрешении въезда в Российскую Федерацию или нежелательности пребывания (или проживания) на территории Российской Федерации на три и более лет
+                            21.	{% translate "LangStaticname218" %}.
+                        22.	{% translate "LangStaticname219" %}
+                        23.	{% translate "LangStaticname220" %}.
+                        24.	{% translate "LangStaticname221" %}
                         
                         </span>
                     </p>
@@ -529,7 +457,7 @@
                             </div>
                             <div class="threeBlock_block_disp_one_block">
                                 <p class="threeBlock_block_disp_one_block_p Lang-standart154">  
-                                    Заявление на отъезд
+                                    {% translate "LangStaticname222" %}
                                 </p>
                             </div>
                         </div>
@@ -541,7 +469,7 @@
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden7">
                     <p class="threeBlock_hidden_p">
-                        <span class="Lang-standart155">Скачать файл можно по</span> <span><a href="../../../static/mainsite/files to the download/заявление на отъезд.docx" class="threeBlock_hidden_p_h Lang-standart156" style="color: rgb(60, 106, 136); " download="">клику</a></span> 
+                        <span class="Lang-standart155">{% translate "LangStaticname223" %}</span> <span><a href="../../../static/mainsite/files to the download/заявление на отъезд.docx" class="threeBlock_hidden_p_h Lang-standart156" style="color: rgb(60, 106, 136); " download="">клику</a></span> 
                     </p>
                 </div>
                 <div class="threeBlock_blockhr">
@@ -559,7 +487,7 @@
                             <div class="threeBlock_block_disp_one_block">
 
                                 <p class="threeBlock_block_disp_one_block_p Lang-standart157">  
-                                    Уведомление о приезде
+                                    {% translate "LangStaticname224" %}
                                 </p>
                             </div>
                         </div>
@@ -571,7 +499,7 @@
                 </div>
                 <div class="threeBlock_hidden threeBlock_hidden8">
                     <p class="threeBlock_hidden_p">
-                        <span class="Lang-standart158">Скачать файл можно по</span> <span><a href="../../../static/mainsite/files to the download/уведомление о приезде.docx" class="threeBlock_hidden_p_h Lang-standart159" style="color: rgb(60, 106, 136); " download="">клику</a></span>
+                        <span class="Lang-standart158">{% translate "LangStaticname223" %}</span> <span><a href="../../../static/mainsite/files to the download/уведомление о приезде.docx" class="threeBlock_hidden_p_h Lang-standart159" style="color: rgb(60, 106, 136); " download="">клику</a></span>
 
                     </p>
                 </div>

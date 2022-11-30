@@ -84,7 +84,7 @@ def signup_view(request):
             user = authenticate(username=username, password=password)
             messages.success(request, 'Account was created for ' + username)
             login(request, user)
-            return redirect('extra')
+            return redirect('imo:extra')
         else:
             messages.info(request, 'invalid registration details')
             form = CreateUserForm()
