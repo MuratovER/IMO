@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import os
-
+from pathlib import Path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['https://imo.kai.ru/','localhost', '127.0.0.1', '.herokuapp.com
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'django.contrib.admin',
@@ -46,6 +47,8 @@ INSTALLED_APPS = [
     'multiselectfield',
     'phonenumber_field',
     'django_user_agents',
+    'rosetta',
+
 ]
 
 MIDDLEWARE = [
@@ -54,6 +57,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -85,6 +89,8 @@ WSGI_APPLICATION = 'imo.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
+
 
 DATABASES = {
     'default': {
@@ -128,13 +134,32 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_TZ = True
+
+
+from django.utils.translation import gettext_lazy as _
+
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
+MODELTRANSLATION_PREPOPULATE_LANGUAGE = 'ru'
+
+# LANGUAGE_CODE = 'en'
+
+gettext = lambda s: s
+LANGUAGES = (
+    ('en', _('English')),
+    ('ru', _('Russian')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
 
 
 # Static files (CSS, JavaScript, Images)

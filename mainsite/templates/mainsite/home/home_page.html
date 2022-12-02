@@ -1,26 +1,29 @@
-{% extends 'mainsite/base.html' %}{% block content %} {% load static %}
+{% extends 'mainsite/base.html' %}{% block content %} {% load static %}{% load i18n %}
 
 <body class="body indexEnterWindow">
-    
+
     <div class="header2">
         <div class="header2_boxText">
             <div class="header2_boxText_box">
-                <h1 class="header2_boxText_boxH1 Lang-standart84_1">Институт международного образования КНИТУ-КАИ</h1>
+                <h1 class="header2_boxText_boxH1">{% translate "LangStaticname14" %}</h1>
             </div>
             <div class="header2_boxText_twoBTN">
                 <div class="header2_boxText_twoBTNBox margin_bottom20px">
                     <button class="header2_boxText_twoBTNBox_button" onclick="location.href='/signup'">
 
-                            <img src='{% static "mainsite/img/Playnaw.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
-                            <div class="Lang-standart13">Начать сейчас</div>
-                        </button>
+                        <img src='{% static "mainsite/img/Playnaw.svg" %}'
+                            class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
+                        <div>{% translate "LangStaticname15" %}</div>
+                    </button>
                 </div>
                 <div class="header2_boxText_twoBTNBox">
-                    <button class="header2_boxText_twoBTNBox_button" onclick="location.href='https://www.5657.ru/s/h/hozBci'">
+                    <button class="header2_boxText_twoBTNBox_button"
+                        onclick="location.href='https://www.5657.ru/s/h/hozBci'">
 
-                            <img src='{% static "mainsite/img/podfaq.svg" %}' class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
-                            <div class="Lang-standart14">Подфак</div>
-                        </button>
+                        <img src='{% static "mainsite/img/podfaq.svg" %}'
+                            class="header2_boxText_twoBTNBox_button_IMGSVG" id="">
+                        <div>{% translate "LangStaticname16" %}</div>
+                    </button>
                 </div>
             </div>
             <div class="text_List_In_buttom">
@@ -28,318 +31,233 @@
 
                 </div>
                 <div class="text_List_In_buttom_box">
-                    <p class="text_List_In_buttom_text Lang-standart15">Листайте вниз</p>
+                    <p class="text_List_In_buttom_text">{% translate "LangStaticname17" %}</p>
                 </div>
             </div>
         </div>
         <div class="header2_boxImgSvg_Width50">
-            <!-- <div class="header2_boxImgSvg">
-
-                </div> -->
             <img src='{% static "mainsite/img/faces.svg" %}' class="header2_boxImgSvg_Width50_IMG_fases">
         </div>
     </div>
     <div class="trainingProgram">
         <div class="trainingProgram_TextBox_displayFlex">
             <div class="trainingProgram_TextBox textAlignCenter">
-                <h1 class="trainingProgram_TextBox_h1 Lang-standart16">Программы обучения</h1>
+                <h1 class="trainingProgram_TextBox_h1">{% translate "LangStaticname18" %}</h1>
             </div>
             <div class="trainingProgram_TextBox textAlignCenter">
-                <p class="trainingProgram_TextBox_p Lang-standart17">Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на часто задаваемые вопросы.</p>
+                <p class="trainingProgram_TextBox_p">{% translate "LangStaticname19" %}</p>
             </div>
         </div>
         <div class="specialty_box">
             <div class="specialty_box_displayFlex">
                 <div class="specialty_box_displayFlex_litleBox">
-                    <div onclick="location.href='/speciality/1001'"  class="specialty_box_pictureSMAL AircraftIndustry1 standartStyleForimgSp">
-                        <div class="specialty_box_picture_text Lang-standart18">Авиастроение</div>
+                    <div onclick="location.href='/speciality/1001'"
+                        class="specialty_box_pictureSMAL AircraftIndustry1 standartStyleForimgSp">
+                        <div class="specialty_box_picture_text">{% translate "LangStaticname20" %}</div>
                     </div>
-                    <div onclick="location.href='/speciality/1002'" class="specialty_box_picture AircraftEngines standartStyleForimgSp marginLeft20px">
-                        <div class="specialty_box_picture_text Lang-standart19">IT (программная инженерия)</div>
+                    <div onclick="location.href='/speciality/1002'"
+                        class="specialty_box_picture AircraftEngines standartStyleForimgSp marginLeft20px">
+                        <div class="specialty_box_picture_text">{% translate "LangStaticname21" %}</div>
                     </div>
                 </div>
                 <div class="specialty_box_displayFlex_litleBox">
-                    <div onclick="location.href='/speciality/1003'" class="specialty_box_picture infocommunicationTechnologies standartStyleForimgSp">
-                        <p class="specialty_box_picture_text Lang-standarts20">Телекоммуникации, интернет, IoT</p>
+                    <div onclick="location.href='/speciality/1003'"
+                        class="specialty_box_picture infocommunicationTechnologies standartStyleForimgSp">
+                        <p class="specialty_box_picture_text">{% translate "LangStaticname22" %}</p>
                     </div>
-                    <div onclick="location.href='/speciality/1004'" class="specialty_box_pictureSMAL AircraftIndustry2 standartStyleForimgSp marginLeft20px">
-                        <p class="specialty_box_picture_text Lang-standarty21">Экономика</p>
+                    <div onclick="location.href='/speciality/1004'"
+                        class="specialty_box_pictureSMAL AircraftIndustry2 standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text">{% translate "LangStaticname23" %}</p>
                     </div>
                 </div>
 
                 <div class="specialty_box_displayFlex_litleBox">
-                    <div onclick="location.href='/speciality/1005'" class="specialty_box_pictureSMAL AircraftIndustry3 standartStyleForimgSp">
-                        <p class="specialty_box_picture_text Lang-standart22">Машиностроение</p>
+                    <div onclick="location.href='/speciality/1005'"
+                        class="specialty_box_pictureSMAL AircraftIndustry3 standartStyleForimgSp">
+                        <p class="specialty_box_picture_text">{% translate "LangStaticname24" %}</p>
                     </div>
-                    <div onclick="location.href='/speciality/1006'" class="specialty_box_picture AircraftOperation1 standartStyleForimgSp marginLeft20px">
-                        <p class="specialty_box_picture_text Lang-standart23">Электроника и наноэлектроника</p>
+                    <div onclick="location.href='/speciality/1006'"
+                        class="specialty_box_picture AircraftOperation1 standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text">{% translate "LangStaticname25" %}</p>
                     </div>
                 </div>
-                <div  class="specialty_box_displayFlex_litleBox ">
-                    <div onclick="location.href='/speciality/1008'" class="specialty_box_picture compositTechnologi standartStyleForimgSp marginLeft20px">
-                        <p class="specialty_box_picture_text colorfff Lang-standart25">Композитные технологии</p>
+                <div class="specialty_box_displayFlex_litleBox ">
+                    <div onclick="location.href='/speciality/1008'"
+                        class="specialty_box_picture compositTechnologi standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text colorfff">{% translate "LangStaticname26"
+                            %}</p>
                     </div>
-                    <div onclick="location.href='/speciality/1007'" class="specialty_box_pictureSMAL shipbuilding standartStyleForimgSp marginLeft20px">
-                        <p class="specialty_box_picture_text colorfff Lang-standart24">Кораблестроение</p>
+                    <div onclick="location.href='/speciality/1007'"
+                        class="specialty_box_pictureSMAL shipbuilding standartStyleForimgSp marginLeft20px">
+                        <p class="specialty_box_picture_text colorfff">{% translate "LangStaticname27"
+                            %}</p>
                     </div>
-{#                    <div class="specialty_box_pictureSMAL SeeAllPrograms standartStyleForimgSp marginLeft20px">#}
-{#                        <p class="specialty_box_picture_text color000000 Lang-standart26">Смотреть все программы</p>#}
-{#                    </div>#}
                 </div>
             </div>
         </div>
     </div>
     <div class="weHAve_new">
         <div class="weHAve_new_BOXh1">
-            <h1 class="weHAve_new_h1 Lang-standart27">Наши новости</h1>
+            <h1 class="weHAve_new_h1">{% translate "LangStaticname28" %}</h1>
         </div>
 
-    <div class="post-last4">
-    {% for news in last_4 %}
-    <a class="news_list_a" href="{% url 'post' pk=news.pk %}" >
-    <div class="news_block" >
-        {% if news.cover_image %}
-            <img src="{{ news.cover_image.url }}" class="news_block_img"/>
-        {% endif %}
-        <div class="news_image">
+        <div class="post-last4">
+            {% for news in last_4 %}
+            <a class="news_list_a" href="{% url 'imo:post' pk=news.pk %}">
+                <div class="news_block">
+                    {% if news.cover_image %}
+                    <img src="{{ news.cover_image.url }}" class="news_block_img" />
+                    {% endif %}
+                    <div class="news_image">
 
-        </div>
-        <div class="news_info">
-            <div class="news_title">
-                <h3 class="news_title_h3">{{ news.title }}</h3>
-            </div>
-            <div class="news_addititonal_info">
-                <div class="news_KAI">
-                    <div class="news-KAI-block">
-                        <img src="{% static 'mainsite/img/Subtract.svg' %}" alt="" class="news-KAI-block-IMG">
-                        <p>ИМО КНИТУ-КАИ</p>
                     </div>
-                    <div class="news-date">
-                        {{ news.published_date }}
+                    <div class="news_info">
+                        <div class="news_title">
+                            <h3 class="news_title_h3">{{ news.title }}</h3>
+                        </div>
+                        <div class="news_addititonal_info">
+                            <div class="news_KAI">
+                                <div class="news-KAI-block">
+                                    <img src="{% static 'mainsite/img/Subtract.svg' %}" alt=""
+                                        class="news-KAI-block-IMG">
+                                    <p>{% translate "LangStaticname29" %}</p>
+                                </div>
+                                <div class="news-date">
+                                    {{ news.published_date }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="about_IMO">
+            <div class="box_aboutIMO_text_Inf">
+                <div class="box_aboutIMO_text_Infmain">
+                    <div class="box_aboutIMO_text_boxH1">
+                        <h1 class="box_aboutIMO_text_H1 Memo_boxContentH1">{% translate "LangStaticname30" %}</h1>
+                    </div>
+                    <div class="box_aboutIMO_text_boxp">
+                        <p class="box_aboutIMO_text_p Memo_box_Ph">{% translate "LangStaticname31" %}
+                        </p>
+                    </div>
+                </div>
+                <div class="box_aboutIMO_text_Inf_INGSVG">
+
+                </div>
+            </div>
+            <div class="box_aboutIMO_ImgSVG">
+                <div class="box_aboutIMO_ImgSVG_background">
+                    <div class="box_aboutIMO_ImgSVG_h1CLONE">
+                        <h1 class="box_aboutIMO_ImgSVG_h1">
+                            {% translate "LangStaticname32" %}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="imo_advantage">
+            <div class="imo_advantage_BOXtext">
+                <div class="imo_advantage_h1BOX box1">
+                    <h1 class="imo_advantage_h1">{% translate "LangStaticname33" %}</h1>
+                </div>
+                <div class="imo_advantage_pBOX box2">
+                    <p class="imo_advantage_p">{% translate "LangStaticname34" %}</p>
+                </div>
+            </div>
+            <div class="imo_advantage_Boxinf_gridBox">
+                <div class="imo_advantage_Boxinf box3">
+                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
+                        <img src='{% static "mainsite/img/box1.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                    </div>
+                    <div class="imo_advantage_Boxinf_boxh3">
+                        <h3 class="imo_advantage_Boxinf_3">{% translate "LangStaticname35" %}</h3>
+                    </div>
+                    <div class="imo_advantage_Boxinf_pbox">
+                        <p class="imo_advantage_Boxinf_p">{% translate "LangStaticname36" %}</p>
+                    </div>
+                </div>
+                <div class="imo_advantage_Boxinf box4">
+                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
+                        <img src='{% static "mainsite/img/box2.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                    </div>
+                    <div class="imo_advantage_Boxinf_boxh3">
+                        <h3 class="imo_advantage_Boxinf_3">{% translate "LangStaticname37" %}</h3>
+                    </div>
+                    <div class="imo_advantage_Boxinf_pbox">
+                        <p class="imo_advantage_Boxinf_p">{% translate "LangStaticname38" %}</p>
+                    </div>
+                </div>
+                <div class="imo_advantage_Boxinf box5">
+                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
+                        <img src='{% static "mainsite/img/box3.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                    </div>
+                    <div class="imo_advantage_Boxinf_boxh3">
+                        <h3 class="imo_advantage_Boxinf_3">{% translate "LangStaticname39" %}</h3>
+                    </div>
+                    <div class="imo_advantage_Boxinf_pbox">
+                        <p class="imo_advantage_Boxinf_p">{% translate "LangStaticname40" %}</p>
+                    </div>
+                </div>
+                <div class="imo_advantage_Boxinf box6">
+                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
+                        <img src='{% static "mainsite/img/box4.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                    </div>
+                    <div class="imo_advantage_Boxinf_boxh3">
+                        <h3 class="imo_advantage_Boxinf_3">{% translate "LangStaticname41" %}</h3>
+                    </div>
+                    <div class="imo_advantage_Boxinf_pbox">
+                        <p class="imo_advantage_Boxinf_p">{% translate "LangStaticname42" %}</p>
+                    </div>
+                </div>
+                <div class="imo_advantage_Boxinf box7">
+                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
+                        <img src='{% static "mainsite/img/box5.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                    </div>
+                    <div class="imo_advantage_Boxinf_boxh3">
+                        <h3 class="imo_advantage_Boxinf_3">{% translate "LangStaticname43" %}</h3>
+                    </div>
+                    <div class="imo_advantage_Boxinf_pbox">
+                        <p class="imo_advantage_Boxinf_p">{% translate "LangStaticname44" %}</p>
+                    </div>
+                </div>
+                <div class="imo_advantage_Boxinf box8">
+                    <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
+                        <img src='{% static "mainsite/img/box6.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
+                    </div>
+                    <div class="imo_advantage_Boxinf_boxh3">
+                        <h3 class="imo_advantage_Boxinf_3">{% translate "LangStaticname45" %}</h3>
+                    </div>
+                    <div class="imo_advantage_Boxinf_pbox">
+                        <p class="imo_advantage_Boxinf_p">{% translate "LangStaticname46" %}</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </a>
-    {% endfor %}
 
-
-{#        <div class="weHAve_new_CardLink">#}
-{#            <div class="weHAve_new_CardLinkBox">#}
-{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img2 sizeBox">#}
-{##}
-{#                </div>#}
-{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
-{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart28">Консультация с профессионалами из IT</h3>#}
-{#                </div>#}
-{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
-{#                    </div>#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="weHAve_new_CardLinkBox">#}
-{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img3 sizeBox">#}
-{##}
-{#                </div>#}
-{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
-{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart29">Консультация с профессионалами из IT</h3>#}
-{#                </div>#}
-{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
-{#                    </div>#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="weHAve_new_CardLinkBox">#}
-{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img4 sizeBox">#}
-{##}
-{#                </div>#}
-{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
-{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart30">Консультация с профессионалами из IT</h3>#}
-{#                </div>#}
-{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
-{#                    </div>#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="weHAve_new_CardLinkBox">#}
-{#                <div class="weHAve_new_boxStart_img shadowH weHAve_new_CardLink_boxStart_img5 sizeBox">#}
-{##}
-{#                </div>#}
-{#                <div class="weHAve_new_CardLink_Inf_boxh3">#}
-{#                    <h3 class="weHAve_new_CardLink_Inf_h3 Lang-standart31">Консультация с профессионалами из IT</h3>#}
-{#                </div>#}
-{#                <div class="weHAve_new_boxStart_Inf_boxINFimg">#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/calendar.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">12.01.2021</p>#}
-{#                    </div>#}
-{#                    <div class="weHAve_new_boxStart_Inf_boxINFimg_boximggtext"><img src='{% static "mainsite/img/show.svg" %}' alt="noIMG" class="weHAve_new_boxStart_Inf_boxINFimg_img">#}
-{#                        <p class="weHAve_new_boxStart_Inf_boxINFp">1455</p>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-    </div>
-    <div class="about_IMO">
-        <div class="box_aboutIMO_text_Inf">
-            <div class="box_aboutIMO_text_Infmain">
-                <div class="box_aboutIMO_text_boxH1">
-                    <h1 class="box_aboutIMO_text_H1 Memo_boxContentH1 Lang-standart32">Об Университете ИМО</h1>
-                </div>
-                <div class="box_aboutIMO_text_boxp">
-                    <p class="box_aboutIMO_text_p Memo_box_Ph Lang-standart33">На платформе можнополучить знания по актуальным темам и востребованные навыки. Все курсы нацелены на практику: мы следим за актуальностью материала и помогаем с трудоустройством и стажировкой.</p>
-                </div>
-            </div>
-            <div class="box_aboutIMO_text_Inf_INGSVG">
-
-            </div>
-        </div>
-        <div class="box_aboutIMO_ImgSVG">
-            <div class="box_aboutIMO_ImgSVG_background">
-                <div class="box_aboutIMO_ImgSVG_h1CLONE">
-                    <h1 class="box_aboutIMO_ImgSVG_h1 Lang-standart34">
-                        Узнайте как мы живем
-                    </h1>
-                </div>
-            </div>
+        <div class="footer_boxHR">
+            <hr class="footer_hr" />
         </div>
 
-    </div>
-    <div class="imo_advantage">
-        <div class="imo_advantage_BOXtext">
-            <div class="imo_advantage_h1BOX box1">
-                <h1 class="imo_advantage_h1 Lang-standart35">Преимущества ИМО КАИ</h1>
+        <div class="mainSerchON">
+            <div class="serchON">
+
             </div>
-            <div class="imo_advantage_pBOX box2">
-                <p class="imo_advantage_p Lang-standart36">Предлагаем вам ознакомиться с информацией, которая поможет вам подготовиться к приезду в Казань и ответит на часто задаваемые вопросы.</p>
+            <div class="serchON_box">
+
+                <img src='{% static "mainsite/img/search_white.svg" %}' class="serchON_box_img" id="serchOnBoxImg">
+                <input type="text" class="serchON_box_input Lang-standartPlaceholder83" id="serchONBoxInput"
+                    placeholder="{% translate 'LangStaticname47' %}">
             </div>
         </div>
-        <div class="imo_advantage_Boxinf_gridBox">
-            <div class="imo_advantage_Boxinf box3">
-                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
-                    <img src='{% static "mainsite/img/box1.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                </div>
-                <div class="imo_advantage_Boxinf_boxh3">
-                    <h3 class="imo_advantage_Boxinf_3 Lang-standart37">Общежитие</h3>
-                </div>
-                <div class="imo_advantage_Boxinf_pbox">
-                    <p class="imo_advantage_Boxinf_p Lang-standart38">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                </div>
-            </div>
-            <div class="imo_advantage_Boxinf box4">
-                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
-                    <img src='{% static "mainsite/img/box2.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                </div>
-                <div class="imo_advantage_Boxinf_boxh3">
-                    <h3 class="imo_advantage_Boxinf_3 Lang-standart39">Комбинат питания</h3>
-                </div>
-                <div class="imo_advantage_Boxinf_pbox">
-                    <p class="imo_advantage_Boxinf_p Lang-standart40">Не следует, однако, забывать о том, что выбранный нами инновационный путь </p>
-                </div>
-            </div>
-            <div class="imo_advantage_Boxinf box5">
-                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
-                    <img src='{% static "mainsite/img/box3.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                </div>
-                <div class="imo_advantage_Boxinf_boxh3">
-                    <h3 class="imo_advantage_Boxinf_3 Lang-standart41">КАИ “Олимп”</h3>
-                </div>
-                <div class="imo_advantage_Boxinf_pbox">
-                    <p class="imo_advantage_Boxinf_p Lang-standart42">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                </div>
-            </div>
-            <div class="imo_advantage_Boxinf box6">
-                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
-                    <img src='{% static "mainsite/img/box4.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                </div>
-                <div class="imo_advantage_Boxinf_boxh3">
-                    <h3 class="imo_advantage_Boxinf_3 Lang-standart43">Творчество</h3>
-                </div>
-                <div class="imo_advantage_Boxinf_pbox">
-                    <p class="imo_advantage_Boxinf_p Lang-standart44">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                </div>
-            </div>
-            <div class="imo_advantage_Boxinf box7">
-                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
-                    <img src='{% static "mainsite/img/box5.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                </div>
-                <div class="imo_advantage_Boxinf_boxh3">
-                    <h3 class="imo_advantage_Boxinf_3 Lang-standart45">Библиотека</h3>
-                </div>
-                <div class="imo_advantage_Boxinf_pbox">
-                    <p class="imo_advantage_Boxinf_p Lang-standart46">Не следует, однако, забывать о том, что выбранный нами инновационный</p>
-                </div>
-            </div>
-            <div class="imo_advantage_Boxinf box8">
-                <div class="imo_advantage_Boxinf_imgbox imo_advantage_Boxinf_imgHOVER cursorN">
-                    <img src='{% static "mainsite/img/box6.svg" %}' alt="noo_img" class="imo_advantage_Boxinf_img">
-                </div>
-                <div class="imo_advantage_Boxinf_boxh3">
-                    <h3 class="imo_advantage_Boxinf_3 Lang-standart47">Центр переводов</h3>
-                </div>
-                <div class="imo_advantage_Boxinf_pbox">
-                    <p class="imo_advantage_Boxinf_p Lang-standart48">Не следует, однако, забывать о том, что выбранный нами инновационный путь влечет за собой</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="doYOUHAVEQUES">
-        <div class="doYOUHAVEQUES_boxh1">
-            <h1 class="doYOUHAVEQUES_h1 Lang-standart49">Остались вопросы?</h1>
-        </div>
-        <div class="doYOUHAVEQUES_boxes">
-            <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes1 ">
-                <div class="doYOUHAVEQUES_boxe_h1Box">
-                    <h3 class="doYOUHAVEQUES_boxe_h1 Lang-standart50">План приема студентов</h3>
-                </div>
-            </div>
-            <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes2 ">
-                <div class="doYOUHAVEQUES_boxe_h1Box">
-                    <h3 class="doYOUHAVEQUES_boxe_h1 Lang-standart51">Необходимые документы</h3>
-                </div>
-            </div>
-            <div class="doYOUHAVEQUES_boxe doYOUHAVEQUES_boxes3 ">
-                <div class="doYOUHAVEQUES_boxe_h1Box">
-                    <h3 class="doYOUHAVEQUES_boxe_h1 Lang-standart52">Как подать заявление</h3>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="footer_boxHR">
-        <hr class="footer_hr" />
-    </div>
-
-    <div class="mainSerchON">
-        <div class="serchON">
-
-        </div>
-        <div class="serchON_box">
-
-            <img src='{% static "mainsite/img/search_white.svg" %}' class="serchON_box_img" id="serchOnBoxImg">
-            <input type="text" class="serchON_box_input Lang-standartPlaceholder83" id="serchONBoxInput" placeholder="|Напишите что-нибудь...">
-        </div>
-    </div>
-    <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'>
-    </script>
-
-    <script src='{% static "mainsite/js/home_page/locationFile.js" %}'>
-    </script>
-
-    <script src="{% static 'mainsite/js/registration/translate.js' %}">
-    </script>
-    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
-    </script>
-{% endblock %}
+        <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'>
+        </script>
+        <script src='{% static "mainsite/js/home_page/locationFile.js" %}'>
+        </script>
+        <script src="{% static 'mainsite/js/registration/translate.js' %}">
+        </script>
+        <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
+        </script>
+        {% endblock %}

@@ -1,195 +1,108 @@
-{% extends 'mainsite/base.html' %} {% block content %} {% load static %}
+{% extends 'mainsite/base.html' %} {% block content %} {% load static %}{% load i18n %}
 
 <body class="body">
     <div class="headerTwoEnteringImo">
         <div class="headerTwoEnteringImo_place">
-            <!-- <div class="headerTwoEnteringImo_links">
-                <div class="headerTwoEnteringImo_link_butExit">
-                    <img src="../../../static/mainsite/img/arrow_1.svg" alt="noimg" class="headerTwoEnteringImo_link_butExit_imgarrow">
-                    <p class="headerTwoEnteringImo_link_butExit_text">Назад</p>
-                </div>
-                <div class="headerTwoEnteringImo_link_butExit">
-                    <p class="headerTwoEnteringImo_link_butExit_text">Главная</p>
-                    <img src="../../../static/mainsite/img/arrowtwonumb.svg" alt="noimg" class="headerTwoEnteringImo_link_butExit_imgarrow">
-                </div>
-                <div class="headerTwoEnteringImo_link_butExit">
-                    <p class="headerTwoEnteringImo_link_butExit_text">Поступающим</p>
-                    <img src="../../../static/mainsite/img/arrowtwonumb.svg" alt="noimg" class="headerTwoEnteringImo_link_butExit_imgarrow">
-                </div>
-            </div> -->
             <div class="headerTwoEnteringImo_box_h1">
                 <h1 class="headerTwoEnteringImo_notbox_h1">
-                    Поступающим в ИМО
+                    {% translate "LangStaticname48" %}
                 </h1>
             </div>
         </div>
     </div>
-
     <div class="headerTwoEnteringImo_Information">
-            <div class="headerTwoEnteringImo_column_box borderTop">
-                <div class="headerTwoEnteringImo_column_box_p_box_flex">
-                    <a href="https://abiturientu.kai.ru/normativnye-dokumenty" class="headerTwoEnteringImo_column_box_p">Нормативные документы</a>
-                </div>
-                <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+        <div class="headerTwoEnteringImo_column_box borderTop">
+            <div class="headerTwoEnteringImo_column_box_p_box_flex">
+                <a href="https://abiturientu.kai.ru/normativnye-dokumenty" class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname49" %}</a>
             </div>
-        
-            <div class="headerTwoEnteringImo_column_box borderTop borderLR">
-                <div class="headerTwoEnteringImo_column_box_p_box_flex">
-                    <a href="https://abiturientu.kai.ru/prohodnye-bally" class="headerTwoEnteringImo_column_box_p">Проходные баллы</a>
-                </div>
-                <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+            <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+        </div>
+        <div class="headerTwoEnteringImo_column_box borderTop borderLR">
+            <div class="headerTwoEnteringImo_column_box_p_box_flex">
+                <a href="https://abiturientu.kai.ru/prohodnye-bally" class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname50" %}</a>
             </div>
-            <div class="headerTwoEnteringImo_column_box borderBottomAndTop borderLR">
-                <div class="headerTwoEnteringImo_column_box_p_box_flex">
-                    <a href="{% url 'home_page' %}" class="headerTwoEnteringImo_column_box_p">Специальности для поступления</a>
-                </div>
-                <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box img_link_boxEnd" alt="noImg" id="img_link_box">
+            <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+        </div>
+        <div class="headerTwoEnteringImo_column_box borderBottomAndTop borderLR">
+            <div class="headerTwoEnteringImo_column_box_p_box_flex">
+                <a href="{% url 'imo:home_page' %}" class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname51" %}</a>
             </div>
-        
-        
-            <div class="headerTwoEnteringImo_column_box borderTop">
-                <div class="headerTwoEnteringImo_column_box_p_box_flex">
-                    <a href="https://abiturientu.kai.ru/bakalavriat" class="headerTwoEnteringImo_column_box_p">Какие документы требуются для поступления?</a>
-                </div>
-                <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+            <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box img_link_boxEnd" alt="noImg"
+                id="img_link_box">
+        </div>
+        <div class="headerTwoEnteringImo_column_box borderTop">
+            <div class="headerTwoEnteringImo_column_box_p_box_flex">
+                <a href="https://abiturientu.kai.ru/bakalavriat" class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname52" %}</a>
             </div>
-            <div class="headerTwoEnteringImo_column_box borderTop">
-                <div class="headerTwoEnteringImo_column_box_p_box_flex">
-                    <a href="https://www.who.int/ru/emergencies/diseases/novel-coronavirus-2019" class="headerTwoEnteringImo_column_box_p">Информация о Covid 19</a>
-                </div>
-                <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+            <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+        </div>
+        <div class="headerTwoEnteringImo_column_box borderTop">
+            <div class="headerTwoEnteringImo_column_box_p_box_flex">
+                <a href="https://www.who.int/ru/emergencies/diseases/novel-coronavirus-2019"
+                    class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname53" %}</a>
             </div>
-            <div class="headerTwoEnteringImo_column_box borderBottomAndTop">
-                <div class="headerTwoEnteringImo_column_box_p_box_flex">
-                    <a href="https://abiturientu.kai.ru/kalendar-priema" class="headerTwoEnteringImo_column_box_p">Календарь приема</a>
-                </div>
-                <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box img_link_boxEnd" alt="noImg" id="img_link_box">
+            <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box" alt="noImg" id="img_link_box">
+        </div>
+        <div class="headerTwoEnteringImo_column_box borderBottomAndTop">
+            <div class="headerTwoEnteringImo_column_box_p_box_flex">
+                <a href="https://abiturientu.kai.ru/kalendar-priema" class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname54" %}</a>
             </div>
-        
+            <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box img_link_boxEnd" alt="noImg"
+                id="img_link_box">
+        </div>
     </div>
     <div class="live_in_sharaga">
-        <!-- <div class="live_in_sharaga_h1_text">
-            <h1 class="live_in_sharaga_h1_text_h1">
-                Жизнь в Университете
-            </h1>
-        </div> -->
         <div class="live_in_sharaga_boxIMG live_in_sharaga_boxIMG_img1 cursor" onclick="location.href='/aboutkazan'">
             <a class="live_in_sharaga_boxIMG_a">
-                О Казани
+                {% translate "LangStaticname55" %}
             </a>
         </div>
-        <!-- <div class="live_in_sharaga_boxIMG live_in_sharaga_boxIMG_img2">
-             <a class="live_in_sharaga_boxIMG_a" href="#">
-                Об Университете
-            </a> 
-        </div> -->
-        <!-- <div class="live_in_sharaga_boxIMG live_in_sharaga_boxIMG_img3">
-            <a class="live_in_sharaga_boxIMG_a" href="#">
-                Что можно посетить в городе
-            </a>
-        </div> -->
         <div class="live_in_sharaga_boxIMG_bottom">
-            <!-- <div class="live_in_sharaga_boxIMG_bottomItem live_in_sharaga_boxIMG_img4">
-                <a class="live_in_sharaga_boxIMG_a" href="#">
-                    Спортивная жизнь в городе
-                </a>
-            </div>
-            <div class="live_in_sharaga_boxIMG_bottomItem live_in_sharaga_boxIMG_img5">
-                <a class="live_in_sharaga_boxIMG_a" href="#">
-                    Студенческая жизнь
-                </a>
-            </div>
-            <div class="live_in_sharaga_boxIMG_bottomItem live_in_sharaga_boxIMG_img6">
-                <a class="live_in_sharaga_boxIMG_a" href="#">
-                    Национальная кухня
-                </a>
-            </div> -->
         </div>
     </div>
-    <!-- <div class="GetAdvice">
-        <div class="GetAdvice_Box1">
-            <div class="GetAdvice_Box1_boxh1">
-                <h1 class="GetAdvice_Box1_h1">Получите консультацию</h1>
-            </div>
-            <div class="GetAdvice_Box1_boxp">
-                <p class="GetAdvice_Box1_p">Мы свяжемся с Вами в ближайшее время</p>
-            </div>
-        </div>
-        <form class="GetAdvice_Box2" action="" method="">
-            <div class="GetAdvice_Box2_box_INPUT">
-                <input type="text" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT1" id="" placeholder="Как к Вам обращаться?">
-            </div>
-            <div class="GetAdvice_Box2_FLEX_wrap">
-                <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUTdasdad">
-                    <input type="tel" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT2" id="" placeholder="Ваш номер телефона">
-                </div>
-                <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUT_BOXsize">
-                    <input type="email" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT3" id="" placeholder="Адрес вашей электронной почты">
-                </div>
-            </div>
-            <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUT_displayTest">
-                <div class="GetAdvice_Box2_box_INPUT_displayTest2">
-                    <div class="GetAdvice_Box2_box_INPUT GetAdvice_Box2_box_INPUT_MARGIN">
-                        <input type="checkbox" class="GetAdvice_Box2_box_INPUTboxItem GetAdvice_Box2_box_INPUT4" id="">
-                    </div>
-                    <div class="GetAdvice_Box2_box_INPUTboxP">
-                        <p class="GetAdvice_Box2_box_P">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных и с Правилами пользования Платформой</p>
-                    </div>
-                </div>
-                <div class="GetAdvice_Box2_box_INPUT">
-                    <input type="submit" class="GetAdvice_Box2_box_INPUT_Submit" id="" value="Отправить">
-                </div>
-            </div>
-
-        </form>
-    </div> -->
-    
     <div class="weHAve_new_BOXh1">
-        <h1 class="weHAve_new_h1">Наши новости</h1>
+        <h1 class="weHAve_new_h1">{% translate "LangStaticname56" %}</h1>
     </div>
     <div class="post-last4">
-    {% for news in last_4 %}
-    <a class="news_list_a" href="{% url 'post' pk=news.pk %}" >
-    <div class="news_block" >
-        {% if news.cover_image %}
-            <img src="{{ news.cover_image.url }}" class="news_block_img"/>
-        {% endif %}
-        <div class="news_image">
-
-        </div>
-        <div class="news_info">
-            <div class="news_title">
-                <h3 class="news_title_h3">{{ news.title }}</h3>
-            </div>
-            <div class="news_addititonal_info">
-                <div class="news_KAI">
-                    <div class="news-KAI-block">
-                        <img src="{% static 'mainsite/img/Subtract.svg' %}" alt="" class="news-KAI-block-IMG">
-                        <p>ИМО КНИТУ-КАИ</p>
+        {% for news in last_4 %}
+        <a class="news_list_a" href="{% url 'imo:post' pk=news.pk %}">
+            <div class="news_block">
+                {% if news.cover_image %}
+                <img src="{{ news.cover_image.url }}" class="news_block_img" />
+                {% endif %}
+                <div class="news_image">
+                </div>
+                <div class="news_info">
+                    <div class="news_title">
+                        <h3 class="news_title_h3">{{ news.title }}</h3>
                     </div>
-                    <div class="news-date">
-                        {{ news.published_date }}
+                    <div class="news_addititonal_info">
+                        <div class="news_KAI">
+                            <div class="news-KAI-block">
+                                <img src="{% static 'mainsite/img/Subtract.svg' %}" alt="" class="news-KAI-block-IMG">
+                                <p>{% translate "LangStaticname29" %}</p>
+                            </div>
+                            <div class="news-date">
+                                {{ news.published_date }}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
+        {% endfor %}
     </div>
-    </a>
 
-
-
-    {% endfor %}
-    </div>
-    
     <div class="mainSerchON">
         <div class="serchON">
 
         </div>
         <div class="serchON_box">
-
             <img src='{% static "mainsite/img/search.svg" %}' class="serchON_box_img" id="serchOnBoxImg">
-            <input type="text" class="serchON_box_input" id="serchONBoxInput" placeholder="|Напишите что-нибудь...">
+            <input type="text" class="serchON_box_input" id="serchONBoxInput"
+                placeholder="{% translate 'LangStaticname47' %}">
         </div>
     </div>
     <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'></script>
-    {% endblock %}
+</body>    
+{% endblock %}
