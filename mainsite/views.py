@@ -1,49 +1,35 @@
-from urllib import request
 from loguru import logger
-from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import get_object_or_404, render, redirect
-from .forms import CreateUserForm, ProfileForm, FaqForm
+from .forms import CreateUserForm, ProfileForm
 from mainsite.models import Profile, Post, Faq, Speciality, Triadkey
 from django.contrib import messages
-from django.core.mail import send_mail, BadHeaderError
 from django.contrib.auth.decorators import login_required
-from django.utils.translation import gettext as _
-from django.utils.translation import get_language, activate, gettext
+from mainsite.business_logic.business_auth import mobile_check
+from mainsite.business_logic.business_auth import user_login
+
 
 def home_page(request):
-    last_4 = Post.objects.order_by()[:4]
-    context = {
-        'last_4': last_4 
-    }
-    
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/phone_content.html',  context)
-    else:
-        return render(request, 'mainsite/home/home_page.html', context)
+    last_4_news = Post.objects.order_by()[:4]
+
+    return mobile_check(request,
+                        mobile_url='mainsite/PhonePage/phone_content.html',
+                        pc_url='mainsite/home/home_page.html',
+                        context={'last_4': last_4_news})
 
 
 def login_view(request):
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
-    else:
-        if request.user.is_authenticated:
-            return redirect('home_page')
-        else:
-            if request.method == 'POST':
-                username = request.POST.get('username')
-                password = request.POST.get('password')
+    return mobile_check(request,
+                        mobile_url='mainsite/PhonePage/index.html',
+                        pc_url='mainsite/registration/LoginIndex.html',
+                        main_logic=user_login)
 
-                user = authenticate(
-                    request, username=username, password=password)
-                if user is not None:
-                    login(request, user)
-                    return redirect('home_page')
-                else:
-                    messages.info(request, 'Username OR password is incorrect')
 
-            ctx = {}
-        return render(request, 'mainsite/registration/LoginIndex.html', ctx)
+def logout_view(request):
+    return mobile_check(request,
+                        mobile_url='mainsite/PhonePage/index.html',
+                        pc_url='mainsite/home/home_page.html',
+                        main_logic=logout)
 
 
 def profile_view(request):
@@ -88,14 +74,9 @@ def signup_view(request):
         else:
             messages.info(request, 'invalid registration details')
             form = CreateUserForm()
-        return render(request, 'mainsite/registration/RegesterIndex.html', {'form': form})
-
-
-def logout_view(request):
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
-    else:
-        return render(request, 'mainsite/home/home_page.html')
+        return render(request,
+                      'mainsite/registration/RegesterIndex.html',
+                      {'form': form})
 
 
 def extra_view(request):
@@ -111,7 +92,7 @@ def extra_view(request):
             form = ProfileForm(request.POST, instance=profile)
 
             if form.is_valid():
-                extra = form.save()
+                form.save()
                 return redirect('profile')
         else:
             form = ProfileForm(instance=profile)
@@ -127,14 +108,16 @@ def privacypolicy_view(request):
 
 
 def enteringimo_view(request):
-        last_4 = Post.objects.order_by()[:4]
-        context = {
-            'last_4': last_4
-        }
-        if request.user_agent.is_mobile:
-            return render(request, 'mainsite/PhonePage/phone_enteringimo.html', context)
-        else:
-            return render(request, 'mainsite/enteringIMO/EnteringIMO.html', context)
+    last_4 = Post.objects.order_by()[:4]
+    context = {
+        'last_4': last_4
+    }
+    if request.user_agent.is_mobile:
+        return render(request,
+                      'mainsite/PhonePage/phone_enteringimo.html', context)
+    else:
+        return render(request,
+                      'mainsite/enteringIMO/EnteringIMO.html', context)
 
 
 def error_404_view(request, exception):
@@ -166,7 +149,8 @@ def profile_edit(request):
         else:
             form = ProfileForm(instance=profile)
 
-        return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
+        return render(request,
+                      'mainsite/profile/proflie_edit.html', {'form': form})
 
 
 @login_required
@@ -184,7 +168,8 @@ def password_edit(request):
         else:
             form = ProfileForm(instance=profile)
 
-        return render(request, 'mainsite/profile/proflie_edit.html', {'form': form})
+        return render(request,
+                      'mainsite/profile/proflie_edit.html', {'form': form})
 
 
 @login_required
@@ -241,7 +226,8 @@ def speciality_view(request, key):
             'speciality': speciality,
             'last_n': last_n,
         }
-        return render(request, 'mainsite/incomingIMO/incomingIMO.html', context)
+        return render(request,
+                      'mainsite/incomingIMO/incomingIMO.html', context)
 
 
 def triadkey_view(request):
@@ -249,5 +235,6 @@ def triadkey_view(request):
         return render(request, 'mainsite/PhonePage/index.html', )
     else:
         triadkey = Triadkey.objects.all()
-
-        return render(request, 'mainsite/incomingIMO/triadkey.html', {'triadkey': triadkey})
+        return render(request,
+                      'mainsite/incomingIMO/triadkey.html',
+                      {'triadkey': triadkey})
