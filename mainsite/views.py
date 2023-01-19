@@ -1,12 +1,12 @@
 from loguru import logger
 from django.contrib.auth import logout, login, authenticate
 from django.shortcuts import get_object_or_404, render, redirect
-from .forms import CreateUserForm, ProfileForm
+from .forms import ProfileForm
 from mainsite.models import Profile, Post, Faq, Speciality, Triadkey
-from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from mainsite.business_logic.business_auth import mobile_check
 from mainsite.business_logic.business_auth import user_login
+from mainsite.business_logic.business_auth import user_creation
 
 
 def home_page(request):
@@ -32,6 +32,13 @@ def logout_view(request):
                         main_logic=logout)
 
 
+def signup_view(request):
+    return mobile_check(request,
+                        mobile_url='mainsite/PhonePage/index.html',
+                        pc_url='mainsite/registration/RegesterIndex.html',
+                        main_logic=user_creation)
+
+
 def profile_view(request):
 
     if request.user_agent.is_mobile:
@@ -53,30 +60,6 @@ def profile_view(request):
         }
         return render(request, 'mainsite/profile/profile.html', context)
 
-
-def signup_view(request):
-    '''вьюха с логикой регистрации'''
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
-    else:
-        form = CreateUserForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            user.refresh_from_db()
-            # user.profile.email = form.cleaned_data.get('email')
-            user.save()
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=password)
-            messages.success(request, 'Account was created for ' + username)
-            login(request, user)
-            return redirect('imo:extra')
-        else:
-            messages.info(request, 'invalid registration details')
-            form = CreateUserForm()
-        return render(request,
-                      'mainsite/registration/RegesterIndex.html',
-                      {'form': form})
 
 
 def extra_view(request):
