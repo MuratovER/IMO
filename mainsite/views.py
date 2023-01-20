@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from mainsite.business_logic.business_auth import mobile_check
 from mainsite.business_logic.business_auth import user_login
 from mainsite.business_logic.business_auth import user_creation
-
+from mainsite.business_logic.business_profile import profile_render
 
 def home_page(request):
     last_4_news = Post.objects.order_by()[:4]
@@ -40,26 +40,10 @@ def signup_view(request):
 
 
 def profile_view(request):
-
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
-    else:
-        profile = Profile.objects.get(user=request.user)
-        if request.method == "POST":
-            form = ProfileForm(request.POST, instance=profile)
-            if form.is_valid():
-                profile = form.save(commit=False)
-                profile.save()
-                return redirect('profile')
-        else:
-            form = ProfileForm(instance=profile)
-
-        context = {
-            'profile': profile,
-            'form': form,
-        }
-        return render(request, 'mainsite/profile/profile.html', context)
-
+    return mobile_check(request,
+                        mobile_url='mainsite/PhonePage/index.html',
+                        pc_url='mainsite/profile/profile.html',
+                        main_logic=profile_render)
 
 
 def extra_view(request):
