@@ -2,7 +2,7 @@ from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
 
-app_name = 'imo'
+app_name = 'mainsite'
 
 urlpatterns = [
     path('', views.home_page, name='home_page'),

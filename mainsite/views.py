@@ -9,6 +9,7 @@ from mainsite.business_logic.business_auth import user_login
 from mainsite.business_logic.business_auth import user_creation
 from mainsite.business_logic.business_profile import profile_render
 
+
 def home_page(request):
     last_4_news = Post.objects.order_by()[:4]
 

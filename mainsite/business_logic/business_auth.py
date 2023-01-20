@@ -5,10 +5,10 @@ from django.shortcuts import render, redirect
 from mainsite.forms import CreateUserForm
 
 
-def check_blank_function(func, *args, **kwargs):
+def check_for_context(func, *args, **kwargs):
     """Check if blank if it is return empty dictionary instead"""
 
-    if func is None:
+    if type(func) is not dict:
         return {}
     else:
         return func(*args, **kwargs)
@@ -27,7 +27,7 @@ def mobile_check(request,
     else:
         logger.info('User rendered as pc')
 
-        context = check_blank_function(main_logic, request)
+        context = check_for_context(main_logic, request)
         return render(request, pc_url, context)
 
 
@@ -51,7 +51,7 @@ def user_authentication(request):
 def user_login(request):
     """Authorize user if he passes authentication"""
     if request.user.is_authenticated:
-        return redirect('home_page')
+        return redirect('imo:home_page')
     else:
         if request.method == 'POST':
             user_authentication(request)
