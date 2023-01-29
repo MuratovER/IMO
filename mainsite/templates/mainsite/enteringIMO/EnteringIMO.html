@@ -25,7 +25,7 @@
         </div>
         <div class="headerTwoEnteringImo_column_box borderBottomAndTop borderLR">
             <div class="headerTwoEnteringImo_column_box_p_box_flex">
-                <a href="{% url 'imo:home_page' %}" class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname51" %}</a>
+                <a href="{% url 'mainsite:home_page' %}" class="headerTwoEnteringImo_column_box_p">{% translate "LangStaticname51" %}</a>
             </div>
             <img src="../../../static/mainsite/img/arrowLinkBox.svg" class="img_link_box img_link_boxEnd" alt="noImg"
                 id="img_link_box">
@@ -65,7 +65,7 @@
     </div>
     <div class="post-last4">
         {% for news in last_4 %}
-        <a class="news_list_a" href="{% url 'imo:post' pk=news.pk %}">
+        <a class="news_list_a" href="{% url 'mainsite:post' pk=news.pk %}">
             <div class="news_block">
                 {% if news.cover_image %}
                 <img src="{{ news.cover_image.url }}" class="news_block_img" />
