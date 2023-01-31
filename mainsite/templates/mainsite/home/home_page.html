@@ -103,7 +103,7 @@
 
         <div class="post-last4">
             {% for news in last_4 %}
-            <a class="news_list_a" href="{% url 'imo:post' pk=news.pk %}">
+            <a class="news_list_a" href="{% url 'mainsite:post' pk=news.pk %}">
                 <div class="news_block">
                     {% if news.cover_image %}
                     <img src="{{ news.cover_image.url }}" class="news_block_img" />
