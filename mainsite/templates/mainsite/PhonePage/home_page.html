@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Change page</title>
+    <title>IMO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/png" href='{% static "mainsite/img/Icon.svg" %}' />
@@ -24,7 +24,7 @@
     <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
 
-    <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
+    <!-- <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet">
@@ -33,7 +33,7 @@
     <link href='{% static "mainsite/css/registration/style_3.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_4.css" %}' rel="stylesheet">
 
-    <script src="{% static 'mainsite/js/registration/translate.js' %}"></script>
+    <!-- <script src="{% static 'mainsite/js/registration/translate.js' %}"></script> -->
     <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"></script>
     <script src="{% static 'mainsite/js/home_page/hidden_block_mainPage.js' %}"></script>
     <script src='{% static "mainsite/js/them/them.js" %}'></script>
@@ -60,24 +60,51 @@
                     <div class="phone_header_notice_ico"></div>
                 </div>
             </div>
-            <div class="phone_header_home">
+            <div class="phone_header_home" onclick="toggle()">
                 <div class="phone_header_home_ico"></div>
-                <input class="phone_header_home_get_ico" value="" onclick="toggle()" />
+                <div class="phone_header_home_get_ico" id="phone_header_animated"></div>
                 <div id="collapse" class="show hide">
                     <div class="showhide_phone">
                         <div class="chageColor_phone_click">
                             <div class="theme-switch-wrapper">
                                 <label class="theme-switch" for="checkbox">
                                     <input type="checkbox" id="checkbox" />
-                                    <div class="slider round"></div>
+                                    <div class="slider round">
+                                        <div class="slide_inside">
+                                            <div class="slide_SunGroup">
+                                                <div class="slide_sun"></div>
+                                                <p class="slide_inside_text">Light</p>
+                                            </div>
+                                            <div class="slide_MoonGroup"> 
+                                                <div class="slide_moon"></div>
+                                                <p class="slide_inside_text">Dark</p>
+                                            </div>    
+                                        </div>
+                                    </div>
                                 </label>
                             </div>
-                            <div class="chageColor_phone"></div>
                         </div>
                         <div class="chageLanguage">
                             <div class="buttonsInHeader_box">
                                 <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name"
                                     id="lang" value="Ru">
+                                    <div class="phone_header_Ru_ico"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr size="1px" width="220px" align="center" color="bLack" style="opacity: inherit;
+                    margin: 0;">
+                    <br>
+                    <div class="phone_headerProfilandPamyat">
+                        <div class="pop-up_form-down">
+                            <div class="pop-up_Profil">
+                                <div class="Profil"></div>
+                                <p>Профиль</p>
+                            </div>
+                            <div class="pop-up_PamyatkaInost">
+                                <div class="Pamyatka_Inostransa"></div>
+                                <p>Памятка иностранцу</p>
                             </div>
                         </div>
                     </div>
@@ -149,10 +176,10 @@
 <script>
     function toggle() {
         document.getElementById("collapse").classList.toggle("hide");
+        document.getElementById("phone_header_animated").classList.toggle("phone_header_animated_left")
     }
 </script>
 <script>   
-
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
     const currentTheme = localStorage.getItem('theme');
 
