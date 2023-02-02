@@ -1,13 +1,10 @@
-from distutils.text_file import TextFile
 from email.policy import default
 from django.utils import timezone
-from multiselectfield import MultiSelectField
-
 from django.db import models
 from django.contrib.auth.models import User
 from django.conf import settings
 from phonenumber_field.modelfields import PhoneNumberField
-from ckeditor_uploader.widgets import CKEditorUploadingWidget
+
 
 class Post(models.Model):
     author = models.ForeignKey(
