@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect
 from mainsite.forms import CreateUserForm, ProfileForm
 from mainsite.models import Profile
 
+
 def check_for_context(func, method, redirect_page,*args, **kwargs):
     """Check if blank if it is return empty dictionary instead"""
     if func is not None:
@@ -45,6 +46,7 @@ def user_login(request):
 
 
 def add_user_to_db(request, form):
+    """Function add user to tb and login him"""
     user = form.save()
     user.refresh_from_db()
     user.save()
@@ -72,6 +74,7 @@ def user_creation(request):
 
 
 def render_none_func(request, main_logic, context):
+    """Provide check of None function"""
     redirect_url = ''
     if main_logic is None:
         method, new_context = render, context
@@ -83,6 +86,7 @@ def render_none_func(request, main_logic, context):
 
 
 def logout_render(request):
+    """Logout user and redirect to home_page"""
     logout(request)
     method , redirect_url, context = redirect, 'mainsite:home_page', {} 
     return method, redirect_url, context
@@ -90,7 +94,7 @@ def logout_render(request):
 
 
 def method_router(request, main_logic, url, context):
-
+    """Route request by method"""
     method, redirect_url, new_context = render_none_func(request, main_logic, context)
     if method is render:
         return render(request, url, new_context)
@@ -101,8 +105,8 @@ def method_router(request, main_logic, url, context):
 def device_router(request,
                  mobile_url: str, pc_url: str, main_logic=None, context={}):
     """
-        Check if given request is from mobile
-        after checking return render with correct page
+        Check from which page request is,
+        after checking return render with correct page.
     """ 
 
     if request.user_agent.is_mobile:
@@ -115,28 +119,33 @@ def device_router(request,
     return method_router(request, main_logic, url, context)
 
 
-def extra_signup_page(request):
-    redirect_url= '' 
-    context = {}
+def form_validation(form):
+    """Function work if form is valid"""
+    if form.is_valid():
+        form.save()
+        method = redirect
+        return method
 
+
+def post_render(request, form, instance):
+    """Render post request"""
+    if request.method == 'POST':
+        form = form(request.POST, instance=instance)
+        method = form_validation(form) 
+    else:
+        form = ProfileForm(instance=instance)
+        method = render
+    return method, form
+
+
+def extra_signup_page(request):
+    """Rendering additional signup page"""
+    redirect_url= 'mainsite:profile'
     try:
         profile = request.user.profile
     except Profile.DoesNotExist:
         profile = Profile(user=request.user)
 
-    if request.method == 'POST':
-        form = ProfileForm(request.POST, instance=profile)
-
-        if form.is_valid():
-            form.save()
-            redirect_url= 'mainsite:profile'
-            logger.info(redirect_url, context)
-            return redirect, redirect_url, context
-
-    else:
-        form = ProfileForm(instance=profile)
-    
+    method, form = post_render(request, ProfileForm, instance=profile)
     context = {'form': form}
-
-    logger.info(redirect_url, context)
-    return render, redirect_url, context 
+    return method, redirect_url, context 

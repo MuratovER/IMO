@@ -10,6 +10,7 @@ from mainsite.business_logic.business_auth import user_creation
 from mainsite.business_logic.business_auth import logout_render
 from mainsite.business_logic.business_auth import extra_signup_page
 from mainsite.business_logic.business_profile import profile_render
+from mainsite.business_logic.business_profile import profile_edit_render
 
 
 def home_page(request):
@@ -79,31 +80,19 @@ def error_404_view(request, exception):
 
 
 def faq_view(request):
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/phone_faq.html', )
-    else:
-        questions = Faq.objects.all()
-        context = {'questions': questions}
-        return render(request, 'mainsite/faq/faq.html', context)
-
+    questions = Faq.objects.all()
+    return device_router(request,
+                        mobile_url='mainsite/PhonePage/phone_faq.html',
+                        pc_url='mainsite/faq/faq.html',
+                        context = {"questions":questions})
 
 @login_required
 def profile_edit(request):
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
-    else:
-        profile = Profile.objects.get(user=request.user)
-        if request.method == "POST":
-            form = ProfileForm(request.POST, instance=profile)
-            if form.is_valid():
-                profile = form.save(commit=False)
-                profile.save()
-                return redirect('profile')
-        else:
-            form = ProfileForm(instance=profile)
+    return device_router(request,
+                        mobile_url='mainsite/PhonePage/index.html',
+                        pc_url='mainsite/profile/proflie_edit.html', 
+                        main_logic=profile_edit_render)
 
-        return render(request,
-                      'mainsite/profile/proflie_edit.html', {'form': form})
 
 
 @login_required
