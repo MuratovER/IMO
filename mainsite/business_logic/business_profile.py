@@ -1,7 +1,7 @@
 from mainsite.models import Profile
 from mainsite.forms import ProfileForm
 from django.shortcuts import redirect
-
+from django.shortcuts import render, redirect
 
 def form_update(form, redirect_page):
     """Updating form if form is valide"""
@@ -24,9 +24,11 @@ def post_method_check(request, profile, check_form):
 
 def profile_render(request):
     """Function for profile rendering with updated form"""
+    redirect_url = ''
     profile = Profile.objects.get(user=request.user)
     form = post_method_check(request, profile, ProfileForm)
-    return {
+    context = {
         'profile': profile,
         'form': form,
     }
+    return render, redirect_url, context
