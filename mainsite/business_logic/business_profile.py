@@ -31,7 +31,17 @@ def profile_edit_render(request):
     redirect_url = 'mainsite:profile'
     method, form = post_render(request, ProfileForm, instance=profile)
     context = {
-        'profile': profile,
         'form': form,
+    }
+    return method, redirect_url, context
+
+
+def password_edit_render(request):
+    "Function for render password edit"
+    profile = Profile.objects.get(user=request.user)
+    redirect_url = 'mainsite:profile'
+    method, form = post_render(request, ProfileForm, instance=profile)
+    context = {
+        'form': form
     }
     return method, redirect_url, context
