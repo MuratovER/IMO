@@ -647,10 +647,10 @@ h1 {
     }
 
     #collapse {
-        width: 200px;
-        height: 180px;
-        margin-top: 270px;
-        margin-right: 50px;
+        width: 260px;
+        height: 80px;
+        margin-top: 250px;
+        margin-right: 140px;
     }
     .faq_content_phone {
         width: 100%;
@@ -736,8 +736,8 @@ h1 {
 
     #collapse {
         width: 230px;
-        height: 130px;
-        margin-top: 170px;
+        height: 50px;
+        margin-top: 190px;
         margin-right: 140px;
     }
 
@@ -1056,7 +1056,7 @@ font-weight: 400;
     background-size: contain;
     background-position: center;
     border: none;
-    width: 20px;
+    width: 15px;
     height: 20px;
 }
 

@@ -169,6 +169,8 @@ input:checked+.slider:before {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
+    height: 100px;
+    gap: 10%;
 }
 
 .Profil{
@@ -200,10 +202,16 @@ input:checked+.slider:before {
     flex-direction: row;
     align-items: center;
     /* justify-content: center; */
-    gap: 5px;
+    gap: 15px;
 }
 
-#collapse{
-    width: 230px;
-    height: 180px;   
+
+
+.Hr{
+    opacity: inherit;
+    margin: 0;
+    /* border: 1px; */
+    color: #000;
+    background-color: currentcolor;
+    margin: 5px 0 5px 0;
 }
