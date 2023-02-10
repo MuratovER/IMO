@@ -3,6 +3,7 @@
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Протестировать dotenv
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -239,18 +240,6 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-
-# config/settings.py
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
-DEFAULT_FROM_EMAIL = 'will@learndjango.com'
-EMAIL_HOST = 'smtp.mailgun.org' # new
-EMAIL_HOST_USER = 'eldar.muratov.3@gmail.com'# new
-EMAIL_HOST_PASSWORD = 'tkmlfhvehfnjd' # new
-EMAIL_PORT = 587 # new
-EMAIL_USE_TLS = True # new
-
 CSRF_TRUSTED_ORIGINS=['https://imo.kai.ru/']
-
-
 
 USER_AGENTS_CACHE = 'default'
