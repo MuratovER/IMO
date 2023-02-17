@@ -57,3 +57,5 @@ wget==3.2
 whitenoise==6.0.0
 win32-setctime==1.1.0
 yarl==1.8.2
+celery[redis]==5.2.7
+flower==1.2.0

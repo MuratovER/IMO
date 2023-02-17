@@ -52,9 +52,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_user_agents.middleware.UserAgentMiddleware',
-    'django.middleware.cache.UpdateCacheMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'imo.urls'
@@ -113,12 +110,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': os.path.join(BASE_DIR, 'imo_cache'),
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+#         'LOCATION': os.path.join(BASE_DIR, 'imo_cache'),
+#     }
+# }
 
 
 
@@ -244,17 +241,6 @@ CKEDITOR_CONFIGS = {
 }
 
 
-# config/settings.py
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
-DEFAULT_FROM_EMAIL = 'will@learndjango.com'
-EMAIL_HOST = 'smtp.mailgun.org' # new
-EMAIL_HOST_USER = 'eldar.muratov.3@gmail.com'# new
-EMAIL_HOST_PASSWORD = 'tkmlfhvehfnjd' # new
-EMAIL_PORT = 587 # new
-EMAIL_USE_TLS = True # new
-
-CSRF_TRUSTED_ORIGINS=['https://imo.kai.ru/']
-
-
-
 USER_AGENTS_CACHE = 'default'
+
+CELERY_BROKER_URL = 'redis://redis:6379/0'
