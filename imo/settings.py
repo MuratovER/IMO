@@ -109,7 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# # CACHES
+
+
 # CACHES = {
 #     'default': {
 #         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
@@ -241,5 +242,5 @@ CKEDITOR_CONFIGS = {
 }
 
 CSRF_TRUSTED_ORIGINS=['https://imo.kai.ru/']
-
 USER_AGENTS_CACHE = 'default'
+CELERY_BROKER_URL = 'redis://redis:6379/0'

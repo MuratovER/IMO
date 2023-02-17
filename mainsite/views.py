@@ -72,7 +72,7 @@ def privacypolicy_view(request):
     return device_router(
                         request,
                         mobile_url='mainsite/PhonePage/index.html',
-                        pc_url='mainsite/PhonePage/index.html'
+                        pc_url='mainsite/privacyPolicy/PrivacyPolicy.html'
     )
 
 
@@ -81,7 +81,7 @@ def enteringimo_view(request):
     return device_router(
                         request,
                         mobile_url='mainsite/PhonePage/index.html',
-                        pc_url='mainsite/PhonePage/index.html',
+                        pc_url='mainsite/enteringIMO/EnteringIMO.html',
                         context={'last_4': last_4}
     )
 
