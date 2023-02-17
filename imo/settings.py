@@ -3,6 +3,7 @@
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Протестировать dotenv
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -240,7 +241,6 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-
+CSRF_TRUSTED_ORIGINS=['https://imo.kai.ru/']
 USER_AGENTS_CACHE = 'default'
-
 CELERY_BROKER_URL = 'redis://redis:6379/0'
