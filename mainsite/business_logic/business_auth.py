@@ -1,34 +1,21 @@
 from loguru import logger
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.contrib import messages
 from django.shortcuts import render, redirect
-from mainsite.forms import CreateUserForm
+from mainsite.forms import CreateUserForm, ProfileForm
+from mainsite.models import Profile
 
 
-def check_for_context(func, *args, **kwargs):
+def check_for_context(func, method, redirect_page,*args, **kwargs):
     """Check if blank if it is return empty dictionary instead"""
-
-    if type(func) is not dict:
-        return {}
+    if func is not None:
+        if type(func(*args, **kwargs)) is not dict:
+            logger.info("Return {}")
+            return {}
+        else:
+            return func(*args, **kwargs)
     else:
-        return func(*args, **kwargs)
-
-
-def mobile_check(request,
-                 mobile_url: str, pc_url: str, main_logic=None, context={}):
-    """
-        Check if given request is from mobile
-        after checking return render with correct page
-    """
-
-    if request.user_agent.is_mobile:
-        logger.info('User rendered as mobile')
-        return render(request, mobile_url, context)
-    else:
-        logger.info('User rendered as pc')
-
-        context = check_for_context(main_logic, request)
-        return render(request, pc_url, context)
+        return method, {}, redirect_page
 
 
 def user_authentication(request):
@@ -51,14 +38,15 @@ def user_authentication(request):
 def user_login(request):
     """Authorize user if he passes authentication"""
     if request.user.is_authenticated:
-        return redirect('imo:home_page')
+        return redirect, 'mainsite:home_page', {}
     else:
         if request.method == 'POST':
             user_authentication(request)
-        return {}
+        return render, '', {}
 
 
-def adding_user_to_db(request, form):
+def add_user_to_db(request, form):
+    """Function add user to tb and login him"""
     user = form.save()
     user.refresh_from_db()
     user.save()
@@ -67,21 +55,97 @@ def adding_user_to_db(request, form):
     user = authenticate(username=username, password=password)
     messages.success(request, 'Account was created for ' + username)
     login(request, user)
-    return redirect('imo:extra')
-
-
-def form_validation(request, form, message):
-    """Adding user and login him if form is valid"""
-    new_form = form(request.POST)
-    if new_form.is_valid():
-        adding_user_to_db(request, new_form)
-        return new_form
-    else:
-        messages.info(request, message)
-        return form()
+    logger.info('Page redirect')
+    return redirect, 'mainsite:extra'
 
 
 def user_creation(request):
-    """Creating user if valide in other way return blank form"""
-    form = form_validation(request, CreateUserForm, 'Incorrect ')
-    return {'form': form}
+    """Adding user and login him if form is valid"""
+    form = CreateUserForm
+    method = render
+    new_form = form(request.POST)
+    redirect_url = ''
+    if new_form.is_valid():
+        method, redirect_url = add_user_to_db(request, new_form)
+    else:
+        new_form = form()
+
+    return method, redirect_url, {'form': new_form}
+
+
+def render_none_func(request, main_logic, context):
+    """Provide check of None function"""
+    redirect_url = ''
+    if main_logic is None:
+        method, new_context = render, context
+    else:
+        logger.error(main_logic)
+        method, redirect_url, new_context = main_logic(request)
+    
+    return method, redirect_url, new_context
+
+
+def logout_render(request):
+    """Logout user and redirect to home_page"""
+    logout(request)
+    method , redirect_url, context = redirect, 'mainsite:home_page', {} 
+    return method, redirect_url, context
+
+
+
+def method_router(request, main_logic, url, context):
+    """Route request by method"""
+    method, redirect_url, new_context = render_none_func(request, main_logic, context)
+    if method is render:
+        return render(request, url, new_context)
+    elif method is redirect:
+        return redirect(redirect_url)
+
+
+def device_router(request,
+                 mobile_url: str, pc_url: str, main_logic=None, context={}):
+    """
+        Check from which page request is,
+        after checking return render with correct page.
+    """ 
+
+    if request.user_agent.is_mobile:
+        logger.info('User rendered as mobile')
+        url = mobile_url
+    else:
+        logger.info('User rendered as pc')
+        url = pc_url
+
+    return method_router(request, main_logic, url, context)
+
+
+def form_validation(form):
+    """Function work if form is valid"""
+    if form.is_valid():
+        form.save()
+        method = redirect
+        return method
+
+
+def post_render(request, form, instance):
+    """Render post request"""
+    if request.method == 'POST':
+        form = form(request.POST, instance=instance)
+        method = form_validation(form) 
+    else:
+        form = ProfileForm(instance=instance)
+        method = render
+    return method, form
+
+
+def extra_signup_page(request):
+    """Rendering additional signup page"""
+    redirect_url= 'mainsite:profile'
+    try:
+        profile = request.user.profile
+    except Profile.DoesNotExist:
+        profile = Profile(user=request.user)
+
+    method, form = post_render(request, ProfileForm, instance=profile)
+    context = {'form': form}
+    return method, redirect_url, context 
