@@ -72,73 +72,125 @@
 
 .slide1_burron_Bxtex {
     padding: 10px 6px 10px 6px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--colorText);
-    font-family: var(--font-averta-cy-EB);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    /* border: chocolate; */
-    /* border-block-color: blue; */
-    border: 2px solid #000000;
+
 }
 
 .slide1_burron_BxtexPodfac {
     padding: 10px 30px 10px 30px;
+}
+
+.slide1_burron_BxtexPodfac,
+.slide1_burron_Bxtex{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
-    color: var(--colorText);
-    font-family: var(--font-averta-cy-EB);
     cursor: pointer;
     display: flex;
     align-items: center;
     border: 2px solid #000000;
+}
+
+
+
+.slide1_burron_BxtexPodfac,
+.slide1_burron_Bxtex
+{
+    color: var(--colorText);
+    font-family: var(--font-averta-cy-EB);
 }
 
 .Mtop31 {
     margin-top: 31px;
 }
 
-.phone_header_presen_ico {
-    background-image: url(../../img/phone_header_presen.svg);
+.phone_header_presen_ico,
+.phone_header_question_ico,
+.phone_header_question_ico, 
+.phone_header_notice_ico,
+.phone_header_home_ico,
+.phone_header_home_get_ico,
+.main_icon_logo_phone,
+.footer_slade1_icon,
+.phone_header_Ru_ico
+{
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+.phone_header_presen_ico {
+    background-image: var(--Phone-header-presen-ico);
+
 }
 
 .phone_header_question_ico {
-    background-image: url(../../img/phone_header_question.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: var(--Phone-header-question-ico);
 }
 
 .phone_header_notice_ico {
-    background-image: url(../../img/phone_header_notice.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: var(--Phone-header-notice-ico);
+
 }
 
 .phone_header_home_ico {
-    background-image: url(../../img/phone_header_home.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    background-image: var(--Phone-header-home-ico);
 }
 
 .phone_header_home_get_ico {
-    background-image: url(../../img/phome_imo_down.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: var(--Phone-header-home-get-ico);
     background-position: center;
     border: none;
-
 }
 
+/*               chaged color  */ 
 .main_icon_logo_phone {
-    height: 100%;
     background-image: var(--main_icon_logo_phone);
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 100%;
+}
+
+.footer_slade1_icon {
+    background-image: var(--main_icon_logo_phone);
+}
+
+
+.AircraftIndustry1_phone {
+    background-image: url(../home_page/cssimg/aircraft1.svg);
+}
+
+.AircraftEngines_phone {
+    background-image: url(../home_page/cssimg/dvigLetAp.svg);
+}
+
+.infocommunicationTechnologies_phone {
+    background-image: url(../home_page/cssimg/infoCAMUN.svg);
+}
+
+.AircraftIndustry2_phone {
+    background-image: url(../home_page/cssimg/acanomick.svg);
+}
+
+.AircraftIndustry3_phone {
+    background-image: url(../home_page/cssimg/ecspluatacia1.svg);
+}
+
+.AircraftOperation1_phone {
+    background-image: url(../home_page/cssimg/AircraftOperation1.svg);
+}
+
+.compositTechnologi_phone {
+    background-image: url(../../img/compositTechnologi.svg);
+}
+
+.shipbuilding_phone {
+    background-image: url(../../img/shipbuilding.svg);
+}
+
+
+.phone_header_Ru_ico{
+    background-image: url(../../img/phome_imo_down.svg);
+    background-position: center;
+    border: none;
+    width: 15px;
+    height: 20px;
 }
 
 .Lang-standart84_1 {
@@ -295,7 +347,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 116.1%;
-    color: #000212;
+    color: var(--Phone-Lang-standart-color);
 }
 
 .news_block_img {
@@ -350,11 +402,6 @@ h1 {
     align-items: center;
 }
 
-.footer_slade1_icon {
-    background-image: url(../home_page/cssimg/mainICON_1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 .footer_boxs_2 {
     display: flex;
@@ -519,6 +566,7 @@ h1 {
 
 .slade1_text {
     text-align: left;
+    color: var(--colorText);
 }
 
 .base_content_slade4 {
@@ -559,38 +607,6 @@ h1 {
     transition: 0.4s;
     margin-bottom: 20px;
 
-}
-
-.AircraftIndustry1_phone {
-    background-image: url(../home_page/cssimg/aircraft1.svg);
-}
-
-.AircraftEngines_phone {
-    background-image: url(../home_page/cssimg/dvigLetAp.svg);
-}
-
-.infocommunicationTechnologies_phone {
-    background-image: url(../home_page/cssimg/infoCAMUN.svg);
-}
-
-.AircraftIndustry2_phone {
-    background-image: url(../home_page/cssimg/acanomick.svg);
-}
-
-.AircraftIndustry3_phone {
-    background-image: url(../home_page/cssimg/ecspluatacia1.svg);
-}
-
-.AircraftOperation1_phone {
-    background-image: url(../home_page/cssimg/AircraftOperation1.svg);
-}
-
-.compositTechnologi_phone {
-    background-image: url(../../img/compositTechnologi.svg);
-}
-
-.shipbuilding_phone {
-    background-image: url(../../img/shipbuilding.svg);
 }
 
 .specialty_box_picture_text_phone {
@@ -1056,16 +1072,6 @@ font-weight: 400;
 
 }
 
-
-.phone_header_Ru_ico{
-    background-image: url(../../img/phome_imo_down.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: none;
-    width: 15px;
-    height: 20px;
-}
 
 .buttonsInHeader_box{
     display: flex;

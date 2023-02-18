@@ -243,22 +243,22 @@
     .LangText-incomig-specialty13,
     .LangText-incomig-specialty14 {
         font-weight: 700;
-        font-size: 8px;
+        font-size: 10px;
         line-height: 10px;
     
     }
     
     .specialty-all-CardLink {
-        column-gap: 8px;
-        row-gap: 8px;
+        column-gap: 10px;
+        row-gap: 10px;
     }
     
     .phone-weHAve_new_boxStart_img {
-        border-radius: 3px;
+        border-radius: 6px;
     }
     
     .specialty-all-exam-content {
-        width: 169px;
+        width: 216px;  /*    */
         height: 28px;
         margin-top: 5px;
         gap: 5px;

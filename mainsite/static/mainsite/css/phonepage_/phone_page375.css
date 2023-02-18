@@ -497,4 +497,7 @@
         font-size: 10px;
         line-height: 12px;
     }
+    .specialty_box_picture_text_phone{
+        display: none;
+    }
 }

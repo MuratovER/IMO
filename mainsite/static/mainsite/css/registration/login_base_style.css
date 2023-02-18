@@ -38,21 +38,28 @@ body {
     --phone-Hr:#000;
     --slider_inside_text:#000212;
     --phone-input-checkbox-color:#fff;
-
+    --Phone-Lang-standart-color:#000212;
 
 
     /********************************IMG*******************************************************/
     --hand-cursor-b: url("../home_page/cssimg/cursor_b.svg") 2 2, auto;
     --main-logo: url("../home_page/cssimg/mainICON_1.svg");
-    --phone-profil-ico-color: url("/static/mainsite/img/Profil.svg");
+    --phone-profil-ico-color: url("../../img/Profile.svg");
     --text_List_In_buttom_imgSvg: url("../home_page/cssimg/circlePlasArrow.svg");
     --ProgramVstuplenie: url("/static/mainsite/img/ProgramVstuplenie-phone-white.svg");
     --DemoTest: url("/static/mainsite/img/DemoTest-phone-white.svg");
     --RaspisanieIspit: url("/static/mainsite/img/RaspisanieIspit-phone-white.svg");
     --main_icon_logo_phone: url("../home_page/cssimg/mainICON_1.svg");
+    /* url(../../img/Profile.svg) */
+    --Phone-header-presen-ico:url("../../img/white-web/phone_header_presen.svg");
+    --Phone-header-question-ico:url("../../img/white-web/phone_header_question.svg");
+    --Phone-header-notice-ico:url("../../img/white-web/phone_header_notice.svg");
+    --Phone-header-home-ico:url("../../img/white-web/phone_header_home.svg");
+    --Phone-header-home-get-ico: url("../../img/white-web/phome_imo_down.svg");
 
 
-}
+
+}   
 
 [data-theme="dark"] {
     /********************************COLOR*******************************************************/
@@ -66,6 +73,8 @@ body {
     --phone-Hr:#EFEAEA;
     --slider_inside_text:#fff;
     --phone-input-checkbox-color:#343434;
+    --Phone-Lang-standart-color:#DDDCE2;
+    --colorText: #F3F3F3;
 
 
     /********************************IMG*******************************************************/
@@ -75,8 +84,13 @@ body {
     --DemoTest: url("/static/mainsite/img/DemoTest-phone-black.svg");
     --RaspisanieIspit: url("/static/mainsite/img/RaspisanieIspit-phone-black.svg");
     --main_icon_logo_phone: url("../home_page/cssimg/mainICON_2.svg");
-
-
+     /* url(../../img/Profile.svg) */
+     --Phone-header-presen-ico:url("../../img/black-web/phone_header_presen.svg");
+     --Phone-header-question-ico:url("../../img/black-web/phone_header_question.svg");
+     --Phone-header-notice-ico:url("../../img/black-web/phone_header_notice.svg");
+     --Phone-header-home-ico:url("../../img/black-web/phone_header_home.svg");
+     --Phone-header-home-get-ico: url("../../img/black-web/phome_imo_down.svg");
+ 
 
 }
 /* $(".:root").css("var(--Profile-list-BackBackground)", "#14161D");

@@ -641,7 +641,7 @@
 .box_aboutIMO_text_Inf_INGSVG {
     width: 200px;
     height: 200px;
-    background-image: url('../home_page/cssimg/Subtract.svg');
+    background-image: var(--main_icon_logo_phone);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
