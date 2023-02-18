@@ -7,7 +7,7 @@
 }
 
 .content {
-    max-width: 92%;
+    max-width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -16,7 +16,7 @@
 }
 
 .Phone_Head {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -49,7 +49,7 @@
 .base_content_slade2 .slade1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .slide1_text {
@@ -136,7 +136,7 @@
 
 .main_icon_logo_phone {
     height: 100%;
-    background-image: url(../home_page/cssimg/mainICON_1.svg);
+    background-image: var(--main_icon_logo_phone);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -518,7 +518,7 @@ h1 {
 }
 
 .slade1_text {
-    text-align: right;
+    text-align: left;
 }
 
 .base_content_slade4 {
@@ -1002,7 +1002,6 @@ h1 {
 #collapse {
     position: absolute;
     padding: 10px 10px 90px 5px;
-    background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px -3px 8px -3px rgba(0, 0, 0, 0.25);
     background-size: cover;
     transition: all 0.5s;
@@ -1039,6 +1038,7 @@ h1 {
     gap:2px;
     position: relative;
     padding: 0.5px;
+    margin-right: 5px;
 
 }
 
@@ -1048,7 +1048,14 @@ h1 {
     font-family: 'Averta Demo PE';
 font-style: normal;
 font-weight: 400;
+/* color: var(--slider_inside_text); */
+
 }
+.slide_moon .slide_inside_text{
+    color: var(--slider_inside_text);
+
+}
+
 
 .phone_header_Ru_ico{
     background-image: url(../../img/phome_imo_down.svg);

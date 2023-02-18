@@ -8,14 +8,14 @@ body {
 }
 
 :root {
+    /********************************COLOR*******************************************************/
+
     --hand-cursor-w: pointer;
     --hand-cursor-d: default;
-    --hand-cursor-b: url(../home_page/cssimg/cursor_b.svg) 2 2, auto;
     --font-inter: 'Inter';
     --font-inter-Bold: 'Inter Bold';
     --font-averta-cy: 'Averta CY';
     --font-averta-cy-EB: 'Averta CY EB';
-    --main-logo: url("../home_page/cssimg/mainICON_1.svg");
     --pointerHand-cursor: pointer;
     --colorText: #000000;
     --backgroundColor: #fff;
@@ -29,15 +29,55 @@ body {
     --ColorTextForProgrammStadyPlashca: #fff;
     --bs-white:#FFF;
     --bs-grey:#F2F2F2;
-    /* --script:var(--bs-grey); */
     --Profile-list-BackBackground:#fff;
     --Profile-list-changeBackground:#F2F2F2;
+    --phone-header-collapse:#FFFFFF;
+    --Profil-p:#000212;
+    --phone-slider:#ccc;
+    --phone-slider-border:#000;
+    --phone-Hr:#000;
+    --slider_inside_text:#000212;
+    --phone-input-checkbox-color:#fff;
+
+
+
+    /********************************IMG*******************************************************/
+    --hand-cursor-b: url("../home_page/cssimg/cursor_b.svg") 2 2, auto;
+    --main-logo: url("../home_page/cssimg/mainICON_1.svg");
+    --phone-profil-ico-color: url("/static/mainsite/img/Profil.svg");
+    --text_List_In_buttom_imgSvg: url("../home_page/cssimg/circlePlasArrow.svg");
+    --ProgramVstuplenie: url("/static/mainsite/img/ProgramVstuplenie-phone-white.svg");
+    --DemoTest: url("/static/mainsite/img/DemoTest-phone-white.svg");
+    --RaspisanieIspit: url("/static/mainsite/img/RaspisanieIspit-phone-white.svg");
+    --main_icon_logo_phone: url("../home_page/cssimg/mainICON_1.svg");
+
 
 }
 
 [data-theme="dark"] {
+    /********************************COLOR*******************************************************/
+
     --Profile-list-BackBackground:#242730;
     --Profile-list-changeBackground:#14161D;
+    --phone-header-collapse:#000212;
+    --Profil-p:#F4F4F4;
+    --phone-slider:#616161;
+    --phone-slider-border:#616161;
+    --phone-Hr:#EFEAEA;
+    --slider_inside_text:#fff;
+    --phone-input-checkbox-color:#343434;
+
+
+    /********************************IMG*******************************************************/
+    --phone-profil-ico-color: url("/static/mainsite/img/Profil_black.svg");
+    --text_List_In_buttom_imgSvg: url("/static/mainsite/img/pic-listdown.svg");
+    --ProgramVstuplenie: url("/static/mainsite/img/ProgramVstuplenie-phone-black.svg");
+    --DemoTest: url("/static/mainsite/img/DemoTest-phone-black.svg");
+    --RaspisanieIspit: url("/static/mainsite/img/RaspisanieIspit-phone-black.svg");
+    --main_icon_logo_phone: url("../home_page/cssimg/mainICON_2.svg");
+
+
+
 }
 /* $(".:root").css("var(--Profile-list-BackBackground)", "#14161D");
 $(".:root").css("var(--Profile-list-BackBackground)", "#242730"); */

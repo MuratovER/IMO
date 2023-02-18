@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 19:44+0300\n"
-"PO-Revision-Date: 2022-11-30 19:57+0000\n"
+"POT-Creation-Date: 2022-12-07 19:50+0300\n"
+"PO-Revision-Date: 2023-02-08 04:57+0000\n"
 "Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -20,930 +20,1402 @@ msgstr ""
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
 #: .\imo\settings.py:152
-#, fuzzy
 msgid "English"
 msgstr "English"
 
 #: .\imo\settings.py:153
-#, fuzzy
 msgid "Russian"
 msgstr "Russian"
 
 #: .\mainsite\templates\mainsite\base.html:6
-#, fuzzy
 msgid "LangStaticname1"
 msgstr "IMO"
 
-#: .\mainsite\templates\mainsite\base.html:64
-#: .\mainsite\templates\mainsite\base.html:213
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:66
+#: .\mainsite\templates\mainsite\base.html:215
 msgid "LangStaticname2"
 msgstr "KAI Institute of International Education"
 
-#: .\mainsite\templates\mainsite\base.html:75
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:77
 msgid "LangStaticname3"
 msgstr "Menu"
 
-#: .\mainsite\templates\mainsite\base.html:85
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:87
 msgid "LangStaticname4"
 msgstr "incoming"
 
-#: .\mainsite\templates\mainsite\base.html:96
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:98
 msgid "LangStaticname5"
-msgstr "vs"
+msgstr "Q&A"
 
-#: .\mainsite\templates\mainsite\base.html:107
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:109
 msgid "LangStaticname6"
-msgstr "sdgs"
+msgstr "news"
 
-#: .\mainsite\templates\mainsite\base.html:115
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:117
 msgid "LangStaticname7"
-msgstr "sdg"
+msgstr "search"
 
-#: .\mainsite\templates\mainsite\base.html:234
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:236
 msgid "LangStaticname8"
-msgstr "wefwew"
+msgstr "Contact info"
 
-#: .\mainsite\templates\mainsite\base.html:237
-#, fuzzy
+#: .\mainsite\templates\mainsite\base.html:239
 msgid "LangStaticname9"
-msgstr "Google"
+msgstr "г. Kazan, 55 Bolshaya Krasnaya St."
 
-#: .\mainsite\templates\mainsite\base.html:242
+#: .\mainsite\templates\mainsite\base.html:244
 msgid "LangStaticname10"
-msgstr ""
+msgstr "Admissions Office Phone Number"
 
-#: .\mainsite\templates\mainsite\base.html:250
+#: .\mainsite\templates\mainsite\base.html:252
 msgid "LangStaticname11"
-msgstr ""
+msgstr "IMO phone."
 
-#: .\mainsite\templates\mainsite\base.html:274
+#: .\mainsite\templates\mainsite\base.html:276
 msgid "LangStaticname12"
-msgstr ""
+msgstr "Institute of International Education KNITU-KAI All rights reserved"
 
-#: .\mainsite\templates\mainsite\base.html:280
+#: .\mainsite\templates\mainsite\base.html:282
 msgid "LangStaticname13"
-msgstr ""
+msgstr "KNITU-KAI All rights reserved"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:8
 msgid "LangStaticname48"
-msgstr ""
+msgstr "Coming to IMO"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:16
 msgid "LangStaticname49"
-msgstr ""
+msgstr "Regulatory documents"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:22
 msgid "LangStaticname50"
-msgstr ""
+msgstr "Passing scores"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:28
 msgid "LangStaticname51"
-msgstr ""
+msgstr "Specialties for admission"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:35
 msgid "LangStaticname52"
-msgstr ""
+msgstr "What documents are required for admission?"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:42
 msgid "LangStaticname53"
-msgstr ""
+msgstr "Information about Covid 19"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:48
 msgid "LangStaticname54"
-msgstr ""
+msgstr "Admission calendar"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:57
 msgid "LangStaticname55"
-msgstr ""
+msgstr "About Kazan"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:64
 msgid "LangStaticname56"
-msgstr ""
+msgstr "Our news"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:83
-#: .\mainsite\templates\mainsite\home\home_page.html:123
+#: .\mainsite\templates\mainsite\home\home_page.html:121
 #: .\mainsite\templates\mainsite\news\news.html:11
 #: .\mainsite\templates\mainsite\news\news_list.html:21
 msgid "LangStaticname29"
-msgstr ""
+msgstr "IMO KNITU-KAI"
 
 #: .\mainsite\templates\mainsite\enteringIMO\EnteringIMO.html:103
-#: .\mainsite\templates\mainsite\home\home_page.html:252
+#: .\mainsite\templates\mainsite\home\home_page.html:250
 msgid "LangStaticname47"
-msgstr ""
+msgstr "|Write something..."
 
 #: .\mainsite\templates\mainsite\faq\faq.html:5
 msgid "LangStaticname57"
-msgstr ""
+msgstr "Frequently Asked Questions"
 
 #: .\mainsite\templates\mainsite\faq\faq.html:22
 msgid "LangStaticname58"
-msgstr ""
+msgstr " Can't find an answer to your question?"
 
 #: .\mainsite\templates\mainsite\faq\faq.html:24
 msgid "LangStaticname59"
-msgstr ""
+msgstr "Send your information so we can contact you"
 
 #: .\mainsite\templates\mainsite\faq\faq.html:29
 #: .\mainsite\templates\mainsite\profile\profile.html:79
 msgid "LangStaticname60"
-msgstr ""
+msgstr "Copy the address"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:8
 msgid "LangStaticname14"
-msgstr "IMO"
+msgstr "Institute of International Education KNITU-KAI"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:16
 msgid "LangStaticname15"
-msgstr ""
+msgstr "Start Now"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:25
 msgid "LangStaticname16"
-msgstr ""
+msgstr "Subfact"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:34
 msgid "LangStaticname17"
-msgstr ""
+msgstr "Scroll down"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:45
 msgid "LangStaticname18"
-msgstr ""
+msgstr "Programs of study"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:48
 msgid "LangStaticname19"
 msgstr ""
+"We suggest you read the information that will help you prepare for your "
+"arrival in Kazan and answer frequently asked questions."
 
 #: .\mainsite\templates\mainsite\home\home_page.html:56
 msgid "LangStaticname20"
-msgstr ""
+msgstr "Фircraft engineering"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:60
 msgid "LangStaticname21"
-msgstr ""
+msgstr "IT (software engineering)"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:66
 msgid "LangStaticname22"
-msgstr ""
+msgstr "Telecommunications, Internet, IoT"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:70
 msgid "LangStaticname23"
-msgstr ""
+msgstr "The Economy"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:77
 msgid "LangStaticname24"
-msgstr ""
+msgstr "Mechanical Engineering"
 
 #: .\mainsite\templates\mainsite\home\home_page.html:81
 msgid "LangStaticname25"
-msgstr ""
+msgstr "Electronics and nanoelectronics"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:101
+#: .\mainsite\templates\mainsite\home\home_page.html:87
+#| msgid "LangStaticname206"
+msgid "LangStaticname26"
+msgstr "Composite technologies"
+
+#: .\mainsite\templates\mainsite\home\home_page.html:91
+#| msgid "LangStaticname227"
+msgid "LangStaticname27"
+msgstr "Shipbuilding"
+
+#: .\mainsite\templates\mainsite\home\home_page.html:99
 msgid "LangStaticname28"
-msgstr ""
+msgstr "Our news"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:139
+#: .\mainsite\templates\mainsite\home\home_page.html:137
 msgid "LangStaticname30"
-msgstr ""
+msgstr "About IMO University"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:142
+#: .\mainsite\templates\mainsite\home\home_page.html:140
 msgid "LangStaticname31"
 msgstr ""
+"On the platform you can get knowledge on current topics and in-demand "
+"skills. All courses are practice-oriented: we make sure that the material is"
+" up-to-date and help with employment and internships."
 
-#: .\mainsite\templates\mainsite\home\home_page.html:154
+#: .\mainsite\templates\mainsite\home\home_page.html:152
 msgid "LangStaticname32"
-msgstr ""
+msgstr "Find out how we live"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:164
+#: .\mainsite\templates\mainsite\home\home_page.html:162
 msgid "LangStaticname33"
-msgstr ""
+msgstr "Advantages of the KAI IMO"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:167
+#: .\mainsite\templates\mainsite\home\home_page.html:165
 msgid "LangStaticname34"
 msgstr ""
+"We suggest you read the information that will help you prepare for your "
+"arrival in Kazan and answer frequently asked questions."
 
-#: .\mainsite\templates\mainsite\home\home_page.html:176
+#: .\mainsite\templates\mainsite\home\home_page.html:174
 msgid "LangStaticname35"
-msgstr ""
+msgstr "Dormitory"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:179
+#: .\mainsite\templates\mainsite\home\home_page.html:177
 msgid "LangStaticname36"
 msgstr ""
+"It should not be forgotten, however, that the innovative path we have chosen"
+" entails"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:187
+#: .\mainsite\templates\mainsite\home\home_page.html:185
 msgid "LangStaticname37"
-msgstr ""
+msgstr "Feeding Combine"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:190
+#: .\mainsite\templates\mainsite\home\home_page.html:188
 msgid "LangStaticname38"
 msgstr ""
+"It should not be forgotten, however, that the innovative path we have chosen"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:198
+#: .\mainsite\templates\mainsite\home\home_page.html:196
 msgid "LangStaticname39"
-msgstr ""
+msgstr "KAI Olympus"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:201
+#: .\mainsite\templates\mainsite\home\home_page.html:199
 msgid "LangStaticname40"
 msgstr ""
+"It should not be forgotten, however, that the innovative path we have chosen"
+" entails"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:209
+#: .\mainsite\templates\mainsite\home\home_page.html:207
 msgid "LangStaticname41"
-msgstr ""
+msgstr "Creativity"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:212
+#: .\mainsite\templates\mainsite\home\home_page.html:210
 msgid "LangStaticname42"
 msgstr ""
+"It should not be forgotten, however, that the innovative path we have chosen"
+" entails"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:220
+#: .\mainsite\templates\mainsite\home\home_page.html:218
 msgid "LangStaticname43"
-msgstr ""
+msgstr "Library"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:223
+#: .\mainsite\templates\mainsite\home\home_page.html:221
 msgid "LangStaticname44"
-msgstr ""
+msgstr "It should not be forgotten, however, that the innovative"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:231
+#: .\mainsite\templates\mainsite\home\home_page.html:229
 msgid "LangStaticname45"
-msgstr ""
+msgstr "Translation Center"
 
-#: .\mainsite\templates\mainsite\home\home_page.html:234
+#: .\mainsite\templates\mainsite\home\home_page.html:232
 msgid "LangStaticname46"
 msgstr ""
+"It should not be forgotten, however, that the innovative path we have chosen"
+" entails"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:19
 msgid "LangStaticname62"
-msgstr ""
+msgstr "General information about"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:19
 msgid "LangStaticname63"
-msgstr ""
+msgstr "direction"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:26
 msgid "LangStaticname64"
-msgstr ""
+msgstr "Duration of training"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:36
 msgid "LangStaticname65"
-msgstr ""
+msgstr "Level of education"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:46
 msgid "LangStaticname66"
-msgstr ""
+msgstr "Form of training"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:56
 msgid "LangStaticname67"
-msgstr ""
+msgstr "The price of training"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:59
 msgid "LangStaticname68"
-msgstr ""
+msgstr "RUR"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:67
 msgid "LangStaticname69"
-msgstr ""
+msgstr "Internal testing"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:71
 msgid "LangStaticname70"
-msgstr ""
+msgstr "Programs of entrance tests"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:76
 msgid "LangStaticname71"
-msgstr ""
+msgstr "Test demos"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:81
 msgid "LangStaticname72"
-msgstr ""
+msgstr "Schedule of entrance tests"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:91
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:136
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:181
 msgid "LangStaticname73"
-msgstr ""
+msgstr "Mathematics"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:97
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:142
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:187
 msgid "LangStaticname74"
-msgstr ""
+msgstr "Russian Language"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:103
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:148
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:193
 msgid "LangStaticname75"
-msgstr ""
+msgstr "Chemistry"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:109
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:154
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:199
 msgid "LangStaticname76"
-msgstr ""
+msgstr "Physics"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:115
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:160
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:205
 msgid "LangStaticname77"
-msgstr ""
+msgstr "Social Studies"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:121
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:166
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:211
 msgid "LangStaticname78"
-msgstr ""
+msgstr "Computer Science"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:127
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:172
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:217
 msgid "LangStaticname79"
-msgstr ""
+msgstr "Foreign language"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:232
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:227
+#, fuzzy
+#| msgid "LangStaticname206"
+msgid "LangStaticname262"
+msgstr ""
+"The removal from the migration registration at the place of stay at KNRTU-"
+"KAI takes place at the moment of crossing the border of the Russian "
+"Federation or at the moment of migration registration at a hotel or hostel "
+"during the trip across the Russian Federation, or in a medical institution "
+"(hospital, hospital, dispensary), including within the city of Kazan. Each "
+"time a foreign citizen returns to study at KNRTU-KAI after staying: abroad; "
+"in other settlements of the Russian Federation (in case of migration "
+"registration); in a hotel; in a medical institution for inpatient treatment,"
+" the foreign citizen must again get on the migration registration at the "
+"place of stay (residence) in Kazan.Kazan, presenting to the IMO (for those "
+"living in the dormitory of KNRTU-KAI) or the owner of the apartment (for "
+"those renting an apartment) within two days of returning to study at KNRTU-"
+"KAI the necessary documents: passport (copy), migration card (copy), last "
+"(in time) notice of migration registration (the original)"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:229
+#, fuzzy
+#| msgid "LangStaticname206"
+msgid "LangStaticname261"
+msgstr ""
+"The removal from the migration registration at the place of stay at KNRTU-"
+"KAI takes place at the moment of crossing the border of the Russian "
+"Federation or at the moment of migration registration at a hotel or hostel "
+"during the trip across the Russian Federation, or in a medical institution "
+"(hospital, hospital, dispensary), including within the city of Kazan. Each "
+"time a foreign citizen returns to study at KNRTU-KAI after staying: abroad; "
+"in other settlements of the Russian Federation (in case of migration "
+"registration); in a hotel; in a medical institution for inpatient treatment,"
+" the foreign citizen must again get on the migration registration at the "
+"place of stay (residence) in Kazan.Kazan, presenting to the IMO (for those "
+"living in the dormitory of KNRTU-KAI) or the owner of the apartment (for "
+"those renting an apartment) within two days of returning to study at KNRTU-"
+"KAI the necessary documents: passport (copy), migration card (copy), last "
+"(in time) notice of migration registration (the original)"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:233
 msgid "LangStaticname80"
-msgstr ""
+msgstr "Training Building"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:240
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:241
 msgid "LangStaticname81"
-msgstr ""
+msgstr "Graduating department"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:258
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:251
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname251"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:251
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname252"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:254
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname257"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:254
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname253"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:257
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname258"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:257
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname254"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:260
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname259"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:260
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname255"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:263
+#, fuzzy
+#| msgid "LangStaticname206"
+msgid "LangStaticname260"
+msgstr ""
+"The removal from the migration registration at the place of stay at KNRTU-"
+"KAI takes place at the moment of crossing the border of the Russian "
+"Federation or at the moment of migration registration at a hotel or hostel "
+"during the trip across the Russian Federation, or in a medical institution "
+"(hospital, hospital, dispensary), including within the city of Kazan. Each "
+"time a foreign citizen returns to study at KNRTU-KAI after staying: abroad; "
+"in other settlements of the Russian Federation (in case of migration "
+"registration); in a hotel; in a medical institution for inpatient treatment,"
+" the foreign citizen must again get on the migration registration at the "
+"place of stay (residence) in Kazan.Kazan, presenting to the IMO (for those "
+"living in the dormitory of KNRTU-KAI) or the owner of the apartment (for "
+"those renting an apartment) within two days of returning to study at KNRTU-"
+"KAI the necessary documents: passport (copy), migration card (copy), last "
+"(in time) notice of migration registration (the original)"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:263
+#, fuzzy
+#| msgid "LangStaticname25"
+msgid "LangStaticname256"
+msgstr "Electronics and nanoelectronics"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:276
 msgid "LangStaticname82"
-msgstr ""
-
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:270
-msgid "LangStaticname83"
-msgstr ""
+msgstr "View on the map"
 
 #: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:288
+msgid "LangStaticname83"
+msgstr "Key disciplines of the curriculum"
+
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:306
 msgid "LangStaticname84"
-msgstr ""
+msgstr "Any questions?"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:296
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:314
 msgid "LangStaticname85"
-msgstr ""
+msgstr "Where do I"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:297
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:315
 msgid "LangStaticname86"
-msgstr ""
+msgstr "enroll?"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:307
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:325
 msgid "LangStaticname87"
-msgstr ""
+msgstr "Explaining everything"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:307
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:325
 msgid "LangStaticname88"
-msgstr ""
+msgstr "directions and"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:308
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:326
 msgid "LangStaticname89"
-msgstr ""
+msgstr "how on them"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:308
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:326
 msgid "LangStaticname90"
-msgstr ""
+msgstr "enter"
 
-#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:312
+#: .\mainsite\templates\mainsite\incomingIMO\incomingIMO.html:330
 msgid "LangStaticname91"
-msgstr ""
+msgstr "Useful article"
 
 #: .\mainsite\templates\mainsite\news\news.html:40
 msgid "LangStaticname61"
-msgstr ""
+msgstr "Check out our other news"
+
+#: .\mainsite\templates\mainsite\profile\password_change.html:6
+msgid "LangStaticname227"
+msgstr "Old password"
+
+#: .\mainsite\templates\mainsite\profile\password_change.html:10
+msgid "LangStaticname228"
+msgstr "New password"
+
+#: .\mainsite\templates\mainsite\profile\password_change.html:14
+msgid "LangStaticname229"
+msgstr "Confirming a new password"
+
+#: .\mainsite\templates\mainsite\profile\password_change.html:19
+msgid "LangStaticname230"
+msgstr "CHANGE PASSWORD"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:7
 msgid "LangStaticname92"
-msgstr ""
+msgstr "Information about me"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:9
 msgid "LangStaticname93"
-msgstr ""
+msgstr "Profile changes"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:11
 msgid "LangStaticname94"
-msgstr ""
+msgstr "Memo for foreigners"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:18
 #: .\mainsite\templates\mainsite\profile\profile.html:19
 msgid "LangStaticname95"
-msgstr ""
+msgstr "Basic information"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:23
 msgid "LangStaticname97"
-msgstr ""
+msgstr "Full name"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:24
 msgid "LangStaticname98"
-msgstr ""
+msgstr "Paul"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:25
 msgid "LangStaticname99"
-msgstr ""
+msgstr "Date of birth"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:26
 msgid "LangStaticname100"
-msgstr ""
+msgstr "Place of birth"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:27
 msgid "LangStaticname101"
-msgstr ""
+msgstr "Hometown"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:28
 msgid "LangStaticname102"
-msgstr ""
+msgstr "Citizenship"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:29
 msgid "LangStaticname103"
-msgstr ""
+msgstr "Phone number"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:30
 msgid "LangStaticname104"
-msgstr ""
+msgstr "Email"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:31
 msgid "LangStaticname105"
-msgstr ""
+msgstr "Your password"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:60
 msgid "LangStaticname106"
-msgstr ""
+msgstr "Change"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:71
 msgid "LangStaticname107"
-msgstr ""
+msgstr "Email"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:82
 msgid "LangStaticname108"
-msgstr ""
+msgstr "List of required documents"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:87
 msgid "LangStaticname109"
-msgstr ""
+msgstr "Copy of passport (1st page with photo)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:95
 msgid "LangStaticname110"
-msgstr ""
+msgstr "Notarized translation of the passport into Russian"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:103
 msgid "LangStaticname111"
-msgstr ""
+msgstr "A scan of all visas received from the Russian Federation (if any)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:111
 msgid "LangStaticname112"
-msgstr ""
+msgstr "Notification form for government services"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:118
 msgid "LangStaticname113"
-msgstr ""
+msgstr "Tickets for the entire route (air and rail)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:126
 msgid "LangStaticname114"
-msgstr ""
+msgstr "Education document"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:134
 msgid "LangStaticname115"
-msgstr ""
+msgstr "Notarized translations of educational documents"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:159
 msgid "LangStaticname116"
-msgstr ""
+msgstr "Save"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:164
 msgid "LangStaticname117"
-msgstr ""
+msgstr "Memo to an international student"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:166
 msgid "LangStaticname118"
 msgstr ""
+"We suggest you read the information that will help you prepare for your "
+"arrival in Kazan and answer the"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:167
 msgid "LangStaticname119"
-msgstr ""
+msgstr "frequently asked questions"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:169
 msgid "LangStaticname120"
-msgstr ""
+msgstr "Upon arrival."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:179
 msgid "LangStaticname121"
-msgstr ""
+msgstr "Step-by-step instructions for those entering"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:190
 msgid "LangStaticname122"
 msgstr ""
+"Step-by-step instructions for visitors (for countries with visa regimes)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:193
 msgid "LangStaticname123"
-msgstr ""
+msgstr "To apply for an invitation via e-mail"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:194
 msgid "LangStaticname124"
 msgstr ""
+"Get a ready-made invitation and a single-entry visa at the Russian embassy"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:195
 msgid "LangStaticname125"
 msgstr ""
+"Send a copy of the ticket to the Institute of International Education by "
+"mail"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:196
 msgid "LangStaticname126"
-msgstr ""
+msgstr "Upon arrival, you can check in for 3 days at"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:196
 msgid "LangStaticname132"
 msgstr ""
+"ul. Bolshaya Krasnaya, 18, 2nd floor (Preventorium), take a PCR test for "
+"Covid-19 and within two days come to the Institute of International "
+"Education at: 10 Karla Marksa St., Technical College building (across the "
+"yard), rooms 106, 107."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:197
 msgid "LangStaticname127"
-msgstr ""
+msgstr "Undergo a medical examination and fingerprinting"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:198
 msgid "LangStaticname128"
 msgstr ""
+"After enrollment, check into a dormitory (if space is available) / hostel / "
+"apartment"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:199
 msgid "LangStaticname129"
-msgstr ""
+msgstr "Renew the registration at the place of residence"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:200
 msgid "LangStaticname130"
-msgstr ""
+msgstr "Apply for visa extension"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:201
 msgid "LangStaticname131"
-msgstr ""
+msgstr "Apply for visa extension"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:204
 msgid "LangStaticname133"
-msgstr ""
+msgstr "Step-by-step instructions for visitors (for visa-free countries)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:207
 msgid "LangStaticname134"
-msgstr ""
+msgstr "Upon arrival, you can check in for 3 days at"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:207
 msgid "LangStaticname135"
 msgstr ""
+"ul. Bolshaya Krasnaya, 18, 2nd floor (Preventorium), take a PCR-test for "
+"Covid-19 and within two days come to the Institute of International "
+"Education at: 10 Karl Marx St., Technical College building (across the "
+"yard), rooms 106, 107"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:208
 msgid "LangStaticname136"
-msgstr ""
+msgstr "Issue a medical policy (VHI)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:209
 msgid "LangStaticname137"
-msgstr ""
+msgstr "Undergo a medical examination and fingerprinting"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:210
 msgid "LangStaticname138"
 msgstr ""
+"After enrollment, check into a dormitory (if space is available) / hostel / "
+"apartment"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:211
 msgid "LangStaticname139"
-msgstr ""
+msgstr "Renew the registration at the place of residence"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:228
 msgid "LangStaticname140"
-msgstr ""
+msgstr "Renew the registration at the place of residence"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:239
 msgid "LangStaticname141"
 msgstr ""
+"Based on the Federal Law N 274-FZ of June 23, 2021. \"On the Legal Status of Foreign Citizens in the Russian Federation\" and the Federal Law \"On State Dactiloscopic Registration in the Russian Federation\" every foreign citizen arriving in the Russian Federation for more than 90 calendar days must undergo a medical examination for the presence or absence of infectious diseases posing a danger to others; for the presence or absence of the fact of using narcotic drugs or psychotropic substances without a prescription.\n"
+"Foreign nationals are subject to mandatory state fingerprint registration and photography once. Foreign nationals who have undergone mandatory fingerprint registration and photographing are issued a document"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:243
 msgid "LangStaticname142"
-msgstr ""
+msgstr "Passing a medical examination"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:244
 msgid "LangStaticname143"
-msgstr ""
+msgstr "The address is"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:244
 msgid "LangStaticname144"
-msgstr ""
+msgstr "г. 54 Korolenko St., Kazan"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:247
 msgid "LangStaticname145"
-msgstr ""
+msgstr "Mode of operation"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:249
 msgid "LangStaticname146"
-msgstr ""
+msgstr "from 8:00 a.m. - 17.00 p.m."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:249
 msgid "LangStaticname147"
-msgstr ""
+msgstr "(except Saturdays and Sundays)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:250
 msgid "LangStaticname148"
-msgstr ""
+msgstr "Have with you"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:250
 msgid "LangStaticname149"
 msgstr ""
+"passport, migration card and its copy, visa and its copy, registration"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:251
 msgid "LangStaticname150"
-msgstr ""
+msgstr "It is necessary to undergo fingerprint registration (fingerprints) at"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:251
 msgid "LangStaticname151"
-msgstr ""
+msgstr "г. Kazan, 8/2 Chekhov St., office #12"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:252
 msgid "LangStaticname152"
 msgstr ""
+"Dactyloscopic registration (fingerprints) without a medical certificate will"
+" not be performed"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:255
 msgid "LangStaticname153"
-msgstr ""
+msgstr "WARNING"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:257
 msgid "LangStaticname154"
 msgstr ""
+"Foreign students who have not completed the procedure of medical examination"
+" and fingerprint registration cannot move into the dormitory and get on the "
+"migration register. For this reason the Migration Service of the Republic of"
+" Tatarstan will not extend the term of stay of foreign students on the "
+"territory of the Russian Federation and will deport them back home"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:274
 msgid "LangStaticname155"
-msgstr ""
+msgstr "Migration accounting"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:286
 msgid "LangStaticname156"
 msgstr ""
+"Every foreign citizen arriving in the Russian Federation is obliged to get a"
+" migration registration and submit documents to the Institute of "
+"International Education of KNITU-KAI"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:287
 msgid "LangStaticname157"
-msgstr ""
+msgstr "Attention"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:289
 msgid "LangStaticname158"
-msgstr ""
+msgstr "The period of migration registration from the moment of arrival is"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:290
 msgid "LangStaticname159"
-msgstr ""
+msgstr "Kazakhstan, Belarus, Kyrgyzstan - 30 calendar days"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:291
 msgid "LangStaticname160"
-msgstr ""
+msgstr "Tajikistan - 15 calendar days"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:292
 msgid "LangStaticname161"
-msgstr ""
+msgstr "Other countries - 7 working days"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:295
 msgid "LangStaticname162"
 msgstr ""
+"To obtain registration at the place of residence in the university "
+"dormitory, you must submit the following package of documents to the address"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:295
 msgid "LangStaticname163"
-msgstr ""
+msgstr "ul. 10 Karl Marx St., Technical College Building, room 107."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:297
 msgid "LangStaticname164"
-msgstr ""
+msgstr "Passport (copy)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:298
 msgid "LangStaticname165"
-msgstr ""
+msgstr "Valid visa (copy) (for citizens from countries with a visa regime)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:299
 msgid "LangStaticname166"
-msgstr ""
+msgstr "Migration card (copy)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:300
 msgid "LangStaticname167"
-msgstr ""
+msgstr "Previous registration copy (if any)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:301
 msgid "LangStaticname168"
-msgstr ""
+msgstr "Dormitory rental agreement (copy)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:302
 msgid "LangStaticname169"
-msgstr ""
+msgstr "Copies of tickets (if coming to Kazan via another city)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:305
 msgid "LangStaticname170"
 msgstr ""
+"In order to obtain registration at the place of residence in the apartment, "
+"it is necessary to obtain an application from the university"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:306
 msgid "LangStaticname171"
-msgstr ""
+msgstr "The list of documents for the application must be submitted to"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:306
 msgid "LangStaticname172"
-msgstr ""
+msgstr "ul. 10 Karl Marx St., building of the Technical College, room 106."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:308
 msgid "LangStaticname173"
-msgstr ""
+msgstr "Passport (copy)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:309
 msgid "LangStaticname174"
-msgstr ""
+msgstr "Valid visa (copy) (for citizens from countries with a visa regime)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:310
 msgid "LangStaticname175"
 msgstr ""
+"Certificate of Education from the Department of Student Records (KAI "
+"Building 1, Room 126)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:313
 msgid "LangStaticname176"
-msgstr ""
+msgstr "It is necessary to re-register for migration if"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:315
 msgid "LangStaticname177"
 msgstr ""
+"A foreign student received a new visa / new passport / duplicate migration "
+"card. The term of migration registration is 3 working days"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:316
 msgid "LangStaticname178"
 msgstr ""
+"A foreign student has changed the address of the place of stay. The term of "
+"migration registration is 7 working days"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:317
 msgid "LangStaticname179"
 msgstr ""
+"A foreign student renews his registration at the same address. The term of "
+"migration registration is 3 working days"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:318
 msgid "LangStaticname180"
 msgstr ""
+"A foreign student was in the hospital for treatment. The deadline for "
+"migration registration after leaving the hospital is 3 working days"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:336
 #: .\mainsite\templates\mainsite\profile\profile.html:348
 msgid "LangStaticname181"
-msgstr ""
+msgstr "Health insurance"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:350
 msgid "LangStaticname182"
 msgstr ""
+"Based on Federal Law N 326-FZ of November 29, 2010. On MANDATORY MEDICAL "
+"INSURANCE IN THE RUSSIAN FEDERATION every foreign citizen within the first "
+"week after enrollment in KNITU-KAI must obtain a medical insurance policy "
+"valid for the whole period of registration/visa (as a rule, for one year). A"
+" health insurance policy can be obtained from insurance companies located "
+"near the university. The VMI policy must have a minimum sum insured of "
+"300,000 rubles for 1 year. Students must renew their health insurance policy"
+" annually until they leave the Russian Federation."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:351
 msgid "LangStaticname183"
 msgstr ""
+"You can draw up an VHI policy daily from 13.00 to 16.00 in the 1 hall. KAI "
+"in the Institute of International Education (10 K. Marx St.), where "
+"representatives of Ak Bars Insurance and SMP-Insurance are located."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:368
 msgid "LangStaticname184"
-msgstr ""
+msgstr "RULES"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:369
 msgid "LangStaticname185"
 msgstr ""
+"stay of foreign citizens and stateless persons studying at KNITU-KAI in the "
+"Russian Federation"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:384
 msgid "LangStaticname186"
 msgstr ""
+"All foreign citizens must comply with the laws of the Russian Federation and"
+" these rules. For all questions on compliance with the rules of stay and "
+"passport and visa services foreign citizens should contact the Institute of "
+"International Education (IIE) KNITU-KAI at: Kazan, 10 Karla Marksa Street, "
+"academic building № 1, technical college building rooms 106 and 107, "
+"Department of Visa Support (OVS). Reception time of foreign citizens in OVS:"
+" Monday-Friday, from 14:00 to 17:00"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:385
 msgid "LangStaticname187"
 msgstr ""
+"Foreign citizens may stay and move freely on the territory of the Russian "
+"Federation if they have the following documents with them"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:386
 msgid "LangStaticname188"
-msgstr ""
+msgstr "national passport"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:387
 msgid "LangStaticname189"
 msgstr ""
+"a valid visa (if there is a visa regime for staying in the Russian "
+"Federation)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:388
 msgid "LangStaticname190"
-msgstr ""
+msgstr "a migration card with a border crossing mark"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:389
 msgid "LangStaticname191"
 msgstr ""
+"a tear-off part of the notice of arrival of a foreign citizen / stateless "
+"person in the Russian Federation with a mark of the territorial office of "
+"the Department of Internal Affairs of the Ministry of Internal Affairs of "
+"Russia on the migration registration at the place of temporary stay "
+"(residence)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:390
 msgid "LangStaticname192"
 msgstr ""
+"These documents must be presented to law enforcement officials (police, "
+"migration service, etc.) during the inspection"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:391
 msgid "LangStaticname193"
 msgstr ""
+"When entering the territory of the Russian Federation, foreign citizens and "
+"stateless persons fill out a migration card, which they must carry with them"
+" throughout their stay in the Russian Federation and present it when "
+"performing migration actions stipulated by law"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:392
 msgid "LangStaticname194"
 msgstr ""
+"Foreign citizens in the Russian Federation are subject to migration "
+"registration"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:393
 msgid "LangStaticname195"
 msgstr ""
+"For migration registration foreign citizens arriving to KNITU-KAI and living"
+" in a university dormitory must within two days (except for holidays and "
+"weekends) submit copies and originals of the following documents: passport, "
+"migration card, valid visa (if a visa regime in the Russian Federation), "
+"issued at the invitation of KNITU-KAI or the Ministry of Education and "
+"Science of the Russian Federation, warrant for accommodation in a dormitory."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:397
 msgid "LangStaticname196"
 msgstr ""
+"For migration registration foreign citizens arriving to KNITU-KAI and living"
+" in the apartment must within two days (except for holidays and weekends) "
+"submit to the owner of the apartment copies and originals of the following "
+"documents: passport, migration card, valid visa (if there is a visa regime "
+"of stay in the Russian Federation)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:398
 msgid "LangStaticname197"
 msgstr ""
+"Migration registration is carried out only at the address of actual "
+"residence (stay)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:399
 msgid "LangStaticname198"
 msgstr ""
+"The period of temporary stay in the Russian Federation of a foreign citizen "
+"or stateless person is determined by the period of validity of the visa "
+"issued to him and the period of migration registration (in the presence of "
+"visa regime of stay in the Russian Federation) or only the period of "
+"migration registration at the place of stay (in the presence of visa-free "
+"regime of stay in the Russian Federation). A foreign citizen is obliged to "
+"leave the Russian Federation before the expiration of the visa or the period"
+" of migration registration, except in cases where on the date of expiry of "
+"these terms a foreign citizen is issued a new visa to stay in the Russian "
+"Federation or a foreign citizen is registered with the migration service for"
+" the next period"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:400
 msgid "LangStaticname199"
 msgstr ""
+"KNITU-KAI does not prolong visas and migration registration of relatives and"
+" acquaintances of foreign citizens who arrived in Kazan on their own, and is"
+" not responsible for it"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:401
 msgid "LangStaticname200"
 msgstr ""
+"The term of temporary stay of a foreign citizen or stateless person on the "
+"territory of the Russian Federation for the entire period of training is "
+"prolonged by the Department of Internal Affairs of the Ministry of Internal "
+"Affairs of Russia in the RT annually, but not more than for 1 (one) year"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:405
 msgid "LangStaticname201"
 msgstr ""
+"In order to extend the period of temporary stay, a foreign citizen must, at "
+"least 20 WORKING days before the expiration of the current period of "
+"temporary stay (expiry of the current visa or the period for placing a "
+"foreign citizen on the migration registry), submit the following documents "
+"to the International Activities Department: passport (original and copy), "
+"migration card (original and copy), notice of migration registration "
+"(original and copy), valid health insurance policy, training contract (for "
+"students studying at the"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:406
 msgid "LangStaticname202"
 msgstr ""
+"Documents for the extension of temporary stay of a foreign citizen will not "
+"be accepted by the Department of Internal Affairs of the Ministry of "
+"Internal Affairs of Russia in RT, if at least one of the listed documents is"
+" not provided or at least one of them is incorrectly executed"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:407
 msgid "LangStaticname203"
 msgstr ""
+"Registration/renewal of a multiple-entry visa without presenting the "
+"original valid passport and migration card to the Department of Internal "
+"Affairs of the Ministry of Internal Affairs of Russia in the Republic of "
+"Tajikistan is impossible"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:411
 msgid "LangStaticname204"
 msgstr ""
+"A foreign citizen from a country with a visa regime, who has not provided "
+"the necessary documents for prolongation/registration of a new multiple-"
+"entry visa to IMO in time, is obliged to leave the territory of the Russian "
+"Federation within the validity period of the visa and return to study at "
+"KNITU-KAI with a new visa obtained on the basis of an invitation to enter "
+"the Russian Federation, issued by the Department of the Interior of the "
+"Russian Federation at the request of KNITU-KAI or issued by the Russian "
+"Foreign Ministry at the request of the Ministry of Education and Science of "
+"Russia"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:412
 msgid "LangStaticname205"
 msgstr ""
+"A foreign citizen with a visa-free regime of stay, who has not timely "
+"extended the period of stay on the territory of the Russian Federation is "
+"obliged to leave the Russian Federation before the end of the period of "
+"stay. Otherwise a foreign citizen is considered to be illegally staying on "
+"the territory of the Russian Federation, bears personal responsibility in "
+"accordance with the legislation of the Russian Federation"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:413
 msgid "LangStaticname206"
 msgstr ""
+"The removal from the migration registration at the place of stay at KNRTU-"
+"KAI takes place at the moment of crossing the border of the Russian "
+"Federation or at the moment of migration registration at a hotel or hostel "
+"during the trip across the Russian Federation, or in a medical institution "
+"(hospital, hospital, dispensary), including within the city of Kazan. Each "
+"time a foreign citizen returns to study at KNRTU-KAI after staying: abroad; "
+"in other settlements of the Russian Federation (in case of migration "
+"registration); in a hotel; in a medical institution for inpatient treatment,"
+" the foreign citizen must again get on the migration registration at the "
+"place of stay (residence) in Kazan.Kazan, presenting to the IMO (for those "
+"living in the dormitory of KNRTU-KAI) or the owner of the apartment (for "
+"those renting an apartment) within two days of returning to study at KNRTU-"
+"KAI the necessary documents: passport (copy), migration card (copy), last "
+"(in time) notice of migration registration (the original)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:418
 msgid "LangStaticname207"
 msgstr ""
+"In case of changing the place of residence for more than 7 days (including "
+"within the campus of KNITU-KAI), a foreign citizen must inform IMO, the "
+"directorate of the campus and the directorate of the host "
+"institution/faculty within two days and get the migration registration at "
+"the new place of residence"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:419
 msgid "LangStaticname208"
 msgstr ""
+"Upon receipt of a temporary residence permit, residence permit, or "
+"citizenship of the Russian Federation, a foreign national must, within 24 "
+"hours, notify the Office of Student Records, the receiving academic unit, "
+"and IMO"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:420
 msgid "LangStaticname209"
 msgstr ""
+"KNITU-KAI does not deal with issues of changing the migration status of a "
+"foreign citizen: obtaining Russian citizenship, obtaining temporary "
+"residence permits or residence permits"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:421
 msgid "LangStaticname210"
 msgstr ""
+"A foreign citizen 6 months prior to the expiration of the national passport "
+"must extend or replace it according to the procedure in force in the foreign"
+" country and submit a renewed/new passport to IMO. In case of expiration of "
+"the national passport a foreign citizen is obliged to leave the territory of"
+" the Russian Federation"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:425
 msgid "LangStaticname211"
 msgstr ""
+"In the case of loss of documents (national passport, visa, migration card), "
+"a foreign national must immediately contact the nearest police department at"
+" the place of loss or discovery of missing documents to obtain a certificate"
+" of the incident, and immediately inform the host educational unit and IMO"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:426
 msgid "LangStaticname212"
 msgstr ""
+"After graduation or expulsion from KNRTU-KAI a foreign citizen is obliged to"
+" leave the territory of Russia within three days from the date of expulsion "
+"by purchasing travel tickets in advance. Extension of the term of stay in "
+"the Russian Federation of foreign citizens-graduates of KNITU-KAI for "
+"reasons not related to training or other reasons not stipulated by law is "
+"not allowed. Termination of studies due to expulsion, both for good and bad "
+"reasons, as well as a break in training associated with academic leave, are "
+"grounds for shortening the period of temporary stay, in particular, the "
+"cancellation of the existing multiple entry visa and registration of a "
+"transit visa to leave the Russian Federation. In such cases, a foreign "
+"citizen (from the country with visa regime of stay) is obliged to buy "
+"tickets for departure from Russia in advance, submit tickets and documents "
+"necessary for cancellation of valid multiple-entry visa and registration of "
+"transit visa to the IMO. After that, the foreign national, in accordance "
+"with the tickets purchased in advance, is obliged to leave the territory of "
+"the Russian Federation before the expiration of the transit visa"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:427
 msgid "LangStaticname213"
 msgstr ""
+"The decision to extend or reduce the period of stay of a foreign citizen on "
+"the territory of the Russian Federation is made by the Department of "
+"Internal Affairs of the Ministry of Internal Affairs of Russia in the RT"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:428
 msgid "LangStaticname214"
 msgstr ""
+"Medical care for foreign nationals is provided on the basis of a voluntary "
+"medical insurance policy purchased at the expense of a foreign national's "
+"personal funds. The absence of a medical insurance policy that is valid on "
+"the territory of the Russian Federation is considered a violation of the "
+"rules for foreign nationals' stay on the territory of the Russian Federation"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:432
 msgid "LangStaticname215"
 msgstr ""
+"Foreign nationals must comply with the current rules of internal order of "
+"students of KNRTU-KAI, in particular, conscientiously master the educational"
+" program, implement the individual curriculum, including attendance at "
+"classes as provided by the curriculum, to prepare for classes independently,"
+" perform tasks given by teaching staff within the educational program, "
+"timely notify in writing the educational unit of the University (Institute, "
+"Faculty, Department of SPE, Faculty, Department of Vocational Education, and"
+" Department of Higher Education). In case of absence from classes, including"
+" exams and tests for unforeseen good cause, on the first day of the "
+"appearance at the University to submit documents confirming the validity of "
+"the reasons for missing classes. If a student is ill, he or she shall submit"
+" a prescribed certificate from a medical institution."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:433
 msgid "LangStaticname216"
 msgstr ""
+"A foreign national must coordinate in writing with the host academic unit, "
+"the campus, and IMO any trips he or she makes to another locality (outside "
+"of Kazan)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:434
 msgid "LangStaticname217"
 msgstr ""
+"A foreign national must coordinate in writing with the host academic unit, "
+"the campus, and IMO any trips he or she makes to another locality (outside "
+"of Kazan)"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:438
 msgid "LangStaticname218"
 msgstr ""
+"A foreign citizen has the right to work if he or she has reached the age of "
+"eighteen with a work permit or patent, unless another procedure is "
+"stipulated by the current legislation of the Russian Federation"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:439
 msgid "LangStaticname219"
 msgstr ""
+"Foreign nationals who have committed crimes, administrative or other "
+"offenses on the territory of the Russian Federation shall be held liable on "
+"the same basis as citizens of the Russian Federation and may be subject to "
+"administrative and/or disciplinary liability, respectively."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:440
 msgid "LangStaticname220"
 msgstr ""
+"Foreign nationals who have committed crimes, administrative or other "
+"offenses on the territory of the Russian Federation shall be held liable on "
+"the same basis as citizens of the Russian Federation and may be subject to "
+"administrative and/or disciplinary liability, respectively."
 
 #: .\mainsite\templates\mainsite\profile\profile.html:441
 msgid "LangStaticname221"
 msgstr ""
+"With respect to foreign nationals who have committed repeated administrative"
+" or other offenses, a decision may be made: to refuse to issue a temporary "
+"residence permit; to cancel a previously issued permit; to cancel a "
+"residence permit; to refuse to issue a work permit; to cancel a previously "
+"issued work permit; not to allow entry into the Russian Federation or "
+"undesirability of stay (or residence) in the Russian Federation for three or"
+" more years"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:460
 msgid "LangStaticname222"
-msgstr ""
+msgstr "Statement of departure"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:472
 #: .\mainsite\templates\mainsite\profile\profile.html:502
 msgid "LangStaticname223"
-msgstr ""
+msgstr "You can download the file by"
 
 #: .\mainsite\templates\mainsite\profile\profile.html:490
 msgid "LangStaticname224"
+msgstr "Notice of arrival"
+
+#: .\mainsite\templates\mainsite\profile\proflie_edit.html:2
+msgid "LangStaticname225"
+msgstr "Changing user information"
+
+#: .\mainsite\templates\mainsite\profile\proflie_edit.html:7
+msgid "LangStaticname226"
+msgstr "Save"
+
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:25
+msgid "LangStaticname240"
+msgstr "Back"
+
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:28
+#: .\mainsite\templates\mainsite\registration\RegesterIndex.html:20
+msgid "LangStaticname241"
+msgstr "Registration"
+
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:30
+msgid "LangStaticname242"
+msgstr "Select type of registration"
+
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:35
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:62
+msgid "LangStaticname243"
 msgstr ""
+"There were some errors in the information you entered. Please correct the "
+"following"
+
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:72
+msgid "LangStaticname245"
+msgstr "login"
+
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:80
+#: .\mainsite\templates\mainsite\registration\RegesterIndex.html:66
+msgid "LangStaticname246"
+msgstr "Privacy Policy"
+
+#: .\mainsite\templates\mainsite\registration\ExtraInfo.html:84
+#: .\mainsite\templates\mainsite\registration\RegesterIndex.html:70
+msgid "LangStaticname247"
+msgstr "Terms of Use"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:16
+msgid "LangStaticname231"
+msgstr "Authorization"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:17
+#: .\mainsite\templates\mainsite\registration\RegesterIndex.html:22
+msgid "LangStaticname232"
+msgstr "Enter your account information"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:36
+msgid "LangStaticname233"
+msgstr "I don't remember the password"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:42
+#: .\mainsite\templates\mainsite\registration\RegesterIndex.html:51
+msgid "LangStaticname234"
+msgstr "Or"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:47
+msgid "LangStaticname235"
+msgstr "For the first time here."
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:47
+msgid "LangStaticname236"
+msgstr "Register"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:54
+msgid "LangStaticname237"
+msgstr "Privacy Policy"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:57
+msgid "LangStaticname238"
+msgstr "Terms of Use"
+
+#: .\mainsite\templates\mainsite\registration\LoginIndex.html:61
+msgid "LangStaticname239"
+msgstr "2021 KNITU KAI. All rights reserved"
+
+#: .\mainsite\templates\mainsite\registration\RegesterIndex.html:56
+msgid "LangStaticname248"
+msgstr "Already have a profile"
+
+#: .\mainsite\templates\mainsite\registration\RegesterIndex.html:58
+msgid "LangStaticname249"
+msgstr "Authorize"
 
 #: .\venv\Lib\site-packages\_pytest\config\argparsing.py:458
 #, python-format

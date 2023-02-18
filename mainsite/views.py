@@ -185,15 +185,15 @@ def news_view(request, pk):
 
 
 def speciality_view(request, key):
-    if request.user_agent.is_mobile:
-        return render(request, 'mainsite/PhonePage/index.html', )
-    else:
-        speciality = get_object_or_404(Speciality, key=key)
-        last_n = Triadkey.objects.order_by()[:4]
-        context = {
+    speciality = get_object_or_404(Speciality, key=key)
+    last_n = Triadkey.objects.order_by()[:4]
+    context = {
             'speciality': speciality,
             'last_n': last_n,
         }
+    if request.user_agent.is_mobile:
+        return render(request, 'mainsite/PhonePage/phone_incomigIMO.html', context)
+    else:
         return render(request,
                       'mainsite/incomingIMO/incomingIMO.html', context)
 

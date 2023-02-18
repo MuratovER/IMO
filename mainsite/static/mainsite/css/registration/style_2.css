@@ -276,7 +276,7 @@
 }
 
 .text_List_In_buttom_imgSvg {
-    background-image: url('../home_page/cssimg/circlePlasArrow.svg');
+    background-image: var(--text_List_In_buttom_imgSvg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 45px;
@@ -314,7 +314,7 @@
 }
 
 .header2_boxText_twoBTNBox {
-    width: 50%;
+    width: 70%;
 }
 
 .header2_boxImgSvg {
