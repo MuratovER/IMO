@@ -1,13 +1,9 @@
-from distutils.text_file import TextFile
-from email.policy import default
 from django.utils import timezone
-from multiselectfield import MultiSelectField
-
 from django.db import models
 from django.contrib.auth.models import User
 from django.conf import settings
 from phonenumber_field.modelfields import PhoneNumberField
-from ckeditor_uploader.widgets import CKEditorUploadingWidget
+
 
 class Post(models.Model):
     author = models.ForeignKey(
@@ -29,7 +25,9 @@ class Post(models.Model):
 
 # model for Profile
 class Profile(models.Model):
-    '''Таблица профиля в которой отображается базовая информация о пользователе'''
+    '''
+    Таблица профиля в которой отображается базовая информация о пользователе
+    '''
     gender_choice = (
 
         ('M', 'Мужчина'),
@@ -109,24 +107,32 @@ class Speciality(models.Model):
         ('Eighth-building', '8-е здание')
     )
 
-    faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE, related_name="faculty", default=0)
+    faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE,
+                                related_name="faculty", default=0)
     time_edu = models.IntegerField(default='0')
-    type_edu = models.CharField(max_length=12, choices=type_of_edu, null=True, blank=True)
-    day_tipe = models.CharField(max_length=13, choices=type_of_day_time, null=True, blank=True)
+    type_edu = models.CharField(max_length=12, choices=type_of_edu,
+                                null=True, blank=True)
+    day_tipe = models.CharField(max_length=13, choices=type_of_day_time,
+                                null=True, blank=True)
     price = models.IntegerField(null=True, blank=True)
 
     title = models.CharField(max_length=100)
-    exam_one = models.CharField(max_length=14, choices=types_of_exams, null=True, blank=True)
-    exam_two = models.CharField(max_length=14, choices=types_of_exams, null=True, blank=True)
-    exam_three = models.CharField(max_length=14, choices=types_of_exams, null=True, blank=True)
-    direction_choice = models.CharField(max_length=16, choices=type_of_direction, null=True, blank=True)
+    exam_one = models.CharField(max_length=14, choices=types_of_exams,
+                                null=True, blank=True)
+    exam_two = models.CharField(max_length=14, choices=types_of_exams,
+                                null=True, blank=True)
+    exam_three = models.CharField(max_length=14, choices=types_of_exams,
+                                  null=True, blank=True)
+    direction_choice = models.CharField(max_length=16,
+                                        choices=type_of_direction,
+                                        null=True, blank=True)
 
     description = models.TextField()
     key = models.CharField(max_length=10)
     score = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
-        return 'Код специальности: {}| Название: {}'.format(self.key, self.title)
+        return f'Код специальности: {self.key}| Название: {self.title}'
 
 
 class Faq(models.Model):

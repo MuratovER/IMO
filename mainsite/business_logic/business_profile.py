@@ -1,6 +1,8 @@
 from mainsite.models import Profile
 from mainsite.forms import ProfileForm
 from django.shortcuts import redirect
+from django.shortcuts import render, redirect
+from mainsite.business_logic.business_auth import post_render
 
 
 def form_update(form, redirect_page):
@@ -11,22 +13,35 @@ def form_update(form, redirect_page):
         return redirect(redirect_page)
 
 
-def post_method_check(request, profile, check_form):
-    """Check function method ande return form with params"""
-    if request.method == "POST":
-        form = check_form(request.POST, instance=profile)
-        form_update(form, 'profile')
-        return form
-    else:
-        form = check_form(instance=profile)
-        return form
-
-
 def profile_render(request):
     """Function for profile rendering with updated form"""
+    redirect_url = ''
     profile = Profile.objects.get(user=request.user)
-    form = post_method_check(request, profile, ProfileForm)
-    return {
+    method, form = post_render(request, ProfileForm, instance=profile)
+    context = {
         'profile': profile,
         'form': form,
     }
+    return method, redirect_url, context
+
+
+def profile_edit_render(request):
+    "Function that render profile edit form"
+    profile = Profile.objects.get(user=request.user)
+    redirect_url = 'mainsite:profile'
+    method, form = post_render(request, ProfileForm, instance=profile)
+    context = {
+        'form': form,
+    }
+    return method, redirect_url, context
+
+
+def password_edit_render(request):
+    "Function for render password edit"
+    profile = Profile.objects.get(user=request.user)
+    redirect_url = 'mainsite:profile'
+    method, form = post_render(request, ProfileForm, instance=profile)
+    context = {
+        'form': form
+    }
+    return method, redirect_url, context

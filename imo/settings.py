@@ -3,6 +3,7 @@
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Протестировать dotenv
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -29,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cachalot',
     'ckeditor',
     'ckeditor_uploader',
     'mainsite',
@@ -82,10 +84,10 @@ WSGI_APPLICATION = 'imo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'imodb',
-        'USER': 'imo',
-        'PASSWORD': 'imoproject',
-        'HOST': 'localhost',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASS'),
+        'HOST': os.environ.get('DB_HOST'),
         'PORT': '',
     }
 }
@@ -108,7 +110,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# # CACHES
+
+
 # CACHES = {
 #     'default': {
 #         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
@@ -239,18 +242,6 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-
-# config/settings.py
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
-DEFAULT_FROM_EMAIL = 'will@learndjango.com'
-EMAIL_HOST = 'smtp.mailgun.org' # new
-EMAIL_HOST_USER = 'eldar.muratov.3@gmail.com'# new
-EMAIL_HOST_PASSWORD = 'tkmlfhvehfnjd' # new
-EMAIL_PORT = 587 # new
-EMAIL_USE_TLS = True # new
-
 CSRF_TRUSTED_ORIGINS=['https://imo.kai.ru/']
-
-
-
 USER_AGENTS_CACHE = 'default'
+CELERY_BROKER_URL = 'redis://redis:6379/0'
