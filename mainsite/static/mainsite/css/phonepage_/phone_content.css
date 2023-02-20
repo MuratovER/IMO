@@ -7,7 +7,7 @@
 }
 
 .content {
-    max-width: 95%;
+    /* max-width: 95%; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -16,14 +16,15 @@
 }
 
 .Phone_Head {
-    width: 80%;
+    width: 91.67%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin-top: 10%;
     justify-content: center;
     gap: 20%;
+    margin: 6.2% 0 0 0;
+
 }
 
 .Phone_Base_content {
@@ -186,7 +187,7 @@
 
 
 .phone_header_Ru_ico{
-    background-image: url(../../img/phome_imo_down.svg);
+    background-image: var(--Phone-header-home-get-ico);
     background-position: center;
     border: none;
     width: 15px;
@@ -792,183 +793,7 @@ h1 {
     }
 }
 
-@media screen and (max-width:360px) {
-    .AircraftIndustry1_phone {
-        width: 180px;
-        height: 100px;
-    }
 
-    .AircraftEngines_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .infocommunicationTechnologies_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .AircraftIndustry2_phone {
-        width: 180px;
-        height: 100px;
-    }
-
-    .AircraftIndustry3_phone {
-        width: 180px;
-        height: 100px;
-    }
-
-    .AircraftOperation1_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .compositTechnologi_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .shipbuilding_phone {
-        width: 180px;
-        height: 100px;
-    }
-
-    /* text-size    */
-
-    .specialty_box_picture_text_phone {
-        font-size: 12px;
-    }
-
-    #collapse {
-        width: 160px;
-        height: 125px;
-        margin-top: 190px;
-        margin-right: 80px;
-    }
-
-    .faq_content_phone {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .faq_block1_phone {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    .faq_form h1 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .faq_form p {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .verification-mail_phone {
-        margin-top: 25px;
-        margin-bottom: 25px;
-
-    }
-
-    .verification-mail-field_phone {
-        font-size: 15px;
-        width: 280px;
-        height: 50px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .AircraftIndustry1_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    .AircraftEngines_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .infocommunicationTechnologies_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .AircraftIndustry2_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    .AircraftIndustry3_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    .AircraftOperation1_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .compositTechnologi_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .shipbuilding_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    /* text-size    */
-
-    .specialty_box_picture_text_phone {
-        font-size: 8px;
-    }
-
-    #collapse {
-        width: 120px;
-        height: 100px;
-        margin-top: 160px;
-        margin-right: 60px;
-    }
-
-    .faq_content_phone {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .faq_block1_phone {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    .faq_form h1 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .faq_form p {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .verification-mail_phone {
-        margin-top: 25px;
-        margin-bottom: 25px;
-
-    }
-
-    .verification-mail-field_phone {
-        font-size: 15px;
-        width: 280px;
-        height: 50px;
-    }
-}
 
 .verification-mail-field_phone {
     border-radius: 15px;
@@ -1079,4 +904,30 @@ font-weight: 400;
     justify-content: center;
     flex-direction: row;
     gap: 2px;
+}
+
+.phone-specialty-box2-title-text {
+    font-family: var(--font-averta-cy-W01);
+    font-style: normal;
+}
+
+.specialty-naprav-block{
+    font-family: var(--font-inter);
+    font-style: normal;
+}
+
+.phone-specialty-box3-card{
+    width: 94.5%;
+}
+
+.phone-specialty-box2-TextCard{
+    gap: 2%;
+}
+
+
+
+.Pamyatka_Inostransa,
+.Profil{
+    background-repeat: no-repeat;
+    background-size: contain;
 }

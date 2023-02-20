@@ -1,4 +1,8 @@
-@media screen and (max-width:375px) {
+@media screen and (min-width:361px) and (max-width:375px) {
+    
+    .content{
+        width: 375px;
+    }    
     .slide1_burron_Bxtex{
         font-size: 12px;
     }
@@ -207,10 +211,6 @@
         font-size: 14px;
     }
 
-}
-
-@media screen and (max-width: 375px) {
-
     .main_icon_logo_flexbox {
         width: 40px;
         height: 40px;
@@ -384,7 +384,7 @@
     
     .phone-box-background-ImgSVG-h1 {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 154.19%;
     }
     
@@ -499,5 +499,176 @@
     }
     .specialty_box_picture_text_phone{
         display: none;
+    }
+
+    
+    .main_icon_logo_flexbox {
+        width: 44px;
+        height: 44px;
+    }
+
+    .main_icon_logo_phone {
+        width: 44px;
+    }
+
+    .phone_header_home_ico,
+    .phone_header_question_ico,
+    .phone_header_notice_ico,
+    .chageColor_phone, 
+    .phone_header_presen_ico {
+        width: 34px;
+        height: 34px;
+    }
+    .phone_header_home_get_ico{
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .footer_slade1_icon {
+        max-width: 100%;
+        width: 40px;
+        height: 35px;
+    }
+
+    .phone_footer_slade1 {
+        width: 37%;
+    }
+
+    .phone_footer_slade2 {
+        width: 24%;
+    }
+
+    .phone_footer_slade3 {
+        width: 22%;
+    }
+
+    .footer_slade1_icon_text {
+        margin-left: 5%;
+    }
+
+    .footer_slade1_icon_text h1,
+    .phone_footer_slade3_adres h1,
+    .phone_footer_slade2_h h1,
+    .phone_footer_slade2_namber1,
+    .phone_footer_slade2_namber2,
+    .phone_footer_slade3_ulisa {
+        font-size: 6px;
+    }
+
+    .slade1_text {
+        font-size: 10px;
+    }
+
+    .phone_footer_upon p,
+    .phone_footer_slade2_link a {
+        font-size: 4px;
+    }
+
+
+    .footer_boxs_links_box_plot {
+        width: 25px;
+        height: 23px;
+    }
+
+    /**********************360***не отредактирован*/
+    .slide1_burron_Bxtex {
+        font-size: 12px;
+    }
+
+    .slide1_burron_BxtexPodfac {
+        font-size: 12px;
+    }
+
+    .news_block_phone {
+        width: 183px;
+    }
+
+    .news_block_img_phone {
+        width: 183px;
+        height: 183px;
+    }
+
+
+    .base_content_slade1 {
+        width: 100%;
+    }
+
+    .slide1_text .Lang-standart84_1 {
+        font-size: 42.5px;
+    }
+
+    .slide1_text {
+        width: 100%;
+    }
+
+    .base_content_slade3 {
+        width: 357px;
+    }
+
+    .Lang-standart27 {
+        font-size: 24px;
+    }
+
+    .news_list_a {
+        width: 162px;
+    }
+
+    .news_block_img {
+        width: 162px;
+        height: 164px;
+    }
+
+    .news_title-phone {
+        height: 28.4px;
+    }
+
+    .news_title_h3 {
+        font-size: 9.5px;
+    }
+
+    .news-KAI-block p {
+        font-size: 5px;
+    }
+
+    .news-date {
+        font-size: 5px;
+    }
+
+    .about_IMO {
+        width: 357px;
+        margin-top: 30px;
+    }
+
+    .box_aboutIMO_ImgSVG {
+        margin-top: 24px;
+    }
+
+    .Lang-standart32 {
+        font-size: 20px;
+    }
+
+    .Lang-standart33 {
+        font-size: 8px;
+    }
+
+    .box_aboutIMO_text_Inf_INGSVG {
+        width: 84px;
+        height: 84px;
+    }
+
+    .box_aboutIMO_ImgSVG_background {
+        width: 357px;
+        height: 87px;
+        border-radius: 19px;
+    }
+
+    .Lang-standart34 {
+        font-size: 14px;
+    }
+    .Lang-standart32,
+    .Lang-standart27,
+    .Lang-phone-standart01 {
+        font-size: 19px;
     }
 }

@@ -183,7 +183,8 @@ input:checked+.slider:before {
     content: " ";
     /* background-image: url(../../img/Profil.svg); */
     /* background-image: url(../../img/Profile.svg); */
-    background-color: var(--phone-profil-ico-color);
+    background-size:contain ;
+    background-image: var(--phone-profil-ico-color);
 
 }
 
@@ -192,7 +193,8 @@ input:checked+.slider:before {
     height: 30px;
     content: " ";
     color: #fff;
-    background-image: url(../../img/PamyatkaInost.svg);
+    background-size: contain;
+    background-image: var(--Phone-header-PamyatkaInost);
 
 }
 

@@ -1,7 +1,9 @@
-@media screen and (max-width:320px) {
-
+@media screen and (min-width:100px) and (max-width:320px) {
+    .content{
+        width: 320px;
+    }
     .main_icon_logo_flexbox {
-        width: 36px;
+        width: 36.497px;
         height: 36px;
     }
 
@@ -144,8 +146,8 @@
     }
     
     .phone-specialty-box3-card {
-        margin-top: 10px;
-        gap: 30px;
+        gap: 10px;
+        margin: .5% 2.2% 0 4.5%;
     }
     
     .LangText-incomig-specialty2,
@@ -198,12 +200,15 @@
     .Fifth-building .specialty-buildingKAI-pic,
     .Seventh-building .specialty-buildingKAI-pic,
     .Eighth-building .specialty-buildingKAI-pic {
-        width: 143px;
-        height: 142px;
+        width: 127.1px;
+        height: 125px;
     }
     
     .specialty-all-BOXh1 {
         width: 80%;
+        display: flex;
+        gap: 2%;
+        flex-direction: column;
     }
     
     .specialty-naprav-block-font-size {
@@ -215,8 +220,8 @@
     }
     
     .haveyouQuestion_boxe_center {
-        width: 379px;
-        height: 200px;
+        width: 293.33px;
+        height: 165px;
     }
     
     .phone-boxe_h1Box_center {
@@ -236,7 +241,7 @@
     }
     
     .phone-haveyouQuestion_article {
-        border-radius: 14px;
+        border-radius: 4px;
         padding: 3.4px 3.4px 3.4px 3.4px;
     }
     
@@ -251,8 +256,8 @@
     }
     
     .phone-haveyouQuestion_boxes {
-        width: 379px;
-        height: 200px;
+        width: 293.33px;
+        height: 165px;
     }
     
     .phone-specialty-all-Key-naprav {
@@ -274,15 +279,15 @@
     
     .phone-box-background-ImgSVG-h1 {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 154.19%;
     }
     
     .phone-specialty-box2,
     .phone-specialty-box3,
     .phone-specialty-body {
-        max-width: 95%;
-        width: 404px;
+        max-width: 94.5%;
+        width: 302.4px;
     }
     
     .phone-specialty-building {
@@ -317,13 +322,13 @@
     .specialty-all-CardLink-boxStart-INFO,
     .specialty-all-CardLink-boxStart-FRLN {
         /* min-width: 260px; */
-        width: 66px;
-        height: 64px;
-        border-radius: 6px;
+        width: 58.66px;
+        height: 58px;
+        border-radius: 5px;
     }
     
     .specialty-all-text {
-        margin-top: 25px;
+        /* margin-top: 25px; */
         font-weight: 400;
         font-size: 10px;
         line-height: 202.6%;
@@ -343,14 +348,16 @@
     }
     
     .specialty-buildingKAI-title {
+        width: 120px;
+        height: 25px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 9px;
         line-height: 152.02%;
     }
     
     .buildingKAI-text-title {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 9px;
         line-height: 31px;
     }
     
@@ -369,13 +376,21 @@
     .specialty-all-text2 {
         font-weight: 400;
         font-size: 10px;
+        gap: 2px;
     }
     
     .specialty-nb1,
     .specialty-naprav-block div {
-        padding: 12px 14px;
+        padding: 1.2px 1.2px 1.2px 1.2px;
         gap: 10px;
-        border-radius: 14px;
+        /* border-radius: 5px;
+        border: var(--phone-specialty-naprav-block); */
+        background-color: var(--bg-color);
+    }
+
+    .specialty-naprav-block{
+        border: var(--phone-specialty-naprav-block);
+        border-radius: 5px;
     }
     
     .specialty-all-exam{
@@ -390,5 +405,277 @@
 
     .specialty_box_picture_text_phone{
         display: none;
+    }
+
+    .main_icon_logo_flexbox {
+        width: 36px;
+        height: 36px;
+    }
+
+    .main_icon_logo_phone {
+        width: 36px;
+    }
+
+    .phone_header_home_ico,
+    .phone_header_question_ico,
+    .phone_header_notice_ico,
+    .chageColor_phone, 
+    .phone_header_presen_ico {
+        width: 30px;
+        height: 30px;
+    }
+    .phone_header_home_get_ico{
+        width: 20px;
+        height: 20px;
+    }
+    .footer_slade1_icon {
+        max-width: 100%;
+        width: 30px;
+        height: 30px;
+    }
+
+    .phone_footer_slade1 {
+        width: 37%;
+    }
+
+    .phone_footer_slade2 {
+        width: 24%;
+    }
+
+    .phone_footer_slade3 {
+        width: 22%;
+    }
+
+    .footer_slade1_icon_text {
+        margin-left: 15%;
+    }
+
+    .footer_slade1_icon_text h1,
+    .phone_footer_slade3_adres h1,
+    .phone_footer_slade2_h h1,
+    .phone_footer_slade2_namber1,
+    .phone_footer_slade2_namber2,
+    .phone_footer_slade3_ulisa {
+        font-size: 5px;
+    }
+
+    .slade1_text {
+        font-size: 7px;
+    }
+
+    .phone_footer_upon p,
+    .phone_footer_slade2_link {
+        font-size: 4px;
+    }
+
+    .phone_footer_slade2_link {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    }
+
+    .footer_boxs_links_box_plot {
+        width: 25px;
+        height: 23px;
+    }
+
+    .Lang-standart32,
+    .Lang-standart27,
+    .Lang-phone-standart01 {
+        font-size: 17px;
+    }
+
+
+    /**********************320***не отредактирован*/
+    .slide1_text .Lang-standart84_1 {
+        font-size: 30px;
+    }
+
+    .slide1_burron_Bxtex {
+        font-size: 10.4px;
+    }
+
+    .slide1_burron_BxtexPodfac {
+        font-size: 10.4px;
+    }
+
+    .news_block_phone {
+        width: 120px;
+    }
+
+    .news_block_img_phone {
+        width: 120px;
+        height: 120px;
+        border-radius: 7px;
+    }
+
+
+    .footer_mainText {
+        font-weight: 500;
+        font-size: 6px;
+        line-height: 134.69%;
+        text-align: right;
+        letter-spacing: 0.03em;
+    }
+
+    .helpText {
+        font-weight: 400;
+        font-size: 6px;
+        line-height: 134.69%;
+        text-align: right;
+        letter-spacing: 0.03em;
+    }
+
+    .Memo_box_textInf_text {
+        font-size: 6px;
+        font-weight: 500;
+
+    }
+
+    .main_icon_logo_phoneText {
+        font-weight: 400;
+        font-size: 6px;
+        font-family: var(--font-averta-cy);
+        color: #000;
+        margin-left: 15px;
+    }
+
+    .footer_FM1_text {
+        color: #B7B7B7;
+        font-size: 4px;
+        font-family: var(--font-inter);
+    }
+
+    .link_FM2Text_p {
+        color: #B7B7B7;
+        font-size: 4px;
+        font-family: var(--font-inter);
+    }
+    .news_title-phone{
+        height: 24px;
+    }
+
+    .about_IMO{
+        width: 250px;
+    }
+
+    .AircraftIndustry1_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    .AircraftEngines_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .infocommunicationTechnologies_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .AircraftIndustry2_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    .AircraftIndustry3_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    .AircraftOperation1_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .compositTechnologi_phone {
+        width: 96px;
+        height: 100px;
+    }
+
+    .shipbuilding_phone {
+        width: 160px;
+        height: 100px;
+    }
+
+    /* text-size    */
+
+    .specialty_box_picture_text_phone {
+        font-size: 8px;
+    }
+
+    #collapse {
+        width: 210px;
+        height: 60px;
+        margin-top: 190px;
+        margin-right: 140px;
+    }
+
+    .faq_content_phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq_block1_phone {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .faq_form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .faq_form p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .verification-mail_phone {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    .verification-mail-field_phone {
+        font-size: 15px;
+        width: 280px;
+        height: 50px;
+    }
+
+    .phone-specialty-box2-text p {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 160.6%;
+    }
+
+    .specialty-buildingKAI-mapAdress a{
+        font-family: var(--font-averta-demo-PE);
+        font-style: normal;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 12px;
+    }
+
+    .specialty-buildingKAI-picture {
+        display: grid;
+        justify-items: start;
+        align-content: center;
+        grid-gap: 20px;
+    }
+
+    .phone-specialty-all-CardLink-boxStart1 {
+        width: 65px;
+        height: 75px;
+        border-radius: 10px;
+    }
+
+    .phone-specialty-all{
+        width: 94.5%;
+        margin: 6.5% 2.2% 0 4.5%;
     }
 }

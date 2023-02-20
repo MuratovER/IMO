@@ -66,9 +66,6 @@
 }
 
 .phone-specialty-box2-text p {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 202.6%;
     color: var(--colorText);
     flex: none;
     order: 0;
@@ -203,7 +200,8 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    gap: 2%;
+    /* width: 100%; */
 }
 
 .specialty-buildingKAI-pic {
@@ -264,10 +262,6 @@
     color: var(--Profil-p);
 }
 
-.phone-specialty-box3-card {
-    margin-top: 10px;
-    gap: 10px;
-}
 
 .LangText-incomig-specialty2,
 .LangText-incomig-specialty3,
@@ -443,12 +437,12 @@
     border-radius: 6px;
 }
 
-.specialty-all-text {
-    margin-top: 25px;
+/* .specialty-all-text {
+    margin-top: 25px; 
     font-weight: 400;
     font-size: 10px;
     line-height: 202.6%;
-}
+} */
 
 .box-center {
     gap: 10%;
@@ -559,17 +553,21 @@
     color: #FFFFFF;
 }
 
-.specialty-all-text,
-.specialty-buildingKAI-title,
-.phone-haveyouQuestion_article div {
+.specialty-buildingKAI-title{
     color: var(--colorText);
+
 }
 
-.buildingKAI-text-profesion,
-.phone-haveyouQuestion_article {
+
+.buildingKAI-text-profesion {
     border: 1px solid #dfe0e9;
     background: #F6F6F6;
     color: var(--colorText);
+}
+.phone-haveyouQuestion_article{
+    border: 1px solid #dfe0e9;
+    background: #F6F6F6;
+    color: var(--phone-button-color);
 }
 
 .buildingKAI-text-title {
@@ -616,6 +614,15 @@
 .LangText-incomig-specialty5,
 .phone-specialty-all-CardLink-grey-answer h1 {
     color: #858585;
+}
+
+.specialty-all-text,
+.specialty-naprav-block{
+    color: var(--colorText-black-blue);
+}
+
+.specialty-all-text2 div{
+    color: var(--colorText);
 }
 
 /*************************IMG*****************************************************/
@@ -754,12 +761,7 @@
     grid-gap: 15px;
 }
 
-.specialty-buildingKAI-picture {
-    display: grid;
-    justify-items: start;
-    align-content: center;
-    grid-gap: 30px;
-}
+
 
 .haveyouQuestion-phone {
     justify-content: center;
@@ -796,11 +798,11 @@
 .specialty-all-CardLink-grey-answerUp,
 .buildingKAI-text-profesion,
 .haveyouQuestion_h1,
-.phone-haveyouQuestion_article,
 .box_boxText_twoBTNBox_button,
 .specialty-all-h1,
 .box-background-ImgSVG-h2 {
     font-family: var(--font-averta-cy-EB);
+    font-style: 'normal';
 }
 
 
@@ -813,7 +815,7 @@
 }
 
 
-.specialty-all-text,
+
 .specialty-buildingKAI-title,
 .buildingKAI-text-title,
 .buildingKAI-text-profesion div,
@@ -830,6 +832,7 @@
 
 .phone-box-background-ImgSVG-h2,
 .phone-specialty-box2-text p,
+.specialty-all-text,
 .phone-specialty-three-cards {
     font-family: 'Averta Demo PE';
     font-style: normal;
@@ -893,7 +896,7 @@
 }
 
 .specialty-question-text-color {
-    text-align: inherit;
+    text-align: initial;
 }
 
 .specialty-all-text2 {
@@ -905,3 +908,4 @@
 .specialty-all-exam a {
     text-decoration: auto;
 }
+

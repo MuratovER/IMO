@@ -1,68 +1,9 @@
-@media screen and (min-width:426px) and (max-width:460px) {
+@media screen and  (min-width:768px) and (max-width:1024px) {
     .content{
-        width: 460px;
+        width: 1024px;
     }
-    .main_icon_logo_flexbox {
-        width: 90px;
-        height: 90px;
-    }
-
-    .main_icon_logo_phone {
-        width: 90px;
-    }
-
-    .phone_header_home_ico, 
-    .phone_header_question_ico, 
-    .phone_header_notice_ico,
-    .phone_header_presen_ico {
-        width: 70px;
-        height: 70px;
-    }
-
-  
-    .footer_slade1_icon{
-        max-width: 100%;
-        width: 53px;
-        height: 50px;
-    }
-
-    .phone_footer_slade1{
-        width: 37%;
-    }
-
-    .phone_footer_slade2{
-        width: 24%;
-    }
-
-    .phone_footer_slade3{
-        width: 22%;
-    }
-
-    .footer_slade1_icon_text{
-        margin-left: 5%;
-    }
-    .footer_slade1_icon_text h1, 
-    .phone_footer_slade3_adres h1,
-    .phone_footer_slade2_h h1, 
-    .phone_footer_slade2_namber1, 
-    .phone_footer_slade2_namber2,
-    .phone_footer_slade3_ulisa {
-        font-size: 17px;
-    }
-
-    .phone_footer_upon p,
-    .phone_footer_slade2_link a{
-        font-size: 10px;
-    }
-
     
-    .footer_boxs_links_box_plot {
-        width: 58px;
-        height: 42px;
-    }
-
-/**********************360***не отредактирован*/
-
+    
     .news_block_phone {
         width: 320px;
     }
@@ -72,6 +13,35 @@
         height: 320px;
     }
 
+    .phone_header_home_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_question_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_notice_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_presen_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main_icon_logo_flexbox {
+        width: 87px;
+        height: 87px;
+    }
+
+    .main_icon_logo {
+        width: 87px;
+    }
+
     /*  raschet */
     .Lang-standart84_1 {
         font-size: 60px;
@@ -79,6 +49,11 @@
 
     .slide1_text {
         width: 387px;
+    }
+
+    .specialty_box_displayFlex_litleBox {
+        flex-direction: row;
+        align-items: center;
     }
 
     .slade_specialty_box_displayFlex_litleBox {
@@ -101,17 +76,69 @@
     /*///////////////////////////////////////////////////////////////////*/
 
 
-    .footer_mainText,
-    .helpText,
-    .Memo_box_textInf_text,
-    .main_icon_logo_phoneText  {
-        font-size: 10px;
+    .footer_mainText {
+        font-size: 12.8px;
     }
 
-    .footer_FM1_text,
-    .link_FM2Text_p,
-    .phone_footer_upon p  {
+    .helpText {
         font-size: 8px;
+    }
+
+    .Memo_box_textInf_text {
+        font-size: 8px;
+    }
+
+    .main_icon_logo_phoneText {
+        font-size: 8px;
+    }
+
+    .footer_FM1_text {
+        font-size: 5.3px;
+    }
+
+    .link_FM2Text_p {
+        font-size: 5.3px;
+    }
+
+    .phone_footer {
+        max-width: 100%
+    }
+
+    .footer_slade1_icon_text h1 {
+        font-size: 17px;
+    }
+
+    /* .footer_slade1_icon_text {
+        width: 200px;
+    } */
+
+    .phone_footer_slade2_h h1 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade3_adres h1 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade2_namber1 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade2_namber2 {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade3_ulisa {
+        font-size: 17px;
+    }
+
+    .phone_footer_slade2_link a {
+        font-size: 12px;
+    }
+
+    .footer_slade1_icon {
+        width: 53px;
+        height: 50px;
     }
 
     .footer_boxs_links_box_l {
@@ -124,6 +151,9 @@
         height: 55px;
     }
 
+    .phone_footer_slade2 {
+        width: 250px
+    }
 
     .phone_footer_upon p {
         font-size: 12px;
@@ -137,12 +167,12 @@
         font-size: 60px;
     }
 
-    .slide1_burron_Bxtex,
+    .slide1_burron_Bxtex{
+        font-size: 25px;
+    }
     .slide1_burron_BxtexPodfac{
         font-size: 25px;
     }
-
-
     .Lang-standart27{
         font-size: 50px;
     }
@@ -172,12 +202,13 @@
         font-size: 11px;
     }
 
-    .news-KAI-block p,
-    .news-date {
+    .news-KAI-block p {
         font-size: 12px;
     }
 
-
+    .news-date {
+        font-size: 12px;
+    }
 
     .about_IMO {
         width: 100%;
@@ -198,6 +229,7 @@
 
     .box_aboutIMO_text_Inf_INGSVG {
         width: 200px;
+        /* height: 95px; */
     }
 
     .box_aboutIMO_ImgSVG_background {
@@ -209,7 +241,7 @@
         font-size: 50px;
     }
 
-
+    
     /**************Page incomig************/
     .phone-specialty-body {
         margin-top: 20px;
@@ -225,6 +257,7 @@
     
     .phone-specialty-box2-title-text {
         font-weight: 600;
+        font-size: 35px;
     }
     
     .phone-specialty-box3-card {
@@ -246,23 +279,23 @@
     .LangText-incomig-specialty13,
     .LangText-incomig-specialty14 {
         font-weight: 700;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 10px;
     
     }
     
     .specialty-all-CardLink {
-        column-gap: 10px;
-        row-gap: 10px;
+        column-gap: 8px;
+        row-gap: 8px;
     }
     
     .phone-weHAve_new_boxStart_img {
-        border-radius: 6px;
+        border-radius: 3px;
     }
     
     .specialty-all-exam-content {
-        width: 216px;  /*    */
-        height: 28px;
+        width: 360px;
+        height: 32px;
         margin-top: 5px;
         gap: 5px;
     }
@@ -270,8 +303,8 @@
     .RaspisanieIspit-phone,
     .DemoTest-phone,
     .ProgramVstuplenie-phone {
-        width: 21px;
-        height: 20px;
+        width: 46px;
+        height: 42px;
     }
     
     
@@ -299,8 +332,8 @@
     }
     
     .haveyouQuestion_boxe_center {
-        width: 379px;
-        height: 200px;
+        width: 690px;
+        height: 350px;
     }
     
     .phone-boxe_h1Box_center {
@@ -311,8 +344,8 @@
     }
     
     .phone-question-icon {
-        width: 116px;
-        height: 90px;
+        width: 245px;
+        height: 180px;
     }
     
     .phone-haveyouQuestion_boxes3 {
@@ -321,7 +354,7 @@
     
     .phone-haveyouQuestion_article {
         border-radius: 14px;
-        padding: 3.4px 3.4px 3.4px 3.4px;
+        padding: 15px 15px 15px 15px;
     }
     
     .phone-haveyouQuestion_article div {
@@ -335,8 +368,8 @@
     }
     
     .phone-haveyouQuestion_boxes {
-        width: 379px;
-        height: 200px;
+        width: 690px;
+        height: 350px;
     }
     
     .phone-specialty-all-Key-naprav {
@@ -345,20 +378,20 @@
     }
     
     .phone-specialty-header-box-background {
-        width: 404px;
-        height: 146px;
+        width: 729px;
+        height: 200px;
         border-radius: 3px;
     }
     
     .phone-box-background-ImgSVG-h2 {
         font-weight: 400;
-        font-size: 10px;
+        font-size: 21px;
         line-height: 160.1%;
     }
     
     .phone-box-background-ImgSVG-h1 {
         font-weight: 700;
-        font-size: 16.5px;
+        font-size: 32px;
         line-height: 154.19%;
     }
     
@@ -366,7 +399,7 @@
     .phone-specialty-box3,
     .phone-specialty-body {
         max-width: 95%;
-        width: 404px;
+        width: 729px;
     }
     
     .phone-specialty-building {
@@ -401,8 +434,8 @@
     .specialty-all-CardLink-boxStart-INFO,
     .specialty-all-CardLink-boxStart-FRLN {
         /* min-width: 260px; */
-        width: 66px;
-        height: 64px;
+        width: 145px;
+        height: 100px;
         border-radius: 6px;
     }
     
@@ -472,13 +505,34 @@
         line-height: 12px;
     }
 
-    .main_icon_logo_flexbox {
-        width: 56px;
-        height: 56px;
+    .phone-specialty-all-CardLink-boxStart1 {
+        width: 153.6px;
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    .phone-specialty-box2-text p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 202.6%;
+        color: var(--colorText);
+    }    
+    .phone-specialty-three-cards {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--colorText);
+        flex-grow: 0;
+        border-bottom: none;
+    }
+
+    .main_icon_logo_flexbox{
+        width: 90px;
+        height: 90px;
     }
 
     .main_icon_logo_phone {
-        width: 56px;
+        width: 90px;
     }
 
     .phone_header_home_ico,
@@ -486,20 +540,20 @@
     .phone_header_notice_ico,
     .chageColor_phone, 
     .phone_header_presen_ico {
-        width: 44px;
-        height: 44px;
+        width: 70px;
+        height: 70px;
     }
 
     .phone_header_home_get_ico{
-        width: 34px;
-        height: 34px;
+        width: 60px;
+        height: 60px;
     }
 
 
     .footer_slade1_icon {
         max-width: 100%;
-        width: 42px;
-        height: 38px;
+        width: 53px;
+        height: 50px;
     }
 
     .phone_footer_slade1 {
@@ -524,84 +578,107 @@
     .phone_footer_slade2_namber1 p,
     .phone_footer_slade2_namber2 p,
     .phone_footer_slade3_ulisa {
-        font-size: 8px;
+        font-size: 15px;
     }
 
     .slade1_text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .phone_footer_upon p,
     .phone_footer_slade2_link a {
-        font-size: 6px;
+        font-size: 10px;
     }
 
 
     .footer_boxs_links_box_plot {
-        width: 27px;
-        height: 25px;
+        width: 58px;
+        height: 42px;
     }
 
     /**********************360***не отредактирован*/
 
-    .slide1_burron_Bxtex {
-        font-size: 16px;
-    }
-
-    .slide1_burron_BxtexPodfac {
-        font-size: 16px;
-    }
-
     .news_block_phone {
-        width: 183px;
+        width: 320px;
     }
 
     .news_block_img_phone {
-        width: 183px;
-        height: 183px;
+        width: 320px;
+        height: 320px;
+    }
+
+    /*  raschet */
+    .Lang-standart84_1 {
+        font-size: 60px;
+    }
+
+    .slide1_text {
+        width: 100%;
+    }
+
+    .slade_specialty_box_displayFlex_litleBox {
+        width: 650px;
+    }
+
+    .AircraftIndustry1 {
+        width: 385px;
+    }
+
+    .standartStyleForimgSp {
+        width: 230px;
+    }
+
+
+    .phone_footer_slade1_down {
+        width: 184px;
     }
 
     /*///////////////////////////////////////////////////////////////////*/
+
 
     .footer_mainText,
     .helpText,
     .Memo_box_textInf_text,
     .main_icon_logo_phoneText {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .footer_FM1_text,
     .link_FM2Text_p,
     .phone_footer_upon p {
-        font-size: 5.3px;
-    }
-
-    .footer_slade1_icon {
-        width: 33.5px;
-        height: 31px;
+        font-size: 8px;
     }
 
     .footer_boxs_links_box_l {
-        width: 17.4px;
-        height: 16px;
+        width: 37px;
+        height: 30px;
     }
 
     .footer_boxs_links_box_plot {
-        width: 33.4px;
-        height: 31px;
+        width: 71px;
+        height: 55px;
     }
 
-    .phone_footer_slade2 {
-        width: 111px;
+    .phone_footer_upon p {
+        font-size: 12px;
     }
-
 
     .base_content_slade1 {
-        width: 100%;
+        width: 100%
     }
 
     .slide1_text .Lang-standart84_1 {
-        font-size: 48px;
+        font-size: 60px;
+    }
+
+    .slide1_burron_Bxtex,
+    .slide1_burron_BxtexPodfac {
+        font-size: 25px;
+    }
+
+
+    .Lang-standart27 {
+        font-size: 50px;
     }
 
     .slide1_text {
@@ -612,12 +689,8 @@
         width: 403px;
     }
 
-    .Lang-standart27 {
-        font-size: 27px;
-    }
-
     .news_list_a {
-        width: 183px;
+        width: 320px;
     }
 
     .news_block_img {
@@ -635,13 +708,13 @@
 
     .news-KAI-block p,
     .news-date {
-        font-size: 5.4px;
+        font-size: 12px;
     }
 
 
 
     .about_IMO {
-        width: 403px;
+        width: 100%;
         margin-top: 33.4px;
     }
 
@@ -650,31 +723,54 @@
     }
 
     .Lang-standart32 {
-        font-size: 23px;
+        font-size: 50px;
     }
 
     .Lang-standart33 {
-        font-size: 9.4px;
+        font-size: 15px;
     }
 
     .box_aboutIMO_text_Inf_INGSVG {
-        width: 95px;
-        height: 95px;
+        width: 200px;
     }
 
     .box_aboutIMO_ImgSVG_background {
-        width: 302px;
-        height: 74px;
+        width: 691px;
         border-radius: 16px;
     }
 
     .Lang-standart34 {
-        font-size: 12px;
+        font-size: 50px;
     }
-    .Lang-standart32,
-    .Lang-standart27,
-    .Lang-phone-standart01 {
-        font-size: 22px;
+
+    .phone_header_home_ico {
+        width: 94px;
+        height: 94px;
     }
+
+    .phone_header_question_ico {
+        width: 94px;
+        height: 94px;
+    }
+
+    .phone_header_notice_ico {
+        width: 94px;
+        height: 94px;
+    }
+
+    .phone_header_presen_ico {
+        width: 94px;
+        height: 94px;
+    }
+
+    .main_icon_logo_flexbox {
+        width: 120px;
+        height: 120px;
+    }
+
+    .main_icon_logo {
+        width: 120px;
+    }
+
 
 }

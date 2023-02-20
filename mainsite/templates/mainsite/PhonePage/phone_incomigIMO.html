@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="specialty-all-CardLink" style="column-gap: 25px;">
+        <div class="specialty-all-CardLink">
             <div class="one">
                 {% if speciality.exam_one == "MATH" %}
                 <div
@@ -275,7 +275,7 @@
                 <div>{% translate "LangStaticname81" %}</div>
                 <div class="specialty-naprav-block">
                     <div class="{{ speciality.direction_choice }}-specialty-kafed">
-                        sd
+                        {{ speciality.graduate }}
                     </div>
                 </div>
             </div>
@@ -285,9 +285,31 @@
                 <div class="specialty-buildingKAI-picture">
                     <div class="specialty-buildingKAI-pic"></div>
                     <div class="specialty-buildingKAI-title">
-                        <div class="{{ speciality.direction_choice }}-specialty-place">
-                        </div>
-
+                        {% if speciality.direction_choice == "First-building" %}
+                            <div class="{{ speciality.direction_choice }}-specialty-place">
+                                {% translate "LangStaticname251" %}
+                            </div>
+                        {% elif speciality.direction_choice == "Second-building" %}    
+                            <div class="{{ speciality.direction_choice }}-specialty-place">
+                                {% translate "LangStaticname252" %}
+                            </div>
+                        {% elif speciality.direction_choice == "Third-building" %}    
+                            <div class="{{ speciality.direction_choice }}-specialty-place">
+                                {% translate "LangStaticname253" %}
+                            </div>
+                        {% elif speciality.direction_choice == "Fifth-building" %}    
+                            <div class="{{ speciality.direction_choice }}-specialty-place">
+                                {% translate "LangStaticname254" %}
+                            </div>
+                        {% elif speciality.direction_choice == "Seveth-building" %}    
+                            <div class="{{ speciality.direction_choice }}-specialty-place">
+                                {% translate "LangStaticname255" %}
+                            </div>
+                        {% elif speciality.direction_choice == "Eighth-building" %}    
+                            <div class="{{ speciality.direction_choice }}-specialty-place">
+                                {% translate "LangStaticname256" %}
+                            </div>
+                        {% endif %}
                     </div>
                     <div class="specialty-buildingKAI-mapAdress">
                         <a id="{{ speciality.direction_choice }}-url">{% translate "LangStaticname82" %}

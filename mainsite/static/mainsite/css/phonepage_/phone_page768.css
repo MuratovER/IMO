@@ -1,4 +1,8 @@
-@media screen and (max-width:768px) {
+@media screen and  (min-width: 461px) and (max-width:768px) {
+    .content{
+        width: 768px;
+    }
+    
     .news_block_phone {
         width: 320px;
     }
@@ -520,5 +524,223 @@
         flex-grow: 0;
         border-bottom: none;
     }
+
+    .main_icon_logo_flexbox{
+        width: 90px;
+        height: 90px;
+    }
+
+    .main_icon_logo_phone {
+        width: 90px;
+    }
+
+    .phone_header_home_ico,
+    .phone_header_question_ico,
+    .phone_header_notice_ico,
+    .chageColor_phone, 
+    .phone_header_presen_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_home_get_ico{
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .footer_slade1_icon {
+        max-width: 100%;
+        width: 53px;
+        height: 50px;
+    }
+
+    .phone_footer_slade1 {
+        width: 37%;
+    }
+
+    .phone_footer_slade2 {
+        width: 24%;
+    }
+
+    .phone_footer_slade3 {
+        width: 22%;
+    }
+
+    .footer_slade1_icon_text {
+        margin-left: 5%;
+    }
+
+    .footer_slade1_icon_text h1,
+    .phone_footer_slade3_adres h1,
+    .phone_footer_slade2_h h1,
+    .phone_footer_slade2_namber1 p,
+    .phone_footer_slade2_namber2 p,
+    .phone_footer_slade3_ulisa {
+        font-size: 15px;
+    }
+
+    .slade1_text {
+        font-size: 16px;
+    }
+
+    .phone_footer_upon p,
+    .phone_footer_slade2_link a {
+        font-size: 10px;
+    }
+
+
+    .footer_boxs_links_box_plot {
+        width: 58px;
+        height: 42px;
+    }
+
+    /**********************360***не отредактирован*/
+
+    .news_block_phone {
+        width: 320px;
+    }
+
+    .news_block_img_phone {
+        width: 320px;
+        height: 320px;
+    }
+
+    /*  raschet */
+    .Lang-standart84_1 {
+        font-size: 60px;
+    }
+
+    .slide1_text {
+        width: 100%;
+    }
+
+    .slade_specialty_box_displayFlex_litleBox {
+        width: 650px;
+    }
+
+    .AircraftIndustry1 {
+        width: 385px;
+    }
+
+    .standartStyleForimgSp {
+        width: 230px;
+    }
+
+
+    .phone_footer_slade1_down {
+        width: 184px;
+    }
+
+    /*///////////////////////////////////////////////////////////////////*/
+
+
+    .footer_mainText,
+    .helpText,
+    .Memo_box_textInf_text,
+    .main_icon_logo_phoneText {
+        font-size: 10px;
+    }
+
+    .footer_FM1_text,
+    .link_FM2Text_p,
+    .phone_footer_upon p {
+        font-size: 8px;
+    }
+
+    .footer_boxs_links_box_l {
+        width: 37px;
+        height: 30px;
+    }
+
+    .footer_boxs_links_box_plot {
+        width: 71px;
+        height: 55px;
+    }
+
+    .phone_footer_upon p {
+        font-size: 12px;
+    }
+
+    .base_content_slade1 {
+        width: 100%
+    }
+
+    .slide1_text .Lang-standart84_1 {
+        font-size: 60px;
+    }
+
+    .slide1_burron_Bxtex,
+    .slide1_burron_BxtexPodfac {
+        font-size: 25px;
+    }
+
+
+    .Lang-standart27 {
+        font-size: 50px;
+    }
+
+    .slide1_text {
+        width: 100%;
+    }
+
+    .base_content_slade3 {
+        width: 403px;
+    }
+
+    .news_list_a {
+        width: 320px;
+    }
+
+    .news_block_img {
+        width: 183px;
+        height: 185.4px;
+    }
+
+    .news_title-phone {
+        height: 32px;
+    }
+
+    .news_title_h3 {
+        font-size: 11px;
+    }
+
+    .news-KAI-block p,
+    .news-date {
+        font-size: 12px;
+    }
+
+
+
+    .about_IMO {
+        width: 100%;
+        margin-top: 33.4px;
+    }
+
+    .box_aboutIMO_ImgSVG {
+        margin-top: 26.7px;
+    }
+
+    .Lang-standart32 {
+        font-size: 50px;
+    }
+
+    .Lang-standart33 {
+        font-size: 15px;
+    }
+
+    .box_aboutIMO_text_Inf_INGSVG {
+        width: 200px;
+    }
+
+    .box_aboutIMO_ImgSVG_background {
+        width: 691px;
+        border-radius: 16px;
+    }
+
+    .Lang-standart34 {
+        font-size: 50px;
+    }
+
 
 }
