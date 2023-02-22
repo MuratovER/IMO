@@ -8,7 +8,7 @@ IMO
 - Аккаунт Github
 - Скинуть Эльдару почту от аккаунта GitHub для добавление в контрибуторов проекта
 - Cкинуть Эльдару почту от аккаунта Notion для добавления к Канбан доске
-- Установить переменные окружения из вкладки безопасность в Notion
+- Настроить переменные окружения по инструкции во вкладке безопасности(Notion)
 
 
 ## Как контрибутить в проект
@@ -106,43 +106,10 @@ pip install -r requirements.txt
 ```
 
 ## База данных
-
-### Требования к базе данных
-Возможно использование SQLite. Это не требует установки, однако если ты занимаешься backend разработкой, то рекомендуется установить PostgreSQL.
-
-Для использования SQLite поменяй database backend ```settings.py```
-
-```
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-```
-```
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'imodb',
-        'USER': 'imo',
-        'PASSWORD': 'imoproject',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
-```
-
 ### Установка PostgresSQL и pgadmin
 - [How to install PostreSQL](https://www.postgresqltutorial.com/install-postgresql/)
 
 Для работы с базой данных можно использовать встроенную консоль ```psql``` или установить [pgAdmin 4](https://www.pgadmin.org/download/pgadmin-4-windows/)
-
-Пользователь, которого нужно создать:
-
-login: ```imo```
-
-password: ```imoproject```
 
 ### Создание базы данных
 
@@ -161,11 +128,11 @@ psql
 
 Ввести команды для создания пользователя и содания базы данных
 ```
-CREATE USER imo;
+CREATE USER {DB_USER};
 
-ALTER USER imo WITH PASSWORD 'imoproject';
+ALTER USER imo WITH {DB_PASS} ;
 
-CREATE DATABASE imodb OWNER imo;
+CREATE DATABASE {DB_NAME} OWNER {DB_USER};
 ```
 
 
@@ -204,42 +171,6 @@ pip freeze > requirements.txt
 ```
 psycopg2==2.7.2
 ```
-
-## Работа с Heroku
-Пуши в мастер автоматически деплояться на Heroku.
-
-Для подключения к надо установить [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
-
-Для работы с приложением в Heroku, Эльдар должен добавить тебя как контрибьютера в Heroku.
-
-```
-# Команда для входа в heroku
-heroku login -i
-
-# Запуск командной строки Heroku
-heroku run bash
-```
-
-После пуша новых таблиц, нужно сделать миграциюна Heroku
-```
-heroku run python manage.py migrate
-```
-
-Команды heroku
-```
-# Проверка env variables
-heroku config
-
-# Создание env variables
-heroku config:set DEBUG=False
-
-# Создание супер пользователя на Heroku
-heroku run python manage.py createsuperuser
-
-# Команда открытия приложения
-heroku open
-```
-
 
 ## Команды Django
 ```
