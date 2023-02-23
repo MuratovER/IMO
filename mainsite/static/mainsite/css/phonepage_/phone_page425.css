@@ -1,4 +1,8 @@
-@media screen and (max-width:425px) {
+@media screen and (min-width:391px) and (max-width:425px) {
+    .content{
+        width: 425px;
+    }
+    
     .main_icon_logo_flexbox {
         width: 50px;
         height: 50px;
@@ -259,6 +263,547 @@
 
     .Lang-standart34 {
         font-size: 14px;
+    }
+
+    /***********************Page incomig**********************/
+    .phone-specialty-body {
+        margin-top: 20px;
+    }
+    
+    .phone-specialty-box2-title {
+        margin-top: 15px;
+    }
+    
+    .phone-specialty-box2-title {
+        padding: 10px;
+    }
+    
+    .phone-specialty-box2-title-text {
+        font-weight: 600;
+    }
+    
+    .phone-specialty-box3-card {
+        margin-top: 10px;
+        gap: 30px;
+    }
+    
+    .LangText-incomig-specialty2,
+    .LangText-incomig-specialty3,
+    .LangText-incomig-specialty4,
+    .LangText-incomig-specialty5,
+    .LangText-incomig-specialty6,
+    .LangText-incomig-specialty7,
+    .LangText-incomig-specialty8,
+    .LangText-incomig-specialty9,
+    .LangText-incomig-specialty10,
+    .LangText-incomig-specialty11,
+    .LangText-incomig-specialty12,
+    .LangText-incomig-specialty13,
+    .LangText-incomig-specialty14 {
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 10px;
+    
+    }
+    
+    .specialty-all-CardLink {
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+    
+    .phone-weHAve_new_boxStart_img {
+        border-radius: 3px;
+    }
+    
+    .specialty-all-exam-content {
+        width: 169px;
+        height: 28px;
+        margin-top: 5px;
+        gap: 5px;
+    }
+    
+    .RaspisanieIspit-phone,
+    .DemoTest-phone,
+    .ProgramVstuplenie-phone {
+        width: 21px;
+        height: 20px;
+    }
+    
+    
+    
+    .First-building .specialty-buildingKAI-pic,
+    .Second-building .specialty-buildingKAI-pic,
+    .Third-building .specialty-buildingKAI-pic,
+    .Fifth-building .specialty-buildingKAI-pic,
+    .Seventh-building .specialty-buildingKAI-pic,
+    .Eighth-building .specialty-buildingKAI-pic {
+        width: 143px;
+        height: 142px;
+    }
+    
+    .specialty-all-BOXh1 {
+        width: 80%;
+    }
+    
+    .specialty-naprav-block-font-size {
+        font-size: 10px;
+    }
+    
+    .phone-haveyouQuestion_boxes {
+        gap: 35px;
+    }
+    
+    .haveyouQuestion_boxe_center {
+        width: 379px;
+        height: 200px;
+    }
+    
+    .phone-boxe_h1Box_center {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 11px;
+    }
+    
+    .phone-question-icon {
+        width: 116px;
+        height: 90px;
+    }
+    
+    .phone-haveyouQuestion_boxes3 {
+        gap: 20px;
+    }
+    
+    .phone-haveyouQuestion_article {
+        border-radius: 14px;
+        padding: 3.4px 3.4px 3.4px 3.4px;
+    }
+    
+    .phone-haveyouQuestion_article div {
+        font-size: 11px;
+    }
+    
+    .phone-haveyouQuestion_boxe_h1 {
+        font-weight: 800;
+        font-size: 11px;
+        line-height: 116.1%;
+    }
+    
+    .phone-haveyouQuestion_boxes {
+        width: 379px;
+        height: 200px;
+    }
+    
+    .phone-specialty-all-Key-naprav {
+        padding: 5px;
+        gap: 45px;
+    }
+    
+    .phone-specialty-header-box-background {
+        width: 404px;
+        height: 146px;
+        border-radius: 3px;
+    }
+    
+    .phone-box-background-ImgSVG-h2 {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 160.1%;
+    }
+    
+    .phone-box-background-ImgSVG-h1 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 154.19%;
+    }
+    
+    .phone-specialty-box2,
+    .phone-specialty-box3,
+    .phone-specialty-body {
+        max-width: 95%;
+        width: 404px;
+    }
+    
+    .phone-specialty-building {
+        grid-gap: 75px;
+    }
+    
+    .box-background-ImgSVG-h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 154.19%;
+    }
+    
+    .specialty-all {
+        width: 90%;
+        gap: 3%;
+    }
+    
+    .specialty-all-CardLink-boxStart1,
+    .specialty-all-CardLink-boxStart2,
+    .specialty-all-CardLink-boxStart3,
+    .specialty-all-CardLink-boxStart4 {
+        min-width: 260px;
+        width: 280px;
+        height: 317px;
+    }
+    
+    .specialty-all-CardLink-boxStart-MATH,
+    .specialty-all-CardLink-boxStart-RUSS,
+    .specialty-all-CardLink-boxStart-CHEM,
+    .specialty-all-CardLink-boxStart-PHYS,
+    .specialty-all-CardLink-boxStart-SOCL,
+    .specialty-all-CardLink-boxStart-INFO,
+    .specialty-all-CardLink-boxStart-FRLN {
+        /* min-width: 260px; */
+        width: 66px;
+        height: 64px;
+        border-radius: 6px;
+    }
+    
+    .specialty-all-text {
+        margin-top: 25px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 202.6%;
+    }
+    
+    .box-center {
+        gap: 10%;
+    }
+    
+    .top130 {
+        margin-top: 130px;
+    }
+    
+    .buildingKAI-text-profesion {
+        border-radius: 14px;
+        padding: 12px 12px 12px 12px;
+    }
+    
+    .specialty-buildingKAI-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 152.02%;
+    }
+    
+    .buildingKAI-text-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 31px;
+    }
+    
+    .buildingKAI-text-profesion div {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 123.19%;
+    }
+    
+    .box_boxText_twoBTNBox_button {
+        border-radius: 14px;
+        padding: 10px 25px 10px 35px;
+        margin-top: 30px;
+    }
+    
+    .specialty-all-text2 {
+        font-weight: 400;
+        font-size: 10px;
+    }
+    
+    .specialty-nb1,
+    .specialty-naprav-block div {
+        padding: 12px 14px;
+        gap: 10px;
+        border-radius: 14px;
+    }
+    
+    .specialty-all-exam{
+        gap: 16px;
+    }
+    
+    #Second-building-url{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .specialty_box_picture_text_phone{
+        display: none;
+    }
+
+    .main_icon_logo_flexbox {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main_icon_logo_phone {
+        width: 50px;
+    }
+
+    .phone_header_home_ico,
+    .phone_header_question_ico,
+    .phone_header_notice_ico,
+    .chageColor_phone, 
+    .phone_header_presen_ico {
+        width: 40px;
+        height: 40px;
+    }
+    .phone_header_home_get_ico{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer_slade1_icon {
+        max-width: 100%;
+        width: 40px;
+        height: 35px;
+    }
+
+    .phone_footer_slade1 {
+        width: 37%;
+    }
+
+    .phone_footer_slade2 {
+        width: 24%;
+    }
+
+    .phone_footer_slade3 {
+        width: 22%;
+    }
+
+    .footer_slade1_icon_text {
+        margin-left: 5%;
+    }
+
+    .footer_slade1_icon_text h1,
+    .phone_footer_slade3_adres h1,
+    .phone_footer_slade2_h h1,
+    .phone_footer_slade2_namber1 p,
+    .phone_footer_slade2_namber2 p,
+    .phone_footer_slade3_ulisa {
+        font-size: 6px;
+    }
+
+    .slade1_text {
+        font-size: 12px;
+    }
+
+    .phone_footer_upon p,
+    .phone_footer_slade2_link a {
+        font-size: 4px;
+    }
+
+
+    .footer_boxs_links_box_plot {
+        width: 25px;
+        height: 23px;
+    }
+
+    /**********************360***не отредактирован*/
+
+    .news_block_phone {
+        width: 183px;
+    }
+
+    .news_block_img_phone {
+        width: 183px;
+        height: 183px;
+    }
+/* 
+    .phone_header_home_ico {
+        width: 39px;
+        height: 38px;
+    }
+
+    .phone_header_question_ico {
+        width: 39px;
+        height: 38px;
+    }
+
+    .phone_header_notice_ico {
+        width: 39px;
+        height: 38px;
+    }
+
+    .phone_header_presen_ico {
+        width: 39px;
+        height: 38px;
+    }
+
+    .main_icon_logo_flexbox {
+        width: 48.5px;
+        height: 50px;
+    }
+
+    .main_icon_logo {
+        width: 50px;
+    } */
+
+    /*///////////////////////////////////////330*425/360///////*/
+
+
+    .footer_mainText {
+        font-size: 7px;
+    }
+
+    .helpText {
+        font-size: 7px;
+    }
+
+    .Memo_box_textInf_text {
+        font-size: 7px;
+    }
+
+    .main_icon_logo_phoneText {
+        font-size: 7px;
+    }
+
+    .footer_FM1_text {
+        font-size: 5px;
+    }
+
+    .link_FM2Text_p {
+        font-size: 5px;
+    }
+
+    .phone_footer {
+        max-width: 100%;
+    }
+
+    .footer_slade1_icon_text h1 {
+        font-size: 7px;
+    }
+
+    /* .footer_slade1_icon_text {
+        width: 102px;
+    } */
+
+    .phone_footer_slade2_h h1 {
+        font-size: 7px;
+    }
+
+    .phone_footer_slade3_adres h1 {
+        font-size: 7px;
+    }
+
+    .phone_footer_slade2_namber1 {
+        font-size: 7px;
+    }
+
+    .phone_footer_slade2_namber2 {
+        font-size: 7px;
+    }
+
+    .phone_footer_slade3_ulisa {
+        font-size: 7px;
+    }
+
+    .phone_footer_slade2_link a {
+        font-size: 5px;
+    }
+
+    .footer_slade1_icon {
+        width: 30px;
+        height: 27px;
+    }
+
+    .footer_boxs_links_box_l {
+        width: 15.3px;
+        height: 14.2px;
+    }
+
+    .footer_boxs_links_box_plot {
+        width: 30px;
+        height: 27px;
+    }
+
+    .phone_footer_slade2 {
+        width: 98px;
+    }
+
+    .phone_footer_upon p {
+        font-size: 5px;
+    }
+
+    .base_content_slade1 {
+        width: 100%;
+    }
+
+    .slide1_text .Lang-standart84_1 {
+        font-size: 42.5px;
+    }
+
+    .slide1_text {
+        width: 100%;
+    }
+
+    .base_content_slade3 {
+        width: 357px;
+    }
+
+    .Lang-standart27 {
+        font-size: 24px;
+    }
+
+    .news_list_a {
+        width: 162px;
+    }
+
+    .news_block_img {
+        width: 162px;
+        height: 164px;
+    }
+
+    .news_title-phone {
+        height: 28.4px;
+    }
+
+    .news_title_h3 {
+        font-size: 9.5px;
+    }
+
+    .news-KAI-block p {
+        font-size: 5px;
+    }
+
+    .news-date {
+        font-size: 5px;
+    }
+
+    .about_IMO {
+        width: 357px;
+        margin-top: 30px;
+    }
+
+    .box_aboutIMO_ImgSVG {
+        margin-top: 24px;
+    }
+
+    .Lang-standart32 {
+        font-size: 20px;
+    }
+
+    .Lang-standart33 {
+        font-size: 8px;
+    }
+
+    .box_aboutIMO_text_Inf_INGSVG {
+        width: 84px;
+        height: 84px;
+    }
+
+    .box_aboutIMO_ImgSVG_background {
+        width: 357px;
+        height: 87px;
+        border-radius: 19px;
+    }
+
+    .Lang-standart34 {
+        font-size: 14px;
+    }
+    .Lang-standart32,
+    .Lang-standart27,
+    .Lang-phone-standart01 {
+        font-size: 20px;
     }
 
 }

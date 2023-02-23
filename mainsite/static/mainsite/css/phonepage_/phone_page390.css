@@ -1,9 +1,7 @@
-@media screen and (min-width:322px) and (max-width:360px) {
-   
+@media screen and (min-width:376px) and (max-width:390px) {
     .content{
-        width: 360px;
+        width: 390px;
     }
-    
     .main_icon_logo_flexbox {
         width: 41.06px;
         height: 42px;
@@ -259,8 +257,8 @@
     }
     
     .phone-specialty-box3-card {
-        margin: .5% 2.2% 0 4.5%;
-        gap: 30px;
+        margin-top: 10px;
+        gap: 10px;
     }
     
     .LangText-incomig-specialty2,
@@ -330,8 +328,8 @@
     }
     
     .haveyouQuestion_boxe_center {
-        width: 330px;
-        height: 176.01px;
+        width: 320px;
+        height: 200px;
     }
     
     .phone-boxe_h1Box_center {
@@ -366,8 +364,8 @@
     }
     
     .phone-haveyouQuestion_boxes {
-        width: 330px;
-        height: 176.01px;
+        width: 320px;
+        height: 200px;
     }
     
     .phone-specialty-all-Key-naprav {
@@ -389,7 +387,7 @@
     
     .phone-box-background-ImgSVG-h1 {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 15.5px;
         line-height: 154.19%;
     }
     
@@ -397,7 +395,7 @@
     .phone-specialty-box3,
     .phone-specialty-body {
         max-width: 94.5%;
-        width: 330px;
+        width: 340px;
     }
     
     .phone-specialty-building {
@@ -432,12 +430,13 @@
     .specialty-all-CardLink-boxStart-INFO,
     .specialty-all-CardLink-boxStart-FRLN {
         /* min-width: 260px; */
-        width: 65.99px;
+        width: 66px;
         height: 64px;
-        border-radius: 6.68px;
+        border-radius: 6px;
     }
     
     .specialty-all-text {
+        margin-top: 25px;
         font-weight: 400;
         font-size: 10px;
         line-height: 202.6%;
@@ -458,13 +457,13 @@
     
     .specialty-buildingKAI-title {
         font-weight: 500;
-        font-size: 10px;
+        font-size: 18px;
         line-height: 152.02%;
     }
     
     .buildingKAI-text-title {
         font-weight: 500;
-        font-size: 10px;
+        font-size: 18px;
         line-height: 31px;
     }
     
@@ -484,19 +483,12 @@
         font-weight: 400;
         font-size: 10px;
     }
-
+    
     .specialty-nb1,
     .specialty-naprav-block div {
-        padding: 2.2px 2.2px 2.2px 2.2px;
+        padding: 12px 14px;
         gap: 10px;
-        /* border-radius: 5px;
-        border: var(--phone-specialty-naprav-block); */
-        background-color: var(--bg-color);
-    }
-
-    .specialty-naprav-block{
-        border: var(--phone-specialty-naprav-block);
-        border-radius: 5px;
+        border-radius: 14px;
     }
     
     .specialty-all-exam{
@@ -817,10 +809,10 @@
     }
 
     #collapse {
-        width: 210px;
-        height: 55px;
-        margin-top: 185px;
-        margin-right: 120px;
+        width: 160px;
+        height: 125px;
+        margin-top: 190px;
+        margin-right: 80px;
     }
 
     .faq_content_phone {
@@ -857,34 +849,4 @@
         height: 50px;
     }
 
-    .phone-specialty-box2-text p {
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 202.6%;
-    }
-    .phone-specialty-all-CardLink-boxStart1 {
-        width: 72px;
-        height: 92px;
-        border-radius: 10px;
-    }
-
-    .phone-specialty-all{
-        width: 94.5%;
-        margin: .5% 2.2% 0 4.5%;
-    }
-    .phone-specialty-building,
-    .specialty-buildingKAI-picture{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    .specialty-buildingKAI-mapAdress a{
-        font-family: var(--font-averta-demo-PE);
-        font-style: normal;
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 12px;
-    }
 }

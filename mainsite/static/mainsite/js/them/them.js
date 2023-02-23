@@ -49,7 +49,7 @@ $(document).ready(
             $(".menu_links_box_displayWhere700px").css("background", "#17181E");
             // $(".menu_links_boxs_links_link").css("background","#424242");
             // тут может быть ошибка
-            $(".buttonsInHeader_box_usButton").css("background-image", "url('../static/mainsite/img/kubsMenuDark.svg')");
+            $(".buttonsInHeader_box_usButton").css("background-image", "url('/static/mainsite/img/kubsMenuDark.svg')");
 
             $("#lang").css("color", "#fff");
             $("h1").css("color", "#fff");
@@ -60,14 +60,14 @@ $(document).ready(
             $("a").css("color", "#fff");
             $(".specialty_box_picture_text").css("color", "#fff");
             $(".preloader").css("background-color", "#000212");
-            $(".spinner").css("background-image", "url('static/mainsite/img/preloader/preloaderDark.svg')");
+            $(".spinner").css("background-image", "url('../static/mainsite/img/preloader/preloaderDark.svg')");
             $(".main_block").css("background-color", "rgb(0, 2, 18)");
-            $(".main_icon_logo").css("background-image", "url('../static/mainsite/img/black-logo.svg')");
+            $(".main_icon_logo").css("background-image", "url('/static/mainsite/img/black-logo.svg')");
             $(".menu_links_boxs_links_link").css("background", "#252525");
             $(".header2_boxText_twoBTNBox_button").css("border", "2px solid #464654");
             $(".Lang-standart13").css("color", "#FFFFFF");
             $(".Lang-standart14").css("color", "#FFFFFF");
-            $(".text_List_In_buttom_imgSvg").css("background-image", "url('static/mainsite/img/pic-listdown.svg')");
+            // $(".text_List_In_buttom_imgSvg").css("background-image", "url('static/mainsite/img/pic-listdown.svg')");
             $(".Lang-standart17").css("color", "#D9D9DC");
             $(".imo_advantage_Boxinf_imgbox").css("background-color", "#1A1B23");
             $(".footer_boxs_links_box_plot").css("background-color", "#1A1B23");
@@ -128,7 +128,7 @@ $(document).ready(
             $(".specialty-naprav-block div").css("background", "#242730").css("color", "#DBDAE0");
 
             $(".headerTwoEnteringImo").css("background-color", "#000212");
-
+            $(".btg-light").css("background-color", "#000212");
             
         }
         function themFalse() {
@@ -146,7 +146,7 @@ $(document).ready(
             $("#hidden_block").css("background", "#fff");
             $(".menu_links_boxs_links_link").css("background", "#F9F9F9");
 
-            $(".buttonsInHeader_box_usButton").css("background-image", "url('../static/mainsite/img/kubsMenu.svg')");
+            $(".buttonsInHeader_box_usButton").css("background-image", "url('/static/mainsite/img/kubsMenu.svg')");
 
             $(".menu_links_box_displayWhere700px").css("background", "#fff");
             $("#lang").css("color", "#000");
@@ -158,16 +158,16 @@ $(document).ready(
             $("a").css("color", "#000");
             $(".specialty_box_picture_text").css("color", "#fff");
             $(".preloader").css("background-color", "#FFF");
-            $(".spinner").css("background-image", "url('static/mainsite/img/preloader/preloader.svg')");
+            $(".spinner").css("background-image", "url('../static/mainsite/img/preloader/preloader.svg')");
             $(".main_block").css("background-color", "#FFF");
             // $(".main_icon_logo").css("background-image","url('static/mainsite/img/black-logo.svg')");
-            $(".main_icon_logo").css("background-image", "url('../static/mainsite/css/home_page/cssimg/mainICON_1.svg')");
+            $(".main_icon_logo").css("background-image", "url('/static/mainsite/css/home_page/cssimg/mainICON_1.svg')");
             // $(".menu_links_boxs_links_link").css("background","#252525");
             $(".header2_boxText_twoBTNBox_button").css("border", "2px solid #000212");
             // Lang-standart13
             $(".Lang-standart13").css("color", "#000000");
             $(".Lang-standart14").css("color", "#000000");
-            $(".text_List_In_buttom_imgSvg").css("background-image", " url('static/css/home_page/cssimg/circlePlasArrow.svg')");
+            // $(".text_List_In_buttom_imgSvg").css("background-image", " url('static/css/home_page/cssimg/circlePlasArrow.svg')");
             $(".Lang-standart17").css("color", "#383838");
             // .imo_advantage_Boxinf_imgbox
             $(".imo_advantage_Boxinf_imgbox").css("background-color", "#F9F9F9");
@@ -230,6 +230,8 @@ $(document).ready(
             $(".specialty-naprav-block div").css("background", "#F6F6F6").css("color", "#212529");
 
             $(".headerTwoEnteringImo").css("background-color", "#fff");
+            $(".btg-light").css("background-color", "#fff");
+            
         }
     }
 

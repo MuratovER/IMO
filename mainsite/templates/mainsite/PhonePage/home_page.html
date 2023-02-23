@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Change page</title>
+    <title>IMO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/png" href='{% static "mainsite/img/Icon.svg" %}' />
@@ -18,22 +18,27 @@
     <link href="{% static 'mainsite/css/phonepage_/phone_page.css' %}" rel="stylesheet">
     <link href="{% static 'mainsite/css/phonepage_/phone_content.css' %}" rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/ChangeColor.css" %}' rel="stylesheet">
-
-
+    <link href='{% static "mainsite/css/phonepage_/phone_incoming.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page320.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page360.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page375.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page425.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page460.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page768.css" %}' rel="stylesheet">
+    <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
+    <link href="//db.onlinewebfonts.com/c/3114dbb517b7c67b80e322545c5f565f?family=Averta+Demo+PE" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/ace51fb0e489a977bed8a67511865c11?family=Averta+CY+W01" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/4c3697c646c9c9999fb64b9eced81f3a?family=TsangerTQXK+W01" rel="stylesheet" type="text/css"/>
     <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
-    <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
 
-    <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet">
 
     <link href='{% static "mainsite/css/profile/profile.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_3.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_4.css" %}' rel="stylesheet">
 
-    <script src="{% static 'mainsite/js/registration/translate.js' %}"></script>
+
     <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"></script>
     <script src="{% static 'mainsite/js/home_page/hidden_block_mainPage.js' %}"></script>
     <script src='{% static "mainsite/js/them/them.js" %}'></script>
@@ -45,7 +50,7 @@
     <div class="content">
         <div class="Phone_Head">
             <div class="main_icon_logo_flexbox">
-                <div class="main_icon_logo_phone"></div>
+                <div class="main_icon_logo_phone" onclick="location.href='/'"></div>
             </div>
             <div class="phone_header_center">
                 <div class="phone_header_presen">
@@ -60,24 +65,48 @@
                     <div class="phone_header_notice_ico"></div>
                 </div>
             </div>
-            <div class="phone_header_home">
+            <div class="phone_header_home" onclick="toggle()">
                 <div class="phone_header_home_ico"></div>
-                <input class="phone_header_home_get_ico" value="" onclick="toggle()" />
+                <div class="phone_header_home_get_ico" id="phone_header_animated"></div>
                 <div id="collapse" class="show hide">
                     <div class="showhide_phone">
                         <div class="chageColor_phone_click">
                             <div class="theme-switch-wrapper">
                                 <label class="theme-switch" for="checkbox">
                                     <input type="checkbox" id="checkbox" />
-                                    <div class="slider round"></div>
+                                    <div class="slider round">
+                                        <div class="slide_inside">
+                                            <div class="slide_SunGroup">
+                                                <div class="slide_sun"></div>
+                                                <p class="slide_inside_text">Light</p>
+                                            </div>
+                                            <div class="slide_MoonGroup"> 
+                                                <div class="slide_moon"></div>
+                                                <p class="slide_inside_text">Dark</p>
+                                            </div>    
+                                        </div>
+                                    </div>
                                 </label>
                             </div>
-                            <div class="chageColor_phone"></div>
                         </div>
                         <div class="chageLanguage">
                             <div class="buttonsInHeader_box">
                                 <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name"
                                     id="lang" value="Ru">
+                                    <div class="phone_header_Ru_ico"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr size="1px" width="220px" align="center" class="Hr">
+                    <div class="phone_headerProfilandPamyat">
+                        <div class="pop-up_form-down">
+                            <div class="pop-up_Profil">
+                                <div class="Profil"></div>
+                                <p class="Profil-p">Профиль</p>
+                            </div>
+                            <div class="pop-up_PamyatkaInost">
+                                <div class="Pamyatka_Inostransa"></div>
+                                <p class="Pamyatka_Inostransa-p">Памятка иностранцу</p>
                             </div>
                         </div>
                     </div>
@@ -149,10 +178,10 @@
 <script>
     function toggle() {
         document.getElementById("collapse").classList.toggle("hide");
+        document.getElementById("phone_header_animated").classList.toggle("phone_header_animated_left")
     }
 </script>
 <script>   
-
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
     const currentTheme = localStorage.getItem('theme');
 
