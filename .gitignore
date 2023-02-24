@@ -284,3 +284,4 @@ fabric.properties
 *.ps1
 
 imo_cache/
+jenkins_home/
