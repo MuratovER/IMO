@@ -1,5 +1,21 @@
 services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    restart: unless-stopped
+    privileged: true
+    container_name: jenkins
+    build: 
+      context: .
+    user: root
+    ports:
+    - 8080:8080
+    - 50000:50000
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
   web-app:
+    restart: unless-stopped
     build:
       context: .
     ports:
@@ -23,6 +39,7 @@ services:
       - database
   
   database:
+    restart: unless-stopped
     image: postgres:15.1-alpine3.17
     environment:
       - POSTGRES_DB=imodb
@@ -30,10 +47,12 @@ services:
       - POSTGRES_PASSWORD=imoproject
   
   redis:
+    restart: unless-stopped
     image: redis:7.0.5-alpine
     hostname: redis
 
   worker:
+    restart: unless-stopped
     build:
       context: .
     hostname: worker
@@ -47,6 +66,7 @@ services:
       - redis
     
   flower:
+    restart: unless-stopped
     build: 
       context: .
     hostname: flower
