@@ -616,94 +616,7 @@ h1 {
     text-align: center;
 }
 
-@media screen and (max-width:768px) {
-    .AircraftIndustry1_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    .AircraftEngines_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .infocommunicationTechnologies_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .AircraftIndustry2_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    .AircraftIndustry3_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    .AircraftOperation1_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .compositTechnologi_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .shipbuilding_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    /* text-size    */
-
-    .specialty_box_picture_text_phone {
-        font-size: 18px;
-    }
-
-    #collapse {
-        width: 260px;
-        height: 80px;
-        margin-top: 250px;
-        margin-right: 140px;
-    }
-    .faq_content_phone {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .faq_block1_phone {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    .faq_form h1 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .faq_form p {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .verification-mail_phone {
-        margin-top: 25px;
-        margin-bottom: 25px;
-
-    }
-
-    .verification-mail-field_phone {
-        font-size: 15px;
-        width: 280px;
-        height: 50px;
-    }
-}
-
+/* 
 @media screen and (max-width:480px) {
     .AircraftIndustry1_phone {
         width: 240px;
@@ -791,7 +704,7 @@ h1 {
         width: 280px;
         height: 50px;
     }
-}
+} */
 
 
 
@@ -930,4 +843,13 @@ font-weight: 400;
 .Profil{
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+.Profil-p, 
+.Pamyatka_Inostransa-p, 
+#lang, 
+.slide_inside_text{
+    font-family: var(--font-averta-demo-PE);
+    font-style: normal;
 }

@@ -174,7 +174,7 @@ input:checked+.slider:before {
     flex-wrap: nowrap;
     align-items: flex-start;
     height: 100px;
-    gap: 10%;
+    gap: 14%;
 }
 
 .Profil{
@@ -230,3 +230,10 @@ input:checked+.slider:before {
     color: var(--Profil-p);
 }
 
+.pop-up_PamyatkaInost{
+    margin-left: 2%;
+}
+
+.phone_headerProfilandPamyat{
+    width: 90%;
+}

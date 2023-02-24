@@ -1,6 +1,6 @@
-@media screen and (min-width:281px) and (max-width:320px) {
+@media screen and (min-width:100px) and (max-width:280px) {
     .content{
-        width: 320px;
+        width: 280px;
     }
     .main_icon_logo_flexbox {
         width: 36.497px;
@@ -607,7 +607,7 @@
     }
 
     #collapse {
-        width: 220px;
+        width: 200px;
         height: 55px;
         margin-top: 190px;
         margin-right: 140px;
