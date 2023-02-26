@@ -26,7 +26,7 @@ def home_page(request):
 def login_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_login.html',
                         pc_url='mainsite/registration/LoginIndex.html',
                         main_logic=user_login
     )
@@ -44,7 +44,7 @@ def logout_view(request):
 def signup_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/signup_phone.html',
                         pc_url='mainsite/registration/RegesterIndex.html',
                         main_logic=user_creation
     )
@@ -62,7 +62,7 @@ def profile_view(request):
 def extra_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_extra.html',
                         pc_url='mainsite/registration/ExtraInfo.html',
                         main_logic=extra_signup_page
     )

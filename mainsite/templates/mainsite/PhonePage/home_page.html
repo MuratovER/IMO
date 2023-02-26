@@ -28,9 +28,12 @@
     <link href='{% static "mainsite/css/phonepage_/phone_page460.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/phone_page768.css" %}' rel="stylesheet">
     <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
-    <link href="//db.onlinewebfonts.com/c/3114dbb517b7c67b80e322545c5f565f?family=Averta+Demo+PE" rel="stylesheet" type="text/css"/>
-    <link href="//db.onlinewebfonts.com/c/ace51fb0e489a977bed8a67511865c11?family=Averta+CY+W01" rel="stylesheet" type="text/css"/>
-    <link href="//db.onlinewebfonts.com/c/4c3697c646c9c9999fb64b9eced81f3a?family=TsangerTQXK+W01" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/3114dbb517b7c67b80e322545c5f565f?family=Averta+Demo+PE" rel="stylesheet"
+        type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/ace51fb0e489a977bed8a67511865c11?family=Averta+CY+W01" rel="stylesheet"
+        type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/4c3697c646c9c9999fb64b9eced81f3a?family=TsangerTQXK+W01" rel="stylesheet"
+        type="text/css" />
     <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
 
@@ -82,10 +85,10 @@
                                                 <div class="slide_sun"></div>
                                                 <p class="slide_inside_text">Light</p>
                                             </div>
-                                            <div class="slide_MoonGroup"> 
+                                            <div class="slide_MoonGroup">
                                                 <div class="slide_moon"></div>
                                                 <p class="slide_inside_text">Dark</p>
-                                            </div>    
+                                            </div>
                                         </div>
                                     </div>
                                 </label>
@@ -95,17 +98,31 @@
                             <div class="buttonsInHeader_box">
                                 <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name"
                                     id="lang" value="Ru">
-                                    <div class="phone_header_Ru_ico"></div>
+                                <div class="phone_header_Ru_ico"></div>
                             </div>
                         </div>
                     </div>
                     <hr size="1px" width="220px" align="center" class="Hr">
                     <div class="phone_headerProfilandPamyat">
                         <div class="pop-up_form-down">
-                            <div class="pop-up_Profil">
-                                <div class="Profil"></div>
-                                <p class="Profil-p">Профиль</p>
-                            </div>
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.profile %}
+                                <div class="pop-up_Profil" onclick="location.href='/profile_phone'">
+                                    <div class="Profil"></div>
+                                    <p class="Profil-p">Профиль</p>
+                                </div>
+                                {% else %}
+                                <div class="pop-up_Profil" onclick="location.href='/extra_phone'">
+                                    <div class="Profil"></div>
+                                    <p class="Profil-p">Профиль</p>
+                                </div>
+                                {% endif %}
+                            {% else %}
+                                <div class="pop-up_Profil" onclick="location.href='/signup_phone'">
+                                    <div class="Profil"></div>
+                                    <p class="Profil-p">Профиль</p>
+                                </div>     
+                            {% endif %}    
                             <div class="pop-up_PamyatkaInost">
                                 <div class="Pamyatka_Inostransa"></div>
                                 <p class="Pamyatka_Inostransa-p">Памятка иностранцу</p>
@@ -183,7 +200,7 @@
         document.getElementById("phone_header_animated").classList.toggle("phone_header_animated_left")
     }
 </script>
-<script>   
+<script>
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
     const currentTheme = localStorage.getItem('theme');
 

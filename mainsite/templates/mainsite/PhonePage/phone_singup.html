@@ -1,0 +1,83 @@
+{% extends 'mainsite/PhonePage/home_page.html' %}{% block content %}{% load i18n %}
+{% load static %}
+
+<body class="body indexEnterWindow">
+    <style>
+        .header {
+            display: none;
+        }
+        .footer{
+            display: none;
+        }
+    </style>
+    <div id="hend" class="indexEnterWindow">
+        <div class="main_block" id="main_block">
+            <form method="POST" action="" class="main_block_form">
+                {% csrf_token %}
+                <div class="main_block_form_flex_">
+                    <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit"
+                        id="FormBlockHideFunction" style="display: block;">
+                        <div class="main_box_but_form_Iamastud" id="but_form_Iamastud1">
+                            <div class="main_box_but_form_Iamastud_FORM">
+                                <div class="main_block_form_flex">
+                                    <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
+                                    <p id="TextButtomLogin"
+                                        class="main_block_form_InformationalText Lang-standart163">Введите
+                                        учетные данные</p>
+                                    {% for field in form %}
+                                    {{ field.errors.as_ul }}
+                                    {% endfor %}
+                                    <div class="main_block_form_textName_flexBox">
+                                        {{ form.username}}
+                                    </div>
+                                    <div class="main_block_form_textPassword_box_flexBox">
+                                        <div class="main_block_form_textPassword_box">
+                                            {{ form.password1}}
+                                            <a class="informationEay" id="informationEay"
+                                                onclick="ChangeEay(this, document.querySelector('#id_password1'))"></a>
+                                        </div>
+                                    </div>
+                                    <div class="child_element_flex">
+                                        <input type="submit"
+                                            class="main_block_form_button1 main_block_form_input_1 trueChangePass1"
+                                            value="Дальше"
+                                            onclick="FormBlockHideFunction(1,this,boxes = document.querySelectorAll('.FormBlockHideFunction') )">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="main_block_form_TextSelection">
+                <div class="main_block_form_TextSelection_block">
+                    <hr class="main_block_form_TextSelection_HR" id="clorHR_B81">
+                    <p class="main_block_form_TextSelection_text LengText-TwoDashes" id="clorHR_B80">Или</p>
+                    <hr class="main_block_form_TextSelection_HR" id="clorHR_B82">   
+                </div>
+            </div>
+            <div class="regesterText_box">
+                <p id="regesterText" class="regesterText LengText-Question-uEctProf">Уже есть профиль?</p>
+                <div style="margin-left:5px;">
+                    <a id="" href="/login/" class="regesterTextLink LengText-LoginSentence-Auto">Авторизуйтесь</a>
+                </div>
+            </div>
+            <div class="main_block_footer_blockFlex">
+                <div class="main_block_footer">
+                    <div class="main_block_footer_boxs">
+                        <div class="main_block_footer_box">
+                            <a class="main_block_footer_box_text1 LengText-PrivacyPolicy" id="footer_box_text1"
+                                href="#">Политика конфидециальности</a>
+                        </div>
+                        <div class="main_block_footer_box">
+                            <a class="main_block_footer_box_text1 LengText-TermsOfUse" id="footer_box_text2"
+                                href="#">Условия пользования</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+{% endblock %}

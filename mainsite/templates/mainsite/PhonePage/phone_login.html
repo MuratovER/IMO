@@ -1,0 +1,69 @@
+{% extends 'mainsite/base.html' %} 
+{% block content %} 
+{%  load static %}{% load i18n %}
+
+<style>
+    .header{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+</style>
+<div id="hend" class="indexEnterWindow">
+    <div class="main_block" id="main_block">
+        <form method="POST" action="" class="main_block_form" id="">
+        {% csrf_token %}
+        <div class="main_block_form_flex_">
+                <h1 id="TextLogin" class="main_block_form_h1 LengText-authorization">Авторизация</h1>
+                <p id="TextButtomLogin" class="main_block_form_InformationalText LengText-DataEntryPrompt">Введите данные своей учетной записи</p>
+            <div class="main_block_form_flex">
+                <div class="main_block_form_textPassword_boxFlexebox">
+                    <div class="main_block_form_textUsername_box main_block_form_textUsername_boxTHEtest">
+                        <input type="text" name="username" placeholder="Username..." class="main_block_form_textName main_block_form_input_1 main_block_form_input_1THEtest2 LengText-InputFieldNameLogin Width12" id="username" placeholder="Имя пользователя" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" onchange="mouseUpInLogin(this)">
+                    </div>
+                </div>
+                <div class="main_block_form_textPassword_boxFlexebox">
+                    <div class="main_block_form_textPassword_box main_block_form_textPassword_boxTHetest">
+                        <input type="password" name="password" placeholder="Password..." class="main_block_form_textPassword main_block_form_input_1 main_block_form_input_1THEtest LengText-InputFieldPasswordLogin" id="password" placeholder="Пароль" onmouseup="mouseUpInLogin(this)" onclick="mouseUpInLogin(this)" onmousemove="mouseUpInLogin(this)" >
+                        <a class="informationEayTHEtest" id="informationEay" onclick="ChangeEay(this, document.querySelector('#InputFieldPassword'))"></a>
+                    </div>
+                </div>
+                <div class="child_element_flexTHEtest">
+                    <div class="child_element_flex child_element_flexTHEtest2">
+                        <input type="submit" class="main_block_form_button main_block_form_input_1 main_block_form_input_1THEtest3 Width12" id="InputEnterButtom" value="Авторизоваться">
+                    </div>
+                </div>
+                <div class="child_element_flex">
+                    <a class="main_block_form_ForgotPassword_1" id="ForgotPassword" href="forgotPAss.html" target="">Я не помню пароль</a>
+                </div>
+            </div>
+            <div class="main_block_form_TextSelection">
+                <div class="main_block_form_TextSelection_block">
+                    <hr class="main_block_form_TextSelection_HR" id="clorHR_B81">
+                    <p class="main_block_form_TextSelection_text LengText-TwoDashes" id="clorHR_B80">Или</p>
+                    <hr class="main_block_form_TextSelection_HR" id="clorHR_B82">   
+                </div>
+            </div>
+            <div class="regesterText_box">
+                <p id="regesterText" class="regesterText LengText-Question-vperTut">Впервые тут? <div><a id="" href="{% url 'mainsite:signup' %}" class="regesterTextLink LengText-RegisterSentence-Auto">Зарегистрируйтесь</a></div></p>
+            </div>
+        </div>
+        </form>
+        <div class="main_block_footer">
+            <div class="main_block_footer_boxs">
+                <div class="main_block_footer_box">
+                    <a class="main_block_footer_box_text1 LengText-PrivacyPolicy" id="footer_box_text1" href="#">Политика конфидециальности</a>
+                </div>
+                <div class="main_block_footer_box">
+                    <a class="main_block_footer_box_text1 LengText-TermsOfUse" id="footer_box_text2" href="#">Условия пользования</a>
+                </div>
+            </div>
+            <div class="main_block_footer_box_text12 lawTextKai LengText-WhiRigh">
+                ©2021 КНИТУ КАИ. Все права защищены
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %} 
