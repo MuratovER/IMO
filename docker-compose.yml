@@ -23,13 +23,6 @@ services:
     volumes:
       - .:/imo
     
-    environment:
-      - SECRET_KEY=django-insecure-s^^#%xw(ui)n7lv9$b67f7*h#y-jwe4$c)foij$-yg-etb#o3k
-      - DB_HOST=database
-      - DB_NAME=imodb
-      - DB_USER=imo
-      - DB_PASS=imoproject
-
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
       sh -c "python manage.py migrate"
@@ -65,18 +58,18 @@ services:
     depends_on:
       - redis
     
-  flower:
-    restart: unless-stopped
-    build: 
-      context: .
-    hostname: flower
-    entrypoint: celery
-    command: -A celery_app.app flower
-    volumes:
-      - .:/imo
-    links:
-      - redis
-    depends_on:
-      - redis
-    ports:
-      - "5555:5555"
+  # flower:
+  #   restart: unless-stopped
+  #   build: 
+  #     context: .
+  #   hostname: flower
+  #   entrypoint: celery
+  #   command: -A celery_app.app flower
+  #   volumes:
+  #     - .:/imo
+  #   links:
+  #     - redis
+  #   depends_on:
+  #     - redis
+  #   ports:
+  #     - "5555:5555"
