@@ -1,0 +1,522 @@
+{% extends 'mainsite/PhonePage/home_page.html' %}
+{% block content %} 
+{%  load static %}{% load i18n %}
+
+<body class="body indexEnterWindow">
+    <div class="phone_profile">
+        <div class="Nblock onBlock">
+            <div class="phone_info">
+                <div class="phone_base-info">
+                    <div class="phone_base-info-titleText">
+                        <h1 class="phone_base-info-title">Основная информация</h1>
+                        <div class="phone_base-info-titleIco"></div>
+                    </div>
+                    <div class="phone_basic-info">
+                        <div class="phone_about-info">
+                            <div class="phone_about-info-p">
+                                <p class="Lang-standart88">{% translate "LangStaticname97" %}:</p>
+                                <p class="Lang-standart89">{% translate "LangStaticname98" %}:</p>
+                                <p class="Lang-standart90">{% translate "LangStaticname99" %}:</p>
+                                <p class="Lang-standart91">{% translate "LangStaticname100" %}:</p>
+                                <p class="Lang-standart92">{% translate "LangStaticname101" %}:</p>
+                                <p class="Lang-standart93">{% translate "LangStaticname102" %}:</p>
+                                <p class="Lang-standart94">{% translate "LangStaticname103" %}:</p>
+                                <p class="Lang-standart95">{% translate "LangStaticname104" %}:</p>
+                                <p class="Lang-standart96">{% translate "LangStaticname105" %}:</p>
+                            </div>
+                            <div class="phone_about-info-generated">
+                                <div class="phone_about-info-name">
+                                    {{ profile.name }}
+                                </div>
+
+                                <div class="phone_about-info-gender">
+                                    {{ profile.gender }}
+                                </div>
+                                <div class="phone_about-info-birthday">
+                                    {{ profile.birthdate }}
+                                </div>
+                                <div class="phone_about-info-country">
+                                    {{ profile.country }}
+                                </div>
+                                <div class="phone_about-info-city">
+                                    {{ profile.city }}
+                                </div>
+                                <div class="phone_about-info-citizenship">
+                                    {{ profile.citizenship }}
+                                </div>
+                                <div class="phone_about-info-phone">
+                                    {{ profile.phone }}
+                                </div>
+                                <div class="phone_about-info-email">
+                                    {{ profile.email }}
+                                </div>
+                                <div class="phone_about-info-password">
+                                    <a href="" class="Lang-standart97 nowVW">{% translate "LangStaticname106" %}</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone_verification-info">
+                    <div class="verification-info_textOfemail">
+                        <div class="verification-info_textOfemail_box">
+                            <p class="verification-info_textOfemail_box_p">{% translate "LangStaticname107" %}</p>
+                        </div>
+                        <img src='{% static "mainsite/img/VoprZnack.png" %}' alt="" class="">
+                    </div>
+                    <div class="verification-mail">
+                        <div class="verification-mail-field">
+                            <p class="verification-mail-field_copyto">imokai@bb.kai.ru</p>
+                        </div>
+                        <button class="verification-mail-btn Lang-standart115" onclick="CopyToBuf()">{% translate "LangStaticname60" %}</button>
+                    </div>
+                    <div class="verification-list">
+                        <h3 class="Lang-standart116">{% translate "LangStaticname108" %}</h3>
+
+                        <ul class="verification-list_ul">
+                            <li class="verification-list_ul_li cursorN">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart117 verification-list-text">{% translate "LangStaticname109" %}</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Копия паспорта (1-ая страница с фотографией)">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li cursorN">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart118 verification-list-text">{% translate "LangStaticname110" %}</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Заверенный нотариусом перевод паспорта на русский язык">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li cursorN">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart119 verification-list-text">{% translate "LangStaticname111" %}</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Скан всех виз, полученных из российской федерации (если имеются)">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li cursorN">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart120 verification-list-text">{% translate "LangStaticname112" %}</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}' alt="Бланк уведомления для гос. услуг">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li cursorN">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart121 verification-list-text">{% translate "LangStaticname113" %}</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="илеты всего маршрута (авиасообщение и ж/д)">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li cursorN">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart121_1 verification-list-text">{% translate "LangStaticname114" %}</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Документ об образовании">
+        
+                                </div>
+                            </li>
+                            <li class="verification-list_ul_li cursorN">
+                                <div class="verification-list-first">
+                                    <p class="Lang-standart121_2 verification-list-text">{% translate "LangStaticname115" %}</p>
+                                    <img src='{% static "mainsite/img/Reverse.svg" %}'
+                                        alt="Заверенный нотариусом перевод документа об образовании">
+        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Nblock twoBlock">
+            <form method="POST" class="profile-form ">
+                {% csrf_token %}
+                {{ form.user}}
+                {{ form.name }}
+                {{ form.email }}
+                {{ form.city }}
+                {{ form.country }}
+                {{ form.gender }}
+                {{ form.birthdate }}
+                <div class="phone-number-field">
+                    {{ form.phone }}
+                </div>
+                {{ form.citizenship }}
+                <button type="submit" class="Lang-standart122 save btn btn-default main_block_form_button main_block_form_input_1 trueChangePass2">{% translate "LangStaticname116" %}</button>
+            </form>
+        </div>
+        <div class="Nblock threeBlock">
+            <!-- <h1 style="color:red;">Вставьте сюда свой код для отображения на сайте</h1> -->
+            <h1 class="threeBlock_h1 Lang-standart123">{% translate "LangStaticname117" %}</h1>
+            <p class="threeBlock_p Lang-standart124">
+                {% translate "LangStaticname118" %}
+                <span><a href="#" class="threeBlock_p_a Lang-standart125">{% translate "LangStaticname119" %}</a></span>.
+            </p>
+            <h3 class="threeBlock_h3 Lang-standart126">{% translate "LangStaticname120" %}</h3>
+            <div class="threeBlock_main_block">
+                <div class="threeBlock_pandimg">
+                    <div class="threeBlock_block_disp">
+                        <div class="threeBlock_block_disp_one">
+                            <div class="threeBlock_block_disp_one_block">
+                                <img src="../../../static/mainsite/img/MemoImg_1.svg" alt="Noimg"
+                                    class="threeBlock_block_disp_one_block_img">
+                            </div>
+                            <div class="threeBlock_block_disp_one_block">
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart127">{% translate "LangStaticname121" %}</p>
+                            </div>
+                        </div>
+                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden1')">
+                            <!-- <img src="../../../static/mainsite/img/MemoImg_PlasBut.svg" alt="Noimg" class="threeBlock_block_disp_two_img"> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="threeBlock_hidden threeBlock_hidden1">
+                    <p class="threeBlock_hidden_p">
+                        <span class="threeBlock_hidden_p_h Lang-standart128">{% translate "LangStaticname122" %}</span>
+
+                        <span class="Lang-standart129">
+                        1. {% translate "LangStaticname123" %}: international@kai.ru 
+                        2. {% translate "LangStaticname124" %}.
+                        3. {% translate "LangStaticname125" %}: international@kai.ru
+                        4. {% translate "LangStaticname126" %}: {% translate "LangStaticname132" %}
+                        5. {% translate "LangStaticname127" %}
+                        6. {% translate "LangStaticname128" %}
+                        7. {% translate "LangStaticname129" %}
+                        8. {% translate "LangStaticname130" %}
+                        9. {% translate "LangStaticname131" %}
+                        </span> 
+
+                        <span class="threeBlock_hidden_p_h Lang-standart130">{% translate "LangStaticname133" %}</span>
+
+                        <span class="Lang-standart131">
+                        1. {% translate "LangStaticname134" %}: {% translate "LangStaticname135" %}.
+                        2. {% translate "LangStaticname136" %}
+                        3. {% translate "LangStaticname137" %} 
+                        4. {% translate "LangStaticname138" %}  
+                        5. {% translate "LangStaticname139" %}
+                        </span>
+                    </p>
+                </div>
+                <div class="threeBlock_blockhr">
+                    <hr class="threeBlock_hr">
+                </div>
+            </div>
+            <div class="threeBlock_main_block">
+                <div class="threeBlock_pandimg">
+                    <div class="threeBlock_block_disp">
+                        <div class="threeBlock_block_disp_one">
+                            <div class="threeBlock_block_disp_one_block">
+                                <img src="../../../static/mainsite/img/MemoImg_2.svg" alt="Noimg"
+                                    class="threeBlock_block_disp_one_block_img">
+                            </div>
+                            <div class="threeBlock_block_disp_one_block">
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart132">{% translate "LangStaticname140" %}</p>
+                            </div>
+                        </div>
+                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden2')">
+                            <!-- <img src="../../../static/mainsite/img/MemoImg_PlasBut.svg" alt="Noimg" class="threeBlock_block_disp_two_img"> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="threeBlock_hidden threeBlock_hidden2">
+                    <p class="threeBlock_hidden_p">
+                        <span class="threeBlock_hidden_p_h Lang-standart133">{% translate "LangStaticname141" %}. 
+                        </span>
+
+                        <span class="Lang-standart134">
+                        1.	{% translate "LangStaticname142" %}.
+                        {% translate "LangStaticname143" %}: {% translate "LangStaticname144" %}.
+                        </span>
+                        
+                        <span class="threeBlock_hidden_p_h Lang-standart135">{% translate "LangStaticname145" %}:</span>
+                        <span class="Lang-standart136">
+                        {% translate "LangStaticname146" %}. {% translate "LangStaticname147" %}. 
+                        {% translate "LangStaticname148" %}: {% translate "LangStaticname149" %}.
+                        2.	{% translate "LangStaticname150" %}: {% translate "LangStaticname151" %}. 
+                        {% translate "LangStaticname152" %}.
+                        </span>  
+                        
+                        <span class="threeBlock_hidden_p_h Lang-standart137">{% translate "LangStaticname153" %}! </span>
+                        <span class="Lang-standart138">
+                            {% translate "LangStaticname154" %}. 
+                        </span>
+                    </p>
+                </div>
+                <div class="threeBlock_blockhr">
+                    <hr class="threeBlock_hr">
+                </div>
+            </div>
+            <div class="threeBlock_main_block">
+                <div class="threeBlock_pandimg">
+                    <div class="threeBlock_block_disp">
+                        <div class="threeBlock_block_disp_one">
+                            <div class="threeBlock_block_disp_one_block">
+                                <img src="../../../static/mainsite/img/MemoImg_3.svg" alt="Noimg"
+                                    class="threeBlock_block_disp_one_block_img">
+                            </div>
+                            <div class="threeBlock_block_disp_one_block">
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart139">{% translate "LangStaticname155" %}</p>
+                            </div>
+                        </div>
+                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden3')">
+                            <!-- <img src="../../../static/mainsite/img/MemoImg_PlasBut.svg" alt="Noimg" class="threeBlock_block_disp_two_img"> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="threeBlock_hidden threeBlock_hidden3">
+                    <p class="threeBlock_hidden_p">
+                        <span class="threeBlock_hidden_p_h Lang-standart140">{% translate "LangStaticname156" %} 
+                            {% translate "LangStaticname157" %}:</span>
+                        <span class="Lang-standart141">
+                            {% translate "LangStaticname158" %}:
+                            {% translate "LangStaticname159" %}
+                            {% translate "LangStaticname160" %}
+                            {% translate "LangStaticname161" %}
+                        </span>
+
+                        <span class="threeBlock_hidden_p_h Lang-standart142">{% translate "LangStaticname162" %}: {% translate "LangStaticname163" %}:</span>
+                        <span class="Lang-standart143">
+                            1. {% translate "LangStaticname164" %}
+                        2. {% translate "LangStaticname165" %}
+                        3. {% translate "LangStaticname166" %}
+                        4. {% translate "LangStaticname167" %}
+                        5. {% translate "LangStaticname168" %}
+                        6. {% translate "LangStaticname169" %}
+                        </span>
+
+                        <span class="threeBlock_hidden_p_h Lang-standart144">{% translate "LangStaticname170" %}.
+                            {% translate "LangStaticname171" %}: {% translate "LangStaticname172" %}:</span>
+                        <span class="Lang-standart145">
+                            1.	{% translate "LangStaticname173" %}
+                        2.	{% translate "LangStaticname174" %}
+                        3.	{% translate "LangStaticname175" %}
+                        </span>
+
+                        <span class="threeBlock_hidden_p_h Lang-standart146">{% translate "LangStaticname176" %}: </span>
+                        <span class="Lang-standart147">
+                            1. {% translate "LangStaticname177" %}.
+                        2. {% translate "LangStaticname178" %}.
+                        3. {% translate "LangStaticname179" %}.
+                        4. {% translate "LangStaticname180" %}
+
+                        </span>
+                    </p>
+                </div>
+                <div class="threeBlock_blockhr">
+                    <hr class="threeBlock_hr">
+                </div>
+            </div>
+            <div class="threeBlock_main_block">
+                <div class="threeBlock_pandimg">
+                    <div class="threeBlock_block_disp">
+                        <div class="threeBlock_block_disp_one">
+                            <div class="threeBlock_block_disp_one_block">
+                                <img src="../../../static/mainsite/img/MemoImg_4.svg" alt="Noimg"
+                                    class="threeBlock_block_disp_one_block_img">
+                            </div>
+                            <div class="threeBlock_block_disp_one_block">
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart148">{% translate "LangStaticname181" %}</p>
+                            </div>
+                        </div>
+                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden4')">
+                            <!-- <img src="../../../static/mainsite/img/MemoImg_PlasBut.svg" alt="Noimg" class="threeBlock_block_disp_two_img"> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="threeBlock_hidden threeBlock_hidden4">
+                    <p class="threeBlock_hidden_p">
+                        <span class="threeBlock_hidden_p_h Lang-standart149">{% translate "LangStaticname181" %}</span>
+                        <span class="Lang-standart150">
+                            {% translate "LangStaticname182" %}
+                            {% translate "LangStaticname183" %}    
+                        </span>
+                    </p>
+                </div>
+                <div class="threeBlock_blockhr">
+                    <hr class="threeBlock_hr">
+                </div>
+            </div>
+            <div class="threeBlock_main_block">
+                <div class="threeBlock_pandimg">
+                    <div class="threeBlock_block_disp">
+                        <div class="threeBlock_block_disp_one">
+                            <div class="threeBlock_block_disp_one_block">
+                                <img src="../../../static/mainsite/img/MemoImg_3.svg" alt="Noimg"
+                                    class="threeBlock_block_disp_one_block_img">
+                            </div>
+                            <div class="threeBlock_block_disp_one_block">
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart152"> {% translate "LangStaticname184" %}
+                                    {% translate "LangStaticname185" %}
+                                    </p>
+
+                            </div>
+                        </div>
+                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden6')">
+                            <!-- <img src="../../../static/mainsite/img/MemoImg_PlasBut.svg" alt="Noimg" class="threeBlock_block_disp_two_img"> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="threeBlock_hidden threeBlock_hidden6">
+                    <p class="threeBlock_hidden_p ">
+                        <span class="Lang-standart153_1">
+                        1.	 {% translate "LangStaticname186" %}.
+                        2.	 {% translate "LangStaticname187" %}:
+                        - {% translate "LangStaticname188" %};
+                        - {% translate "LangStaticname189" %};
+                        - {% translate "LangStaticname190" %};
+                        - {% translate "LangStaticname191" %}.
+                        {% translate "LangStaticname192" %}.
+                        3.	{% translate "LangStaticname193" %}.
+                        4.	{% translate "LangStaticname194" %}.
+                        {% translate "LangStaticname195" %}.
+                        
+                        </span>
+                        <span class="Lang-standart153_2">
+                        {% translate "LangStaticname196" %}.
+                        {% translate "LangStaticname197" %}.
+                        5.	{% translate "LangStaticname198" %}.
+                        {% translate "LangStaticname199" %}.
+                        6.	{% translate "LangStaticname200" %}.
+                        
+                        </span>
+                        <span class="Lang-standart153_2_1">
+                            {% translate "LangStaticname201" %}.
+                            {% translate "LangStaticname202" %}.
+                            {% translate "LangStaticname203" %}.
+                        
+                        </span>
+                        <span class="Lang-standart153_2_2">
+                            7.	{% translate "LangStaticname204" %}.
+                        8.	{% translate "LangStaticname205" %}.
+                        9.	{% translate "LangStaticname206" %}.
+                        
+                        </span>
+                        
+                        <span class="Lang-standart153_3">
+                            10.	{% translate "LangStaticname207" %}.
+                        11.	{% translate "LangStaticname208" %}.
+                        12.	{% translate "LangStaticname209" %}.
+                        13.	{% translate "LangStaticname210" %}.
+                    
+                    </span>
+                        <span class="Lang-standart153_3_1">
+                            14.	{% translate "LangStaticname211" %}.
+                        15.	{% translate "LangStaticname212" %}.
+                        16.	{% translate "LangStaticname213" %}.
+                        17.	{% translate "LangStaticname214" %}.
+                        
+                        </span>
+                        <span class="Lang-standart153_4">
+                        18.	{% translate "LangStaticname215" %}.
+                        19.	{% translate "LangStaticname216" %}.
+                        20.	{% translate "LangStaticname217" %}.
+                    
+                    </span>
+                        <span class="Lang-standart153_4_1">
+                            21.	{% translate "LangStaticname218" %}.
+                        22.	{% translate "LangStaticname219" %}
+                        23.	{% translate "LangStaticname220" %}.
+                        24.	{% translate "LangStaticname221" %}
+                        
+                        </span>
+                    </p>
+                </div>
+                <div class="threeBlock_blockhr">
+                    <hr class="threeBlock_hr">
+                </div>
+            </div>
+            <div class="threeBlock_main_block">
+                <div class="threeBlock_pandimg">
+                    <div class="threeBlock_block_disp">
+                        <div class="threeBlock_block_disp_one">
+                            <div class="threeBlock_block_disp_one_block">
+                                <img src="../../../static/mainsite/img/MemoImg_3.svg" alt="Noimg"
+                                    class="threeBlock_block_disp_one_block_img">
+                            </div>
+                            <div class="threeBlock_block_disp_one_block">
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart154">  
+                                    {% translate "LangStaticname222" %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden7')">
+                            <!-- <img src="../../../static/mainsite/img/MemoImg_PlasBut.svg" alt="Noimg" class="threeBlock_block_disp_two_img"> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="threeBlock_hidden threeBlock_hidden7">
+                    <p class="threeBlock_hidden_p">
+                        <span class="Lang-standart155">{% translate "LangStaticname223" %}</span> <span><a href="../../../static/mainsite/files to the download/заявление на отъезд.docx" class="threeBlock_hidden_p_h Lang-standart156" style="color: rgb(60, 106, 136); " download="">клику</a></span> 
+                    </p>
+                </div>
+                <div class="threeBlock_blockhr">
+                    <hr class="threeBlock_hr">
+                </div>
+            </div>
+            <div class="threeBlock_main_block">
+                <div class="threeBlock_pandimg">
+                    <div class="threeBlock_block_disp">
+                        <div class="threeBlock_block_disp_one">
+                            <div class="threeBlock_block_disp_one_block">
+                                <img src="../../../static/mainsite/img/MemoImg_3.svg" alt="Noimg"
+                                    class="threeBlock_block_disp_one_block_img">
+                            </div>
+                            <div class="threeBlock_block_disp_one_block">
+
+                                <p class="threeBlock_block_disp_one_block_p Lang-standart157">  
+                                    {% translate "LangStaticname224" %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="threeBlock_block_disp_two" onclick="ClickPlasBlock('.threeBlock_hidden8')">
+                            <!-- <img src="../../../static/mainsite/img/MemoImg_PlasBut.svg" alt="Noimg" class="threeBlock_block_disp_two_img"> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="threeBlock_hidden threeBlock_hidden8">
+                    <p class="threeBlock_hidden_p">
+                        <span class="Lang-standart158">{% translate "LangStaticname223" %}</span> <span><a href="../../../static/mainsite/files to the download/уведомление о приезде.docx" class="threeBlock_hidden_p_h Lang-standart159" style="color: rgb(60, 106, 136); " download="">клику</a></span>
+
+                    </p>
+                </div>
+                <div class="threeBlock_blockhr">
+                    <hr class="threeBlock_hr">
+                </div>
+            </div>
+            <!-- <h3 class="threeBlock_h3" style="">По завершении обучения</h3> -->
+            
+        </div>
+
+    </div>
+    <script src='{% static "mainsite/js/home_page/hidden_block_mainPage.js" %}'>
+    </script>
+
+    <script src='{% static "mainsite/js/home_page/locationFile.js" %}'>
+    </script>
+
+    <script src="{% static 'mainsite/js/registration/translate.js' %}">
+    </script>
+    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}">
+    </script>
+    <script src="{% static 'mainsite/js/Profile/Profile_Click_Blocks.js' %}">
+    </script>
+</body>
+{% endblock %}

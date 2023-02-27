@@ -53,7 +53,7 @@ def signup_view(request):
 def profile_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_profile.html',
                         pc_url='mainsite/profile/profile.html',
                         main_logic=profile_render
     )

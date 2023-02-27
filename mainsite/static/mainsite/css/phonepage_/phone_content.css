@@ -1008,28 +1008,3 @@ font-weight: 400;
         width: 360px;
     }
 }
-
-.phone_main_box_but_form_Iamastud_FORM1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.phone-number-field{
-    width: 100%;
-}
-
-.phone-number-field .select{
-    width: 40%;
-}
-
-.phone_main_block_form_flex #id_gender{
-    width: 100%;
-}
-
-.main_block_Buttom_{
-    margin-right:70%;
-}

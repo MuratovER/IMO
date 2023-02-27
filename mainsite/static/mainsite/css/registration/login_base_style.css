@@ -63,6 +63,7 @@ body {
     --Phone-header-home-get-ico: url("../../img/white-web/phome_imo_down.svg");
     /* background-image: url(../../img/PamyatkaInost.svg); */
     --Phone-header-PamyatkaInost: url("../../img/white-web/PamyatkaInost.svg");
+    --Phone-profile-edit-ico: url("../../img/white-web/profile_edit.svg");
 
     --phone-specialty-naprav-block: none;
 
@@ -100,7 +101,10 @@ body {
      --Phone-header-home-ico:url("../../img/black-web/phone_header_home.svg");
      --Phone-header-home-get-ico: url("../../img/black-web/phome_imo_down.svg");
      --Phone-header-PamyatkaInost: url("../../img/black-web/PamyatkaInost.svg");
+     --Phone-profile-edit-ico: url("../../img/black-web/profile_edit.svg");
     
+
+
      --phone-specialty-naprav-block: .5px solid #F3F3F3;
 
 }
