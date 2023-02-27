@@ -1,0 +1,662 @@
+.phone-specialty-body,
+.phone-specialty-header,
+.phone-specialty-header-box-background,
+.phone-specialty-box2-TextCard,
+.phone-specialty-box2-title-text,
+.phone-specialty-box3,
+.phone-specialty-box3-card,
+.specialty-all-exam-content,
+.phone-specialty-all,
+.phone-haveyouQuestion_boxe_center,
+.phone-haveyouQuestion_boxe_center-down,
+.buildingKAI-text-profesion,
+.haveyouQuestion-phone,
+.phone-haveyouQuestion_boxes,
+.haveyouQuestion_boxe_center,
+.phone-haveyouQuestion_article,
+.box_boxText_twoBTNBox_button,
+.specialty-all-exam,
+.specialty-naprav-block,
+.specialty-all-Key-disiplin,
+.specialty-all-text2 {
+    display: flex;
+}
+
+.phone-specialty-body {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-specialty-header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-specialty-header-box-background {
+    background-image: url("/static/mainsite/img/incoming-header.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phone-box-background-ImgSVG-h2 {
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.phone-box-background-ImgSVG-h1 {
+    font-family: 'Averta CY W01';
+    font-style: normal;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.phone-specialty-box2-TextCard {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.phone-specialty-box2-text p {
+    color: var(--colorText);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.phone-specialty-all-CardLink-boxStart1 {
+    width: 72px;
+    height: 92px;
+    border-radius: 10px;
+}
+
+.specialty-all-CardLink-grey-answer {
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 160.1%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.phone-specialty-all-CardLink {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.phone-specialty-box2-title-text {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.phone-specialty-box3 {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-specialty-three-cards {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: var(--colorText);
+    flex-grow: 0;
+    border-bottom: none;
+}
+
+
+.LangText-incomig-specialty2,
+.LangText-incomig-specialty3,
+.LangText-incomig-specialty4,
+.LangText-incomig-specialty5 {
+    font-family: 'Averta CY W01';
+    font-style: normal;
+    text-align: center;
+}
+
+.LangText-incomig-specialty6,
+.LangText-incomig-specialty7,
+.LangText-incomig-specialty8,
+.LangText-incomig-specialty9,
+.LangText-incomig-specialty10,
+.LangText-incomig-specialty11,
+.LangText-incomig-specialty12,
+.LangText-incomig-specialty13,
+.LangText-incomig-specialty14 {
+    font-family: 'Averta CY W01';
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.phone-specialty-box3-card {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-weHAve_new_boxStart_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.specialty-all-exam-content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ProgramVstuplenie-phone {
+    background-image: var(--ProgramVstuplenie);
+}
+
+.DemoTest-phone {
+    background-image: var(--DemoTest);
+}
+
+.RaspisanieIspit-phone {
+    background-image: var(--RaspisanieIspit);
+}
+
+.RaspisanieIspit-phone,
+.DemoTest-phone,
+.ProgramVstuplenie-phone {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.phone-specialty-all {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    /* width: 100%; */
+}
+
+.specialty-buildingKAI-pic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phone-question-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/static/mainsite/img/incoming/question.svg");
+}
+
+.phone-haveyouQuestion_boxes3 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.phone-haveyouQuestion_boxe_h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.phone-haveyouQuestion_boxe_center {
+
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.phone-haveyouQuestion_boxe_center-down {
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-box-background-ImgSVG-h2{
+    font-family: var(--font-averta-demo-PE);
+    font-style: normal;
+}
+
+.phone-box-background-ImgSVG-h1{
+    font-family: var(--font-averta-cy);
+    font-style: normal;
+}
+
+/***************************360********************************/
+
+.phone-specialty-box3-card{
+    gap: 6.5%;
+    margin: .5% 2.2% 0 4.5%;
+}
+.phone-specialty-all-BOXh1{
+    width: 51%;
+}
+.specialty-all-CardLink{
+    width: 42%;
+}
+
+/*************************COLOR*********************************/
+.specialty-all-h1 {
+    color: #000212;
+}
+
+.specialty-all-CardLink-boxStart1,
+.phone-specialty-all-CardLink-boxStart1 {
+    background-color: #F1F1F1;
+}
+
+.specialty-all-CardLink-boxStart2,
+.specialty-all-CardLink-boxStart-MATH {
+    background-color: #4526FF;
+}
+
+.specialty-all-CardLink-boxStart3,
+.specialty-all-CardLink-boxStart-RUSS {
+    background-color: #EFA02A;
+}
+
+.specialty-all-CardLink-boxStart4,
+.specialty-all-CardLink-boxStart-CHEM {
+    background-color: #27E17A;
+}
+
+.specialty-all-CardLink-boxStart-PHYS {
+    background-color: #3751FF;
+}
+
+.specialty-all-CardLink-boxStart-SOCL {
+    background-color: #94215C;
+}
+
+.specialty-all-CardLink-boxStart-INFO {
+    background-color: #2298FF;
+}
+
+
+.specialty-all-CardLink-boxStart-FRLN {
+    background-color: #FF785A;
+}
+
+.specialty-all-CardLink-grey-answer {
+    color: #001A34;
+}
+
+.specialty-all-CardLink-grey-answerUp {
+    color: #FFFFFF;
+}
+
+.specialty-buildingKAI-title{
+    color: var(--colorText);
+
+}
+
+
+.buildingKAI-text-profesion {
+    border: 1px solid #dfe0e9;
+    background: #F6F6F6;
+    color: var(--colorText);
+}
+.phone-haveyouQuestion_article{
+    border: 1px solid #dfe0e9;
+    background: #F6F6F6;
+    color: var(--phone-button-color);
+}
+
+.buildingKAI-text-title {
+    color: #000000;
+}
+
+.buildingKAI-text-profesion div {
+    color: #5A5A5A;
+}
+
+
+.box-background-ImgSVG-h2 .box-background-ImgSVG-h1 {
+    color: var(--ColorTextForProgrammStadyPlashca);
+}
+
+
+.specialty-buildingKAI-mapAdress a {
+    color: #2C86D9;
+}
+
+.box_boxText_twoBTNBox_button {
+    border: 1px solid #dfe0e9;
+    background: #FFFFFF;
+}
+
+.specialty-nb1,
+.specialty-naprav-block div {
+    background: #F6F6F6;
+}
+
+.specialty-question-text-color {
+    color: #fff;
+}
+
+.specialty-all-CardLink-grey-answer,
+.LangText-incomig-specialty2,
+.LangText-incomig-specialty3,
+.LangText-incomig-specialty4,
+.LangText-incomig-specialty5,
+.specialty-all-CardLink-grey-text,
+.LangText-incomig-specialty2,
+.LangText-incomig-specialty3,
+.LangText-incomig-specialty4,
+.LangText-incomig-specialty5,
+.phone-specialty-all-CardLink-grey-answer h1 {
+    color: #858585;
+}
+
+.specialty-all-text,
+.specialty-naprav-block{
+    color: var(--colorText-black-blue);
+}
+
+.specialty-all-text2 div{
+    color: var(--colorText);
+}
+
+/*************************IMG*****************************************************/
+
+.specialty-all-CardLink-boxStart2 {
+    background-image: url('/static/mainsite/img/incoming/incoming-math.svg');
+}
+
+.specialty-all-CardLink-boxStart3 {
+    background-image: url('/static/mainsite/img/incoming/incoming-russian.svg');
+}
+
+.specialty-all-CardLink-boxStart4 {
+    background-image: url('/static/mainsite/img/incoming/incoming-chemistry.svg');
+}
+
+.specialty-all-CardLink-boxStart-MATH {
+    background-image: url('/static/mainsite/img/incoming/incoming-math.svg');
+}
+
+.specialty-all-CardLink-boxStart-RUSS {
+    background-image: url('/static/mainsite/img/incoming/incoming-russian.svg');
+}
+
+.specialty-all-CardLink-boxStart-CHEM {
+    background-image: url('/static/mainsite/img/incoming/incoming-chemistry.svg');
+}
+
+.specialty-all-CardLink-boxStart-PHYS {
+    background-image: url('/static/mainsite/img/incoming/incoming-PHYS.svg');
+}
+
+.specialty-all-CardLink-boxStart-SOCL {
+    background-image: url('/static/mainsite/img/incoming/incoming-SOCL.svg');
+}
+
+.specialty-all-CardLink-boxStart-INFO {
+    background-image: url('/static/mainsite/img/incoming/incoming-INFO.svg');
+}
+
+
+.specialty-all-CardLink-boxStart-FRLN {
+    background-image: url('/static/mainsite/img/incoming/incoming-FRLN.svg');
+}
+
+.First-building .specialty-buildingKAI-pic {
+    background-image: url('/static/mainsite/img/incoming/first-building.svg');
+}
+
+.Second-building .specialty-buildingKAI-pic {
+    background-image: url('/static/mainsite/img/incoming/second-building.svg');
+}
+
+.Third-building .specialty-buildingKAI-pic {
+    background-image: url('/static/mainsite/img/incoming/third-building.svg');
+}
+
+.Fifth-building .specialty-buildingKAI-pic {
+    background-image: url('/static/mainsite/img/incoming/fourth-building.svg');
+}
+
+.Seventh-building .specialty-buildingKAI-pic {
+    background-image: url('/static/mainsite/img/incoming/fifth-building.svg');
+}
+
+.Eighth-building .specialty-buildingKAI-pic {
+    background-image: url('/static/mainsite/img/incoming/sixth-building.svg');
+}
+
+.haveyouQuestion_boxes1 {
+    background-image: url('/static/mainsite/img/incoming/violet-question.svg');
+}
+
+.haveyouQuestion_boxes2 {
+    background-image: url('/static/mainsite/img/incoming/red-question.svg');
+}
+
+.haveyouQuestion_boxes3 {
+    background-image: url('/static/mainsite/img/incoming/Blue-question2.svg');
+}
+
+.haveyouQuestion_boxes4 {
+    background-image: url('/static/mainsite/img/incoming/yellow-question.svg');
+}
+
+.haveyouQuestion_boxes5 {
+    background-image: url('/static/mainsite/img/incoming/green-question.svg');
+}
+
+.haveyouQuestion_boxes3_question {
+    background-image: url('/static/mainsite/img/incoming/question.svg');
+}
+
+
+.box-background-ImgSVG-h1,
+.phone-haveyouQuestion_boxe_h1 {
+    font-family: 'Averta CY';
+    font-style: normal;
+}
+
+.specialty-all {
+    align-items: start;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+
+.specialty-all-h1 {
+    font-size: 40px;
+    text-align: start;
+}
+
+.specialty-all-CardLink {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: row;
+}
+
+.phone-specialty-building {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: start;
+    align-items: start;
+}
+
+.buildingKAI-text-profesion {
+    cursor: pointer;
+    align-items: center;
+}
+
+.specialty-buildingKAI-text {
+    display: grid;
+    column-span: all;
+    align-content: center;
+    justify-items: start;
+    grid-gap: 15px;
+}
+
+
+
+.haveyouQuestion-phone {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.haveyouQuestion_h1 {
+    font-size: 50px;
+    color: var(--colorText);
+    margin-bottom: 70px;
+}
+
+.phone-haveyouQuestion_boxes {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.haveyouQuestion_boxe_center {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.specialty-all-CardLink-grey-text,
+.specialty-all-CardLink-grey-answer,
+.specialty-all-CardLink-grey-answerUp,
+.buildingKAI-text-profesion,
+.haveyouQuestion_h1,
+.box_boxText_twoBTNBox_button,
+.specialty-all-h1,
+.box-background-ImgSVG-h2 {
+    font-family: var(--font-averta-cy-EB);
+    font-style: 'normal';
+}
+
+
+.box-center {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.specialty-buildingKAI-title,
+.buildingKAI-text-title,
+.buildingKAI-text-profesion div,
+.specialty-all-text2,
+.LangText-incomig-specialty2,
+.LangText-incomig-specialty3,
+.LangText-incomig-specialty4,
+.LangText-incomig-specialty5,
+.phone-specialty-all-CardLink-grey-answer h1,
+.specialty-all-CardLink-grey-answer {
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.phone-box-background-ImgSVG-h2,
+.phone-specialty-box2-text p,
+.specialty-all-text,
+.phone-specialty-three-cards {
+    font-family: 'Averta Demo PE';
+    font-style: normal;
+}
+
+
+.phone-haveyouQuestion_article {
+    cursor: pointer;
+    align-items: center;
+}
+
+.boxe_h1Box_center {
+    display: grid;
+    justify-content: start;
+    align-items: end;
+    justify-items: start;
+    grid-gap: 21px;
+}
+
+.specialty-buildingKAI-mapAdress a {
+    text-decoration: none;
+}
+
+
+.box_boxText_twoBTNBox_button {
+    cursor: pointer;
+    align-items: center;
+}
+
+.text-cart-center {
+    text-align: center;
+}
+
+.specialty-all-exam {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.specialty-all-Key-disiplin {
+    align-items: start;
+    flex-direction: column;
+}
+
+.phone-specialty-all-Key-naprav {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.specialty-naprav-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+}
+
+.specialty-nb1,
+.specialty-naprav-block div {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.specialty-question-text-color {
+    text-align: initial;
+}
+
+.specialty-all-text2 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.specialty-all-exam a {
+    text-decoration: auto;
+}
+

@@ -1,0 +1,116 @@
+.phone_profile {
+    width: 87.3%;
+}
+
+
+.phone_main_box_but_form_Iamastud_FORM1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.phone-number-field {
+    width: 100%;
+}
+
+.phone-number-field .select {
+    width: 40%;
+}
+
+.phone_main_block_form_flex #id_gender {
+    width: 100%;
+}
+
+.main_block_Buttom_ {
+    margin-right: 70%;
+}
+
+.phone_basic-info {
+    width: 100%;
+}
+
+.phone_info,
+.phone_base-info,
+.phone_basic-info {
+    width: 100%;
+}
+
+.phone_about-info-p {
+    width: 40%;
+}
+
+.phone_about-info-generated {
+    width: 60%;
+}
+.phone_base-info{
+    margin-top: 10%;
+}
+
+.phone_verification-info{
+    width: 100%;
+}
+
+.phone_about-info p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.phone_about-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.phone_base-info-titleText {
+    font-family: 'Inter';
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+}
+
+.phone_base-info-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.phone_base-info-titleIco {
+    background-image: var(--Phone-profile-edit-ico);
+}
+
+
+.phone_about-info-p p {
+    font-size: 10.7px;
+    margin: 9px 9px 9px 0;
+}
+
+.phone_about-info-name,
+.phone_about-info-gender,
+.phone_about-info-birthday,
+.phone_about-info-country,
+.phone_about-info-city,
+.phone_about-info-citizenship,
+.phone_about-info-phone,
+.phone_about-info-email,
+.phone_about-info-password {
+    font-size: 10.7px;
+    margin: 9px 9px 9px 1px;
+}
+
+.phone_base-info-title{
+    font-size: 11.2px;
+}
+.phone_base-info-titleIco{
+    width: 16.6px;
+    height: 16.6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

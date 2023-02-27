@@ -13,7 +13,7 @@ from phonenumber_field.widgets import PhoneNumberPrefixWidget
 class CreateUserForm(UserCreationForm):
     password1 = forms.CharField(label='пароль', widget=forms.PasswordInput(attrs={'class': "main_block_form_textPassword main_block_form_input_12 InputFieldPassword",
                                                                                   'id': "id_password1",
-                                                                                  'placeholder': "Придумайте пароль",
+                                                                                  'placeholder': "Пароль",
                                                                                   'onmousedown': "mouseUp(this)",
                                                                                   'onmouseup': "mouseUp(this)",
                                                                                   'onchange': "mouseUp(this)",
@@ -24,9 +24,9 @@ class CreateUserForm(UserCreationForm):
         model = User
         fields = ['username', 'password1']
         widgets = {
-            'username':  forms.TextInput(attrs={'class': "main_block_form_textName main_block_form_input_12 InputFieldName",
+            'username':  forms.TextInput(attrs={'class': "main_block_form_input_12 InputFieldName",
                                                 'id': "InputFieldName",
-                                                'placeholder': "Придумайте имя пользователя",
+                                                'placeholder': "Логин",
                                                 'onmousedown': "mouseUp(this)",
                                                 'onmouseup': "mouseUp(this)",
                                                 'onchange': "mouseUp(this)",

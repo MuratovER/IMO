@@ -19,6 +19,7 @@
     --font-color: #e1e1ff;
 
     --heading-color: #818cab;
+
 }
 
 body {
@@ -31,11 +32,16 @@ a {
     border-bottom: 3px solid transparent;
     font-weight: bold;
 
-    &:hover,
+    /* &:hover,
     &:focus {
         border-bottom: 3px solid currentColor;
-    }
+    } */
 }
+a:hover,
+a:focus {
+    border-bottom: 3px solid currentColor;
+}
+
 
 section {
     max-width: 68%;
@@ -63,9 +69,11 @@ section {
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    max-width: 100%;
+    height: 25px;
     position: relative;
-    width: 60px;
+    width: 130px;
+
 }
 
 .theme-switch input {
@@ -73,7 +81,7 @@ section {
 }
 
 .slider {
-    background-color: #ccc;
+    background-color: var(--phone-slider);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -81,31 +89,151 @@ section {
     right: 0;
     top: 0;
     transition: .4s;
+    border-radius: 8px;
+    /* padding: 3px; */
+    border: 0.8px solid var(--phone-slider-border);
 }
 
 .slider:before {
     background-color: #fff;
-    bottom: 4px;
+    /* bottom: 4px; */
     content: "";
-    height: 26px;
-    left: 4px;
+    height: 17px;
+    /* left: 4px; */
     position: absolute;
     transition: .4s;
-    width: 26px;
+    max-width: 55px;
+    width: 100%;
+    border: 0.8px solid #000000;
+    border-radius: 5px;
+    margin: 2px;
+    
 }
 
-input:checked+.slider {
+/* input:checked+.slider {
     background-color: #66bb6a;
-}
+} */
 
 input:checked+.slider:before {
-    transform: translateX(26px);
+    transform: translateX(65px);
+    background-color: var(--phone-input-checkbox-color);
+    /* background-image: url(../../img/phone_sun.svg); */
 }
 
-.slider.round {
+/* .slider.round {
     border-radius: 34px;
+} */
+
+/* .slider.round:before {
+    border-radius: 50%;
+} */
+
+.slide_sun{
+    background-image: url(../../img/phone_sun.svg);
+    background-size: 100% 100%;
+    width: 18px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: relative;
+
+
 }
 
-.slider.round:before {
-    border-radius: 50%;
+.slide_moon{
+    background-image: url(../../img/phone_moon.svg);
+    background-size: 100% 100%;
+    width: 18px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.slide_inside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px;
+}
+
+
+#collapse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--phone-header-collapse); /*#000212*/
+}
+
+
+
+.pop-up_form-down{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 100px;
+    gap: 14%;
+}
+
+.Profil{
+    width: 30px;
+    height: 30px;
+    content: " ";
+    /* background-image: url(../../img/Profil.svg); */
+    /* background-image: url(../../img/Profile.svg); */
+    background-size:contain ;
+    background-image: var(--phone-profil-ico-color);
+
+}
+
+.Pamyatka_Inostransa{
+    width: 30px;
+    height: 30px;
+    content: " ";
+    color: #fff;
+    background-size: contain;
+    background-image: var(--Phone-header-PamyatkaInost);
+
+}
+
+.phone_pop-up{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+}
+
+.pop-up_Profil, .pop-up_PamyatkaInost{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 15px;
+}
+
+
+
+.Hr{
+    opacity: inherit;
+    margin: 0;
+    /* border: 1px; */
+    color: var(--phone-Hr);
+    background-color: currentcolor;
+    margin: 5px 0 5px 0;
+}
+
+.Profil-p, .Pamyatka_Inostransa-p{
+    color: var(--Profil-p);
+}
+
+.pop-up_PamyatkaInost{
+    margin-left: 2%;
+}
+
+.phone_headerProfilandPamyat{
+    width: 90%;
 }

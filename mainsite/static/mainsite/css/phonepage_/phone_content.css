@@ -7,7 +7,7 @@
 }
 
 .content {
-    max-width: 92%;
+    /* max-width: 95%; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -16,14 +16,15 @@
 }
 
 .Phone_Head {
-    width: 90%;
+    width: 91.67%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin-top: 10%;
     justify-content: center;
     gap: 20%;
+    margin: 6.2% 0 0 0;
+
 }
 
 .Phone_Base_content {
@@ -49,7 +50,7 @@
 .base_content_slade2 .slade1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .slide1_text {
@@ -72,73 +73,125 @@
 
 .slide1_burron_Bxtex {
     padding: 10px 6px 10px 6px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--colorText);
-    font-family: var(--font-averta-cy-EB);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    /* border: chocolate; */
-    /* border-block-color: blue; */
-    border: 2px solid #000000;
+
 }
 
 .slide1_burron_BxtexPodfac {
     padding: 10px 30px 10px 30px;
+}
+
+.slide1_burron_BxtexPodfac,
+.slide1_burron_Bxtex{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
-    color: var(--colorText);
-    font-family: var(--font-averta-cy-EB);
     cursor: pointer;
     display: flex;
     align-items: center;
     border: 2px solid #000000;
+}
+
+
+
+.slide1_burron_BxtexPodfac,
+.slide1_burron_Bxtex
+{
+    color: var(--colorText);
+    font-family: var(--font-averta-cy-EB);
 }
 
 .Mtop31 {
     margin-top: 31px;
 }
 
-.phone_header_presen_ico {
-    background-image: url(../../img/phone_header_presen.svg);
+.phone_header_presen_ico,
+.phone_header_question_ico,
+.phone_header_question_ico, 
+.phone_header_notice_ico,
+.phone_header_home_ico,
+.phone_header_home_get_ico,
+.main_icon_logo_phone,
+.footer_slade1_icon,
+.phone_header_Ru_ico
+{
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+.phone_header_presen_ico {
+    background-image: var(--Phone-header-presen-ico);
+
 }
 
 .phone_header_question_ico {
-    background-image: url(../../img/phone_header_question.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: var(--Phone-header-question-ico);
 }
 
 .phone_header_notice_ico {
-    background-image: url(../../img/phone_header_notice.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: var(--Phone-header-notice-ico);
+
 }
 
 .phone_header_home_ico {
-    background-image: url(../../img/phone_header_home.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    background-image: var(--Phone-header-home-ico);
 }
 
 .phone_header_home_get_ico {
-    background-image: url(../../img/phome_imo_down.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: var(--Phone-header-home-get-ico);
     background-position: center;
     border: none;
-
 }
 
+/*               chaged color  */ 
 .main_icon_logo_phone {
+    background-image: var(--main_icon_logo_phone);
     height: 100%;
-    background-image: url(../home_page/cssimg/mainICON_1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.footer_slade1_icon {
+    background-image: var(--main_icon_logo_phone);
+}
+
+
+.AircraftIndustry1_phone {
+    background-image: url(../home_page/cssimg/aircraft1.svg);
+}
+
+.AircraftEngines_phone {
+    background-image: url(../home_page/cssimg/dvigLetAp.svg);
+}
+
+.infocommunicationTechnologies_phone {
+    background-image: url(../home_page/cssimg/infoCAMUN.svg);
+}
+
+.AircraftIndustry2_phone {
+    background-image: url(../home_page/cssimg/acanomick.svg);
+}
+
+.AircraftIndustry3_phone {
+    background-image: url(../home_page/cssimg/ecspluatacia1.svg);
+}
+
+.AircraftOperation1_phone {
+    background-image: url(../home_page/cssimg/AircraftOperation1.svg);
+}
+
+.compositTechnologi_phone {
+    background-image: url(../../img/compositTechnologi.svg);
+}
+
+.shipbuilding_phone {
+    background-image: url(../../img/shipbuilding.svg);
+}
+
+
+.phone_header_Ru_ico{
+    background-image: var(--Phone-header-home-get-ico);
+    background-position: center;
+    border: none;
+    width: 15px;
+    height: 20px;
 }
 
 .Lang-standart84_1 {
@@ -295,7 +348,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 116.1%;
-    color: #000212;
+    color: var(--Phone-Lang-standart-color);
 }
 
 .news_block_img {
@@ -342,7 +395,7 @@ h1 {
 }
 
 .base_content_slade5 {
-    width: 96%;
+    width: 91.67%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -350,11 +403,6 @@ h1 {
     align-items: center;
 }
 
-.footer_slade1_icon {
-    background-image: url(../home_page/cssimg/mainICON_1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 .footer_boxs_2 {
     display: flex;
@@ -464,11 +512,30 @@ h1 {
     color: #40414D;
 }
 
-.phone_footer_slade2_h h1 {
+.phone_footer_slade2_h h1,
+.phone_footer_slade2_namber1 h1,
+.phone_footer_slade2_namber2 h1,
+.phone_footer_slade2_namber3 h1,
+.phone_footer_slade2_link h1 {
+    font-family: var(--font-inter);
     font-style: normal;
     font-weight: 400;
     line-height: 134.69%;
-    text-align: right;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: rgba(0, 2, 18, 0.75);
+}
+
+.phone_footer_slade2_h h1,
+.phone_footer_slade2_namber1 p,
+.phone_footer_slade2_namber2 p,
+.phone_footer_slade2_namber3 p,
+.phone_footer_slade2_link p {
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.69%;
+    text-align: left;
     letter-spacing: 0.03em;
     color: rgba(0, 2, 18, 0.75);
 }
@@ -502,6 +569,7 @@ h1 {
 
 .phone_footer_slade1_down {
     max-width: 100%;
+    gap: 20%;
 }
 
 .phone_footer_slade2_link {
@@ -518,7 +586,8 @@ h1 {
 }
 
 .slade1_text {
-    text-align: right;
+    text-align: left;
+    color: var(--colorText);
 }
 
 .base_content_slade4 {
@@ -561,132 +630,13 @@ h1 {
 
 }
 
-.AircraftIndustry1_phone {
-    background-image: url(../home_page/cssimg/aircraft1.svg);
-}
-
-.AircraftEngines_phone {
-    background-image: url(../home_page/cssimg/dvigLetAp.svg);
-}
-
-.infocommunicationTechnologies_phone {
-    background-image: url(../home_page/cssimg/infoCAMUN.svg);
-}
-
-.AircraftIndustry2_phone {
-    background-image: url(../home_page/cssimg/acanomick.svg);
-}
-
-.AircraftIndustry3_phone {
-    background-image: url(../home_page/cssimg/ecspluatacia1.svg);
-}
-
-.AircraftOperation1_phone {
-    background-image: url(../home_page/cssimg/AircraftOperation1.svg);
-}
-
-.compositTechnologi_phone {
-    background-image: url(../../img/compositTechnologi.svg);
-}
-
-.shipbuilding_phone {
-    background-image: url(../../img/shipbuilding.svg);
-}
-
 .specialty_box_picture_text_phone {
     font-family: var(--font-averta-cy-EB);
     color: var(--ColorTextForProgrammStadyPlashca);
     text-align: center;
 }
 
-@media screen and (max-width:768px) {
-    .AircraftIndustry1_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    .AircraftEngines_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .infocommunicationTechnologies_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .AircraftIndustry2_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    .AircraftIndustry3_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    .AircraftOperation1_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .compositTechnologi_phone {
-        width: 230.4px;
-        height: 200px;
-    }
-
-    .shipbuilding_phone {
-        width: 384px;
-        height: 200px;
-    }
-
-    /* text-size    */
-
-    .specialty_box_picture_text_phone {
-        font-size: 18px;
-    }
-
-    #collapse {
-        width: 200px;
-        height: 180px;
-        margin-top: 270px;
-        margin-right: 50px;
-    }
-    .faq_content_phone {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .faq_block1_phone {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    .faq_form h1 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .faq_form p {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .verification-mail_phone {
-        margin-top: 25px;
-        margin-bottom: 25px;
-
-    }
-
-    .verification-mail-field_phone {
-        font-size: 15px;
-        width: 280px;
-        height: 50px;
-    }
-}
-
+/* 
 @media screen and (max-width:480px) {
     .AircraftIndustry1_phone {
         width: 240px;
@@ -729,16 +679,16 @@ h1 {
     }
 
     /* text-size    */
-
+/*
     .specialty_box_picture_text_phone {
         font-size: 14px;
     }
 
     #collapse {
-        width: 180px;
-        height: 130px;
+        width: 230px;
+        height: 50px;
         margin-top: 190px;
-        margin-right: 80px;
+        margin-right: 140px;
     }
 
     .faq_content_phone {
@@ -774,185 +724,9 @@ h1 {
         width: 280px;
         height: 50px;
     }
-}
+} */
 
-@media screen and (max-width:360px) {
-    .AircraftIndustry1_phone {
-        width: 180px;
-        height: 100px;
-    }
 
-    .AircraftEngines_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .infocommunicationTechnologies_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .AircraftIndustry2_phone {
-        width: 180px;
-        height: 100px;
-    }
-
-    .AircraftIndustry3_phone {
-        width: 180px;
-        height: 100px;
-    }
-
-    .AircraftOperation1_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .compositTechnologi_phone {
-        width: 108px;
-        height: 100px;
-    }
-
-    .shipbuilding_phone {
-        width: 180px;
-        height: 100px;
-    }
-
-    /* text-size    */
-
-    .specialty_box_picture_text_phone {
-        font-size: 12px;
-    }
-
-    #collapse {
-        width: 160px;
-        height: 125px;
-        margin-top: 190px;
-        margin-right: 80px;
-    }
-
-    .faq_content_phone {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .faq_block1_phone {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    .faq_form h1 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .faq_form p {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .verification-mail_phone {
-        margin-top: 25px;
-        margin-bottom: 25px;
-
-    }
-
-    .verification-mail-field_phone {
-        font-size: 15px;
-        width: 280px;
-        height: 50px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .AircraftIndustry1_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    .AircraftEngines_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .infocommunicationTechnologies_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .AircraftIndustry2_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    .AircraftIndustry3_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    .AircraftOperation1_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .compositTechnologi_phone {
-        width: 96px;
-        height: 100px;
-    }
-
-    .shipbuilding_phone {
-        width: 160px;
-        height: 100px;
-    }
-
-    /* text-size    */
-
-    .specialty_box_picture_text_phone {
-        font-size: 8px;
-    }
-
-    #collapse {
-        width: 120px;
-        height: 100px;
-        margin-top: 160px;
-        margin-right: 60px;
-    }
-
-    .faq_content_phone {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .faq_block1_phone {
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    .faq_form h1 {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .faq_form p {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .verification-mail_phone {
-        margin-top: 25px;
-        margin-bottom: 25px;
-
-    }
-
-    .verification-mail-field_phone {
-        font-size: 15px;
-        width: 280px;
-        height: 50px;
-    }
-}
 
 .verification-mail-field_phone {
     border-radius: 15px;
@@ -977,6 +751,10 @@ h1 {
 .showhide_phone {
     width: 90%;
     border-radius: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .chageColor_phone {
@@ -997,8 +775,7 @@ h1 {
 
 #collapse {
     position: absolute;
-    padding: 20px 20px 20px 20px;
-    background: #FFFFFF;
+    padding: 10px 10px 90px 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px -3px 8px -3px rgba(0, 0, 0, 0.25);
     background-size: cover;
     transition: all 0.5s;
@@ -1010,4 +787,224 @@ h1 {
     height: 0;
     opacity: 0;
     overflow: hidden;
+    display: none;
+}
+
+/* (B) HIDE animated  */
+.phone_header_animated_left{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.slide_SunGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+    position: relative;
+    padding: 0.5px;
+
+}
+
+.slide_MoonGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+    position: relative;
+    padding: 0.5px;
+    margin-right: 5px;
+
+}
+
+.slide_inside_text{
+    position: relative;
+    font-size: 13px;
+    font-family: 'Averta Demo PE';
+font-style: normal;
+font-weight: 400;
+/* color: var(--slider_inside_text); */
+
+}
+.slide_moon .slide_inside_text{
+    color: var(--slider_inside_text);
+
+}
+
+
+.buttonsInHeader_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.phone-specialty-box2-title-text {
+    font-family: var(--font-averta-cy-W01);
+    font-style: normal;
+}
+
+.specialty-naprav-block{
+    font-family: var(--font-inter);
+    font-style: normal;
+}
+
+.phone-specialty-box3-card{
+    width: 94.5%;
+}
+
+.phone-specialty-box2-TextCard{
+    gap: 2%;
+}
+
+
+
+.Pamyatka_Inostransa,
+.Profil{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.Profil-p, 
+.Pamyatka_Inostransa-p, 
+#lang, 
+.slide_inside_text{
+    font-family: var(--font-averta-demo-PE);
+    font-style: normal;
+}
+
+
+.AircraftIndustry1_phone,
+.AircraftIndustry2_phone,
+.AircraftIndustry3_phone,
+.shipbuilding_phone  {
+    width: 50%;
+}
+
+.AircraftEngines_phone,
+.infocommunicationTechnologies_phone,
+.AircraftOperation1_phone,
+.compositTechnologi_phone {
+    width: 30%;
+}
+
+#phone_hend{
+    margin-top: 20%;
+}
+
+.phone_main_block_form {
+    width: 84.5%;
+    align-self: center;
+    margin-top: 12%;
+}
+
+.phone_main_block_form_InformationalText {
+    font-size: 90%;
+}
+
+#TextLogin {
+    font-size: 197%;
+}
+
+.phone_main_block_form_flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone_content_text_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5%;
+}
+
+.phone_content_text_form_name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 8%;
+    padding-top: 5%;
+}
+
+.phone_child_element_flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blue; */
+    /* background-color: #4526FF; */
+
+}
+
+.phone_main_block_form_input_1 {
+    width: 100%;
+    font-size: 120%;
+    border: 2px solid #D7D7D7;
+    border-radius: 13px;
+    /* font-size: 20px; */
+    padding: 14px 25px;
+    font-family: var(--font-inter);
+    /* background-color: #4526FF; */
+    /* cursor: var(--hand-cursor-w);*/
+}
+
+.phone_.main_box_but_form_Iamastud {
+    /* width: auto; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone_main_block_form_textPassword_box {
+    position: relative;
+    width: 100%;
+    /* height: 67px; */
+    margin: 5% 0;
+}
+
+#phone_regesterText {
+    color: var(--colorText);
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
+
+.phone_main_block_form_textName_flexBox {
+    width: 100%;
+}
+.footer_slade1_icon_text h1,
+.phone_footer_slade2{
+    font-family: var(--font-inter);
+    font-style: normal;
+}
+@media screen and (width: 320px) {
+    #phone_hend {
+        width: 320px;
+    }
+
+    #phone_regesterText {
+        font-size: 12px;
+    }
+
+    .phone_register_size {
+        font-size: 12px;
+    }
+}
+
+@media screen and (width: 360px) {
+    #phone_hend {
+        width: 360px;
+    }
 }

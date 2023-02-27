@@ -26,7 +26,7 @@ def home_page(request):
 def login_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_login.html',
                         pc_url='mainsite/registration/LoginIndex.html',
                         main_logic=user_login
     )
@@ -44,7 +44,7 @@ def logout_view(request):
 def signup_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_singup.html',
                         pc_url='mainsite/registration/RegesterIndex.html',
                         main_logic=user_creation
     )
@@ -53,7 +53,7 @@ def signup_view(request):
 def profile_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_profile.html',
                         pc_url='mainsite/profile/profile.html',
                         main_logic=profile_render
     )
@@ -62,7 +62,7 @@ def profile_view(request):
 def extra_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_extra.html',
                         pc_url='mainsite/registration/ExtraInfo.html',
                         main_logic=extra_signup_page
     )
@@ -170,10 +170,11 @@ def speciality_view(request, key):
         }
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_incomigIMO.html',
                         pc_url='mainsite/incomingIMO/incomingIMO.html',
                         context=context
     )
+
 
 
 def triadkey_view(request):
@@ -184,3 +185,14 @@ def triadkey_view(request):
                         pc_url='mainsite/incomingIMO/triadkey.html',
                         context={'triadkey': triadkey}
     )
+
+# GraduateDep
+# def graduatedep_view(request):
+#     triadkey = GraduateDep.objects.all()
+#     return device_router(
+#                         request,
+#                         mobile_url='mainsite/PhonePage/index.html',
+#                         pc_url='mainsite/incomingIMO/triadkey.html',
+#                         context={'triadkey': triadkey}
+#     )
+

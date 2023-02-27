@@ -1,4 +1,10 @@
-@media screen and (max-width:768px) {
+@media screen and  (min-width: 591px) and (max-width:769px) {
+    .content,
+    #phone_hend,
+    #phone_hend_extra{
+        width: 768px;
+    }
+    
     .news_block_phone {
         width: 320px;
     }
@@ -236,4 +242,864 @@
         font-size: 50px;
     }
 
+    
+    /**************Page incomig************/
+    .phone-specialty-body {
+        margin-top: 20px;
+    }
+    
+    .phone-specialty-box2-title {
+        margin-top: 15px;
+    }
+    
+    .phone-specialty-box2-title {
+        padding: 10px;
+    }
+    
+    .phone-specialty-box2-title-text {
+        font-weight: 600;
+        font-size: 35px;
+    }
+/*     
+    .phone-specialty-box3-card {
+        margin-top: 10px;
+        gap: 30px;
+    } */
+    
+    .LangText-incomig-specialty2,
+    .LangText-incomig-specialty3,
+    .LangText-incomig-specialty4,
+    .LangText-incomig-specialty5,
+    .LangText-incomig-specialty6,
+    .LangText-incomig-specialty7,
+    .LangText-incomig-specialty8,
+    .LangText-incomig-specialty9,
+    .LangText-incomig-specialty10,
+    .LangText-incomig-specialty11,
+    .LangText-incomig-specialty12,
+    .LangText-incomig-specialty13,
+    .LangText-incomig-specialty14 {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 10px;
+    
+    }
+    
+    .specialty-all-CardLink {
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+    
+    .phone-weHAve_new_boxStart_img {
+        border-radius: 3px;
+    }
+    
+    .specialty-all-exam-content {
+        width: 360px;
+        height: 32px;
+        margin-top: 5px;
+        gap: 5px;
+    }
+    
+    .RaspisanieIspit-phone,
+    .DemoTest-phone,
+    .ProgramVstuplenie-phone {
+        width: 46px;
+        height: 42px;
+    }
+    
+    
+    
+    .First-building .specialty-buildingKAI-pic,
+    .Second-building .specialty-buildingKAI-pic,
+    .Third-building .specialty-buildingKAI-pic,
+    .Fifth-building .specialty-buildingKAI-pic,
+    .Seventh-building .specialty-buildingKAI-pic,
+    .Eighth-building .specialty-buildingKAI-pic {
+        width: 143px;
+        height: 142px;
+    }
+    
+    .specialty-all-BOXh1 {
+        width: 80%;
+    }
+    
+    .specialty-naprav-block-font-size {
+        font-size: 10px;
+    }
+    
+    .phone-haveyouQuestion_boxes {
+        gap: 35px;
+    }
+    
+    .haveyouQuestion_boxe_center {
+        width: 690px;
+        height: 350px;
+    }
+    
+    .phone-boxe_h1Box_center {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 11px;
+    }
+    
+    .phone-question-icon {
+        width: 245px;
+        height: 180px;
+    }
+    
+    .phone-haveyouQuestion_boxes3 {
+        gap: 20px;
+    }
+    
+    .phone-haveyouQuestion_article {
+        border-radius: 14px;
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .phone-haveyouQuestion_article div {
+        font-size: 11px;
+    }
+    
+    .phone-haveyouQuestion_boxe_h1 {
+        font-weight: 800;
+        font-size: 11px;
+        line-height: 116.1%;
+    }
+    
+    .phone-haveyouQuestion_boxes {
+        width: 690px;
+        height: 350px;
+    }
+    
+    .phone-specialty-all-Key-naprav {
+        padding: 5px;
+        gap: 45px;
+    }
+    
+    .phone-specialty-header-box-background {
+        width: 729px;
+        height: 200px;
+        border-radius: 3px;
+    }
+    
+    .phone-box-background-ImgSVG-h2 {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 160.1%;
+    }
+    
+    .phone-box-background-ImgSVG-h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 154.19%;
+    }
+    
+    .phone-specialty-box2,
+    .phone-specialty-box3,
+    .phone-specialty-body {
+        max-width: 95%;
+        width: 729px;
+    }
+    
+    .phone-specialty-building {
+        grid-gap: 75px;
+    }
+    
+    .box-background-ImgSVG-h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 154.19%;
+    }
+    
+    .specialty-all {
+        width: 90%;
+        gap: 3%;
+    }
+    
+    .specialty-all-CardLink-boxStart1,
+    .specialty-all-CardLink-boxStart2,
+    .specialty-all-CardLink-boxStart3,
+    .specialty-all-CardLink-boxStart4 {
+        min-width: 260px;
+        width: 280px;
+        height: 317px;
+    }
+    
+    .specialty-all-CardLink-boxStart-MATH,
+    .specialty-all-CardLink-boxStart-RUSS,
+    .specialty-all-CardLink-boxStart-CHEM,
+    .specialty-all-CardLink-boxStart-PHYS,
+    .specialty-all-CardLink-boxStart-SOCL,
+    .specialty-all-CardLink-boxStart-INFO,
+    .specialty-all-CardLink-boxStart-FRLN {
+        /* min-width: 260px; */
+        width: 145px;
+        height: 100px;
+        border-radius: 6px;
+    }
+    
+    .specialty-all-text {
+        margin-top: 25px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 202.6%;
+    }
+    
+    .box-center {
+        gap: 10%;
+    }
+    
+    .top130 {
+        margin-top: 130px;
+    }
+    
+    .buildingKAI-text-profesion {
+        border-radius: 14px;
+        padding: 12px 12px 12px 12px;
+    }
+    
+    .specialty-buildingKAI-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 152.02%;
+    }
+    
+    .buildingKAI-text-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 31px;
+    }
+    
+    .buildingKAI-text-profesion div {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 123.19%;
+    }
+    
+    .box_boxText_twoBTNBox_button {
+        border-radius: 14px;
+        padding: 10px 25px 10px 35px;
+        margin-top: 30px;
+    }
+    
+    .specialty-all-text2 {
+        font-weight: 400;
+        font-size: 10px;
+    }
+    
+    .specialty-nb1,
+    .specialty-naprav-block div {
+        padding: 12px 14px;
+        gap: 10px;
+        border-radius: 14px;
+    }
+    
+    .specialty-all-exam{
+        gap: 16px;
+    }
+    
+    #Second-building-url{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .phone-specialty-all-CardLink-boxStart1 {
+        width: 153.6px;
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    .phone-specialty-box2-text p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 202.6%;
+        color: var(--colorText);
+    }    
+    .phone-specialty-three-cards {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--colorText);
+        flex-grow: 0;
+        border-bottom: none;
+    }
+
+    .main_icon_logo_flexbox{
+        width: 90px;
+        height: 90px;
+    }
+
+    .main_icon_logo_phone {
+        width: 90px;
+    }
+
+    .phone_header_home_ico,
+    .phone_header_question_ico,
+    .phone_header_notice_ico,
+    .chageColor_phone, 
+    .phone_header_presen_ico {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone_header_home_get_ico{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .footer_slade1_icon {
+        max-width: 100%;
+        width: 53px;
+        height: 50px;
+    }
+
+    .phone_footer_slade1 {
+        width: 37%;
+    }
+
+    .phone_footer_slade2 {
+        width: 24%;
+    }
+
+    .phone_footer_slade3 {
+        width: 22%;
+    }
+
+    .footer_slade1_icon_text {
+        margin-left: 5%;
+    }
+
+    .footer_slade1_icon_text h1,
+    .phone_footer_slade3_adres h1,
+    .phone_footer_slade2_h h1,
+    .phone_footer_slade2_namber1 p,
+    .phone_footer_slade2_namber2 p,
+    .phone_footer_slade3_ulisa {
+        font-size: 15px;
+    }
+
+    .slade1_text {
+        font-size: 16px;
+    }
+
+    .phone_footer_upon p,
+    .phone_footer_slade2_link a {
+        font-size: 10px;
+    }
+
+
+    .footer_boxs_links_box_plot {
+        width: 58px;
+        height: 42px;
+    }
+
+    /**********************360***не отредактирован*/
+
+    .news_block_phone {
+        width: 320px;
+    }
+
+    .news_block_img_phone {
+        width: 320px;
+        height: 320px;
+    }
+
+    /*  raschet */
+    .Lang-standart84_1 {
+        font-size: 60px;
+    }
+
+    .slide1_text {
+        width: 100%;
+    }
+
+    .slade_specialty_box_displayFlex_litleBox {
+        width: 650px;
+    }
+
+    .AircraftIndustry1 {
+        width: 385px;
+    }
+
+    .standartStyleForimgSp {
+        width: 230px;
+    }
+
+
+    .phone_footer_slade1_down {
+        width: 184px;
+    }
+
+    /*///////////////////////////////////////////////////////////////////*/
+
+
+    .footer_mainText,
+    .helpText,
+    .Memo_box_textInf_text,
+    .main_icon_logo_phoneText {
+        font-size: 10px;
+    }
+
+    .footer_FM1_text,
+    .link_FM2Text_p,
+    .phone_footer_upon p {
+        font-size: 8px;
+    }
+
+    .footer_boxs_links_box_l {
+        width: 37px;
+        height: 30px;
+    }
+
+    .footer_boxs_links_box_plot {
+        width: 71px;
+        height: 55px;
+    }
+
+    .phone_footer_upon p {
+        font-size: 12px;
+    }
+
+    .base_content_slade1 {
+        width: 100%
+    }
+
+    .slide1_text .Lang-standart84_1 {
+        font-size: 60px;
+    }
+
+    .slide1_burron_Bxtex,
+    .slide1_burron_BxtexPodfac {
+        font-size: 25px;
+    }
+
+
+    .Lang-standart27 {
+        font-size: 50px;
+    }
+
+    .slide1_text {
+        width: 100%;
+    }
+
+    .base_content_slade3 {
+        width: 403px;
+    }
+
+    .news_list_a {
+        width: 320px;
+    }
+
+    .news_block_img {
+        width: 183px;
+        height: 185.4px;
+    }
+
+    .news_title-phone {
+        height: 32px;
+    }
+
+    .news_title_h3 {
+        font-size: 11px;
+    }
+
+    .news-KAI-block p,
+    .news-date {
+        font-size: 12px;
+    }
+
+
+
+    .about_IMO {
+        width: 100%;
+        margin-top: 33.4px;
+    }
+
+    .box_aboutIMO_ImgSVG {
+        margin-top: 26.7px;
+    }
+
+    .Lang-standart32 {
+        font-size: 50px;
+    }
+
+    .Lang-standart33 {
+        font-size: 15px;
+    }
+
+    .box_aboutIMO_text_Inf_INGSVG {
+        width: 200px;
+    }
+
+    .box_aboutIMO_ImgSVG_background {
+        width: 691px;
+        border-radius: 16px;
+    }
+
+    .Lang-standart34 {
+        font-size: 50px;
+    }
+    .AircraftIndustry1_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    .AircraftEngines_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .infocommunicationTechnologies_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .AircraftIndustry2_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    .AircraftIndustry3_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    .AircraftOperation1_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .compositTechnologi_phone {
+        width: 230.4px;
+        height: 200px;
+    }
+
+    .shipbuilding_phone {
+        width: 384px;
+        height: 200px;
+    }
+
+    /* text-size    */
+
+    .specialty_box_picture_text_phone {
+        font-size: 18px;
+    }
+
+    #collapse {
+        width: 260px;
+        height: 80px;
+        margin-top: 250px;
+        margin-right: 140px;
+    }
+    .faq_content_phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq_block1_phone {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .faq_form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .faq_form p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .verification-mail_phone {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    .verification-mail-field_phone {
+        font-size: 15px;
+        width: 280px;
+        height: 50px;
+    }
+
+    
+
+.LangText-incomig-specialty2,
+.LangText-incomig-specialty3,
+.LangText-incomig-specialty4,
+.LangText-incomig-specialty5,
+.phone-specialty-all-CardLink-grey-answer h1 {
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 160.1%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.phone-specialty-body {
+    margin-top: 20px;
+}
+
+.phone-specialty-box2-title {
+    margin-top: 15px;
+}
+
+.phone-specialty-box2-title {
+    padding: 10px;
+}
+
+.phone-specialty-box2-title-text {
+    font-weight: 600;
+    color: var(--Profil-p);
+}
+
+
+.LangText-incomig-specialty2,
+.LangText-incomig-specialty3,
+.LangText-incomig-specialty4,
+.LangText-incomig-specialty5,
+.LangText-incomig-specialty6,
+.LangText-incomig-specialty7,
+.LangText-incomig-specialty8,
+.LangText-incomig-specialty9,
+.LangText-incomig-specialty10,
+.LangText-incomig-specialty11,
+.LangText-incomig-specialty12,
+.LangText-incomig-specialty13,
+.LangText-incomig-specialty14 {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+
+}
+
+.specialty-all-CardLink {
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+.phone-weHAve_new_boxStart_img {
+    border-radius: 3px;
+}
+
+.specialty-all-exam-content {
+    width: 169px;
+    height: 28px;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.RaspisanieIspit-phone,
+.DemoTest-phone,
+.ProgramVstuplenie-phone {
+    width: 21px;
+    height: 20px;
+}
+
+
+
+.First-building .specialty-buildingKAI-pic,
+.Second-building .specialty-buildingKAI-pic,
+.Third-building .specialty-buildingKAI-pic,
+.Fifth-building .specialty-buildingKAI-pic,
+.Seventh-building .specialty-buildingKAI-pic,
+.Eighth-building .specialty-buildingKAI-pic {
+    width: 143px;
+    height: 142px;
+}
+
+.specialty-all-BOXh1 {
+    width: 80%;
+}
+
+.specialty-naprav-block-font-size {
+    font-size: 10px;
+}
+
+.phone-haveyouQuestion_boxes {
+    gap: 35px;
+}
+
+.haveyouQuestion_boxe_center {
+    width: 320px;
+    height: 200px;
+}
+
+.phone-boxe_h1Box_center {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 11px;
+}
+
+.phone-question-icon {
+    width: 116px;
+    height: 90px;
+}
+
+.phone-haveyouQuestion_boxes3 {
+    gap: 20px;
+}
+
+.phone-haveyouQuestion_article {
+    border-radius: 14px;
+    padding: 3.4px 3.4px 3.4px 3.4px;
+}
+
+.phone-haveyouQuestion_article div {
+    font-size: 11px;
+}
+
+.phone-haveyouQuestion_boxe_h1 {
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 116.1%;
+}
+
+.phone-haveyouQuestion_boxes {
+    width: 320px;
+    height: 200px;
+}
+
+.phone-specialty-all-Key-naprav {
+    padding: 5px;
+    gap: 45px;
+}
+
+.phone-specialty-header-box-background {
+    width: 340px;
+    height: 146px;
+    border-radius: 3px;
+}
+
+.phone-box-background-ImgSVG-h2 {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 160.1%;
+}
+
+.phone-box-background-ImgSVG-h1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 154.19%;
+}
+
+.phone-specialty-box2,
+.phone-specialty-box3,
+.phone-specialty-body {
+    max-width: 95%;
+    width: 340px;
+}
+
+.phone-specialty-building {
+    grid-gap: 75px;
+}
+
+.box-background-ImgSVG-h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 154.19%;
+}
+
+.specialty-all {
+    width: 90%;
+    gap: 3%;
+}
+
+.specialty-all-CardLink-boxStart1,
+.specialty-all-CardLink-boxStart2,
+.specialty-all-CardLink-boxStart3,
+.specialty-all-CardLink-boxStart4 {
+    min-width: 260px;
+    width: 280px;
+    height: 317px;
+}
+
+.specialty-all-CardLink-boxStart-MATH,
+.specialty-all-CardLink-boxStart-RUSS,
+.specialty-all-CardLink-boxStart-CHEM,
+.specialty-all-CardLink-boxStart-PHYS,
+.specialty-all-CardLink-boxStart-SOCL,
+.specialty-all-CardLink-boxStart-INFO,
+.specialty-all-CardLink-boxStart-FRLN {
+    /* min-width: 260px; */
+    width: 66px;
+    height: 64px;
+    border-radius: 6px;
+}
+
+/* .specialty-all-text {
+    margin-top: 25px; 
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 202.6%;
+} */
+
+.box-center {
+    gap: 10%;
+}
+
+.top130 {
+    margin-top: 130px;
+}
+
+.buildingKAI-text-profesion {
+    border-radius: 14px;
+    padding: 12px 12px 12px 12px;
+}
+
+.specialty-buildingKAI-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152.02%;
+}
+
+.buildingKAI-text-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.buildingKAI-text-profesion div {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 123.19%;
+}
+
+.box_boxText_twoBTNBox_button {
+    border-radius: 14px;
+    padding: 10px 25px 10px 35px;
+    margin-top: 30px;
+}
+
+.specialty-all-text2 {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.specialty-nb1,
+.specialty-naprav-block div {
+    padding: 12px 14px;
+    gap: 10px;
+    border-radius: 14px;
+}
+
+.specialty-all-exam{
+    gap: 16px;
+}
+
+#Second-building-url{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+    
 }

@@ -74,6 +74,18 @@ class Faculty(models.Model):
     def __str__(self):
         return self.name
 
+# Graduate department
+
+
+class Graduate(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=100)
+    gra_id = models.CharField(max_length=10)
+    short_description = models.CharField(max_length=200, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
 
 class Speciality(models.Model):
 
@@ -126,6 +138,9 @@ class Speciality(models.Model):
     direction_choice = models.CharField(max_length=16,
                                         choices=type_of_direction,
                                         null=True, blank=True)
+
+    graduate = models.ForeignKey(
+        Graduate, on_delete=models.CASCADE, related_name="graduate", default=0)
 
     description = models.TextField()
     key = models.CharField(max_length=10)
