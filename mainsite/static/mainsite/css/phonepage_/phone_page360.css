@@ -1,6 +1,8 @@
 @media screen and (min-width:322px) and (max-width:361px) {
    
-    .content{
+    .content,
+    #phone_hend,
+    #phone_hend_extra{
         width: 360px;
     }
     
@@ -433,7 +435,7 @@
     .specialty-all-CardLink-boxStart-SOCL,
     .specialty-all-CardLink-boxStart-INFO,
     .specialty-all-CardLink-boxStart-FRLN {
-        /* min-width: 260px; */
+        /* min-width: 260px; 
         width: 65.99px;
         height: 64px;
         border-radius: 6.68px;
@@ -694,9 +696,7 @@
         width: 100%;
     }
 
-    .slide1_text .Lang-standart84_1 {
-        font-size: 36px;
-    }
+
 
     .slide1_text {
         width:  100%;
@@ -773,42 +773,34 @@
     }
 
     .AircraftIndustry1_phone {
-        width: 180px;
         height: 100px;
     }
 
     .AircraftEngines_phone {
-        width: 108px;
         height: 100px;
     }
 
     .infocommunicationTechnologies_phone {
-        width: 108px;
         height: 100px;
     }
 
     .AircraftIndustry2_phone {
-        width: 180px;
         height: 100px;
     }
 
     .AircraftIndustry3_phone {
-        width: 180px;
         height: 100px;
     }
 
     .AircraftOperation1_phone {
-        width: 108px;
         height: 100px;
     }
 
     .compositTechnologi_phone {
-        width: 108px;
         height: 100px;
     }
 
     .shipbuilding_phone {
-        width: 180px;
         height: 100px;
     }
 
@@ -1155,5 +1147,14 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+}
+
+.phone_footer_slade2_h h1{
+    font-size: 5px;
+}
+.phone_footer_slade2_namber1 h1,
+.phone_footer_slade2_namber2 h1,
+.phone_footer_slade2_namber3 h1{
+    font-size: 5.8px;
 }
 }

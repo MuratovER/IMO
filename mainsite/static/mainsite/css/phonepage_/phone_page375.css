@@ -1,6 +1,8 @@
 @media screen and (min-width:361px) and (max-width:376px) {
     
-    .content{
+    .content,
+    #phone_hend,
+    #phone_hend_extra{
         width: 375px;
     }    
     .slide1_burron_Bxtex{
@@ -944,5 +946,13 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+}
+.phone_footer_slade2_h h1{
+    font-size: 5.8px;
+}
+.phone_footer_slade2_namber1 h1,
+.phone_footer_slade2_namber2 h1,
+.phone_footer_slade2_namber3 h1{
+    font-size: 6px;
 }
 }

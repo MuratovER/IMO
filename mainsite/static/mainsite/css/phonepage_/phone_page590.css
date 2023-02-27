@@ -1,8 +1,8 @@
-@media screen and (min-width:426px) and (max-width:461px) {
+@media screen and (min-width:551px) and (max-width:591px) {
     .content,
     #phone_hend,
     #phone_hend_extra{
-        width: 460px;
+        width: 590px;
     }
     .main_icon_logo_flexbox {
         width: 90px;

@@ -395,7 +395,7 @@ h1 {
 }
 
 .base_content_slade5 {
-    width: 96%;
+    width: 91.67%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -512,11 +512,30 @@ h1 {
     color: #40414D;
 }
 
-.phone_footer_slade2_h h1 {
+.phone_footer_slade2_h h1,
+.phone_footer_slade2_namber1 h1,
+.phone_footer_slade2_namber2 h1,
+.phone_footer_slade2_namber3 h1,
+.phone_footer_slade2_link h1 {
+    font-family: var(--font-inter);
     font-style: normal;
     font-weight: 400;
     line-height: 134.69%;
-    text-align: right;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: rgba(0, 2, 18, 0.75);
+}
+
+.phone_footer_slade2_h h1,
+.phone_footer_slade2_namber1 p,
+.phone_footer_slade2_namber2 p,
+.phone_footer_slade2_namber3 p,
+.phone_footer_slade2_link p {
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.69%;
+    text-align: left;
     letter-spacing: 0.03em;
     color: rgba(0, 2, 18, 0.75);
 }
@@ -550,6 +569,7 @@ h1 {
 
 .phone_footer_slade1_down {
     max-width: 100%;
+    gap: 20%;
 }
 
 .phone_footer_slade2_link {
@@ -659,7 +679,7 @@ h1 {
     }
 
     /* text-size    */
-
+/*
     .specialty_box_picture_text_phone {
         font-size: 14px;
     }
@@ -767,6 +787,7 @@ h1 {
     height: 0;
     opacity: 0;
     overflow: hidden;
+    display: none;
 }
 
 /* (B) HIDE animated  */
@@ -852,4 +873,163 @@ font-weight: 400;
 .slide_inside_text{
     font-family: var(--font-averta-demo-PE);
     font-style: normal;
+}
+
+
+.AircraftIndustry1_phone,
+.AircraftIndustry2_phone,
+.AircraftIndustry3_phone,
+.shipbuilding_phone  {
+    width: 50%;
+}
+
+.AircraftEngines_phone,
+.infocommunicationTechnologies_phone,
+.AircraftOperation1_phone,
+.compositTechnologi_phone {
+    width: 30%;
+}
+
+#phone_hend{
+    margin-top: 20%;
+}
+
+.phone_main_block_form {
+    width: 84.5%;
+    align-self: center;
+    margin-top: 12%;
+}
+
+.phone_main_block_form_InformationalText {
+    font-size: 90%;
+}
+
+#TextLogin {
+    font-size: 197%;
+}
+
+.phone_main_block_form_flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone_content_text_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5%;
+}
+
+.phone_content_text_form_name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 8%;
+    padding-top: 5%;
+}
+
+.phone_child_element_flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blue; */
+    /* background-color: #4526FF; */
+
+}
+
+.phone_main_block_form_input_1 {
+    width: 100%;
+    font-size: 120%;
+    border: 2px solid #D7D7D7;
+    border-radius: 13px;
+    /* font-size: 20px; */
+    padding: 14px 25px;
+    font-family: var(--font-inter);
+    /* background-color: #4526FF; */
+    /* cursor: var(--hand-cursor-w);*/
+}
+
+.phone_.main_box_but_form_Iamastud {
+    /* width: auto; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone_main_block_form_textPassword_box {
+    position: relative;
+    width: 100%;
+    /* height: 67px; */
+    margin: 5% 0;
+}
+
+#phone_regesterText {
+    color: var(--colorText);
+    font-family: var(--font-inter);
+    cursor: var(--hand-cursor-w);
+}
+
+.phone_main_block_form_textName_flexBox {
+    width: 100%;
+}
+.footer_slade1_icon_text h1,
+.phone_footer_slade2{
+    font-family: var(--font-inter);
+    font-style: normal;
+}
+@media screen and (width: 320px) {
+    #phone_hend {
+        width: 320px;
+    }
+
+    #phone_regesterText {
+        font-size: 12px;
+    }
+
+    .phone_register_size {
+        font-size: 12px;
+    }
+}
+
+@media screen and (width: 360px) {
+    #phone_hend {
+        width: 360px;
+    }
+}
+
+.phone_main_box_but_form_Iamastud_FORM1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.phone-number-field{
+    width: 100%;
+}
+
+.phone-number-field .select{
+    width: 40%;
+}
+
+.phone_main_block_form_flex #id_gender{
+    width: 100%;
+}
+
+.main_block_Buttom_{
+    margin-right:70%;
 }

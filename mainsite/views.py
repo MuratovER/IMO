@@ -44,7 +44,7 @@ def logout_view(request):
 def signup_view(request):
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/signup_phone.html',
+                        mobile_url='mainsite/PhonePage/phone_singup.html',
                         pc_url='mainsite/registration/RegesterIndex.html',
                         main_logic=user_creation
     )

@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %}{% load i18n %}
 <!DOCTYPE html>
 
 <html>
@@ -20,13 +20,19 @@
     <link href='{% static "mainsite/css/phonepage_/ChangeColor.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/phone_incoming.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/phone_page280.css" %}' rel="stylesheet">
-
     <link href='{% static "mainsite/css/phonepage_/phone_page320.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/phone_page360.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/phone_page375.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/phone_page425.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/phonepage_/phone_page460.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page480.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page500.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page550.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page590.css" %}' rel="stylesheet">
+
     <link href='{% static "mainsite/css/phonepage_/phone_page768.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/phone_page1024.css" %}' rel="stylesheet">
+
     <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
     <link href="//db.onlinewebfonts.com/c/3114dbb517b7c67b80e322545c5f565f?family=Averta+Demo+PE" rel="stylesheet"
         type="text/css" />
@@ -36,20 +42,31 @@
         type="text/css" />
     <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
-
     <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet">
-
     <link href='{% static "mainsite/css/profile/profile.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_3.css" %}' rel="stylesheet">
     <link href='{% static "mainsite/css/registration/style_4.css" %}' rel="stylesheet">
 
 
+    <!-- <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet"> -->
+
     <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"></script>
     <script src="{% static 'mainsite/js/home_page/hidden_block_mainPage.js' %}"></script>
     <script src='{% static "mainsite/js/them/them.js" %}'></script>
     <script src=' {% static "mainsite/js/registration/Them.js" %}'></script>
+    <script src="{% static 'mainsite/js/registration/ChangeEay.js' %}">
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
 
 </head>
+<!-- <header>
+<div class="preloader">
+    <div class="preloader__row">
+        <div class="spinner preloader__item"></div>
+    </div>
+</div>
+</header> -->
 
 <body class="body indexEnterWindow">
     <div class="content">
@@ -75,6 +92,7 @@
                 <div class="phone_header_home_get_ico" id="phone_header_animated"></div>
                 <div id="collapse" class="show hide">
                     <div class="showhide_phone">
+                        <!-- тут функция перемени цвета -->
                         <div class="chageColor_phone_click">
                             <div class="theme-switch-wrapper">
                                 <label class="theme-switch" for="checkbox">
@@ -94,35 +112,58 @@
                                 </label>
                             </div>
                         </div>
+                        <!-- тут функция перевода  -->
                         <div class="chageLanguage">
                             <div class="buttonsInHeader_box">
                                 <input type="button" class="buttonsInHeader_box_lang noStyelButt cursorP Lang-name"
                                     id="lang" value="Ru">
                                 <div class="phone_header_Ru_ico"></div>
+                                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Ru
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            {% get_current_language as LANGUAGE_CODE %}
+                                            {% get_available_languages as LANGUAGES %}
+                                            {% get_language_info_list for LANGUAGES as languages %}
+
+                                            {% for lang in languages %}
+                                            <li>
+                                                <a class="dropdown-item" href="/{{ lang.code }}/">
+                                                    {{ lang.name_local }}
+                                                </a>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                </ul> -->
                             </div>
                         </div>
+
                     </div>
                     <hr size="1px" width="220px" align="center" class="Hr">
                     <div class="phone_headerProfilandPamyat">
                         <div class="pop-up_form-down">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.profile %}
-                                <div class="pop-up_Profil" onclick="location.href='/profile_phone'">
-                                    <div class="Profil"></div>
-                                    <p class="Profil-p">Профиль</p>
-                                </div>
-                                {% else %}
-                                <div class="pop-up_Profil" onclick="location.href='/extra_phone'">
-                                    <div class="Profil"></div>
-                                    <p class="Profil-p">Профиль</p>
-                                </div>
-                                {% endif %}
+                            {% if request.user.profile %}
+                            <div class="pop-up_Profil" onclick="location.href='/profile'">
+                                <div class="Profil"></div>
+                                <p class="Profil-p">Профиль</p>
+                            </div>
                             {% else %}
-                                <div class="pop-up_Profil" onclick="location.href='/signup_phone'">
-                                    <div class="Profil"></div>
-                                    <p class="Profil-p">Профиль</p>
-                                </div>     
-                            {% endif %}    
+                            <div class="pop-up_Profil" onclick="location.href='/extra'">
+                                <div class="Profil"></div>
+                                <p class="Profil-p">Профиль</p>
+                            </div>
+                            {% endif %}
+                            {% else %}
+                            <div class="pop-up_Profil" onclick="location.href='/signup'">
+                                <div class="Profil"></div>
+                                <p class="Profil-p">Профиль</p>
+                            </div>
+                            {% endif %}
                             <div class="pop-up_PamyatkaInost">
                                 <div class="Pamyatka_Inostransa"></div>
                                 <p class="Pamyatka_Inostransa-p">Памятка иностранцу</p>
@@ -134,8 +175,7 @@
         </div>
 
         {% block content %} {% endblock %}
-
-        <div class="base_content_slade5 Mtop16">
+        <footer class="base_content_slade5 Mtop16">
             <div class="phone_footer">
                 <div class="phone_footer_slade1">
                     <div class="phone_footer_slade1_upon">
@@ -146,31 +186,30 @@
                     </div>
                     <div class="phone_footer_slade1_down">
                         <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
-                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l2 cursorP"></div>
+                            <div class="phone_footer_boxs_links_box_l footer_boxs_links_box_l2 cursorP"></div>
                         </div>
                         <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
-                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l3 cursorP"></div>
+                            <div class="phone_footer_boxs_links_box_l footer_boxs_links_box_l3 cursorP"></div>
                         </div>
                         <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
-                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l4 cursorP"></div>
+                            <div class="phone_footer_boxs_links_box_l footer_boxs_links_box_l4 cursorP"></div>
                         </div>
                     </div>
                 </div>
                 <div class="phone_footer_slade2">
                     <div class="phone_footer_slade2_h">
-                        <h1>Контактная информация</h1>
+                        <h1>Приемная комиссия КНИТУ-КАИ:</h1>
                     </div>
                     <div class="phone_footer_slade2_namber1">
-                        <p>+7(843)231-01-58</p>
-                        <p>ИМО</p>
+                        <h1>Адрес: 420015, г. Казань, ул. Большая Красная, д. 55</h1>
                     </div>
                     <div class="phone_footer_slade2_namber2">
-                        <p>+7(843)231-01-58</p>
-                        <p>ИМО</p>
+                        <h1>Телефон:</h1>
+                        <p>+7(843)231 00 90</p>
                     </div>
                     <div class="phone_footer_slade2_link">
+                        <h1>Эл. почта:</a>
                         <a href="">pk@kai.ru</a>
-                        <a href="">international@kai.ru</a>
                     </div>
                 </div>
                 <div class="phone_footer_slade3">
@@ -186,9 +225,10 @@
                 <p>© Институт международного образования КНИТУ-КАИ Все права защищены 2022</p>
                 <p>© КНИТУ-КАИ Все права защищены 2022</p>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
+
 <style>
     h1 {
         margin-bottom: 0;

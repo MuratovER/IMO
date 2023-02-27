@@ -1,7 +1,10 @@
 @media screen and (min-width:282px) and (max-width:321px) {
-    .content {
+    .content,
+    #phone_hend,
+    #phone_hend_extra {
         width: 320px;
     }
+
 
     .main_icon_logo_flexbox {
         width: 36.497px;
@@ -970,5 +973,15 @@
         font-weight: 400;
         font-size: 10px;
         line-height: 12px;
+    }
+
+    .phone_footer_slade2_h h1{
+        font-size: 4px;
+    }
+    .phone_footer_slade2_namber1 h1,
+    .phone_footer_slade2_namber2 h1,
+    .phone_footer_slade2_namber3 h1,
+    .phone_footer_slade2_link h1{
+        font-size: 4.8px;
     }
 }

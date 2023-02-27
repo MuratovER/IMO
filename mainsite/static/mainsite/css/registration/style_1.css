@@ -210,7 +210,8 @@
 }
 
 .main_block_form_input_12 {
-    width: 538px;
+    /* width: 538px; */
+    width: -webkit-fill-available;
     border: 2px solid #D7D7D7;
     border-radius: 13px;
     font-size: 20px;

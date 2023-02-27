@@ -1,5 +1,7 @@
-@media screen and  (min-width: 461px) and (max-width:769px) {
-    .content{
+@media screen and  (min-width: 591px) and (max-width:769px) {
+    .content,
+    #phone_hend,
+    #phone_hend_extra{
         width: 768px;
     }
     

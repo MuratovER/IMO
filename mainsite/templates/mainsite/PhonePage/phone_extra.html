@@ -1,40 +1,36 @@
-{% extends 'mainsite/base.html' %}
+{% extends 'mainsite/PhonePage/home_page.html' %}
 {% block content %}
 {% load i18n %}{% load static %}
 <style>
-    .header {
+    .Phone_Head {
         display: none;
     }
 
-    .footer {
+    .base_content_slade5 {
         display: none;
     }
 </style>
-
-<div id="hend" class="indexEnterWindow">
-    <div class="main_block" id="main_block">
+</div>
+<body id="phone_hend_extra" class="indexEnterWindow">
+    <!-- <div class="main_block" id="main_block"> -->
         {% if request.user.is_authenticated %}
-        <form method="POST" action="" class="main_block_form" enctype="multipart/form-data">
+        <form method="POST" action="" class="phone_main_block_form" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="main_block_form_flex_">
                 <div class="main_box_but_form_Iamastud_main FormBlockHideFunction FormBlockHideFunctionMainBtExit"
                     style="display: block;">
                     <div class="main_box_but_form_Iamastud2" id="but_form_Iamastud2">
-                        <div class="main_box_but_form_Iamastud_FORM1">
-                            <div class="main_block_Buttom_FlexBox main_block_Buttom_FlexBoxTHEtest">
+                        <div class="phone_main_box_but_form_Iamastud_FORM1">
                                 <div class="main_block_Buttom_ __">
                                     <div class="main_block_Buttom_Arrow" id="arrow"></div>
                                     <a class="main_block_Buttom_buttomExit LengText-back" id="buttomExit"
                                         onclick="exitBT()">Назад</a>
-                                    <!--onclick="FormBlockHideFunction(this,box = document.querySelector('.FormBlockHideFunction'))"-->
                                 </div>
-                            </div>
                             <h1 id="TextLogin" class="main_block_form_h1 LengText-registration">Регистрация</h1>
                             <p id="TextButtomLogin"
-                                class="main_block_form_InformationalText LengText-TypeOfRegistration">Выберите вид
+                                class="phone_main_block_form_InformationalText LengText-TypeOfRegistration">Выберите вид
                                 регистрации</p>
-                            <div class="main_block_form_flex">
-                                <!-- {{ form.as_p }} -->
+                            <div class="phone_main_block_form_flex">
                                 <!-- <div  style="flex-direction: column;"> -->
                                 {% if form.errors %}
                                 <!-- Error messaging -->
@@ -65,9 +61,9 @@
                                 {{ form.citizenship }}
 
                                 <!-- </div> -->
-                                <div class="child_element_flex">
+                                <div class="phone_child_element_flex">
                                     <input type="submit"
-                                        class="main_block_form_button main_block_form_input_1 trueChangePass2"
+                                        class="main_block_form_button1 phone_main_block_form_input_1  trueChangePass2"
                                         id="InputEnterButtom" name="_save" value="Авторизоваться">
                                 </div>
                             </div>
@@ -98,7 +94,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 
     <script>
         flatpickr("input[type=date]", {});

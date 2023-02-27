@@ -1,7 +1,10 @@
 @media screen and (min-width:100px) and (max-width:281px) {
-    .content{
+    .content,
+    #phone_hend,
+    #phone_hend_extra{
         width: 280px;
     }
+
     .main_icon_logo_flexbox {
         width: 36.497px;
         height: 36px;
@@ -490,7 +493,7 @@
 
     /**********************320***не отредактирован*/
     .slide1_text .Lang-standart84_1 {
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .slide1_burron_Bxtex {
@@ -954,5 +957,13 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+}
+
+.phone_.footer_boxs_links_box_l{
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 }
