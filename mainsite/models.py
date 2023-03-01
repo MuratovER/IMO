@@ -74,9 +74,8 @@ class Faculty(models.Model):
     def __str__(self):
         return self.name
 
-# Graduate department
-
-
+# Graduate department for Specility 
+# It is information about your producing department
 class Graduate(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)

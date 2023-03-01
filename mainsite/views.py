@@ -181,18 +181,8 @@ def triadkey_view(request):
     triadkey = Triadkey.objects.all()
     return device_router(
                         request,
-                        mobile_url='mainsite/PhonePage/index.html',
+                        mobile_url='mainsite/PhonePage/phone_incomigIMO.html',
                         pc_url='mainsite/incomingIMO/triadkey.html',
                         context={'triadkey': triadkey}
     )
-
-# GraduateDep
-# def graduatedep_view(request):
-#     triadkey = GraduateDep.objects.all()
-#     return device_router(
-#                         request,
-#                         mobile_url='mainsite/PhonePage/index.html',
-#                         pc_url='mainsite/incomingIMO/triadkey.html',
-#                         context={'triadkey': triadkey}
-#     )
 

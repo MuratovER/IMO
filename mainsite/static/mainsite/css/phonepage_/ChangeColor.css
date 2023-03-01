@@ -155,7 +155,7 @@ input:checked+.slider:before {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin: 3px;
+    margin: 2.5px;
 }
 
 
