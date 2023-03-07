@@ -7,7 +7,7 @@
 }
 
 .content {
-    /* max-width: 95%; */
+    max-width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -814,7 +814,7 @@ h1 {
     position: relative;
     padding: 0.5px;
     margin-right: 5px;
-
+    color: var(--colorText);
 }
 
 .slide_inside_text{
@@ -1007,4 +1007,8 @@ font-weight: 400;
     #phone_hend {
         width: 360px;
     }
+}
+
+.main_block_footer_blockFlex{
+    margin-top: 10%;
 }

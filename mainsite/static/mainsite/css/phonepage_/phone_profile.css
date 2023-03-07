@@ -57,8 +57,12 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+    color: var(--colorText);
 }
-
+.phone_about-info-generated div{
+    color: var(--colorText);
+    font-family: var(--font-inter);
+}
 .phone_about-info {
     display: flex;
     flex-direction: row;
@@ -79,6 +83,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
+    color: var(--colorText);
 }
 
 .phone_base-info-titleIco {

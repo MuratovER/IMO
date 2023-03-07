@@ -140,7 +140,8 @@ input:checked+.slider:before {
 }
 
 .slide_moon{
-    background-image: url(../../img/phone_moon.svg);
+    /* background-image: url(../../img/phone_moon.svg); */
+    background-image: var(--phone-header-moon);
     background-size: 100% 100%;
     width: 18px;
     height: 17px;

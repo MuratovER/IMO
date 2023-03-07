@@ -44,6 +44,8 @@ body {
     --phone-input-checkbox-color:#fff;
     --Phone-Lang-standart-color:#000212;
     --phone-button-color:#383838;
+    --Change-color-Text: #000000;
+
 
 
     /********************************IMG*******************************************************/
@@ -67,6 +69,8 @@ body {
 
     --phone-specialty-naprav-block: none;
 
+    --phone-header-moon: url(../../img/phone_sun.svg);
+
 
 }   
 
@@ -79,13 +83,15 @@ body {
     --Profil-p:#F4F4F4;
     --phone-button-color:#383838;
     --phone-slider:#616161;
-    --phone-slider-border:#616161;
+    --phone-slider-border:#fff;
     --phone-Hr:#EFEAEA;
     --slider_inside_text:#fff;
     --phone-input-checkbox-color:#343434;
     --Phone-Lang-standart-color:#DDDCE2;
     --colorText: #F3F3F3;
     --colorText-black-blue:#F3F3F3;
+    --Change-color-Text: #e1e1ff;
+
 
     /********************************IMG*******************************************************/
     --phone-profil-ico-color: url("../../img/black-web/Profil.svg");
@@ -95,13 +101,15 @@ body {
     --RaspisanieIspit: url("/static/mainsite/img/RaspisanieIspit-phone-black.svg");
     --main_icon_logo_phone: url("../home_page/cssimg/mainICON_2.svg");
      /* url(../../img/Profile.svg) */
-     --Phone-header-presen-ico:url("../../img/black-web/phone_header_presen.svg");
-     --Phone-header-question-ico:url("../../img/black-web/phone_header_question.svg");
-     --Phone-header-notice-ico:url("../../img/black-web/phone_header_notice.svg");
-     --Phone-header-home-ico:url("../../img/black-web/phone_header_home.svg");
-     --Phone-header-home-get-ico: url("../../img/black-web/phome_imo_down.svg");
-     --Phone-header-PamyatkaInost: url("../../img/black-web/PamyatkaInost.svg");
-     --Phone-profile-edit-ico: url("../../img/black-web/profile_edit.svg");
+    --Phone-header-presen-ico:url("../../img/black-web/phone_header_presen.svg");
+    --Phone-header-question-ico:url("../../img/black-web/phone_header_question.svg");
+    --Phone-header-notice-ico:url("../../img/black-web/phone_header_notice.svg");
+    --Phone-header-home-ico:url("../../img/black-web/phone_header_home.svg");
+    --Phone-header-home-get-ico: url("../../img/black-web/phome_imo_down.svg");
+    --Phone-header-PamyatkaInost: url("../../img/black-web/PamyatkaInost.svg");
+    --Phone-profile-edit-ico: url("../../img/black-web/profile_edit.svg");
+    --phone-header-moon: url("../../img/black-web/phone_moon.svg");
+
     
 
 
