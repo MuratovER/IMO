@@ -1,12 +1,12 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-alpine
 
 COPY requirements.txt /temp/requirements.txt
 COPY . /IMO
 WORKDIR /IMO
 EXPOSE 8000
-
+RUN apk update && apk add --no-cache gcc postgresql-client build-base postgresql-dev freetype-dev
 RUN pip install -r /temp/requirements.txt
 
 RUN adduser --disabled-password service-user
 
-USER service-user
+USER root
