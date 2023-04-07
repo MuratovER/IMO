@@ -89,7 +89,7 @@ services:
       - "80:80"
     volumes:
       - ./mainsite/static:/var/u_imokai/html/static
-      - ./configs/ninx.d:/etc/nginx/conf.d
+      - ./configs/nginx.d:/etc/nginx/conf.d
     
   # flower:
   #   restart: unless-stopped
