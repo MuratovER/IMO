@@ -1,17 +1,28 @@
 services:
+  # jenkins:
+  #   image: jenkins/jenkins:lts
+  #   restart: unless-stopped
+  #   privileged: true
+  #   container_name: jenkins
+  #   build: 
+  #     context: .
+  #   user: root
+  #   volumes:
+  #     - ./jenkins_home:/var/jenkins_home
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   ports:
+  #   - 8080:8080
+  #   - 50000:50000
   jenkins:
     image: jenkins/jenkins:lts
-    restart: unless-stopped
     privileged: true
-    container_name: jenkins
-    build: 
-      context: .
     user: root
     ports:
-    - 8080:8080
-    - 50000:50000
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkins
     volumes:
-      - ./jenkins_home:/var/jenkins_home
+      - /home/u_imokai/jenkins_compose/jenkins_configuration:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
 
   web-app:
@@ -24,14 +35,14 @@ services:
       - .:/imo
     
     environment:
-      - SECRET_KEY=django-insecure-s^^#%xw(ui)n7lv9$b67f7*h#y-jwe4$c)foij$-yg-etb#o3k
+      - SECRET_KEY=django-insecure-s^^#%xw(ui)n7lv9$$b67f7*h#y-jwe4$$c)foij$$-yg-etb#o3k
       - DB_HOST=database
-      - DB_NAME=imodb
-      - DB_USER=imo
-      - DB_PASS=imoproject
+      - DB_NAME=imo_db
+      - DB_USER=u_imo
+      - DB_PASS=test
     
     command: >
-      sh -c "python manage.py runserver 0.0.0.0:8000"
+      sh -c "gunicorn --bind 0.0.0.0:8000 imo.wsgi"
 
     depends_on:
       - database
@@ -39,12 +50,16 @@ services:
 
   database:
     restart: unless-stopped
-    image: postgres:15.1-alpine3.17
+    image: postgres:latest
     environment:
-      - POSTGRES_DB=imodb
-      - POSTGRES_USER=imo
-      - POSTGRES_PASSWORD=imoproject
-
+      POSTGRES_DB: "imo_db"
+      POSTGRES_USER: "u_imo"
+      POSTGRES_PASSWORD: "test"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - .:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
   
   redis:
     restart: unless-stopped
@@ -65,6 +80,16 @@ services:
       - redis
     depends_on:
       - redis
+  
+  nginx:
+    image: nginx:1.19.8-alpine
+    depends_on:
+      - web-app
+    ports:
+      - "80:80"
+    volumes:
+      - ./mainsite/static:/var/u_imokai/html/static
+      - ./configs/ninx.d:/etc/nginx/conf.d
     
   # flower:
   #   restart: unless-stopped
