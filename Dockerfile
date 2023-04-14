@@ -1,5 +1,5 @@
 FROM python:3.10-alpine
-
+USER root
 COPY requirements.txt /temp/requirements.txt
 COPY . /IMO
 WORKDIR /IMO
@@ -11,4 +11,4 @@ RUN pip install -r /temp/requirements.txt
 
 RUN adduser --disabled-password service-user
 
-USER root
+# Set the user to postgres

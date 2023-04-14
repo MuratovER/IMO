@@ -286,3 +286,4 @@ fabric.properties
 imo_cache/
 jenkins_home/
 pgdata/
+pgadmin/
