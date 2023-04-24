@@ -12,7 +12,7 @@ from mainsite.business_logic.business_profile import profile_edit_render
 from mainsite.business_logic.business_profile import password_edit_render
 
 
-def home_page(request):
+def home_page(request): 
     last_4_news = Post.objects.order_by()[:4]
 
     return device_router(
