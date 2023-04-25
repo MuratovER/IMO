@@ -191,8 +191,10 @@
 }
 
 .verification-mail-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
-    text-align: center;
     width: 370px;
     height: 50px;
     border-color: rgba(224, 224, 224, 1);
