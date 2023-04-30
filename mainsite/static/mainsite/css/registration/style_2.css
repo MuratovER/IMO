@@ -136,8 +136,7 @@
     color: var(--colorText);
     font-family: var(--font-averta-cy-EB);
     font-size: 15px;
-}
-
+}   
 .standartStyleForimg {
     background-repeat: no-repeat;
     background-size: contain;
@@ -276,7 +275,8 @@
 }
 
 .text_List_In_buttom_imgSvg {
-    background-image: var(--text_List_In_buttom_imgSvg);
+    mask-image: var(--text_List_In_buttom_imgSvg);
+    -webkit-mask-image: var(--text_List_In_buttom_imgSvg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 45px;
