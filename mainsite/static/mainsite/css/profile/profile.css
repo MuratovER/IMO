@@ -32,9 +32,9 @@
     color: black;
     cursor: pointer;
 }
-.startBackColor{
+/* .startBackColor{
     background-color: #F2F2F2;
-}
+} */
 .info {
     width: auto;
     display: flex;

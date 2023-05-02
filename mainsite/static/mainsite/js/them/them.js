@@ -50,7 +50,6 @@ $(document).ready(
             // $(".menu_links_boxs_links_link").css("background","#424242");
             // тут может быть ошибка
             $(".buttonsInHeader_box_usButton").css("background-image", "url('/static/mainsite/img/kubsMenuDark.svg')");
-
             $("#lang").css("color", "#fff");
             $("h1").css("color", "#fff");
             $("h2").css("color", "#fff");
@@ -65,9 +64,10 @@ $(document).ready(
             $(".main_icon_logo").css("background-image", "url('/static/mainsite/img/black-logo.svg')");
             $(".menu_links_boxs_links_link").css("background", "#252525");
             $(".header2_boxText_twoBTNBox_button").css("border", "2px solid #464654");
+            $(".header2_boxText_twoBTNBox_button").css("color", "#ffffff");
             $(".Lang-standart13").css("color", "#FFFFFF");
             $(".Lang-standart14").css("color", "#FFFFFF");
-            // $(".text_List_In_buttom_imgSvg").css("background-image", "url('static/mainsite/img/pic-listdown.svg')");
+            $(".text_List_In_buttom_imgSvg").css("background-color", "white")
             $(".Lang-standart17").css("color", "#D9D9DC");
             $(".imo_advantage_Boxinf_imgbox").css("background-color", "#1A1B23");
             $(".footer_boxs_links_box_plot").css("background-color", "#1A1B23");
@@ -129,7 +129,10 @@ $(document).ready(
 
             $(".headerTwoEnteringImo").css("background-color", "#000212");
             $(".btg-light").css("background-color", "#000212");
-            
+            // dropdown_menu dark mode
+            $(".dropdown-menu").css('background-color', '#17181E')
+            $('.bottomClick').css("background-color", '#14161d');
+            $(".startBackColor").css("background-color", '#242730');
         }
         function themFalse() {
             localStorage.setItem("them", "false");
@@ -156,6 +159,7 @@ $(document).ready(
             $("h4").css("color", "#000");
             $("p").css("color", "#000");
             $("a").css("color", "#000");
+            $(".header2_boxText_twoBTNBox_button").css("color", "black");
             $(".specialty_box_picture_text").css("color", "#fff");
             $(".preloader").css("background-color", "#FFF");
             $(".spinner").css("background-image", "url('../static/mainsite/img/preloader/preloader.svg')");
@@ -167,7 +171,7 @@ $(document).ready(
             // Lang-standart13
             $(".Lang-standart13").css("color", "#000000");
             $(".Lang-standart14").css("color", "#000000");
-            // $(".text_List_In_buttom_imgSvg").css("background-image", " url('static/css/home_page/cssimg/circlePlasArrow.svg')");
+            $(".text_List_In_buttom_imgSvg").css("background-color", "black")
             $(".Lang-standart17").css("color", "#383838");
             // .imo_advantage_Boxinf_imgbox
             $(".imo_advantage_Boxinf_imgbox").css("background-color", "#F9F9F9");
@@ -231,6 +235,10 @@ $(document).ready(
 
             $(".headerTwoEnteringImo").css("background-color", "#fff");
             $(".btg-light").css("background-color", "#fff");
+             // dropdown_menu dark mode
+            $(".dropdown-menu").css('background-color', 'white')
+            $('.bottomClick').css("background-color", 'none');
+            $(".startBackColor").css("background-color", '#F2F2F2');
             
         }
     }
